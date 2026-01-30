@@ -123,3 +123,46 @@ Entity (base)
 ├── AbstractConcept (Extracted nouns)
 └── HierarchicalEntity (Industries, Products)
 ```
+
+## Hierarchical Content Structure
+
+The project includes hierarchical MDX content for browsing business entities:
+
+### Content Directories
+
+| Directory | Source | Hierarchy Depth | Template |
+|-----------|--------|-----------------|----------|
+| `industries/` | NAICS | 6 levels (Sector→National) | `[Industry].mdx` |
+| `occupations/` | O*NET/SOC | 4 levels (Category→Variant) | `[Occupation].mdx` |
+| `departments/` | APQC + Common | 3 levels (Function→Team) | `[Department].mdx` |
+| `processes/` | APQC PCF | 5 levels (Category→Activity) | `[Process].mdx` |
+
+### Content Structure
+
+Each directory contains:
+- `CLAUDE.md` - Guidelines for generating/editing content
+- `[Entity].mdx` - Template file defining the MDX structure
+- Hierarchical folders with `index.mdx` files
+
+### MDX Content Requirements
+
+All content files should include:
+- **Mermaid diagrams** for hierarchy, process flows, relationships
+- **Key statistics** from source data (codes, levels, counts)
+- **Cross-references** to related entities using relative paths
+- **GraphDL notation** for tasks and actions where applicable
+
+### Naming Conventions
+
+- **Folders**: PascalCase without redundancy (`Manufacturing/Automotive/` not `Manufacturing/AutomotiveManufacturing/`)
+- **Files**: PascalCase matching entity ID (`ChiefExecutives.mdx`)
+- **Paths**: Use concise names that don't repeat parent context
+
+### Generating Content
+
+```bash
+# Generate hierarchy stubs
+npx tsx .scripts/generate-hierarchy.ts
+```
+
+Content is generated from `.data/` TSV files and should follow the templates in each directory's `[Entity].mdx` file.
