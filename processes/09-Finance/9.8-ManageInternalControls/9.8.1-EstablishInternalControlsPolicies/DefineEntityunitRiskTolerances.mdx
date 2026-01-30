@@ -15,9 +15,9 @@ parent: "9.8.1"
 
 ## Overview
 
-Activity 9.8.1.5 is an activity within the Manage Financial Resources framework. 
+Activity 9.8.1.5 is an activity within the Internal Controls domain of the Manage Financial Resources framework.
 
-Outlining the risk tolerance levels of individual units, as well as the organization as a whole. Determine the specific maximum risk to take in quantitative terms for each relevant risk subcategory, including strategic, operational, financial, and compliance risks.
+Outlining the risk tolerance levels of individual units, as well as the organization as a whole. This activity plays a critical role in ensuring that the organization maintains sound financial governance, operational efficiency, and regulatory compliance. It supports upstream planning and downstream execution by providing structured outputs that inform decision-making across finance and business operations. Effective execution of this activity requires coordination among finance professionals, process owners, and leadership stakeholders to ensure accuracy, timeliness, and alignment with organizational objectives.
 
 ## Process Hierarchy
 
@@ -30,6 +30,18 @@ graph TD
     style N9_8_1_5 fill:#e1f5fe
 ```
 
+## Process Flow
+
+```mermaid
+flowchart LR
+    A["Identify requirements for entity/unit risk tolerances"] --> B["Gather relevant data and documentation"]
+    B --> C["Define entity/unit risk tolerances"]
+    C --> D["Review and validate results"]
+    D --> E["Obtain necessary approvals"]
+    E --> F["Document and archive outputs"]
+    F --> G["Completed"]
+```
+
 ## Key Statistics
 
 | Metric | Value |
@@ -39,7 +51,6 @@ graph TD
 | Level | Activity |
 | Parent | [9.8.1](../) |
 | Sub-Processes | 0 |
-
 
 ## GraphDL Semantic Structure
 
@@ -52,12 +63,55 @@ define.EntityunitRiskTolerances
 | Verb | `define` | Primary action |
 | Object | `entity/unit risk tolerances` | Direct object |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Design controls | Internal Audit Manager | Chief Audit Executive | Process Owners | Audit Committee |
+| Test control effectiveness | Internal Auditor | Internal Audit Manager | Control Owners | CFO |
+| Remediate deficiencies | Process Owner | Controller | Internal Audit | Audit Committee |
+
+## Related Occupations
+
+- [Financial Managers](/occupations/FinancialManagers)
+- [Accountants and Auditors](/occupations/AccountantsAndAuditors)
+- [Compliance Officers](/occupations/ComplianceOfficers)
+- [Internal Auditors](/occupations/AccountantsAndAuditors)
+- [Financial Examiners](/occupations/FinancialExaminers)
+
+## Related Departments
+
+- Internal Audit
+- Compliance
+- Finance & Accounting
+
+## Industry Variations
+
+### Banking
+
+Internal controls address SOX compliance, anti-money laundering, and operational risk management with three lines of defense.
+
+### Healthcare
+
+Controls encompass HIPAA compliance, billing integrity, and clinical documentation improvement programs.
+
+### Manufacturing
+
+Focuses on inventory controls, cost accounting accuracy, and supply chain financial integrity.
+
+## KPIs & Metrics
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Control Deficiency Rate | Number of control deficiencies identified | 0 material weaknesses |
+| Audit Finding Resolution Time | Days to remediate audit findings | < 30 days |
+| SOX Compliance Rate | Percentage of controls tested as effective | > 98% |
+| Policy Exception Rate | Percentage of transactions with policy exceptions | < 2% |
 
 ## Related Concepts
 
 - EntityRiskTolerances
 - UnitRiskTolerances
-
 
 ---
 

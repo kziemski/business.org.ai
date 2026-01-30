@@ -19,6 +19,8 @@ Activity 2.1.4.5 is an activity within the Design and Develop Products and Servi
 
 Administering the specifications of the product/service and ensure accessibility for product alteration/new product development.
 
+This activity ensures the ongoing accuracy, completeness, and accessibility of critical product and process data. It involves establishing governance protocols, implementing change control procedures, and conducting periodic reviews to maintain data integrity. Effective management of these records supports operational efficiency, regulatory compliance, and informed decision-making across the organization.
+
 ## Process Hierarchy
 
 ```mermaid
@@ -57,6 +59,78 @@ manage.Drawings
 
 - Drawings
 
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I0["Current Records"]
+        I1["Change Requests"]
+        I2["Compliance Standards"]
+    end
+
+    subgraph Process["Manage drawings"]
+        S0["Review Current State"]
+        S1["Process Updates"]
+        S2["Validate Changes"]
+        S3["Update Records"]
+        S0 --> S1
+        S1 --> S2
+        S2 --> S3
+    end
+
+    subgraph Outputs["Outputs"]
+        O0["Updated Records"]
+        O1["Compliance Report"]
+        O2["Change Log"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define scope and objectives | Product Manager | VP of Product | Engineering Lead | Executive Team |
+| Execute and document | Product Analyst | Product Manager | Quality Assurance | Stakeholders |
+| Review and approve | Quality Manager | VP of Product | Legal/Compliance | Product Team |
+
+## Related Occupations
+
+- [Product Manager](/occupations/Management/ProductManagers) - Leads portfolio governance and lifecycle management
+- [Chief Technology Officer](/occupations/Management/ChiefExecutives) - Provides strategic oversight for product development
+- [Quality Assurance Manager](/occupations/Management/QualityControlSystems) - Ensures compliance with quality standards
+- [Regulatory Affairs Specialist](/occupations/Legal/RegulatoryAffairs) - Manages patent, copyright, and regulatory compliance
+
+## Related Departments
+
+- [Product Management](/departments/ProductManagement) - Owns product portfolio strategy and governance
+- [Quality Assurance](/departments/QualityAssurance) - Maintains quality standards and compliance
+- [Legal & Compliance](/departments/Legal) - Manages intellectual property and regulatory requirements
+
+## Industry Variations
+
+### Manufacturing
+
+Emphasizes physical product specifications, tooling requirements, and lean production principles in process execution.
+
+### Technology
+
+Focuses on agile development methodologies, continuous integration, and rapid iteration cycles with digital-first delivery.
+
+### Healthcare
+
+Requires adherence to patient safety standards, clinical efficacy validation, and comprehensive regulatory documentation.
+
+## KPIs & Metrics
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Process Cycle Time | Average duration to complete this activity | < 10 business days |
+| Completion Rate | Percentage of activities completed on schedule | > 90% |
+| Stakeholder Satisfaction | Internal satisfaction score for process outputs | > 4.0/5.0 |
 
 ---
 

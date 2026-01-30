@@ -15,9 +15,9 @@ parent: "9.7.5.4"
 
 ## Overview
 
-Sub-Activity 9.7.5.4.2 is an activity within the Manage Financial Resources framework. 
+Activity 9.7.5.4.2 is an activity within the Treasury Management domain of the Manage Financial Resources framework.
 
-Settling cases that involve violations of customer exposure limit.
+Settling cases that involve violations of customer exposure limit. This activity plays a critical role in ensuring that the organization maintains sound financial governance, operational efficiency, and regulatory compliance. It supports upstream planning and downstream execution by providing structured outputs that inform decision-making across finance and business operations. Effective execution of this activity requires coordination among finance professionals, process owners, and leadership stakeholders to ensure accuracy, timeliness, and alignment with organizational objectives.
 
 ## Process Hierarchy
 
@@ -31,6 +31,18 @@ graph TD
     style N9_7_5_4_2 fill:#e1f5fe
 ```
 
+## Process Flow
+
+```mermaid
+flowchart LR
+    A["Identify requirements for customer exposure limit violations"] --> B["Gather relevant data and documentation"]
+    B --> C["Resolve customer exposure limit violations"]
+    C --> D["Review and validate results"]
+    D --> E["Obtain necessary approvals"]
+    E --> F["Document and archive outputs"]
+    F --> G["Completed"]
+```
+
 ## Key Statistics
 
 | Metric | Value |
@@ -40,7 +52,6 @@ graph TD
 | Level | Sub-Activity |
 | Parent | [9.7.5.4](../) |
 | Sub-Processes | 0 |
-
 
 ## GraphDL Semantic Structure
 
@@ -53,11 +64,54 @@ resolve.CustomerExposureLimitViolations
 | Verb | `resolve` | Primary action |
 | Object | `customer exposure limit violations` | Direct object |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Manage cash positions | Treasury Analyst | Treasurer | Controller | CFO |
+| Execute investments | Treasury Analyst | Treasurer | Investment Committee | CFO |
+| Manage bank relationships | Treasurer | CFO | Legal | Controller |
+
+## Related Occupations
+
+- [Financial Managers](/occupations/FinancialManagers)
+- [Accountants and Auditors](/occupations/AccountantsAndAuditors)
+- [Treasurers and Controllers](/occupations/Treasurers)
+- [Financial Analysts](/occupations/FinancialAnalysts)
+- [Loan Officers](/occupations/LoanOfficers)
+
+## Related Departments
+
+- Treasury
+- Corporate Finance
+- Finance & Accounting
+
+## Industry Variations
+
+### Banking
+
+Treasury operations include interbank lending, reserve management, and liquidity coverage ratio compliance.
+
+### Multinational Corporations
+
+Manages multi-currency cash pools, cross-border netting, and foreign exchange hedging strategies.
+
+### Energy
+
+Treasury handles commodity hedging, project finance structures, and long-term power purchase agreement management.
+
+## KPIs & Metrics
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Cash Forecast Accuracy | Accuracy of short-term cash forecasts | > 95% |
+| Idle Cash Ratio | Percentage of cash not optimally deployed | < 5% |
+| Borrowing Cost | Weighted average cost of debt | Below benchmark |
+| FX Hedge Effectiveness | Effectiveness of currency hedging programs | > 80% |
 
 ## Related Concepts
 
 - CustomerExposureLimitViolations
-
 
 ---
 

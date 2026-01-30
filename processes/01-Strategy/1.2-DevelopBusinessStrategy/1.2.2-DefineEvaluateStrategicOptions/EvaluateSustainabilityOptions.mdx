@@ -19,6 +19,8 @@ Activity 1.2.2.8 is an activity within the Develop Vision and Strategy framework
 
 Evaluating sustainability requirements, stakeholder expectations, and value proposition for options. Understand the potential activities and changes across environmental, social, and governance, the effort required, cost to implement, and benefits gained. The analysis should consider sustainable product/service lifecycles, operations, infrastructure, performance, and workforce.
 
+This process plays a critical role within the broader "Develop Vision and Strategy" capability area (APQC Category 1.0). By systematically executing this activity, organizations ensure that strategic decisions are grounded in thorough analysis and aligned with overall business objectives. The outputs of this process feed into downstream strategy development and execution activities, creating a foundation for informed decision-making across the enterprise.
+
 ## Process Hierarchy
 
 ```mermaid
@@ -39,7 +41,8 @@ graph TD
 | Level | Activity |
 | Parent | [1.2.2](../) |
 | Sub-Processes | 0 |
-
+| Estimated Duration | 1-4 weeks |
+| Complexity | Medium |
 
 ## GraphDL Semantic Structure
 
@@ -52,11 +55,71 @@ evaluate.SustainabilityOptions
 | Verb | `evaluate` | Primary action |
 | Object | `sustainability options` | Direct object |
 
+## Process Flow
+
+```mermaid
+flowchart LR
+    I1["Assessment criteria"] --> P1
+    I2["Option proposals"] --> P1
+    I3["Performance data"] --> P1
+    P1["Define evaluation criteria"] --> P2["Score each option"]
+    P2 --> P3["Compare alternatives"]
+    P3 --> P4["Select preferred option"]
+    P4 --> O1["Evaluation matrix"]
+    P4 --> O2["Recommendation report"]
+    P4 --> O3["Decision brief"]
+    style P1 fill:#e1f5fe
+    style P2 fill:#e1f5fe
+    style P3 fill:#e1f5fe
+    style P4 fill:#e1f5fe
+```
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define strategic framework | Strategy Director | Chief Executive Officer | Business Unit Leaders | All Employees |
+| Develop strategy components | Management Analyst | Strategy Director | Functional Leaders | Department Heads |
+| Review and validate | Strategy Director | Chief Executive Officer | External Advisors | Board of Directors |
+| Communicate and deploy | Communications Manager | Chief Executive Officer | Strategy Team | All Stakeholders |
+
+## Related Occupations
+
+| Occupation | Role in Process |
+|------------|----------------|
+| [Chief Executives](/occupations/ChiefExecutives) | Primary strategic oversight and decision authority |
+| [General and Operations Managers](/occupations/GeneralAndOperationsManagers) | Executes analysis and produces deliverables |
+| [Management Analysts](/occupations/ManagementAnalysts) | Provides analytical frameworks and recommendations |
+| [Industrial-Organizational Psychologists](/occupations/IndustrialOrganizationalPsychologists) | Supports data gathering and insight generation |
+| [Strategic Planners](/occupations/StrategicPlanners) | Coordinates strategic alignment and planning |
+
+## Related Departments
+
+| Department | Involvement |
+|------------|-------------|
+| [Strategy & Planning](/departments/StrategyAndPlanning) | Primary owner and executor of this process |
+| [Operations](/departments/Operations) | Provides supporting data, resources, and coordination |
+| [Executive Leadership](/departments/ExecutiveLeadership) | Provides governance, approval, and strategic direction |
+
+## Industry Variations
+
+| Industry | Variation | Reference |
+|----------|-----------|-----------|
+| Manufacturing | Emphasizes supply chain and operational efficiency metrics in strategic planning | [manufacturing](/industries/manufacturing) |
+| Financial Services | Focuses on regulatory compliance and risk management within strategy processes | [banking](/industries/banking) |
+| Technology | Prioritizes innovation velocity and digital transformation in strategic initiatives | [consumer-electronics](/industries/consumer-electronics) |
+
+## KPIs & Metrics
+
+| KPI | Description | Target |
+|-----|-------------|--------|
+| Evaluation Thoroughness | Percentage of criteria assessed per option | 100% |
+| Decision Quality | Post-decision success rate | > 75% |
+| Time to Decision | Average time from evaluation start to recommendation | < 4 weeks |
 
 ## Related Concepts
 
 - SustainabilityOptions
-
 
 ---
 

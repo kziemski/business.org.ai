@@ -15,7 +15,21 @@ parent: "3.5.4.2"
 
 ## Overview
 
-Sub-Activity 3.5.4.2.3 is an activity within the Market and Sell Products and Services framework. 
+SubActivity 3.5.4.2.3 is an activity within the Market and Sell Products and Services framework.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_5["3.5 Develop and manage sales plans"]
+    N3_5 --> N3_5_4["3.5.4 Manage sales orders"]
+    N3_5_4 --> N3_5_4_2["3.5.4.2 Collect and maintain account information"]
+    N3_5_4_2 --> N3_5_4_2_3["3.5.4.2.3 Modify involved party details"]
+    style N3_5_4_2_3 fill:#e1f5fe
+```
+
+This process is critical to effective sales and marketing execution. It ensures that activities are systematically planned, executed, and measured against organizational objectives. When performed effectively, this process drives revenue growth, enhances customer engagement, and strengthens competitive positioning in target markets.
 
 ## Process Hierarchy
 
@@ -35,10 +49,27 @@ graph TD
 |--------|-------|
 | APQC Code | 10203 |
 | Hierarchy ID | 3.5.4.2.3 |
-| Level | Sub-Activity |
+| Level | SubActivity |
 | Parent | [3.5.4.2](../) |
 | Sub-Processes | 0 |
 
+## Process Flow
+
+```mermaid
+flowchart LR
+    A["Gather inputs and requirements"]
+    B["Analyze current state"]
+    C["Modify involved party details"]
+    D["Review and validate results"]
+    E["Communicate outcomes"]
+    F["Monitor and refine"]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    style C fill:#e1f5fe
+```
 
 ## GraphDL Semantic Structure
 
@@ -52,10 +83,56 @@ modify.InvolvedPartyDetails
 | Object | `involved party details` | Direct object |
 
 
+## RACI Matrix
+
+| Role | Responsible | Accountable | Consulted | Informed |
+|------|:-----------:|:-----------:|:---------:|:--------:|
+| Sales Representative | R |  |  |  |
+| Sales Manager |  | A |  |  |
+| Account Manager |  |  | C |  |
+| Legal / Contracts |  |  | C |  |
+| Executive Leadership |  |  |  | I |
+
+## Related Occupations
+
+- [Sales Managers](/occupations/Management/SalesManagers)
+- [Sales Representatives Wholesale And Manufacturing](/occupations/Sales-and-Related/SalesRepresentativesWholesaleAndManufacturing)
+- [Account Managers](/occupations/Sales-and-Related/AccountManagers)
+- [Customer Service Representatives](/occupations/Office-and-Administrative-Support/CustomerServiceRepresentatives)
+- [Business Development Managers](/occupations/Management/BusinessDevelopmentManagers)
+
+## Related Departments
+
+- [Sales](/departments/Sales)
+- [Account Management](/departments/AccountManagement)
+- [Customer Success](/departments/CustomerSuccess)
+
+## Industry Variations
+
+### Enterprise Software
+
+In enterprise software, modify involved party details involves complex multi-stakeholder deal cycles, proof-of-concept demonstrations, and contract negotiation with procurement teams.
+
+### Consumer Products
+
+In consumer products, modify involved party details focuses on trade promotion management, retailer relationship development, and category captainship strategies.
+
+### Professional Services
+
+In professional services, modify involved party details centers on relationship-based selling, proposal development for complex engagements, and thought leadership positioning.
+
+## KPIs & Metrics
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Win Rate | Percentage of qualified opportunities that result in closed deals | >30% |
+| Average Deal Size | Average revenue per closed opportunity | Quarter-over-quarter growth |
+| Sales Cycle Length | Average time from lead to closed deal | Below industry average |
+| Customer Retention Rate | Percentage of customers retained year-over-year | >90% |
+
 ## Related Concepts
 
 - InvolvedPartyDetails
-
 
 ---
 

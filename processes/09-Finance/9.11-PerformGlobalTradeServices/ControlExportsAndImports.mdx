@@ -15,9 +15,9 @@ parent: "9.11"
 
 ## Overview
 
-Process 9.11.2 is a core process that defines the specific procedures for control exports and imports. 
+Activity 9.11.2 is an activity within the Financial Management domain of the Manage Financial Resources framework.
 
-Overseeing and directing the flow of trade to/from the organization in order to ensure financial gains.
+Overseeing and directing the flow of trade to/from the organization in order to ensure financial gains. This activity plays a critical role in ensuring that the organization maintains sound financial governance, operational efficiency, and regulatory compliance. It supports upstream planning and downstream execution by providing structured outputs that inform decision-making across finance and business operations. Effective execution of this activity requires coordination among finance professionals, process owners, and leadership stakeholders to ensure accuracy, timeliness, and alignment with organizational objectives.
 
 ## Process Hierarchy
 
@@ -27,6 +27,18 @@ graph TD
     C9 --> N9_11["9.11 Perform global trade services"]
     N9_11 --> N9_11_2["9.11.2 Control exports and imports"]
     style N9_11_2 fill:#e1f5fe
+```
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    A["Identify requirements for exports and imports"] --> B["Gather relevant data and documentation"]
+    B --> C["Control exports and imports"]
+    C --> D["Review and validate results"]
+    D --> E["Obtain necessary approvals"]
+    E --> F["Document and archive outputs"]
+    F --> G["Completed"]
 ```
 
 ## Key Statistics
@@ -39,7 +51,6 @@ graph TD
 | Parent | [9.11](../) |
 | Sub-Processes | 0 |
 
-
 ## GraphDL Semantic Structure
 
 ```
@@ -51,12 +62,55 @@ control.ExportsAndImports
 | Verb | `control` | Primary action |
 | Object | `exports and imports` | Direct object |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Execute process | Finance Analyst | Finance Manager | Department Heads | CFO |
+| Review and approve | Finance Manager | Controller | Compliance | Executive Team |
+| Monitor and report | Finance Analyst | Finance Manager | Internal Audit | Controller |
+
+## Related Occupations
+
+- [Financial Managers](/occupations/FinancialManagers)
+- [Accountants and Auditors](/occupations/AccountantsAndAuditors)
+- [Financial Analysts](/occupations/FinancialAnalysts)
+- [Budget Analysts](/occupations/BudgetAnalysts)
+- [Compliance Officers](/occupations/ComplianceOfficers)
+
+## Related Departments
+
+- Finance & Accounting
+- Operations
+- Executive Management
+
+## Industry Variations
+
+### Banking
+
+Adapts to regulatory requirements including Basel III, Dodd-Frank, and FDIC reporting standards.
+
+### Healthcare
+
+Incorporates healthcare-specific compliance, reimbursement models, and clinical-financial integration.
+
+### Manufacturing
+
+Accounts for production cost structures, inventory valuation methods, and supply chain financial flows.
+
+## KPIs & Metrics
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Process Cycle Time | Time to complete the process end-to-end | Below benchmark |
+| Error Rate | Percentage of outputs requiring correction | < 1% |
+| Cost Efficiency | Cost per transaction processed | Industry benchmark |
+| Compliance Rate | Adherence to policies and regulations | > 99% |
 
 ## Related Concepts
 
 - Exports
 - Imports
-
 
 ---
 

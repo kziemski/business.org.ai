@@ -19,6 +19,8 @@ Activity 2.1.1.5 is an activity within the Design and Develop Products and Servi
 
 Determining the individual and collective timeframe for realizing new/revised solutions. Create a schedule that clearly demarcates the timeframes designated for the development of every new solution and/or revising each of the existing ones. Create a timetable by setting deadlines for each step in overhauling the product/service portfolio.
 
+This activity provides strategic direction by establishing clear objectives, criteria, and timelines that guide subsequent execution activities. It requires input from multiple stakeholders to ensure alignment with organizational goals and resource constraints. The resulting plans and specifications serve as the authoritative reference for all downstream activities.
+
 ## Process Hierarchy
 
 ```mermaid
@@ -57,6 +59,78 @@ specify.DevelopmentTimingTargets
 
 - DevelopmentTimingTargets
 
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I0["Requirements Spec"]
+        I1["Design Standards"]
+        I2["Resource Allocation"]
+    end
+
+    subgraph Process["Specify development timing targets"]
+        S0["Plan Development"]
+        S1["Create Design"]
+        S2["Build Solution"]
+        S3["Validate Output"]
+        S0 --> S1
+        S1 --> S2
+        S2 --> S3
+    end
+
+    subgraph Outputs["Outputs"]
+        O0["Design Artifacts"]
+        O1["Validation Results"]
+        O2["Documentation"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define scope and objectives | Product Manager | VP of Product | Engineering Lead | Executive Team |
+| Execute and document | Product Analyst | Product Manager | Quality Assurance | Stakeholders |
+| Review and approve | Quality Manager | VP of Product | Legal/Compliance | Product Team |
+
+## Related Occupations
+
+- [Product Manager](/occupations/Management/ProductManagers) - Leads portfolio governance and lifecycle management
+- [Chief Technology Officer](/occupations/Management/ChiefExecutives) - Provides strategic oversight for product development
+- [Quality Assurance Manager](/occupations/Management/QualityControlSystems) - Ensures compliance with quality standards
+- [Regulatory Affairs Specialist](/occupations/Legal/RegulatoryAffairs) - Manages patent, copyright, and regulatory compliance
+
+## Related Departments
+
+- [Product Management](/departments/ProductManagement) - Owns product portfolio strategy and governance
+- [Quality Assurance](/departments/QualityAssurance) - Maintains quality standards and compliance
+- [Legal & Compliance](/departments/Legal) - Manages intellectual property and regulatory requirements
+
+## Industry Variations
+
+### Manufacturing
+
+Emphasizes physical product specifications, tooling requirements, and lean production principles in process execution.
+
+### Technology
+
+Focuses on agile development methodologies, continuous integration, and rapid iteration cycles with digital-first delivery.
+
+### Healthcare
+
+Requires adherence to patient safety standards, clinical efficacy validation, and comprehensive regulatory documentation.
+
+## KPIs & Metrics
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Time to Prototype | Duration from concept approval to working prototype | < 30 days |
+| Design Iteration Count | Number of design revisions before approval | < 3 iterations |
+| Specification Compliance | Percentage of design specs met by prototype | > 95% |
 
 ---
 

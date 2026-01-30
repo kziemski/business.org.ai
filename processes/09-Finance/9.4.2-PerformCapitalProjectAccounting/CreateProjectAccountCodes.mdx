@@ -15,7 +15,9 @@ parent: "9.4.2"
 
 ## Overview
 
-Activity 9.4.2.1 is an activity within the Manage Financial Resources framework. 
+Activity 9.4.2.1 is an activity within the Fixed Asset Management domain of the Manage Financial Resources framework.
+
+Giving reference codes for every project. This activity plays a critical role in ensuring that the organization maintains sound financial governance, operational efficiency, and regulatory compliance. It supports upstream planning and downstream execution by providing structured outputs that inform decision-making across finance and business operations. Effective execution of this activity requires coordination among finance professionals, process owners, and leadership stakeholders to ensure accuracy, timeliness, and alignment with organizational objectives.
 
 ## Process Hierarchy
 
@@ -25,6 +27,18 @@ graph TD
     C9 --> N9_4_2["9.4.2 Perform capital project accounting"]
     N9_4_2 --> N9_4_2_1["9.4.2.1 Create project account codes"]
     style N9_4_2_1 fill:#e1f5fe
+```
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    A["Identify requirements for project account codes"] --> B["Gather relevant data and documentation"]
+    B --> C["Create project account codes"]
+    C --> D["Review and validate results"]
+    D --> E["Obtain necessary approvals"]
+    E --> F["Document and archive outputs"]
+    F --> G["Completed"]
 ```
 
 ## Key Statistics
@@ -37,7 +51,6 @@ graph TD
 | Parent | [9.4.2](../) |
 | Sub-Processes | 0 |
 
-
 ## GraphDL Semantic Structure
 
 ```
@@ -49,11 +62,54 @@ create.ProjectAccountCodes
 | Verb | `create` | Primary action |
 | Object | `project account codes` | Direct object |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Record asset acquisitions | Fixed Asset Accountant | Accounting Manager | Procurement | Controller |
+| Calculate depreciation | Fixed Asset Accountant | Controller | Tax Department | CFO |
+| Perform physical inventory | Asset Coordinator | Fixed Asset Manager | Facilities | Controller |
+
+## Related Occupations
+
+- [Financial Managers](/occupations/FinancialManagers)
+- [Accountants and Auditors](/occupations/AccountantsAndAuditors)
+- [Financial Analysts](/occupations/FinancialAnalysts)
+- [Property Managers](/occupations/PropertyRealEstateAndCommunityAssociationManagers)
+- [Purchasing Managers](/occupations/PurchasingManagers)
+
+## Related Departments
+
+- Fixed Assets
+- Facilities Management
+- Finance & Accounting
+
+## Industry Variations
+
+### Manufacturing
+
+Asset tracking covers production equipment, tooling, and molds with complex depreciation schedules and impairment testing.
+
+### Utilities
+
+Manages large-scale infrastructure assets (power plants, grids) with regulatory rate-base accounting and long-lived asset tracking.
+
+### Real Estate
+
+Focuses on property valuation, lease accounting (ASC 842), and capital improvement tracking.
+
+## KPIs & Metrics
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Asset Utilization Rate | Percentage of assets actively in use | > 85% |
+| Depreciation Accuracy | Accuracy of depreciation calculations | > 99% |
+| Asset Register Completeness | Percentage of assets properly recorded | 100% |
+| Return on Assets (ROA) | Net income relative to total assets | Industry benchmark |
 
 ## Related Concepts
 
 - ProjectAccountCodes
-
 
 ---
 
