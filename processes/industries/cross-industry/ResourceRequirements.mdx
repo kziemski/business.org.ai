@@ -1,0 +1,432 @@
+---
+id: ResourceRequirements
+name: "Understand resource requirements for each product/service and delivery channel/method"
+code: "20009"
+hierarchyId: "4.1.2"
+type: Process
+status: complete
+---
+
+# Understand resource requirements for each product/service and delivery channel/method
+
+> Determining the production and distribution costs for each product or service, and each channel or method as factors in determining overall pricing. This process analyzes the labor, materials, equipment, and logistics resources required to deliver products through various channels and methods.
+
+## Overview
+
+Understand resource requirements (APQC 4.1.2) is a critical planning process that quantifies the resources needed to produce and deliver products or services through various channels. This analysis forms the foundation for capacity planning, cost management, and pricing decisions. Understanding these requirements enables organizations to optimize resource allocation, identify cost reduction opportunities, and make informed channel strategy decisions.
+
+This process integrates data from production, logistics, sales, and finance to create a comprehensive view of resource consumption across the product portfolio and delivery network. It supports both strategic planning decisions and tactical operational adjustments.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"] --> G41["4.1 Prepare for production/<br/>service delivery"]
+
+    G41 --> P412["4.1.2 Understand resource<br/>requirements"]
+
+    P412 --> A41211["4.1.2.1 Define product/service<br/>resource profiles"]
+    P412 --> A41212["4.1.2.2 Analyze channel<br/>resource requirements"]
+    P412 --> A41213["4.1.2.3 Calculate production<br/>costs by product"]
+    P412 --> A41214["4.1.2.4 Calculate distribution<br/>costs by channel"]
+    P412 --> A41215["4.1.2.5 Determine total<br/>cost to serve"]
+    P412 --> A41216["4.1.2.6 Analyze resource<br/>utilization"]
+    P412 --> A41217["4.1.2.7 Identify optimization<br/>opportunities"]
+
+    style P412 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20009 |
+| Hierarchy ID | 4.1.2 |
+| Level | Process |
+| Category | [Deliver Physical Products](/processes/04-Delivery) |
+| Parent Process | [Prepare for production delivery](/processes/04-Delivery/DeliveryPrep) |
+| Activities | 7 |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Product Specifications"]
+        I2["Bill of Materials"]
+        I3["Production Standards"]
+        I4["Labor Rates"]
+        I5["Logistics Costs"]
+        I6["Channel Data"]
+        I7["Volume Forecasts"]
+    end
+
+    subgraph Process["Understand Resource Requirements"]
+        P1["Define Product<br/>Resource Profiles"]
+        P2["Analyze Channel<br/>Requirements"]
+        P3["Calculate Production<br/>Costs"]
+        P4["Calculate Distribution<br/>Costs"]
+        P5["Determine Total<br/>Cost to Serve"]
+        P6["Analyze Resource<br/>Utilization"]
+        P7["Identify Optimization<br/>Opportunities"]
+
+        P1 --> P3
+        P2 --> P4
+        P3 --> P5
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Product Cost Profiles"]
+        O2["Channel Cost Analysis"]
+        O3["Total Cost to Serve"]
+        O4["Resource Requirements Plan"]
+        O5["Capacity Requirements"]
+        O6["Optimization Recommendations"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+understand.ResourceRequirements.for.ProductAndDeliveryChannel
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `understand` | Action of analyzing and determining |
+| Object | `ResourceRequirements` | Labor, materials, equipment, logistics needs |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `ProductAndDeliveryChannel` | Products and distribution methods |
+
+## Activities
+
+### 4.1.2.1 - Define product/service resource profiles
+
+Creating detailed profiles of the resources required to produce each product or service, including materials, labor, equipment time, and overhead.
+
+```mermaid
+sequenceDiagram
+    participant Eng as Engineering
+    participant Finance as Cost Accounting
+    participant Prod as Production
+    participant Supply as Supply Chain
+
+    Eng->>Finance: Provide BOM data
+    Prod->>Finance: Provide labor standards
+    Supply->>Finance: Provide material costs
+    Finance->>Finance: Calculate standard costs
+    Finance->>Finance: Define resource profiles
+    Finance->>Eng: Validate cost structure
+    Finance->>Prod: Publish cost profiles
+```
+
+**Tasks:**
+- `analyze.BillOfMaterials` - Review material requirements
+- `define.LaborStandards` - Establish time and skill requirements
+- `calculate.EquipmentUtilization` - Determine machine time needs
+- `allocate.OverheadCosts` - Assign indirect costs
+- `create.ProductCostProfile` - Document complete resource profile
+
+### 4.1.2.2 - Analyze channel resource requirements
+
+Evaluating the resources needed to deliver products through each distribution channel, including warehousing, transportation, and handling requirements.
+
+```mermaid
+sequenceDiagram
+    participant Logistics as Logistics
+    participant Sales as Sales/Channel Mgmt
+    participant Finance as Finance
+    participant Warehouse as Warehousing
+
+    Sales->>Logistics: Define channel requirements
+    Logistics->>Warehouse: Analyze storage needs
+    Warehouse->>Logistics: Provide handling costs
+    Logistics->>Logistics: Calculate transport costs
+    Logistics->>Finance: Submit channel costs
+    Finance->>Finance: Analyze by channel
+    Finance->>Sales: Report channel economics
+```
+
+**Tasks:**
+- `map.DistributionChannels` - Document all delivery paths
+- `analyze.WarehouseRequirements` - Determine storage needs by channel
+- `calculate.TransportationCosts` - Evaluate shipping requirements
+- `assess.HandlingRequirements` - Analyze touch points and labor
+- `document.ChannelResourceProfile` - Create channel cost profiles
+
+### 4.1.2.3 - Calculate production costs by product
+
+Computing the full cost of production for each product, including direct materials, direct labor, and manufacturing overhead.
+
+```mermaid
+sequenceDiagram
+    participant Finance as Cost Accounting
+    participant Prod as Production
+    participant Purchasing as Procurement
+    participant Systems as ERP System
+
+    Purchasing->>Finance: Material costs
+    Prod->>Finance: Labor hours and rates
+    Systems->>Finance: Overhead rates
+    Finance->>Finance: Calculate direct costs
+    Finance->>Finance: Allocate overhead
+    Finance->>Finance: Roll up total cost
+    Finance->>Systems: Update cost standards
+```
+
+**Tasks:**
+- `calculate.DirectMaterialCosts` - Sum material expenses
+- `calculate.DirectLaborCosts` - Compute labor expenses
+- `allocate.ManufacturingOverhead` - Distribute indirect costs
+- `determine.VariableVsFixedCosts` - Classify cost components
+- `establish.StandardProductCosts` - Set cost standards
+
+### 4.1.2.4 - Calculate distribution costs by channel
+
+Determining the costs associated with delivering products through each distribution channel, from finished goods inventory to customer delivery.
+
+```mermaid
+sequenceDiagram
+    participant Logistics as Logistics
+    participant Finance as Finance
+    participant 3PL as 3PL Partners
+    participant Transport as Transportation
+
+    Logistics->>3PL: Request rate cards
+    3PL->>Logistics: Provide pricing
+    Transport->>Logistics: Submit transport costs
+    Logistics->>Finance: Compile distribution costs
+    Finance->>Finance: Analyze by channel
+    Finance->>Finance: Calculate cost per unit
+    Finance->>Logistics: Report channel costs
+```
+
+**Tasks:**
+- `calculate.WarehouseCosts` - Determine storage expenses
+- `calculate.TransportationCosts` - Compute shipping costs
+- `analyze.LastMileDeliveryCosts` - Evaluate final delivery expenses
+- `assess.ChannelPartnerCosts` - Include distributor/retailer costs
+- `determine.CostPerUnitByChannel` - Calculate unit economics
+
+### 4.1.2.5 - Determine total cost to serve
+
+Combining production and distribution costs to calculate the complete cost of delivering each product to customers through each channel.
+
+```mermaid
+sequenceDiagram
+    participant Finance as Finance
+    participant Sales as Sales
+    participant Operations as Operations
+    participant Executive as Executive Team
+
+    Finance->>Finance: Combine production costs
+    Finance->>Finance: Add distribution costs
+    Finance->>Finance: Include service costs
+    Finance->>Finance: Calculate total cost
+    Finance->>Sales: Report cost to serve
+    Sales->>Executive: Present profitability
+    Executive->>Finance: Approve pricing basis
+```
+
+**Tasks:**
+- `integrate.ProductionCosts` - Consolidate manufacturing costs
+- `integrate.DistributionCosts` - Consolidate logistics costs
+- `add.CustomerServiceCosts` - Include support costs
+- `calculate.TotalCostToServe` - Sum all cost components
+- `analyze.CostToServeBySegment` - Segment customer analysis
+
+### 4.1.2.6 - Analyze resource utilization
+
+Evaluating how effectively resources are being used across production and distribution operations to identify capacity constraints and inefficiencies.
+
+```mermaid
+sequenceDiagram
+    participant Operations as Operations
+    participant Finance as Finance
+    participant Planning as Planning
+    participant Continuous as CI Team
+
+    Operations->>Finance: Provide utilization data
+    Finance->>Finance: Calculate utilization rates
+    Finance->>Planning: Report capacity status
+    Planning->>Continuous: Identify gaps
+    Continuous->>Continuous: Analyze inefficiencies
+    Continuous->>Operations: Recommend improvements
+```
+
+**Tasks:**
+- `measure.EquipmentUtilization` - Track machine usage
+- `measure.LaborUtilization` - Monitor workforce productivity
+- `analyze.WarehouseCapacity` - Evaluate storage utilization
+- `assess.TransportationEfficiency` - Review logistics performance
+- `identify.CapacityConstraints` - Find bottlenecks
+
+### 4.1.2.7 - Identify optimization opportunities
+
+Finding opportunities to reduce costs, improve efficiency, or better utilize resources in production and distribution operations.
+
+```mermaid
+sequenceDiagram
+    participant CI as Continuous Improvement
+    participant Finance as Finance
+    participant Operations as Operations
+    participant Executive as Executive Team
+
+    CI->>Finance: Review cost analysis
+    CI->>Operations: Assess processes
+    CI->>CI: Identify improvements
+    CI->>CI: Quantify benefits
+    CI->>Executive: Present business case
+    Executive->>CI: Approve initiatives
+    CI->>Operations: Implement changes
+```
+
+**Tasks:**
+- `identify.CostReductionOpportunities` - Find savings potential
+- `analyze.ProcessImprovements` - Evaluate efficiency gains
+- `assess.ChannelOptimization` - Review distribution options
+- `evaluate.MakeVsBuyDecisions` - Analyze sourcing alternatives
+- `develop.OptimizationRoadmap` - Plan improvement initiatives
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define resource profiles | Cost Accounting | Controller | Engineering, Production | Operations |
+| Analyze channel requirements | Logistics | VP Supply Chain | Sales, Warehouse | Finance |
+| Calculate production costs | Cost Accounting | Controller | Production, Purchasing | Operations |
+| Calculate distribution costs | Logistics Finance | VP Supply Chain | 3PL, Transportation | Sales |
+| Determine total cost to serve | Finance | CFO | Operations, Sales | Executive Team |
+| Analyze utilization | Operations | VP Operations | Finance, Planning | Executive Team |
+| Identify optimization | CI Team | VP Operations | Finance, Operations | Executive Team |
+
+## Related Departments
+
+- [Finance/Cost Accounting](/departments/Finance/index) - Cost analysis and reporting
+- [Supply Chain](/departments/SupplyChain/index) - Logistics cost management
+- [Operations](/departments/Operations/index) - Resource utilization analysis
+- [Manufacturing](/departments/Manufacturing) - Production cost data
+- [Sales](/departments/Sales/index) - Channel strategy input
+- [Procurement](/departments/Procurement) - Material cost information
+
+## Related Occupations
+
+- [Cost Accountants](/occupations/CostAccountants) - Product and channel costing
+- [Financial Analysts](/occupations/Business/Financial/FinancialAnalysts) - Cost analysis and modeling
+- [Industrial Engineers](/occupations/Architecture/IndustrialEngineers) - Process efficiency analysis
+- [Logisticians](/occupations/Business/Logisticians) - Distribution cost analysis
+- [Operations Research Analysts](/occupations/Technology/OperationsResearchAnalysts) - Optimization modeling
+- [Supply Chain Analysts](/occupations/SupplyChainAnalysts) - End-to-end cost analysis
+
+## Industry Variations
+
+### Manufacturing
+
+Manufacturing focuses on detailed bill of materials costing, standard cost development, and variance analysis. Activity-based costing (ABC) helps allocate overhead to products accurately.
+
+**Industry-Specific Activities:**
+- Develop standard cost systems
+- Perform variance analysis (price, usage, efficiency)
+- Calculate equipment cost per hour
+- Analyze product mix profitability
+- Model make vs. buy decisions
+
+### Retail
+
+Retail resource analysis emphasizes distribution center costs, last-mile delivery economics, and omnichannel cost allocation. Store fulfillment vs. DC fulfillment cost comparison is critical.
+
+**Industry-Specific Activities:**
+- Compare store vs. DC fulfillment costs
+- Analyze last-mile delivery options
+- Calculate inventory carrying costs by location
+- Evaluate vendor direct-ship economics
+- Assess returns processing costs
+
+### Consumer Products
+
+Consumer products companies analyze trade spend, promotional costs, and complex distribution networks. Customer profitability analysis is essential for trade partner negotiations.
+
+**Industry-Specific Activities:**
+- Calculate cost to serve by customer
+- Analyze trade promotion effectiveness
+- Evaluate private label vs. branded margins
+- Assess new product launch costs
+- Model promotional lift vs. cost
+
+### Automotive
+
+Automotive resource analysis includes complex tier-supplier costs, tooling amortization, and program lifecycle costing. Platform and variant costing supports product planning.
+
+**Industry-Specific Activities:**
+- Develop platform-based costing
+- Analyze variant cost complexity
+- Calculate tooling cost allocation
+- Model supplier logistics costs
+- Evaluate localization economics
+
+### Life Sciences
+
+Life sciences requires activity-based costing for regulatory compliance, batch costing, and quality cost tracking. Cold chain logistics adds significant distribution complexity.
+
+**Industry-Specific Activities:**
+- Calculate batch production costs
+- Analyze quality and compliance costs
+- Model cold chain distribution costs
+- Evaluate serialization costs
+- Assess clinical trial supply costs
+
+### E-Commerce / Direct-to-Consumer
+
+E-commerce focuses on fulfillment center costs, shipping rate optimization, and customer acquisition costs. Unit economics analysis drives channel strategy.
+
+**Industry-Specific Activities:**
+- Calculate cost per order by channel
+- Analyze shipping cost vs. revenue
+- Evaluate fulfillment network options
+- Model subscription economics
+- Assess customer lifetime value vs. acquisition cost
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| Define product resource profiles | 4.1.2.1 | Creating detailed resource requirements |
+| Analyze channel requirements | 4.1.2.2 | Evaluating distribution channel resources |
+| Calculate production costs | 4.1.2.3 | Computing manufacturing costs |
+| Calculate distribution costs | 4.1.2.4 | Determining logistics costs |
+| Determine total cost to serve | 4.1.2.5 | Calculating complete delivery costs |
+
+## Related Processes
+
+```mermaid
+graph LR
+    DPS["2.0 Design and<br/>Develop Products"] --> URR["4.1.2 Understand<br/>Resource Requirements"]
+    MAS["3.0 Market and<br/>Sell Products"] --> URR
+
+    URR --> Prep["4.1 Prepare for<br/>Production Delivery"]
+    URR --> Pricing["3.3 Develop<br/>Pricing Strategy"]
+    URR --> Finance["9.0 Manage<br/>Financial Resources"]
+    URR --> Strategy["1.0 Develop Vision<br/>and Strategy"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Cost Accuracy | Variance between standard and actual costs | <5% |
+| Cost to Serve | Total delivery cost per unit/order | Benchmark |
+| Gross Margin | Revenue minus cost of goods sold | >30% |
+| Distribution Cost % | Distribution cost as % of sales | <8% |
+| Labor Productivity | Output per labor hour | Improving |
+| Equipment Utilization | Productive time vs. available time | 80-85% |
+| Overhead Absorption | Actual vs. budgeted overhead | Within 5% |
+| Cost Reduction | Year-over-year cost improvement | 3-5% |
+
+---
+
+*Source: APQC PCF 20009 (4.1.2) - Cross-Industry*

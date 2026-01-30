@@ -1,0 +1,105 @@
+---
+id: Closure
+name: "Closure"
+code: "332119"
+type: Industry
+level: National Industry
+status: complete
+---
+
+# Closure
+
+> This U.
+
+## Overview
+
+Closure represents a specialized segment within the Manufacturing sector (NAICS 31-33).
+
+This U.S. industry comprises establishments primarily engaged in (1) stamping metal crowns and closures, such as bottle caps and home canning lids and rings, and/or (2) manufacturing other unfinished metal stampings and spinning unfinished metal products (except automotive, cans, and coins). Establishments making metal stampings and metal spun products and further manufacturing (e.g., machining, assembling) a specific product are classified in the industry of the finished product. Metal stamping and metal spun products establishments may perform surface finishing operations, such as cleaning and deburring, on the products they manufacture. Cross-References. Establishments primarily engaged in--
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S3133["31-33: Manufacturing"]
+    S3133 --> N332["332: Fabricated Metal Product Manufacturing"]
+    N332 --> N3321["3321: Forging"]
+    N3321 --> N332119["332119: Closure"]
+    style N332119 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 332119 |
+| Level | National Industry |
+| Child Industries | 0 |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Raw Material Prep"]
+        O2["Production"]
+        O3["Assembly"]
+        O4["Quality Control"]
+        O5["Packaging"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Inventory Mgmt"]
+        S3["Safety Systems"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Raw Materials"]
+        I2["Components"]
+        I3["Equipment"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Finished Products"]
+        O2["Components"]
+        O3["Assemblies"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Industrial Buyers"]
+        C2["Retailers"]
+        C3["Distributors"]
+        C4["End Users"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 332119 - Closure*

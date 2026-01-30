@@ -1,0 +1,121 @@
+---
+id: Nursing
+name: "Nursing"
+code: "623"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Nursing
+
+> Industries in the Nursing and Residential Care Facilities subsector provide residential care combined with either nursing, supervisory, or other types of care as required by the residents.
+
+## Overview
+
+Nursing represents an important category within the Health Care and Social Assistance sector (NAICS 62).
+
+Industries in the Nursing and Residential Care Facilities subsector provide residential care combined with either nursing, supervisory, or other types of care as required by the residents. In this subsector, the facilities are a significant part of the production process, and the care provided is a mix of health and social services with the health services being largely some level of nursing services.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S62["62: Health Care and Social Assistance"]
+    S62 --> N623["623: Nursing"]
+    style N623 fill:#f96,stroke:#333,stroke-width:2px
+    N623 --> N6231["6231: Nursing Care Facilities (Skilled..."]
+    N623 --> N6232["6232: Residential Intellectual and Dev..."]
+    N623 --> N6232["6232: Mental Health"]
+    N623 --> N6232["6232: Substance Abuse Facilities"]
+    N623 --> N6233["6233: Continuing Care Retirement Commu..."]
+    N623 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 623 |
+| Level | Subsector |
+| Parent | [Health Care](../) |
+| Child Industries | 6 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Nursing Care Facilities (Skilled Nursing Facilities)](./NursingCareFacilitiesSkilledNursingFacilities/) | 6231 | Nursing Care Facilities (Skilled Nursing Facilities) |
+| [Residential Intellectual and Developmental Disability](./ResidentialIntellectualAndDevelopmentalDisability/) | 6232 | This industry group comprises establishments primarily engaged in providing resi |
+| [Mental Health](./MentalHealth/) | 6232 | This industry group comprises establishments primarily engaged in providing resi |
+| [Substance Abuse Facilities](./SubstanceAbuseFacilities/) | 6232 | This industry group comprises establishments primarily engaged in providing resi |
+| [Continuing Care Retirement Communities](./ContinuingCareRetirementCommunities/) | 6233 | Continuing Care Retirement Communities |
+| [Assisted Living Facilities for the Elderly](./AssistedLivingFacilitiesForTheElderly/) | 6233 | Assisted Living Facilities for the Elderly |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Patient/Client Intake"]
+        O2["Assessment"]
+        O3["Treatment/Service"]
+        O4["Follow-up"]
+        O5["Discharge"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Compliance"]
+        S2["Records Mgmt"]
+        S3["Billing"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Medical Supplies"]
+        I2["Equipment"]
+        I3["Professionals"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Patient Care"]
+        O2["Diagnostics"]
+        O3["Treatment"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Patients"]
+        C2["Insurers"]
+        C3["Government"]
+        C4["Employers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 623 - Nursing*

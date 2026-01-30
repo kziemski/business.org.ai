@@ -1,0 +1,361 @@
+---
+id: ExpensePolicies
+name: "Define capital expense policies"
+code: "10232"
+hierarchyId: "4.1.1.3"
+type: Process
+status: complete
+---
+
+# Define capital expense policies
+
+> Designing rules and regulations pertaining to the expenditure incurred in acquiring or upgrading the existing stock of manufacturing capital.
+
+## Overview
+
+Define capital expense policies is a process within the Develop production and materials strategies process group (4.1.1). This process establishes the governance framework for capital expenditures used to acquire, upgrade, or expand manufacturing assets and infrastructure.
+
+Capital expense (CapEx) policies provide the rules, thresholds, approval workflows, and accounting treatments for investments in long-term assets. These policies ensure consistent decision-making, proper financial controls, regulatory compliance, and alignment between capital investments and strategic objectives.
+
+Effective capital expense policies balance the need for operational flexibility with appropriate financial controls, enabling organizations to make timely investments while maintaining accountability and fiscal discipline.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"] --> G41["4.1 Plan for and align supply chain resources"]
+
+    G41 --> P411["4.1.1 Develop production and materials strategies"]
+    G41 --> P412["4.1.2 Manage demand for products"]
+    G41 --> P413["4.1.3 Create materials plan"]
+
+    P411 --> A4111["4.1.1.1 Define manufacturing goals"]
+    P411 --> A4112["4.1.1.2 Define labor and materials policies"]
+    P411 --> A4113["4.1.1.3 Define capital expense policies"]
+    P411 --> A4114["4.1.1.4 Define outsourcing policies"]
+    P411 --> A4115["4.1.1.5 Define capacities"]
+
+    A4113 --> T41131["Define capitalization thresholds"]
+    A4113 --> T41132["Establish approval authorities"]
+    A4113 --> T41133["Create depreciation guidelines"]
+    A4113 --> T41134["Define asset categories"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10232 |
+| Hierarchy ID | 4.1.1.3 |
+| Level | Activity |
+| Category | [Deliver Physical Products](/processes/04-Delivery) |
+| Process Group | 4.1 - Plan for and align supply chain resources |
+| Parent Process | 4.1.1 - Develop production and materials strategies |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Corporate Strategy"]
+        I2["Financial Guidelines"]
+        I3["Regulatory Requirements"]
+        I4["Industry Standards"]
+        I5["Historical CapEx Data"]
+        I6["Tax Considerations"]
+    end
+
+    subgraph Process["Define Capital Expense Policies"]
+        P1["Assess Current State"]
+        P2["Define Capitalization Thresholds"]
+        P3["Establish Asset Categories"]
+        P4["Create Approval Hierarchies"]
+        P5["Define Depreciation Methods"]
+        P6["Establish Documentation Requirements"]
+        P7["Create Compliance Framework"]
+        P8["Communicate Policies"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+        P7 --> P8
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["CapEx Policy Document"]
+        O2["Approval Authority Matrix"]
+        O3["Asset Classification Guide"]
+        O4["Depreciation Schedule"]
+        O5["Documentation Templates"]
+        O6["Compliance Checklists"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+define.CapitalExpensePolicies
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action of establishing and documenting |
+| Object | `CapitalExpensePolicies` | Rules governing capital expenditure decisions |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+## Activities
+
+### 4.1.1.3.1 - Define capitalization thresholds
+
+Establishing monetary thresholds that determine when expenditures are capitalized as assets versus expensed immediately, ensuring consistent accounting treatment.
+
+```mermaid
+sequenceDiagram
+    participant Finance as Finance
+    participant Accounting as Accounting
+    participant Tax as Tax
+    participant Legal as Legal
+    participant Exec as Executive Team
+
+    Finance->>Accounting: Review current thresholds
+    Accounting->>Tax: Assess tax implications
+    Tax->>Accounting: Provide guidance
+    Accounting->>Legal: Review regulatory requirements
+    Legal->>Accounting: Confirm compliance
+    Accounting->>Finance: Propose thresholds
+    Finance->>Exec: Present recommendations
+    Exec->>Finance: Approve thresholds
+    Finance->>Accounting: Document and communicate
+```
+
+**Tasks:**
+- `analyze.HistoricalExpenditures` - Review past CapEx patterns and trends
+- `define.MonetaryThresholds` - Set minimum amounts for capitalization
+- `establish.UsefulLifeCriteria` - Define minimum useful life requirements
+- `document.AccountingTreatment` - Specify GAAP/IFRS treatment methods
+
+### 4.1.1.3.2 - Establish approval authorities
+
+Creating the hierarchy of approval levels and authorities for capital expenditure requests based on investment size and strategic importance.
+
+```mermaid
+sequenceDiagram
+    participant Policy as Policy Team
+    participant Finance as CFO
+    participant Ops as Operations
+    participant Exec as CEO
+    participant Board as Board
+
+    Policy->>Finance: Draft approval hierarchy
+    Finance->>Ops: Review operational needs
+    Ops->>Finance: Provide input
+    Finance->>Exec: Review authority levels
+    Exec->>Board: Present for board-level items
+    Board->>Exec: Approve framework
+    Exec->>Finance: Confirm authorities
+    Finance->>Policy: Finalize and document
+    Policy->>Ops: Communicate to organization
+```
+
+**Tasks:**
+- `define.ApprovalLevels` - Establish spending authority tiers
+- `create.AuthorityMatrix` - Map roles to approval limits
+- `design.EscalationProcess` - Define exception handling procedures
+- `establish.BoardApprovals` - Set thresholds requiring board approval
+
+### 4.1.1.3.3 - Create depreciation guidelines
+
+Defining depreciation methods, useful lives, and salvage value assumptions for different asset categories.
+
+```mermaid
+sequenceDiagram
+    participant Accounting as Accounting
+    participant Tax as Tax Department
+    participant Assets as Asset Management
+    participant External as External Auditors
+
+    Accounting->>Tax: Review tax depreciation rules
+    Tax->>Accounting: Provide tax guidance
+    Accounting->>Assets: Assess asset lifecycles
+    Assets->>Accounting: Provide operational input
+    Accounting->>Accounting: Define depreciation methods
+    Accounting->>External: Review for compliance
+    External->>Accounting: Validate approach
+    Accounting->>Tax: Align book and tax treatment
+    Accounting->>Assets: Communicate guidelines
+```
+
+**Tasks:**
+- `define.DepreciationMethods` - Specify straight-line, declining balance, etc.
+- `establish.UsefulLives` - Set standard lives by asset category
+- `determine.SalvageValues` - Define residual value assumptions
+- `align.BookAndTaxTreatment` - Reconcile financial and tax depreciation
+
+### 4.1.1.3.4 - Define asset categories
+
+Creating a classification system for capital assets that enables consistent treatment, tracking, and reporting.
+
+```mermaid
+sequenceDiagram
+    participant Finance as Finance
+    participant Accounting as Accounting
+    participant IT as IT
+    participant Facilities as Facilities
+    participant Ops as Operations
+
+    Finance->>Accounting: Initiate classification review
+    Accounting->>IT: Define IT asset categories
+    IT->>Accounting: Provide IT classifications
+    Accounting->>Facilities: Define facility categories
+    Facilities->>Accounting: Provide building classifications
+    Accounting->>Ops: Define production asset categories
+    Ops->>Accounting: Provide equipment classifications
+    Accounting->>Finance: Present category framework
+    Finance->>Accounting: Approve and document
+```
+
+**Tasks:**
+- `create.AssetClassification` - Define major asset categories
+- `establish.SubCategories` - Create detailed classification hierarchy
+- `define.CategoryAttributes` - Specify characteristics for each category
+- `align.WithAccountingStandards` - Ensure compliance with GAAP/IFRS
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define capitalization thresholds | Controller | CFO | Tax, Audit | Operations |
+| Establish approval authorities | Finance | CFO | Legal, Operations | All managers |
+| Create depreciation guidelines | Accounting | Controller | Tax, Auditors | Asset managers |
+| Define asset categories | Accounting | Controller | IT, Facilities, Ops | Finance staff |
+| Document policies | Finance | CFO | Legal | All employees |
+| Communicate policies | Finance | CFO | HR, Communications | Organization |
+| Monitor compliance | Internal Audit | CFO | Finance | Executive team |
+| Update policies | Finance | CFO | All stakeholders | Organization |
+
+## Related Departments
+
+- [Finance](/departments/Finance/index) - Primary ownership of capital expense policies
+- [Accounting](/departments/Accounting) - Policy implementation and compliance
+- [Operations](/departments/Operations/index) - Capital investment execution
+- [Facilities](/departments/Facilities) - Building and infrastructure investments
+- [Information Technology](/departments/IT) - Technology capital investments
+
+## Related Occupations
+
+- [Financial Managers](/occupations/Management/FinancialManagers) - Policy development and oversight
+- [Accountants and Auditors](/occupations/Accountants) - Policy implementation
+- [Budget Analysts](/occupations/Business/Financial/BudgetAnalysts) - Capital budget management
+- [Chief Financial Officers](/occupations/CFO) - Policy approval and governance
+- [Internal Auditors](/occupations/InternalAuditors) - Policy compliance monitoring
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Aerospace capital policies must address long-lived, high-value assets and government contract cost allocation requirements. Progress billing and FAR compliance add complexity.
+
+**Industry-Specific Activities:**
+- Define government allowable vs. unallowable capital costs
+- Establish pooling methods for indirect capital costs
+- Create progress billing policies for capital projects
+- Align with FAR/DFAR requirements
+
+### Banking
+
+Banking capital expense policies focus on IT infrastructure and branch facilities. Regulatory capital requirements influence investment decisions.
+
+**Industry-Specific Activities:**
+- Define IT infrastructure capitalization policies
+- Establish branch renovation thresholds
+- Create regulatory capital impact assessments
+- Align with OCC/Fed guidance on premises
+
+### Healthcare Provider
+
+Healthcare capital policies address medical equipment, facilities, and technology investments. Certificate of Need requirements and reimbursement considerations are critical.
+
+**Industry-Specific Activities:**
+- Define medical equipment capitalization rules
+- Establish Certificate of Need thresholds
+- Create reimbursement impact analysis requirements
+- Align with CMS capital cost reporting
+
+### Manufacturing
+
+Manufacturing capital policies emphasize production equipment, automation investments, and facility expansions. Capacity planning alignment is essential.
+
+**Industry-Specific Activities:**
+- Define production equipment categories
+- Establish automation investment thresholds
+- Create capacity expansion approval processes
+- Align with lean manufacturing principles
+
+### Retail
+
+Retail capital policies address store buildouts, fixtures, and technology investments. Rapid store expansion requires streamlined approval processes.
+
+**Industry-Specific Activities:**
+- Define store buildout capitalization rules
+- Establish fixture and equipment thresholds
+- Create rapid approval processes for expansions
+- Align with lease accounting requirements
+
+### Utilities
+
+Utilities capital policies govern long-lived infrastructure investments subject to rate recovery. Regulatory approval and prudency review requirements are critical.
+
+**Industry-Specific Activities:**
+- Define rate base eligible investments
+- Establish regulatory approval thresholds
+- Create prudency documentation requirements
+- Align with utility commission guidelines
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| Define capitalization thresholds | 4.1.1.3.1 | Set monetary limits for asset capitalization |
+| Establish approval authorities | 4.1.1.3.2 | Create spending approval hierarchies |
+| Create depreciation guidelines | 4.1.1.3.3 | Define asset depreciation methods |
+| Define asset categories | 4.1.1.3.4 | Classify capital asset types |
+| Document and communicate policies | 4.1.1.3.5 | Publish and distribute policies |
+| Monitor policy compliance | 4.1.1.3.6 | Audit adherence to policies |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Strategy["1.0 Develop Vision and Strategy"] --> CapEx["4.1.1.3 Define Capital Expense Policies"]
+
+    CapEx --> Planning["9.6.4 Capital Planning"]
+    CapEx --> Budgeting["9.1.1 Budgeting"]
+    CapEx --> Assets["10.0 Manage Assets"]
+    CapEx --> Production["4.1.1 Production Strategies"]
+
+    Finance["9.0 Financial Resources"] --> CapEx
+    Risk["11.0 Risk Management"] --> CapEx
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Policy Compliance Rate | CapEx following policy guidelines | >98% |
+| Approval Cycle Time | Days to approve capital requests | <10 days |
+| Budget Variance | Actual vs budgeted capital spend | +/- 5% |
+| Capitalization Accuracy | Correct asset capitalization rate | >99% |
+| Depreciation Accuracy | Correct depreciation calculations | 100% |
+| Policy Update Frequency | Annual policy review completion | 100% |
+| Audit Findings | Material CapEx policy exceptions | 0 |
+| ROI Achievement | Capital projects meeting ROI targets | >85% |
+
+---
+
+*Source: APQC PCF 10232 (4.1.1.3) - Cross-Industry*

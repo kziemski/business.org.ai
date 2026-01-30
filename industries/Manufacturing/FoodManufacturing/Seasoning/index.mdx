@@ -1,0 +1,119 @@
+---
+id: Seasoning
+name: "Seasoning"
+code: "31194"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Seasoning
+
+> This industry comprises establishments primarily engaged in one or more of the following: (1) manufacturing dressings and sauces, such as mayonnaise, salad dressing, vinegar, mustard, horseradish, soy sauce, tartar sauce, Worcestershire sauce, and other prepared sauces (except tomato-based and gravies); (2) manufacturing spices, table salt, seasoning, and flavoring extracts (except coffee and meat), and natural food colorings; and (3) manufacturing dry mix food preparations, such as salad dressing mixes, gravy and sauce mixes, frosting mixes, and other dry mix preparations.
+
+## Overview
+
+Seasoning represents an important category within the Manufacturing sector (NAICS 31-33).
+
+This industry comprises establishments primarily engaged in one or more of the following: (1) manufacturing dressings and sauces, such as mayonnaise, salad dressing, vinegar, mustard, horseradish, soy sauce, tartar sauce, Worcestershire sauce, and other prepared sauces (except tomato-based and gravies); (2) manufacturing spices, table salt, seasoning, and flavoring extracts (except coffee and meat), and natural food colorings; and (3) manufacturing dry mix food preparations, such as salad dressing mixes, gravy and sauce mixes, frosting mixes, and other dry mix preparations. Cross-References. Establishments primarily engaged in--
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S3133["31-33: Manufacturing"]
+    S3133 --> N311["311: Food Manufacturing"]
+    N311 --> N31194["31194: Seasoning"]
+    style N31194 fill:#f96,stroke:#333,stroke-width:2px
+    N31194 --> N311941["311941: Mayonnaise"]
+    N31194 --> N311941["311941: Dressing"]
+    N31194 --> N311941["311941: Prepared Sauce Manufacturing"]
+    N31194 --> N311942["311942: Spice"]
+    N31194 --> N311942["311942: Extract Manufacturing"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 31194 |
+| Level | Industry |
+| Child Industries | 5 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Mayonnaise](./Mayonnaise.mdx) | 311941 | This U |
+| [Dressing](./Dressing.mdx) | 311941 | This U |
+| [Prepared Sauce Manufacturing](./PreparedSauceManufacturing.mdx) | 311941 | This U |
+| [Spice](./Spice.mdx) | 311942 | This U |
+| [Extract Manufacturing](./ExtractManufacturing.mdx) | 311942 | This U |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Raw Material Prep"]
+        O2["Production"]
+        O3["Assembly"]
+        O4["Quality Control"]
+        O5["Packaging"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Inventory Mgmt"]
+        S3["Safety Systems"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Raw Materials"]
+        I2["Components"]
+        I3["Equipment"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Finished Products"]
+        O2["Components"]
+        O3["Assemblies"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Industrial Buyers"]
+        C2["Retailers"]
+        C3["Distributors"]
+        C4["End Users"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 31194 - Seasoning*

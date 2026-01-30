@@ -1,0 +1,346 @@
+---
+id: ComplianceTriage
+name: "Triage SLA compliance issues"
+code: "20650"
+hierarchyId: "11.4.1.2"
+type: Process
+status: complete
+---
+
+# Triage SLA compliance issues
+
+> Prioritizing SLA compliance issues and plan for remediation.
+
+## Overview
+
+Triage SLA compliance issues (APQC 11.4.1.2) is a critical activity that ensures organizations effectively prioritize and address service level agreement violations and near-misses. This process involves systematically evaluating compliance issues based on severity, impact, and urgency to allocate remediation resources appropriately and prevent recurring failures.
+
+Effective compliance triage enables organizations to focus attention on the most critical service delivery gaps, minimize customer impact, avoid escalation of minor issues, and optimize the use of remediation resources. The process requires clear prioritization criteria, established escalation protocols, and cross-functional coordination to drive timely resolution.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk,<br/>Compliance, Remediation,<br/>and Resiliency"] --> G114["11.4 Manage business resiliency"]
+    G114 --> P1141["11.4.1 Develop business<br/>resilience strategy"]
+    P1141 --> A11411["11.4.1.1 Assess SLA compliance"]
+    P1141 --> A11412["11.4.1.2 Triage SLA<br/>compliance issues"]
+
+    style A11412 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20650 |
+| Hierarchy ID | 11.4.1.2 |
+| Level | Activity |
+| Category | [Manage Enterprise Risk, Compliance, Remediation, and Resiliency](/processes/11-Risk) |
+| Parent Process | [Manage business resiliency](./index.mdx) |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["SLA Compliance Reports"]
+        I2["Incident Records"]
+        I3["Customer Complaints"]
+        I4["Service Performance Data"]
+        I5["Contract Penalties"]
+        I6["Historical Issue Data"]
+    end
+
+    subgraph Process["Triage SLA Compliance Issues"]
+        P1["Identify Compliance<br/>Issues"]
+        P2["Assess Severity<br/>and Impact"]
+        P3["Prioritize<br/>Issues"]
+        P4["Assign<br/>Ownership"]
+        P5["Plan<br/>Remediation"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Prioritized Issue List"]
+        O2["Remediation Plans"]
+        O3["Resource Assignments"]
+        O4["Escalation Actions"]
+        O5["Timeline Commitments"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+triage.SlaComplianceIssues
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `triage` | Primary action of prioritizing and categorizing |
+| Object | `SlaComplianceIssues` | Service level agreement violations and gaps |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+## Activities
+
+### Identify Compliance Issues
+
+Systematically collecting and cataloging all SLA compliance violations, near-misses, and areas of concern from various sources.
+
+```mermaid
+sequenceDiagram
+    participant Reports as Compliance Reports
+    participant Triage as Triage Team
+    participant Service as Service Delivery
+    participant Customer as Customer Success
+
+    Reports->>Triage: Flag compliance gaps
+    Service->>Triage: Report service issues
+    Customer->>Triage: Escalate complaints
+    Triage->>Triage: Consolidate issues
+    Triage->>Triage: Remove duplicates
+    Triage->>Triage: Create issue registry
+```
+
+**Tasks:**
+- `collect.ComplianceGaps` - Gather SLA violations from reports
+- `capture.ServiceIncidents` - Document service delivery issues
+- `record.CustomerComplaints` - Log customer-reported problems
+- `consolidate.IssueRegistry` - Create unified issue list
+
+### Assess Severity and Impact
+
+Evaluating each compliance issue against defined criteria to determine its severity level and business impact.
+
+```mermaid
+sequenceDiagram
+    participant Triage as Triage Team
+    participant Business as Business Impact
+    participant Finance as Financial Analysis
+    participant Customer as Customer Impact
+
+    Triage->>Business: Assess operational impact
+    Business->>Triage: Provide impact assessment
+    Triage->>Finance: Evaluate financial exposure
+    Finance->>Triage: Calculate penalty risk
+    Triage->>Customer: Determine customer impact
+    Customer->>Triage: Quantify satisfaction risk
+    Triage->>Triage: Assign severity levels
+```
+
+**Tasks:**
+- `evaluate.BusinessImpact` - Assess operational consequences
+- `calculate.FinancialExposure` - Determine penalty and cost implications
+- `assess.CustomerImpact` - Evaluate customer satisfaction effects
+- `determine.ReputationalRisk` - Consider brand and relationship impact
+
+### Prioritize Issues
+
+Ranking compliance issues based on severity, urgency, and strategic importance to focus remediation efforts.
+
+```mermaid
+sequenceDiagram
+    participant Triage as Triage Team
+    participant Criteria as Priority Criteria
+    participant Stakeholders as Key Stakeholders
+    participant Management as Management
+
+    Triage->>Criteria: Apply priority matrix
+    Criteria->>Triage: Generate initial ranking
+    Triage->>Stakeholders: Gather input
+    Stakeholders->>Triage: Provide context
+    Triage->>Management: Present priorities
+    Management->>Triage: Approve ranking
+    Triage->>Triage: Finalize priority list
+```
+
+**Tasks:**
+- `apply.PriorityMatrix` - Score issues against criteria
+- `consider.StrategicContext` - Factor in relationship importance
+- `balance.ResourceConstraints` - Account for capacity limitations
+- `finalize.PriorityRanking` - Establish remediation order
+
+### Assign Ownership
+
+Designating responsible parties for each prioritized issue with clear accountability for resolution.
+
+```mermaid
+sequenceDiagram
+    participant Triage as Triage Lead
+    participant Operations as Operations
+    participant IT as IT Teams
+    participant Service as Service Management
+
+    Triage->>Operations: Assign operational issues
+    Operations->>Triage: Accept ownership
+    Triage->>IT: Assign technical issues
+    IT->>Triage: Accept ownership
+    Triage->>Service: Assign service issues
+    Service->>Triage: Accept ownership
+    Triage->>Triage: Document assignments
+```
+
+**Tasks:**
+- `identify.AppropriateOwners` - Match issues to capable teams
+- `confirm.OwnershipAcceptance` - Ensure accountability acceptance
+- `establish.EscalationPaths` - Define escalation contacts
+- `document.Assignments` - Record ownership decisions
+
+### Plan Remediation
+
+Developing specific remediation plans with timelines, resources, and success criteria for each prioritized issue.
+
+```mermaid
+sequenceDiagram
+    participant Owner as Issue Owner
+    participant Triage as Triage Team
+    participant Resources as Resource Planning
+    participant Customer as Customer Management
+
+    Owner->>Owner: Draft remediation plan
+    Owner->>Resources: Request resources
+    Resources->>Owner: Confirm availability
+    Owner->>Triage: Submit plan
+    Triage->>Triage: Review completeness
+    Triage->>Customer: Communicate timeline
+    Customer->>Triage: Acknowledge plan
+```
+
+**Tasks:**
+- `develop.ActionPlans` - Create step-by-step remediation plans
+- `estimate.ResourceNeeds` - Determine required resources
+- `establish.Timelines` - Set realistic completion dates
+- `define.SuccessCriteria` - Specify resolution standards
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Identify compliance issues | Service Delivery | Quality Manager | Customer Success | Management |
+| Assess severity and impact | Triage Team | Service Director | Finance, Legal | Executive Team |
+| Prioritize issues | Triage Lead | CRO/CCO | Business Units | All Stakeholders |
+| Assign ownership | Triage Lead | Service Director | Operations, IT | Issue Owners |
+| Plan remediation | Issue Owners | Service Director | Resources, Planning | Customer Management |
+
+## Related Departments
+
+- [Service Delivery](/departments/ServiceDelivery) - Primary issue identification and ownership
+- [IT Operations](/departments/ITOperations) - Technical issue remediation
+- [Quality Management](/departments/Quality) - Compliance assessment coordination
+- [Customer Success](/departments/CustomerSuccess) - Customer impact management
+- [Resource Planning](/departments/Planning) - Remediation resource allocation
+
+## Related Occupations
+
+- [Service Delivery Managers](/occupations/ServiceManagers) - Issue triage leadership
+- [Quality Analysts](/occupations/QAAnalysts) - Compliance issue identification
+- [Operations Managers](/occupations/Management/OperationsManagers) - Remediation oversight
+- [Customer Success Managers](/occupations/CustomerSuccessManagers) - Customer communication
+- [Project Managers](/occupations/ProjectManagers) - Remediation planning
+
+## Industry Variations
+
+### Aerospace and Defense
+
+SLA triage in aerospace focuses on mission-critical systems, aircraft availability, and logistics support. Defense contract SLAs often have performance-based incentives/penalties requiring careful prioritization of availability and response time issues.
+
+**Industry-Specific Activities:**
+- Triage aircraft availability issues
+- Prioritize logistics response gaps
+- Address maintenance turnaround delays
+- Manage mission-capable rate shortfalls
+
+### Banking
+
+Financial services triage emphasizes transaction processing, system availability during market hours, and regulatory reporting timeliness. Payment processing SLAs and trading system availability often receive highest priority.
+
+**Industry-Specific Activities:**
+- Prioritize payment processing delays
+- Triage trading system availability gaps
+- Address regulatory reporting issues
+- Manage customer service response times
+
+### Healthcare Provider
+
+Healthcare SLA triage prioritizes patient-impacting issues including clinical system availability, diagnostic result turnaround, and emergency response times. HIPAA compliance issues receive elevated priority.
+
+**Industry-Specific Activities:**
+- Triage clinical system outages
+- Prioritize diagnostic result delays
+- Address emergency response gaps
+- Manage patient portal issues
+
+### Retail
+
+Retail compliance triage focuses on e-commerce availability, order fulfillment times, and point-of-sale performance, especially during peak shopping periods when SLA breaches have amplified business impact.
+
+**Industry-Specific Activities:**
+- Prioritize e-commerce availability issues
+- Triage order fulfillment delays
+- Address inventory accuracy gaps
+- Manage checkout performance issues
+
+### Telecommunications
+
+Telecom SLA triage addresses network availability, call quality, and service provisioning times. Network outages and service degradation issues affecting multiple customers receive highest priority.
+
+**Industry-Specific Activities:**
+- Triage network availability issues
+- Prioritize voice quality problems
+- Address provisioning delays
+- Manage bandwidth allocation gaps
+
+### Utilities
+
+Utility companies triage grid reliability, outage restoration, and customer service response issues. Compliance issues affecting critical infrastructure or regulatory metrics receive elevated attention.
+
+**Industry-Specific Activities:**
+- Prioritize outage restoration delays
+- Triage grid reliability issues
+- Address customer service gaps
+- Manage meter reading accuracy
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| Identify compliance issues | - | Collect and catalog SLA violations |
+| Assess severity and impact | - | Evaluate business and customer impact |
+| Prioritize issues | - | Rank issues for remediation focus |
+| Assign ownership | - | Designate responsible parties |
+| Plan remediation | - | Develop resolution plans |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Assess["11.4.1.1 Assess<br/>SLA Compliance"] --> TSCI["11.4.1.2 Triage SLA<br/>Compliance Issues"]
+    Incidents["Incident<br/>Management"] --> TSCI
+
+    TSCI --> Remediate["Execute<br/>Remediation"]
+    TSCI --> Report["Report to<br/>Stakeholders"]
+    TSCI --> Improve["Service<br/>Improvement"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Triage Cycle Time | Time from issue identification to prioritization | <24 hours |
+| Ownership Assignment Rate | Issues assigned within SLA | 100% |
+| Remediation Plan Coverage | Prioritized issues with plans | 100% |
+| Priority Accuracy | Issues correctly prioritized | >95% |
+| Resolution Rate | Issues resolved within planned timeline | >90% |
+| Escalation Rate | Issues requiring executive escalation | <10% |
+
+---
+
+*Source: APQC PCF 20650 (11.4.1.2) - Cross-Industry*

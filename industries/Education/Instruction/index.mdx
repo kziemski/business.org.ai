@@ -1,0 +1,116 @@
+---
+id: Instruction
+name: "Instruction"
+code: "6116"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Instruction
+
+> This industry group comprises establishments primarily engaged in offering or providing instruction (except academic schools, colleges, and universities; business, computer, and management instruction; and technical and trade instruction).
+
+## Overview
+
+Instruction represents an important category within the Educational Services sector (NAICS 61).
+
+This industry group comprises establishments primarily engaged in offering or providing instruction (except academic schools, colleges, and universities; business, computer, and management instruction; and technical and trade instruction). Instruction may be provided in diverse settings, such as the establishment's or client's training facilities, educational institutions, the workplace, or the home, and through diverse means, such as correspondence, television, the Internet, or other electronic and distance-learning methods. The training provided by these establishments may include the use of simulators and simulation methods.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S61["61: Educational Services"]
+    S61 --> N6116["6116: Instruction"]
+    style N6116 fill:#f96,stroke:#333,stroke-width:2px
+    N6116 --> N61161["61161: Fine Arts Schools"]
+    N6116 --> N61162["61162: Sports"]
+    N6116 --> N61162["61162: Recreation Instruction"]
+    N6116 --> N61163["61163: Language Schools"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 6116 |
+| Level | Industry Group |
+| Child Industries | 4 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Fine Arts Schools](./FineArtsSchools/) | 61161 | See industry description for 611610 |
+| [Sports](./Sports/) | 61162 | See industry description for 611620 |
+| [Recreation Instruction](./RecreationInstruction/) | 61162 | See industry description for 611620 |
+| [Language Schools](./LanguageSchools/) | 61163 | See industry description for 611630 |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Curriculum Design"]
+        O2["Enrollment"]
+        O3["Instruction"]
+        O4["Assessment"]
+        O5["Certification"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Administration"]
+        S2["Student Services"]
+        S3["Facilities Mgmt"]
+        S4["Technology"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 6116 - Instruction*

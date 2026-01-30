@@ -1,0 +1,333 @@
+---
+id: SlaCompliance
+name: "Assess SLA compliance"
+code: "20649"
+hierarchyId: "11.4.1.1"
+type: Process
+status: complete
+---
+
+# Assess SLA compliance
+
+> Gather data from each service target defined in an SLA for a time segment or review period to evaluate an overall performance percentage.
+
+## Overview
+
+Assess SLA compliance (APQC 11.4.1.1) is a critical activity within the business resiliency process group that ensures organizations meet their contractual service obligations. This process involves systematically collecting performance data against agreed-upon service level targets, calculating compliance percentages, and identifying areas where service delivery meets or falls short of commitments.
+
+Effective SLA compliance assessment enables organizations to maintain customer trust, avoid contractual penalties, identify service improvement opportunities, and make data-driven decisions about resource allocation. The process requires robust data collection mechanisms, clear measurement methodologies, and timely reporting to stakeholders.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk,<br/>Compliance, Remediation,<br/>and Resiliency"] --> G114["11.4 Manage business resiliency"]
+    G114 --> P1141["11.4.1 Develop business<br/>resilience strategy"]
+    P1141 --> A11411["11.4.1.1 Assess SLA compliance"]
+    P1141 --> A11412["11.4.1.2 Triage SLA<br/>compliance issues"]
+
+    style A11411 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20649 |
+| Hierarchy ID | 11.4.1.1 |
+| Level | Activity |
+| Category | [Manage Enterprise Risk, Compliance, Remediation, and Resiliency](/processes/11-Risk) |
+| Parent Process | [Manage business resiliency](./index.mdx) |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["SLA Contracts"]
+        I2["Service Performance Data"]
+        I3["System Monitoring Logs"]
+        I4["Incident Records"]
+        I5["Customer Feedback"]
+        I6["Previous Assessment Results"]
+    end
+
+    subgraph Process["Assess SLA Compliance"]
+        P1["Identify SLA<br/>Metrics"]
+        P2["Collect Performance<br/>Data"]
+        P3["Calculate Compliance<br/>Percentages"]
+        P4["Analyze<br/>Variances"]
+        P5["Generate Compliance<br/>Reports"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Compliance Scorecards"]
+        O2["Performance Reports"]
+        O3["Variance Analysis"]
+        O4["Trend Analysis"]
+        O5["Remediation Recommendations"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+assess.SlaCompliance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `assess` | Primary action of evaluating and measuring |
+| Object | `SlaCompliance` | Service level agreement conformance |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+## Activities
+
+### Identify SLA Metrics and Targets
+
+Reviewing SLA contracts to identify all measurable service targets and their associated thresholds, measurement periods, and calculation methodologies.
+
+```mermaid
+sequenceDiagram
+    participant Contracts as Contract Management
+    participant Compliance as Compliance Team
+    participant IT as IT Operations
+    participant Service as Service Delivery
+
+    Contracts->>Compliance: Provide SLA documents
+    Compliance->>Compliance: Extract service targets
+    Compliance->>IT: Confirm measurement capabilities
+    IT->>Compliance: Validate data availability
+    Compliance->>Service: Align on metrics definitions
+    Service->>Compliance: Confirm interpretation
+    Compliance->>Compliance: Create metrics catalog
+```
+
+**Tasks:**
+- `review.SlaContracts` - Examine all active service level agreements
+- `extract.ServiceTargets` - Identify measurable performance targets
+- `document.MeasurementMethodologies` - Define calculation approaches
+- `validate.DataSources` - Confirm data availability for each metric
+
+### Collect Performance Data
+
+Gathering performance data from various systems, logs, and monitoring tools for the assessment period.
+
+```mermaid
+sequenceDiagram
+    participant Monitoring as Monitoring Systems
+    participant ITSM as Service Management
+    participant Compliance as Compliance Team
+    participant Database as Data Repository
+
+    Monitoring->>Database: Push availability metrics
+    ITSM->>Database: Export incident data
+    Compliance->>Database: Query performance data
+    Database->>Compliance: Return raw metrics
+    Compliance->>Compliance: Validate data quality
+    Compliance->>Compliance: Aggregate by SLA
+```
+
+**Tasks:**
+- `gather.AvailabilityMetrics` - Collect uptime and availability data
+- `extract.ResponseTimeData` - Compile response time measurements
+- `aggregate.IncidentMetrics` - Sum incident counts and durations
+- `validate.DataCompleteness` - Ensure all required data is captured
+
+### Calculate Compliance Percentages
+
+Computing compliance scores for each SLA metric and overall agreement performance.
+
+```mermaid
+sequenceDiagram
+    participant Data as Data Repository
+    participant Calculator as Compliance Engine
+    participant Validation as QA Team
+    participant Reports as Reporting System
+
+    Data->>Calculator: Provide raw metrics
+    Calculator->>Calculator: Apply formulas
+    Calculator->>Calculator: Calculate percentages
+    Calculator->>Validation: Submit for review
+    Validation->>Calculator: Confirm accuracy
+    Calculator->>Reports: Store results
+```
+
+**Tasks:**
+- `calculate.UptimePercentage` - Compute availability compliance
+- `calculate.ResponseCompliance` - Determine response time adherence
+- `calculate.ResolutionCompliance` - Measure resolution time performance
+- `compute.OverallScore` - Aggregate weighted compliance score
+
+### Analyze Variances and Trends
+
+Examining deviations from targets and identifying patterns across assessment periods.
+
+```mermaid
+sequenceDiagram
+    participant Current as Current Period Data
+    participant Historical as Historical Data
+    participant Analysis as Analytics Team
+    participant Insights as Insights Repository
+
+    Current->>Analysis: Provide current scores
+    Historical->>Analysis: Provide trend data
+    Analysis->>Analysis: Identify variances
+    Analysis->>Analysis: Detect patterns
+    Analysis->>Analysis: Determine root causes
+    Analysis->>Insights: Document findings
+```
+
+**Tasks:**
+- `identify.PerformanceGaps` - Highlight areas below target
+- `analyze.TrendPatterns` - Examine performance over time
+- `determine.RootCauses` - Investigate reasons for non-compliance
+- `project.FuturePerformance` - Forecast upcoming compliance risks
+
+### Generate Compliance Reports
+
+Creating comprehensive reports for stakeholders including customers, management, and operational teams.
+
+```mermaid
+sequenceDiagram
+    participant Data as Compliance Data
+    participant Reports as Reporting Team
+    participant Stakeholders as Stakeholders
+    participant Archive as Document Archive
+
+    Data->>Reports: Provide compliance data
+    Reports->>Reports: Format reports
+    Reports->>Reports: Add visualizations
+    Reports->>Stakeholders: Distribute reports
+    Stakeholders->>Reports: Request clarifications
+    Reports->>Archive: Store for audit
+```
+
+**Tasks:**
+- `create.ExecutiveSummary` - Prepare high-level compliance overview
+- `generate.DetailedReports` - Produce metric-by-metric analysis
+- `build.Dashboards` - Create visual compliance displays
+- `distribute.Reports` - Share with appropriate stakeholders
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Identify SLA metrics | Service Delivery | Contract Manager | Legal, IT | Customers |
+| Collect performance data | IT Operations | Service Manager | Monitoring Team | Compliance |
+| Calculate compliance | Compliance Team | Quality Manager | IT Operations | Management |
+| Analyze variances | Analytics Team | Service Director | Operations | Executive Team |
+| Generate reports | Reporting Team | Compliance Manager | All Departments | Customers, Board |
+
+## Related Departments
+
+- [IT Operations](/departments/ITOperations) - Primary data source for service metrics
+- [Service Delivery](/departments/ServiceDelivery) - Service execution and monitoring
+- [Compliance](/departments/Compliance) - Compliance assessment coordination
+- [Contract Management](/departments/Contracts) - SLA documentation and interpretation
+- [Quality Assurance](/departments/QA) - Validation of measurements and calculations
+
+## Related Occupations
+
+- [Compliance Officers](/occupations/Business/Operations/ComplianceOfficers) - Overall compliance assessment oversight
+- [IT Service Managers](/occupations/ITServiceManagers) - Service delivery management
+- [Quality Assurance Analysts](/occupations/QAAnalysts) - Data validation and accuracy
+- [Business Analysts](/occupations/BusinessAnalysts) - Metrics analysis and reporting
+- [Contract Administrators](/occupations/ContractAdministrators) - SLA interpretation
+
+## Industry Variations
+
+### Aerospace and Defense
+
+SLA compliance in aerospace focuses on mission-critical system availability, maintenance turnaround times, and logistics support metrics. Defense contracts often include complex availability requirements and performance-based logistics (PBL) arrangements.
+
+**Industry-Specific Activities:**
+- Assess aircraft availability metrics
+- Monitor maintenance turnaround compliance
+- Track spare parts delivery performance
+- Evaluate mission-capable rates
+
+### Banking
+
+Financial services SLA compliance emphasizes transaction processing times, system availability during trading hours, and regulatory reporting timeliness. Payment processing SLAs often have penalty clauses for missed targets.
+
+**Industry-Specific Activities:**
+- Monitor transaction processing times
+- Assess payment clearing compliance
+- Evaluate ATM/channel availability
+- Track regulatory submission timeliness
+
+### Healthcare Provider
+
+Healthcare SLA compliance focuses on system availability for clinical applications, response times for critical systems, and data backup/recovery capabilities. HIPAA requirements add compliance dimensions.
+
+**Industry-Specific Activities:**
+- Monitor EHR system availability
+- Assess clinical system response times
+- Evaluate data backup compliance
+- Track patient portal uptime
+
+### Retail
+
+Retail SLA compliance centers on e-commerce platform availability, order processing times, and point-of-sale system performance, especially during peak shopping periods.
+
+**Industry-Specific Activities:**
+- Monitor e-commerce platform uptime
+- Assess order fulfillment timelines
+- Track POS system availability
+- Evaluate inventory system performance
+
+### Utilities
+
+Utility companies assess SLA compliance for grid availability, outage response times, customer service levels, and billing system performance against regulatory requirements.
+
+**Industry-Specific Activities:**
+- Monitor grid availability metrics
+- Assess outage response compliance
+- Track meter reading accuracy
+- Evaluate call center service levels
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| Identify SLA metrics | - | Extract and catalog service level targets |
+| Collect performance data | - | Gather data from monitoring systems |
+| Calculate compliance | - | Compute compliance percentages |
+| Analyze variances | - | Examine deviations and trends |
+| Generate reports | - | Create and distribute compliance reports |
+
+## Related Processes
+
+```mermaid
+graph LR
+    SLADef["Define SLAs"] --> ASC["11.4.1.1 Assess<br/>SLA Compliance"]
+    Monitor["Service Monitoring"] --> ASC
+
+    ASC --> Triage["11.4.1.2 Triage SLA<br/>Compliance Issues"]
+    ASC --> Report["Report to<br/>Stakeholders"]
+    ASC --> Improve["Service<br/>Improvement"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Assessment Timeliness | Time to complete compliance assessment | <5 days after period end |
+| Data Accuracy | Accuracy of compliance calculations | >99% |
+| Report Distribution | On-time delivery of compliance reports | 100% |
+| Metric Coverage | Percentage of SLA metrics assessed | 100% |
+| Stakeholder Satisfaction | Satisfaction with compliance reporting | >90% |
+| Issue Detection Rate | Compliance issues identified proactively | >85% |
+
+---
+
+*Source: APQC PCF 20649 (11.4.1.1) - Cross-Industry*

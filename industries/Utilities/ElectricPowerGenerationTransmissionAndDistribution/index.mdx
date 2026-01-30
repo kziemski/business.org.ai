@@ -1,0 +1,116 @@
+---
+id: ElectricPowerGenerationTransmissionAndDistribution
+name: "Electric Power Generation, Transmission and Distribution"
+code: "2211"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Electric Power Generation, Transmission and Distribution
+
+> This industry group comprises establishments primarily engaged in generating, transmitting, and/or distributing electric power.
+
+## Overview
+
+Electric Power Generation, Transmission and Distribution represents an important category within the Utilities sector (NAICS 22).
+
+This industry group comprises establishments primarily engaged in generating, transmitting, and/or distributing electric power. Establishments in this industry group may perform one or more of the following activities: (1) operate generation facilities that produce electric energy; (2) operate transmission systems that convey the electricity from the generation facility to the distribution system; and (3) operate distribution systems that convey electric power received from the generation facility or the transmission system to the final consumer.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S22["22: Utilities"]
+    S22 --> N2211["2211: Electric Power Generation, Transmissi..."]
+    style N2211 fill:#f96,stroke:#333,stroke-width:2px
+    N2211 --> N22111["22111: Electric Power Generation"]
+    N2211 --> N22112["22112: Electric Power Transmission"]
+    N2211 --> N22112["22112: Control"]
+    N2211 --> N22112["22112: Distribution"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 2211 |
+| Level | Industry Group |
+| Child Industries | 4 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Electric Power Generation](./ElectricPowerGeneration/) | 22111 | This industry comprises establishments primarily engaged in operating electric p |
+| [Electric Power Transmission](./ElectricPowerTransmission/) | 22112 | This industry comprises establishments primarily engaged in operating electric p |
+| [Control](./Control/) | 22112 | This industry comprises establishments primarily engaged in operating electric p |
+| [Distribution](./Distribution/) | 22112 | This industry comprises establishments primarily engaged in operating electric p |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Generation/Collection"]
+        O2["Transmission"]
+        O3["Distribution"]
+        O4["Metering"]
+        O5["Customer Service"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Infrastructure Maintenance"]
+        S2["Safety Systems"]
+        S3["Regulatory Compliance"]
+        S4["IT Systems"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 2211 - Electric Power Generation, Transmission and Distribution*

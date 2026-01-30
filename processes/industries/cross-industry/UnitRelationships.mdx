@@ -1,0 +1,450 @@
+---
+id: UnitRelationships
+name: "Design the relationships between organizational units"
+code: "10053"
+hierarchyId: "1.2.5.5"
+type: Process
+status: complete
+---
+
+# Design the relationships between organizational units
+
+> Fleshing out the connections and dependencies among the various units of the organization. Delineate the relationship among business units or process frameworks within the organization, in terms of activities, synergies, and shared resources and responsibilities. Formalize relationships among business units so that any mutual coherence is clearly understood and can be attended to.
+
+## Overview
+
+Design the relationships between organizational units (APQC 1.2.5.5/10053) is a critical activity within the Create Organizational Design process. This activity focuses on defining how different parts of the organization interact, collaborate, and depend on each other. Effective unit relationship design creates clarity around accountabilities, enables efficient resource sharing, and promotes the cross-functional collaboration necessary for organizational success.
+
+Beyond hierarchical reporting relationships, this process addresses lateral connections, shared service arrangements, matrix relationships, and governance mechanisms that enable units to work together effectively. The goal is to create an organizational system where the whole is greater than the sum of its parts.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"] --> G12["1.2 Develop business strategy"]
+    G12 --> P125["1.2.5 Create organizational design"]
+    P125 --> A5["1.2.5.5 Design relationships<br/>between organizational units"]
+
+    A5 --> T1["Map existing unit relationships"]
+    A5 --> T2["Identify interdependencies"]
+    A5 --> T3["Define collaboration mechanisms"]
+    A5 --> T4["Establish shared resources"]
+    A5 --> T5["Create governance frameworks"]
+    A5 --> T6["Formalize relationship agreements"]
+
+    style A5 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10053 |
+| Hierarchy ID | 1.2.5.5 |
+| Level | Activity |
+| Category | [Develop Vision and Strategy](/processes/01-Strategy) |
+| Parent Process | [Create organizational design](./OrgDesign.mdx) |
+| Related Units | All organizational units |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Organizational Structure"]
+        I2["Process Maps"]
+        I3["Resource Inventory"]
+        I4["Strategic Objectives"]
+        I5["Current Relationships"]
+        I6["Pain Points Analysis"]
+    end
+
+    subgraph Process["Design Unit Relationships"]
+        P1["Map Existing<br/>Relationships"]
+        P2["Identify<br/>Interdependencies"]
+        P3["Define Collaboration<br/>Mechanisms"]
+        P4["Establish Shared<br/>Resources"]
+        P5["Create Governance<br/>Framework"]
+        P6["Formalize<br/>Agreements"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Relationship Maps"]
+        O2["Collaboration Protocols"]
+        O3["Shared Service Agreements"]
+        O4["Governance Charter"]
+        O5["Escalation Procedures"]
+        O6["Performance Metrics"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+design.Relationships.between.OrganizationalUnits
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Primary action of creating and defining |
+| Object | `Relationships` | The connections and dependencies |
+| Preposition | `between` | Relationship context |
+| PrepObject | `OrganizationalUnits` | The units being connected |
+
+## Activities
+
+### Map existing unit relationships
+
+Documenting the current state of interactions, dependencies, and connections among organizational units.
+
+```mermaid
+sequenceDiagram
+    participant Analysis as Analysis Team
+    participant Units as Business Units
+    participant Process as Process Owners
+    participant Data as Data Collection
+
+    Analysis->>Units: Request relationship information
+    Units->>Analysis: Describe current interactions
+    Analysis->>Process: Identify process handoffs
+    Process->>Analysis: Document process flows
+    Analysis->>Data: Compile relationship data
+    Data->>Analysis: Create relationship inventory
+    Analysis->>Analysis: Build relationship map
+```
+
+**Tasks:**
+- `document.CurrentRelationships` - Record existing unit interactions
+- `identify.ProcessHandoffs` - Map work flow between units
+- `catalog.SharedResources` - List resources used across units
+- `assess.RelationshipEffectiveness` - Evaluate current state quality
+- `visualize.RelationshipNetwork` - Create relationship diagrams
+
+### Identify interdependencies
+
+Analyzing the dependencies between organizational units to understand how they rely on each other for inputs, outputs, and support.
+
+```mermaid
+sequenceDiagram
+    participant Analysis as Analysis Team
+    participant Units as Business Units
+    participant Finance as Finance
+    participant Strategy as Strategy Team
+
+    Analysis->>Units: Identify upstream dependencies
+    Units->>Analysis: Document input requirements
+    Analysis->>Units: Identify downstream dependencies
+    Units->>Analysis: Document output recipients
+    Analysis->>Finance: Assess resource dependencies
+    Finance->>Analysis: Provide budget relationships
+    Analysis->>Strategy: Align with strategic objectives
+    Strategy->>Analysis: Confirm strategic dependencies
+```
+
+**Tasks:**
+- `analyze.InputDependencies` - Identify what each unit needs from others
+- `analyze.OutputDependencies` - Identify what each unit provides to others
+- `map.ResourceDependencies` - Document shared resource requirements
+- `assess.CriticalDependencies` - Identify high-impact relationships
+- `document.DependencyMatrix` - Create comprehensive dependency view
+
+### Define collaboration mechanisms
+
+Establishing the structures, processes, and tools that enable organizational units to work together effectively.
+
+```mermaid
+sequenceDiagram
+    participant Design as Design Team
+    participant Units as Business Units
+    participant IT as IT Team
+    participant HR as HR
+
+    Design->>Units: Identify collaboration needs
+    Units->>Design: Describe coordination requirements
+    Design->>Design: Design collaboration structures
+    Design->>IT: Define technology enablers
+    IT->>Design: Propose collaboration tools
+    Design->>HR: Define role interfaces
+    HR->>Design: Confirm role responsibilities
+    Design->>Units: Present collaboration mechanisms
+```
+
+**Tasks:**
+- `design.CoordinationStructures` - Create cross-unit coordination bodies
+- `establish.CommunicationChannels` - Define how units communicate
+- `define.DecisionRights` - Clarify joint decision-making authority
+- `create.MeetingCadences` - Establish regular touchpoints
+- `implement.CollaborationTools` - Deploy enabling technology
+
+### Establish shared resources
+
+Defining how resources, capabilities, and services are shared across organizational units to maximize efficiency and effectiveness.
+
+```mermaid
+sequenceDiagram
+    participant Design as Design Team
+    participant Finance as Finance
+    participant Shared as Shared Services
+    participant Units as Business Units
+
+    Design->>Finance: Identify shared cost centers
+    Finance->>Design: Provide resource allocation data
+    Design->>Shared: Define shared service offerings
+    Shared->>Design: Document service capabilities
+    Design->>Units: Assess shared resource needs
+    Units->>Design: Provide requirements
+    Design->>Design: Create resource sharing model
+    Design->>Finance: Define allocation methodology
+```
+
+**Tasks:**
+- `identify.SharedCapabilities` - Determine shareable resources
+- `define.ServiceOfferings` - Document shared service catalog
+- `create.AllocationModel` - Establish resource distribution rules
+- `establish.CostSharing` - Define financial arrangements
+- `document.ServiceLevels` - Create service level expectations
+
+### Create governance frameworks
+
+Establishing the decision-making structures, escalation procedures, and accountability mechanisms that govern inter-unit relationships.
+
+```mermaid
+sequenceDiagram
+    participant Design as Design Team
+    participant Exec as Executive Team
+    participant Legal as Legal
+    participant Units as Business Units
+
+    Design->>Exec: Define governance principles
+    Exec->>Design: Approve governance approach
+    Design->>Design: Create governance structures
+    Design->>Legal: Review legal implications
+    Legal->>Design: Provide compliance guidance
+    Design->>Units: Define escalation procedures
+    Units->>Design: Validate governance model
+    Design->>Exec: Present governance framework
+```
+
+**Tasks:**
+- `define.GovernancePrinciples` - Establish guiding principles
+- `create.DecisionBoards` - Design cross-unit governance bodies
+- `establish.EscalationPaths` - Define issue resolution procedures
+- `assign.Accountabilities` - Clarify ownership and responsibility
+- `document.GovernanceCharter` - Formalize governance framework
+
+### Formalize relationship agreements
+
+Creating formal documentation of inter-unit relationships, including service level agreements, operating level agreements, and collaboration charters.
+
+```mermaid
+sequenceDiagram
+    participant Design as Design Team
+    participant Units as Business Units
+    participant Legal as Legal
+    participant Exec as Executive Sponsor
+
+    Design->>Units: Draft relationship agreements
+    Units->>Design: Review and negotiate terms
+    Design->>Legal: Validate agreement structure
+    Legal->>Design: Approve agreement format
+    Design->>Units: Finalize agreements
+    Units->>Design: Sign off on agreements
+    Design->>Exec: Present formal agreements
+    Exec->>Exec: Endorse relationship framework
+```
+
+**Tasks:**
+- `draft.ServiceAgreements` - Create service level agreements
+- `develop.OperatingAgreements` - Define operating level agreements
+- `create.CollaborationCharters` - Document collaboration commitments
+- `establish.PerformanceMetrics` - Define success measures
+- `formalize.Documentation` - Execute and archive agreements
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Map existing relationships | OD Team | CHRO | All Business Units | Executive Team |
+| Identify interdependencies | Analysis Team | COO | Process Owners | Finance |
+| Define collaboration mechanisms | Design Team | COO | IT, HR | All Units |
+| Establish shared resources | Shared Services | CFO | Finance, Units | Executive Team |
+| Create governance frameworks | Strategy Team | CEO | Legal, Units | Board |
+| Formalize relationship agreements | OD Team | COO | Legal, Units | All Employees |
+
+## Relationship Types
+
+### Hierarchical Relationships
+
+```mermaid
+graph TD
+    Corp["Corporate"] --> BU1["Business Unit 1"]
+    Corp --> BU2["Business Unit 2"]
+    Corp --> BU3["Business Unit 3"]
+    BU1 --> Dept1["Department A"]
+    BU1 --> Dept2["Department B"]
+```
+
+### Lateral Relationships
+
+```mermaid
+graph LR
+    Marketing["Marketing"] <-->|"Campaign Coordination"| Sales["Sales"]
+    Sales <-->|"Order Fulfillment"| Operations["Operations"]
+    Operations <-->|"Inventory Planning"| Supply["Supply Chain"]
+    Supply <-->|"Supplier Management"| Finance["Finance"]
+```
+
+### Matrix Relationships
+
+```mermaid
+graph TD
+    subgraph Functional["Functional Leadership"]
+        Eng["Engineering"]
+        Mfg["Manufacturing"]
+        QA["Quality"]
+    end
+
+    subgraph Programs["Program Management"]
+        P1["Program A"]
+        P2["Program B"]
+    end
+
+    Eng -.->|"Technical Resources"| P1
+    Eng -.->|"Technical Resources"| P2
+    Mfg -.->|"Production Resources"| P1
+    Mfg -.->|"Production Resources"| P2
+    QA -.->|"Quality Resources"| P1
+    QA -.->|"Quality Resources"| P2
+```
+
+### Shared Services Relationships
+
+```mermaid
+graph TD
+    subgraph Shared["Shared Services Center"]
+        HR["HR Services"]
+        IT["IT Services"]
+        Fin["Finance Services"]
+    end
+
+    subgraph Business["Business Units"]
+        BU1["Unit A"]
+        BU2["Unit B"]
+        BU3["Unit C"]
+    end
+
+    HR -->|"SLA"| BU1
+    HR -->|"SLA"| BU2
+    HR -->|"SLA"| BU3
+    IT -->|"SLA"| BU1
+    IT -->|"SLA"| BU2
+    IT -->|"SLA"| BU3
+    Fin -->|"SLA"| BU1
+    Fin -->|"SLA"| BU2
+    Fin -->|"SLA"| BU3
+```
+
+## Related Departments
+
+- [Strategy & Planning](/departments/Strategy/index) - Strategic alignment of relationships
+- [Human Resources](/departments/HR/index) - Organizational design ownership
+- [Finance](/departments/Finance/index) - Resource allocation and cost sharing
+- [Information Technology](/departments/IT) - Collaboration technology
+- [Legal](/departments/Legal/index) - Agreement formalization
+- [All Business Units](/departments) - Relationship participants
+
+## Related Occupations
+
+- [Organizational Development Specialists](/occupations/OrgDevelopment) - Relationship design
+- [Business Analysts](/occupations/BusinessAnalysts) - Dependency analysis
+- [Project Managers](/occupations/ProjectManagers) - Cross-functional coordination
+- [Management Analysts](/occupations/Business/Operations/ManagementAnalysts) - Governance consulting
+- [Operations Managers](/occupations/Management/OperationsManagers) - Process integration
+
+## Industry Variations
+
+### Banking
+
+Banking unit relationships must address regulatory boundaries, risk management coordination, and the three lines of defense model. Relationships between front office, middle office, and back office are particularly critical.
+
+**Industry-Specific Activities:**
+- Define relationships across lines of defense
+- Establish risk committee coordination
+- Create compliance reporting relationships
+- Design audit committee interfaces
+
+### Healthcare Provider
+
+Healthcare unit relationships focus on clinical service integration, care coordination, and quality governance. Relationships between clinical and administrative units require special attention.
+
+**Industry-Specific Activities:**
+- Design clinical service line coordination
+- Establish care team relationships
+- Create quality committee governance
+- Define medical staff-administration interface
+
+### Aerospace and Defense
+
+Aerospace unit relationships balance functional excellence with program execution. Matrix relationships between engineering disciplines and program management are fundamental.
+
+**Industry-Specific Activities:**
+- Design program-functional matrix relationships
+- Establish engineering discipline coordination
+- Create integrated product team structures
+- Define supplier relationship governance
+
+### Retail
+
+Retail unit relationships connect headquarters functions with field operations. Relationships between merchandising, marketing, and store operations drive customer experience.
+
+**Industry-Specific Activities:**
+- Design headquarters-field relationships
+- Establish merchandising-store coordination
+- Create omnichannel integration governance
+- Define vendor relationship structures
+
+## Sub-Tasks
+
+| Task | Description |
+|------|-------------|
+| Dependency Mapping | Document unit dependencies and interactions |
+| Collaboration Design | Create mechanisms for cross-unit work |
+| Resource Sharing | Define shared resource arrangements |
+| Governance Creation | Establish decision-making structures |
+| Agreement Formalization | Document formal relationship agreements |
+| Performance Monitoring | Define relationship success metrics |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Workshops["1.2.5.4 Perform<br/>redesign workshops"] --> UR["1.2.5.5 Design<br/>unit relationships"]
+    Roles["1.2.5.6 Develop role<br/>analysis diagrams"] --> UR
+
+    UR --> Assess["1.2.5.7 Assess<br/>design alternatives"]
+    UR --> Migrate["1.2.5.8 Migrate to<br/>new organization"]
+    UR --> BUStrategy["1.2.7 Formulate<br/>business unit strategies"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Cross-unit Collaboration Score | Effectiveness of inter-unit work | >4.0/5.0 |
+| Dependency Resolution Time | Time to resolve cross-unit issues | <24 hours |
+| Shared Resource Utilization | Efficiency of shared resources | >80% |
+| Governance Effectiveness | Decision-making quality and speed | >85% satisfaction |
+| Agreement Compliance | Adherence to relationship agreements | >95% |
+| Escalation Frequency | Number of escalations required | Decreasing trend |
+
+---
+
+*Source: APQC PCF 10053 (1.2.5.5) - Cross-Industry*

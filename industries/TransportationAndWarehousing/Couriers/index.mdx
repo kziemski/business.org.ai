@@ -1,0 +1,116 @@
+---
+id: Couriers
+name: "Couriers"
+code: "492"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Couriers
+
+> Industries in the Couriers and Messengers subsector provide intercity, local, and/or international delivery of parcels and documents (including express delivery services) without operating under a universal service obligation.
+
+## Overview
+
+Couriers represents an important category within the Transportation and Warehousing sector (NAICS 48-49).
+
+Industries in the Couriers and Messengers subsector provide intercity, local, and/or international delivery of parcels and documents (including express delivery services) without operating under a universal service obligation. These articles may originate in the U.S. but be delivered to another country and can be described as those that may be handled by one person without using special equipment. This allows the collection, pick-up, and delivery operations to be done with limited labor costs and minimal equipment. Sorting and transportation activities, where necessary, are generally mechanized. The restriction to small parcels partly distinguishes these establishments from those in the transportation industries. The complete network of courier services establishments also distinguishes these transportation services from local messenger and delivery establishments in this subsector. This includes the establishments that perform intercity transportation as well as establishments that, under contract to them, perform local pick-up and delivery. Messengers, which usually deliver within a metropolitan or single urban area, may use bicycle, foot, car, small truck, or van.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S4849["48-49: Transportation and Warehousing"]
+    S4849 --> N492["492: Couriers"]
+    style N492 fill:#f96,stroke:#333,stroke-width:2px
+    N492 --> N4921["4921: Express Delivery Services"]
+    N492 --> N4922["4922: Local Messengers"]
+    N492 --> N4922["4922: Local Delivery"]
+    N492 --> N4922["4922: Natural Gas Transmission"]
+    N492 --> N4925["4925: Mixed"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 492 |
+| Level | Subsector |
+| Child Industries | 3 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Express Delivery Services](./ExpressDeliveryServices/) | 4921 | Express Delivery Services |
+| [Local Messengers](./LocalMessengers/) | 4922 | Local Messengers |
+| [Local Delivery](./LocalDelivery/) | 4922 | Local Delivery |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Receiving"]
+        O2["Routing/Planning"]
+        O3["Transport/Storage"]
+        O4["Delivery"]
+        O5["Tracking"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Fleet Management"]
+        S2["Safety Systems"]
+        S3["Compliance"]
+        S4["IT Systems"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 492 - Couriers*

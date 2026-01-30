@@ -1,0 +1,114 @@
+---
+id: MedicalInsuranceCarriers
+name: "Medical Insurance Carriers"
+code: "52411"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Medical Insurance Carriers
+
+> This industry comprises establishments primarily engaged in initially underwriting (i.
+
+## Overview
+
+Medical Insurance Carriers represents an important category within the Finance and Insurance sector (NAICS 52).
+
+This industry comprises establishments primarily engaged in initially underwriting (i.e., assuming the risk and assigning premiums) annuities and life insurance policies, disability income insurance policies, accidental death and dismemberment insurance policies, and health and medical insurance policies. Cross-References.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S52["52: Finance and Insurance"]
+    S52 --> N524["524: Insurance Carriers"]
+    N524 --> N52411["52411: Medical Insurance Carriers"]
+    style N52411 fill:#f96,stroke:#333,stroke-width:2px
+    N52411 --> N524113["524113: Direct Life Insurance Carriers"]
+    N52411 --> N524114["524114: Direct Health"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 52411 |
+| Level | Industry |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Direct Life Insurance Carriers](./DirectLifeInsuranceCarriers.mdx) | 524113 | This U |
+| [Direct Health](./DirectHealth.mdx) | 524114 | This U |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Client Acquisition"]
+        O2["Underwriting/Analysis"]
+        O3["Processing"]
+        O4["Service Delivery"]
+        O5["Reporting"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Risk Management"]
+        S2["Compliance"]
+        S3["IT Security"]
+        S4["Customer Relations"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Capital"]
+        I2["Data"]
+        I3["Expertise"]
+        I4["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Financial Products"]
+        O2["Risk Coverage"]
+        O3["Advisory"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Individuals"]
+        C2["Businesses"]
+        C3["Institutions"]
+        C4["Government"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 52411 - Medical Insurance Carriers*

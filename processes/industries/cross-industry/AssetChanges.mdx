@@ -1,0 +1,443 @@
+---
+id: AssetChanges
+name: "Process and record fixed-asset additions and retires"
+code: "10830"
+hierarchyId: "10.5.3"
+type: Process
+status: complete
+---
+
+# Process and record fixed-asset additions and retires
+
+> Keeping a summary of sales and purchases of assets. Record any expenses made for new assets purchased and sales of any old assets during the fiscal year.
+
+## Overview
+
+Process and record fixed-asset additions and retires is a fundamental process within the Perform fixed-asset accounting process group (10.5). This process ensures accurate recording of all asset lifecycle events, from initial acquisition through final disposition. Proper processing of additions and retirements is essential for maintaining accurate financial statements, supporting audit requirements, and providing reliable data for capital planning.
+
+Asset additions encompass purchases, construction, capital leases, donations, and transfers from inventory. Asset retirements include sales, disposals, abandonments, trade-ins, and casualty losses. Each transaction type requires specific documentation, authorization, and accounting treatment to ensure compliance with internal policies and external regulations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"] --> G105["10.5 Perform fixed-asset accounting"]
+    G105 --> P1051["10.5.1 Establish fixed-asset policies and procedures"]
+    G105 --> P1052["10.5.2 Maintain fixed-asset master data files"]
+    G105 --> P1053["10.5.3 Process and record fixed-asset additions and retires"]
+    G105 --> P1054["10.5.4 Process adjustments, enhancements, revaluations"]
+    G105 --> P1055["10.5.5 Process maintenance and repair expenses"]
+    G105 --> P1056["10.5.6 Calculate and record depreciation"]
+    G105 --> P1057["10.5.7 Reconcile fixed-asset ledger"]
+
+    P1053 --> A10531["10.5.3.1 Process asset acquisitions"]
+    P1053 --> A10532["10.5.3.2 Record capitalized costs"]
+    P1053 --> A10533["10.5.3.3 Process asset retirements"]
+    P1053 --> A10534["10.5.3.4 Calculate and record gain/loss"]
+
+    style P1053 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10830 |
+| Hierarchy ID | 10.5.3 |
+| Level | Process |
+| Parent Process | [Perform fixed-asset accounting](/processes/10-Assets/AssetAccounting) |
+| Category | [Acquire, Construct, and Manage Assets](/processes/10-Assets) |
+| Related Categories | 9.0 Manage Financial Resources |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Purchase Orders"]
+        I2["Invoices"]
+        I3["Disposal Requests"]
+        I4["Sale Agreements"]
+        I5["Transfer Documents"]
+    end
+
+    subgraph Process["Process Asset Additions and Retires"]
+        P1["Receive Transaction<br/>Documentation"]
+        P2["Verify Authorization<br/>and Approval"]
+        P3["Determine Accounting<br/>Treatment"]
+        P4["Calculate Capitalized<br/>Cost or Gain/Loss"]
+        P5["Record Journal<br/>Entries"]
+        P6["Update Asset<br/>Register"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Asset Register Updates"]
+        O2["Journal Entries"]
+        O3["GL Postings"]
+        O4["Gain/Loss Reports"]
+        O5["Audit Documentation"]
+        O6["Tax Records"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+process.FixedAssetAdditionsAndRetires.and.record
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action of handling transactions |
+| Object | `FixedAssetAdditionsAndRetires` | Asset acquisition and disposal transactions |
+| Preposition | `and` | Connecting to secondary action |
+| PrepObject | `record` | Recording in financial systems |
+
+## Activities
+
+### Process Asset Acquisitions
+
+Handling new asset additions including purchases, constructed assets, leased assets, and received donations.
+
+```mermaid
+sequenceDiagram
+    participant Procurement as Procurement
+    participant AP as Accounts Payable
+    participant Assets as Asset Accounting
+    participant Approval as Approval Authority
+    participant System as Asset System
+    participant GL as General Ledger
+
+    Procurement->>AP: Submit invoice
+    AP->>AP: Verify invoice details
+    AP->>Assets: Route for asset review
+    Assets->>Assets: Determine if capitalizable
+    Assets->>Approval: Request capitalization approval
+    Approval->>Assets: Authorize capitalization
+    Assets->>System: Create asset record
+    System->>GL: Post to asset accounts
+```
+
+**Tasks:**
+- `receive.AcquisitionDocumentation` - Collect purchase and receiving documents
+- `verify.InvoiceDetails` - Validate costs and terms
+- `determine.Capitalization` - Apply capitalization criteria
+- `obtain.CapitalizationApproval` - Secure authorization
+
+### Calculate and Record Capitalized Costs
+
+Determining the full capitalized cost of assets including purchase price, installation, and other directly attributable costs.
+
+```mermaid
+sequenceDiagram
+    participant Invoice as Invoice Data
+    participant Costs as Cost Analysis
+    participant Accounting as Accounting Team
+    participant Tax as Tax Team
+    participant System as Asset System
+    participant Records as Financial Records
+
+    Invoice->>Costs: Provide purchase price
+    Costs->>Costs: Add installation costs
+    Costs->>Costs: Add freight and handling
+    Costs->>Accounting: Calculate total capitalized cost
+    Accounting->>Tax: Determine tax basis
+    Tax->>Accounting: Provide tax treatment
+    Accounting->>System: Record capitalized cost
+    System->>Records: Update financial records
+```
+
+**Tasks:**
+- `compile.DirectCosts` - Aggregate purchase price and direct costs
+- `allocate.IndirectCosts` - Apportion applicable overhead
+- `calculate.TotalCapitalizedCost` - Sum all qualifying costs
+- `record.AssetCost` - Enter in asset register
+
+### Process Asset Retirements
+
+Handling asset disposals including sales, scrapping, trade-ins, and casualties.
+
+```mermaid
+sequenceDiagram
+    participant Owner as Asset Owner
+    participant Request as Disposal Request
+    participant Approval as Approval Authority
+    participant Assets as Asset Accounting
+    participant Physical as Physical Disposal
+    participant System as Asset System
+
+    Owner->>Request: Submit retirement request
+    Request->>Approval: Route for authorization
+    Approval->>Approval: Evaluate disposal rationale
+    Approval->>Assets: Authorize retirement
+    Assets->>Assets: Calculate book value
+    Assets->>Physical: Coordinate physical removal
+    Physical->>System: Confirm disposal complete
+    System->>Assets: Archive asset record
+```
+
+**Tasks:**
+- `receive.RetirementRequest` - Accept disposal request
+- `verify.Authorization` - Confirm proper approvals
+- `coordinate.PhysicalDisposal` - Manage asset removal
+- `update.AssetStatus` - Mark asset as retired
+
+### Calculate and Record Gain/Loss on Disposal
+
+Computing and recording the gain or loss resulting from asset dispositions.
+
+```mermaid
+sequenceDiagram
+    participant Asset as Asset Record
+    participant Depreciation as Accumulated Depreciation
+    participant Proceeds as Sale Proceeds
+    participant Calculation as Gain/Loss Calculation
+    participant Journal as Journal Entry
+    participant GL as General Ledger
+
+    Asset->>Calculation: Provide original cost
+    Depreciation->>Calculation: Provide accumulated depreciation
+    Calculation->>Calculation: Calculate book value
+    Proceeds->>Calculation: Provide sale proceeds
+    Calculation->>Calculation: Determine gain or loss
+    Calculation->>Journal: Prepare journal entry
+    Journal->>GL: Post to accounts
+```
+
+**Tasks:**
+- `calculate.BookValue` - Determine net book value at disposal
+- `compare.ToProceeds` - Compare to sale or disposal proceeds
+- `compute.GainLoss` - Calculate disposal gain or loss
+- `record.DisposalEntry` - Post accounting entry
+
+### Handle Special Transactions
+
+Processing non-standard asset transactions including trade-ins, donations, and transfers between entities.
+
+```mermaid
+sequenceDiagram
+    participant Transaction as Special Transaction
+    participant Analysis as Transaction Analysis
+    participant Accounting as Accounting Treatment
+    participant Tax as Tax Implications
+    participant Approval as Special Approval
+    participant Recording as Record Transaction
+
+    Transaction->>Analysis: Identify transaction type
+    Analysis->>Accounting: Determine proper treatment
+    Accounting->>Tax: Assess tax implications
+    Tax->>Accounting: Provide tax guidance
+    Accounting->>Approval: Request special approval
+    Approval->>Recording: Authorize recording
+    Recording->>Recording: Process transaction
+```
+
+**Tasks:**
+- `identify.TransactionType` - Classify special transaction
+- `determine.AccountingTreatment` - Apply appropriate standards
+- `assess.TaxImplications` - Evaluate tax consequences
+- `obtain.SpecialApproval` - Secure authorization for non-standard treatment
+
+### Maintain Documentation and Audit Trail
+
+Ensuring complete documentation for all asset additions and retirements to support audit requirements.
+
+```mermaid
+sequenceDiagram
+    participant Transaction as Asset Transaction
+    participant Documentation as Documentation
+    participant Verification as Verification Review
+    participant Archive as Document Archive
+    participant Audit as Audit Support
+    participant Retrieval as Document Retrieval
+
+    Transaction->>Documentation: Generate documents
+    Documentation->>Verification: Submit for review
+    Verification->>Verification: Validate completeness
+    Verification->>Archive: Store documents
+    Archive->>Audit: Support audit requests
+    Audit->>Retrieval: Request documentation
+    Retrieval->>Audit: Provide supporting documents
+```
+
+**Tasks:**
+- `compile.SupportingDocumentation` - Gather all relevant documents
+- `verify.DocumentCompleteness` - Ensure full documentation
+- `archive.TransactionRecords` - Store for retention period
+- `support.AuditRequests` - Respond to audit inquiries
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Process asset acquisitions | Asset Accountant | Controller | Procurement | Department managers |
+| Calculate capitalized costs | Accounting Team | Controller | Tax | Asset owners |
+| Process asset retirements | Asset Accountant | Asset Manager | Facilities | Finance |
+| Calculate gain/loss | Accounting Team | Controller | Tax | External auditors |
+| Handle special transactions | Senior Accountant | CFO | Tax, Legal | Audit committee |
+| Maintain documentation | Asset Team | Controller | Internal Audit | External auditors |
+
+## Related Departments
+
+- [Finance](/departments/Finance/index) - Transaction oversight
+- [Accounting](/departments/Accounting) - Record keeping
+- [Procurement](/departments/Procurement) - Acquisition processing
+- [Facilities](/departments/Facilities) - Physical asset management
+- [Tax](/departments/Tax) - Tax treatment guidance
+- [Internal Audit](/departments/InternalAudit) - Control validation
+
+## Related Occupations
+
+- [Accountants and Auditors](/occupations/Accountants) - Transaction processing
+- [Financial Managers](/occupations/Management/FinancialManagers) - Process oversight
+- [Tax Examiners](/occupations/TaxExaminers) - Tax treatment guidance
+- [Property Managers](/occupations/PropertyManagers) - Physical asset handling
+- [Purchasing Agents](/occupations/Business/PurchasingAgents) - Acquisition documentation
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Aerospace asset transactions often involve government contracts with specific property accountability requirements. Additions may include government-furnished equipment.
+
+**Industry-Specific Considerations:**
+- Government property reporting requirements
+- Cost accounting standards compliance
+- Security classification handling
+- Contract close-out asset disposition
+
+### Automotive
+
+Automotive manufacturing frequently involves high-volume tooling transactions and model changeover asset movements.
+
+**Industry-Specific Considerations:**
+- Tooling capitalization and amortization
+- Model year changeover retirements
+- Supplier-owned tooling tracking
+- Platform-specific asset grouping
+
+### Banking
+
+Banking institutions process branch and technology asset transactions with regulatory capital implications.
+
+**Industry-Specific Considerations:**
+- Regulatory capital impact assessment
+- Branch closure mass retirements
+- Technology refresh cycles
+- Leasehold improvement treatment
+
+### Healthcare Provider
+
+Healthcare organizations manage medical equipment transactions with FDA and patient safety considerations.
+
+**Industry-Specific Considerations:**
+- Medical device tracking requirements
+- Clinical equipment replacement cycles
+- Biomedical certification documentation
+- Patient safety compliance verification
+
+### Petroleum (Upstream/Downstream)
+
+Oil and gas companies process exploration, production, and refining asset transactions with unique accounting requirements.
+
+**Industry-Specific Considerations:**
+- Successful efforts vs. full cost treatment
+- Asset retirement obligation recording
+- Joint venture asset allocations
+- Environmental remediation provisions
+
+### Retail
+
+Retail organizations process high-volume store asset transactions across distributed locations.
+
+**Industry-Specific Considerations:**
+- Multi-location asset tracking
+- Store remodel and refresh cycles
+- Fixture and equipment standards
+- Seasonal capacity adjustments
+
+## Transaction Types Framework
+
+### Asset Additions
+
+| Transaction Type | Description | Documentation Required |
+|------------------|-------------|----------------------|
+| Purchase | Standard acquisition from vendor | PO, Invoice, Receiving report |
+| Construction | Self-constructed or contracted build | Work orders, Cost accumulation |
+| Capital Lease | Leased asset meeting capitalization criteria | Lease agreement, Analysis |
+| Donation | Asset received as gift | Appraisal, Donor documentation |
+| Transfer | Asset received from another entity | Transfer document, Valuation |
+| Trade-In | Asset received in exchange | Trade agreement, Fair values |
+
+### Asset Retirements
+
+| Transaction Type | Description | Documentation Required |
+|------------------|-------------|----------------------|
+| Sale | Asset sold to third party | Sales agreement, Proceeds receipt |
+| Scrap | Asset disposed with no recovery | Disposal authorization, Evidence |
+| Abandonment | Asset left in place | Abandonment approval, Justification |
+| Trade-In | Asset exchanged for new asset | Trade agreement, Fair values |
+| Casualty | Asset lost to fire, theft, etc. | Insurance claim, Police report |
+| Transfer | Asset moved to another entity | Transfer document, Acceptance |
+
+### Accounting Entries
+
+| Transaction | Debit | Credit |
+|-------------|-------|--------|
+| Asset Purchase | Fixed Asset, Accumulated Depreciation | Cash/AP |
+| Asset Sale (Gain) | Cash, Accumulated Depreciation | Fixed Asset, Gain on Disposal |
+| Asset Sale (Loss) | Cash, Accumulated Depreciation, Loss on Disposal | Fixed Asset |
+| Asset Scrap | Accumulated Depreciation, Loss on Disposal | Fixed Asset |
+
+## Related Processes
+
+```mermaid
+graph LR
+    EFAP["10.5.1 Establish fixed-asset<br/>policies"] --> PRFA["10.5.3 Process and record<br/>additions and retires"]
+    MFMD["10.5.2 Maintain master<br/>data files"] --> PRFA
+    Procurement["Procurement<br/>Process"] --> PRFA
+
+    PRFA --> CRD["10.5.6 Calculate and<br/>record depreciation"]
+    PRFA --> RFAL["10.5.7 Reconcile<br/>fixed-asset ledger"]
+    PRFA --> Tax["Provide data for<br/>tax reporting"]
+    PRFA --> EOL["10.4 Manage asset<br/>end-of-life"]
+```
+
+## Sub-Activities
+
+| Activity | Description |
+|----------|-------------|
+| Receive acquisition documentation | Collect purchase and receiving documents |
+| Verify capitalization criteria | Apply threshold and useful life tests |
+| Calculate capitalized cost | Determine full acquisition cost |
+| Record asset addition | Create asset record and post entry |
+| Receive retirement request | Accept disposal authorization |
+| Verify disposal authorization | Confirm proper approvals |
+| Calculate disposal gain/loss | Compute book value vs. proceeds |
+| Record asset retirement | Post disposal entry and update register |
+| Process trade-in transactions | Handle exchange transactions |
+| Archive transaction documentation | Maintain audit trail |
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Transaction Processing Time | Days from receipt to recording | <3 days |
+| Documentation Completeness | Transactions with full documentation | 100% |
+| Capitalization Accuracy | Correctly classified items | >99% |
+| Disposal Authorization Rate | Retirements with proper approval | 100% |
+| Gain/Loss Calculation Accuracy | Correct disposal calculations | >99.5% |
+| Audit Finding Rate | Exceptions per audit | 0 material |
+| Monthly Close Timeliness | Asset subledger closed on time | 100% |
+
+---
+
+*Source: APQC PCF 10830 (10.5.3) - Cross-Industry*

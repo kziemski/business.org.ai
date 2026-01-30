@@ -1,0 +1,384 @@
+---
+id: ExternalReviews
+name: "Conduct mandatory and elective external reviews"
+code: "10087"
+hierarchyId: "12.4.3.1"
+type: Process
+status: complete
+---
+
+# Conduct mandatory and elective external reviews
+
+> Conducting any mandatory and elective appraisals of the product/service design specifications in order to ensure compliance with external standards. Carry out external reviews of specifications created as part of designing products and services that are required by legal, regulatory, or industry bodies.
+
+## Overview
+
+Conduct mandatory and elective external reviews (APQC 12.4.3.1) is an activity within the "Ensure compliance" process. This process ensures that organizational products, services, and operations meet required external standards through systematic review and validation. It encompasses both legally mandated reviews (regulatory audits, safety certifications) and voluntary reviews (industry certifications, best practice assessments).
+
+External reviews serve multiple purposes: ensuring regulatory compliance, validating quality standards, maintaining certifications, and demonstrating commitment to industry best practices. The process requires coordination with external auditors, regulatory bodies, certification agencies, and internal compliance teams.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"] --> G124["12.4 Manage legal and<br/>ethical issues"]
+    G124 --> P1241["12.4.1 Create ethics policies"]
+    G124 --> P1242["12.4.2 Manage corporate<br/>governance policies"]
+    G124 --> P1243["12.4.3 Ensure compliance"]
+    G124 --> P1244["12.4.4 Manage outside counsel"]
+
+    P1243 --> A12431["12.4.3.1 Conduct mandatory and<br/>elective external reviews"]
+    P1243 --> A12432["12.4.3.2 Plan and initiate<br/>compliance program"]
+    P1243 --> A12433["12.4.3.3 Execute compliance<br/>program"]
+
+    style A12431 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10087 |
+| Hierarchy ID | 12.4.3.1 |
+| Level | Activity |
+| Category | [Manage External Relationships](/processes/12-External) |
+| Parent Process | [Ensure compliance](./index.mdx) |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Regulatory Requirements"]
+        I2["Industry Standards"]
+        I3["Certification Requirements"]
+        I4["Product Specifications"]
+        I5["Process Documentation"]
+        I6["Previous Review Findings"]
+    end
+
+    subgraph Process["Conduct External Reviews"]
+        P1["Identify Review<br/>Requirements"]
+        P2["Schedule and Plan<br/>Reviews"]
+        P3["Prepare Documentation<br/>and Evidence"]
+        P4["Conduct Review<br/>Activities"]
+        P5["Address Findings<br/>and Gaps"]
+        P6["Document and<br/>Report Results"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P1
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Review Reports"]
+        O2["Compliance Certificates"]
+        O3["Remediation Plans"]
+        O4["Updated Documentation"]
+        O5["Audit Trail"]
+        O6["Stakeholder Communications"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+conduct.ExternalReviews.for.Compliance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `conduct` | Primary action of executing reviews |
+| Object | `ExternalReviews` | Mandatory and elective assessments |
+| Preposition | `for` | Purpose of the review |
+| PrepObject | `Compliance` | Ensuring adherence to standards |
+
+## Activities
+
+### Identify review requirements
+
+Determining which external reviews are mandatory based on regulations, contracts, and industry requirements, and which elective reviews provide strategic value.
+
+```mermaid
+sequenceDiagram
+    participant Legal as Legal/Compliance
+    participant Regulatory as Regulatory Affairs
+    participant Quality as Quality Assurance
+    participant Business as Business Units
+
+    Legal->>Regulatory: Request regulatory obligations
+    Regulatory->>Legal: Provide regulatory calendar
+    Legal->>Quality: Request certification requirements
+    Quality->>Legal: Provide certification inventory
+    Legal->>Business: Identify contractual obligations
+    Business->>Legal: Report customer requirements
+    Legal->>Legal: Compile review requirements matrix
+```
+
+**Tasks:**
+- `identify.MandatoryReviews` - Catalog legally required reviews
+- `identify.ElectiveReviews` - Determine strategic certification opportunities
+- `assess.ReviewRequirements` - Document specific requirements for each review
+- `prioritize.Reviews` - Rank reviews by criticality and timing
+
+### Schedule and plan reviews
+
+Creating a comprehensive review calendar and detailed plans for each review engagement.
+
+```mermaid
+sequenceDiagram
+    participant Compliance as Compliance
+    participant External as External Reviewers
+    participant Internal as Internal Teams
+    participant PMO as Project Management
+
+    Compliance->>External: Request available dates
+    External->>Compliance: Provide scheduling options
+    Compliance->>Internal: Confirm team availability
+    Internal->>Compliance: Acknowledge schedules
+    Compliance->>PMO: Create review project plans
+    PMO->>Compliance: Finalize review schedule
+```
+
+**Tasks:**
+- `create.ReviewCalendar` - Develop annual review schedule
+- `coordinate.ExternalSchedules` - Align with reviewer availability
+- `develop.ReviewPlans` - Create detailed execution plans
+- `assign.Resources` - Allocate internal support resources
+
+### Prepare documentation and evidence
+
+Assembling all required documentation, evidence, and supporting materials for review activities.
+
+```mermaid
+sequenceDiagram
+    participant Compliance as Compliance
+    participant Quality as Quality
+    participant Operations as Operations
+    participant IT as IT Systems
+
+    Compliance->>Quality: Request quality records
+    Quality->>Compliance: Provide quality documentation
+    Compliance->>Operations: Request process evidence
+    Operations->>Compliance: Provide operational records
+    Compliance->>IT: Request system documentation
+    IT->>Compliance: Provide technical evidence
+    Compliance->>Compliance: Organize review package
+```
+
+**Tasks:**
+- `gather.RequiredDocumentation` - Collect all necessary documents
+- `prepare.EvidencePackages` - Organize supporting evidence
+- `validate.Documentation` - Ensure completeness and accuracy
+- `create.ReviewReadiness` - Prepare presentation materials
+
+### Conduct review activities
+
+Executing the review process including site visits, document reviews, interviews, and assessments.
+
+```mermaid
+sequenceDiagram
+    participant External as External Reviewers
+    participant Compliance as Compliance Lead
+    participant SMEs as Subject Matter Experts
+    participant Executive as Executive Sponsor
+
+    External->>Compliance: Initiate review process
+    Compliance->>SMEs: Coordinate interviews
+    SMEs->>External: Participate in assessments
+    External->>External: Conduct document review
+    External->>Compliance: Present preliminary findings
+    Compliance->>Executive: Brief on review status
+    External->>Compliance: Deliver final report
+```
+
+**Tasks:**
+- `facilitate.SiteVisits` - Manage on-site review activities
+- `support.DocumentReviews` - Assist with documentation analysis
+- `coordinate.Interviews` - Arrange subject matter expert sessions
+- `track.ReviewProgress` - Monitor review completion status
+
+### Address findings and gaps
+
+Developing and implementing remediation plans for any identified deficiencies or non-conformances.
+
+```mermaid
+sequenceDiagram
+    participant Compliance as Compliance
+    participant Findings as Findings Analysis
+    participant Owners as Process Owners
+    participant Executive as Executive Team
+
+    Compliance->>Findings: Analyze review results
+    Findings->>Compliance: Categorize findings
+    Compliance->>Owners: Assign remediation actions
+    Owners->>Compliance: Develop corrective actions
+    Compliance->>Executive: Present remediation plan
+    Executive->>Compliance: Approve remediation
+    Owners->>Compliance: Implement corrections
+    Compliance->>Compliance: Verify closure
+```
+
+**Tasks:**
+- `analyze.Findings` - Review and categorize identified issues
+- `develop.RemediationPlans` - Create corrective action plans
+- `implement.CorrectiveActions` - Execute remediation activities
+- `verify.ClosureEffectiveness` - Confirm issues resolved
+
+### Document and report results
+
+Creating comprehensive documentation of review activities, results, and outcomes for stakeholders.
+
+```mermaid
+sequenceDiagram
+    participant Compliance as Compliance
+    participant Documentation as Documentation
+    participant Stakeholders as Stakeholders
+    participant Archive as Records Management
+
+    Compliance->>Documentation: Compile review results
+    Documentation->>Documentation: Create reports
+    Documentation->>Stakeholders: Distribute reports
+    Stakeholders->>Compliance: Acknowledge receipt
+    Compliance->>Archive: Submit for retention
+    Archive->>Compliance: Confirm archival
+```
+
+**Tasks:**
+- `compile.ReviewResults` - Aggregate all review outcomes
+- `create.StakeholderReports` - Prepare audience-specific summaries
+- `communicate.Results` - Distribute to relevant parties
+- `archive.Documentation` - Maintain records per retention policy
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Identify review requirements | Compliance Team | Chief Compliance Officer | Legal, Quality | Executive Team |
+| Schedule and plan reviews | Compliance Coordinator | Compliance Director | External Reviewers | Business Units |
+| Prepare documentation | Quality Team | Quality Director | Operations, IT | Compliance |
+| Conduct review activities | Compliance Team | CCO | SMEs | Executive Team |
+| Address findings | Process Owners | COO | Compliance, Quality | Board |
+| Document and report | Compliance Analyst | CCO | Legal | All Stakeholders |
+
+## Related Departments
+
+- [Compliance](/departments/Compliance) - Primary ownership of review coordination
+- [Quality Assurance](/departments/Quality) - Quality standards and documentation
+- [Legal](/departments/Legal/index) - Regulatory interpretation and obligations
+- [Operations](/departments/Operations/index) - Process evidence and participation
+- [Internal Audit](/departments/InternalAudit) - Review preparation support
+
+## Related Occupations
+
+- [Compliance Officers](/occupations/Business/Operations/ComplianceOfficers) - Review coordination and oversight
+- [Quality Assurance Managers](/occupations/QualityManagers) - Standards maintenance
+- [Regulatory Affairs Specialists](/occupations/RegulatoryAffairs) - Regulatory review management
+- [Internal Auditors](/occupations/InternalAuditors) - Pre-review assessments
+- [Risk Managers](/occupations/RiskManagers) - Findings prioritization
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Aerospace companies undergo extensive external reviews including FAA/EASA certification, defense contract audits (DCAA/DCMA), and security clearance reviews requiring specialized compliance expertise.
+
+**Industry-Specific Activities:**
+- Conduct FAA design certification reviews
+- Support DCAA contract audits
+- Manage AS9100 quality system audits
+- Execute ITAR compliance reviews
+
+### Banking
+
+Banking institutions face continuous regulatory examinations from multiple agencies (OCC, FDIC, Fed) requiring dedicated compliance infrastructure and ongoing audit readiness.
+
+**Industry-Specific Activities:**
+- Support OCC/FDIC safety and soundness exams
+- Conduct BSA/AML compliance reviews
+- Execute SOX control audits
+- Manage stress test reviews
+
+### Healthcare Provider
+
+Healthcare organizations undergo multiple external reviews including CMS surveys, Joint Commission accreditation, and state licensing inspections requiring clinical and administrative coordination.
+
+**Industry-Specific Activities:**
+- Support Joint Commission accreditation surveys
+- Conduct CMS Conditions of Participation reviews
+- Execute HIPAA compliance audits
+- Manage state licensing inspections
+
+### Life Sciences
+
+Pharmaceutical and medical device companies face rigorous FDA inspections and international regulatory audits requiring extensive documentation and controlled processes.
+
+**Industry-Specific Activities:**
+- Support FDA pre-approval inspections
+- Conduct GMP compliance audits
+- Execute clinical trial audits
+- Manage international regulatory reviews
+
+### Utilities
+
+Utility companies undergo safety and reliability reviews from FERC, NERC, and state commissions requiring operational and infrastructure compliance.
+
+**Industry-Specific Activities:**
+- Support NERC reliability audits
+- Conduct FERC compliance reviews
+- Execute state PUC examinations
+- Manage nuclear regulatory inspections
+
+### Retail
+
+Retailers face PCI-DSS audits, food safety inspections, and consumer protection reviews requiring store-level compliance coordination.
+
+**Industry-Specific Activities:**
+- Conduct PCI-DSS compliance assessments
+- Support FDA food safety inspections
+- Execute OSHA workplace safety reviews
+- Manage consumer protection audits
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| Identify review requirements | - | Determine mandatory and elective reviews |
+| Schedule and plan reviews | - | Create review calendar and plans |
+| Prepare documentation | - | Assemble review evidence |
+| Conduct review activities | - | Execute review engagements |
+| Address findings | - | Remediate identified issues |
+| Document and report | - | Create review documentation |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Risk["11.0 Manage Risk<br/>and Compliance"] --> ER["12.4.3.1 Conduct<br/>External Reviews"]
+    Quality["2.0 Design Products<br/>and Services"] --> ER
+
+    ER --> Ethics["12.4.1 Create<br/>Ethics Policies"]
+    ER --> Governance["12.4.2 Manage<br/>Governance"]
+    ER --> Counsel["12.4.4 Manage<br/>Outside Counsel"]
+    ER --> Certifications["Liaise with<br/>Certification Authorities"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Review Readiness Score | Preparation completeness before review | >95% |
+| Finding Closure Rate | Percentage of findings remediated on time | >90% |
+| Critical Finding Count | Number of major non-conformances | 0 |
+| Certification Maintenance | Certifications maintained without lapse | 100% |
+| Review Cycle Time | Average duration of review process | <30 days |
+| Remediation Time | Average days to close findings | <60 days |
+
+---
+
+*Source: APQC PCF 10087 (12.4.3.1) - Cross-Industry*

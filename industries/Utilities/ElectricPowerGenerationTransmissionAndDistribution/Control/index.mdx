@@ -1,0 +1,114 @@
+---
+id: Control
+name: "Control"
+code: "22112"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Control
+
+> This industry comprises establishments primarily engaged in operating electric power transmission systems, controlling (i.
+
+## Overview
+
+Control represents an important category within the Utilities sector (NAICS 22).
+
+This industry comprises establishments primarily engaged in operating electric power transmission systems, controlling (i.e., regulating voltages) the transmission of electricity, and/or distributing electricity. The transmission system includes lines and transformer stations. These establishments arrange, facilitate, or coordinate the transmission of electricity from the generating source to the distribution centers, other electric utilities, or final consumers. The distribution system consists of lines, poles, meters, and wiring that deliver the electricity to final consumers. Cross-References.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S22["22: Utilities"]
+    S22 --> N2211["2211: Electric Power Generation, Transmissi..."]
+    N2211 --> N22112["22112: Control"]
+    style N22112 fill:#f96,stroke:#333,stroke-width:2px
+    N22112 --> N221121["221121: Electric Bulk Power Transmission"]
+    N22112 --> N221122["221122: Electric Power Distribution"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 22112 |
+| Level | Industry |
+| Parent | [Electric Power Generation, Transmission and Distribution](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Electric Bulk Power Transmission](./ElectricBulkPowerTransmission.mdx) | 221121 | This U |
+| [Electric Power Distribution](./ElectricPowerDistribution.mdx) | 221122 | This U |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Generation/Collection"]
+        O2["Transmission"]
+        O3["Distribution"]
+        O4["Metering"]
+        O5["Customer Service"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Infrastructure Maintenance"]
+        S2["Safety Systems"]
+        S3["Regulatory Compliance"]
+        S4["IT Systems"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 22112 - Control*

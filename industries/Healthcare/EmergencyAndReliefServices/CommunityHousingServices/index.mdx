@@ -1,0 +1,112 @@
+---
+id: CommunityHousingServices
+name: "Community Housing Services"
+code: "62422"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Community Housing Services
+
+> This industry comprises establishments primarily engaged in providing one or more of the following community housing services: (1) short-term emergency shelter for victims of domestic violence, sexual assault, or child abuse; (2) temporary residential shelter for the homeless, runaway youths, and patients and families caught in medical crises; (3) transitional housing for low-income individuals and families; (4) volunteer construction or repair of low-cost housing, in partnership with the homeowner who may assist in construction or repair work; and (5) repair of homes for elderly or disabled homeowners.
+
+## Overview
+
+Community Housing Services represents an important category within the Health Care and Social Assistance sector (NAICS 62).
+
+This industry comprises establishments primarily engaged in providing one or more of the following community housing services: (1) short-term emergency shelter for victims of domestic violence, sexual assault, or child abuse; (2) temporary residential shelter for the homeless, runaway youths, and patients and families caught in medical crises; (3) transitional housing for low-income individuals and families; (4) volunteer construction or repair of low-cost housing, in partnership with the homeowner who may assist in construction or repair work; and (5) repair of homes for elderly or disabled homeowners. These establishments may operate their own shelter, they may subsidize housing using existing homes, apartments, hotels, or motels, or they may require a low-cost mortgage or work (sweat) equity. Cross-References.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S62["62: Health Care and Social Assistance"]
+    S62 --> N6242["6242: Community Food and Housing"]
+    N6242 --> N62422["62422: Community Housing Services"]
+    style N62422 fill:#f96,stroke:#333,stroke-width:2px
+    N62422 --> N624221["624221: Temporary Shelters"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 62422 |
+| Level | Industry |
+| Parent | [Community Food and Housing](../) |
+| Child Industries | 1 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Temporary Shelters](./TemporaryShelters.mdx) | 624221 | This U |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Patient/Client Intake"]
+        O2["Assessment"]
+        O3["Treatment/Service"]
+        O4["Follow-up"]
+        O5["Discharge"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Compliance"]
+        S2["Records Mgmt"]
+        S3["Billing"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Medical Supplies"]
+        I2["Equipment"]
+        I3["Professionals"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Patient Care"]
+        O2["Diagnostics"]
+        O3["Treatment"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Patients"]
+        C2["Insurers"]
+        C3["Government"]
+        C4["Employers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 62422 - Community Housing Services*

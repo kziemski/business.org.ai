@@ -1,0 +1,438 @@
+---
+id: AssetMasterData
+name: "Maintain fixed-asset master data files"
+code: "10829"
+hierarchyId: "10.5.2"
+type: Process
+status: complete
+---
+
+# Maintain fixed-asset master data files
+
+> Keeping reports up-to-date regarding fixed assets. Create a fixed assets database detailing price, life cycle, depreciation rate, resale value, installation information, usage information, etc.
+
+## Overview
+
+Maintain fixed-asset master data files is a critical process within the Perform fixed-asset accounting process group (10.5). This process establishes and maintains the comprehensive database of all fixed assets owned by the organization. The asset register serves as the single source of truth for asset information, supporting financial reporting, operational planning, insurance coverage, and strategic decision-making.
+
+Master data management for fixed assets ensures data accuracy, completeness, and timeliness across the asset lifecycle. This includes capturing initial acquisition details, tracking changes and transfers, monitoring utilization and condition, and recording disposal information. Effective master data management enables accurate depreciation calculations, regulatory compliance, and informed capital planning.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"] --> G105["10.5 Perform fixed-asset accounting"]
+    G105 --> P1051["10.5.1 Establish fixed-asset policies and procedures"]
+    G105 --> P1052["10.5.2 Maintain fixed-asset master data files"]
+    G105 --> P1053["10.5.3 Process and record fixed-asset additions and retires"]
+    G105 --> P1054["10.5.4 Process adjustments, enhancements, revaluations"]
+    G105 --> P1055["10.5.5 Process maintenance and repair expenses"]
+    G105 --> P1056["10.5.6 Calculate and record depreciation"]
+    G105 --> P1057["10.5.7 Reconcile fixed-asset ledger"]
+    G105 --> P1058["10.5.8 Track fixed-assets including physical inventory"]
+    G105 --> P1059["10.5.9 Provide fixed-asset data for tax and regulatory reporting"]
+
+    style P1052 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10829 |
+| Hierarchy ID | 10.5.2 |
+| Level | Process |
+| Parent Process | [Perform fixed-asset accounting](/processes/10-Assets/AssetAccounting) |
+| Category | [Acquire, Construct, and Manage Assets](/processes/10-Assets) |
+| Related Categories | 8.0 Manage IT, 9.0 Manage Financial Resources |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Asset Acquisition Documents"]
+        I2["Purchase Orders"]
+        I3["Vendor Information"]
+        I4["Location Data"]
+        I5["Warranty Documents"]
+    end
+
+    subgraph Process["Maintain Fixed-Asset Master Data"]
+        P1["Create Asset<br/>Records"]
+        P2["Assign Asset<br/>Identifiers"]
+        P3["Capture Financial<br/>Attributes"]
+        P4["Record Physical<br/>Attributes"]
+        P5["Update Asset<br/>Changes"]
+        P6["Validate Data<br/>Quality"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Fixed-Asset Register"]
+        O2["Depreciation Schedules"]
+        O3["Asset Location Reports"]
+        O4["Insurance Schedules"]
+        O5["Tax Basis Records"]
+        O6["Audit Trail"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+maintain.FixedAssetMasterDataFiles
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `maintain` | Primary action of keeping current and accurate |
+| Object | `FixedAssetMasterDataFiles` | Database of asset information |
+| Preposition | `for` | Relationship to reporting purpose |
+| PrepObject | `Reporting` | Purpose of maintaining accurate data |
+
+## Activities
+
+### Create and Initialize Asset Records
+
+Establishing new asset records when assets are acquired, including all required data fields and proper categorization.
+
+```mermaid
+sequenceDiagram
+    participant Procurement as Procurement
+    participant Assets as Asset Team
+    participant Finance as Finance
+    participant Systems as Asset System
+    participant Approval as Approval
+
+    Procurement->>Assets: Provide acquisition documents
+    Assets->>Assets: Verify purchase details
+    Assets->>Finance: Obtain cost breakdown
+    Finance->>Assets: Provide capitalization data
+    Assets->>Systems: Create asset record
+    Systems->>Assets: Generate asset ID
+    Assets->>Approval: Submit for verification
+    Approval->>Systems: Approve record creation
+```
+
+**Tasks:**
+- `gather.AcquisitionDocumentation` - Collect purchase orders, invoices, contracts
+- `verify.PurchaseDetails` - Validate acquisition cost and date
+- `assign.AssetCategory` - Classify by asset type and class
+- `create.AssetRecord` - Initialize record in system
+
+### Assign Asset Identifiers and Tags
+
+Generating unique identifiers for assets and coordinating physical tagging for tracking and inventory purposes.
+
+```mermaid
+sequenceDiagram
+    participant System as Asset System
+    participant Tags as Tagging Team
+    participant Physical as Physical Asset
+    participant Location as Location Data
+    participant Verification as Verification
+
+    System->>System: Generate unique asset ID
+    System->>Tags: Request physical tag
+    Tags->>Physical: Apply asset tag
+    Physical->>Location: Record placement location
+    Location->>System: Update location data
+    System->>Verification: Request tag verification
+    Verification->>System: Confirm tag applied
+```
+
+**Tasks:**
+- `generate.AssetIdentifier` - Create unique alphanumeric ID
+- `create.PhysicalTag` - Produce barcode or RFID tag
+- `apply.AssetTag` - Affix tag to physical asset
+- `verify.TagPlacement` - Confirm tag visibility and readability
+
+### Capture Financial Attributes
+
+Recording all financial characteristics of assets including acquisition cost, salvage value, depreciation parameters, and tax basis.
+
+```mermaid
+sequenceDiagram
+    participant Acquisition as Acquisition Data
+    participant Accounting as Accounting
+    participant Tax as Tax Team
+    participant System as Asset System
+    participant GL as General Ledger
+
+    Acquisition->>Accounting: Provide cost details
+    Accounting->>Accounting: Calculate capitalized cost
+    Accounting->>Tax: Determine tax basis
+    Tax->>Accounting: Provide tax depreciation
+    Accounting->>System: Enter financial data
+    System->>System: Calculate book depreciation
+    System->>GL: Post to asset accounts
+```
+
+**Tasks:**
+- `calculate.CapitalizedCost` - Determine full acquisition cost
+- `determine.SalvageValue` - Estimate end-of-life value
+- `assign.DepreciationMethod` - Select depreciation approach
+- `establish.TaxBasis` - Record tax treatment
+
+### Record Physical and Operational Attributes
+
+Capturing physical characteristics, location information, responsible parties, and operational specifications.
+
+```mermaid
+sequenceDiagram
+    participant Asset as New Asset
+    participant Specs as Specifications
+    participant Location as Location Team
+    participant Custodian as Asset Custodian
+    participant System as Master Data
+
+    Asset->>Specs: Provide technical specs
+    Specs->>System: Enter physical attributes
+    Location->>System: Record placement data
+    Custodian->>System: Assign responsibility
+    System->>System: Link to maintenance schedule
+    System->>System: Attach warranty info
+```
+
+**Tasks:**
+- `record.PhysicalSpecifications` - Document dimensions, capacity, model
+- `capture.LocationData` - Record building, floor, room
+- `assign.AssetCustodian` - Designate responsible party
+- `attach.SupportingDocuments` - Link warranties, manuals, photos
+
+### Update Asset Changes and Transfers
+
+Processing and recording changes to asset information including transfers, modifications, and status updates.
+
+```mermaid
+sequenceDiagram
+    participant Request as Change Request
+    participant Approval as Approval Authority
+    participant System as Asset System
+    participant From as Source Location
+    participant To as Destination
+    participant Audit as Audit Trail
+
+    Request->>Approval: Submit change request
+    Approval->>Approval: Evaluate change
+    Approval->>System: Authorize update
+    From->>To: Transfer asset
+    To->>System: Confirm receipt
+    System->>System: Update location/custodian
+    System->>Audit: Log change history
+```
+
+**Tasks:**
+- `process.TransferRequests` - Handle location changes
+- `update.CustodianAssignments` - Change responsible parties
+- `record.AssetModifications` - Document improvements/changes
+- `maintain.AuditTrail` - Log all changes with timestamps
+
+### Validate and Reconcile Data Quality
+
+Ensuring accuracy and completeness of asset master data through regular validation and reconciliation procedures.
+
+```mermaid
+sequenceDiagram
+    participant System as Asset System
+    participant Validation as Data Validation
+    participant Physical as Physical Count
+    participant GL as General Ledger
+    participant Exceptions as Exception Handling
+
+    System->>Validation: Run data quality checks
+    Validation->>System: Identify anomalies
+    Physical->>System: Provide count results
+    System->>GL: Compare to ledger
+    GL->>System: Report variances
+    System->>Exceptions: Queue discrepancies
+    Exceptions->>System: Resolve and update
+```
+
+**Tasks:**
+- `execute.DataValidationChecks` - Run automated quality rules
+- `reconcile.PhysicalInventory` - Match records to physical counts
+- `compare.SubledgerToGL` - Verify ledger agreement
+- `resolve.DataExceptions` - Correct identified errors
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Create asset records | Asset Accountant | Controller | Procurement | Department managers |
+| Assign asset identifiers | Asset Team | Asset Manager | IT | Finance |
+| Capture financial attributes | Accounting | Controller | Tax | External auditors |
+| Record physical attributes | Asset Team | Asset Manager | Facilities | Custodians |
+| Update asset changes | Asset Team | Asset Manager | Custodians | Accounting |
+| Validate data quality | Asset Team | Controller | Internal Audit | Management |
+
+## Related Departments
+
+- [Finance](/departments/Finance/index) - Financial attribute management
+- [Accounting](/departments/Accounting) - Ledger maintenance
+- [Facilities](/departments/Facilities) - Physical asset tracking
+- [IT](/departments/IT) - System administration and IT assets
+- [Procurement](/departments/Procurement) - Acquisition documentation
+- [Operations](/departments/Operations/index) - Asset utilization data
+
+## Related Occupations
+
+- [Accountants and Auditors](/occupations/Accountants) - Data entry and validation
+- [Financial Managers](/occupations/Management/FinancialManagers) - Oversight and governance
+- [Database Administrators](/occupations/Technology/DatabaseAdministrators) - System management
+- [Property Managers](/occupations/PropertyManagers) - Physical asset oversight
+- [Facilities Managers](/occupations/Management/FacilitiesManagers) - Location management
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Aerospace asset master data must include government contract associations, security classifications, and export control markings. Serialization and configuration tracking are critical.
+
+**Industry-Specific Data Fields:**
+- Government contract number
+- Security classification level
+- ITAR/EAR export control status
+- Configuration baseline version
+- Maintenance requirement codes
+
+### Automotive
+
+Automotive manufacturing requires detailed tracking of production line equipment with integration to manufacturing execution systems.
+
+**Industry-Specific Data Fields:**
+- Production line assignment
+- OEE (Overall Equipment Effectiveness) metrics
+- Tooling specifications
+- Quality certification status
+- Supplier part number linkage
+
+### Banking
+
+Banking asset management focuses on branch and ATM network assets with regulatory reporting requirements.
+
+**Industry-Specific Data Fields:**
+- Branch/ATM identifier
+- Regulatory asset category
+- Core system integration ID
+- Customer-facing designation
+- Capital ratio classification
+
+### Healthcare Provider
+
+Healthcare organizations track medical devices with FDA registration requirements and patient safety implications.
+
+**Industry-Specific Data Fields:**
+- FDA device classification
+- UDI (Unique Device Identifier)
+- Patient contact designation
+- Biomedical maintenance schedule
+- Clinical department assignment
+
+### Petroleum (Upstream/Downstream)
+
+Oil and gas companies track exploration, production, and refining assets with environmental compliance requirements.
+
+**Industry-Specific Data Fields:**
+- Well/Platform/Facility ID
+- Hydrocarbon production allocation
+- Environmental permit linkage
+- Asset retirement obligation estimate
+- Joint venture partner allocation
+
+### Utilities
+
+Utility companies maintain detailed infrastructure asset records for regulatory rate-setting and reliability planning.
+
+**Industry-Specific Data Fields:**
+- Rate base classification
+- Service territory mapping
+- Reliability index contribution
+- Regulatory vintage year
+- Customer count served
+
+## Master Data Structure
+
+### Core Data Elements
+
+| Data Category | Attributes | Description |
+|---------------|------------|-------------|
+| Identification | Asset ID, Tag Number, Serial Number | Unique identifiers |
+| Classification | Category, Class, Subclass | Asset taxonomy |
+| Financial | Cost, Salvage, Useful Life, Depreciation Method | Accounting parameters |
+| Location | Site, Building, Floor, Room, Coordinates | Physical placement |
+| Responsibility | Custodian, Department, Cost Center | Accountability |
+| Status | Active, Idle, Under Repair, Disposed | Current state |
+
+### Supporting Data Elements
+
+| Data Category | Attributes | Description |
+|---------------|------------|-------------|
+| Acquisition | Purchase Date, Vendor, PO Number, Invoice | Origin information |
+| Warranty | Start Date, End Date, Terms, Provider | Coverage details |
+| Maintenance | Schedule, Last Service, Next Due | Service history |
+| Insurance | Coverage Amount, Policy Number, Renewal | Risk protection |
+| Technical | Make, Model, Capacity, Specifications | Physical characteristics |
+| Documents | Manuals, Photos, Certificates | Attached files |
+
+### Data Quality Rules
+
+| Rule Type | Description | Example |
+|-----------|-------------|---------|
+| Completeness | Required fields populated | Asset ID, Cost, Location |
+| Uniqueness | No duplicate identifiers | One record per asset ID |
+| Validity | Values within allowed ranges | Useful life > 0 |
+| Consistency | Related fields agree | Disposal date > Acquisition date |
+| Timeliness | Records updated within SLA | Changes within 24 hours |
+
+## Related Processes
+
+```mermaid
+graph LR
+    EFAP["10.5.1 Establish fixed-asset<br/>policies and procedures"] --> MFMD["10.5.2 Maintain fixed-asset<br/>master data files"]
+    Acquisition["Asset<br/>Acquisition"] --> MFMD
+
+    MFMD --> PRFA["10.5.3 Process and record<br/>additions and retires"]
+    MFMD --> CRD["10.5.6 Calculate and<br/>record depreciation"]
+    MFMD --> TFA["10.5.8 Track fixed-assets<br/>including physical inventory"]
+    MFMD --> Reporting["Tax and Regulatory<br/>Reporting"]
+```
+
+## Sub-Activities
+
+| Activity | Description |
+|----------|-------------|
+| Initialize asset records | Create new entries for acquired assets |
+| Generate asset identifiers | Assign unique tracking numbers |
+| Capture acquisition details | Record purchase information |
+| Document technical specifications | Enter physical attributes |
+| Assign responsibility | Designate custodians and cost centers |
+| Record location data | Track physical placement |
+| Attach supporting documents | Link warranties, manuals, photos |
+| Process asset transfers | Update location and custodian changes |
+| Update status information | Maintain current asset state |
+| Archive disposed assets | Retain historical records |
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Data Completeness | Percentage of required fields populated | >99% |
+| Record Accuracy | Percentage matching physical verification | >98% |
+| Update Timeliness | Average days to process changes | <2 days |
+| Duplicate Rate | Percentage of duplicate records | <0.1% |
+| Physical Match Rate | Records matching inventory count | >99% |
+| Documentation Completeness | Assets with attached supporting docs | >95% |
+| Audit Trail Coverage | Percentage of changes with proper logging | 100% |
+
+---
+
+*Source: APQC PCF 10829 (10.5.2) - Cross-Industry*

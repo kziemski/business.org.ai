@@ -1,0 +1,117 @@
+---
+id: SaturatedMaterialsManufacturing
+name: "Saturated Materials Manufacturing"
+code: "32412"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Saturated Materials Manufacturing
+
+> This industry comprises establishments primarily engaged in (1) manufacturing asphalt and tar paving mixtures and blocks and roofing cements and coatings from purchased asphaltic materials and/or (2) saturating purchased mats and felts with asphalt or tar from purchased asphaltic materials.
+
+## Overview
+
+Saturated Materials Manufacturing represents an important category within the Manufacturing sector (NAICS 31-33).
+
+This industry comprises establishments primarily engaged in (1) manufacturing asphalt and tar paving mixtures and blocks and roofing cements and coatings from purchased asphaltic materials and/or (2) saturating purchased mats and felts with asphalt or tar from purchased asphaltic materials. Cross-References. Establishments primarily engaged in--
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S3133["31-33: Manufacturing"]
+    S3133 --> N324["324: Petroleum"]
+    N324 --> N32412["32412: Saturated Materials Manufacturing"]
+    style N32412 fill:#f96,stroke:#333,stroke-width:2px
+    N32412 --> N324121["324121: Asphalt Paving Mixture"]
+    N32412 --> N324121["324121: Block Manufacturing"]
+    N32412 --> N324122["324122: Asphalt Shingle"]
+    N32412 --> N324122["324122: Coating Materials Manufacturing"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 32412 |
+| Level | Industry |
+| Child Industries | 4 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Asphalt Paving Mixture](./AsphaltPavingMixture.mdx) | 324121 | This U |
+| [Block Manufacturing](./BlockManufacturing.mdx) | 324121 | This U |
+| [Asphalt Shingle](./AsphaltShingle.mdx) | 324122 | This U |
+| [Coating Materials Manufacturing](./CoatingMaterialsManufacturing.mdx) | 324122 | This U |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Raw Material Prep"]
+        O2["Production"]
+        O3["Assembly"]
+        O4["Quality Control"]
+        O5["Packaging"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Inventory Mgmt"]
+        S3["Safety Systems"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Raw Materials"]
+        I2["Components"]
+        I3["Equipment"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Finished Products"]
+        O2["Components"]
+        O3["Assemblies"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Industrial Buyers"]
+        C2["Retailers"]
+        C3["Distributors"]
+        C4["End Users"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 32412 - Saturated Materials Manufacturing*

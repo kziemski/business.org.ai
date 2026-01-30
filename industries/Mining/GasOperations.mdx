@@ -1,0 +1,106 @@
+---
+id: GasOperations
+name: "Gas Operations"
+code: "213112"
+type: Industry
+level: National Industry
+status: complete
+---
+
+# Gas Operations
+
+> This U.
+
+## Overview
+
+Gas Operations represents a specialized segment within the Mining, Quarrying, and Oil and Gas Extraction sector (NAICS 21).
+
+This U.S. industry comprises establishments primarily engaged in performing support activities, on a contract or fee basis, for oil and gas operations (except geophysical surveying and mapping, site preparation, construction, and transportation activities). Services included are exploration; excavating slush pits and cellars, well surveying; running, cutting, and pulling casings, tubes, and rods; cementing wells, shooting wells; perforating well casings; acidizing and chemically treating wells; and cleaning out, bailing, and swabbing wells. Cross-References. Establishments primarily engaged in--
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S21["21: Mining, Quarrying, and Oil and Gas Extraction"]
+    S21 --> N213["213: Support Activities for Mining"]
+    N213 --> N2131["2131: Chewing"]
+    N2131 --> N213112["213112: Gas Operations"]
+    style N213112 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 213112 |
+| Level | National Industry |
+| Child Industries | 0 |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Exploration"]
+        O2["Site Development"]
+        O3["Extraction"]
+        O4["Processing"]
+        O5["Reclamation"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Safety Systems"]
+        S2["Equipment Maintenance"]
+        S3["Environmental Compliance"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Equipment"]
+        I2["Energy"]
+        I3["Labor"]
+        I4["Permits"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Minerals"]
+        O2["Oil/Gas"]
+        O3["Raw Materials"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Refineries"]
+        C2["Manufacturers"]
+        C3["Utilities"]
+        C4["Export Markets"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 213112 - Gas Operations*

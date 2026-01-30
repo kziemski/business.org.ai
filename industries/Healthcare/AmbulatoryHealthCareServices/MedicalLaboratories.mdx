@@ -1,0 +1,105 @@
+---
+id: MedicalLaboratories
+name: "Medical Laboratories"
+code: "621511"
+type: Industry
+level: National Industry
+status: complete
+---
+
+# Medical Laboratories
+
+> This U.
+
+## Overview
+
+Medical Laboratories represents a specialized segment within the Health Care and Social Assistance sector (NAICS 62).
+
+This U.S. industry comprises establishments known as medical laboratories primarily engaged in providing analytic or diagnostic services, including body fluid analysis, generally to the medical profession or to the patient on referral from a health practitioner. Illustrative Examples: Blood analysis laboratories Medical pathology laboratories Medical bacteriological laboratories Medical testing laboratories Medical forensic laboratories Cross-References.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S62["62: Health Care and Social Assistance"]
+    S62 --> N621["621: Ambulatory Health Care Services"]
+    N621 --> N6215["6215: Diagnostic Laboratories"]
+    N6215 --> N621511["621511: Medical Laboratories"]
+    style N621511 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 621511 |
+| Level | National Industry |
+| Child Industries | 0 |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Patient/Client Intake"]
+        O2["Assessment"]
+        O3["Treatment/Service"]
+        O4["Follow-up"]
+        O5["Discharge"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Compliance"]
+        S2["Records Mgmt"]
+        S3["Billing"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Medical Supplies"]
+        I2["Equipment"]
+        I3["Professionals"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Patient Care"]
+        O2["Diagnostics"]
+        O3["Treatment"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Patients"]
+        C2["Insurers"]
+        C3["Government"]
+        C4["Employers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 621511 - Medical Laboratories*

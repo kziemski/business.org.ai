@@ -1,0 +1,119 @@
+---
+id: Broadcasting
+name: "Broadcasting"
+code: "516"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Broadcasting
+
+> Industries in the Broadcasting and Content Providers subsector include establishments that create content or acquire the right to distribute content and subsequently broadcast or distribute that content.
+
+## Overview
+
+Broadcasting represents an important category within the Information sector (NAICS 51).
+
+Industries in the Broadcasting and Content Providers subsector include establishments that create content or acquire the right to distribute content and subsequently broadcast or distribute that content. The industry groups (Radio and Television Broadcasting Stations and Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers) are based on differences in the methods of communication and the nature of services provided. The Radio and Television Broadcasting Stations industry group includes establishments that operate radio or television broadcasting stations for the programming and transmission of programs to the public. Programming may originate in their own studio, from an affiliated network, or from external sources. The Media Streaming Distribution Services, Social Networks, and Other Media Networks and Content Providers industry group includes establishments providing media streaming distribution services, operating social network sites, operating media broadcasting and cable television networks, and supplying information, such as news reports, articles, pictures, and features, to the news media. The establishments classified in this subsector are often engaged in the production and purchase of programs and other textual, audio, and/or video content, and they typically generate revenues from the sale of advertising space and air time, subscriptions, donations, subsidies, and/or the sale of programs. Establishments operating telecommunications facilities and infrastructure and distributing audio and video programming, including cable and satellite television subscription programming, are included in Subsector 517, Telecommunications. Establishments primarily engaged as independent contractors in the installation and maintenance of broadcasting systems are classified in Sector 23, Construction. Establishments primarily engaged in the production, or production and distribution, of motion pictures and sound recordings are included in Subsector 512, Motion Picture and Sound Recording Industries.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S51["51: Information"]
+    S51 --> N516["516: Broadcasting"]
+    style N516 fill:#f96,stroke:#333,stroke-width:2px
+    N516 --> N5161["5161: Television Broadcasting Stations"]
+    N516 --> N5162["5162: Media Streaming Distribution Ser..."]
+    N516 --> N5162["5162: Social Networks"]
+    N516 --> N5162["5162: Media Networks and Content Provi..."]
+    N516 --> N5162["5162: Shapes"]
+    N516 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 516 |
+| Level | Subsector |
+| Parent | [Information](../) |
+| Child Industries | 4 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Television Broadcasting Stations](./TelevisionBroadcastingStations/) | 5161 | This industry group comprises establishments operating radio or television broad |
+| [Media Streaming Distribution Services](./MediaStreamingDistributionServices/) | 5162 | Media Streaming Distribution Services |
+| [Social Networks](./SocialNetworks/) | 5162 | Social Networks |
+| [Media Networks and Content Providers](./MediaNetworksAndContentProviders/) | 5162 | Media Networks and Content Providers |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Content Creation"]
+        O2["Production"]
+        O3["Distribution"]
+        O4["Customer Access"]
+        O5["Support"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Technology Mgmt"]
+        S2["Rights Management"]
+        S3["Marketing"]
+        S4["Analytics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Content"]
+        I2["Technology"]
+        I3["Talent"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Information Products"]
+        O2["Software"]
+        O3["Media"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Education"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 516 - Broadcasting*

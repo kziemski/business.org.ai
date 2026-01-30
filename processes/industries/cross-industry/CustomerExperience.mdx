@@ -1,0 +1,458 @@
+---
+id: CustomerExperience
+name: "Design customer experience"
+code: "19964"
+hierarchyId: "1.2.8.5"
+type: Process
+status: complete
+---
+
+# Design customer experience
+
+> Creating a design of how customers interact with the business by analyzing data captured through various customer interaction and customer involvement. These will be captured through various channels such as customer satisfaction surveys, feedback forms, product reviews, targeted studies, observational studies, or voice of customer research.
+
+## Overview
+
+Design customer experience (APQC 19964) is a critical process within the Develop Customer Experience Strategy process group. This process focuses on creating intentional, coherent designs for how customers interact with the organization across all touchpoints. By analyzing customer data, feedback, and behavior, organizations can design experiences that meet customer needs, align with brand values, and drive business results.
+
+Customer experience design goes beyond individual interactions to consider the entire customer journey. It encompasses the emotional, functional, and contextual elements that shape how customers perceive and engage with the organization. The goal is to create experiences that are consistent, differentiated, and valuable to both customers and the business.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"] --> G12["1.2 Develop business strategy"]
+    G12 --> P128["1.2.8 Develop customer<br/>experience strategy"]
+    P128 --> A5["1.2.8.5 Design<br/>customer experience"]
+
+    A5 --> T1["Define and manage personas"]
+    A5 --> T2["Create customer journey maps"]
+    A5 --> T3["Define single view of customer"]
+    A5 --> T4["Define vision for CX"]
+    A5 --> T5["Validate with customers"]
+    A5 --> T6["Align experience with brand"]
+    A5 --> T7["Develop content strategy"]
+
+    style A5 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19964 |
+| Hierarchy ID | 1.2.8.5 |
+| Level | Process |
+| Category | [Develop Vision and Strategy](/processes/01-Strategy) |
+| Sub-Activities | 7 |
+| Related Touchpoints | All customer-facing |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Customer Research Data"]
+        I2["Satisfaction Surveys"]
+        I3["Feedback Forms"]
+        I4["Product Reviews"]
+        I5["Voice of Customer"]
+        I6["Behavioral Analytics"]
+        I7["Competitive Analysis"]
+    end
+
+    subgraph Process["Design Customer Experience"]
+        P1["Define and<br/>Manage Personas"]
+        P2["Create Customer<br/>Journey Maps"]
+        P3["Define Single<br/>View of Customer"]
+        P4["Define CX<br/>Vision"]
+        P5["Validate with<br/>Customers"]
+        P6["Align with<br/>Brand Values"]
+        P7["Develop Content<br/>Strategy"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Customer Personas"]
+        O2["Journey Maps"]
+        O3["CX Vision Statement"]
+        O4["Experience Design"]
+        O5["Content Strategy"]
+        O6["Brand Alignment Guide"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+design.CustomerExperience
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Primary action of creating and planning |
+| Object | `CustomerExperience` | The totality of customer interactions |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+## Activities
+
+### Define and manage personas
+
+Identifying a set of characteristics that define the demographic and behavioral patterns of the customer. Use persona scoring to design marketing strategies around personas, and measure and optimize interactions with contacts classified by a certain persona.
+
+```mermaid
+sequenceDiagram
+    participant Research as Research Team
+    participant Analysis as Analysis Team
+    participant Marketing as Marketing
+    participant CX as CX Team
+
+    Research->>Analysis: Provide customer data
+    Analysis->>Analysis: Segment customer base
+    Analysis->>Analysis: Identify behavioral patterns
+    Analysis->>Analysis: Define demographic attributes
+    Analysis->>Marketing: Create persona profiles
+    Marketing->>CX: Validate persona accuracy
+    CX->>Analysis: Refine personas
+    Analysis->>Analysis: Establish persona scoring
+```
+
+**Tasks:**
+- `segment.CustomerBase` - Divide customers into meaningful groups
+- `identify.BehavioralPatterns` - Recognize common customer behaviors
+- `define.DemographicAttributes` - Document persona characteristics
+- `create.PersonaProfiles` - Build detailed persona descriptions
+- `establish.PersonaScoring` - Create scoring methodology for persona classification
+
+### Create customer journey maps
+
+Creating a story of the customer's experience from initial contact, through the process of engagement and into a long-term relationship. The goal is to teach the organization about the customer.
+
+```mermaid
+sequenceDiagram
+    participant CX as CX Team
+    participant Research as Research Team
+    participant Touchpoints as Touchpoint Owners
+    participant Design as Design Team
+
+    CX->>Research: Request customer journey data
+    Research->>CX: Provide interaction data
+    CX->>Touchpoints: Identify all touchpoints
+    Touchpoints->>CX: Document touchpoint details
+    CX->>CX: Map customer stages
+    CX->>CX: Identify moments of truth
+    CX->>Design: Create journey visualizations
+    Design->>CX: Deliver journey maps
+```
+
+**Tasks:**
+- `identify.CustomerStages` - Define phases of customer relationship
+- `map.Touchpoints` - Document all customer interaction points
+- `document.CustomerEmotions` - Capture emotional journey
+- `identify.MomentsOfTruth` - Highlight critical interactions
+- `visualize.JourneyMaps` - Create journey map artifacts
+
+### Define single view of the customer
+
+Defining parameters to show aggregated, consistent, and holistic representation of known data about customers. Define key parameters which enable the tracking of customers and communications across every channel.
+
+```mermaid
+sequenceDiagram
+    participant CX as CX Team
+    participant IT as IT/Data Team
+    participant Channels as Channel Owners
+    participant Analytics as Analytics
+
+    CX->>IT: Define data requirements
+    IT->>Channels: Request data sources
+    Channels->>IT: Provide channel data
+    IT->>IT: Integrate data sources
+    IT->>IT: Create unified customer profile
+    IT->>Analytics: Enable analytics capabilities
+    Analytics->>CX: Deliver customer insights
+    CX->>CX: Validate single view
+```
+
+**Tasks:**
+- `identify.DataSources` - Catalog all customer data sources
+- `define.DataParameters` - Establish key customer attributes
+- `integrate.CustomerData` - Create unified data model
+- `enable.CrossChannelTracking` - Connect customer across channels
+- `validate.DataQuality` - Ensure accuracy and completeness
+
+### Define a vision for the customer experience
+
+Establishing a direction and vision on how the organization behaves towards customers in a consistent, effective way. The key attributes for customer experience vision consists of emotional connection, commitments and expectations, compelling value proposition, and ease of understanding the organization's behavior.
+
+```mermaid
+sequenceDiagram
+    participant CX as CX Team
+    participant Strategy as Strategy Team
+    participant Executive as Executive Team
+    participant Comms as Communications
+
+    CX->>Strategy: Review business strategy
+    Strategy->>CX: Provide strategic context
+    CX->>CX: Draft CX vision
+    CX->>CX: Define emotional connection goals
+    CX->>CX: Articulate value proposition
+    CX->>Executive: Present CX vision
+    Executive->>CX: Approve CX vision
+    CX->>Comms: Develop communication plan
+```
+
+**Tasks:**
+- `define.EmotionalConnection` - Establish desired emotional outcomes
+- `articulate.ValueProposition` - Clarify customer value delivery
+- `set.CXCommitments` - Define experience promises
+- `document.CXVision` - Create CX vision statement
+- `align.WithStrategy` - Ensure strategic alignment
+
+### Validate with customers
+
+Creating a process to validate the sales process and the assumptions that underpin the business model. Understand if the products/services have a repeatable, scalable business model around that product.
+
+```mermaid
+sequenceDiagram
+    participant CX as CX Team
+    participant Research as Research Team
+    participant Customers as Customers
+    participant Analysis as Analysis Team
+
+    CX->>Research: Design validation approach
+    Research->>Customers: Conduct validation research
+    Customers->>Research: Provide feedback
+    Research->>Analysis: Deliver research data
+    Analysis->>Analysis: Analyze customer responses
+    Analysis->>CX: Present validation findings
+    CX->>CX: Refine experience design
+    CX->>CX: Document validated elements
+```
+
+**Tasks:**
+- `design.ValidationApproach` - Create validation methodology
+- `conduct.CustomerResearch` - Execute validation activities
+- `analyze.CustomerFeedback` - Interpret validation results
+- `refine.ExperienceDesign` - Update based on validation
+- `document.ValidatedElements` - Record confirmed design decisions
+
+### Align experience with brand values and business strategies
+
+Aligning and defining a relevant, differentiated, and credible value proposition for the brand. Align experience to ensure that the product and service quality is consistent with brand promise and business strategies.
+
+```mermaid
+sequenceDiagram
+    participant CX as CX Team
+    participant Brand as Brand Team
+    participant Strategy as Strategy Team
+    participant Quality as Quality Team
+
+    CX->>Brand: Request brand guidelines
+    Brand->>CX: Provide brand values
+    CX->>Strategy: Request business strategy
+    Strategy->>CX: Provide strategic priorities
+    CX->>CX: Map CX to brand values
+    CX->>CX: Align CX with strategy
+    CX->>Quality: Define quality standards
+    Quality->>CX: Confirm alignment
+```
+
+**Tasks:**
+- `map.CXToBrandValues` - Connect experience to brand
+- `align.CXWithStrategy` - Ensure strategic fit
+- `define.QualityStandards` - Set experience quality levels
+- `document.AlignmentGuidelines` - Create alignment documentation
+- `validate.Consistency` - Ensure consistent delivery
+
+### Develop content strategy
+
+Planning, development, and management of content written or in other media. Getting the right content to the right user at the right time through strategic planning of content creation, delivery, and governance.
+
+```mermaid
+sequenceDiagram
+    participant CX as CX Team
+    participant Content as Content Team
+    participant Channels as Channel Owners
+    participant Governance as Governance Team
+
+    CX->>Content: Define content requirements
+    Content->>Content: Audit existing content
+    Content->>Content: Identify content gaps
+    Content->>Channels: Plan content delivery
+    Channels->>Content: Confirm channel capabilities
+    Content->>Content: Create content calendar
+    Content->>Governance: Establish governance
+    Governance->>Content: Approve content strategy
+```
+
+**Tasks:**
+- `audit.ExistingContent` - Assess current content inventory
+- `identify.ContentGaps` - Find missing content elements
+- `plan.ContentDelivery` - Define content distribution
+- `create.ContentCalendar` - Schedule content creation
+- `establish.ContentGovernance` - Set content management rules
+
+## Customer Journey Framework
+
+### Journey Stages
+
+```mermaid
+graph LR
+    A["Awareness"] --> C["Consideration"]
+    C --> P["Purchase"]
+    P --> U["Use"]
+    U --> A2["Advocacy"]
+
+    A --> |"Marketing<br/>Touchpoints"| C
+    C --> |"Sales<br/>Touchpoints"| P
+    P --> |"Fulfillment<br/>Touchpoints"| U
+    U --> |"Service<br/>Touchpoints"| A2
+```
+
+### Touchpoint Categories
+
+```mermaid
+graph TD
+    subgraph Digital["Digital Touchpoints"]
+        Web["Website"]
+        App["Mobile App"]
+        Email["Email"]
+        Social["Social Media"]
+    end
+
+    subgraph Physical["Physical Touchpoints"]
+        Store["Store/Location"]
+        Product["Product"]
+        Package["Packaging"]
+    end
+
+    subgraph Human["Human Touchpoints"]
+        Sales["Sales Team"]
+        Service["Service Team"]
+        Support["Support Team"]
+    end
+
+    Customer["Customer"] --> Digital
+    Customer --> Physical
+    Customer --> Human
+```
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define and manage personas | CX Team | CMO | Marketing, Sales | All Customer-facing |
+| Create customer journey maps | CX Team | CMO | All Touchpoint Owners | Executive Team |
+| Define single view of customer | CX Team, IT | CDO | All Channels | Marketing |
+| Define CX vision | CX Team | CEO | Executive Team | All Employees |
+| Validate with customers | Research Team | CMO | CX Team | Product, Sales |
+| Align with brand values | CX Team | CMO | Brand, Strategy | Marketing |
+| Develop content strategy | Content Team | CMO | CX Team, Channels | All Departments |
+
+## Related Departments
+
+- [Customer Experience](/departments/CX) - Primary owner of experience design
+- [Marketing](/departments/Marketing/index) - Brand alignment and content
+- [Sales](/departments/Sales/index) - Customer journey touchpoints
+- [Customer Service](/departments/CustomerService) - Service touchpoints
+- [Information Technology](/departments/IT) - Data integration and analytics
+- [Product Management](/departments/Product) - Product experience design
+
+## Related Occupations
+
+- [Customer Experience Managers](/occupations/CXManagers) - Experience design leadership
+- [UX Designers](/occupations/UXDesigners) - Digital experience design
+- [Market Research Analysts](/occupations/MarketResearchAnalysts) - Customer research
+- [Marketing Managers](/occupations/Management/MarketingManagers) - Brand and content alignment
+- [Data Analysts](/occupations/DataAnalysts) - Customer insights
+
+## Industry Variations
+
+### Banking
+
+Banking CX design emphasizes digital banking experiences, omnichannel consistency, and trust-building through security and transparency. Journey maps address account opening, lending, and wealth management pathways.
+
+**Industry-Specific Activities:**
+- Design digital banking journeys
+- Create omnichannel branch/digital integration
+- Build trust through security transparency
+- Design financial wellness experiences
+
+### Healthcare Provider
+
+Healthcare CX design focuses on patient experience, care coordination, and health outcomes. Journey maps address patient acquisition, care delivery, and ongoing wellness management.
+
+**Industry-Specific Activities:**
+- Design patient access experiences
+- Create care coordination journeys
+- Build patient portal experiences
+- Design health outcome tracking
+
+### Retail
+
+Retail CX design emphasizes shopping experiences across channels, personalization, and loyalty. Journey maps address discovery, purchase, and post-purchase engagement.
+
+**Industry-Specific Activities:**
+- Design omnichannel shopping journeys
+- Create personalized product discovery
+- Build loyalty program experiences
+- Design returns and exchange processes
+
+### Aerospace and Defense
+
+Aerospace CX design addresses B2B customer relationships, complex procurement processes, and long-term service relationships. Journey maps cover sales cycles, program delivery, and aftermarket services.
+
+**Industry-Specific Activities:**
+- Design enterprise sales journeys
+- Create program delivery experiences
+- Build aftermarket service journeys
+- Design technical support experiences
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| [Define and manage personas](./Personas) | 16612 | Create and manage customer personas |
+| [Create customer journey maps](./JourneyMaps) | 19965 | Map the customer experience journey |
+| [Define single view of customer](./SingleView) | 19966 | Create unified customer data view |
+| [Define CX vision](./CXVision) | 19967 | Establish customer experience vision |
+| [Validate with customers](./Validation) | 19968 | Validate experience design with customers |
+| [Align with brand](./BrandAlignment) | 19969 | Ensure brand consistency |
+| [Develop content strategy](./ContentStrategy) | 19970 | Plan content creation and delivery |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Assess["1.2.8.2 Assess<br/>customer experience"] --> DCX["1.2.8.5 Design<br/>customer experience"]
+    Touchpoints["1.2.8.3 Identify<br/>touchpoints"] --> DCX
+    RootCause["1.2.8.4 Perform<br/>root cause analysis"] --> DCX
+
+    DCX --> Support["1.2.8.6 Design CX<br/>support structure"]
+    DCX --> MS["3.0 Market and<br/>Sell"]
+    DCX --> CS["6.0 Manage<br/>Customer Service"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Customer Satisfaction Score (CSAT) | Overall satisfaction rating | >85% |
+| Net Promoter Score (NPS) | Customer loyalty measure | >50 |
+| Customer Effort Score (CES) | Ease of interaction | >4.0/5.0 |
+| Journey Completion Rate | Percentage completing journeys | >80% |
+| Touchpoint Satisfaction | Satisfaction by touchpoint | >80% per touchpoint |
+| Experience Consistency | Cross-channel consistency | >90% |
+
+---
+
+*Source: APQC PCF 19964 (1.2.8.5) - Cross-Industry*

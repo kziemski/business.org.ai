@@ -1,0 +1,121 @@
+---
+id: MetalValveManufacturing
+name: "Metal Valve Manufacturing"
+code: "33291"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Metal Valve Manufacturing
+
+> This industry comprises establishments primarily engaged in manufacturing one or more of the following metal valves: (1) industrial valves; (2) fluid power valves and hose fittings; (3) plumbing fixture fittings and trim; and (4) other metal valves and pipe fittings.
+
+## Overview
+
+Metal Valve Manufacturing represents an important category within the Manufacturing sector (NAICS 31-33).
+
+This industry comprises establishments primarily engaged in manufacturing one or more of the following metal valves: (1) industrial valves; (2) fluid power valves and hose fittings; (3) plumbing fixture fittings and trim; and (4) other metal valves and pipe fittings. Cross-References. Establishments primarily engaged in--
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S3133["31-33: Manufacturing"]
+    S3133 --> N332["332: Fabricated Metal Product Manufacturing"]
+    N332 --> N33291["33291: Metal Valve Manufacturing"]
+    style N33291 fill:#f96,stroke:#333,stroke-width:2px
+    N33291 --> N332911["332911: Industrial Valve Manufacturing"]
+    N33291 --> N332912["332912: Fluid Power Valve"]
+    N33291 --> N332912["332912: Hose Fitting Manufacturing"]
+    N33291 --> N332913["332913: Plumbing Fixture Fitting"]
+    N33291 --> N332913["332913: Trim Manufacturing"]
+    N33291 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 33291 |
+| Level | Industry |
+| Child Industries | 6 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Industrial Valve Manufacturing](./IndustrialValveManufacturing.mdx) | 332911 | This U |
+| [Fluid Power Valve](./FluidPowerValve.mdx) | 332912 | This U |
+| [Hose Fitting Manufacturing](./HoseFittingManufacturing.mdx) | 332912 | This U |
+| [Plumbing Fixture Fitting](./PlumbingFixtureFitting.mdx) | 332913 | This U |
+| [Trim Manufacturing](./TrimManufacturing.mdx) | 332913 | This U |
+| [Metal Valve](./MetalValve.mdx) | 332919 | This U |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Raw Material Prep"]
+        O2["Production"]
+        O3["Assembly"]
+        O4["Quality Control"]
+        O5["Packaging"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Inventory Mgmt"]
+        S3["Safety Systems"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Raw Materials"]
+        I2["Components"]
+        I3["Equipment"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Finished Products"]
+        O2["Components"]
+        O3["Assemblies"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Industrial Buyers"]
+        C2["Retailers"]
+        C3["Distributors"]
+        C4["End Users"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 33291 - Metal Valve Manufacturing*

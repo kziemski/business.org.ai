@@ -1,0 +1,118 @@
+---
+id: WaterSewageAndSystems
+name: "Water, Sewage and Systems"
+code: "2213"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Water, Sewage and Systems
+
+> This industry group comprises establishments primarily engaged in: (1) operating water treatment plants and/or water supply systems; (2) operating sewer systems or sewage treatment facilities; or (3) providing steam, heated air, or cooled air.
+
+## Overview
+
+Water, Sewage and Systems represents an important category within the Utilities sector (NAICS 22).
+
+This industry group comprises establishments primarily engaged in: (1) operating water treatment plants and/or water supply systems; (2) operating sewer systems or sewage treatment facilities; or (3) providing steam, heated air, or cooled air.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S22["22: Utilities"]
+    S22 --> N2213["2213: Water, Sewage and Systems"]
+    style N2213 fill:#f96,stroke:#333,stroke-width:2px
+    N2213 --> N22131["22131: Water Supply"]
+    N2213 --> N22131["22131: Irrigation Systems"]
+    N2213 --> N22132["22132: Sewage Treatment Facilities"]
+    N2213 --> N22133["22133: Steam"]
+    N2213 --> N22133["22133: Air-Conditioning Supply"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 2213 |
+| Level | Industry Group |
+| Child Industries | 5 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Water Supply](./WaterSupply/) | 22131 | See industry description for 221310 |
+| [Irrigation Systems](./IrrigationSystems/) | 22131 | See industry description for 221310 |
+| [Sewage Treatment Facilities](./SewageTreatmentFacilities/) | 22132 | See industry description for 221320 |
+| [Steam](./Steam/) | 22133 | See industry description for 221330 |
+| [Air-Conditioning Supply](./AirconditioningSupply/) | 22133 | See industry description for 221330 |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Generation/Collection"]
+        O2["Transmission"]
+        O3["Distribution"]
+        O4["Metering"]
+        O5["Customer Service"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Infrastructure Maintenance"]
+        S2["Safety Systems"]
+        S3["Regulatory Compliance"]
+        S4["IT Systems"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 2213 - Water, Sewage and Systems*

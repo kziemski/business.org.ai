@@ -1,0 +1,113 @@
+---
+id: WiringDeviceManufacturing
+name: "Wiring Device Manufacturing"
+code: "33593"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Wiring Device Manufacturing
+
+> This industry comprises establishments primarily engaged in manufacturing current-carrying wiring devices and noncurrent-carrying wiring devices for wiring electrical circuits.
+
+## Overview
+
+Wiring Device Manufacturing represents an important category within the Manufacturing sector (NAICS 31-33).
+
+This industry comprises establishments primarily engaged in manufacturing current-carrying wiring devices and noncurrent-carrying wiring devices for wiring electrical circuits. Cross-References. Establishments primarily engaged in--
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S3133["31-33: Manufacturing"]
+    S3133 --> N335["335: Electrical Equipment"]
+    N335 --> N33593["33593: Wiring Device Manufacturing"]
+    style N33593 fill:#f96,stroke:#333,stroke-width:2px
+    N33593 --> N335931["335931: Current-Carrying Wiring Device M..."]
+    N33593 --> N335932["335932: Noncurrent-Carrying Wiring Devic..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 33593 |
+| Level | Industry |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Current-Carrying Wiring Device Manufacturing](./CurrentcarryingWiringDeviceManufacturing.mdx) | 335931 | This U |
+| [Noncurrent-Carrying Wiring Device Manufacturing](./NoncurrentcarryingWiringDeviceManufacturing.mdx) | 335932 | This U |
+
+## Related Occupations
+
+See the [occupations directory](/occupations) for roles commonly found in this industry.
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Raw Material Prep"]
+        O2["Production"]
+        O3["Assembly"]
+        O4["Quality Control"]
+        O5["Packaging"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Inventory Mgmt"]
+        S3["Safety Systems"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Raw Materials"]
+        I2["Components"]
+        I3["Equipment"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Finished Products"]
+        O2["Components"]
+        O3["Assemblies"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Industrial Buyers"]
+        C2["Retailers"]
+        C3["Distributors"]
+        C4["End Users"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 33593 - Wiring Device Manufacturing*
