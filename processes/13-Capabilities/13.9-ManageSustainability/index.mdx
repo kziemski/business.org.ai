@@ -1,0 +1,95 @@
+---
+id: ManageSustainability
+name: "Manage sustainability"
+code: "21588"
+hierarchyId: "13.9"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "13"
+children: ["13.9.1", "13.9.2"]
+---
+
+# Manage sustainability
+
+> Developing and managing sustainability practices for the organization.
+
+## Overview
+
+Group 13.9 is a process group within APQC Category 13.0 (Develop and Manage Business Capabilities). 
+
+Developing and managing sustainability practices for the organization. Ensure proper understanding and communication of ESG standards, requirements, capabilities, and future trends. Promote awareness, alignment, and continuity.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_9["13.9 Manage sustainability"]
+    style N13_9 fill:#e1f5fe
+    N13_9 --> N13_9_1["13.9.1 Develop sustainability capability"]
+    N13_9 --> N13_9_2["13.9.2 Manage sustainability capability"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21588 |
+| Hierarchy ID | 13.9 |
+| Level | Group |
+| Parent | [13](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Sustainability
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `sustainability` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage sustainability"]
+        S1["Develop sustainability capa..."]
+        S2["Manage sustainability capab..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop sustainability capability](./13.9.1-DevelopSustainabilityCapability/) | 13.9.1 | Developing sustainability (ESG) capabilities for the organization |
+| [Manage sustainability capability](./13.9.2-ManageSustainabilityCapability/) | 13.9.2 | Managing sustainability across the organization |
+
+
+## Related Concepts
+
+- [Sustainability](/concepts/Sustainability)
+
+
+---
+
+*Source: APQC PCF 21588 (13.9) - APQC*

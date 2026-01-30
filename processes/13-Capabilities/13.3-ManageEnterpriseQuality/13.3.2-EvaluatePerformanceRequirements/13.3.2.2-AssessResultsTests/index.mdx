@@ -1,0 +1,112 @@
+---
+id: AssessResultsOfTests
+name: "Assess results of tests"
+code: "17487"
+hierarchyId: "13.3.2.2"
+type: Activity
+level: 4
+status: complete
+parent: "13.3.2"
+children: ["13.3.2.2.1", "13.3.2.2.2", "13.3.2.2.3", "13.3.2.2.4", "13.3.2.2.5"]
+---
+
+# Assess results of tests
+
+> Assessing the significance of the sample.
+
+## Overview
+
+Activity 13.3.2.2 is an activity within the Develop and Manage Business Capabilities framework. 
+
+Assessing the significance of the sample. Summarize the results of the test. Recommend improvement actions. Decide what steps to take next.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_3["13.3 Manage enterprise quality"]
+    N13_3 --> N13_3_2["13.3.2 Evaluate performance to requirements"]
+    N13_3_2 --> N13_3_2_2["13.3.2.2 Assess results of tests"]
+    style N13_3_2_2 fill:#e1f5fe
+    N13_3_2_2 --> N13_3_2_2_1["13.3.2.2.1 Assess sample significance"]
+    N13_3_2_2 --> N13_3_2_2_2["13.3.2.2.2 Summarize result(s)"]
+    N13_3_2_2 --> N13_3_2_2_3["13.3.2.2.3 Recommend actions"]
+    N13_3_2_2 --> N13_3_2_2_4["13.3.2.2.4 Decide next steps"]
+    N13_3_2_2 --> N13_3_2_2_5["13.3.2.2.5 Manage non-conformance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17487 |
+| Hierarchy ID | 13.3.2.2 |
+| Level | Activity |
+| Parent | [13.3.2](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+assess.Results.of.Tests
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `assess` | Primary action |
+| Object | `results` | Direct object |
+| Preposition | `of` | Relationship |
+| PrepObject | `tests` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Assess results of tests"]
+        S1["Assess sample significance"]
+        S2["Summarize result(s)"]
+        S3["Recommend actions"]
+        S4["Decide next steps"]
+        S5["Manage non-conformance"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess sample significance](./AssessSampleSignificance) | 13.3.2.2.1 | Assessing the significance of the sample chosen for the test in order to determine whether or not th |
+| [Summarize result(s)](./SummarizeResults) | 13.3.2.2.2 | Outlining the major facts and figures of the quality test results in order to provide insights and i |
+| [Recommend actions](./RecommendActions) | 13.3.2.2.3 | Recommending measures for improvement |
+| [Decide next steps](./DecideNextSteps) | 13.3.2.2.4 | Selecting the subsequent actions that the organization can adopt for improving the enterprise qualit |
+| [Manage non-conformance](./ManageNonconformance) | 13.3.2.2.5 | Handling any nonconformance activities or events |
+
+
+## Related Concepts
+
+- [Results](/concepts/Results)
+- [Tests](/concepts/Tests)
+
+
+---
+
+*Source: APQC PCF 17487 (13.3.2.2) - APQC*

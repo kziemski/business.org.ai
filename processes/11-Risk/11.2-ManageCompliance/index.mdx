@@ -1,0 +1,95 @@
+---
+id: ManageCompliance
+name: "Manage compliance"
+code: "17467"
+hierarchyId: "11.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "11"
+children: ["11.2.1", "11.2.2"]
+---
+
+# Manage compliance
+
+> Managing steps to confirm enduring compliance to industry regulations and government legislation.
+
+## Overview
+
+Group 11.2 is a process group within APQC Category 11.0 (Manage Enterprise Risk, Compliance, Remediation, Resiliency). 
+
+Managing steps to confirm enduring compliance to industry regulations and government legislation.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk, Compliance, Remediation, Resiliency"]
+    C11 --> N11_2["11.2 Manage compliance"]
+    style N11_2 fill:#e1f5fe
+    N11_2 --> N11_2_1["11.2.1 Establish compliance framework a..."]
+    N11_2 --> N11_2_2["11.2.2 Manage regulatory compliance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17467 |
+| Hierarchy ID | 11.2 |
+| Level | Group |
+| Parent | [11](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Compliance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `compliance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage compliance"]
+        S1["Establish compliance framew..."]
+        S2["Manage regulatory compliance"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish compliance framework and policies](./11.2.1-EstablishComplianceFrameworkPolicies/) | 11.2.1 | Developing a set of procedures detailing an organization's progress in complying with established gu |
+| [Manage regulatory compliance](./11.2.2-ManageRegulatoryCompliance/) | 11.2.2 | Obeying laws, guidelines, strategies, and stipulations related to the business |
+
+
+## Related Concepts
+
+- [Compliance](/concepts/Compliance)
+
+
+---
+
+*Source: APQC PCF 17467 (11.2) - APQC*

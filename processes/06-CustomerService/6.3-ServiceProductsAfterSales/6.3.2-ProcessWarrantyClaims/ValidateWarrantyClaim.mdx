@@ -1,0 +1,63 @@
+---
+id: ValidateWarrantyClaim
+name: "Validate warranty claim"
+code: "12671"
+hierarchyId: "6.3.2.2"
+type: Activity
+level: 4
+status: complete
+parent: "6.3.2"
+---
+
+# Validate warranty claim
+
+> Ensuring that the claim falls within the parameters of the warranty in question.
+
+## Overview
+
+Activity 6.3.2.2 is an activity within the Manage Customer Service framework. 
+
+Ensuring that the claim falls within the parameters of the warranty in question. After validation is made, the claim must be investigated.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_2["6.3.2 Process warranty claims"]
+    N6_3_2 --> N6_3_2_2["6.3.2.2 Validate warranty claim"]
+    style N6_3_2_2 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 12671 |
+| Hierarchy ID | 6.3.2.2 |
+| Level | Activity |
+| Parent | [6.3.2](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+validate.WarrantyClaim
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `validate` | Primary action |
+| Object | `warranty claim` | Direct object |
+
+
+## Related Concepts
+
+- [WarrantyClaim](/concepts/WarrantyClaim)
+
+
+---
+
+*Source: APQC PCF 12671 (6.3.2.2) - APQC*

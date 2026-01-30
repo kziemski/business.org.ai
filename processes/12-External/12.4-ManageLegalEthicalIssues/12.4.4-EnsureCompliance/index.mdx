@@ -1,0 +1,96 @@
+---
+id: EnsureCompliance
+name: "Ensure compliance"
+code: "11047"
+hierarchyId: "12.4.4"
+type: Process
+level: 3
+status: complete
+parent: "12.4"
+children: ["12.4.4.1", "12.4.4.2"]
+---
+
+# Ensure compliance
+
+> Ensuring the organization's compliance position.
+
+## Overview
+
+Process 12.4.4 is a core process that defines the specific procedures for ensure compliance. 
+
+Ensuring the organization's compliance position. Validate compliance with different statutes, regulatory directions, and legal principles (using Establish compliance framework and policies [17468]). Coordinate with compliance and risk management personnel.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_4["12.4 Manage legal and ethical issues"]
+    N12_4 --> N12_4_4["12.4.4 Ensure compliance"]
+    style N12_4_4 fill:#e1f5fe
+    N12_4_4 --> N12_4_4_1["12.4.4.1 Plan and initiate compliance pro..."]
+    N12_4_4 --> N12_4_4_2["12.4.4.2 Execute compliance program"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11047 |
+| Hierarchy ID | 12.4.4 |
+| Level | Process |
+| Parent | [12.4](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+ensure.Compliance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `ensure` | Primary action |
+| Object | `compliance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Ensure compliance"]
+        S1["Plan and initiate complianc..."]
+        S2["Execute compliance program"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Plan and initiate compliance program](./PlanAndInitiateComplianceProgram) | 12.4.4.1 | Employing an internal system or process to identify and reduce the risk of breaching the Competition |
+| [Execute compliance program](./ExecuteComplianceProgram) | 12.4.4.2 | Implementing the established compliance program in order to meet the government laws and regulations |
+
+
+## Related Concepts
+
+- [Compliance](/concepts/Compliance)
+
+
+---
+
+*Source: APQC PCF 11047 (12.4.4) - APQC*

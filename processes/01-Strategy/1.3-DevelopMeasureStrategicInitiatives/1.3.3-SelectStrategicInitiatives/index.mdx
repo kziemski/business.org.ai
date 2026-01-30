@@ -1,0 +1,100 @@
+---
+id: SelectStrategicInitiatives
+name: "Select strategic initiatives"
+code: "10059"
+hierarchyId: "1.3.3"
+type: Process
+level: 3
+status: complete
+parent: "1.3"
+children: ["1.3.3.1", "1.3.3.2", "1.3.3.3"]
+---
+
+# Select strategic initiatives
+
+> Selecting relevant projects of strategic significance that create opportunities for the organization to realize its long-term objectives, on the basis of their suitability to the organization's constraints and reality.
+
+## Overview
+
+Process 1.3.3 is a core process that defines the specific procedures for select strategic initiatives. 
+
+Selecting relevant projects of strategic significance that create opportunities for the organization to realize its long-term objectives, on the basis of their suitability to the organization's constraints and reality. Select from the process Evaluate strategic initiatives [10058], based on their applicability and feasibility for the organization. Enlist senior management, especially strategy personnel.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_3["1.3 Develop and measure strategic initiat..."]
+    N1_3 --> N1_3_3["1.3.3 Select strategic initiatives"]
+    style N1_3_3 fill:#e1f5fe
+    N1_3_3 --> N1_3_3_1["1.3.3.1 Prioritize strategic initiatives"]
+    N1_3_3 --> N1_3_3_2["1.3.3.2 Communicate strategic initiative..."]
+    N1_3_3 --> N1_3_3_3["1.3.3.3 Establish high-level measures"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10059 |
+| Hierarchy ID | 1.3.3 |
+| Level | Process |
+| Parent | [1.3](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+select.StrategicInitiatives
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `select` | Primary action |
+| Object | `strategic initiatives` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Select strategic initiatives"]
+        S1["Prioritize strategic initia..."]
+        S2["Communicate strategic initi..."]
+        S3["Establish high-level measures"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Prioritize strategic initiatives](./PrioritizeStrategicInitiatives) | 1.3.3.1 | Listing the most effective procedures in the order of most important to the least |
+| [Communicate strategic initiatives to business units and stakeholders](./CommunicateStrategicInitiativesToBusinessUnitsAndStakeholders) | 1.3.3.2 | Establishing procedures for communications within the organization which creates the road map for su |
+| [Establish high-level measures](./EstablishHighlevelMeasures) | 1.3.3.3 | Devising measures to examine strategic projects |
+
+
+## Related Concepts
+
+- [StrategicInitiatives](/concepts/StrategicInitiatives)
+
+
+---
+
+*Source: APQC PCF 10059 (1.3.3) - APQC*

@@ -1,0 +1,104 @@
+---
+id: ManageBusinessInformation
+name: "Manage business information"
+code: "20779"
+hierarchyId: "8.4.4"
+type: Process
+level: 3
+status: complete
+parent: "8.4"
+children: ["8.4.4.1", "8.4.4.2", "8.4.4.3", "8.4.4.4"]
+---
+
+# Manage business information
+
+> Creating strategies to administer information and content.
+
+## Overview
+
+Process 8.4.4 is a core process that defines the specific procedures for manage business information. 
+
+Creating strategies to administer information and content. Understand the needs of the organization for information and content management. Realize the role of IT services for implementing the overall business strategy. Assess the implications of new technologies for managing information and content. Identify and prioritize the most effective and efficient actions for managing information and content.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_4["8.4 Manage information"]
+    N8_4 --> N8_4_4["8.4.4 Manage business information"]
+    style N8_4_4 fill:#e1f5fe
+    N8_4_4 --> N8_4_4_1["8.4.4.1 Monitor and control business inf..."]
+    N8_4_4 --> N8_4_4_2["8.4.4.2 Maintain business information fe..."]
+    N8_4_4 --> N8_4_4_3["8.4.4.3 Perform internal usage audits"]
+    N8_4_4 --> N8_4_4_4["8.4.4.4 Implement and administer busines..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20779 |
+| Hierarchy ID | 8.4.4 |
+| Level | Process |
+| Parent | [8.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.BusinessInformation
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `business information` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage business information"]
+        S1["Monitor and control busines..."]
+        S2["Maintain business informati..."]
+        S3["Perform internal usage audits"]
+        S4["Implement and administer bu..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Monitor and control business information](./MonitorAndControlBusinessInformation) | 8.4.4.1 | Defining the rules, diction, and logic that make up the framework of the organization's information  |
+| [Maintain business information feeds and repositories](./MaintainBusinessInformationFeedsAndRepositories) | 8.4.4.2 | Maintain information feedstock along with IT hardware and software needed for storage, access, and r |
+| [Perform internal usage audits](./PerformInternalUsageAudits) | 8.4.4.3 | Verification of information access and usage through regular reports on organizational performance |
+| [Implement and administer business information access](./ImplementAndAdministerBusinessInformationAccess) | 8.4.4.4 | Implement and manage the process for accessing information including issues related to copyright, op |
+
+
+## Related Concepts
+
+- [BusinessInformation](/concepts/BusinessInformation)
+
+
+---
+
+*Source: APQC PCF 20779 (8.4.4) - APQC*

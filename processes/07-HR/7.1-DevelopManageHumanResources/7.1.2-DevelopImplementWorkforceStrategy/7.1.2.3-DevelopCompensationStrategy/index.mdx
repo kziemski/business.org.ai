@@ -1,0 +1,93 @@
+---
+id: DevelopCompensationStrategy
+name: "Develop compensation strategy"
+code: "10425"
+hierarchyId: "7.1.2.3"
+type: Activity
+level: 4
+status: complete
+parent: "7.1.2"
+children: ["7.1.2.3.1"]
+---
+
+# Develop compensation strategy
+
+> Designing a plan that specifies the combination of wages, salaries, and benefits the employees receive in exchange for work.
+
+## Overview
+
+Activity 7.1.2.3 is an activity within the Develop and Manage Human Capital framework. 
+
+Designing a plan that specifies the combination of wages, salaries, and benefits the employees receive in exchange for work. Define the total amount of compensation, in addition to the manner in which the compensation is paid and the purposes for which employees can receive bonuses, salary increases, and incentives.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_1["7.1 Develop and manage human resources pl..."]
+    N7_1 --> N7_1_2["7.1.2 Develop and implement workforce strat..."]
+    N7_1_2 --> N7_1_2_3["7.1.2.3 Develop compensation strategy"]
+    style N7_1_2_3 fill:#e1f5fe
+    N7_1_2_3 --> N7_1_2_3_1["7.1.2.3.1 Establish incentive strategy"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10425 |
+| Hierarchy ID | 7.1.2.3 |
+| Level | Activity |
+| Parent | [7.1.2](../) |
+| Sub-Processes | 1 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.CompensationStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `compensation strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop compensation strategy"]
+        S1["Establish incentive strategy"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish incentive strategy](./EstablishIncentiveStrategy) | 7.1.2.3.1 | Creating a scheme of awards and recognition for sales employees to promote a results-based culture |
+
+
+## Related Concepts
+
+- [CompensationStrategy](/concepts/CompensationStrategy)
+
+
+---
+
+*Source: APQC PCF 10425 (7.1.2.3) - APQC*

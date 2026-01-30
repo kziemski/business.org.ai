@@ -1,0 +1,96 @@
+---
+id: ProcessReturns
+name: "Process returns"
+code: "20094"
+hierarchyId: "6.2.4"
+type: Process
+level: 3
+status: complete
+parent: "6.2"
+children: ["6.2.4.1", "6.2.4.2"]
+---
+
+# Process returns
+
+> Acquiring returns and identify if the returns are scraped or salvaged.
+
+## Overview
+
+Process 6.2.4 is a core process that defines the specific procedures for process returns. 
+
+Acquiring returns and identify if the returns are scraped or salvaged.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_2["6.2 Plan and manage customer service cont..."]
+    N6_2 --> N6_2_4["6.2.4 Process returns"]
+    style N6_2_4 fill:#e1f5fe
+    N6_2_4 --> N6_2_4_1["6.2.4.1 Authorize return"]
+    N6_2_4 --> N6_2_4_2["6.2.4.2 Process return and record reason"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20094 |
+| Hierarchy ID | 6.2.4 |
+| Level | Process |
+| Parent | [6.2](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.Returns
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `returns` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Process returns"]
+        S1["Authorize return"]
+        S2["Process return and record r..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Authorize return](./AuthorizeReturn) | 6.2.4.1 | Approving and carrying forward the requests by the customers to return the product |
+| [Process return and record reason](./ProcessReturnAndRecordReason) | 6.2.4.2 | Notating the reason for the return of the product |
+
+
+## Related Concepts
+
+- [Returns](/concepts/Returns)
+
+
+---
+
+*Source: APQC PCF 20094 (6.2.4) - APQC*

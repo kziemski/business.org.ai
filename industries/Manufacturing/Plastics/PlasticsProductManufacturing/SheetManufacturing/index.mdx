@@ -1,0 +1,143 @@
+---
+id: SheetManufacturing
+name: "Sheet Manufacturing"
+code: "32611"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Sheet Manufacturing
+
+> This industry comprises establishments primarily engaged in (1) converting plastics resins into unsupported plastics film and sheet and/or (2) forming, coating, or laminating plastics film and sheet into plastics bags.
+
+## Overview
+
+Sheet Manufacturing represents an important category within the U.S. Manufacturing sector (NAICS 31-33). This industry encompasses establishments primarily engaged in sheet manufacturing.
+
+This industry comprises establishments primarily engaged in (1) converting plastics resins into unsupported plastics film and sheet and/or (2) forming, coating, or laminating plastics film and sheet into plastics bags. Cross-References. Establishments primarily engaged in--
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S31["31-33: Manufacturing"]
+    S31 --> N326["326: Plastics"]
+    N326 --> N3261["3261: Plastics Product Manufacturing"]
+    N3261 --> N32611["32611: Sheet Manufacturing"]
+    style N32611 fill:#f96,stroke:#333,stroke-width:2px
+    N32611 --> N326111["326111: Plastics Bag"]
+    N32611 --> N326111["326111: Pouch Manufacturing"]
+    N32611 --> N326112["326112: Plastics Packaging Film"]
+    N32611 --> N326112["326112: Sheet (including Laminated) Manu..."]
+    N32611 --> N326113["326113: Unlaminated Plastics Film"]
+    N32611 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 32611 |
+| Level | Industry |
+| Parent | [Plastics Product Manufacturing](../) |
+| Child Industries | 6 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Plastics Bag](./PlasticsBag.mdx) | 326111 | This U |
+| [Pouch Manufacturing](./PouchManufacturing.mdx) | 326111 | This U |
+| [Plastics Packaging Film](./PlasticsPackagingFilm.mdx) | 326112 | This U |
+| [Sheet (including Laminated) Manufacturing](./SheetIncludingLaminatedManufacturing.mdx) | 326112 | This U |
+| [Unlaminated Plastics Film](./UnlaminatedPlasticsFilm.mdx) | 326113 | This U |
+| [Sheet (](./Sheet.mdx) | 326113 | This U |
+
+## Related Occupations
+
+- [Industrial Production Managers](/occupations/IndustrialProductionManagers) - Plan and coordinate production activities
+- [First-Line Supervisors of Production Workers](/occupations/FirstLineSupervisorsOfProductionAndOperatingWorkers) - Supervise production floor operations
+- [Quality Control Inspectors](/occupations/QualityControlInspectors) - Inspect products for defects and compliance
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Raw Material Prep"]
+        O2["Production"]
+        O3["Assembly"]
+        O4["Quality Control"]
+        O5["Packaging"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Inventory Mgmt"]
+        S3["Safety Systems"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Raw Materials"]
+        I2["Components"]
+        I3["Equipment"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Manufacturing Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound Logistics"]
+    end
+
+    subgraph Outputs["Products"]
+        O1["Finished Products"]
+        O2["Components"]
+        O3["Assemblies"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Industrial Buyers"]
+        C2["Retailers"]
+        C3["Distributors"]
+        C4["End Users"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+## Regulatory Environment
+
+Manufacturing operations in this industry are subject to various federal, state, and local regulations:
+
+- **OSHA Regulations**: Workplace safety standards, machine guarding, hazard communication
+- **EPA Requirements**: Air emissions, water discharge, hazardous waste management
+- **State/Local Requirements**: Zoning, permits, and local environmental regulations
+
+## Technology & Innovation
+
+The sheet manufacturing industry is experiencing significant technological advancement:
+
+- **Industry 4.0**: Connected manufacturing, IoT sensors, and real-time monitoring
+- **Automation & Robotics**: Automated production lines and robotic assembly
+- **Data Analytics**: Predictive maintenance, quality analytics, and process optimization
+- **Sustainability**: Carbon reduction, circular economy, and green manufacturing
+- **Digital Twin**: Virtual replicas for simulation and optimization
+
+---
+
+*Source: NAICS 32611 - Sheet Manufacturing*

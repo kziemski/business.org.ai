@@ -1,0 +1,108 @@
+---
+id: EvaluateCustomerServiceOperationsAndCustomerSatisfaction
+name: "Evaluate customer service operations and customer satisfaction"
+code: "20595"
+hierarchyId: "6.5"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "6"
+children: ["6.5.1", "6.5.2", "6.5.3", "6.5.4", "6.5.5"]
+---
+
+# Evaluate customer service operations and customer satisfaction
+
+> Calculating and assessing the operational activities of the customer service function.
+
+## Overview
+
+Group 6.5 is a process group within APQC Category 6.0 (Manage Customer Service). 
+
+Calculating and assessing the operational activities of the customer service function. Evaluation is achieved through the customer requests/inquiries handling process, the customer complaint handling process, and product and services quality. Examine activities to ensure high levels of customer service.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_5["6.5 Evaluate customer service operations ..."]
+    style N6_5 fill:#e1f5fe
+    N6_5 --> N6_5_1["6.5.1 Measure customer satisfaction wi..."]
+    N6_5 --> N6_5_2["6.5.2 Measure customer satisfaction wi..."]
+    N6_5 --> N6_5_3["6.5.3 Measure customer satisfaction wi..."]
+    N6_5 --> N6_5_4["6.5.4 Evaluate and manage warranty per..."]
+    N6_5 --> N6_5_5["6.5.5 Evaluate recall performance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20595 |
+| Hierarchy ID | 6.5 |
+| Level | Group |
+| Parent | [6](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+evaluate.CustomerServiceOperationsAndCustomerSatisfaction
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `evaluate` | Primary action |
+| Object | `customer service operations and customer satisfaction` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Evaluate customer service operations and customer satisfaction"]
+        S1["Measure customer satisfacti..."]
+        S2["Measure customer satisfacti..."]
+        S3["Measure customer satisfacti..."]
+        S4["Evaluate and manage warrant..."]
+        S5["Evaluate recall performance"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Measure customer satisfaction with customer problems, requests, and inquiries handling](./6.5.1-MeasureCustomerSatisfactionCustomer/) | 6.5.1 | Calculating satisfaction levels of customers by effectively evaluating the process of handling reque |
+| [Measure customer satisfaction with customer- complaint handling and resolution](./6.5.2-MeasureCustomerSatisfactionCustomer/) | 6.5.2 | Measuring the satisfaction level of customers as pertains to how their complaints are handled and re |
+| [Measure customer satisfaction with products and services](./6.5.3-MeasureCustomerSatisfactionProducts/) | 6.5.3 | Calculating satisfaction levels of customers with products/services |
+| [Evaluate and manage warranty performance](./6.5.4-EvaluateManageWarrantyPerformance/) | 6.5.4 | Assessing the cost and effectiveness of warranties |
+| [Evaluate recall performance](./EvaluateRecallPerformance) | 6.5.5 | Reviewing customer service feedback to identify areas in which improvements can be made |
+
+
+## Related Concepts
+
+- [CustomerServiceOperationsSatisfaction](/concepts/CustomerServiceOperationsSatisfaction)
+- [CustomerSatisfaction](/concepts/CustomerSatisfaction)
+
+
+---
+
+*Source: APQC PCF 20595 (6.5) - APQC*

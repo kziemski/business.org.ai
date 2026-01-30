@@ -1,0 +1,109 @@
+---
+id: PlanAndCommunicateItServices
+name: "Plan and communicate IT services"
+code: "20617"
+hierarchyId: "8.1.3"
+type: Process
+level: 3
+status: complete
+parent: "8.1"
+children: ["8.1.3.1", "8.1.3.2", "8.1.3.3", "8.1.3.4", "8.1.3.5"]
+---
+
+# Plan and communicate IT services
+
+> Create and design an organized and curated collection of all IT-related services that can be performed by, for, or within the organization.
+
+## Overview
+
+Process 8.1.3 is a core process that defines the specific procedures for plan and communicate it services. 
+
+Create and design an organized and curated collection of all IT-related services that can be performed by, for, or within the organization. Maintain and convey information about deliverables, prices, contact points, and processes for requesting an information technology service.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    N8_1 --> N8_1_3["8.1.3 Plan and communicate IT services"]
+    style N8_1_3 fill:#e1f5fe
+    N8_1_3 --> N8_1_3_1["8.1.3.1 Manage IT customer expectations"]
+    N8_1_3 --> N8_1_3_2["8.1.3.2 Define future IT services"]
+    N8_1_3 --> N8_1_3_3["8.1.3.3 Determine IT performance indicators"]
+    N8_1_3 --> N8_1_3_4["8.1.3.4 Create IT marketing messages"]
+    N8_1_3 --> N8_1_3_5["8.1.3.5 Create IT service marketing plan"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20617 |
+| Hierarchy ID | 8.1.3 |
+| Level | Process |
+| Parent | [8.1](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.AndCommunicateITServices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `and communicate IT services` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan and communicate IT services"]
+        S1["Manage IT customer expectat..."]
+        S2["Define future IT services"]
+        S3["Determine IT performance in..."]
+        S4["Create IT marketing messages"]
+        S5["Create IT service marketing..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage IT customer expectations](./ManageITCustomerExpectations) | 8.1.3.1 | Managing customer expectations of the existing IT environment while considering how it will affect t |
+| [Define future IT services](./DefineFutureITServices) | 8.1.3.2 | Defining the expected demand and usage of information technology services to meet organization's fut |
+| [Determine IT performance indicators](./DetermineITPerformanceIndicators) | 8.1.3.3 | Determining IT KPIs crucial to the organization's success |
+| [Create IT marketing messages](./CreateITMarketingMessages) | 8.1.3.4 | Developing concise statements that position the value proposition around the pressing concerns of th |
+| [Create IT service marketing plan](./CreateITServiceMarketingPlan) | 8.1.3.5 | Creating a marketing strategy for IT offerings to customers |
+
+
+## Related Concepts
+
+- [ITServices](/concepts/ITServices)
+- [ITServices](/concepts/ITServices)
+
+
+---
+
+*Source: APQC PCF 20617 (8.1.3) - APQC*

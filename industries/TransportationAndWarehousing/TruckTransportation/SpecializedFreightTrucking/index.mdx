@@ -1,0 +1,112 @@
+---
+id: SpecializedFreightTrucking
+name: "Specialized Freight Trucking"
+code: "4842"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Specialized Freight Trucking
+
+> This industry group comprises establishments primarily engaged in providing local or long-distance specialized freight trucking.
+
+## Overview
+
+Specialized Freight Trucking represents an important category within the Transportation and Warehousing sector (NAICS 48-49). This industry group encompasses establishments primarily engaged in specialized freight trucking.
+
+This industry group comprises establishments primarily engaged in providing local or long-distance specialized freight trucking. The establishments of this industry are primarily engaged in the transportation of freight which, because of size, weight, shape, or other inherent characteristics, requires specialized equipment, such as flatbeds, tankers, or refrigerated trailers. This industry includes the transportation of used household, institutional, and commercial furniture and equipment.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S48-49["48-49: Transportation and Warehousing"]
+    S48-49 --> N484["484: Truck Transportation"]
+    N484 --> N4842["4842: Specialized Freight Trucking"]
+    style N4842 fill:#f96,stroke:#333,stroke-width:2px
+    N4842 --> N48421["48421: Office Goods Moving"]
+    N4842 --> N48422["48422: Specialized Freight (except Used..."]
+    N4842 --> N48423["48423: Specialized Freight ("]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 4842 |
+| Level | Industry Group |
+| Parent | [Truck Transportation](../) |
+| Child Industries | 3 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Office Goods Moving](./OfficeGoodsMoving/) | 48421 | See industry description for 484210 |
+| [Specialized Freight (except Used Goods) Trucking, Local](./SpecializedFreightExceptUsedGoodsTruckingLocal/) | 48422 | See industry description for 484220 |
+| [Specialized Freight (](./SpecializedFreight/) | 48423 | See industry description for 484230 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Receiving"]
+        O2["Routing/Planning"]
+        O3["Transport/Storage"]
+        O4["Delivery"]
+        O5["Tracking"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Fleet Management"]
+        S2["Safety Systems"]
+        S3["Compliance"]
+        S4["IT Systems"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 4842 - Specialized Freight Trucking*

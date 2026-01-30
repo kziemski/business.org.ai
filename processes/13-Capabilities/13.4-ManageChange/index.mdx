@@ -1,0 +1,103 @@
+---
+id: ManageChange
+name: "Manage change"
+code: "11074"
+hierarchyId: "13.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "13"
+children: ["13.4.1", "13.4.2", "13.4.3", "13.4.4"]
+---
+
+# Manage change
+
+> Planning, designing, and implementing the change.
+
+## Overview
+
+Group 13.4 is a process group within APQC Category 13.0 (Develop and Manage Business Capabilities). 
+
+Planning, designing, and implementing the change. Ensure improvement in the change process.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_4["13.4 Manage change"]
+    style N13_4 fill:#e1f5fe
+    N13_4 --> N13_4_1["13.4.1 Plan for change"]
+    N13_4 --> N13_4_2["13.4.2 Design the change"]
+    N13_4 --> N13_4_3["13.4.3 Implement change"]
+    N13_4 --> N13_4_4["13.4.4 Sustain improvement"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11074 |
+| Hierarchy ID | 13.4 |
+| Level | Group |
+| Parent | [13](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Change
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `change` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage change"]
+        S1["Plan for change"]
+        S2["Design the change"]
+        S3["Implement change"]
+        S4["Sustain improvement"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Plan for change](./13.4.1-PlanChange/) | 13.4.1 | Evaluating impact and planning change activities |
+| [Design the change](./13.4.2-DesignChange/) | 13.4.2 | Developing plans for change management, training, communication, and rewards/incentives |
+| [Implement change](./13.4.3-ImplementChange/) | 13.4.3 | Effectuating the change within the desired impact areas of the organization |
+| [Sustain improvement](./13.4.4-SustainImprovement/) | 13.4.4 | Sustaining the impact of the change process in order to enact continual process improvement |
+
+
+## Related Concepts
+
+- [Change](/concepts/Change)
+
+
+---
+
+*Source: APQC PCF 11074 (13.4) - APQC*

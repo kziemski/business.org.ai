@@ -1,0 +1,116 @@
+---
+id: DevelopAndManageSalesPlans
+name: "Develop and manage sales plans"
+code: "10105"
+hierarchyId: "3.5"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "3"
+children: ["3.5.1", "3.5.2", "3.5.3", "3.5.4", "3.5.5", "3.5.6", "3.5.7", "3.5.8"]
+---
+
+# Develop and manage sales plans
+
+> Selling products/services.
+
+## Overview
+
+Group 3.5 is a process group within APQC Category 3.0 (Market and Sell Products and Services). 
+
+Selling products/services. Set appropriate customer expectations. Work with customers using the same schedule that product/service development, production, and customer service functions follow. Manage sales personnel and sales partnerships/alliances.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_5["3.5 Develop and manage sales plans"]
+    style N3_5 fill:#e1f5fe
+    N3_5 --> N3_5_1["3.5.1 Manage leads/opportunities"]
+    N3_5 --> N3_5_2["3.5.2 Manage customers and accounts"]
+    N3_5 --> N3_5_3["3.5.3 Develop and manage sales proposa..."]
+    N3_5 --> N3_5_4["3.5.4 Manage sales orders"]
+    N3_5 --> N3_5_5["3.5.5 Manage sales partners and alliances"]
+    N3_5 --> N3_5_6["3.5.6 Perform sales at physical outlets"]
+    N3_5 --> N3_5_7["3.5.7 Perform field sales"]
+    N3_5 --> N3_5_8["3.5.8 Perform digital sales"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10105 |
+| Hierarchy ID | 3.5 |
+| Level | Group |
+| Parent | [3](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageSalesPlans
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage sales plans` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage sales plans"]
+        S1["Manage leads/opportunities"]
+        S2["Manage customers and accounts"]
+        S3["Develop and manage sales pr..."]
+        S4["Manage sales orders"]
+        S5["Manage sales partners and a..."]
+        S6["Perform sales at physical o..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage leads/opportunities](./3.5.1-ManageLeadsopportunities/) | 3.5.1 | Generating leads of prospective customers to grow the organization's business |
+| [Manage customers and accounts](./3.5.2-ManageCustomersAccounts/) | 3.5.2 | Managing the customer's expectations, with the intent of responsibly increasing the sale of the orga |
+| [Develop and manage sales proposals, bids, and quotes](./3.5.3-DevelopManageSalesProposals/) | 3.5.3 | Understanding and refining the customer requirements as provided in a RFP (Request for Proposal) or  |
+| [Manage sales orders](./3.5.4-ManageSalesOrders/) | 3.5.4 | Taking, receiving, processing, and acknowledging new customer orders or amendments to outstanding cu |
+| [Manage sales partners and alliances](./3.5.5-ManageSalesPartnersAlliances/) | 3.5.5 | Managing the organization's partners and alliances, with the objective of maximizing revenue |
+| [Perform sales at physical outlets](./PerformSalesAtPhysicalOutlets) | 3.5.6 | Execution of sales at physical / brick and mortar locations |
+| [Perform field sales](./PerformFieldSales) | 3.5.7 | Execution of sales within field/remote locations |
+| [Perform digital sales](./PerformDigitalSales) | 3.5.8 | Execution of sales in an online environment |
+
+
+## Related Concepts
+
+- [SalesPlans](/concepts/SalesPlans)
+- [SalesPlans](/concepts/SalesPlans)
+
+
+---
+
+*Source: APQC PCF 10105 (3.5) - APQC*

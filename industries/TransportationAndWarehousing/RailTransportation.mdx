@@ -1,0 +1,99 @@
+---
+id: RailTransportation
+name: "Rail Transportation"
+code: "482"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Rail Transportation
+
+> Industries in the Rail Transportation subsector provide rail transportation of passengers and/or cargo using railroad rolling stock.
+
+## Overview
+
+Rail Transportation represents an important category within the Transportation and Warehousing sector (NAICS 48-49). This subsector encompasses establishments primarily engaged in rail transportation.
+
+Industries in the Rail Transportation subsector provide rail transportation of passengers and/or cargo using railroad rolling stock. The railroads in this subsector primarily either operate on networks, with physical facilities, labor force, and equipment spread over an extensive geographic area, or operate over a short distance on a local rail line. Scenic and sightseeing rail transportation and street railroads, commuter rail, and rapid transit are not included in this subsector but are included in Subsector 487, Scenic and Sightseeing Transportation, and Subsector 485, Transit and Ground Passenger Transportation, respectively. Although these activities use railroad rolling stock, they are different from the activities included in rail transportation. Sightseeing and scenic railroads do not usually involve place-to-place transportation; the passenger's trip typically starts and ends at the same location. Commuter railroads operate in a manner more consistent with local and urban transit and are often part of integrated transit systems.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S48-49["48-49: Transportation and Warehousing"]
+    S48-49 --> N482["482: Rail Transportation"]
+    style N482 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 482 |
+| Level | Subsector |
+| Child Industries | 0 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Receiving"]
+        O2["Routing/Planning"]
+        O3["Transport/Storage"]
+        O4["Delivery"]
+        O5["Tracking"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Fleet Management"]
+        S2["Safety Systems"]
+        S3["Compliance"]
+        S4["IT Systems"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 482 - Rail Transportation*

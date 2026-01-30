@@ -1,0 +1,118 @@
+---
+id: DefineProductserviceRequirements
+name: "Define product/service requirements"
+code: "11331"
+hierarchyId: "2.2.3.1"
+type: Activity
+level: 4
+status: complete
+parent: "2.2.3"
+children: ["2.2.3.1.1", "2.2.3.1.2", "2.2.3.1.3", "2.2.3.1.4", "2.2.3.1.5", "2.2.3.1.6", "2.2.3.1.7", "2.2.3.1.8"]
+---
+
+# Define product/service requirements
+
+> Determining requirements related to the creation of the product/service.
+
+## Overview
+
+Activity 2.2.3.1 is an activity within the Design and Develop Products and Services framework. 
+
+Determining requirements related to the creation of the product/service. Explain potential achievements that could be made.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_2["2.2 Generate and define new product/servi..."]
+    N2_2 --> N2_2_3["2.2.3 Define product/service development re..."]
+    N2_2_3 --> N2_2_3_1["2.2.3.1 Define product/service requirements"]
+    style N2_2_3_1 fill:#e1f5fe
+    N2_2_3_1 --> N2_2_3_1_1["2.2.3.1.1 Define basic functional requirem..."]
+    N2_2_3_1 --> N2_2_3_1_2["2.2.3.1.2 Derive interoperability requirem..."]
+    N2_2_3_1 --> N2_2_3_1_3["2.2.3.1.3 Derive safety requirements for p..."]
+    N2_2_3_1 --> N2_2_3_1_4["2.2.3.1.4 Derive security requirements for..."]
+    N2_2_3_1 --> N2_2_3_1_5["2.2.3.1.5 Derive regulatory compliance req..."]
+    N2_2_3_1 --> N2_2_3_1_6["2.2.3.1.6 Derive requirements from industr..."]
+    N2_2_3_1 --> N2_2_3_1_7["2.2.3.1.7 Develop user experience requirem..."]
+    N2_2_3_1 --> N2_2_3_1_8["2.2.3.1.8 Derive ‘services-as-a-product’ o..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11331 |
+| Hierarchy ID | 2.2.3.1 |
+| Level | Activity |
+| Parent | [2.2.3](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.ProductserviceRequirements
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `product/service requirements` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define product/service requirements"]
+        S1["Define basic functional req..."]
+        S2["Derive interoperability req..."]
+        S3["Derive safety requirements ..."]
+        S4["Derive security requirement..."]
+        S5["Derive regulatory complianc..."]
+        S6["Derive requirements from in..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define basic functional requirements](./DefineBasicFunctionalRequirements) | 2.2.3.1.1 | Determining the operations of functions related to the product/service in the marketing environment |
+| [Derive interoperability requirements for products and services](./DeriveInteroperabilityRequirementsForProductsAndServices) | 2.2.3.1.2 | Determining the ability of products and services to work together, exchange and use information in a |
+| [Derive safety requirements for products and services](./DeriveSafetyRequirementsForProductsAndServices) | 2.2.3.1.3 | Developing safety requirements in line with environmental safety, occupational health and safety, an |
+| [Derive security requirements for products and services](./DeriveSecurityRequirementsForProductsAndServices) | 2.2.3.1.4 | Implementing security requirements through authentication and encryption of CE device data stream |
+| [Derive regulatory compliance requirements](./DeriveRegulatoryComplianceRequirements) | 2.2.3.1.5 | Meeting regulatory requirements set forth by such directives as RoHS, WEEE, ELV, and REACH |
+| [Derive requirements from industry standards](./DeriveRequirementsFromIndustryStandards) | 2.2.3.1.6 | Complying with consumer electronic industry standards developed by the Consumer Technology Associati |
+| [Develop user experience requirements](./DevelopUserExperienceRequirements) | 2.2.3.1.7 | Identifying and creating steps and tools to develop the user experience |
+| [Derive ‘services-as-a-product’ offering](./DeriveServicesasaproductOffering) | 2.2.3.1.8 | Productizing the service by defining the scope of the service/cost |
+
+
+## Related Concepts
+
+- [ProductRequirements](/concepts/ProductRequirements)
+- [ServiceRequirements](/concepts/ServiceRequirements)
+
+
+---
+
+*Source: APQC PCF 11331 (2.2.3.1) - APQC*

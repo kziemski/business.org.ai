@@ -1,0 +1,98 @@
+---
+id: ManagetrackApplicantData
+name: "Manage/track applicant data"
+code: "10467"
+hierarchyId: "7.2.5.3"
+type: Activity
+level: 4
+status: complete
+parent: "7.2.5"
+children: ["7.2.5.3.1", "7.2.5.3.2"]
+---
+
+# Manage/track applicant data
+
+> Keeping track of all the information about the candidates who apply for jobs.
+
+## Overview
+
+Activity 7.2.5.3 is an activity within the Develop and Manage Human Capital framework. 
+
+Keeping track of all the information about the candidates who apply for jobs. Use applicant-tracking systems that can be accessed online as a central location and database for recruitment efforts.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_2["7.2 Recruit, source, and select employees"]
+    N7_2 --> N7_2_5["7.2.5 Track candidates"]
+    N7_2_5 --> N7_2_5_3["7.2.5.3 Manage/track applicant data"]
+    style N7_2_5_3 fill:#e1f5fe
+    N7_2_5_3 --> N7_2_5_3_1["7.2.5.3.1 Complete position classification..."]
+    N7_2_5_3 --> N7_2_5_3_2["7.2.5.3.2 Archive and retain records of no..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10467 |
+| Hierarchy ID | 7.2.5.3 |
+| Level | Activity |
+| Parent | [7.2.5](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage/track.ApplicantData
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage/track` | Primary action |
+| Object | `applicant data` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage/track applicant data"]
+        S1["Complete position classific..."]
+        S2["Archive and retain records ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Complete position classification and level of experience](./CompletePositionClassificationAndLevelOfExperience) | 7.2.5.3.1 | Identifying the requirements for the position to be filled |
+| [Archive and retain records of non-hires](./ArchiveAndRetainRecordsOfNonhires) | 7.2.5.3.2 | Retaining and storing the records of the candidates who were rejected and not hired to ensure future |
+
+
+## Related Concepts
+
+- [ApplicantData](/concepts/ApplicantData)
+- [ApplicantData](/concepts/ApplicantData)
+
+
+---
+
+*Source: APQC PCF 10467 (7.2.5.3) - APQC*

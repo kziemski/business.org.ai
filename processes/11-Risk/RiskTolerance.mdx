@@ -1,0 +1,334 @@
+---
+id: RiskTolerance
+name: "Understand business unit risk tolerance"
+code: "20940"
+hierarchyId: "11.1.1.1"
+type: Process
+status: complete
+---
+
+# Understand business unit risk tolerance
+
+> Understand the risk tolerance levels of individual business units, given risk-return trade-offs for one or more anticipated and predictable consequences.
+
+## Overview
+
+Understand business unit risk tolerance (APQC 11.1.1.1) is a foundational activity within the enterprise risk management framework that enables organizations to calibrate risk management strategies to the specific needs and capacities of different business units. This process involves assessing each unit's appetite for risk, their capacity to absorb potential losses, and their strategic objectives to establish appropriate risk boundaries.
+
+Effective risk tolerance assessment ensures that enterprise-wide risk policies can be appropriately tailored to different operational contexts while maintaining overall organizational risk within acceptable limits. The process requires close collaboration between corporate risk functions and business unit leadership to balance growth opportunities with prudent risk management.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk,<br/>Compliance, Remediation,<br/>and Resiliency"] --> G111["11.1 Manage enterprise risk"]
+    G111 --> P1111["11.1.1 Establish enterprise risk<br/>framework and policies"]
+    P1111 --> A11111["11.1.1.1 Determine risk tolerance<br/>for organization"]
+    P1111 --> A11112["11.1.1.2 Understand business unit<br/>risk tolerance"]
+
+    style A11112 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20940 |
+| Hierarchy ID | 11.1.1.1 |
+| Level | Activity |
+| Category | [Manage Enterprise Risk, Compliance, Remediation, and Resiliency](/processes/11-Risk) |
+| Parent Process | [Establish enterprise risk framework and policies](./index.mdx) |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Enterprise Risk Policy"]
+        I2["Business Unit Strategy"]
+        I3["Financial Capacity Data"]
+        I4["Historical Loss Data"]
+        I5["Regulatory Requirements"]
+        I6["Industry Benchmarks"]
+    end
+
+    subgraph Process["Understand Business Unit Risk Tolerance"]
+        P1["Assess Strategic<br/>Objectives"]
+        P2["Evaluate Financial<br/>Capacity"]
+        P3["Analyze Historical<br/>Risk Profile"]
+        P4["Define Risk<br/>Boundaries"]
+        P5["Document Risk<br/>Tolerance"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Risk Tolerance Statements"]
+        O2["Risk Appetite Framework"]
+        O3["Risk Limits by Category"]
+        O4["Escalation Thresholds"]
+        O5["Monitoring Requirements"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+understand.BusinessUnitRiskTolerance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `understand` | Primary action of comprehending and assessing |
+| Object | `BusinessUnitRiskTolerance` | Acceptable risk levels for business units |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+## Activities
+
+### Assess Strategic Objectives
+
+Reviewing business unit strategic plans and objectives to understand the risk-return trade-offs inherent in their growth strategies.
+
+```mermaid
+sequenceDiagram
+    participant BU as Business Unit Leadership
+    participant Risk as Enterprise Risk
+    participant Strategy as Strategy Team
+    participant Finance as Finance
+
+    BU->>Risk: Present strategic objectives
+    Risk->>Strategy: Request strategic context
+    Strategy->>Risk: Provide growth targets
+    Risk->>BU: Discuss risk implications
+    BU->>Risk: Clarify risk preferences
+    Risk->>Finance: Validate financial alignment
+    Finance->>Risk: Confirm capacity
+```
+
+**Tasks:**
+- `review.StrategicPlans` - Examine business unit growth strategies
+- `identify.GrowthTargets` - Understand revenue and market objectives
+- `assess.RiskImplications` - Evaluate risks inherent in strategies
+- `align.RiskAppetite` - Match risk tolerance to strategic goals
+
+### Evaluate Financial Capacity
+
+Analyzing the business unit's financial resources and ability to absorb potential losses without jeopardizing operations.
+
+```mermaid
+sequenceDiagram
+    participant Finance as Finance Team
+    participant Risk as Risk Management
+    participant BU as Business Unit
+    participant Treasury as Treasury
+
+    Finance->>Risk: Provide financial statements
+    Risk->>Risk: Analyze capital reserves
+    Risk->>Treasury: Assess liquidity position
+    Treasury->>Risk: Report cash flow capacity
+    Risk->>BU: Discuss financial constraints
+    Risk->>Risk: Determine loss absorption capacity
+```
+
+**Tasks:**
+- `analyze.CapitalReserves` - Assess available capital buffers
+- `evaluate.LiquidityPosition` - Review cash and liquidity resources
+- `determine.LossCapacity` - Calculate maximum absorbable loss
+- `assess.InsuranceCoverage` - Review risk transfer mechanisms
+
+### Analyze Historical Risk Profile
+
+Examining past risk events, losses, and near-misses to understand the business unit's actual risk exposure and management effectiveness.
+
+```mermaid
+sequenceDiagram
+    participant Data as Historical Data
+    participant Risk as Risk Analytics
+    participant BU as Business Unit
+    participant Audit as Internal Audit
+
+    Data->>Risk: Provide loss history
+    Risk->>Risk: Analyze loss patterns
+    Audit->>Risk: Share audit findings
+    Risk->>BU: Review incident history
+    BU->>Risk: Provide context
+    Risk->>Risk: Assess risk culture
+```
+
+**Tasks:**
+- `compile.LossHistory` - Gather historical loss and incident data
+- `analyze.RiskPatterns` - Identify recurring risk themes
+- `evaluate.NearMisses` - Assess incidents that could have caused loss
+- `assess.RiskCulture` - Evaluate risk awareness and behaviors
+
+### Define Risk Boundaries
+
+Establishing specific risk limits and thresholds tailored to the business unit's tolerance and capacity.
+
+```mermaid
+sequenceDiagram
+    participant Risk as Risk Management
+    participant BU as Business Unit
+    participant Executive as Executive Team
+    participant Board as Board/Risk Committee
+
+    Risk->>BU: Propose risk limits
+    BU->>Risk: Negotiate boundaries
+    Risk->>Risk: Validate consistency
+    Risk->>Executive: Present recommendations
+    Executive->>Board: Seek approval
+    Board->>Risk: Approve limits
+    Risk->>BU: Communicate boundaries
+```
+
+**Tasks:**
+- `establish.QuantitativeLimits` - Set numerical risk thresholds
+- `define.QualitativeBoundaries` - Articulate risk tolerance statements
+- `set.EscalationTriggers` - Define when escalation is required
+- `align.EnterprisePolicy` - Ensure consistency with corporate policy
+
+### Document Risk Tolerance
+
+Formalizing risk tolerance statements, limits, and monitoring requirements for ongoing governance.
+
+```mermaid
+sequenceDiagram
+    participant Risk as Risk Management
+    participant Legal as Legal/Compliance
+    participant BU as Business Unit
+    participant Repository as Policy Repository
+
+    Risk->>Risk: Draft tolerance documents
+    Risk->>Legal: Review for compliance
+    Legal->>Risk: Approve language
+    Risk->>BU: Confirm understanding
+    BU->>Risk: Sign off
+    Risk->>Repository: Publish documents
+```
+
+**Tasks:**
+- `create.ToleranceStatements` - Write formal risk tolerance declarations
+- `document.RiskLimits` - Record quantitative limits by risk category
+- `establish.MonitoringProtocol` - Define ongoing monitoring requirements
+- `communicate.Stakeholders` - Distribute to relevant parties
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Assess strategic objectives | Business Unit Head | Chief Risk Officer | Strategy, Finance | Board |
+| Evaluate financial capacity | Finance Team | CFO | Treasury, Risk | Business Unit |
+| Analyze historical risk profile | Risk Analytics | CRO | Internal Audit | Management |
+| Define risk boundaries | Risk Management | CRO | Business Unit, Legal | Executive Team |
+| Document risk tolerance | Risk Management | CRO | Legal, Compliance | All Business Units |
+
+## Related Departments
+
+- [Enterprise Risk Management](/departments/ERM) - Overall risk tolerance coordination
+- [Finance](/departments/Finance) - Financial capacity assessment
+- [Strategy](/departments/Strategy) - Strategic objectives alignment
+- [Internal Audit](/departments/InternalAudit) - Historical risk assessment validation
+- [Legal](/departments/Legal) - Regulatory requirement integration
+
+## Related Occupations
+
+- [Chief Risk Officers](/occupations/CRO) - Enterprise risk oversight
+- [Risk Managers](/occupations/RiskManagers) - Risk tolerance assessment
+- [Financial Analysts](/occupations/FinancialAnalysts) - Capacity analysis
+- [Business Unit Managers](/occupations/GeneralManagers) - Tolerance input
+- [Internal Auditors](/occupations/InternalAuditors) - Historical risk review
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Risk tolerance in aerospace and defense is heavily influenced by program-specific requirements, government contract terms, and safety-critical considerations. Risk tolerance often varies significantly between commercial and defense segments.
+
+**Industry-Specific Activities:**
+- Assess program-specific risk tolerance
+- Evaluate contract risk provisions
+- Consider safety-critical requirements
+- Align with government risk-sharing arrangements
+
+### Banking
+
+Banks define risk tolerance within strict regulatory frameworks (Basel requirements, stress testing). Risk appetite statements must address credit, market, operational, and liquidity risks with specific quantitative limits.
+
+**Industry-Specific Activities:**
+- Define credit risk appetite by segment
+- Establish market risk limits
+- Set operational risk tolerance
+- Determine liquidity risk boundaries
+
+### Healthcare Provider
+
+Healthcare risk tolerance must balance clinical quality, patient safety, financial sustainability, and regulatory compliance. Different tolerance levels may apply to clinical vs. administrative functions.
+
+**Industry-Specific Activities:**
+- Establish clinical risk tolerance
+- Define patient safety thresholds
+- Set financial risk boundaries
+- Address compliance risk limits
+
+### Property and Casualty Insurance
+
+Insurance companies have sophisticated risk tolerance frameworks addressing underwriting, claims, investment, and catastrophe risks. Reinsurance strategies directly reflect risk tolerance decisions.
+
+**Industry-Specific Activities:**
+- Set underwriting risk limits
+- Define catastrophe risk tolerance
+- Establish investment risk boundaries
+- Determine reinsurance retention levels
+
+### Life Sciences
+
+Pharmaceutical and biotech risk tolerance addresses clinical trial risks, regulatory approval uncertainties, and product liability exposure. Pipeline stage influences risk tolerance significantly.
+
+**Industry-Specific Activities:**
+- Define clinical trial risk tolerance
+- Establish regulatory risk appetite
+- Set product liability limits
+- Address supply chain risk boundaries
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| Assess strategic objectives | - | Review business unit strategies and goals |
+| Evaluate financial capacity | - | Analyze loss absorption capability |
+| Analyze historical risk profile | - | Examine past risk events and patterns |
+| Define risk boundaries | - | Establish specific risk limits |
+| Document risk tolerance | - | Formalize and communicate tolerances |
+
+## Related Processes
+
+```mermaid
+graph LR
+    ERP["Enterprise Risk Policy"] --> UBRT["11.1.1.1 Understand Business<br/>Unit Risk Tolerance"]
+    Strategy["Business Unit Strategy"] --> UBRT
+
+    UBRT --> Framework["Enterprise Risk<br/>Framework"]
+    UBRT --> Monitoring["Risk<br/>Monitoring"]
+    UBRT --> Reporting["Risk<br/>Reporting"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Tolerance Coverage | Business units with documented tolerance | 100% |
+| Assessment Currency | Freshness of tolerance assessments | <12 months |
+| Limit Breaches | Instances of tolerance limit breaches | <5 per year |
+| Alignment Score | Consistency with enterprise policy | >95% |
+| Stakeholder Understanding | BU leaders understanding of tolerance | >90% |
+| Update Timeliness | Time to update after strategy changes | <30 days |
+
+---
+
+*Source: APQC PCF 20940 (11.1.1.1) - Cross-Industry*

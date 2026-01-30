@@ -1,0 +1,95 @@
+---
+id: ManageApplicantInformation
+name: "Manage applicant information"
+code: "10444"
+hierarchyId: "7.2.5"
+type: Process
+level: 3
+status: complete
+parent: "7.2"
+children: ["7.2.5.1", "7.2.5.2", "7.2.5.3"]
+---
+
+# Manage applicant information
+
+> Creating and maintaining a system for managing the information of applicants.
+
+## Overview
+
+Process 7.2.5 is a core process that defines the specific procedures for manage applicant information. 
+
+Creating and maintaining a system for managing the information of applicants. Create records for all candidates who apply. Maintain and track information through the use applicant-tracking systems.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_2["7.2 Recruit, source, and select employees"]
+    N7_2 --> N7_2_5["7.2.5 Track candidates"]
+    style N7_2_5 fill:#e1f5fe
+    N7_2_5 --> N7_2_5_1["7.2.5.1 Obtain candidate background info..."]
+    N7_2_5 --> N7_2_5_2["7.2.5.2 Create applicant record"]
+    N7_2_5 --> N7_2_5_3["7.2.5.3 Manage/track applicant data"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10444 |
+| Hierarchy ID | 7.2.5 |
+| Level | Process |
+| Parent | [7.2](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ApplicantInformation
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `applicant information` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage applicant information"]
+        S1["Obtain candidate background..."]
+        S2["Create applicant record"]
+        S3["Manage/track applicant data"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Obtain candidate background information](./ObtainCandidateBackgroundInformation) | 7.2.5.1 | Conducting a background investigation on the candidates with the objective of looking up and compili |
+| [Create applicant record](./CreateApplicantRecord) | 7.2.5.2 | Creating and documenting the records of all applicants |
+| [Manage/track applicant data](./7.2.5.3-ManagetrackApplicantData/) | 7.2.5.3 | Keeping track of all the information about the candidates who apply for jobs |
+
+
+---
+
+*Source: APQC PCF 10444 (7.2.5) - APQC*

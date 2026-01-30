@@ -1,0 +1,108 @@
+---
+id: ManageItCustomerRelationships
+name: "Manage IT customer relationships"
+code: "20641"
+hierarchyId: "8.1.6"
+type: Process
+level: 3
+status: complete
+parent: "8.1"
+children: ["8.1.6.1", "8.1.6.2", "8.1.6.3", "8.1.6.4", "8.1.6.5"]
+---
+
+# Manage IT customer relationships
+
+> Managing the IT relationship with its customers by systematically coordinating interactions over multiple touch points on a regular basis.
+
+## Overview
+
+Process 8.1.6 is a core process that defines the specific procedures for manage it customer relationships. 
+
+Managing the IT relationship with its customers by systematically coordinating interactions over multiple touch points on a regular basis. Coordinate the IT's efforts to reach out to its customers, which include emails, social-media interactions, newsletters, and direct conversations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    N8_1 --> N8_1_6["8.1.6 Manage IT customer relationships"]
+    style N8_1_6 fill:#e1f5fe
+    N8_1_6 --> N8_1_6_1["8.1.6.1 Establish relationship managemen..."]
+    N8_1_6 --> N8_1_6_2["8.1.6.2 Understand IT customer strategy"]
+    N8_1_6 --> N8_1_6_3["8.1.6.3 Understand IT customer environment"]
+    N8_1_6 --> N8_1_6_4["8.1.6.4 Communicate IT capabilities"]
+    N8_1_6 --> N8_1_6_5["8.1.6.5 Manage IT requirements"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20641 |
+| Hierarchy ID | 8.1.6 |
+| Level | Process |
+| Parent | [8.1](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ITCustomerRelationships
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `IT customer relationships` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage IT customer relationships"]
+        S1["Establish relationship mana..."]
+        S2["Understand IT customer stra..."]
+        S3["Understand IT customer envi..."]
+        S4["Communicate IT capabilities"]
+        S5["Manage IT requirements"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish relationship management mechanisms](./EstablishRelationshipManagementMechanisms) | 8.1.6.1 | Create mechanisms for effective public relationship in order to preserve the image and goodwill of t |
+| [Understand IT customer strategy](./UnderstandITCustomerStrategy) | 8.1.6.2 | Understanding the strategy for staff dependent on information technology |
+| [Understand IT customer environment](./UnderstandITCustomerEnvironment) | 8.1.6.3 | Understanding the environment of staff dependent on information technology |
+| [Communicate IT capabilities](./CommunicateITCapabilities) | 8.1.6.4 | Conveying the goals and objectives of the IT function and how it contributes to the overall business |
+| [Manage IT requirements](./ManageITRequirements) | 8.1.6.5 | Managing the IT requirements for business objectives |
+
+
+## Related Concepts
+
+- [ITCustomerRelationships](/concepts/ITCustomerRelationships)
+
+
+---
+
+*Source: APQC PCF 20641 (8.1.6) - APQC*

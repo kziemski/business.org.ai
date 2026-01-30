@@ -1,0 +1,118 @@
+---
+id: CreateAndManageSupportServicessolutions
+name: "Create and manage support services/solutions"
+code: "20866"
+hierarchyId: "8.7"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "8"
+children: ["8.7.1", "8.7.2", "8.7.3", "8.7.4", "8.7.5", "8.7.6", "8.7.7", "8.7.8"]
+---
+
+# Create and manage support services/solutions
+
+> Establishing and managing services for providing support to users of IT services and solutions.
+
+## Overview
+
+Group 8.7 is a process group within APQC Category 8.0 (Manage Information Technology). 
+
+Establishing and managing services for providing support to users of IT services and solutions. Define the plethora of services by which the organization assists users of computers, software products, or other information technology products.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    style N8_7 fill:#e1f5fe
+    N8_7 --> N8_7_1["8.7.1 Define and establish service del..."]
+    N8_7 --> N8_7_2["8.7.2 Define and develop service suppo..."]
+    N8_7 --> N8_7_3["8.7.3 Plan and manage service delivery..."]
+    N8_7 --> N8_7_4["8.7.4 Develop and manage infrastructur..."]
+    N8_7 --> N8_7_5["8.7.5 Define service support planning"]
+    N8_7 --> N8_7_6["8.7.6 Develop and manage service deliv..."]
+    N8_7 --> N8_7_7["8.7.7 Manage infrastructure resource a..."]
+    N8_7 --> N8_7_8["8.7.8 Operate IT user support"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20866 |
+| Hierarchy ID | 8.7 |
+| Level | Group |
+| Parent | [8](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+create.AndManageSupportServicessolutions
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `create` | Primary action |
+| Object | `and manage support services/solutions` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Create and manage support services/solutions"]
+        S1["Define and establish servic..."]
+        S2["Define and develop service ..."]
+        S3["Plan and manage service del..."]
+        S4["Develop and manage infrastr..."]
+        S5["Define service support plan..."]
+        S6["Develop and manage service ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define and establish service delivery strategy](./8.7.1-DefineEstablishServiceDelivery/) | 8.7.1 | Defining and establishing strategy for delivering IT services and solutions to the users |
+| [Define and develop service support strategy](./8.7.2-DefineDevelopServiceSupport/) | 8.7.2 | Defining and creating a strategy for provision of support to users of IT services and solutions |
+| [Plan and manage service delivery control](./8.7.3-PlanManageServiceDelivery/) | 8.7.3 | Determine and manage service delivery flow across different business functions |
+| [Develop and manage infrastructure resource planning](./8.7.4-DevelopManageInfrastructureResource/) | 8.7.4 | Developing and managing the resources required for administration of infrastructure |
+| [Define service support planning](./8.7.5-DefineServiceSupportPlanning/) | 8.7.5 | Develop strategies and methodologies to provide service support |
+| [Develop and manage service delivery operations](./8.7.6-DevelopManageServiceDelivery/) | 8.7.6 | Developing and managing different delivery services using service delivery systems for operational a |
+| [Manage infrastructure resource administration](./8.7.7-ManageInfrastructureResourceAdministration/) | 8.7.7 | Managing the resources required for administration of IT infrastructure |
+| [Operate IT user support](./8.7.8-OperateITUserSupport/) | 8.7.8 | Managing systematic user support functionality and capability through defined procedures |
+
+
+## Related Concepts
+
+- [SupportServices](/concepts/SupportServices)
+- [SupportSolutions](/concepts/SupportSolutions)
+- [SupportServices](/concepts/SupportServices)
+- [SupportSolutions](/concepts/SupportSolutions)
+
+
+---
+
+*Source: APQC PCF 20866 (8.7) - APQC*

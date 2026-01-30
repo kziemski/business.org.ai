@@ -1,0 +1,115 @@
+---
+id: ExecuteProjects
+name: "Execute projects"
+code: "16414"
+hierarchyId: "13.2.3.4"
+type: Activity
+level: 4
+status: complete
+parent: "13.2.3"
+children: ["13.2.3.4.1", "13.2.3.4.2", "13.2.3.4.3", "13.2.3.4.4", "13.2.3.4.5", "13.2.3.4.6", "13.2.3.4.7"]
+---
+
+# Execute projects
+
+> Implementing the business projects of the organization.
+
+## Overview
+
+Activity 13.2.3.4 is an activity within the Develop and Manage Business Capabilities framework. 
+
+Implementing the business projects of the organization. Evaluate the impact of project management. Record and report the status of the project. Manage the project scope. Promote and sustain activities and involvement. Realign and revamp the project management strategy and approach.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_2["13.2 Manage portfolio, program, and project"]
+    N13_2 --> N13_2_3["13.2.3 Manage projects"]
+    N13_2_3 --> N13_2_3_4["13.2.3.4 Execute projects"]
+    style N13_2_3_4 fill:#e1f5fe
+    N13_2_3_4 --> N13_2_3_4_1["13.2.3.4.1 Evaluate impact of project manag..."]
+    N13_2_3_4 --> N13_2_3_4_2["13.2.3.4.2 Report the status of project"]
+    N13_2_3_4 --> N13_2_3_4_3["13.2.3.4.3 Manage project scope"]
+    N13_2_3_4 --> N13_2_3_4_4["13.2.3.4.4 Promote and sustain activity and..."]
+    N13_2_3_4 --> N13_2_3_4_5["13.2.3.4.5 Conduct Project Reviews with Pro..."]
+    N13_2_3_4 --> N13_2_3_4_6["13.2.3.4.6 Realign and refresh project mana..."]
+    N13_2_3_4 --> N13_2_3_4_7["13.2.3.4.7 Adjust project plan as needed"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16414 |
+| Hierarchy ID | 13.2.3.4 |
+| Level | Activity |
+| Parent | [13.2.3](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+execute.Projects
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `execute` | Primary action |
+| Object | `projects` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Execute projects"]
+        S1["Evaluate impact of project ..."]
+        S2["Report the status of project"]
+        S3["Manage project scope"]
+        S4["Promote and sustain activit..."]
+        S5["Conduct Project Reviews wit..."]
+        S6["Realign and refresh project..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Evaluate impact of project management (strategy and projects) on measures and outcomes](./EvaluateImpactOfProjectManagementStrategyAndProjectsOnMeasuresAndOutcomes) | 13.2.3.4.1 | Assessing the impact of business project management on the measures and outcomes of the projects |
+| [Report the status of project](./ReportTheStatusOfProject) | 13.2.3.4.2 | Recording and documenting the current status and position of the project |
+| [Manage project scope](./ManageProjectScope) | 13.2.3.4.3 | Determining and documenting a list of specific project goals, deliverables, tasks, costs, and deadli |
+| [Promote and sustain activity and involvement](./PromoteAndSustainActivityAndInvolvement) | 13.2.3.4.4 | Encouraging and sustaining the activities and involvement while executing projects |
+| [Conduct Project Reviews with Program Managers and other stakeholders](./ConductProjectReviewsWithProgramManagersAndOtherStakeholders) | 13.2.3.4.5 | Hold post project reviews, lessons learned, or After Action Reviews (AARs) at the end of each projec |
+| [Realign and refresh project management strategy and approaches](./RealignAndRefreshProjectManagementStrategyAndApproaches) | 13.2.3.4.6 | Reorganizing and stimulating the approach and strategy for managing business projects |
+| [Adjust project plan as needed](./AdjustProjectPlanAsNeeded) | 13.2.3.4.7 | Changes to project plans based upon internal and or external influences on the project |
+
+
+## Related Concepts
+
+- [Projects](/concepts/Projects)
+
+
+---
+
+*Source: APQC PCF 16414 (13.2.3.4) - APQC*

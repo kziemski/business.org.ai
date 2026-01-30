@@ -1,0 +1,97 @@
+---
+id: ManageEmployeeAssistanceAndRetention
+name: "Manage employee assistance and retention"
+code: "21439"
+hierarchyId: "7.5.3"
+type: Process
+level: 3
+status: complete
+parent: "7.5"
+children: ["7.5.3.1", "7.5.3.2"]
+---
+
+# Manage employee assistance and retention
+
+> Managing activities centered around delivering programs to support work/life balance for employees; developing family support systems; reviewing retention and motivation indicators; and reviewing compensation plans.
+
+## Overview
+
+Process 7.5.3 is a core process that defines the specific procedures for manage employee assistance and retention. 
+
+Managing activities centered around delivering programs to support work/life balance for employees; developing family support systems; reviewing retention and motivation indicators; and reviewing compensation plans.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_5["7.5 Reward and retain employees"]
+    N7_5 --> N7_5_3["7.5.3 Manage employee assistance and retention"]
+    style N7_5_3 fill:#e1f5fe
+    N7_5_3 --> N7_5_3_1["7.5.3.1 Deliver programs to support work..."]
+    N7_5_3 --> N7_5_3_2["7.5.3.2 Develop family support systems"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21439 |
+| Hierarchy ID | 7.5.3 |
+| Level | Process |
+| Parent | [7.5](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EmployeeAssistanceAndRetention
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `employee assistance and retention` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage employee assistance and retention"]
+        S1["Deliver programs to support..."]
+        S2["Develop family support systems"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Deliver programs to support work/life balance for employees](./7.5.3.1-DeliverProgramsSupportWorklife/) | 7.5.3.1 | Designing programs that prompt proper balance between work (i |
+| [Develop family support systems](./DevelopFamilySupportSystems) | 7.5.3.2 | Creating a support structure that aligns with local and federal laws that allow for support for fami |
+
+
+## Related Concepts
+
+- [EmployeeAssistance](/concepts/EmployeeAssistance)
+- [Retention](/concepts/Retention)
+
+
+---
+
+*Source: APQC PCF 21439 (7.5.3) - APQC*

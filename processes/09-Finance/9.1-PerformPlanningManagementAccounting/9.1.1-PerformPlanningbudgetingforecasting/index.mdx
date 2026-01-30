@@ -1,0 +1,110 @@
+---
+id: PerformPlanningbudgetingforecasting
+name: "Perform planning/budgeting/forecasting"
+code: "10738"
+hierarchyId: "9.1.1"
+type: Process
+level: 3
+status: complete
+parent: "9.1"
+children: ["9.1.1.1", "9.1.1.2", "9.1.1.3", "9.1.1.4", "9.1.1.5"]
+---
+
+# Perform planning/budgeting/forecasting
+
+> Allocating funds to meet future and current financial goals.
+
+## Overview
+
+Process 9.1.1 is a core process that defines the specific procedures for perform planning/budgeting/forecasting. 
+
+Allocating funds to meet future and current financial goals. Led by the chief financial officer, have the finance function plan, budget, and forecast in order to determine and describe long and short-term financial goals.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_1["9.1 Perform planning and management accou..."]
+    N9_1 --> N9_1_1["9.1.1 Perform planning/budgeting/forecasting"]
+    style N9_1_1 fill:#e1f5fe
+    N9_1_1 --> N9_1_1_1["9.1.1.1 Develop and maintain budget poli..."]
+    N9_1_1 --> N9_1_1_2["9.1.1.2 Prepare periodic budgets and plans"]
+    N9_1_1 --> N9_1_1_3["9.1.1.3 Operationalize and implement pla..."]
+    N9_1_1 --> N9_1_1_4["9.1.1.4 Prepare periodic financial forec..."]
+    N9_1_1 --> N9_1_1_5["9.1.1.5 Perform variance analysis agains..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10738 |
+| Hierarchy ID | 9.1.1 |
+| Level | Process |
+| Parent | [9.1](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.Planningbudgetingforecasting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `planning/budgeting/forecasting` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform planning/budgeting/forecasting"]
+        S1["Develop and maintain budget..."]
+        S2["Prepare periodic budgets an..."]
+        S3["Operationalize and implemen..."]
+        S4["Prepare periodic financial ..."]
+        S5["Perform variance analysis a..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop and maintain budget policies and procedures](./DevelopAndMaintainBudgetPoliciesAndProcedures) | 9.1.1.1 | Formulating financial budgetary guidelines and strategies |
+| [Prepare periodic budgets and plans](./PreparePeriodicBudgetsAndPlans) | 9.1.1.2 | Creating reports on a quarterly or annual basis for fund allocation |
+| [Operationalize and implement plans to achieve budget](./OperationalizeAndImplementPlansToAchieveBudget) | 9.1.1.3 | Putting budgeting plans into practical use keeping within designated forecasting parameters |
+| [Prepare periodic financial forecasts](./PreparePeriodicFinancialForecasts) | 9.1.1.4 | Creating estimates of the projected income and expenses required over a predetermined time frame |
+| [Perform variance analysis against forecasts and budgets](./PerformVarianceAnalysisAgainstForecastsAndBudgets) | 9.1.1.5 | Conducting a quantitative analysis between what was forecasted and budgeted and actual financial beh |
+
+
+## Related Concepts
+
+- [Planning](/concepts/Planning)
+- [Budgeting](/concepts/Budgeting)
+- [Forecasting](/concepts/Forecasting)
+
+
+---
+
+*Source: APQC PCF 10738 (9.1.1) - APQC*

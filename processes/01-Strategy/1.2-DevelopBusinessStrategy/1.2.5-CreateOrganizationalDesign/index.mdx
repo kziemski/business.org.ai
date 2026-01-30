@@ -1,0 +1,116 @@
+---
+id: CreateOrganizationalDesign
+name: "Create organizational design"
+code: "10041"
+hierarchyId: "1.2.5"
+type: Process
+level: 3
+status: complete
+parent: "1.2"
+children: ["1.2.5.1", "1.2.5.2", "1.2.5.3", "1.2.5.4", "1.2.5.5", "1.2.5.6", "1.2.5.7", "1.2.5.8"]
+---
+
+# Create organizational design
+
+> Formulating a design for the organization's resources that allow it to meet its objectives.
+
+## Overview
+
+Process 1.2.5 is a core process that defines the specific procedures for create organizational design. 
+
+Formulating a design for the organization's resources that allow it to meet its objectives. Develop a new framework for molding the organization's various processes into a coherent and seamless whole.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_2["1.2 Develop business strategy"]
+    N1_2 --> N1_2_5["1.2.5 Create organizational design"]
+    style N1_2_5 fill:#e1f5fe
+    N1_2_5 --> N1_2_5_1["1.2.5.1 Evaluate breadth and depth of or..."]
+    N1_2_5 --> N1_2_5_2["1.2.5.2 Perform job-specific roles mappi..."]
+    N1_2_5 --> N1_2_5_3["1.2.5.3 Develop role activity diagrams t..."]
+    N1_2_5 --> N1_2_5_4["1.2.5.4 Perform organization redesign wo..."]
+    N1_2_5 --> N1_2_5_5["1.2.5.5 Design the relationships between..."]
+    N1_2_5 --> N1_2_5_6["1.2.5.6 Develop role analysis and activi..."]
+    N1_2_5 --> N1_2_5_7["1.2.5.7 Assess organizational implicatio..."]
+    N1_2_5 --> N1_2_5_8["1.2.5.8 Migrate to new organization"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10041 |
+| Hierarchy ID | 1.2.5 |
+| Level | Process |
+| Parent | [1.2](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+create.OrganizationalDesign
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `create` | Primary action |
+| Object | `organizational design` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Create organizational design"]
+        S1["Evaluate breadth and depth ..."]
+        S2["Perform job-specific roles ..."]
+        S3["Develop role activity diagr..."]
+        S4["Perform organization redesi..."]
+        S5["Design the relationships be..."]
+        S6["Develop role analysis and a..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Evaluate breadth and depth of organizational structure](./EvaluateBreadthAndDepthOfOrganizationalStructure) | 1.2.5.1 | Evaluating the structural makeup of the organization, including pertinent features of and associated |
+| [Perform job-specific roles mapping and value-added analyses](./PerformJobspecificRolesMappingAndValueaddedAnalyses) | 1.2.5.2 | Appraising job-specific roles within the organizational chart and their hierarchical architecture |
+| [Develop role activity diagrams to assess hand-off activity](./DevelopRoleActivityDiagramsToAssessHandoffActivity) | 1.2.5.3 | Examining the constituent exercises and undertakings within a work-related position for the purpose  |
+| [Perform organization redesign workshops](./PerformOrganizationRedesignWorkshops) | 1.2.5.4 | Organizing workshop sessions to adopt organizational redesign |
+| [Design the relationships between organizational units](./DesignTheRelationshipsBetweenOrganizationalUnits) | 1.2.5.5 | Fleshing out the connections and dependencies among the various units of the organization |
+| [Develop role analysis and activity diagrams for key processes](./DevelopRoleAnalysisAndActivityDiagramsForKeyProcesses) | 1.2.5.6 | Creating an understanding of the fit between job roles and organizational processes in order to prop |
+| [Assess organizational implication of feasible alternatives](./AssessOrganizationalImplicationOfFeasibleAlternatives) | 1.2.5.7 | Probing the repercussions of all practicable organizational design options |
+| [Migrate to new organization](./MigrateToNewOrganization) | 1.2.5.8 | Embracing and ratifying a new organizational structure |
+
+
+## Related Concepts
+
+- [OrganizationalDesign](/concepts/OrganizationalDesign)
+
+
+---
+
+*Source: APQC PCF 10041 (1.2.5) - APQC*

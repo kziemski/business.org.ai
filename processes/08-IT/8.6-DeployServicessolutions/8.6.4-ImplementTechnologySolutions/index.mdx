@@ -1,0 +1,118 @@
+---
+id: ImplementTechnologySolutions
+name: "Implement technology solutions"
+code: "20848"
+hierarchyId: "8.6.4"
+type: Process
+level: 3
+status: complete
+parent: "8.6"
+children: ["8.6.4.1", "8.6.4.2", "8.6.4.3", "8.6.4.4", "8.6.4.5", "8.6.4.6", "8.6.4.7", "8.6.4.8", "8.6.4.9"]
+---
+
+# Implement technology solutions
+
+> Deploy the identified solutions for information technology important for healthy business operations.
+
+## Overview
+
+Process 8.6.4 is a core process that defines the specific procedures for implement technology solutions. 
+
+Deploy the identified solutions for information technology important for healthy business operations. Confirm status and operational availability of IT resources. Perform testing and distribution of change. Execute roll-back protocol if necessary.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_6["8.6 Deploy services/solutions"]
+    N8_6 --> N8_6_4["8.6.4 Implement technology solutions"]
+    style N8_6_4 fill:#e1f5fe
+    N8_6_4 --> N8_6_4_1["8.6.4.1 Confirm hardware/software operat..."]
+    N8_6_4 --> N8_6_4_2["8.6.4.2 Confirm operational availability"]
+    N8_6_4 --> N8_6_4_3["8.6.4.3 Execute internal IT implementati..."]
+    N8_6_4 --> N8_6_4_4["8.6.4.4 Confirm implementation completion"]
+    N8_6_4 --> N8_6_4_5["8.6.4.5 Implement software change/release"]
+    N8_6_4 --> N8_6_4_6["8.6.4.6 Perform post-installation testing"]
+    N8_6_4 --> N8_6_4_7["8.6.4.7 Distribute software components n..."]
+    N8_6_4 --> N8_6_4_8["8.6.4.8 Verify change/release implementa..."]
+    N8_6_4 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20848 |
+| Hierarchy ID | 8.6.4 |
+| Level | Process |
+| Parent | [8.6](../) |
+| Sub-Processes | 9 |
+
+
+## GraphDL Semantic Structure
+
+```
+implement.TechnologySolutions
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `implement` | Primary action |
+| Object | `technology solutions` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Implement technology solutions"]
+        S1["Confirm hardware/software o..."]
+        S2["Confirm operational availab..."]
+        S3["Execute internal IT impleme..."]
+        S4["Confirm implementation comp..."]
+        S5["Implement software change/r..."]
+        S6["Perform post-installation t..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Confirm hardware/software operational status](./ConfirmHardwaresoftwareOperationalStatus) | 8.6.4.1 | Confirm if hardware/software are operating as per the expectation |
+| [Confirm operational availability](./ConfirmOperationalAvailability) | 8.6.4.2 | Confirm if operational activities of IT services could be performed |
+| [Execute internal IT implementation plan](./ExecuteInternalITImplementationPlan) | 8.6.4.3 | Executing IT implementation plan to make the IT services and solutions available for internal use |
+| [Confirm implementation completion](./ConfirmImplementationCompletion) | 8.6.4.4 | Confirming the completion of IT implementation |
+| [Implement software change/release](./ImplementSoftwareChangerelease) | 8.6.4.5 | Executing changes in software and services as per change/release schedule |
+| [Perform post-installation testing](./PerformPostinstallationTesting) | 8.6.4.6 | Perform testing after installation to confirm expected performance is met |
+| [Distribute software components network-wide](./DistributeSoftwareComponentsNetworkwide) | 8.6.4.7 | Distributing and implementing the release of changed IT solutions |
+| [Verify change/release implementation success](./VerifyChangereleaseImplementationSuccess) | 8.6.4.8 | Confirming that the release has met expectations |
+| [Execute roll-back plan](./ExecuteRollbackPlan) | 8.6.4.9 | Execution of plan to return to the previous operating state if the change/release impedes operationa |
+
+
+## Related Concepts
+
+- [TechnologySolutions](/concepts/TechnologySolutions)
+
+
+---
+
+*Source: APQC PCF 20848 (8.6.4) - APQC*

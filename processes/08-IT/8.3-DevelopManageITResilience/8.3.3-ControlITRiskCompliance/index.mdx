@@ -1,0 +1,121 @@
+---
+id: ControlItRiskComplianceAndSecurity
+name: "Control IT risk, compliance, and security"
+code: "20721"
+hierarchyId: "8.3.3"
+type: Process
+level: 3
+status: complete
+parent: "8.3"
+children: ["8.3.3.1", "8.3.3.2", "8.3.3.3", "8.3.3.4", "8.3.3.5", "8.3.3.6", "8.3.3.7", "8.3.3.8", "8.3.3.9", "8.3.3.10"]
+---
+
+# Control IT risk, compliance, and security
+
+> Ensure effective control in overall IT risk management, formulate and execute guidelines in-line with regulatory bodies, and manage organizational security throughout the business operations.
+
+## Overview
+
+Process 8.3.3 is a core process that defines the specific procedures for control it risk, compliance, and security. 
+
+Ensure effective control in overall IT risk management, formulate and execute guidelines in-line with regulatory bodies, and manage organizational security throughout the business operations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    N8_3 --> N8_3_3["8.3.3 Control IT risk, compliance, and secu..."]
+    style N8_3_3 fill:#e1f5fe
+    N8_3_3 --> N8_3_3_1["8.3.3.1 Evaluate enterprise regulatory a..."]
+    N8_3_3 --> N8_3_3_2["8.3.3.2 Analyze IT security threat impact"]
+    N8_3_3 --> N8_3_3_3["8.3.3.3 Create and maintain IT complianc..."]
+    N8_3_3 --> N8_3_3_4["8.3.3.4 Create and maintain IT security ..."]
+    N8_3_3 --> N8_3_3_5["8.3.3.5 Develop and deploy risk manageme..."]
+    N8_3_3 --> N8_3_3_6["8.3.3.6 Establish risk reporting capabil..."]
+    N8_3_3 --> N8_3_3_7["8.3.3.7 Establish communication standards"]
+    N8_3_3 --> N8_3_3_8["8.3.3.8 Conduct IT risk and threat asses..."]
+    N8_3_3 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20721 |
+| Hierarchy ID | 8.3.3 |
+| Level | Process |
+| Parent | [8.3](../) |
+| Sub-Processes | 10 |
+
+
+## GraphDL Semantic Structure
+
+```
+control.ITRiskComplianceAndSecurity
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `control` | Primary action |
+| Object | `IT risk, compliance, and security` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Control IT risk, compliance, and security"]
+        S1["Evaluate enterprise regulat..."]
+        S2["Analyze IT security threat ..."]
+        S3["Create and maintain IT comp..."]
+        S4["Create and maintain IT secu..."]
+        S5["Develop and deploy risk man..."]
+        S6["Establish risk reporting ca..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Evaluate enterprise regulatory and compliance obligations](./EvaluateEnterpriseRegulatoryAndComplianceObligations) | 8.3.3.1 | Evaluation of dynamic, strategic, and integrated approach to manage regulatory requirements and comp |
+| [Analyze IT security threat impact](./AnalyzeITSecurityThreatImpact) | 8.3.3.2 | Analyzing the impact of threats to critical IT assets across different departments and functions in  |
+| [Create and maintain IT compliance requirements](./CreateAndMaintainITComplianceRequirements) | 8.3.3.3 | Develop and maintain IT compliance standards |
+| [Create and maintain IT security policies, standards, and procedures](./CreateAndMaintainITSecurityPoliciesStandardsAndProcedures) | 8.3.3.4 | Develop and maintain an architecture for securing and ensuring the privacy of data flows throughout  |
+| [Develop and deploy risk management training](./DevelopAndDeployRiskManagementTraining) | 8.3.3.5 | Develop and implement training in regard to managing IT risks, understanding criticality, impact, an |
+| [Establish risk reporting capabilities and responsibilities](./EstablishRiskReportingCapabilitiesAndResponsibilities) | 8.3.3.6 | Establishing processes to communicate IT risk to the organization |
+| [Establish communication standards](./EstablishCommunicationStandards) | 8.3.3.7 | Establishing standards for communications within the organization which creates the road map for suc |
+| [Conduct IT risk and threat assessments](./ConductITRiskAndThreatAssessments) | 8.3.3.8 | Evaluate IT risk and threat assessments by way of IT assets, information security, and breach points |
+| [Monitor and manage IT activity risk](./MonitorAndManageITActivityRisk) | 8.3.3.9 | Monitoring and managing risks related to IT adoption within the organization |
+| [Identify, supervise and monitor IT risk mitigation measures](./IdentifySuperviseAndMonitorITRiskMitigationMeasures) | 8.3.3.10 | Identifying and supervising a blueprint of measures for managing risk in IT |
+
+
+## Related Concepts
+
+- [ITRisk](/concepts/ITRisk)
+- [Compliance](/concepts/Compliance)
+- [Security](/concepts/Security)
+
+
+---
+
+*Source: APQC PCF 20721 (8.3.3) - APQC*

@@ -1,0 +1,96 @@
+---
+id: DetermineEnvironmentalHealthAndSafetyImpacts
+name: "Determine environmental health and safety impacts"
+code: "11180"
+hierarchyId: "13.8.1"
+type: Process
+level: 3
+status: complete
+parent: "13.8"
+children: ["13.8.1.1", "13.8.1.2"]
+---
+
+# Determine environmental health and safety impacts
+
+> Determining the impact of EHS offering--and the procedures it employs to process them--on the environment at large, as well as the health and safety of employees.
+
+## Overview
+
+Process 13.8.1 is a core process that defines the specific procedures for determine environmental health and safety impacts. 
+
+Determining the impact of EHS offering--and the procedures it employs to process them--on the environment at large, as well as the health and safety of employees. Evaluate the environmental impact of the organization's products, services, and operations. Conduct health, safety, and environmental audits.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_8_1["13.8.1 Determine environmental health and sa..."]
+    style N13_8_1 fill:#e1f5fe
+    N13_8_1 --> N13_8_1_1["13.8.1.1 Evaluate environmental impact of..."]
+    N13_8_1 --> N13_8_1_2["13.8.1.2 Conduct health and safety and en..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11180 |
+| Hierarchy ID | 13.8.1 |
+| Level | Process |
+| Parent | [13.8](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+determine.EnvironmentalHealthAndSafetyImpacts
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `determine` | Primary action |
+| Object | `environmental health and safety impacts` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Determine environmental health and safety impacts"]
+        S1["Evaluate environmental impa..."]
+        S2["Conduct health and safety a..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Evaluate environmental impact of products, services, and operations](./EvaluateEnvironmentalImpactOfProductsServicesAndOperations) | 13.8.1.1 | Evaluating the impact of offerings and the auxiliary operations required to process them on the imme |
+| [Conduct health and safety and environmental audits](./ConductHealthAndSafetyAndEnvironmentalAudits) | 13.8.1.2 | Conducting an inspection to verify that the organization adequately complies with the environmental, |
+
+
+## Related Concepts
+
+- [EnvironmentalHealthImpacts](/concepts/EnvironmentalHealthImpacts)
+- [SafetyImpacts](/concepts/SafetyImpacts)
+
+
+---
+
+*Source: APQC PCF 11180 (13.8.1) - APQC*

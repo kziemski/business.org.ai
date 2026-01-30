@@ -1,0 +1,120 @@
+---
+id: ManageProductAndServiceMasterData
+name: "Manage product and service master data"
+code: "11740"
+hierarchyId: "2.1.4"
+type: Process
+level: 3
+status: complete
+parent: "2.1"
+children: ["2.1.4.1", "2.1.4.2", "2.1.4.3", "2.1.4.4", "2.1.4.5", "2.1.4.6", "2.1.4.7", "2.1.4.8", "2.1.4.9", "2.1.4.10"]
+---
+
+# Manage product and service master data
+
+> Controlling/authorizing to enable services' and products' data and other critical data of these functions through a well secured storage and accessibility processes backed by siloed applications/IT systems.
+
+## Overview
+
+Process 2.1.4 is a core process that defines the specific procedures for manage product and service master data. 
+
+Controlling/authorizing to enable services' and products' data and other critical data of these functions through a well secured storage and accessibility processes backed by siloed applications/IT systems.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_1["2.1 Govern and manage product/service dev..."]
+    N2_1 --> N2_1_4["2.1.4 Manage product and service master data"]
+    style N2_1_4 fill:#e1f5fe
+    N2_1_4 --> N2_1_4_1["2.1.4.1 Manage materials master lists"]
+    N2_1_4 --> N2_1_4_2["2.1.4.2 Manage bills of material"]
+    N2_1_4 --> N2_1_4_3["2.1.4.3 Manage routings"]
+    N2_1_4 --> N2_1_4_4["2.1.4.4 Manage specifications"]
+    N2_1_4 --> N2_1_4_5["2.1.4.5 Manage drawings"]
+    N2_1_4 --> N2_1_4_6["2.1.4.6 Manage product/material classifi..."]
+    N2_1_4 --> N2_1_4_7["2.1.4.7 Develop and maintain quality/ins..."]
+    N2_1_4 --> N2_1_4_8["2.1.4.8 Maintain process specification data"]
+    N2_1_4 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11740 |
+| Hierarchy ID | 2.1.4 |
+| Level | Process |
+| Parent | [2.1](../) |
+| Sub-Processes | 10 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ProductAndServiceMasterData
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `product and service master data` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage product and service master data"]
+        S1["Manage materials master lists"]
+        S2["Manage bills of material"]
+        S3["Manage routings"]
+        S4["Manage specifications"]
+        S5["Manage drawings"]
+        S6["Manage product/material cla..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage materials master lists](./ManageMaterialsMasterLists) | 2.1.4.1 | Controlling the details of materials' storage and utilization, supplier details linked to materials, |
+| [Manage bills of material](./ManageBillsOfMaterial) | 2.1.4.2 | Managing the purchase details/bills through regular and error free updates to applications |
+| [Manage routings](./ManageRoutings) | 2.1.4.3 | Controlling and executing the flow of operations from raw form to finished product in a defined form |
+| [Manage specifications](./ManageSpecifications) | 2.1.4.4 | Direct, supervise, and control the product/service details necessary to execute the process |
+| [Manage drawings](./ManageDrawings) | 2.1.4.5 | Administering the specifications of the product/service and ensure accessibility for product alterat |
+| [Manage product/material classification](./ManageProductmaterialClassification) | 2.1.4.6 | Controlling the details of the product and the input materials |
+| [Develop and maintain quality/inspection documents](./DevelopAndMaintainQualityinspectionDocuments) | 2.1.4.7 | Determining procedures required to assess the sustainability of defined criterion for product/servic |
+| [Maintain process specification data](./MaintainProcessSpecificationData) | 2.1.4.8 | Directing and handling data with respect to the procedures followed across different functions and m |
+| [Manage traceability data](./ManageTraceabilityData) | 2.1.4.9 | Identifying and handling data accessed by the permitted touch points |
+| [Review and approve data access requests](./ReviewAndApproveDataAccessRequests) | 2.1.4.10 | Determining the requests pertaining to data accessibility |
+
+
+## Related Concepts
+
+- [Product](/concepts/Product)
+- [ServiceMasterData](/concepts/ServiceMasterData)
+
+
+---
+
+*Source: APQC PCF 11740 (2.1.4) - APQC*

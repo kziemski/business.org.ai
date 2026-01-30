@@ -1,0 +1,108 @@
+---
+id: DeployServicessolutions
+name: "Deploy services/solutions"
+code: "20824"
+hierarchyId: "8.6"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "8"
+children: ["8.6.1", "8.6.2", "8.6.3", "8.6.4", "8.6.5"]
+---
+
+# Deploy services/solutions
+
+> Executing IT services/solutions by creating a strategy for deployment.
+
+## Overview
+
+Group 8.6 is a process group within APQC Category 8.0 (Manage Information Technology). 
+
+Executing IT services/solutions by creating a strategy for deployment. Plan and execute the changes. Plan and administer the release of its IT services and solutions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_6["8.6 Deploy services/solutions"]
+    style N8_6 fill:#e1f5fe
+    N8_6 --> N8_6_1["8.6.1 Develop and manage service/solut..."]
+    N8_6 --> N8_6_2["8.6.2 Plan service and solution implem..."]
+    N8_6 --> N8_6_3["8.6.3 Manage change deployment control"]
+    N8_6 --> N8_6_4["8.6.4 Implement technology solutions"]
+    N8_6 --> N8_6_5["8.6.5 Perform service and solution rol..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20824 |
+| Hierarchy ID | 8.6 |
+| Level | Group |
+| Parent | [8](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+deploy.Servicessolutions
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `deploy` | Primary action |
+| Object | `services/solutions` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Deploy services/solutions"]
+        S1["Develop and manage service/..."]
+        S2["Plan service and solution i..."]
+        S3["Manage change deployment co..."]
+        S4["Implement technology solutions"]
+        S5["Perform service and solutio..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop and manage service/solution deployment strategy](./8.6.1-DevelopManageServicesolutionDeployment/) | 8.6.1 | Creating and implementing a strategy for the deployment of IT service/solution |
+| [Plan service and solution implementation](./8.6.2-PlanServiceSolutionImplementation/) | 8.6.2 | Strategizing and executing changes in IT solutions and services |
+| [Manage change deployment control](./8.6.3-ManageChangeDeploymentControl/) | 8.6.3 | Creating and deploying an architecture for securing the changes deployed in the organization |
+| [Implement technology solutions](./8.6.4-ImplementTechnologySolutions/) | 8.6.4 | Deploy the identified solutions for information technology important for healthy business operations |
+| [Perform service and solution rollout](./8.6.5-PerformServiceSolutionRollout/) | 8.6.5 | Strategizing and executing changes in IT solutions and services |
+
+
+## Related Concepts
+
+- [Services](/concepts/Services)
+- [Solutions](/concepts/Solutions)
+
+
+---
+
+*Source: APQC PCF 20824 (8.6) - APQC*

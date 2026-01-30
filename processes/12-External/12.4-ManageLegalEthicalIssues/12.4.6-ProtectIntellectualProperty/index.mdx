@@ -1,0 +1,104 @@
+---
+id: ProtectIntellectualProperty
+name: "Protect intellectual property"
+code: "11049"
+hierarchyId: "12.4.6"
+type: Process
+level: 3
+status: complete
+parent: "12.4"
+children: ["12.4.6.1", "12.4.6.2", "12.4.6.3", "12.4.6.4"]
+---
+
+# Protect intellectual property
+
+> Safeguarding the intellectual property of the organization.
+
+## Overview
+
+Process 12.4.6 is a core process that defines the specific procedures for protect intellectual property. 
+
+Safeguarding the intellectual property of the organization. This process requires the organization to protect a wide variety of intellectual property created by it. It involves creating and managing non-disclosure agreements (NDAs), following up on current developments in the areas where the organization holds patents, tracking the use of the organization's copyrighted material, creating and upholding licensing terms, and administering policies for safeguarding intellectual property.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_4["12.4 Manage legal and ethical issues"]
+    N12_4 --> N12_4_6["12.4.6 Protect intellectual property"]
+    style N12_4_6 fill:#e1f5fe
+    N12_4_6 --> N12_4_6_1["12.4.6.1 Manage copyrights, patents, and ..."]
+    N12_4_6 --> N12_4_6_2["12.4.6.2 Maintain intellectual property r..."]
+    N12_4_6 --> N12_4_6_3["12.4.6.3 Administer licensing terms"]
+    N12_4_6 --> N12_4_6_4["12.4.6.4 Administer options"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11049 |
+| Hierarchy ID | 12.4.6 |
+| Level | Process |
+| Parent | [12.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+protect.IntellectualProperty
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `protect` | Primary action |
+| Object | `intellectual property` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Protect intellectual property"]
+        S1["Manage copyrights, patents,..."]
+        S2["Maintain intellectual prope..."]
+        S3["Administer licensing terms"]
+        S4["Administer options"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage copyrights, patents, and trademarks](./ManageCopyrightsPatentsAndTrademarks) | 12.4.6.1 | Managing the patents and copyrights already held or sought by the organization |
+| [Maintain intellectual property rights and restrictions](./MaintainIntellectualPropertyRightsAndRestrictions) | 12.4.6.2 | Managing the upkeep of intellectual property rights by creating and managing a framework of rules, p |
+| [Administer licensing terms](./AdministerLicensingTerms) | 12.4.6.3 | Administering and overseeing the terms and policies associated with licensing the organization's int |
+| [Administer options](./AdministerOptions) | 12.4.6.4 | Managing options regarding licensing agreements |
+
+
+## Related Concepts
+
+- [IntellectualProperty](/concepts/IntellectualProperty)
+
+
+---
+
+*Source: APQC PCF 11049 (12.4.6) - APQC*

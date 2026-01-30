@@ -1,0 +1,66 @@
+---
+id: ProcessPaymentForLegalServices
+name: "Process payment for legal services"
+code: "11060"
+hierarchyId: "12.4.5.5"
+type: Activity
+level: 4
+status: complete
+parent: "12.4.5"
+---
+
+# Process payment for legal services
+
+> Making payments to legal advisers for their services.
+
+## Overview
+
+Activity 12.4.5.5 is an activity within the Manage External Relationships framework. 
+
+Making payments to legal advisers for their services. Payments include addressing issues or suits by customers, suppliers, competitors, bankers, government agencies, etc.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_4["12.4 Manage legal and ethical issues"]
+    N12_4 --> N12_4_5["12.4.5 Manage outside counsel"]
+    N12_4_5 --> N12_4_5_5["12.4.5.5 Process payment for legal services"]
+    style N12_4_5_5 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11060 |
+| Hierarchy ID | 12.4.5.5 |
+| Level | Activity |
+| Parent | [12.4.5](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.Payment.for.LegalServices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `payment` | Direct object |
+| Preposition | `for` | Relationship |
+| PrepObject | `legal services` | Indirect object |
+
+
+## Related Concepts
+
+- [Payment](/concepts/Payment)
+- [LegalServices](/concepts/LegalServices)
+
+
+---
+
+*Source: APQC PCF 11060 (12.4.5.5) - APQC*

@@ -1,0 +1,108 @@
+---
+id: BenchmarkPerformance
+name: "Benchmark performance"
+code: "11072"
+hierarchyId: "13.6.2"
+type: Process
+level: 3
+status: complete
+parent: "13.6"
+children: ["13.6.2.1", "13.6.2.2", "13.6.2.3", "13.6.2.4", "13.6.2.5"]
+---
+
+# Benchmark performance
+
+> Comparing organizational performance internally or externally with other organizations.
+
+## Overview
+
+Process 13.6.2 is a core process that defines the specific procedures for benchmark performance. 
+
+Comparing organizational performance internally or externally with other organizations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_6["13.6 Measure and benchmark"]
+    N13_6 --> N13_6_2["13.6.2 Benchmark performance"]
+    style N13_6_2 fill:#e1f5fe
+    N13_6_2 --> N13_6_2_1["13.6.2.1 Conduct performance assessments"]
+    N13_6_2 --> N13_6_2_2["13.6.2.2 Develop benchmarking capabilities"]
+    N13_6_2 --> N13_6_2_3["13.6.2.3 Conduct internal and external be..."]
+    N13_6_2 --> N13_6_2_4["13.6.2.4 Conduct gap analysis"]
+    N13_6_2 --> N13_6_2_5["13.6.2.5 Establish need for change"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11072 |
+| Hierarchy ID | 13.6.2 |
+| Level | Process |
+| Parent | [13.6](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+benchmark.Performance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `benchmark` | Primary action |
+| Object | `performance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Benchmark performance"]
+        S1["Conduct performance assessm..."]
+        S2["Develop benchmarking capabi..."]
+        S3["Conduct internal and extern..."]
+        S4["Conduct gap analysis"]
+        S5["Establish need for change"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Conduct performance assessments](./ConductPerformanceAssessments) | 13.6.2.1 | Measuring, researching, and recording the performance of people, processes, mechanisms, or other are |
+| [Develop benchmarking capabilities](./DevelopBenchmarkingCapabilities) | 13.6.2.2 | Improving an organization's ability to compare its performance internally or externally, and maintai |
+| [Conduct internal and external benchmarking](./ConductInternalAndExternalBenchmarking) | 13.6.2.3 | Benchmarking internal processes and against external competitors |
+| [Conduct gap analysis](./ConductGapAnalysis) | 13.6.2.4 | Examining performance against benchmarked organizations or entities |
+| [Establish need for change](./EstablishNeedForChange) | 13.6.2.5 | Establishing a need for changing the performance of the organization |
+
+
+## Related Concepts
+
+- [Performance](/concepts/Performance)
+
+
+---
+
+*Source: APQC PCF 11072 (13.6.2) - APQC*

@@ -1,0 +1,113 @@
+---
+id: ProduceassembleProduct
+name: "Produce/Assemble product"
+code: "10304"
+hierarchyId: "4.3.2"
+type: Process
+level: 3
+status: complete
+parent: "4.3"
+children: ["4.3.2.1", "4.3.2.2", "4.3.2.3", "4.3.2.4", "4.3.2.5", "4.3.2.6"]
+---
+
+# Produce/Assemble product
+
+> Manufacturing the product.
+
+## Overview
+
+Process 4.3.2 is a core process that defines the specific procedures for produce/assemble product. 
+
+Manufacturing the product. Convert the raw materials to develop consumer-ready products. Manage the raw materials to implement the detailed production schedule. Reproduce defectives to establish and remediate cause. Ensure production optimization and benchmark performance.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_3["4.3 Produce/Assemble/Test product"]
+    N4_3 --> N4_3_2["4.3.2 Produce/Assemble product"]
+    style N4_3_2 fill:#e1f5fe
+    N4_3_2 --> N4_3_2_1["4.3.2.1 Manage raw material inventory"]
+    N4_3_2 --> N4_3_2_2["4.3.2.2 Execute detailed line schedule"]
+    N4_3_2 --> N4_3_2_3["4.3.2.3 Report maintenance issues"]
+    N4_3_2 --> N4_3_2_4["4.3.2.4 Rerun defective items"]
+    N4_3_2 --> N4_3_2_5["4.3.2.5 Monitor and optimize production ..."]
+    N4_3_2 --> N4_3_2_6["4.3.2.6 Assess production performance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10304 |
+| Hierarchy ID | 4.3.2 |
+| Level | Process |
+| Parent | [4.3](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+produce/assemble.Product
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `produce/assemble` | Primary action |
+| Object | `product` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Produce/Assemble product"]
+        S1["Manage raw material inventory"]
+        S2["Execute detailed line schedule"]
+        S3["Report maintenance issues"]
+        S4["Rerun defective items"]
+        S5["Monitor and optimize produc..."]
+        S6["Assess production performance"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage raw material inventory](./ManageRawMaterialInventory) | 4.3.2.1 | Administering the inventory of raw materials |
+| [Execute detailed line schedule](./ExecuteDetailedLineSchedule) | 4.3.2.2 | Creating and implementing the detailed line production schedule on the ground level |
+| [Report maintenance issues](./ReportMaintenanceIssues) | 4.3.2.3 | Recording and reporting any deviations or issues in the maintenance schedule, in the performance to  |
+| [Rerun defective items](./RerunDefectiveItems) | 4.3.2.4 | Reproducing the items produced defectively |
+| [Monitor and optimize production process](./4.3.2.5-MonitorOptimizeProductionProcess/) | 4.3.2.5 | Integrating different resources in the production process: material, personnel, equipment, robotics, |
+| [Assess production performance](./AssessProductionPerformance) | 4.3.2.6 | Analyzing and benchmarking the production process to judge its effectiveness and efficiency |
+
+
+## Related Concepts
+
+- [Product](/concepts/Product)
+- [Product](/concepts/Product)
+
+
+---
+
+*Source: APQC PCF 10304 (4.3.2) - APQC*

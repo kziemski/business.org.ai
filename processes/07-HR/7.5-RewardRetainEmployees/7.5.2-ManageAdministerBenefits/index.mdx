@@ -1,0 +1,105 @@
+---
+id: ManageAndAdministerBenefits
+name: "Manage and administer benefits"
+code: "10495"
+hierarchyId: "7.5.2"
+type: Process
+level: 3
+status: complete
+parent: "7.5"
+children: ["7.5.2.1", "7.5.2.2", "7.5.2.3", "7.5.2.4"]
+---
+
+# Manage and administer benefits
+
+> Managing and ensuring benefits enrollment by the employees.
+
+## Overview
+
+Process 7.5.2 is a core process that defines the specific procedures for manage and administer benefits. 
+
+Managing and ensuring benefits enrollment by the employees. Process any benefit claims made by the employees. Balance the estimated amount and entitled amount of benefits.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_5["7.5 Reward and retain employees"]
+    N7_5 --> N7_5_2["7.5.2 Manage and administer benefits"]
+    style N7_5_2 fill:#e1f5fe
+    N7_5_2 --> N7_5_2_1["7.5.2.1 Deliver employee benefits program"]
+    N7_5_2 --> N7_5_2_2["7.5.2.2 Administer benefit enrollment"]
+    N7_5_2 --> N7_5_2_3["7.5.2.3 Process claims"]
+    N7_5_2 --> N7_5_2_4["7.5.2.4 Perform benefit reconciliation"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10495 |
+| Hierarchy ID | 7.5.2 |
+| Level | Process |
+| Parent | [7.5](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.AndAdministerBenefits
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `and administer benefits` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage and administer benefits"]
+        S1["Deliver employee benefits p..."]
+        S2["Administer benefit enrollment"]
+        S3["Process claims"]
+        S4["Perform benefit reconciliation"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Deliver employee benefits program](./DeliverEmployeeBenefitsProgram) | 7.5.2.1 | Implementing the programs that specify employee benefits, other than salary provided, such as those  |
+| [Administer benefit enrollment](./AdministerBenefitEnrollment) | 7.5.2.2 | Handling the employee enrollment for obtaining benefits |
+| [Process claims](./ProcessClaims) | 7.5.2.3 | Processing any formal requests or demands made by the employees claiming that they have earned some  |
+| [Perform benefit reconciliation](./PerformBenefitReconciliation) | 7.5.2.4 | Carrying out reconciliation of benefits delivered to employees |
+
+
+## Related Concepts
+
+- [Benefits](/concepts/Benefits)
+- [Benefits](/concepts/Benefits)
+
+
+---
+
+*Source: APQC PCF 10495 (7.5.2) - APQC*

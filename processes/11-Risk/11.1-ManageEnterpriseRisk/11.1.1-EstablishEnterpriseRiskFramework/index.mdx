@@ -1,0 +1,109 @@
+---
+id: EstablishTheEnterpriseRiskFrameworkAndPolicies
+name: "Establish the enterprise risk framework and policies"
+code: "16439"
+hierarchyId: "11.1.1"
+type: Process
+level: 3
+status: complete
+parent: "11.1"
+children: ["11.1.1.1", "11.1.1.2", "11.1.1.3", "11.1.1.4", "11.1.1.5"]
+---
+
+# Establish the enterprise risk framework and policies
+
+> Creating an agenda for the rules and regulations of enterprise risk that deal with hazardous, financial, operational, and strategic risks.
+
+## Overview
+
+Process 11.1.1 is a core process that defines the specific procedures for establish the enterprise risk framework and policies. 
+
+Creating an agenda for the rules and regulations of enterprise risk that deal with hazardous, financial, operational, and strategic risks.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk, Compliance, Remediation, Resiliency"]
+    C11 --> N11_1["11.1 Manage enterprise risk"]
+    N11_1 --> N11_1_1["11.1.1 Establish the enterprise risk framewo..."]
+    style N11_1_1 fill:#e1f5fe
+    N11_1_1 --> N11_1_1_1["11.1.1.1 Determine risk tolerance for org..."]
+    N11_1_1 --> N11_1_1_2["11.1.1.2 Develop and maintain enterprise ..."]
+    N11_1_1 --> N11_1_1_3["11.1.1.3 Identify and implement enterpris..."]
+    N11_1_1 --> N11_1_1_4["11.1.1.4 Coordinate the sharing of risk k..."]
+    N11_1_1 --> N11_1_1_5["11.1.1.5 Prepare and report enterprise ri..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16439 |
+| Hierarchy ID | 11.1.1 |
+| Level | Process |
+| Parent | [11.1](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.TheEnterpriseRiskFrameworkAndPolicies
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `the enterprise risk framework and policies` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish the enterprise risk framework and policies"]
+        S1["Determine risk tolerance fo..."]
+        S2["Develop and maintain enterp..."]
+        S3["Identify and implement ente..."]
+        S4["Coordinate the sharing of r..."]
+        S5["Prepare and report enterpri..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine risk tolerance for organization](./DetermineRiskToleranceForOrganization) | 11.1.1.1 | Recognizing the organization's tolerance for risk, given risk-return trade-offs for one or more anti |
+| [Develop and maintain enterprise risk policies and procedures](./DevelopAndMaintainEnterpriseRiskPoliciesAndProcedures) | 11.1.1.2 | Establishing and maintaining the policies and procedures for managing risk |
+| [Identify and implement enterprise risk management tools](./IdentifyAndImplementEnterpriseRiskManagementTools) | 11.1.1.3 | Recognizing and implementing tools for managing risk |
+| [Coordinate the sharing of risk knowledge across the organization](./CoordinateTheSharingOfRiskKnowledgeAcrossTheOrganization) | 11.1.1.4 | Communicating the knowledge about risk within the organization |
+| [Prepare and report enterprise risk to executive management and board](./PrepareAndReportEnterpriseRiskToExecutiveManagementAndBoard) | 11.1.1.5 | Preparing and presenting reports about enterprise risk to the management of the organization |
+
+
+## Related Concepts
+
+- [EnterpriseRiskFramework](/concepts/EnterpriseRiskFramework)
+- [Policies](/concepts/Policies)
+
+
+---
+
+*Source: APQC PCF 16439 (11.1.1) - APQC*

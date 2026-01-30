@@ -1,0 +1,99 @@
+---
+id: EvaluatePerformanceToRequirements
+name: "Evaluate performance to requirements"
+code: "17482"
+hierarchyId: "13.3.2"
+type: Process
+level: 3
+status: complete
+parent: "13.3"
+children: ["13.3.2.1", "13.3.2.2"]
+---
+
+# Evaluate performance to requirements
+
+> Analyzing if the performance of the quality plan has achieved the estimated and desired requirements.
+
+## Overview
+
+Process 13.3.2 is a core process that defines the specific procedures for evaluate performance to requirements. 
+
+Analyzing if the performance of the quality plan has achieved the estimated and desired requirements. Conduct tests against the quality plan. Assess the results of these tests.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_3["13.3 Manage enterprise quality"]
+    N13_3 --> N13_3_2["13.3.2 Evaluate performance to requirements"]
+    style N13_3_2 fill:#e1f5fe
+    N13_3_2 --> N13_3_2_1["13.3.2.1 Test against quality plan"]
+    N13_3_2 --> N13_3_2_2["13.3.2.2 Assess results of tests"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17482 |
+| Hierarchy ID | 13.3.2 |
+| Level | Process |
+| Parent | [13.3](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+evaluate.Performance.to.Requirements
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `evaluate` | Primary action |
+| Object | `performance` | Direct object |
+| Preposition | `to` | Relationship |
+| PrepObject | `requirements` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Evaluate performance to requirements"]
+        S1["Test against quality plan"]
+        S2["Assess results of tests"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Test against quality plan](./13.3.2.1-TestAgainstQualityPlan/) | 13.3.2.1 | Examining the quality of organizational processes |
+| [Assess results of tests](./13.3.2.2-AssessResultsTests/) | 13.3.2.2 | Assessing the significance of the sample |
+
+
+## Related Concepts
+
+- [Performance](/concepts/Performance)
+- [Requirements](/concepts/Requirements)
+
+
+---
+
+*Source: APQC PCF 17482 (13.3.2) - APQC*

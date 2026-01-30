@@ -1,0 +1,97 @@
+---
+id: IdentifySelectAndAssignResources
+name: "Identify, select, and assign resources"
+code: "20065"
+hierarchyId: "5.3.1.6"
+type: Activity
+level: 4
+status: complete
+parent: "5.3.1"
+children: ["5.3.1.6.1", "5.3.1.6.2"]
+---
+
+# Identify, select, and assign resources
+
+> Identifying, selecting, and assigning resources required to deliver service to the customer.
+
+## Overview
+
+Activity 5.3.1.6 is an activity within the Deliver Services framework. 
+
+Identifying, selecting, and assigning resources required to deliver service to the customer. Ensure that all objectives are established and met, and the all rules of engagement have been identified and communicated.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_3["5.3 Deliver service to customer"]
+    N5_3 --> N5_3_1["5.3.1 Initiate service delivery"]
+    N5_3_1 --> N5_3_1_6["5.3.1.6 Identify, select, and assign resources"]
+    style N5_3_1_6 fill:#e1f5fe
+    N5_3_1_6 --> N5_3_1_6_1["5.3.1.6.1 Establish people objectives"]
+    N5_3_1_6 --> N5_3_1_6_2["5.3.1.6.2 Establish engagement rules"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20065 |
+| Hierarchy ID | 5.3.1.6 |
+| Level | Activity |
+| Parent | [5.3.1](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+identify,.SelectAndAssignResources
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `identify,` | Primary action |
+| Object | `select, and assign resources` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Identify, select, and assign resources"]
+        S1["Establish people objectives"]
+        S2["Establish engagement rules"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish people objectives](./EstablishPeopleObjectives) | 5.3.1.6.1 | Providing the workforce with a plan of action and goals necessary to provide a service |
+| [Establish engagement rules](./EstablishEngagementRules) | 5.3.1.6.2 | Establishing guidelines for how resources engage with the customer |
+
+
+## Related Concepts
+
+- [SelectAssignResources](/concepts/SelectAssignResources)
+
+
+---
+
+*Source: APQC PCF 20065 (5.3.1.6) - APQC*

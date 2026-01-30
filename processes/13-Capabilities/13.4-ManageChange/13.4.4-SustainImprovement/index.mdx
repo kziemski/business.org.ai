@@ -1,0 +1,104 @@
+---
+id: SustainImprovement
+name: "Sustain improvement"
+code: "11137"
+hierarchyId: "13.4.4"
+type: Process
+level: 3
+status: complete
+parent: "13.4"
+children: ["13.4.4.1", "13.4.4.2", "13.4.4.3", "13.4.4.4"]
+---
+
+# Sustain improvement
+
+> Sustaining the impact of the change process in order to enact continual process improvement.
+
+## Overview
+
+Process 13.4.4 is a core process that defines the specific procedures for sustain improvement. 
+
+Sustaining the impact of the change process in order to enact continual process improvement. Monitor the performance of re-engineered business processes. Identify best practices and potential issues. Effectuate remedial steps.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_4["13.4 Manage change"]
+    N13_4 --> N13_4_4["13.4.4 Sustain improvement"]
+    style N13_4_4 fill:#e1f5fe
+    N13_4_4 --> N13_4_4_1["13.4.4.1 Monitor improved process perform..."]
+    N13_4_4 --> N13_4_4_2["13.4.4.2 Capture and reuse lessons learne..."]
+    N13_4_4 --> N13_4_4_3["13.4.4.3 Take corrective action as necessary"]
+    N13_4_4 --> N13_4_4_4["13.4.4.4 Develop and manage enterprise-wi..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11137 |
+| Hierarchy ID | 13.4.4 |
+| Level | Process |
+| Parent | [13.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+sustain.Improvement
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `sustain` | Primary action |
+| Object | `improvement` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Sustain improvement"]
+        S1["Monitor improved process pe..."]
+        S2["Capture and reuse lessons l..."]
+        S3["Take corrective action as n..."]
+        S4["Develop and manage enterpri..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Monitor improved process performance](./MonitorImprovedProcessPerformance) | 13.4.4.1 | Monitoring the performance of improved business processes |
+| [Capture and reuse lessons learned from change process](./CaptureAndReuseLessonsLearnedFromChangeProcess) | 13.4.4.2 | Documenting and standardizing insights gleaned and the knowledge acquired from studying the change p |
+| [Take corrective action as necessary](./TakeCorrectiveActionAsNecessary) | 13.4.4.3 | Implement corrective action to adjust the re-engineered processes for maximizing the desired impact |
+| [Develop and manage enterprise-wide knowledge management (KM) capability](./DevelopAndManageEnterprisewideKnowledgeManagementKMCapability) | 13.4.4.4 | Creating and administering the capability of the organization's knowledge management function |
+
+
+## Related Concepts
+
+- [Improvement](/concepts/Improvement)
+
+
+---
+
+*Source: APQC PCF 11137 (13.4.4) - APQC*

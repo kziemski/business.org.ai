@@ -1,0 +1,116 @@
+---
+id: ExecuteItServicesolutionDevelopmentLifecycle
+name: "Execute IT service/solution development lifecycle"
+code: "20809"
+hierarchyId: "8.5.4.1"
+type: Activity
+level: 4
+status: complete
+parent: "8.5.4"
+children: ["8.5.4.1.1", "8.5.4.1.2", "8.5.4.1.3", "8.5.4.1.4", "8.5.4.1.5", "8.5.4.1.6", "8.5.4.1.7"]
+---
+
+# Execute IT service/solution development lifecycle
+
+> Executing an information system, aiming to produce a high quality system that meets or exceeds customer expectations, reaches completion within time and cost estimates, and is inexpensive to maintain and cost-effective to enhance.
+
+## Overview
+
+Activity 8.5.4.1 is an activity within the Manage Information Technology framework. 
+
+Executing an information system, aiming to produce a high quality system that meets or exceeds customer expectations, reaches completion within time and cost estimates, and is inexpensive to maintain and cost-effective to enhance.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_5["8.5 Develop and manage services/solutions"]
+    N8_5 --> N8_5_4["8.5.4 Execute IT service/solution creation ..."]
+    N8_5_4 --> N8_5_4_1["8.5.4.1 Execute IT service/solution developme..."]
+    style N8_5_4_1 fill:#e1f5fe
+    N8_5_4_1 --> N8_5_4_1_1["8.5.4.1.1 Assess and validate IT service/s..."]
+    N8_5_4_1 --> N8_5_4_1_2["8.5.4.1.2 Create service/solution design"]
+    N8_5_4_1 --> N8_5_4_1_3["8.5.4.1.3 Build and test IT service/soluti..."]
+    N8_5_4_1 --> N8_5_4_1_4["8.5.4.1.4 Integrate IT components and serv..."]
+    N8_5_4_1 --> N8_5_4_1_5["8.5.4.1.5 Execute IT service/solution vali..."]
+    N8_5_4_1 --> N8_5_4_1_6["8.5.4.1.6 Bundle service/solution deployme..."]
+    N8_5_4_1 --> N8_5_4_1_7["8.5.4.1.7 Manage service/solution process ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20809 |
+| Hierarchy ID | 8.5.4.1 |
+| Level | Activity |
+| Parent | [8.5.4](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+execute.ITServicesolutionDevelopmentLifecycle
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `execute` | Primary action |
+| Object | `IT service/solution development lifecycle` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Execute IT service/solution development lifecycle"]
+        S1["Assess and validate IT serv..."]
+        S2["Create service/solution design"]
+        S3["Build and test IT service/s..."]
+        S4["Integrate IT components and..."]
+        S5["Execute IT service/solution..."]
+        S6["Bundle service/solution dep..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess and validate IT service/solution requirements](./AssessAndValidateITServicesolutionRequirements) | 8.5.4.1.1 | Evaluating and validating the requirements and needs of IT service/solution |
+| [Create service/solution design](./CreateServicesolutionDesign) | 8.5.4.1.2 | Formulating a design for service/solution that helps an organization to meet its objectives |
+| [Build and test IT service/solution components](./BuildAndTestITServicesolutionComponents) | 8.5.4.1.3 | Building and testing new components required for the development of IT services and solutions |
+| [Integrate IT components and services](./IntegrateITComponentsAndServices) | 8.5.4.1.4 | Combining the newly built IT component along with IT services in order to gain optimum output |
+| [Execute IT service/solution validation](./ExecuteITServicesolutionValidation) | 8.5.4.1.5 | Validating that the proposed IT service/solution is feasible and provides the needed services for th |
+| [Bundle service/solution deployment packaging](./BundleServicesolutionDeploymentPackaging) | 8.5.4.1.6 | Creating and implementing a strategy for the deployment of IT service/solution by defining all of th |
+| [Manage service/solution process exceptions](./ManageServicesolutionProcessExceptions) | 8.5.4.1.7 | Identifying and resolving internal needs/inquiries for service/solution that cannot be resolved imme |
+
+
+## Related Concepts
+
+- [ITServiceDevelopmentLifecycle](/concepts/ITServiceDevelopmentLifecycle)
+- [ITSolutionDevelopmentLifecycle](/concepts/ITSolutionDevelopmentLifecycle)
+
+
+---
+
+*Source: APQC PCF 20809 (8.5.4.1) - APQC*

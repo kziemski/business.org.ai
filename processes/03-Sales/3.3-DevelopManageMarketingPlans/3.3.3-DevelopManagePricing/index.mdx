@@ -1,0 +1,120 @@
+---
+id: DevelopAndManagePricing
+name: "Develop and manage pricing"
+code: "20593"
+hierarchyId: "3.3.3"
+type: Process
+level: 3
+status: complete
+parent: "3.3"
+children: ["3.3.3.1", "3.3.3.2", "3.3.3.3", "3.3.3.4", "3.3.3.5", "3.3.3.6", "3.3.3.7", "3.3.3.8", "3.3.3.9", "3.3.3.10"]
+---
+
+# Develop and manage pricing
+
+> Determining and maintaining a pricing mechanism based on forecasted sales and that enables a pricing equilibrium for the lifecycles of products/services.
+
+## Overview
+
+Process 3.3.3 is a core process that defines the specific procedures for develop and manage pricing. 
+
+Determining and maintaining a pricing mechanism based on forecasted sales and that enables a pricing equilibrium for the lifecycles of products/services. Create a pricing mechanism, factoring in attributes relating to the market, customers, sales, and the cost of production. Implement this pricing mechanism over all products/services. Analyze its performance, and adjust accordingly.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_3["3.3 Develop and manage marketing plans"]
+    N3_3 --> N3_3_3["3.3.3 Develop and manage pricing"]
+    style N3_3_3 fill:#e1f5fe
+    N3_3_3 --> N3_3_3_1["3.3.3.1 Understand resource requirements..."]
+    N3_3_3 --> N3_3_3_2["3.3.3.2 Determine corporate incentives"]
+    N3_3_3 --> N3_3_3_3["3.3.3.3 Determine pricing based on volum..."]
+    N3_3_3 --> N3_3_3_4["3.3.3.4 Execute pricing plan"]
+    N3_3_3 --> N3_3_3_5["3.3.3.5 Evaluate pricing performance"]
+    N3_3_3 --> N3_3_3_6["3.3.3.6 Refine pricing as needed"]
+    N3_3_3 --> N3_3_3_7["3.3.3.7 Implement promotional pricing pr..."]
+    N3_3_3 --> N3_3_3_8["3.3.3.8 Implement other retail pricing p..."]
+    N3_3_3 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20593 |
+| Hierarchy ID | 3.3.3 |
+| Level | Process |
+| Parent | [3.3](../) |
+| Sub-Processes | 10 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManagePricing
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage pricing` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage pricing"]
+        S1["Understand resource require..."]
+        S2["Determine corporate incentives"]
+        S3["Determine pricing based on ..."]
+        S4["Execute pricing plan"]
+        S5["Evaluate pricing performance"]
+        S6["Refine pricing as needed"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Understand resource requirements for each product/service and delivery channel/method](./UnderstandResourceRequirementsForEachProductserviceAndDeliveryChannelmethod) | 3.3.3.1 | Determining the production and distribution costs for each product or service, and each channel or m |
+| [Determine corporate incentives](./DetermineCorporateIncentives) | 3.3.3.2 | Introducing financial inducements, such as discounts, to distributors, resellers or vendors as a mot |
+| [Determine pricing based on volume/unit forecast](./DeterminePricingBasedOnVolumeunitForecast) | 3.3.3.3 | Establishing a dynamic pricing mechanism for the organization's offerings that is supported by the n |
+| [Execute pricing plan](./ExecutePricingPlan) | 3.3.3.4 | Implementing the pricing mechanism to determine prices for all individual offerings in the organizat |
+| [Evaluate pricing performance](./EvaluatePricingPerformance) | 3.3.3.5 | Examining the efficiency of pricing with the objective of identifying any divergence from the equili |
+| [Refine pricing as needed](./RefinePricingAsNeeded) | 3.3.3.6 | Refining the pricing mechanism to create equitable prices for all products/services with the objecti |
+| [Implement promotional pricing programs](./ImplementPromotionalPricingPrograms) | 3.3.3.7 | Managing schemes that offer lower pricing for a limited time as a promotional and sales incentive wh |
+| [Implement other retail pricing programs](./ImplementOtherRetailPricingPrograms) | 3.3.3.8 | Determining the optimum consumer pricing for each product or service at the point of sale, based on  |
+| [Communicate and implement price changes](./CommunicateAndImplementPriceChanges) | 3.3.3.9 | Assigning new prices or pricing adjustments to products or services to replace the original base pri |
+| [Achieve regulatory approval for pricing](./AchieveRegulatoryApprovalForPricing) | 3.3.3.10 | Obtaining internal price approvals and governmental approvals that are required for licensed product |
+
+
+## Related Concepts
+
+- [Pricing](/concepts/Pricing)
+- [Pricing](/concepts/Pricing)
+
+
+---
+
+*Source: APQC PCF 20593 (3.3.3) - APQC*

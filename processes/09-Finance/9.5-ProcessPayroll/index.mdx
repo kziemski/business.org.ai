@@ -1,0 +1,99 @@
+---
+id: ProcessPayroll
+name: "Process payroll"
+code: "10732"
+hierarchyId: "9.5"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.5.1", "9.5.2", "9.5.3"]
+---
+
+# Process payroll
+
+> Handling reporting time, managing pay, and processing taxes from salaries.
+
+## Overview
+
+Group 9.5 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Handling reporting time, managing pay, and processing taxes from salaries. Pay employees. Withhold taxes. Confirm the correct funds are paid to the correct government agency.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_5["9.5 Process payroll"]
+    style N9_5 fill:#e1f5fe
+    N9_5 --> N9_5_1["9.5.1 Report time"]
+    N9_5 --> N9_5_2["9.5.2 Manage pay"]
+    N9_5 --> N9_5_3["9.5.3 Manage and process payroll taxes"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10732 |
+| Hierarchy ID | 9.5 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.Payroll
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `payroll` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Process payroll"]
+        S1["Report time"]
+        S2["Manage pay"]
+        S3["Manage and process payroll ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Report time](./9.5.1-ReportTime/) | 9.5.1 | Recording the reporting time of employees on-site |
+| [Manage pay](./9.5.2-ManagePay/) | 9.5.2 | Managing the total payments made in employees payroll, including bonuses and compensation |
+| [Manage and process payroll taxes](./9.5.3-ManageProcessPayrollTaxes/) | 9.5.3 | Deducting and paying taxes from employees' salaries |
+
+
+## Related Concepts
+
+- [Payroll](/concepts/Payroll)
+
+
+---
+
+*Source: APQC PCF 10732 (9.5) - APQC*

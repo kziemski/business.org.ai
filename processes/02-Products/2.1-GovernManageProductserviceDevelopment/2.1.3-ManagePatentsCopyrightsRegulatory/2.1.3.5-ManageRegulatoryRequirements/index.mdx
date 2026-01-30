@@ -1,0 +1,101 @@
+---
+id: ManageRegulatoryRequirements
+name: "Manage regulatory requirements"
+code: "12771"
+hierarchyId: "2.1.3.5"
+type: Activity
+level: 4
+status: complete
+parent: "2.1.3"
+children: ["2.1.3.5.1", "2.1.3.5.2", "2.1.3.5.3"]
+---
+
+# Manage regulatory requirements
+
+> Aligning regulatory activities related to managing industry requirements.
+
+## Overview
+
+Activity 2.1.3.5 is an activity within the Design and Develop Products and Services framework. 
+
+Aligning regulatory activities related to managing industry requirements. Train employees on regulatory requirements. Records for the appropriate regulatory agencies must be maintained and the new product process must be approved by the appropriate regulatory body before it is published to the organization. The submission lifecycle - i.e. creation, review, and approval of the submission and its components must be managed in a collaborative fashion.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_1["2.1 Govern and manage product/service dev..."]
+    N2_1 --> N2_1_3["2.1.3 Manage patents, copyrights, and regul..."]
+    N2_1_3 --> N2_1_3_5["2.1.3.5 Manage regulatory requirements"]
+    style N2_1_3_5 fill:#e1f5fe
+    N2_1_3_5 --> N2_1_3_5_1["2.1.3.5.1 Train employees on appropriate r..."]
+    N2_1_3_5 --> N2_1_3_5_2["2.1.3.5.2 Maintain records for regulatory ..."]
+    N2_1_3_5 --> N2_1_3_5_3["2.1.3.5.3 Manage regulatory submission lif..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 12771 |
+| Hierarchy ID | 2.1.3.5 |
+| Level | Activity |
+| Parent | [2.1.3](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.RegulatoryRequirements
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `regulatory requirements` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage regulatory requirements"]
+        S1["Train employees on appropri..."]
+        S2["Maintain records for regula..."]
+        S3["Manage regulatory submissio..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Train employees on appropriate regulatory requirements](./TrainEmployeesOnAppropriateRegulatoryRequirements) | 2.1.3.5.1 | Conducting training and impart learning to existing and new employees |
+| [Maintain records for regulatory agencies](./MaintainRecordsForRegulatoryAgencies) | 2.1.3.5.2 | Identifying steps and procedures to manage and regularly update the records for regulatory agencies |
+| [Manage regulatory submission life cycle](./ManageRegulatorySubmissionLifeCycle) | 2.1.3.5.3 | Determine and follow the timely input and update of regulatory information by assessing reforms, reg |
+
+
+## Related Concepts
+
+- [RegulatoryRequirements](/concepts/RegulatoryRequirements)
+
+
+---
+
+*Source: APQC PCF 12771 (2.1.3.5) - APQC*

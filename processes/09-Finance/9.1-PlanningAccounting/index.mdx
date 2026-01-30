@@ -1,0 +1,219 @@
+---
+id: PerformPlanningAndManagementAccounting
+name: "Perform Planning and Management Accounting"
+code: "10728"
+hierarchyId: "9.1"
+type: ProcessGroup
+status: complete
+---
+
+# Perform Planning and Management Accounting
+
+*APQC Process Group 9.1*
+
+> Determining different stages of the planning process and accounting. Classify, determine, analyze, interpret, and communicate information to make up-to-date business decisions for better management and control functions.
+
+## Overview
+
+Perform Planning and Management Accounting is the first process group within APQC Category 9.0 (Manage Financial Resources). This group encompasses all activities related to financial planning, budgeting, forecasting, cost accounting, and performance management. These processes translate strategic objectives into financial plans and provide the analytical foundation for business decision-making.
+
+Management accounting differs from financial accounting in its forward-looking orientation and internal focus. While financial accounting reports historical results to external stakeholders, management accounting provides actionable insights to support operational and strategic decisions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"] --> G91["9.1 Perform planning and<br/>management accounting"]
+
+    G91 --> P911["9.1.1 Perform planning/<br/>budgeting/forecasting"]
+    G91 --> P912["9.1.2 Perform cost accounting<br/>and control"]
+    G91 --> P913["9.1.3 Perform cost management"]
+    G91 --> P914["9.1.4 Evaluate and manage<br/>financial performance"]
+
+    P911 --> A9111["9.1.1.1 Develop budget policies"]
+    P911 --> A9112["9.1.1.2 Prepare periodic budgets"]
+    P911 --> A9113["9.1.1.3 Prepare financial forecasts"]
+    P911 --> A9114["9.1.1.4 Perform variance analysis"]
+
+    P912 --> A9121["9.1.2.1 Perform inventory accounting"]
+    P912 --> A9122["9.1.2.2 Perform profit center accounting"]
+    P912 --> A9123["9.1.2.3 Perform cost of sales analysis"]
+    P912 --> A9124["9.1.2.4 Perform product costing"]
+
+    style G91 fill:#e1f5fe
+    style C9 fill:#b3e5fc
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10728 |
+| Hierarchy ID | 9.1 |
+| Level | Process Group |
+| Category | [Manage Financial Resources](/processes/09-Finance) |
+| Processes | 4 |
+| Activities | 20+ |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Strategic Plans"]
+        I2["Historical Data"]
+        I3["Market Intelligence"]
+        I4["Operational Plans"]
+        I5["Capital Requirements"]
+    end
+
+    subgraph Process["Planning & Management Accounting"]
+        P1["Develop Budget<br/>Framework"]
+        P2["Create Operating<br/>Budgets"]
+        P3["Prepare Capital<br/>Budgets"]
+        P4["Build Forecasts"]
+        P5["Track Costs"]
+        P6["Analyze<br/>Performance"]
+        P7["Report Results"]
+
+        P1 --> P2
+        P1 --> P3
+        P2 --> P4
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+        P7 -.->|Feedback| P4
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Annual Budgets"]
+        O2["Rolling Forecasts"]
+        O3["Variance Reports"]
+        O4["Cost Analyses"]
+        O5["Performance Reports"]
+        O6["Decision Support"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+perform.PlanningAndManagementAccounting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Execute or carry out |
+| Object | `PlanningAndManagementAccounting` | Financial planning and internal accounting |
+| Preposition | - | Not applicable at group level |
+| PrepObject | - | Not applicable at group level |
+
+## Processes
+
+### 9.1.1 - Perform planning/budgeting/forecasting
+
+Allocating funds to meet future and current financial goals through systematic planning, budgeting, and forecasting processes.
+
+[View Process Details](./PerformPlanningBudgetingForecasting)
+
+### 9.1.2 - Perform cost accounting and control
+
+Defining costs and methods for optimum utilization through systematic cost tracking and control mechanisms.
+
+[View Process Details](./PerformCostAccounting)
+
+### 9.1.3 - Perform cost management
+
+Deciding which expenses can be avoided to reduce costs and increase revenues through active cost management.
+
+[View Process Details](./PerformCostManagement)
+
+### 9.1.4 - Evaluate and manage financial performance
+
+Checking and achieving predetermined financial targets and timelines through performance evaluation.
+
+[View Process Details](./EvaluateFinancialPerformance)
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Develop budget policies | FP&A Manager | CFO | Controller, Business Units | Executive Team |
+| Prepare annual budgets | FP&A Analysts | FP&A Manager | Department Heads | Board |
+| Create forecasts | FP&A Team | FP&A Manager | Operations | CFO |
+| Perform cost accounting | Cost Accountants | Controller | Operations Managers | FP&A |
+| Manage costs | Department Managers | Controller | Finance Business Partners | CFO |
+| Evaluate performance | FP&A Analysts | CFO | Business Unit Leaders | Executive Team |
+
+## Related Departments
+
+- [Finance](/departments/Finance) - Primary process ownership
+- [FP&A](/departments/FPA) - Financial planning and analysis execution
+- [Operations](/departments/Operations) - Operational input and cost management
+- [Strategy](/departments/Strategy) - Strategic planning alignment
+
+## Related Occupations
+
+- [Budget Analysts](/occupations/BudgetAnalysts) - Budget development and monitoring
+- [Financial Managers](/occupations/FinancialManagers) - Overall process leadership
+- [Cost Estimators](/occupations/CostEstimators) - Cost analysis and estimation
+- [Management Analysts](/occupations/ManagementAnalysts) - Performance improvement
+
+## Industry Variations
+
+### Manufacturing
+
+Manufacturing planning accounting emphasizes standard costing, variance analysis, and production cost tracking. Activity-based costing is common for overhead allocation.
+
+**Industry-Specific Activities:**
+- Develop standard costs for products
+- Calculate manufacturing variances (material, labor, overhead)
+- Perform activity-based costing
+- Track work-in-process inventory costs
+
+### Professional Services
+
+Professional services focus on utilization metrics, project profitability, and resource planning. Time-based billing requires detailed cost tracking by project.
+
+**Industry-Specific Activities:**
+- Track billable vs. non-billable time
+- Calculate project profitability
+- Forecast resource utilization
+- Manage partner compensation models
+
+### Healthcare
+
+Healthcare planning accounting manages service line profitability, payer mix analysis, and capacity planning. Cost-to-charge ratios are critical for reimbursement.
+
+**Industry-Specific Activities:**
+- Analyze service line profitability
+- Calculate cost-to-charge ratios
+- Plan capacity by service area
+- Budget for regulatory compliance costs
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| [Perform planning/budgeting/forecasting](./PerformPlanningBudgetingForecasting) | 9.1.1 | Budget and forecast development |
+| [Perform cost accounting and control](./PerformCostAccounting) | 9.1.2 | Cost tracking and control |
+| [Perform cost management](./PerformCostManagement) | 9.1.3 | Active cost optimization |
+| [Evaluate and manage financial performance](./EvaluateFinancialPerformance) | 9.1.4 | Performance analysis and management |
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Forecast Accuracy | Variance between forecast and actual | >95% |
+| Budget Cycle Time | Days to complete annual budget | <60 days |
+| Rolling Forecast Updates | Frequency of forecast refresh | Monthly |
+| Cost Variance | Actual vs. standard cost deviation | <5% |
+| Budget Participation | % of departments meeting deadlines | 100% |
+| Planning FTE Ratio | FP&A FTEs per $1B revenue | <10 |
+
+---
+
+*Source: APQC PCF 10728 (9.1) - Cross-Industry*

@@ -1,0 +1,116 @@
+---
+id: DevelopServicesolutionAndIntegrationStrategy
+name: "Develop service/solution and integration strategy"
+code: "20785"
+hierarchyId: "8.5.1"
+type: Process
+level: 3
+status: complete
+parent: "8.5"
+children: ["8.5.1.1", "8.5.1.2", "8.5.1.3", "8.5.1.4", "8.5.1.5", "8.5.1.6", "8.5.1.7"]
+---
+
+# Develop service/solution and integration strategy
+
+> Developing service/solution along with creating a strategy that provides a base for delivering service/solution aligned with overall business needs.
+
+## Overview
+
+Process 8.5.1 is a core process that defines the specific procedures for develop service/solution and integration strategy. 
+
+Developing service/solution along with creating a strategy that provides a base for delivering service/solution aligned with overall business needs. Conduct research within the services/solutions field for development and integration.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_5["8.5 Develop and manage services/solutions"]
+    N8_5 --> N8_5_1["8.5.1 Develop service/solution and integrat..."]
+    style N8_5_1 fill:#e1f5fe
+    N8_5_1 --> N8_5_1_1["8.5.1.1 Determine IT service/solution de..."]
+    N8_5_1 --> N8_5_1_2["8.5.1.2 Define IT service/solution devel..."]
+    N8_5_1 --> N8_5_1_3["8.5.1.3 Identify, deploy, and support de..."]
+    N8_5_1 --> N8_5_1_4["8.5.1.4 Establish service component crit..."]
+    N8_5_1 --> N8_5_1_5["8.5.1.5 Understand and select reusable s..."]
+    N8_5_1 --> N8_5_1_6["8.5.1.6 Maintain service component portf..."]
+    N8_5_1 --> N8_5_1_7["8.5.1.7 Establish development standards ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20785 |
+| Hierarchy ID | 8.5.1 |
+| Level | Process |
+| Parent | [8.5](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.ServicesolutionAndIntegrationStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `service/solution and integration strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop service/solution and integration strategy"]
+        S1["Determine IT service/soluti..."]
+        S2["Define IT service/solution ..."]
+        S3["Identify, deploy, and suppo..."]
+        S4["Establish service component..."]
+        S5["Understand and select reusa..."]
+        S6["Maintain service component ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine IT service/solution development](./DetermineITServicesolutionDevelopment) | 8.5.1.1 | Determining the development of IT service/solution |
+| [Define IT service/solution development processes/standards](./DefineITServicesolutionDevelopmentProcessesstandards) | 8.5.1.2 | Establishing the methods and processes as the foundation for developing new IT platforms, components |
+| [Identify, deploy, and support development methodologies and tools](./IdentifyDeployAndSupportDevelopmentMethodologiesAndTools) | 8.5.1.3 | Identifying and implementing techniques and tools for development based on overall value addition to |
+| [Establish service component criteria](./EstablishServiceComponentCriteria) | 8.5.1.4 | Establishing standards for selection of IT service components |
+| [Understand and select reusable service components](./UnderstandAndSelectReusableServiceComponents) | 8.5.1.5 | Understanding and selecting reusable service components so that they can be cost-effective and effic |
+| [Maintain service component portfolio](./MaintainServiceComponentPortfolio) | 8.5.1.6 | Creating and establishing service component portfolio by defining investments, and activities |
+| [Establish development standards exception governance](./EstablishDevelopmentStandardsExceptionGovernance) | 8.5.1.7 | Creating standards and procedures for developing IT services/solutions outside of defined business p |
+
+
+## Related Concepts
+
+- [ServiceStrategy](/concepts/ServiceStrategy)
+- [SolutionStrategy](/concepts/SolutionStrategy)
+- [IntegrationStrategy](/concepts/IntegrationStrategy)
+
+
+---
+
+*Source: APQC PCF 20785 (8.5.1) - APQC*

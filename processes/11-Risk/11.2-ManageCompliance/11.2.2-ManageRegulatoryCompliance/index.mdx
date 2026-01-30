@@ -1,0 +1,118 @@
+---
+id: ManageRegulatoryCompliance
+name: "Manage regulatory compliance"
+code: "16463"
+hierarchyId: "11.2.2"
+type: Process
+level: 3
+status: complete
+parent: "11.2"
+children: ["11.2.2.1", "11.2.2.2", "11.2.2.3", "11.2.2.4", "11.2.2.5", "11.2.2.6", "11.2.2.7", "11.2.2.8", "11.2.2.9"]
+---
+
+# Manage regulatory compliance
+
+> Obeying laws, guidelines, strategies, and stipulations related to the business.
+
+## Overview
+
+Process 11.2.2 is a core process that defines the specific procedures for manage regulatory compliance. 
+
+Obeying laws, guidelines, strategies, and stipulations related to the business.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk, Compliance, Remediation, Resiliency"]
+    C11 --> N11_2["11.2 Manage compliance"]
+    N11_2 --> N11_2_2["11.2.2 Manage regulatory compliance"]
+    style N11_2_2 fill:#e1f5fe
+    N11_2_2 --> N11_2_2_1["11.2.2.1 Develop regulatory compliance pr..."]
+    N11_2_2 --> N11_2_2_2["11.2.2.2 Identify applicable regulatory r..."]
+    N11_2_2 --> N11_2_2_3["11.2.2.3 Monitor the regulatory environme..."]
+    N11_2_2 --> N11_2_2_4["11.2.2.4 Assess current compliance positi..."]
+    N11_2_2 --> N11_2_2_5["11.2.2.5 Implement missing or stronger re..."]
+    N11_2_2 --> N11_2_2_6["11.2.2.6 Monitor and test regulatory comp..."]
+    N11_2_2 --> N11_2_2_7["11.2.2.7 Compile and communicate complian..."]
+    N11_2_2 --> N11_2_2_8["11.2.2.8 Compile and communicate internal..."]
+    N11_2_2 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16463 |
+| Hierarchy ID | 11.2.2 |
+| Level | Process |
+| Parent | [11.2](../) |
+| Sub-Processes | 9 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.RegulatoryCompliance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `regulatory compliance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage regulatory compliance"]
+        S1["Develop regulatory complian..."]
+        S2["Identify applicable regulat..."]
+        S3["Monitor the regulatory envi..."]
+        S4["Assess current compliance p..."]
+        S5["Implement missing or strong..."]
+        S6["Monitor and test regulatory..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop regulatory compliance procedures](./DevelopRegulatoryComplianceProcedures) | 11.2.2.1 | Developing procedures and methodologies to comply with relevant laws and regulations of an organizat |
+| [Identify applicable regulatory requirements](./IdentifyApplicableRegulatoryRequirements) | 11.2.2.2 | Determining the regulatory requirements that are most appropriate for the organization |
+| [Monitor the regulatory environment for changing or emerging regulations](./MonitorTheRegulatoryEnvironmentForChangingOrEmergingRegulations) | 11.2.2.3 | Analyzing and overseeing the regulatory environment in order to spot any changing or emerging regula |
+| [Assess current compliance position and identify weaknesses or shortfalls therein](./AssessCurrentCompliancePositionAndIdentifyWeaknessesOrShortfallsTherein) | 11.2.2.4 | Evaluating current regulatory policies and regulations |
+| [Implement missing or stronger regulatory compliance controls and policies](./ImplementMissingOrStrongerRegulatoryComplianceControlsAndPolicies) | 11.2.2.5 | Assessing the current policies and policies |
+| [Monitor and test regulatory compliance position and existing controls](./MonitorAndTestRegulatoryCompliancePositionAndExistingControls) | 11.2.2.6 | Monitoring, appraising, and evaluating the compliance position of the organization in order to fine- |
+| [Compile and communicate compliance scorecard(s)](./CompileAndCommunicateComplianceScorecards) | 11.2.2.7 | Creating a graphical representation of metrics in order to communicate the general health of the org |
+| [Compile and communicate internal and regulatory compliance reports](./CompileAndCommunicateInternalAndRegulatoryComplianceReports) | 11.2.2.8 | Submitting compliance reports to regulatory agencies |
+| [Maintain relationships with regulators as appropriate](./MaintainRelationshipsWithRegulatorsAsAppropriate) | 11.2.2.9 | Developing and preserving relationships with the regulators, without compromising the legal basis of |
+
+
+## Related Concepts
+
+- [RegulatoryCompliance](/concepts/RegulatoryCompliance)
+
+
+---
+
+*Source: APQC PCF 16463 (11.2.2) - APQC*

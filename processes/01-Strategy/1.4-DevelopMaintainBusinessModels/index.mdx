@@ -1,0 +1,100 @@
+---
+id: DevelopAndMaintainBusinessModels
+name: "Develop and maintain business models"
+code: "20944"
+hierarchyId: "1.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "1"
+children: ["1.4.1", "1.4.2", "1.4.3"]
+---
+
+# Develop and maintain business models
+
+> Establishing how an organization creates, delivers and captures value or makes profit.
+
+## Overview
+
+Group 1.4 is a process group within APQC Category 1.0 (Develop Vision and Strategy). 
+
+Establishing how an organization creates, delivers and captures value or makes profit. Identify the products or services that a business will sell, its target market, anticipated expenses, and other core aspects of its modus operandi. Revise the plan as required to reflect changing circumstances.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_4["1.4 Develop and maintain business models"]
+    style N1_4 fill:#e1f5fe
+    N1_4 --> N1_4_1["1.4.1 Develop business models"]
+    N1_4 --> N1_4_2["1.4.2 Maintain business models"]
+    N1_4 --> N1_4_3["1.4.3 Establish business model governance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20944 |
+| Hierarchy ID | 1.4 |
+| Level | Group |
+| Parent | [1](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndMaintainBusinessModels
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and maintain business models` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and maintain business models"]
+        S1["Develop business models"]
+        S2["Maintain business models"]
+        S3["Establish business model go..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop business models](./1.4.1-DevelopBusinessModels/) | 1.4.1 | Creating an economic model that describes the goals of an organization and the business processes ne |
+| [Maintain business models](./1.4.2-MaintainBusinessModels/) | 1.4.2 | Revising and updating business models to reflect the changes in the marketed services, product inven |
+| [Establish business model governance](./EstablishBusinessModelGovernance) | 1.4.3 | Creating and implementing a strategy, responsibilities and control mechanisms for managing business  |
+
+
+## Related Concepts
+
+- [BusinessModels](/concepts/BusinessModels)
+- [BusinessModels](/concepts/BusinessModels)
+
+
+---
+
+*Source: APQC PCF 20944 (1.4) - APQC*

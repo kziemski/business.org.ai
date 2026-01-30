@@ -1,0 +1,100 @@
+---
+id: FoodServiceContractors
+name: "Food Service Contractors"
+code: "72231"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Food Service Contractors
+
+> See industry description for 722310.
+
+## Overview
+
+Food Service Contractors represents an important category within the Accommodation and Food Services sector (NAICS 72). This industry encompasses establishments primarily engaged in food service contractors.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S72["72: Accommodation and Food Services"]
+    S72 --> N722["722: Drinking Places"]
+    N722 --> N7223["7223: Special Food Services"]
+    N7223 --> N72231["72231: Food Service Contractors"]
+    style N72231 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 72231 |
+| Level | Industry |
+| Parent | [Special Food Services](../) |
+| Child Industries | 0 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Reservation/Booking"]
+        O2["Guest Check-in"]
+        O3["Service Delivery"]
+        O4["Quality Assurance"]
+        O5["Check-out"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Housekeeping"]
+        S2["Maintenance"]
+        S3["Marketing"]
+        S4["Revenue Mgmt"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 72231 - Food Service Contractors*

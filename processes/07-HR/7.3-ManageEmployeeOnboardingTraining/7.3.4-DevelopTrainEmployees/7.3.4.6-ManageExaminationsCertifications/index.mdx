@@ -1,0 +1,106 @@
+---
+id: ManageExaminationsAndCertifications
+name: "Manage examinations and certifications"
+code: "20125"
+hierarchyId: "7.3.4.6"
+type: Activity
+level: 4
+status: complete
+parent: "7.3.4"
+children: ["7.3.4.6.1", "7.3.4.6.2", "7.3.4.6.3", "7.3.4.6.4"]
+---
+
+# Manage examinations and certifications
+
+> Managing identified training programs for employees.
+
+## Overview
+
+Activity 7.3.4.6 is an activity within the Develop and Manage Human Capital framework. 
+
+Managing identified training programs for employees. Engage with industries to provide certifications, administer certification test, and maintain active certification.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    N7_3 --> N7_3_4["7.3.4 Develop and train employees"]
+    N7_3_4 --> N7_3_4_6["7.3.4.6 Manage examinations and certifications"]
+    style N7_3_4_6 fill:#e1f5fe
+    N7_3_4_6 --> N7_3_4_6_1["7.3.4.6.1 Liaise with external certificati..."]
+    N7_3_4_6 --> N7_3_4_6_2["7.3.4.6.2 Administer certification tests"]
+    N7_3_4_6 --> N7_3_4_6_3["7.3.4.6.3 Appraise experience qualifications"]
+    N7_3_4_6 --> N7_3_4_6_4["7.3.4.6.4 Administer certificate issue and..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20125 |
+| Hierarchy ID | 7.3.4.6 |
+| Level | Activity |
+| Parent | [7.3.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ExaminationsAndCertifications
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `examinations and certifications` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage examinations and certifications"]
+        S1["Liaise with external certif..."]
+        S2["Administer certification tests"]
+        S3["Appraise experience qualifi..."]
+        S4["Administer certificate issu..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Liaise with external certification authorities](./LiaiseWithExternalCertificationAuthorities) | 7.3.4.6.1 | Coordinating with third party certification authorities to provide training and certifications for n |
+| [Administer certification tests](./AdministerCertificationTests) | 7.3.4.6.2 | Providing tests to the workforce that will satisfy completion of certifications |
+| [Appraise experience qualifications](./AppraiseExperienceQualifications) | 7.3.4.6.3 | Ascertaining the experience level needed to qualify for a specific job or certification within the o |
+| [Administer certificate issue and maintenance](./AdministerCertificateIssueAndMaintenance) | 7.3.4.6.4 | Administering certificates to all candidates that have successfully met experience qualifications, a |
+
+
+## Related Concepts
+
+- [Examinations](/concepts/Examinations)
+- [Certifications](/concepts/Certifications)
+
+
+---
+
+*Source: APQC PCF 20125 (7.3.4.6) - APQC*

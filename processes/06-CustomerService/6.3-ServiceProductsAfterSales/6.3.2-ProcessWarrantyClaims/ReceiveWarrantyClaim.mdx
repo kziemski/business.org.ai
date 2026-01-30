@@ -1,0 +1,63 @@
+---
+id: ReceiveWarrantyClaim
+name: "Receive warranty claim"
+code: "20096"
+hierarchyId: "6.3.2.1"
+type: Activity
+level: 4
+status: complete
+parent: "6.3.2"
+---
+
+# Receive warranty claim
+
+> Receiving incoming warranty claims.
+
+## Overview
+
+Activity 6.3.2.1 is an activity within the Manage Customer Service framework. 
+
+Receiving incoming warranty claims. Route claim to correct department. Document claim.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_2["6.3.2 Process warranty claims"]
+    N6_3_2 --> N6_3_2_1["6.3.2.1 Receive warranty claim"]
+    style N6_3_2_1 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20096 |
+| Hierarchy ID | 6.3.2.1 |
+| Level | Activity |
+| Parent | [6.3.2](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+receive.WarrantyClaim
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `receive` | Primary action |
+| Object | `warranty claim` | Direct object |
+
+
+## Related Concepts
+
+- [WarrantyClaim](/concepts/WarrantyClaim)
+
+
+---
+
+*Source: APQC PCF 20096 (6.3.2.1) - APQC*

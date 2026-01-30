@@ -1,0 +1,359 @@
+---
+id: PerformCostAccounting
+name: "Perform Cost Accounting and Control"
+code: "10739"
+hierarchyId: "9.1.2"
+type: Process
+status: complete
+---
+
+# Perform Cost Accounting and Control
+
+*APQC Process 9.1.2*
+
+> Defining costs to be incurred and methods for optimum utilization. Determine the costs of products, processes, projects, etc. to compile in the financial statements, as well as to assist management in making decisions regarding planning and control.
+
+## Overview
+
+Perform Cost Accounting and Control is a critical process for understanding and managing organizational costs. This process tracks, allocates, and analyzes costs to support pricing decisions, profitability analysis, and operational efficiency. Cost accounting provides the foundation for inventory valuation, product costing, and management reporting.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"] --> G91["9.1 Perform planning and<br/>management accounting"]
+    G91 --> P912["9.1.2 Perform cost accounting<br/>and control"]
+
+    P912 --> A9121["9.1.2.1 Perform inventory<br/>accounting"]
+    P912 --> A9122["9.1.2.2 Perform profit center<br/>accounting"]
+    P912 --> A9123["9.1.2.3 Perform cost of<br/>sales analysis"]
+    P912 --> A9124["9.1.2.4 Perform product<br/>costing"]
+    P912 --> A9125["9.1.2.5 Perform variance<br/>analysis"]
+    P912 --> A9126["9.1.2.6 Report on<br/>profitability"]
+
+    style P912 fill:#e1f5fe
+    style G91 fill:#b3e5fc
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10739 |
+| Hierarchy ID | 9.1.2 |
+| Level | Process |
+| Category | [Manage Financial Resources](/processes/09-Finance) |
+| Process Group | [Perform Planning and Management Accounting](./index) |
+| Activities | 6 |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Transaction Data"]
+        I2["Production Records"]
+        I3["Inventory Movements"]
+        I4["Labor Records"]
+        I5["Overhead Rates"]
+    end
+
+    subgraph Process["Cost Accounting and Control"]
+        P1["Capture<br/>Cost Data"]
+        P2["Classify<br/>Costs"]
+        P3["Allocate<br/>Overhead"]
+        P4["Calculate<br/>Product Costs"]
+        P5["Value<br/>Inventory"]
+        P6["Analyze<br/>Variances"]
+        P7["Report<br/>Results"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P4 --> P6
+        P5 --> P7
+        P6 --> P7
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Product Costs"]
+        O2["Inventory Valuation"]
+        O3["Cost Variance Reports"]
+        O4["Profitability Analysis"]
+        O5["Cost Allocations"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+perform.CostAccountingAndControl
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Execute or carry out |
+| Object | `CostAccountingAndControl` | Cost tracking and management |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+### Semantic Decomposition
+
+| Sub-Task | GraphDL Notation |
+|----------|------------------|
+| Perform inventory accounting | `perform.InventoryAccounting` |
+| Perform profit center accounting | `perform.ProfitCenterAccounting` |
+| Perform cost of sales analysis | `perform.CostOfSalesAnalysis` |
+| Perform product costing | `perform.ProductCosting` |
+
+## Activities
+
+### 9.1.2.1 - Perform inventory accounting
+
+Conducting accounting for assets, and finding reasons for changes (depreciation, obsolescence, deterioration, change in customer taste, increased demand, decreased market supply, etc.).
+
+```mermaid
+sequenceDiagram
+    participant Warehouse as Warehouse
+    participant Inventory as Inventory Team
+    participant Cost as Cost Accounting
+    participant GL as General Ledger
+    participant Finance as Finance
+
+    Warehouse->>Inventory: Report movements
+    Inventory->>Inventory: Track quantities
+    Inventory->>Cost: Provide quantity data
+    Cost->>Cost: Calculate unit costs
+    Cost->>Cost: Value inventory layers
+    Cost->>GL: Post inventory entries
+    GL->>Finance: Update balance sheet
+    Cost->>Finance: Report inventory value
+```
+
+**Tasks:**
+- `track.InventoryMovements` - Record receipts and issues
+- `calculate.InventoryCost.using.CostingMethod` - Apply FIFO/LIFO/Average
+- `value.InventoryLayers` - Determine period-end value
+- `analyze.InventoryObsolescence` - Identify slow-moving items
+
+### 9.1.2.2 - Perform profit center accounting
+
+Determining the revenue, profits, and losses incurred by each unit within the organization that produces profit.
+
+```mermaid
+sequenceDiagram
+    participant Revenue as Revenue Team
+    participant Cost as Cost Accounting
+    participant Allocation as Allocation Engine
+    participant Reporting as FP&A
+    participant Management as Management
+
+    Revenue->>Cost: Provide revenue by unit
+    Cost->>Cost: Gather direct costs
+    Cost->>Allocation: Request allocations
+    Allocation->>Cost: Provide overhead allocations
+    Cost->>Cost: Calculate profit by center
+    Cost->>Reporting: Provide profitability data
+    Reporting->>Management: Report profit center results
+```
+
+**Tasks:**
+- `define.ProfitCenters` - Establish organizational units
+- `assign.RevenuesAndCosts.to.ProfitCenters` - Direct attribution
+- `allocate.SharedCosts.to.ProfitCenters` - Overhead distribution
+- `calculate.ProfitCenterMargins` - Compute profitability
+
+### 9.1.2.3 - Perform cost of sales analysis
+
+Studying expenses directly associated with product. Analyze the cost of sales, which is the cost of manufacturing products.
+
+```mermaid
+sequenceDiagram
+    participant Sales as Sales
+    participant Cost as Cost Accounting
+    participant Production as Production
+    participant FPA as FP&A
+    participant Pricing as Pricing Team
+
+    Sales->>Cost: Provide sales data
+    Production->>Cost: Provide production costs
+    Cost->>Cost: Match costs to revenue
+    Cost->>Cost: Calculate gross margins
+    Cost->>FPA: Report COGS analysis
+    FPA->>Pricing: Recommend price changes
+    Cost->>Cost: Analyze cost trends
+```
+
+**Tasks:**
+- `match.CostsToRevenue` - Apply matching principle
+- `calculate.GrossMargin.by.Product` - Determine product profitability
+- `analyze.COGSTrends` - Track cost changes over time
+- `identify.CostReductionOpportunities` - Find savings
+
+### 9.1.2.4 - Perform product costing
+
+Studying and finding out the relevant cost center for a product by studying every resource used in its making.
+
+```mermaid
+sequenceDiagram
+    participant Engineering as Engineering
+    participant Cost as Cost Accounting
+    participant Production as Production
+    participant Purchasing as Purchasing
+    participant FPA as FP&A
+
+    Engineering->>Cost: Provide BOM/routing
+    Purchasing->>Cost: Provide material costs
+    Production->>Cost: Provide labor rates
+    Cost->>Cost: Calculate overhead rates
+    Cost->>Cost: Build product cost
+    Cost->>FPA: Report standard costs
+    Cost->>Cost: Update cost rolls
+```
+
+**Tasks:**
+- `define.BillOfMaterials` - Specify material requirements
+- `establish.LaborRouting` - Define labor operations
+- `calculate.OverheadRates` - Determine burden rates
+- `build.StandardCost.for.Products` - Create cost records
+
+### 9.1.2.5 - Perform variance analysis
+
+Discovering the changes between forecasted and actual costing to maintain control over a business.
+
+```mermaid
+sequenceDiagram
+    participant Actuals as Actuals
+    participant Cost as Cost Accounting
+    participant Production as Production
+    participant Purchasing as Purchasing
+    participant Management as Management
+
+    Actuals->>Cost: Provide actual costs
+    Cost->>Cost: Compare to standard
+    Cost->>Cost: Calculate variances
+    Cost->>Production: Request labor variance explanations
+    Production->>Cost: Provide commentary
+    Cost->>Purchasing: Request material variance explanations
+    Purchasing->>Cost: Provide commentary
+    Cost->>Management: Report variances
+```
+
+**Tasks:**
+- `calculate.MaterialVariance` - Price and usage variances
+- `calculate.LaborVariance` - Rate and efficiency variances
+- `calculate.OverheadVariance` - Spending and volume variances
+- `investigate.SignificantVariances` - Root cause analysis
+
+### 9.1.2.6 - Report on profitability
+
+Making a report about revenues generated by the organization or business unit concerned.
+
+```mermaid
+sequenceDiagram
+    participant Cost as Cost Accounting
+    participant FPA as FP&A
+    participant BI as Business Intelligence
+    participant Executive as Executive Team
+    participant Board as Board
+
+    Cost->>FPA: Provide cost data
+    FPA->>BI: Build profitability views
+    BI->>FPA: Generate reports
+    FPA->>Executive: Present profitability
+    Executive->>FPA: Request drill-downs
+    FPA->>Executive: Provide analysis
+    FPA->>Board: Report quarterly results
+```
+
+**Tasks:**
+- `prepare.ProfitabilityReports` - Generate standard reports
+- `analyze.MarginTrends` - Track profitability over time
+- `report.ProfitabilityByDimension` - Product, customer, channel
+- `recommend.ProfitabilityImprovements` - Identify actions
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Perform inventory accounting | Cost Accountants | Controller | Operations, Warehouse | CFO |
+| Perform profit center accounting | Cost Accountants | Controller | Business Unit Leaders | FP&A |
+| Perform cost of sales analysis | Cost Accountants | Controller | Sales, Operations | Pricing |
+| Perform product costing | Cost Accountants | Controller | Engineering, Purchasing | Operations |
+| Perform variance analysis | Cost Accountants | Controller | Production, Purchasing | Management |
+| Report on profitability | FP&A Analysts | FP&A Director | Cost Accounting | Executive Team |
+
+## Related Departments
+
+- [Cost Accounting](/departments/CostAccounting) - Primary process owner
+- [Operations](/departments/Operations) - Source of operational data
+- [Manufacturing](/departments/Manufacturing) - Production cost inputs
+- [Purchasing](/departments/Purchasing) - Material cost data
+
+## Related Occupations
+
+- [Cost Estimators](/occupations/CostEstimators) - Cost analysis specialists
+- [Accountants](/occupations/Accountants) - General accounting support
+- [Financial Analysts](/occupations/FinancialAnalysts) - Profitability analysis
+- [Industrial Engineers](/occupations/IndustrialEngineers) - Process efficiency
+
+## Industry Variations
+
+### Manufacturing
+
+Manufacturing cost accounting emphasizes standard costing, work-in-process tracking, and production variances. Activity-based costing allocates overhead based on cost drivers.
+
+**Industry-Specific Activities:**
+- Maintain standard cost system
+- Track WIP inventory
+- Calculate production variances
+- Perform activity-based costing
+
+### Healthcare
+
+Healthcare cost accounting focuses on procedure-level costing, case mix analysis, and cost-to-charge ratios for reimbursement.
+
+**Industry-Specific Activities:**
+- Calculate procedure costs
+- Analyze case mix profitability
+- Maintain cost-to-charge ratios
+- Support value-based care initiatives
+
+### Construction
+
+Construction cost accounting tracks job costs, manages percentage-of-completion accounting, and controls project budgets.
+
+**Industry-Specific Activities:**
+- Track job costs by project
+- Apply percentage-of-completion method
+- Manage contract change orders
+- Forecast project profitability
+
+## Sub-Activities
+
+| Activity | Code | Description |
+|----------|------|-------------|
+| [Perform inventory accounting](./PerformInventoryAccounting) | 9.1.2.1 | Inventory valuation |
+| [Perform profit center accounting](./PerformProfitCenterAccounting) | 9.1.2.2 | Unit profitability |
+| [Perform cost of sales analysis](./PerformCostOfSalesAnalysis) | 9.1.2.3 | COGS analysis |
+| [Perform product costing](./PerformProductCosting) | 9.1.2.4 | Product cost calculation |
+| [Perform variance analysis](./PerformVarianceAnalysisCost) | 9.1.2.5 | Cost variance reporting |
+| [Report on profitability](./ReportOnProfitability) | 9.1.2.6 | Profitability reporting |
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Cost Variance | Actual vs. standard cost | <5% |
+| Inventory Accuracy | Physical vs. book count | >99% |
+| Cost Allocation Accuracy | Allocated vs. actual overhead | <3% variance |
+| Costing Cycle Time | Days to close cost accounting | <3 days |
+| Gross Margin | Revenue minus COGS | Industry benchmark |
+| Cost per Unit | Total cost / units produced | Declining trend |
+
+---
+
+*Source: APQC PCF 10739 (9.1.2) - Cross-Industry*

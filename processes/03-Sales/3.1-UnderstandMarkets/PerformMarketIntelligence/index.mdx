@@ -1,0 +1,331 @@
+---
+id: PerformCustomerMarketIntelligenceAnalysis
+name: "Perform customer and market intelligence analysis"
+code: "10106"
+hierarchyId: "3.1.1"
+type: Process
+category: "Market and Sell Products and Services"
+processGroup: "Understand markets, customers, and capabilities"
+metricsAvailable: true
+status: complete
+---
+
+# Perform Customer and Market Intelligence Analysis
+
+> Gathering intelligence on the market and customers. Closely examine the inherent attributes and collective behavior of the various market and customer segments. Track trends in the market. Determine what drives the customers to make purchasing decisions in order to identify opportunities in the market.
+
+## Overview
+
+Perform Customer and Market Intelligence Analysis is a critical process that forms the analytical foundation for all marketing and sales activities. This process systematically gathers, analyzes, and synthesizes information about markets, customers, competitors, and industry trends to support strategic decision-making.
+
+The process encompasses both primary research (surveys, interviews, focus groups) and secondary research (industry reports, data analysis) to build a comprehensive understanding of the market landscape. Effective execution of this process enables organizations to identify emerging opportunities, anticipate competitive threats, and align offerings with customer needs.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> G31["3.1 Understand markets, customers, and capabilities"]
+
+    G31 --> P311["3.1.1 Perform customer and market intelligence analysis"]
+
+    P311 --> A3111["3.1.1.1 Conduct customer and market research"]
+    P311 --> A3112["3.1.1.2 Develop consumer/shopper market insight"]
+    P311 --> A3113["3.1.1.3 Study consumer insights and trends"]
+    P311 --> A3114["3.1.1.4 Identify market segments"]
+    P311 --> A3115["3.1.1.5 Analyze market and industry trends"]
+    P311 --> A3116["3.1.1.6 Analyze competing organizations"]
+    P311 --> A3117["3.1.1.7 Evaluate existing products/services"]
+    P311 --> A3118["3.1.1.8 Assess internal and external business environment"]
+
+    A3111 --> T31111["3.1.1.1.1 Study competitor positioning"]
+    A3111 --> T31112["3.1.1.1.2 Study customer segmentation patterns"]
+    A3111 --> T31113["3.1.1.1.3 Understand consumer needs and predict behavior"]
+    A3111 --> T31114["3.1.1.1.4 Identify brand and portfolio gaps"]
+
+    A3114 --> T31141["3.1.1.4.1 Determine market share gain/loss"]
+
+    style P311 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10106 |
+| Hierarchy ID | 3.1.1 |
+| Level | Process |
+| Parent Group | [3.1 Understand markets, customers, and capabilities](../index.mdx) |
+| Category | [3.0 Market and Sell Products and Services](../../index.mdx) |
+| Child Activities | 8 |
+| Metrics Available | Yes |
+
+## GraphDL Semantic Structure
+
+```
+perform.CustomerAndMarketIntelligenceAnalysis
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action of executing analysis |
+| Object | `CustomerAndMarketIntelligenceAnalysis` | Comprehensive intelligence gathering and analysis |
+| Preposition | - | No secondary preposition |
+| PrepObject | - | No secondary object |
+
+### Decomposed Actions
+
+| GraphDL Action | Description |
+|----------------|-------------|
+| `gather.MarketIntelligence` | Collect market data from various sources |
+| `analyze.CustomerBehavior` | Examine customer purchasing patterns |
+| `track.MarketTrends` | Monitor industry and market movements |
+| `identify.PurchaseDrivers` | Determine factors influencing buying decisions |
+| `assess.MarketOpportunities` | Evaluate potential market opportunities |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Primary Research Data"]
+        I2["Secondary Research Sources"]
+        I3["Customer Databases"]
+        I4["Competitive Intelligence"]
+        I5["Industry Reports"]
+        I6["Social Media Data"]
+    end
+
+    subgraph Process["Perform Market Intelligence Analysis"]
+        P1["Define Intelligence Objectives"]
+        P2["Conduct Customer Research"]
+        P3["Develop Consumer Insights"]
+        P4["Identify Market Segments"]
+        P5["Analyze Industry Trends"]
+        P6["Analyze Competitors"]
+        P7["Evaluate Existing Products"]
+        P8["Assess Business Environment"]
+        P9["Synthesize Intelligence"]
+
+        P1 --> P2
+        P1 --> P3
+        P2 --> P4
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+        P7 --> P8
+        P8 --> P9
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Market Intelligence Reports"]
+        O2["Customer Segment Profiles"]
+        O3["Trend Analysis Reports"]
+        O4["Competitive Landscape Analysis"]
+        O5["Product Performance Assessment"]
+        O6["Environmental Scan Report"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## Activities
+
+### 3.1.1.1 - Conduct customer and market research
+
+Conducting primary and secondary research to understand customer needs, market dynamics, and competitive positioning.
+
+```mermaid
+sequenceDiagram
+    participant PM as Product Marketing
+    participant MR as Market Research
+    participant EXT as External Agencies
+    participant DATA as Data Analytics
+
+    PM->>MR: Define research objectives
+    MR->>EXT: Commission primary research
+    MR->>DATA: Request data analysis
+    EXT->>MR: Deliver survey results
+    DATA->>MR: Provide analytics insights
+    MR->>PM: Present integrated findings
+```
+
+**Tasks:**
+- [Study competitor category and brand positioning](./ConductCustomerMarketResearch/StudyCompetitorPositioning.mdx)
+- [Study customer segmentation patterns](./ConductCustomerMarketResearch/StudySegmentationPatterns.mdx)
+- [Understand consumer needs and predict purchasing behavior](./ConductCustomerMarketResearch/UnderstandConsumerNeeds.mdx)
+- [Identify brand and portfolio gaps](./ConductCustomerMarketResearch/IdentifyBrandGaps.mdx)
+
+### 3.1.1.2 - Develop consumer/shopper market insight and identify trends
+
+Developing deep understanding of consumer behavior and shopping patterns to identify emerging trends.
+
+**Key Actions:**
+- `analyze.ShopperBehavior` - Examine how consumers shop
+- `identify.EmergingTrends` - Spot market pattern shifts
+- `develop.ConsumerProfiles` - Create detailed buyer personas
+
+### 3.1.1.3 - Study consumer insights and trends
+
+Analyzing consumer insights to understand motivations, preferences, and evolving needs.
+
+**Key Actions:**
+- `study.ConsumerMotivations` - Understand why customers buy
+- `track.PreferenceChanges` - Monitor shifting preferences
+- `forecast.ConsumerTrends` - Predict future behavior
+
+### 3.1.1.4 - Identify market segments
+
+Identifying sections of the customer population to target for marketing products/services. Create segments within the customer population for targeted marketing campaigns.
+
+```mermaid
+sequenceDiagram
+    participant DATA as Data Sources
+    participant ANAL as Analytics Team
+    participant MKT as Marketing
+    participant PROD as Product
+
+    DATA->>ANAL: Customer demographics
+    DATA->>ANAL: Behavioral data
+    ANAL->>ANAL: Segmentation analysis
+    ANAL->>MKT: Segment profiles
+    MKT->>PROD: Segment-product mapping
+    PROD->>MKT: Validate fit
+```
+
+**Tasks:**
+- [Determine market share gain/loss](./IdentifyMarketSegments/DetermineMarketShare.mdx)
+
+### 3.1.1.5 - Analyze market and industry trends
+
+Examining large-scale shifts and trends with relevance to the organization's products/services.
+
+**Key Actions:**
+- `analyze.IndustryDynamics` - Assess industry structure changes
+- `track.MarketMovements` - Monitor market size and growth
+- `evaluate.InnovationActivity` - Assess technology/product innovation
+
+### 3.1.1.6 - Analyze competing organizations, competitive/substitute products/services
+
+Examining the strengths and weaknesses of competing organizations and their offerings.
+
+**Key Actions:**
+- `assess.CompetitorStrategies` - Evaluate competitor approaches
+- `analyze.CompetitiveProducts` - Examine competing offerings
+- `benchmark.Capabilities` - Compare organizational capabilities
+
+### 3.1.1.7 - Evaluate existing products/services
+
+Examining the brands owned and products offered in the market. Determine the relative position of existing products/brands in the marketplace.
+
+**Key Actions:**
+- `evaluate.ProductPerformance` - Assess product market position
+- `analyze.BrandHealth` - Measure brand perception
+- `identify.PortfolioGaps` - Find product line gaps
+
+### 3.1.1.8 - Assess internal and external business environment
+
+Understanding the culture and environment in which you're operating. Analyze internal capabilities and external market factors.
+
+**Key Actions:**
+- `assess.InternalCapabilities` - Evaluate organizational strengths
+- `scan.ExternalEnvironment` - Monitor market conditions
+- `identify.EnvironmentalFactors` - Recognize key influences
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Conduct customer research | Market Research Team | CMO | Sales, Product | Strategy |
+| Develop consumer insights | Consumer Insights Team | VP Marketing | Brand Teams | All |
+| Study consumer trends | Trend Analysts | Market Research Director | Product | Marketing |
+| Identify market segments | Analytics Team | VP Marketing | Sales | Operations |
+| Analyze industry trends | Strategy Team | CSO | Executive Team | All |
+| Analyze competitors | Competitive Intelligence | VP Strategy | Product, Sales | Executive |
+| Evaluate products | Product Marketing | VP Product | Sales, Finance | Operations |
+| Assess business environment | Strategy Team | CEO | All Functions | Board |
+
+## Related Departments
+
+- [Marketing](/departments/Marketing) - Primary ownership of market intelligence
+- [Sales](/departments/Sales) - Field intelligence and customer feedback
+- [Product Management](/departments/Product) - Product-market analysis
+- [Strategy](/departments/Strategy) - Strategic intelligence integration
+- [Business Development](/departments/BusinessDevelopment) - Opportunity identification
+
+## Related Occupations
+
+- [Market Research Analysts](/occupations/MarketResearchAnalysts) - Primary research execution
+- [Business Intelligence Analysts](/occupations/BusinessIntelligenceAnalysts) - Data analysis
+- [Competitive Intelligence Analysts](/occupations/CompetitiveIntelligenceAnalysts) - Competitor monitoring
+- [Marketing Managers](/occupations/MarketingManagers) - Research direction
+- [Data Scientists](/occupations/DataScientists) - Advanced analytics
+
+## Industry Variations
+
+### Consumer Products
+
+Heavy emphasis on shopper insights, retailer data integration, and category management analytics.
+
+**Industry-Specific Activities:**
+- Point-of-sale data analysis
+- Consumer panel studies
+- Category performance tracking
+- Trade promotion analysis
+
+### Banking
+
+Focus on customer financial behavior analysis, regulatory landscape monitoring, and digital banking adoption.
+
+**Industry-Specific Activities:**
+- Customer financial lifecycle analysis
+- Product profitability analysis
+- Channel usage studies
+- Regulatory impact assessment
+
+### Retail
+
+Emphasis on store-level analytics, e-commerce behavior, and omnichannel customer journey mapping.
+
+**Industry-Specific Activities:**
+- Store performance analysis
+- E-commerce conversion tracking
+- Customer journey mapping
+- Location-based analytics
+
+### Healthcare Provider
+
+Focus on patient demographics, clinical needs, and healthcare market dynamics.
+
+**Industry-Specific Activities:**
+- Patient population analysis
+- Service line demand forecasting
+- Referral pattern analysis
+- Payer mix analysis
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Research Cycle Time | Days from initiation to insight delivery | <21 days |
+| Intelligence Coverage | Percentage of market monitored | >85% |
+| Competitor Coverage | Key competitors tracked vs. total | >95% |
+| Insight Accuracy | Predictions validated by outcomes | >80% |
+| Research Utilization | Insights used in decisions | >75% |
+| Customer Coverage | Segments researched vs. total | >90% |
+
+## Related Processes
+
+```mermaid
+graph LR
+    DVS["1.0 Vision and Strategy"] --> PMI["3.1.1 Perform Market Intelligence"]
+    PMI --> EPO["3.1.2 Evaluate and Prioritize Opportunities"]
+    PMI --> DMS["3.2 Develop Marketing Strategy"]
+    PMI --> DPS["2.0 Develop Products and Services"]
+    EPO --> DMS
+```
+
+---
+
+*Source: APQC PCF 10106 (3.1.1) - Cross-Industry*

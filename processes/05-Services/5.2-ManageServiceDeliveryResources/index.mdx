@@ -1,0 +1,99 @@
+---
+id: ManageServiceDeliveryResources
+name: "Manage service delivery resources"
+code: "20040"
+hierarchyId: "5.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "5"
+children: ["5.2.1", "5.2.2", "5.2.3"]
+---
+
+# Manage service delivery resources
+
+> Understanding the demands on resources and creating a plan to enable the delivery of services via those resources.
+
+## Overview
+
+Group 5.2 is a process group within APQC Category 5.0 (Deliver Services). 
+
+Understanding the demands on resources and creating a plan to enable the delivery of services via those resources.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_2["5.2 Manage service delivery resources"]
+    style N5_2 fill:#e1f5fe
+    N5_2 --> N5_2_1["5.2.1 Manage service delivery resource..."]
+    N5_2 --> N5_2_2["5.2.2 Create and manage resource plan"]
+    N5_2 --> N5_2_3["5.2.3 Enable service delivery resources"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20040 |
+| Hierarchy ID | 5.2 |
+| Level | Group |
+| Parent | [5](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ServiceDeliveryResources
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `service delivery resources` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage service delivery resources"]
+        S1["Manage service delivery res..."]
+        S2["Create and manage resource ..."]
+        S3["Enable service delivery res..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage service delivery resource demand](./5.2.1-ManageServiceDeliveryResource/) | 5.2.1 | Ensuring necessary resources are maintained through monitoring pipeline, developing forecasts, and c |
+| [Create and manage resource plan](./5.2.2-CreateManageResourcePlan/) | 5.2.2 | Identifying the need for and creating a resource plan |
+| [Enable service delivery resources](./5.2.3-EnableServiceDeliveryResources/) | 5.2.3 | Instituting training to enable resources to provide service delivery to the customer |
+
+
+## Related Concepts
+
+- [ServiceDeliveryResources](/concepts/ServiceDeliveryResources)
+
+
+---
+
+*Source: APQC PCF 20040 (5.2) - APQC*

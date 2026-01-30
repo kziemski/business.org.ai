@@ -1,0 +1,96 @@
+---
+id: ManageWorkforceScheduling
+name: "Manage workforce scheduling"
+code: "20132"
+hierarchyId: "7.6.6"
+type: Process
+level: 3
+status: complete
+parent: "7.6"
+children: ["7.6.6.1", "7.6.6.2"]
+---
+
+# Manage workforce scheduling
+
+> Organizing the workforce so that all positions are covered for all shifts with the necessary skilled resources in place.
+
+## Overview
+
+Process 7.6.6 is a core process that defines the specific procedures for manage workforce scheduling. 
+
+Organizing the workforce so that all positions are covered for all shifts with the necessary skilled resources in place. Have a system in place to backfill positions while an employee is on leave.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_6["7.6 Redeploy and retire employees"]
+    N7_6 --> N7_6_6["7.6.6 Manage workforce scheduling"]
+    style N7_6_6 fill:#e1f5fe
+    N7_6_6 --> N7_6_6_1["7.6.6.1 Receive required resources/skill..."]
+    N7_6_6 --> N7_6_6_2["7.6.6.2 Manage resource deployment"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20132 |
+| Hierarchy ID | 7.6.6 |
+| Level | Process |
+| Parent | [7.6](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.WorkforceScheduling
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `workforce scheduling` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage workforce scheduling"]
+        S1["Receive required resources/..."]
+        S2["Manage resource deployment"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Receive required resources/skills and capabilities](./ReceiveRequiredResourcesskillsAndCapabilities) | 7.6.6.1 | Obtaining resources necessary to fill a position utilizing specific skills and capabilities |
+| [Manage resource deployment](./ManageResourceDeployment) | 7.6.6.2 | Allocating employees |
+
+
+## Related Concepts
+
+- [WorkforceScheduling](/concepts/WorkforceScheduling)
+
+
+---
+
+*Source: APQC PCF 20132 (7.6.6) - APQC*

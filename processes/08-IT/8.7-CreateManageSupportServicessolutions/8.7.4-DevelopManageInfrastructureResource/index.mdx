@@ -1,0 +1,109 @@
+---
+id: DevelopAndManageInfrastructureResourcePlanning
+name: "Develop and manage infrastructure resource planning"
+code: "20888"
+hierarchyId: "8.7.4"
+type: Process
+level: 3
+status: complete
+parent: "8.7"
+children: ["8.7.4.1", "8.7.4.2", "8.7.4.3", "8.7.4.4", "8.7.4.5"]
+---
+
+# Develop and manage infrastructure resource planning
+
+> Developing and managing the resources required for administration of infrastructure.
+
+## Overview
+
+Process 8.7.4 is a core process that defines the specific procedures for develop and manage infrastructure resource planning. 
+
+Developing and managing the resources required for administration of infrastructure. Manage the IT inventory and assets to meet organization's IT resource capacity.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_4["8.7.4 Develop and manage infrastructure res..."]
+    style N8_7_4 fill:#e1f5fe
+    N8_7_4 --> N8_7_4_1["8.7.4.1 Develop IT service delivery stra..."]
+    N8_7_4 --> N8_7_4_2["8.7.4.2 Assess IT infrastructure busines..."]
+    N8_7_4 --> N8_7_4_3["8.7.4.3 Determine ongoing IT infrastruct..."]
+    N8_7_4 --> N8_7_4_4["8.7.4.4 Plan IT infrastructure change"]
+    N8_7_4 --> N8_7_4_5["8.7.4.5 Plan and budget IT license usage..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20888 |
+| Hierarchy ID | 8.7.4 |
+| Level | Process |
+| Parent | [8.7](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageInfrastructureResourcePlanning
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage infrastructure resource planning` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage infrastructure resource planning"]
+        S1["Develop IT service delivery..."]
+        S2["Assess IT infrastructure bu..."]
+        S3["Determine ongoing IT infras..."]
+        S4["Plan IT infrastructure change"]
+        S5["Plan and budget IT license ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop IT service delivery strategy](./DevelopITServiceDeliveryStrategy) | 8.7.4.1 | Creating a strategy for delivering IT services and solutions |
+| [Assess IT infrastructure business objectives](./AssessITInfrastructureBusinessObjectives) | 8.7.4.2 | Assessing the goals and objectives of IT infrastructure and how it contributes to the overall busine |
+| [Determine ongoing IT infrastructure capabilities](./DetermineOngoingITInfrastructureCapabilities) | 8.7.4.3 | Determining existing IT infrastructure capabilities |
+| [Plan IT infrastructure change](./PlanITInfrastructureChange) | 8.7.4.4 | Identify the gaps and needs of existing IT infrastructure |
+| [Plan and budget IT license usage volumes](./PlanAndBudgetITLicenseUsageVolumes) | 8.7.4.5 | Creating a plan associated with usage volumes of IT licenses |
+
+
+## Related Concepts
+
+- [InfrastructureResourcePlanning](/concepts/InfrastructureResourcePlanning)
+- [InfrastructureResourcePlanning](/concepts/InfrastructureResourcePlanning)
+
+
+---
+
+*Source: APQC PCF 20888 (8.7.4) - APQC*

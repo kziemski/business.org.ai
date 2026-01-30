@@ -1,0 +1,118 @@
+---
+id: ControlItManagementSystem
+name: "Control IT management system"
+code: "20682"
+hierarchyId: "8.2.5"
+type: Process
+level: 3
+status: complete
+parent: "8.2"
+children: ["8.2.5.1", "8.2.5.2", "8.2.5.3", "8.2.5.4", "8.2.5.5", "8.2.5.6", "8.2.5.7", "8.2.5.8", "8.2.5.9"]
+---
+
+# Control IT management system
+
+> Regulating the IT management system through performance measures, governance, analysis, and monitoring through a variety of analytic tools.
+
+## Overview
+
+Process 8.2.5 is a core process that defines the specific procedures for control it management system. 
+
+Regulating the IT management system through performance measures, governance, analysis, and monitoring through a variety of analytic tools. Evaluate IT finances, resource, services, projects, and value for report out.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_2["8.2 Develop and manage IT business strategy"]
+    N8_2 --> N8_2_5["8.2.5 Control IT management system"]
+    style N8_2_5 fill:#e1f5fe
+    N8_2_5 --> N8_2_5_1["8.2.5.1 Determine IT performance measures"]
+    N8_2_5 --> N8_2_5_2["8.2.5.2 Define IT control points and ass..."]
+    N8_2_5 --> N8_2_5_3["8.2.5.3 Monitor and analyze overall IT p..."]
+    N8_2_5 --> N8_2_5_4["8.2.5.4 Monitor and analyze IT financial..."]
+    N8_2_5 --> N8_2_5_5["8.2.5.5 Monitor and analyze IT value and..."]
+    N8_2_5 --> N8_2_5_6["8.2.5.6 Optimize IT resource allocation"]
+    N8_2_5 --> N8_2_5_7["8.2.5.7 Manage IT projects and services ..."]
+    N8_2_5 --> N8_2_5_8["8.2.5.8 Report IT service and project pe..."]
+    N8_2_5 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20682 |
+| Hierarchy ID | 8.2.5 |
+| Level | Process |
+| Parent | [8.2](../) |
+| Sub-Processes | 9 |
+
+
+## GraphDL Semantic Structure
+
+```
+control.ITManagementSystem
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `control` | Primary action |
+| Object | `IT management system` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Control IT management system"]
+        S1["Determine IT performance me..."]
+        S2["Define IT control points an..."]
+        S3["Monitor and analyze overall..."]
+        S4["Monitor and analyze IT fina..."]
+        S5["Monitor and analyze IT valu..."]
+        S6["Optimize IT resource alloca..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine IT performance measures](./DetermineITPerformanceMeasures) | 8.2.5.1 | Determining measures for evaluating the performance of IT services in the organization |
+| [Define IT control points and assurance procedures governance model](./DefineITControlPointsAndAssuranceProceduresGovernanceModel) | 8.2.5.2 | Establishing a governance model with its own structure and functions from where full or partial cont |
+| [Monitor and analyze overall IT performance](./MonitorAndAnalyzeOverallITPerformance) | 8.2.5.3 | Monitoring and analyzing information technology performance measures to ensure timely completion, an |
+| [Monitor and analyze IT financial performance](./MonitorAndAnalyzeITFinancialPerformance) | 8.2.5.4 | Checking and analyzing predetermined financial targets and timelines of IT management system |
+| [Monitor and analyze IT value and benefits](./MonitorAndAnalyzeITValueAndBenefits) | 8.2.5.5 | Examining and analyzing the value and benefits of IT service management to ensure benefits outweigh  |
+| [Optimize IT resource allocation](./OptimizeITResourceAllocation) | 8.2.5.6 | Create process to assign and manage IT assets that support organization's strategic goals |
+| [Manage IT projects and services interdependencies](./ManageITProjectsAndServicesInterdependencies) | 8.2.5.7 | Manage capabilities required for the successful delivery of information technology projects, which,  |
+| [Report IT service and project performance](./ReportITServiceAndProjectPerformance) | 8.2.5.8 | Process of collecting, analyzing, and reporting information regarding the performance of IT services |
+| [Select, deploy, and operate IT performance analytics tools](./SelectDeployAndOperateITPerformanceAnalyticsTools) | 8.2.5.9 | Select, establish, and operate analytics tool to analyze data and extract actionable and commerciall |
+
+
+## Related Concepts
+
+- [ITManagementSystem](/concepts/ITManagementSystem)
+
+
+---
+
+*Source: APQC PCF 20682 (8.2.5) - APQC*

@@ -1,0 +1,100 @@
+---
+id: ProcessAccountsPayableAndExpenseReimbursements
+name: "Process accounts payable and expense reimbursements"
+code: "10733"
+hierarchyId: "9.6"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.6.1", "9.6.2", "9.6.3"]
+---
+
+# Process accounts payable and expense reimbursements
+
+> Handling bills and reimbursements to be made.
+
+## Overview
+
+Group 9.6 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Handling bills and reimbursements to be made. Make payments for goods or services taken or used on behalf of the organization.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_6["9.6 Process accounts payable and expense ..."]
+    style N9_6 fill:#e1f5fe
+    N9_6 --> N9_6_1["9.6.1 Process accounts payable (AP)"]
+    N9_6 --> N9_6_2["9.6.2 Process expense reimbursements"]
+    N9_6 --> N9_6_3["9.6.3 Manage corporate credit cards"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10733 |
+| Hierarchy ID | 9.6 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.AccountsPayableAndExpenseReimbursements
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `accounts payable and expense reimbursements` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Process accounts payable and expense reimbursements"]
+        S1["Process accounts payable (AP)"]
+        S2["Process expense reimbursements"]
+        S3["Manage corporate credit cards"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Process accounts payable (AP)](./9.6.1-ProcessAccountsPayableAP/) | 9.6.1 | Processing payments of operating expenses and other supplier charges |
+| [Process expense reimbursements](./9.6.2-ProcessExpenseReimbursements/) | 9.6.2 | Processing reimbursements to employees for the expenses incurred during the course of business |
+| [Manage corporate credit cards](./9.6.3-ManageCorporateCreditCards/) | 9.6.3 | Handling and authoring credit cards to business entities or for corporate purchases |
+
+
+## Related Concepts
+
+- [AccountsPayableReimbursements](/concepts/AccountsPayableReimbursements)
+- [ExpenseReimbursements](/concepts/ExpenseReimbursements)
+
+
+---
+
+*Source: APQC PCF 10733 (9.6) - APQC*

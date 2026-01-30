@@ -1,0 +1,162 @@
+# {name}
+
+> {description}
+
+## Overview
+
+{overview}
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    {category}["{categoryName}"] --> {group}["{groupName}"]
+    {group} --> {process}["{name}"]
+    {#if hasActivities}
+    {process} --> {activity}["{activityName}"]
+    {/if}
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | {code} |
+| Hierarchy ID | {hierarchyId} |
+| Level | {level} |
+| Category | [{categoryName}](/processes/{categoryPath}) |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        {#each inputs}
+        {id}["{name}"]
+        {/each}
+    end
+
+    subgraph Process["{name}"]
+        {#each steps}
+        {id}["{name}"]
+        {/each}
+        {#each stepConnections}
+        {from} --> {to}
+        {/each}
+    end
+
+    subgraph Outputs["Outputs"]
+        {#each outputs}
+        {id}["{name}"]
+        {/each}
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+{verb}.{object}.{preposition}.{prepObject}
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `{verb}` | Primary action |
+| Object | `{object}` | Direct object |
+| Preposition | `{preposition}` | Relationship |
+| PrepObject | `{prepObject}` | Indirect object |
+
+## Activities
+
+{#each activities}
+### {hierarchyId} - {name}
+
+{description}
+
+```mermaid
+sequenceDiagram
+    participant Input
+    participant Activity as {name}
+    participant Output
+
+    {#each sequence}
+    {actor}->>>{target}: {action}
+    {/each}
+```
+
+**Tasks:**
+{#each tasks}
+- `{verb}.{object}` - {description}
+{/each}
+{/each}
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+{#each raciMatrix}
+| {activity} | {responsible} | {accountable} | {consulted} | {informed} |
+{/each}
+
+## Related Departments
+
+{#each departments}
+- [{name}](/departments/{path}) - {role}
+{/each}
+
+## Related Occupations
+
+{#each occupations}
+- [{name}](/occupations/{path}) - {involvement}
+{/each}
+
+## Industry Variations
+
+{#each industryVariations}
+### {industryName}
+
+{variationDescription}
+
+**Industry-Specific Activities:**
+{#each specificActivities}
+- {name}
+{/each}
+{/each}
+
+## Sub-Processes
+
+{#if hasChildren}
+| Process | Code | Description |
+|---------|------|-------------|
+{#each children}
+| [{name}](./{path}) | {hierarchyId} | {shortDescription} |
+{/each}
+{/if}
+
+## Related Processes
+
+```mermaid
+graph LR
+    {#each upstreamProcesses}
+    {id}["{name}"] --> {process}
+    {/each}
+
+    {process}["{name}"]
+
+    {#each downstreamProcesses}
+    {process} --> {id}["{name}"]
+    {/each}
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+{#each metrics}
+| {name} | {description} | {target} |
+{/each}
+
+---
+
+*Source: APQC PCF {code} ({hierarchyId}) - {sourceType}*

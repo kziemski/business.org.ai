@@ -1,0 +1,108 @@
+---
+id: EnsureQualityOfService
+name: "Ensure quality of service"
+code: "10323"
+hierarchyId: "6.3.4.4"
+type: Activity
+level: 4
+status: complete
+parent: "6.3.4"
+children: ["6.3.4.4.1", "6.3.4.4.2", "6.3.4.4.3", "6.3.4.4.4"]
+---
+
+# Ensure quality of service
+
+> Guaranteeing the quality of service provided to customers.
+
+## Overview
+
+Activity 6.3.4.4 is an activity within the Manage Customer Service framework. 
+
+Guaranteeing the quality of service provided to customers. Identify the successful and unsuccessful orders along with the service failures. Collect customer feedback. Process the feedback to ensure the quality of service in the future.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_4["6.3.4 Service products"]
+    N6_3_4 --> N6_3_4_4["6.3.4.4 Ensure quality of service"]
+    style N6_3_4_4 fill:#e1f5fe
+    N6_3_4_4 --> N6_3_4_4_1["6.3.4.4.1 Identify completed service order..."]
+    N6_3_4_4 --> N6_3_4_4_2["6.3.4.4.2 Identify incomplete service orde..."]
+    N6_3_4_4 --> N6_3_4_4_3["6.3.4.4.3 Solicit customer feedback on ser..."]
+    N6_3_4_4 --> N6_3_4_4_4["6.3.4.4.4 Process customer feedback on ser..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10323 |
+| Hierarchy ID | 6.3.4.4 |
+| Level | Activity |
+| Parent | [6.3.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+ensure.Quality.of.Service
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `ensure` | Primary action |
+| Object | `quality` | Direct object |
+| Preposition | `of` | Relationship |
+| PrepObject | `service` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Ensure quality of service"]
+        S1["Identify completed service ..."]
+        S2["Identify incomplete service..."]
+        S3["Solicit customer feedback o..."]
+        S4["Process customer feedback o..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify completed service orders for feedback](./IdentifyCompletedServiceOrdersForFeedback) | 6.3.4.4.1 | Determining the service orders that have been successfully delivered |
+| [Identify incomplete service orders and service failures](./IdentifyIncompleteServiceOrdersAndServiceFailures) | 6.3.4.4.2 | Determining orders which have not been completed or delivered |
+| [Solicit customer feedback on services delivered](./SolicitCustomerFeedbackOnServicesDelivered) | 6.3.4.4.3 | Obtaining and procuring customer reviews or feedback on the services delivered |
+| [Process customer feedback on services delivered](./ProcessCustomerFeedbackOnServicesDelivered) | 6.3.4.4.4 | Assessing and incorporating customer reviews/feedback into the service plan to ensure high quality o |
+
+
+## Related Concepts
+
+- [Quality](/concepts/Quality)
+- [Service](/concepts/Service)
+
+
+---
+
+*Source: APQC PCF 10323 (6.3.4.4) - APQC*

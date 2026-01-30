@@ -1,0 +1,109 @@
+---
+id: PlanAndManageInboundMaterialFlow
+name: "Plan and manage inbound material flow"
+code: "20936"
+hierarchyId: "4.4.2"
+type: Process
+level: 3
+status: complete
+parent: "4.4"
+children: ["4.4.2.1", "4.4.2.2", "4.4.2.3", "4.4.2.4", "4.4.2.5"]
+---
+
+# Plan and manage inbound material flow
+
+> Creating and executing a strategy for all the internal activities related to the flow/transfer of inbound materials.
+
+## Overview
+
+Process 4.4.2 is a core process that defines the specific procedures for plan and manage inbound material flow. 
+
+Creating and executing a strategy for all the internal activities related to the flow/transfer of inbound materials. This process includes planning inbound material receipts, managing inbound material flow, monitoring inbound delivery performance, managing the flow of returned products, controlling the quality of returned parts, and salvaging or repairing returned products.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_4["4.4 Manage logistics and warehousing"]
+    N4_4 --> N4_4_2["4.4.2 Plan and manage inbound material flow"]
+    style N4_4_2 fill:#e1f5fe
+    N4_4_2 --> N4_4_2_1["4.4.2.1 Plan inbound material receipts"]
+    N4_4_2 --> N4_4_2_2["4.4.2.2 Manage inbound material flow"]
+    N4_4_2 --> N4_4_2_3["4.4.2.3 Monitor inbound delivery perform..."]
+    N4_4_2 --> N4_4_2_4["4.4.2.4 Manage flow of returned products"]
+    N4_4_2 --> N4_4_2_5["4.4.2.5 Manage disposition of returned p..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20936 |
+| Hierarchy ID | 4.4.2 |
+| Level | Process |
+| Parent | [4.4](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.AndManageInboundMaterialFlow
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `and manage inbound material flow` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan and manage inbound material flow"]
+        S1["Plan inbound material receipts"]
+        S2["Manage inbound material flow"]
+        S3["Monitor inbound delivery pe..."]
+        S4["Manage flow of returned pro..."]
+        S5["Manage disposition of retur..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Plan inbound material receipts](./PlanInboundMaterialReceipts) | 4.4.2.1 | Managing the receipts of inbound materials |
+| [Manage inbound material flow](./ManageInboundMaterialFlow) | 4.4.2.2 | Managing all the internal activities related to the flow/transfer of materials |
+| [Monitor inbound delivery performance](./MonitorInboundDeliveryPerformance) | 4.4.2.3 | Overseeing the performance of an inbound delivery system |
+| [Manage flow of returned products](./ManageFlowOfReturnedProducts) | 4.4.2.4 | Tracking and taking care of the products that have been internally returned either because of their  |
+| [Manage disposition of returned products](./4.4.2.5-ManageDispositionReturnedProducts/) | 4.4.2.5 | Determining if a returned product can be salvaged or repaired |
+
+
+## Related Concepts
+
+- [InboundMaterialFlow](/concepts/InboundMaterialFlow)
+- [InboundMaterialFlow](/concepts/InboundMaterialFlow)
+
+
+---
+
+*Source: APQC PCF 20936 (4.4.2) - APQC*

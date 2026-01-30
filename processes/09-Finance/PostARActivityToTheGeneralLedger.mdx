@@ -1,0 +1,65 @@
+---
+id: PostArActivityToTheGeneralLedger
+name: "Post AR activity to the general ledger"
+code: "10803"
+hierarchyId: "9.2.3.5"
+type: Activity
+level: 4
+status: complete
+parent: "9.2.3"
+---
+
+# Post AR activity to the general ledger
+
+> Preparing the general ledger for account receivables from journals.
+
+## Overview
+
+Activity 9.2.3.5 is an activity within the Manage Financial Resources framework. 
+
+Preparing the general ledger for account receivables from journals. Place all journal entries related to accounts receivables in the general ledger accounts of a business.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_2["9.2 Perform revenue accounting"]
+    N9_2 --> N9_2_3_5["9.2.3.5 Post AR activity to the general ledger"]
+    style N9_2_3_5 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10803 |
+| Hierarchy ID | 9.2.3.5 |
+| Level | Activity |
+| Parent | [9.2.3](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+post.ARActivity.to.TheGeneralLedger
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `post` | Primary action |
+| Object | `AR activity` | Direct object |
+| Preposition | `to` | Relationship |
+| PrepObject | `the general ledger` | Indirect object |
+
+
+## Related Concepts
+
+- [ARActivity](/concepts/ARActivity)
+- [GeneralLedger](/concepts/GeneralLedger)
+
+
+---
+
+*Source: APQC PCF 10803 (9.2.3.5) - APQC*

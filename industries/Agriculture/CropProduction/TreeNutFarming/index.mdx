@@ -1,0 +1,113 @@
+---
+id: TreeNutFarming
+name: "Tree Nut Farming"
+code: "1113"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Tree Nut Farming
+
+> This industry group comprises establishments primarily engaged in growing fruit and/or tree nut crops.
+
+## Overview
+
+Tree Nut Farming represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11). This industry group encompasses establishments primarily engaged in tree nut farming.
+
+This industry group comprises establishments primarily engaged in growing fruit and/or tree nut crops. The crops included in this industry group are generally not grown from seeds and have a perennial life cycle.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S11["11: Agriculture, Forestry, Fishing and Hunting"]
+    S11 --> N111["111: Crop Production"]
+    N111 --> N1113["1113: Tree Nut Farming"]
+    style N1113 fill:#f96,stroke:#333,stroke-width:2px
+    N1113 --> N11131["11131: Orange Groves"]
+    N1113 --> N11132["11132: Citrus ("]
+    N1113 --> N11133["11133: Noncitrus Fruit"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 1113 |
+| Level | Industry Group |
+| Parent | [Crop Production](../) |
+| Child Industries | 3 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Orange Groves](./OrangeGroves/) | 11131 | See industry description for 111310 |
+| [Citrus (](./Citrus/) | 11132 | See industry description for 111320 |
+| [Noncitrus Fruit](./NoncitrusFruit/) | 11133 | This industry comprises establishments primarily engaged in one or more of the f |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Planning"]
+        O2["Planting/Stocking"]
+        O3["Growing/Raising"]
+        O4["Harvesting"]
+        O5["Processing"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Supply Management"]
+        S3["Quality Control"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Seeds/Stock"]
+        I2["Equipment"]
+        I3["Fertilizers"]
+        I4["Labor"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Crops"]
+        O2["Livestock"]
+        O3["Raw Materials"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Processors"]
+        C2["Distributors"]
+        C3["Retailers"]
+        C4["Export Markets"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 1113 - Tree Nut Farming*

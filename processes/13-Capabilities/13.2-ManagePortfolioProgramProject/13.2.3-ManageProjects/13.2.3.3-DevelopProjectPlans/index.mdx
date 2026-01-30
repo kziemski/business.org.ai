@@ -1,0 +1,115 @@
+---
+id: DevelopProjectPlans
+name: "Develop project plans"
+code: "16413"
+hierarchyId: "13.2.3.3"
+type: Activity
+level: 4
+status: complete
+parent: "13.2.3"
+children: ["13.2.3.3.1", "13.2.3.3.2", "13.2.3.3.3", "13.2.3.3.4", "13.2.3.3.5", "13.2.3.3.6", "13.2.3.3.7"]
+---
+
+# Develop project plans
+
+> Defining the resources and their roles.
+
+## Overview
+
+Activity 13.2.3.3 is an activity within the Develop and Manage Business Capabilities framework. 
+
+Defining the resources and their roles. Identify IT requirements. Create plans for effective training and communication. Design reward approaches. Plan the launch of project. Deploy the project.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_2["13.2 Manage portfolio, program, and project"]
+    N13_2 --> N13_2_3["13.2.3 Manage projects"]
+    N13_2_3 --> N13_2_3_3["13.2.3.3 Develop project plans"]
+    style N13_2_3_3 fill:#e1f5fe
+    N13_2_3_3 --> N13_2_3_3_1["13.2.3.3.1 Define roles and resources"]
+    N13_2_3_3 --> N13_2_3_3_2["13.2.3.3.2 Acquire/secure project resources"]
+    N13_2_3_3 --> N13_2_3_3_3["13.2.3.3.3 Identify specific IT requirements"]
+    N13_2_3_3 --> N13_2_3_3_4["13.2.3.3.4 Create training and communicatio..."]
+    N13_2_3_3 --> N13_2_3_3_5["13.2.3.3.5 Design recognition and reward ap..."]
+    N13_2_3_3 --> N13_2_3_3_6["13.2.3.3.6 Design and plan launch of project"]
+    N13_2_3_3 --> N13_2_3_3_7["13.2.3.3.7 Deploy the project"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16413 |
+| Hierarchy ID | 13.2.3.3 |
+| Level | Activity |
+| Parent | [13.2.3](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.ProjectPlans
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `project plans` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop project plans"]
+        S1["Define roles and resources"]
+        S2["Acquire/secure project reso..."]
+        S3["Identify specific IT requir..."]
+        S4["Create training and communi..."]
+        S5["Design recognition and rewa..."]
+        S6["Design and plan launch of p..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define roles and resources](./DefineRolesAndResources) | 13.2.3.3.1 | Outlining the resources and their roles in the business projects |
+| [Acquire/secure project resources](./AcquiresecureProjectResources) | 13.2.3.3.2 | Procuring the necessary resources outlined in Define roles and resources [11123] |
+| [Identify specific IT requirements](./IdentifySpecificITRequirements) | 13.2.3.3.3 | Determining the IT requirements for specific business projects |
+| [Create training and communication plans](./CreateTrainingAndCommunicationPlans) | 13.2.3.3.4 | Designing a plan for equipping the project team with the necessary skills and abilities to fulfill t |
+| [Design recognition and reward approaches](./DesignRecognitionAndRewardApproaches) | 13.2.3.3.5 | Creating a plan for recognizing and rewarding extraordinary performances within the business project |
+| [Design and plan launch of project](./DesignAndPlanLaunchOfProject) | 13.2.3.3.6 | Creating a plan specifying when to initiate the project, and introducing it to the target audience |
+| [Deploy the project](./DeployTheProject) | 13.2.3.3.7 | Putting the project into position by effectively bringing it into action |
+
+
+## Related Concepts
+
+- [ProjectPlans](/concepts/ProjectPlans)
+
+
+---
+
+*Source: APQC PCF 16413 (13.2.3.3) - APQC*

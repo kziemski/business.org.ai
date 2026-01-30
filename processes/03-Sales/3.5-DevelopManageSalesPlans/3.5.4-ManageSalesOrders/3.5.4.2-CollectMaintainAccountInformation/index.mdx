@@ -1,0 +1,118 @@
+---
+id: CollectAndMaintainAccountInformation
+name: "Collect and maintain account information"
+code: "10195"
+hierarchyId: "3.5.4.2"
+type: Activity
+level: 4
+status: complete
+parent: "3.5.4"
+children: ["3.5.4.2.1", "3.5.4.2.2", "3.5.4.2.3", "3.5.4.2.4", "3.5.4.2.5", "3.5.4.2.6", "3.5.4.2.7", "3.5.4.2.8"]
+---
+
+# Collect and maintain account information
+
+> Collecting and maintaining all account information.
+
+## Overview
+
+Activity 3.5.4.2 is an activity within the Market and Sell Products and Services framework. 
+
+Collecting and maintaining all account information. Collect information about the purchase, servicing, return, and/or commitment of any products/services on part of the organization to its customers. Bring together information from various organizational divisions, and update periodically.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_5["3.5 Develop and manage sales plans"]
+    N3_5 --> N3_5_4["3.5.4 Manage sales orders"]
+    N3_5_4 --> N3_5_4_2["3.5.4.2 Collect and maintain account information"]
+    style N3_5_4_2 fill:#e1f5fe
+    N3_5_4_2 --> N3_5_4_2_1["3.5.4.2.1 Administer key account details"]
+    N3_5_4_2 --> N3_5_4_2_2["3.5.4.2.2 Retrieve full customer details"]
+    N3_5_4_2 --> N3_5_4_2_3["3.5.4.2.3 Modify involved party details"]
+    N3_5_4_2 --> N3_5_4_2_4["3.5.4.2.4 Record address details"]
+    N3_5_4_2 --> N3_5_4_2_5["3.5.4.2.5 Record contact details"]
+    N3_5_4_2 --> N3_5_4_2_6["3.5.4.2.6 Record key customer communicatio..."]
+    N3_5_4_2 --> N3_5_4_2_7["3.5.4.2.7 Review involved party information"]
+    N3_5_4_2 --> N3_5_4_2_8["3.5.4.2.8 Terminate involved party informa..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10195 |
+| Hierarchy ID | 3.5.4.2 |
+| Level | Activity |
+| Parent | [3.5.4](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+collect.AndMaintainAccountInformation
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `collect` | Primary action |
+| Object | `and maintain account information` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Collect and maintain account information"]
+        S1["Administer key account details"]
+        S2["Retrieve full customer details"]
+        S3["Modify involved party details"]
+        S4["Record address details"]
+        S5["Record contact details"]
+        S6["Record key customer communi..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Administer key account details](./AdministerKeyAccountDetails) | 3.5.4.2.1 | Managing essential information of customer accounts |
+| [Retrieve full customer details](./RetrieveFullCustomerDetails) | 3.5.4.2.2 | Obtaining detailed information about customers |
+| [Modify involved party details](./ModifyInvolvedPartyDetails) | 3.5.4.2.3 | Altering information about involved parties |
+| [Record address details](./RecordAddressDetails) | 3.5.4.2.4 | Documenting address information |
+| [Record contact details](./RecordContactDetails) | 3.5.4.2.5 | Documenting contact information |
+| [Record key customer communication profile details](./RecordKeyCustomerCommunicationProfileDetails) | 3.5.4.2.6 | Providing information about important business rules regarding communicating with customers |
+| [Review involved party information](./ReviewInvolvedPartyInformation) | 3.5.4.2.7 | Revising information about involved parties |
+| [Terminate involved party information](./TerminateInvolvedPartyInformation) | 3.5.4.2.8 | Dismissing information about involved parties |
+
+
+## Related Concepts
+
+- [AccountInformation](/concepts/AccountInformation)
+- [AccountInformation](/concepts/AccountInformation)
+
+
+---
+
+*Source: APQC PCF 10195 (3.5.4.2) - APQC*

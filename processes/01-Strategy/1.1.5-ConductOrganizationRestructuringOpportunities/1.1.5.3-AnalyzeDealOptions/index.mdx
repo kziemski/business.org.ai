@@ -1,0 +1,104 @@
+---
+id: AnalyzeDealOptions
+name: "Analyze deal options"
+code: "16795"
+hierarchyId: "1.1.5.3"
+type: Activity
+level: 4
+status: complete
+parent: "1.1.5"
+children: ["1.1.5.3.1", "1.1.5.3.2", "1.1.5.3.3", "1.1.5.3.4"]
+---
+
+# Analyze deal options
+
+> Examining various options shortlisted for assimilating new entities into the organization or dissociating from it.
+
+## Overview
+
+Activity 1.1.5.3 is an activity within the Develop Vision and Strategy framework. 
+
+Examining various options shortlisted for assimilating new entities into the organization or dissociating from it. Undertake a piecemeal and comprehensive consideration of each option identified for acquisition, merger, de-merger, and divestment. Consider intangible and non-material aspects of the entities involved and synergic aspects. Consider the assistance of specialist professional services.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_1_5["1.1.5 Conduct organization restructuring op..."]
+    N1_1_5 --> N1_1_5_3["1.1.5.3 Analyze deal options"]
+    style N1_1_5_3 fill:#e1f5fe
+    N1_1_5_3 --> N1_1_5_3_1["1.1.5.3.1 Evaluate acquisition options"]
+    N1_1_5_3 --> N1_1_5_3_2["1.1.5.3.2 Evaluate merger options"]
+    N1_1_5_3 --> N1_1_5_3_3["1.1.5.3.3 Evaluate de-merger options"]
+    N1_1_5_3 --> N1_1_5_3_4["1.1.5.3.4 Evaluate divesture options"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16795 |
+| Hierarchy ID | 1.1.5.3 |
+| Level | Activity |
+| Parent | [1.1.5](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+analyze.DealOptions
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `analyze` | Primary action |
+| Object | `deal options` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Analyze deal options"]
+        S1["Evaluate acquisition options"]
+        S2["Evaluate merger options"]
+        S3["Evaluate de-merger options"]
+        S4["Evaluate divesture options"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Evaluate acquisition options](./EvaluateAcquisitionOptions) | 1.1.5.3.1 | Appraising entities identified as being suitable for acquisition, taking into account the restructur |
+| [Evaluate merger options](./EvaluateMergerOptions) | 1.1.5.3.2 | Appraising entities identified as being suitable for a merger, taking stock of the restructuring opp |
+| [Evaluate de-merger options](./EvaluateDemergerOptions) | 1.1.5.3.3 | Evaluating departments and subsidiaries within the organization, and/or previously merged entities,  |
+| [Evaluate divesture options](./EvaluateDivestureOptions) | 1.1.5.3.4 | Evaluating departments and/or subsidiaries within the organization to assess the appropriateness of  |
+
+
+## Related Concepts
+
+- [DealOptions](/concepts/DealOptions)
+
+
+---
+
+*Source: APQC PCF 16795 (1.1.5.3) - APQC*

@@ -1,0 +1,103 @@
+---
+id: ServiceProductsAfterSales
+name: "Service products after sales"
+code: "12658"
+hierarchyId: "6.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "6"
+children: ["6.3.1", "6.3.2", "6.3.3", "6.3.4"]
+---
+
+# Service products after sales
+
+> Assigning post-sales policies and paying claims on purchased products.
+
+## Overview
+
+Group 6.3 is a process group within APQC Category 6.0 (Manage Customer Service). 
+
+Assigning post-sales policies and paying claims on purchased products. This is a process that is an administrative function focused on creating rules (claim codes). This group ensures that claims are valid and are processed quickly. As well as to quickly determine responsibility for claim settlement.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    style N6_3 fill:#e1f5fe
+    N6_3 --> N6_3_1["6.3.1 Register products"]
+    N6_3 --> N6_3_2["6.3.2 Process warranty claims"]
+    N6_3 --> N6_3_3["6.3.3 Manage supplier recovery"]
+    N6_3 --> N6_3_4["6.3.4 Service products"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 12658 |
+| Hierarchy ID | 6.3 |
+| Level | Group |
+| Parent | [6](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+service.ProductsAfterSales
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `service` | Primary action |
+| Object | `products after sales` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Service products after sales"]
+        S1["Register products"]
+        S2["Process warranty claims"]
+        S3["Manage supplier recovery"]
+        S4["Service products"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Register products](./RegisterProducts) | 6.3.1 | Filing product registrations |
+| [Process warranty claims](./6.3.2-ProcessWarrantyClaims/) | 6.3.2 | Identifying, investigating, and processes warranty claims |
+| [Manage supplier recovery](./6.3.3-ManageSupplierRecovery/) | 6.3.3 | Managing the recovery of costs from suppliers for individual claims |
+| [Service products](./6.3.4-ServiceProducts/) | 6.3.4 | Validating specific service requirements for individual customers |
+
+
+## Related Concepts
+
+- [ProductsAfterSales](/concepts/ProductsAfterSales)
+
+
+---
+
+*Source: APQC PCF 12658 (6.3) - APQC*

@@ -1,0 +1,58 @@
+---
+id: ApproveOrRejectWarrantyClaim
+name: "Approve or reject warranty claim"
+code: "12668"
+hierarchyId: "6.3.2.6"
+type: Activity
+level: 4
+status: complete
+parent: "6.3.2"
+---
+
+# Approve or reject warranty claim
+
+> Following Defining issue [20098], an approval or rejection with be made against the warranty claim.
+
+## Overview
+
+Activity 6.3.2.6 is an activity within the Manage Customer Service framework. 
+
+Following Defining issue [20098], an approval or rejection with be made against the warranty claim. If it is deemed that the claim falls within the warranty parameters, the claim will be approved. If the claim is deemed to fall outside warranty parameters, the claim with be rejected.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_2["6.3.2 Process warranty claims"]
+    N6_3_2 --> N6_3_2_6["6.3.2.6 Manage union relations"]
+    style N6_3_2_6 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 12668 |
+| Hierarchy ID | 6.3.2.6 |
+| Level | Activity |
+| Parent | [6.3.2](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+approve.OrRejectWarrantyClaim
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `approve` | Primary action |
+| Object | `or reject warranty claim` | Direct object |
+
+
+---
+
+*Source: APQC PCF 12668 (6.3.2.6) - APQC*

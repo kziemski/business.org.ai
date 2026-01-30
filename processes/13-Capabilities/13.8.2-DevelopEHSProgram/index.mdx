@@ -1,0 +1,103 @@
+---
+id: DevelopEhsProgram
+name: "Develop EHS program"
+code: "11181"
+hierarchyId: "13.8.2"
+type: Process
+level: 3
+status: complete
+parent: "13.8"
+children: ["13.8.2.1", "13.8.2.2", "13.8.2.3", "13.8.2.4"]
+---
+
+# Develop EHS program
+
+> Identify the requirements for regulation and shareholders.
+
+## Overview
+
+Process 13.8.2 is a core process that defines the specific procedures for develop ehs program. 
+
+Identify the requirements for regulation and shareholders. Assess future risks and opportunities. Develop a policy for the EHS program. Record and manage EHS program events.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_8_2["13.8.2 Develop EHS program"]
+    style N13_8_2 fill:#e1f5fe
+    N13_8_2 --> N13_8_2_1["13.8.2.1 Identify regulatory and stakehol..."]
+    N13_8_2 --> N13_8_2_2["13.8.2.2 Assess future risks and opportun..."]
+    N13_8_2 --> N13_8_2_3["13.8.2.3 Create EHS policy"]
+    N13_8_2 --> N13_8_2_4["13.8.2.4 Record and manage EHS events"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11181 |
+| Hierarchy ID | 13.8.2 |
+| Level | Process |
+| Parent | [13.8](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.EHSProgram
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `EHS program` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop EHS program"]
+        S1["Identify regulatory and sta..."]
+        S2["Assess future risks and opp..."]
+        S3["Create EHS policy"]
+        S4["Record and manage EHS events"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify regulatory and stakeholder requirements](./IdentifyRegulatoryAndStakeholderRequirements) | 13.8.2.1 | Determining any protocols or standards to comply with, set by regulatory agencies or the organizatio |
+| [Assess future risks and opportunities](./AssessFutureRisksAndOpportunities) | 13.8.2.2 | Evaluating any risks and opportunities that might affect the environmental, health, and safety of pr |
+| [Create EHS policy](./CreateEHSPolicy) | 13.8.2.3 | Creating a plan for managing the environmental, health, and safety impact of products/services |
+| [Record and manage EHS events](./RecordAndManageEHSEvents) | 13.8.2.4 | Recording and managing all events and activities associated with complying with environmental, healt |
+
+
+## Related Concepts
+
+- [EHSProgram](/concepts/EHSProgram)
+
+
+---
+
+*Source: APQC PCF 11181 (13.8.2) - APQC*

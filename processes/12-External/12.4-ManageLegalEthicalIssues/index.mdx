@@ -1,0 +1,118 @@
+---
+id: ManageLegalAndEthicalIssues
+name: "Manage legal and ethical issues"
+code: "11013"
+hierarchyId: "12.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "12"
+children: ["12.4.1", "12.4.2", "12.4.3", "12.4.4", "12.4.5", "12.4.6", "12.4.7", "12.4.8", "12.4.9"]
+---
+
+# Manage legal and ethical issues
+
+> Managing legal practices to abide by the law, as well as ethical practices.
+
+## Overview
+
+Group 12.4 is a process group within APQC Category 12.0 (Manage External Relationships). 
+
+Managing legal practices to abide by the law, as well as ethical practices.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_4["12.4 Manage legal and ethical issues"]
+    style N12_4 fill:#e1f5fe
+    N12_4 --> N12_4_1["12.4.1 Create ethics policies"]
+    N12_4 --> N12_4_2["12.4.2 Manage corporate governance poli..."]
+    N12_4 --> N12_4_3["12.4.3 Develop and perform preventive l..."]
+    N12_4 --> N12_4_4["12.4.4 Ensure compliance"]
+    N12_4 --> N12_4_5["12.4.5 Manage outside counsel"]
+    N12_4 --> N12_4_6["12.4.6 Protect intellectual property"]
+    N12_4 --> N12_4_7["12.4.7 Resolve disputes and litigations"]
+    N12_4 --> N12_4_8["12.4.8 Provide legal advice/counseling"]
+    N12_4 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11013 |
+| Hierarchy ID | 12.4 |
+| Level | Group |
+| Parent | [12](../) |
+| Sub-Processes | 9 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.LegalAndEthicalIssues
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `legal and ethical issues` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage legal and ethical issues"]
+        S1["Create ethics policies"]
+        S2["Manage corporate governance..."]
+        S3["Develop and perform prevent..."]
+        S4["Ensure compliance"]
+        S5["Manage outside counsel"]
+        S6["Protect intellectual property"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create ethics policies](./CreateEthicsPolicies) | 12.4.1 | Creating a code of ethics that communicate the organization's philosophy to employees, vendors, cust |
+| [Manage corporate governance policies](./ManageCorporateGovernancePolicies) | 12.4.2 | Administering the system of rules, practices, and processes through which a company is directed and  |
+| [Develop and perform preventive law programs](./DevelopAndPerformPreventiveLawPrograms) | 12.4.3 | Creating and applying programs and activities |
+| [Ensure compliance](./12.4.4-EnsureCompliance/) | 12.4.4 | Ensuring the organization's compliance position |
+| [Manage outside counsel](./12.4.5-ManageOutsideCounsel/) | 12.4.5 | Managing professionals, sought externally for assistance over legal and ethical concerns |
+| [Protect intellectual property](./12.4.6-ProtectIntellectualProperty/) | 12.4.6 | Safeguarding the intellectual property of the organization |
+| [Resolve disputes and litigations](./ResolveDisputesAndLitigations) | 12.4.7 | Resolving disputes or civil lawsuits internally or externally |
+| [Provide legal advice/counseling](./ProvideLegalAdvicecounseling) | 12.4.8 | Providing legal advice concerning the substance or procedure of a law in relation to a particular si |
+| [Negotiate and document agreements/contracts](./NegotiateAndDocumentAgreementscontracts) | 12.4.9 | Negotiating terms to reach a final draft of a contract that is acceptable to all parties |
+
+
+## Related Concepts
+
+- [LegalIssues](/concepts/LegalIssues)
+- [EthicalIssues](/concepts/EthicalIssues)
+
+
+---
+
+*Source: APQC PCF 11013 (12.4) - APQC*

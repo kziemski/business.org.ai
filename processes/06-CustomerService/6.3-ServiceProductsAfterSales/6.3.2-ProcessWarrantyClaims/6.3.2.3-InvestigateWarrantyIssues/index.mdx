@@ -1,0 +1,109 @@
+---
+id: InvestigateWarrantyIssues
+name: "Investigate warranty issues"
+code: "20097"
+hierarchyId: "6.3.2.3"
+type: Activity
+level: 4
+status: complete
+parent: "6.3.2"
+children: ["6.3.2.3.1", "6.3.2.3.2", "6.3.2.3.3", "6.3.2.3.4", "6.3.2.3.5"]
+---
+
+# Investigate warranty issues
+
+> Executing investigational and analysis of warranty claims.
+
+## Overview
+
+Activity 6.3.2.3 is an activity within the Manage Customer Service framework. 
+
+Executing investigational and analysis of warranty claims. This involves notification and definition of a warranty issue, includes the scheduling of a field service agent to perform further investigation; the request and receipt of defective parts; and diagnosis/root cause analysis. This concludes with the receipt of the result and recommendation for corrective action.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_2["6.3.2 Process warranty claims"]
+    N6_3_2 --> N6_3_2_3["6.3.2.3 Investigate warranty issues"]
+    style N6_3_2_3 fill:#e1f5fe
+    N6_3_2_3 --> N6_3_2_3_1["6.3.2.3.1 Define issue"]
+    N6_3_2_3 --> N6_3_2_3_2["6.3.2.3.2 Schedule field service"]
+    N6_3_2_3 --> N6_3_2_3_3["6.3.2.3.3 Request and receive defective part"]
+    N6_3_2_3 --> N6_3_2_3_4["6.3.2.3.4 Investigate issue/perform root c..."]
+    N6_3_2_3 --> N6_3_2_3_5["6.3.2.3.5 Receive investigation result/rec..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20097 |
+| Hierarchy ID | 6.3.2.3 |
+| Level | Activity |
+| Parent | [6.3.2](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+investigate.WarrantyIssues
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `investigate` | Primary action |
+| Object | `warranty issues` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Investigate warranty issues"]
+        S1["Define issue"]
+        S2["Schedule field service"]
+        S3["Request and receive defecti..."]
+        S4["Investigate issue/perform r..."]
+        S5["Receive investigation resul..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define issue](./DefineIssue) | 6.3.2.3.1 | Defining the issue of the claim |
+| [Schedule field service](./ScheduleFieldService) | 6.3.2.3.2 | Scheduling additional investigative field service |
+| [Request and receive defective part](./RequestAndReceiveDefectivePart) | 6.3.2.3.3 | Requesting receipt of a defective part for further investigation |
+| [Investigate issue/perform root cause analysis](./InvestigateIssueperformRootCauseAnalysis) | 6.3.2.3.4 | Investigating claims by an appropriate functional representative |
+| [Receive investigation result/recommendation for corrective action](./ReceiveInvestigationResultrecommendationForCorrectiveAction) | 6.3.2.3.5 | Receiving investigative results to assess claim approval or denial |
+
+
+## Related Concepts
+
+- [WarrantyIssues](/concepts/WarrantyIssues)
+
+
+---
+
+*Source: APQC PCF 20097 (6.3.2.3) - APQC*

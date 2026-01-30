@@ -1,0 +1,66 @@
+---
+id: VerifyApPayFileWithPurchaseOrderVendorMasterFile
+name: "Verify AP pay file with purchase order vendor master file"
+code: "10869"
+hierarchyId: "9.6.1.1"
+type: Activity
+level: 4
+status: complete
+parent: "9.6.1"
+---
+
+# Verify AP pay file with purchase order vendor master file
+
+> Matching records of bills to be paid with accounts.
+
+## Overview
+
+Activity 9.6.1.1 is an activity within the Manage Financial Resources framework. 
+
+Matching records of bills to be paid with accounts. Check accounts payable entries with vendor's account for every payment made.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_6["9.6 Process accounts payable and expense ..."]
+    N9_6 --> N9_6_1["9.6.1 Process accounts payable (AP)"]
+    N9_6_1 --> N9_6_1_1["9.6.1.1 Verify AP pay file with purchase orde..."]
+    style N9_6_1_1 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10869 |
+| Hierarchy ID | 9.6.1.1 |
+| Level | Activity |
+| Parent | [9.6.1](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+verify.APPayFile.with.PurchaseOrderVendorMasterFile
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `verify` | Primary action |
+| Object | `AP pay file` | Direct object |
+| Preposition | `with` | Relationship |
+| PrepObject | `purchase order vendor master file` | Indirect object |
+
+
+## Related Concepts
+
+- [APPayFile](/concepts/APPayFile)
+- [PurchaseOrderVendorMasterFile](/concepts/PurchaseOrderVendorMasterFile)
+
+
+---
+
+*Source: APQC PCF 10869 (9.6.1.1) - APQC*

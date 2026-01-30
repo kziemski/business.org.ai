@@ -1,0 +1,101 @@
+---
+id: SupportActivitiesForMining
+name: "Support Activities for Mining"
+code: "213"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Support Activities for Mining
+
+> Industries in the Support Activities for Mining subsector group establishments primarily providing support services, on a contract or fee basis (except geophysical surveying and mapping, mine site preparation, construction, and transportation activities), required for the mining and quarrying of minerals and for the extraction of oil and gas.
+
+## Overview
+
+Support Activities for Mining represents an important category within the Mining, Quarrying, and Oil and Gas Extraction sector (NAICS 21). This subsector encompasses establishments primarily engaged in support activities for mining.
+
+Industries in the Support Activities for Mining subsector group establishments primarily providing support services, on a contract or fee basis (except geophysical surveying and mapping, mine site preparation, construction, and transportation activities), required for the mining and quarrying of minerals and for the extraction of oil and gas. Establishments performing exploration for minerals, on a contract or fee basis, are included in this subsector. Exploration services include traditional prospecting methods, such as taking core samples and making geological observations at prospective sites. The activities performed on a contract or fee basis by establishments in the Support Activities for Mining subsector are also often performed in-house by mining operators. These activities include taking core samples, making geological observations at prospective sites, excavating slush pits and cellars, and such oil and gas operations as spudding in, drilling in, redrilling, directional drilling, and well surveying; running, cutting, and pulling casings, tubes, and rods; cementing and shooting wells; perforating well casings; acidizing and chemically treating wells; cleaning out, bailing, and swabbing wells; and operating oil and gas field gathering lines. Establishments primarily engaged in providing site preparation and related construction activities on a contract or fee basis are classified in Sector 23, Construction. Establishments primarily engaged in providing transportation activities in support of mining, quarrying, or oil and gas extraction are classified in Sector 48-49, Transportation and Warehousing, based on the primary activity.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S21["21: Mining, Quarrying, and Oil and Gas Extraction"]
+    S21 --> N213["213: Support Activities for Mining"]
+    style N213 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 213 |
+| Level | Subsector |
+| Parent | [Oil and Gas Extraction](../) |
+| Child Industries | 0 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Exploration"]
+        O2["Site Development"]
+        O3["Extraction"]
+        O4["Processing"]
+        O5["Reclamation"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Safety Systems"]
+        S2["Equipment Maintenance"]
+        S3["Environmental Compliance"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Equipment"]
+        I2["Energy"]
+        I3["Labor"]
+        I4["Permits"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Minerals"]
+        O2["Oil/Gas"]
+        O3["Raw Materials"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Refineries"]
+        C2["Manufacturers"]
+        C3["Utilities"]
+        C4["Export Markets"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 213 - Support Activities for Mining*

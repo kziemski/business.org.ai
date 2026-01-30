@@ -1,0 +1,395 @@
+---
+id: Certifications
+name: "Liaise with external certification authorities"
+code: "20126"
+hierarchyId: "7.3.4.3"
+type: Process
+status: complete
+---
+
+# Liaise with external certification authorities
+
+> Coordinating with third party certification authorities to provide training and certifications for necessary skills.
+
+## Overview
+
+Liaise with external certification authorities (APQC 7.3.4.3) is an activity within the "Develop and train employees" process that extends into external relationship management. This process involves establishing and maintaining relationships with certification bodies, professional associations, and accreditation organizations to ensure employees obtain necessary professional credentials and the organization maintains required certifications.
+
+The process encompasses identifying certification requirements, coordinating with certification bodies, facilitating employee certification processes, managing organizational certifications, and maintaining relationships with industry accreditation authorities. Effective liaison ensures the organization and its workforce maintain the credentials necessary for competitive advantage and regulatory compliance.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage<br/>Human Capital"] --> G73["7.3 Develop and<br/>train employees"]
+    G73 --> P731["7.3.1 Align employee and<br/>organization goals"]
+    G73 --> P732["7.3.2 Assess and maintain<br/>training programs"]
+    G73 --> P733["7.3.3 Develop functional/<br/>process competencies"]
+    G73 --> P734["7.3.4 Develop management/<br/>leadership competencies"]
+
+    P734 --> A7341["7.3.4.1 Develop leadership<br/>training programs"]
+    P734 --> A7342["7.3.4.2 Develop executive<br/>coaching programs"]
+    P734 --> A7343["7.3.4.3 Liaise with external<br/>certification authorities"]
+
+    style A7343 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20126 |
+| Hierarchy ID | 7.3.4.3 |
+| Level | Activity |
+| Category | [Develop and Manage Human Capital](/processes/07-HR) |
+| Parent Process | [Develop management/leadership competencies](./index.mdx) |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Certification Requirements"]
+        I2["Regulatory Mandates"]
+        I3["Workforce Skills Inventory"]
+        I4["Industry Standards"]
+        I5["Business Objectives"]
+        I6["Budget Allocation"]
+    end
+
+    subgraph Process["Liaise with Certification Authorities"]
+        P1["Identify Certification<br/>Requirements"]
+        P2["Research Certification<br/>Bodies"]
+        P3["Establish<br/>Relationships"]
+        P4["Coordinate<br/>Certifications"]
+        P5["Track and Maintain<br/>Credentials"]
+        P6["Evaluate<br/>Effectiveness"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P1
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Certified Employees"]
+        O2["Organizational Certifications"]
+        O3["Certification Database"]
+        O4["Renewal Schedules"]
+        O5["Partnership Agreements"]
+        O6["Compliance Documentation"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+liaise.with.CertificationAuthorities.for.SkillDevelopment
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `liaise` | Primary action of coordinating and communicating |
+| Object | `CertificationAuthorities` | External credentialing organizations |
+| Preposition | `for` | Purpose of the liaison |
+| PrepObject | `SkillDevelopment` | Employee skill certification |
+
+## Activities
+
+### Identify certification requirements
+
+Determining which certifications are required or beneficial for employees and the organization based on regulatory requirements, industry standards, and business objectives.
+
+```mermaid
+sequenceDiagram
+    participant HR as HR/L&D
+    participant Compliance as Compliance
+    participant Business as Business Units
+    participant Legal as Legal
+
+    HR->>Compliance: Request regulatory certification needs
+    Compliance->>HR: Provide mandatory certifications
+    HR->>Business: Identify role-specific requirements
+    Business->>HR: Report certification needs
+    HR->>Legal: Verify professional licensing requirements
+    Legal->>HR: Confirm legal mandates
+    HR->>HR: Compile certification requirements matrix
+```
+
+**Tasks:**
+- `identify.MandatoryCertifications` - Catalog legally required certifications
+- `identify.IndustryStandards` - Determine industry-recognized credentials
+- `assess.RoleRequirements` - Map certifications to job roles
+- `prioritize.Certifications` - Rank certifications by business value
+
+### Research certification bodies
+
+Evaluating and selecting appropriate certification authorities and programs that meet organizational needs.
+
+```mermaid
+sequenceDiagram
+    participant HR as HR/L&D
+    participant Research as Research Team
+    participant Procurement as Procurement
+    participant SMEs as Subject Matter Experts
+
+    HR->>Research: Request certification body analysis
+    Research->>Research: Evaluate certification programs
+    Research->>SMEs: Validate program quality
+    SMEs->>Research: Provide technical assessment
+    Research->>Procurement: Request pricing analysis
+    Procurement->>Research: Provide cost comparison
+    Research->>HR: Present certification body recommendations
+```
+
+**Tasks:**
+- `research.CertificationBodies` - Identify available certification authorities
+- `evaluate.ProgramQuality` - Assess certification program rigor
+- `compare.Costs` - Analyze certification costs and value
+- `assess.Recognition` - Evaluate industry recognition of credentials
+
+### Establish relationships
+
+Building formal partnerships and agreements with certification authorities to facilitate employee certifications.
+
+```mermaid
+sequenceDiagram
+    participant HR as HR Leadership
+    participant Legal as Legal
+    participant Certification as Certification Body
+    participant Finance as Finance
+
+    HR->>Certification: Initiate partnership discussion
+    Certification->>HR: Propose partnership terms
+    HR->>Legal: Review agreement terms
+    Legal->>HR: Provide contract recommendations
+    HR->>Finance: Confirm budget allocation
+    Finance->>HR: Approve funding
+    HR->>Certification: Execute partnership agreement
+    Certification->>HR: Confirm relationship
+```
+
+**Tasks:**
+- `negotiate.PartnershipTerms` - Discuss volume discounts and benefits
+- `execute.Agreements` - Formalize certification partnerships
+- `establish.Communications` - Set up ongoing liaison channels
+- `document.Relationships` - Record partnership details
+
+### Coordinate certifications
+
+Managing the logistics of employee certification processes including registration, preparation, and examination.
+
+```mermaid
+sequenceDiagram
+    participant HR as HR/L&D
+    participant Employee as Employees
+    participant Certification as Certification Body
+    participant Manager as Managers
+
+    HR->>Employee: Communicate certification opportunities
+    Employee->>HR: Express interest/requirement
+    HR->>Manager: Confirm certification need
+    Manager->>HR: Approve certification
+    HR->>Certification: Register employees
+    Certification->>Employee: Provide preparation materials
+    Employee->>Certification: Complete examination
+    Certification->>HR: Report results
+```
+
+**Tasks:**
+- `register.Candidates` - Enroll employees in certification programs
+- `coordinate.Preparation` - Arrange study materials and training
+- `schedule.Examinations` - Book certification assessments
+- `support.Candidates` - Provide ongoing assistance to candidates
+
+### Track and maintain credentials
+
+Managing the certification database to ensure all credentials remain current and renewals are completed on time.
+
+```mermaid
+sequenceDiagram
+    participant System as Certification System
+    participant HR as HR/L&D
+    participant Employee as Employees
+    participant Certification as Certification Body
+
+    System->>HR: Alert on upcoming expirations
+    HR->>Employee: Notify renewal requirement
+    Employee->>HR: Confirm renewal intent
+    HR->>Certification: Process renewal
+    Certification->>Employee: Issue renewed credential
+    Employee->>HR: Submit credential copy
+    HR->>System: Update certification database
+```
+
+**Tasks:**
+- `maintain.CertificationDatabase` - Keep credential records current
+- `monitor.Expirations` - Track certification renewal dates
+- `process.Renewals` - Manage credential renewal processes
+- `verify.Credentials` - Validate certification authenticity
+
+### Evaluate effectiveness
+
+Assessing the value and impact of certification programs on employee performance and organizational capabilities.
+
+```mermaid
+sequenceDiagram
+    participant HR as HR/L&D
+    participant Analytics as HR Analytics
+    participant Managers as Managers
+    participant Business as Business Units
+
+    HR->>Analytics: Request certification metrics
+    Analytics->>HR: Provide certification data
+    HR->>Managers: Survey certification impact
+    Managers->>HR: Report performance observations
+    HR->>Business: Assess capability improvements
+    Business->>HR: Provide business impact data
+    HR->>HR: Compile effectiveness report
+```
+
+**Tasks:**
+- `measure.CertificationRates` - Track certification completion rates
+- `assess.PerformanceImpact` - Evaluate certified employee performance
+- `analyze.ROI` - Calculate return on certification investment
+- `recommend.Improvements` - Identify program optimization opportunities
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Identify certification requirements | L&D Team | Chief HR Officer | Compliance, Legal | Business Units |
+| Research certification bodies | L&D Specialist | L&D Director | SMEs, Procurement | HR Leadership |
+| Establish relationships | L&D Director | CHRO | Legal, Finance | Employees |
+| Coordinate certifications | L&D Coordinator | L&D Director | Certification Bodies | Managers |
+| Track and maintain credentials | HRIS Team | L&D Director | Employees | Compliance |
+| Evaluate effectiveness | L&D Analyst | CHRO | Managers | Executive Team |
+
+## Related Departments
+
+- [Human Resources](/departments/HR) - Primary ownership of certification coordination
+- [Learning & Development](/departments/Learning) - Training and preparation support
+- [Compliance](/departments/Compliance) - Regulatory certification requirements
+- [Legal](/departments/Legal) - Professional licensing requirements
+- [Finance](/departments/Finance) - Certification budget management
+
+## Related Occupations
+
+- [Training and Development Managers](/occupations/TrainingManagers) - Certification program oversight
+- [Human Resources Specialists](/occupations/HRSpecialists) - Certification coordination
+- [Compliance Officers](/occupations/ComplianceOfficers) - Regulatory certification tracking
+- [Training and Development Specialists](/occupations/TrainingSpecialists) - Certification support
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Aerospace requires extensive certifications including AS9100 auditor credentials, NDT certifications, security clearances, and specialized manufacturing certifications from industry bodies.
+
+**Industry-Specific Activities:**
+- Coordinate AS9100/9110/9120 auditor certifications
+- Manage NDT (Non-Destructive Testing) certifications
+- Liaise with NADCAP for special process certifications
+- Coordinate FAA/EASA aircraft mechanic certifications
+
+### Banking
+
+Financial institutions require extensive regulatory certifications including securities licenses, compliance certifications, and anti-money laundering credentials.
+
+**Industry-Specific Activities:**
+- Coordinate FINRA securities licensing
+- Manage AML/BSA compliance certifications
+- Liaise with banking certification bodies
+- Coordinate CPA and CFA certifications
+
+### Healthcare Provider
+
+Healthcare organizations manage extensive clinical certifications, licensure, and specialty credentials across medical, nursing, and allied health professions.
+
+**Industry-Specific Activities:**
+- Coordinate nursing license verifications
+- Manage medical board certifications
+- Liaise with specialty certification boards
+- Coordinate CME credit tracking
+
+### Life Sciences
+
+Pharmaceutical and biotech companies require regulatory affairs certifications, GMP training credentials, and clinical research certifications.
+
+**Industry-Specific Activities:**
+- Coordinate RAC (Regulatory Affairs Certification)
+- Manage GMP training certifications
+- Liaise with clinical research certification bodies
+- Coordinate pharmacovigilance certifications
+
+### Education
+
+Educational institutions manage teacher certifications, administrative credentials, and specialized endorsements through state education departments.
+
+**Industry-Specific Activities:**
+- Coordinate teacher certification renewals
+- Manage administrative credentials
+- Liaise with state education departments
+- Coordinate subject-area endorsements
+
+### Utilities
+
+Utility companies require extensive operator certifications, safety credentials, and environmental certifications for field personnel.
+
+**Industry-Specific Activities:**
+- Coordinate NERC operator certifications
+- Manage safety certifications (OSHA, confined space)
+- Liaise with environmental certification bodies
+- Coordinate lineman and technician certifications
+
+### Automotive
+
+Automotive organizations manage ASE certifications, manufacturer-specific credentials, and quality system certifications for technicians and engineers.
+
+**Industry-Specific Activities:**
+- Coordinate ASE technician certifications
+- Manage OEM-specific training certifications
+- Liaise with IATF 16949 certification bodies
+- Coordinate EV/hybrid system certifications
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| Identify certification requirements | - | Determine needed credentials |
+| Research certification bodies | - | Evaluate certification authorities |
+| Establish relationships | - | Build partnerships with bodies |
+| Coordinate certifications | - | Manage certification logistics |
+| Track and maintain credentials | - | Maintain certification database |
+| Evaluate effectiveness | - | Assess certification program value |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Training["7.3 Develop and<br/>Train Employees"] --> LCA["7.3.4.3 Liaise with<br/>Certification Authorities"]
+
+    LCA --> Performance["7.4 Manage Employee<br/>Performance"]
+    LCA --> External["12.0 Manage External<br/>Relationships"]
+    LCA --> Compliance["11.0 Manage Risk<br/>and Compliance"]
+    LCA --> Reviews["Conduct External<br/>Reviews"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Certification Rate | Percentage of required certifications obtained | >95% |
+| Renewal Compliance | On-time certification renewals | 100% |
+| First-Time Pass Rate | Employees passing certification on first attempt | >80% |
+| Certification ROI | Return on certification investment | >150% |
+| Time to Certification | Average days to obtain certification | <90 days |
+| Cost per Certification | Average cost including prep and exam | Benchmark |
+
+---
+
+*Source: APQC PCF 20126 (7.3.4.3) - Cross-Industry*

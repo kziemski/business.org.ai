@@ -1,0 +1,118 @@
+---
+id: PerformGlobalTradeServices
+name: "Perform global trade services"
+code: "17059"
+hierarchyId: "9.11"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.11.1", "9.11.2", "9.11.3", "9.11.4", "9.11.5", "9.11.6", "9.11.7", "9.11.8", "9.11.9", "9.11.10"]
+---
+
+# Perform global trade services
+
+> Making and collecting payments for transactions in products/services, and transporting them to interested markets.
+
+## Overview
+
+Group 9.11 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Making and collecting payments for transactions in products/services, and transporting them to interested markets.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_11["9.11 Perform global trade services"]
+    style N9_11 fill:#e1f5fe
+    N9_11 --> N9_11_1["9.11.1 Screen sanctioned party list"]
+    N9_11 --> N9_11_2["9.11.2 Control exports and imports"]
+    N9_11 --> N9_11_3["9.11.3 Classify products"]
+    N9_11 --> N9_11_4["9.11.4 Perform currency conversion"]
+    N9_11 --> N9_11_5["9.11.5 Calculate duty"]
+    N9_11 --> N9_11_6["9.11.6 Communicate with customs"]
+    N9_11 --> N9_11_7["9.11.7 Document trade"]
+    N9_11 --> N9_11_8["9.11.8 Process trade preferences"]
+    N9_11 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17059 |
+| Hierarchy ID | 9.11 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 10 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.GlobalTradeServices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `global trade services` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform global trade services"]
+        S1["Screen sanctioned party list"]
+        S2["Control exports and imports"]
+        S3["Classify products"]
+        S4["Perform currency conversion"]
+        S5["Calculate duty"]
+        S6["Communicate with customs"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Screen sanctioned party list](./ScreenSanctionedPartyList) | 9.11.1 | Evaluating the approved list of parties for engaging in international trade in order to ensure the s |
+| [Control exports and imports](./ControlExportsAndImports) | 9.11.2 | Overseeing and directing the flow of trade to/from the organization in order to ensure financial gai |
+| [Classify products](./ClassifyProducts) | 9.11.3 | Systematically categorizing products/services for their suitability to international trade |
+| [Perform currency conversion](./PerformCurrencyConversion) | 9.11.4 | Identifying current exchange rates between two currencies and converting the foreign currency to tha |
+| [Calculate duty](./CalculateDuty) | 9.11.5 | Computing the excise duty to be paid during international trade |
+| [Communicate with customs](./CommunicateWithCustoms) | 9.11.6 | Communicating with the customs department to ensure fluid compliance |
+| [Document trade](./DocumentTrade) | 9.11.7 | Documenting and recording the trade processes while making transactions, noting the description, qua |
+| [Process trade preferences](./ProcessTradePreferences) | 9.11.8 | Preparing global trade under preference, which allows the organization to import/export products at  |
+| [Handle restitution](./HandleRestitution) | 9.11.9 | Administering and overseeing all restitution activities the organization may be subjected to |
+| [Prepare letter of credit](./PrepareLetterOfCredit) | 9.11.10 | Creating a document assuring that a seller will receive payment when certain delivery conditions are |
+
+
+## Related Concepts
+
+- [GlobalTradeServices](/concepts/GlobalTradeServices)
+
+
+---
+
+*Source: APQC PCF 17059 (9.11) - APQC*

@@ -1,0 +1,202 @@
+---
+id: ProcessCategory2
+name: "Design and Develop Products and Services"
+code: "2.0"
+hierarchyId: "2.0"
+type: ProcessCategory
+status: complete
+---
+
+# Design and Develop Products and Services
+
+> Designing, developing, and managing the products and services that an organization offers to its customers. This involves understanding customer needs, creating organizational designs to support product/service delivery, and continuously improving the customer experience.
+
+## Overview
+
+APQC Category 2.0 - Design and Develop Products and Services is a critical operating process category that encompasses all activities related to creating and refining the products and services an organization delivers to its customers. This category bridges strategic vision (Category 1.0) with operational execution (Categories 3.0-6.0) by translating market needs into deliverable offerings.
+
+Organizations use these processes to ensure their products and services meet customer expectations, align with brand values, and can be efficiently delivered through well-designed organizational structures. The processes within this category span from organizational design to customer experience optimization.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop<br/>Products and Services"] --> G21["2.1 Manage product/service<br/>portfolio"]
+    C2 --> G22["2.2 Develop products<br/>and services"]
+    C2 --> G23["2.3 Create organizational<br/>design"]
+    C2 --> G24["2.4 Develop customer<br/>experience"]
+
+    G23 --> P231["2.3.1 Evaluate breadth and depth<br/>of organizational structure"]
+    G23 --> P232["2.3.2 Perform job-specific roles<br/>mapping and value-added analyses"]
+    G23 --> P233["2.3.3 Develop role activity diagrams<br/>to assess hand-off activity"]
+    G23 --> P234["2.3.4 Perform organization<br/>redesign workshops"]
+    G23 --> P235["2.3.5 Design relationships between<br/>organizational units"]
+    G23 --> P236["2.3.6 Develop role analysis and<br/>activity diagrams for key processes"]
+    G23 --> P237["2.3.7 Assess organizational implication<br/>of feasible alternatives"]
+    G23 --> P238["2.3.8 Migrate to new organization"]
+
+    G24 --> P241["2.4.1 Design customer experience"]
+    G24 --> P242["2.4.2 Design customer experience<br/>support structure"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10003 |
+| Hierarchy ID | 2.0 |
+| Level | Category |
+| Process Groups | 4 |
+| Total Processes | 50+ |
+
+## GraphDL Semantic Structure
+
+```
+design.ProductsAndServices
+develop.ProductsAndServices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design`, `develop` | Primary actions of creating and refining |
+| Object | `ProductsAndServices` | The offerings delivered to customers |
+| Preposition | - | Not applicable at category level |
+| PrepObject | - | Not applicable at category level |
+
+## Processes in this Category
+
+### 2.1 Manage product/service portfolio
+
+Managing the collection of products and services offered by the organization, including lifecycle management and portfolio optimization.
+
+### 2.2 Develop products and services
+
+Creating new products and services through research, design, prototyping, and testing processes.
+
+### 2.3 Create organizational design
+
+Formulating a design for the organization's resources that allows it to meet its objectives.
+
+- [Create organizational design](./OrgDesign.mdx) - Process 2.3
+- [Perform organization redesign workshops](./RedesignWorkshops.mdx) - Activity 2.3.4
+- [Design relationships between organizational units](./UnitRelationships.mdx) - Activity 2.3.5
+
+### 2.4 Develop customer experience
+
+Defining a roadmap to meet customer expectations while considering business impact.
+
+- [Design customer experience](./CustomerExperience.mdx) - Process 2.4.1
+- [Design customer experience support structure](./SupportStructure.mdx) - Process 2.4.2
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Strategic Vision"]
+        I2["Market Research"]
+        I3["Customer Feedback"]
+        I4["Competitive Analysis"]
+        I5["Technology Capabilities"]
+    end
+
+    subgraph Process["Design and Develop Products/Services"]
+        P1["Manage Portfolio"]
+        P2["Develop Products"]
+        P3["Create Org Design"]
+        P4["Develop CX"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Product Portfolio"]
+        O2["New Products/Services"]
+        O3["Organizational Structure"]
+        O4["Customer Experience Design"]
+        O5["Support Structure"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Manage product portfolio | Product Management | CPO | Marketing, Sales | Executive Team |
+| Develop products/services | R&D, Engineering | CTO | Marketing, Operations | All Departments |
+| Create organizational design | HR, Strategy | COO | All Departments | All Employees |
+| Develop customer experience | CX Team | CMO | Sales, Support | All Departments |
+
+## Related Departments
+
+- [Product Management](/departments/Product) - Portfolio and product development
+- [Research & Development](/departments/RD) - Innovation and development
+- [Human Resources](/departments/HR) - Organizational design
+- [Customer Experience](/departments/CX) - Experience design
+- [Marketing](/departments/Marketing) - Market insights and brand alignment
+
+## Related Occupations
+
+- [Product Managers](/occupations/ProductManagers) - Portfolio and product leadership
+- [UX Designers](/occupations/UXDesigners) - Experience design
+- [Organizational Development Specialists](/occupations/OrgDevelopment) - Organizational design
+- [Business Analysts](/occupations/BusinessAnalysts) - Process analysis
+- [Customer Experience Managers](/occupations/CXManagers) - Customer journey optimization
+
+## Industry Variations
+
+### Banking
+
+Banking focuses on digital product development, regulatory compliance, and omnichannel customer experience. Organizational design emphasizes risk management and compliance functions.
+
+**Industry-Specific Activities:**
+- Develop digital banking products
+- Design regulatory-compliant processes
+- Create omnichannel customer journeys
+
+### Healthcare Provider
+
+Healthcare organizations design products and services around patient outcomes, care pathways, and value-based care models.
+
+**Industry-Specific Activities:**
+- Design care delivery services
+- Develop patient experience programs
+- Create clinical organizational structures
+
+### Retail
+
+Retail emphasizes product merchandising, customer experience across channels, and agile organizational structures to respond to market trends.
+
+**Industry-Specific Activities:**
+- Manage product assortment and merchandising
+- Design omnichannel shopping experiences
+- Create customer-centric organizational models
+
+## Related Categories
+
+```mermaid
+graph LR
+    VS["1.0 Vision and Strategy"] --> PD["2.0 Design and Develop<br/>Products and Services"]
+    PD --> MS["3.0 Market and Sell"]
+    PD --> DP["4.0 Deliver Physical Products"]
+    PD --> DS["5.0 Deliver Services"]
+    PD --> CS["6.0 Manage Customer Service"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Product Development Cycle Time | Time from concept to launch | Industry benchmark |
+| Customer Satisfaction Score | Overall customer satisfaction | >85% |
+| Organizational Efficiency | Process efficiency measures | >90% |
+| Experience Design Effectiveness | CX improvement metrics | >15% YoY |
+| Portfolio Health Score | Balance and performance of portfolio | Top quartile |
+
+---
+
+*Source: APQC PCF Category 2.0 - Cross-Industry*

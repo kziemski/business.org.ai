@@ -1,0 +1,118 @@
+---
+id: PerformFinancialReporting
+name: "Perform financial reporting"
+code: "10750"
+hierarchyId: "9.3.4"
+type: Process
+level: 3
+status: complete
+parent: "9.3"
+children: ["9.3.4.1", "9.3.4.2", "9.3.4.3", "9.3.4.4", "9.3.4.5", "9.3.4.6", "9.3.4.7", "9.3.4.8", "9.3.4.9"]
+---
+
+# Perform financial reporting
+
+> Reporting on the organization's financial status to stakeholders.
+
+## Overview
+
+Process 9.3.4 is a core process that defines the specific procedures for perform financial reporting. 
+
+Reporting on the organization's financial status to stakeholders. Include balance sheets, income statements, cash flow statements, and statements of shareholders' equity.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_3["9.3 Perform general accounting and reporting"]
+    N9_3 --> N9_3_4["9.3.4 Perform financial reporting"]
+    style N9_3_4 fill:#e1f5fe
+    N9_3_4 --> N9_3_4_1["9.3.4.1 Prepare business unit financial ..."]
+    N9_3_4 --> N9_3_4_2["9.3.4.2 Prepare consolidated financial s..."]
+    N9_3_4 --> N9_3_4_3["9.3.4.3 Perform business unit reporting/..."]
+    N9_3_4 --> N9_3_4_4["9.3.4.4 Perform consolidated reporting/r..."]
+    N9_3_4 --> N9_3_4_5["9.3.4.5 Prepare statements for board review"]
+    N9_3_4 --> N9_3_4_6["9.3.4.6 Produce quarterly/annual filings..."]
+    N9_3_4 --> N9_3_4_7["9.3.4.7 Produce regulatory reports"]
+    N9_3_4 --> N9_3_4_8["9.3.4.8 Perform legal and management con..."]
+    N9_3_4 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10750 |
+| Hierarchy ID | 9.3.4 |
+| Level | Process |
+| Parent | [9.3](../) |
+| Sub-Processes | 9 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.FinancialReporting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `financial reporting` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform financial reporting"]
+        S1["Prepare business unit finan..."]
+        S2["Prepare consolidated financ..."]
+        S3["Perform business unit repor..."]
+        S4["Perform consolidated report..."]
+        S5["Prepare statements for boar..."]
+        S6["Produce quarterly/annual fi..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Prepare business unit financial statements](./PrepareBusinessUnitFinancialStatements) | 9.3.4.1 | Making reports of subsidiaries units to show profits generated from them |
+| [Prepare consolidated financial statements](./PrepareConsolidatedFinancialStatements) | 9.3.4.2 | Making final accounts for all units of company together |
+| [Perform business unit reporting/review management reports](./PerformBusinessUnitReportingreviewManagementReports) | 9.3.4.3 | Making reports for units/subsidiaries to help management in decision making |
+| [Perform consolidated reporting/review of cost management reports](./PerformConsolidatedReportingreviewOfCostManagementReports) | 9.3.4.4 | Making reports for all units to help higher management in decision making |
+| [Prepare statements for board review](./PrepareStatementsForBoardReview) | 9.3.4.5 | Preparing a draft of financial statements for the board to review before they are sent to the audito |
+| [Produce quarterly/annual filings and shareholder reports](./ProduceQuarterlyannualFilingsAndShareholderReports) | 9.3.4.6 | Making and presenting financial reports to stakeholders |
+| [Produce regulatory reports](./ProduceRegulatoryReports) | 9.3.4.7 | Reporting raw or summary data for final accounts following rules and regulations |
+| [Perform legal and management consolidation](./PerformLegalAndManagementConsolidation) | 9.3.4.8 | Carrying out activities associated with legal and management consolidation |
+| [Manage fixed-asset project accounting](./ManageFixedassetProjectAccounting) | 9.3.4.9 | Managing accounts for large funds-invested projects |
+
+
+## Related Concepts
+
+- [FinancialReporting](/concepts/FinancialReporting)
+
+
+---
+
+*Source: APQC PCF 10750 (9.3.4) - APQC*

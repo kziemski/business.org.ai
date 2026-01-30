@@ -1,0 +1,99 @@
+---
+id: OtherMotorVehicleDealers
+name: "Other Motor Vehicle Dealers"
+code: "4412"
+type: Industry
+status: complete
+---
+
+# Other Motor Vehicle Dealers
+
+> This industry group comprises establishments primarily engaged in retailing new and used vehicles (except automobiles, light trucks, sport utility vehicles, and passenger and cargo vans).
+
+## Overview
+
+This industry group encompasses dealers specializing in recreational vehicles, motorcycles, boats, all-terrain vehicles (ATVs), personal watercraft, utility trailers, and other specialty motor vehicles. These dealers often combine sales with extensive service operations, parts departments, and accessories, as specialized knowledge is required for these product categories.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    SS441["441: Motor Vehicle and Parts Dealers"]
+    SS441 --> G4412["4412: Other Motor Vehicle Dealers"]
+
+    G4412 --> I44121["44121: Recreational Vehicle Dealers"]
+    G4412 --> I44122["44122: Motorcycle, Boat, and Other Motor Vehicle Dealers"]
+
+    I44121 --> N441210["441210: Recreational Vehicle Dealers"]
+    I44122 --> N441222["441222: Boat Dealers"]
+    I44122 --> N441227["441227: Motorcycle, ATV, and All Other Motor Vehicle Dealers"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 4412 |
+| Level | Industry Group |
+| Parent | [Motor Vehicle and Parts Dealers](../) |
+| Industries | 2 |
+| National Industries | 3 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Recreational Vehicle Dealers](./RecreationalVehicleDealers.mdx) | 441210 | Motorhomes, travel trailers, campers |
+| [Boat Dealers](./BoatDealers.mdx) | 441222 | Power boats, sailboats, marine supplies |
+| [Motorcycle, ATV, and Other Vehicle Dealers](./MotorcycleAndOtherVehicleDealers.mdx) | 441227 | Motorcycles, ATVs, snowmobiles, PWC |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Sales["Sales Operations"]
+        S1["Product Consultation"]
+        S2["Demo/Test"]
+        S3["Trade Evaluation"]
+        S4["Financing"]
+        S5["Delivery/Training"]
+    end
+
+    subgraph Service["Service/Parts"]
+        V1["Winterization/Storage"]
+        V2["Repair/Maintenance"]
+        V3["Accessories Install"]
+        V4["Parts Sales"]
+    end
+
+    subgraph Seasonal["Seasonal Management"]
+        Z1["Pre-Season Prep"]
+        Z2["Peak Season Sales"]
+        Z3["Post-Season Storage"]
+    end
+
+    Sales --> Service
+    Seasonal -.-> Sales
+    Seasonal -.-> Service
+```
+
+## Regulatory Environment
+
+- DOT/NHTSA safety standards
+- EPA emissions compliance
+- State powersport licensing
+- Watercraft registration (Coast Guard, state)
+- Manufacturer franchise requirements
+- Consumer financing regulations
+
+## Technology & Innovation
+
+- Virtual product tours and configurators
+- Seasonal CRM and marketing automation
+- Service scheduling platforms
+- Inventory management for seasonal products
+- Digital parts catalogs
+
+---
+
+*Source: NAICS 4412 - Other Motor Vehicle Dealers*

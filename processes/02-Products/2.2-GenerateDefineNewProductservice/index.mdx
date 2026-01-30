@@ -1,0 +1,102 @@
+---
+id: GenerateAndDefineNewProductserviceIdeas
+name: "Generate and define new product/service ideas"
+code: "19698"
+hierarchyId: "2.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "2"
+children: ["2.2.1", "2.2.2", "2.2.3"]
+---
+
+# Generate and define new product/service ideas
+
+> Identifying and describing new product or service thoughts based on organizational objectives/targets.
+
+## Overview
+
+Group 2.2 is a process group within APQC Category 2.0 (Design and Develop Products and Services). 
+
+Identifying and describing new product or service thoughts based on organizational objectives/targets.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_2["2.2 Generate and define new product/servi..."]
+    style N2_2 fill:#e1f5fe
+    N2_2 --> N2_2_1["2.2.1 Perform discovery research"]
+    N2_2 --> N2_2_2["2.2.2 Generate new product/service con..."]
+    N2_2 --> N2_2_3["2.2.3 Define product/service developme..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19698 |
+| Hierarchy ID | 2.2 |
+| Level | Group |
+| Parent | [2](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+generate.AndDefineNewProductserviceIdeas
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `generate` | Primary action |
+| Object | `and define new product/service ideas` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Generate and define new product/service ideas"]
+        S1["Perform discovery research"]
+        S2["Generate new product/servic..."]
+        S3["Define product/service deve..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Perform discovery research](./2.2.1-PerformDiscoveryResearch/) | 2.2.1 | Coordinating R&D activity to identify new technologies to integrate into the revamped portfolio of p |
+| [Generate new product/service concepts](./2.2.2-GenerateNewProductserviceConcepts/) | 2.2.2 | Producing and defining ideologies for new product/service offerings |
+| [Define product/service development requirements](./2.2.3-DefineProductserviceDevelopmentRequirements/) | 2.2.3 | Encompassing the identification and capture of new product/service requirements or potential improve |
+
+
+## Related Concepts
+
+- [NewProductIdeas](/concepts/NewProductIdeas)
+- [NewServiceIdeas](/concepts/NewServiceIdeas)
+- [NewProductIdeas](/concepts/NewProductIdeas)
+- [NewServiceIdeas](/concepts/NewServiceIdeas)
+
+
+---
+
+*Source: APQC PCF 19698 (2.2) - APQC*

@@ -1,0 +1,117 @@
+---
+id: DevelopAndManageServiceDeliveryOperations
+name: "Develop and manage service delivery operations"
+code: "20905"
+hierarchyId: "8.7.6"
+type: Process
+level: 3
+status: complete
+parent: "8.7"
+children: ["8.7.6.1", "8.7.6.2", "8.7.6.3", "8.7.6.4", "8.7.6.5", "8.7.6.6", "8.7.6.7", "8.7.6.8"]
+---
+
+# Develop and manage service delivery operations
+
+> Developing and managing different delivery services using service delivery systems for operational activities within the IT function in order to achieve organizations goal.
+
+## Overview
+
+Process 8.7.6 is a core process that defines the specific procedures for develop and manage service delivery operations. 
+
+Developing and managing different delivery services using service delivery systems for operational activities within the IT function in order to achieve organizations goal.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_6["8.7.6 Develop and manage service delivery o..."]
+    style N8_7_6 fill:#e1f5fe
+    N8_7_6 --> N8_7_6_1["8.7.6.1 Operate and monitor online systems"]
+    N8_7_6 --> N8_7_6_2["8.7.6.2 Run and monitor batch job schedule"]
+    N8_7_6 --> N8_7_6_3["8.7.6.3 Manage service delivery workloads"]
+    N8_7_6 --> N8_7_6_4["8.7.6.4 Manage infrastructure performanc..."]
+    N8_7_6 --> N8_7_6_5["8.7.6.5 Respond to unplanned operational..."]
+    N8_7_6 --> N8_7_6_6["8.7.6.6 Produce and distribute output media"]
+    N8_7_6 --> N8_7_6_7["8.7.6.7 Monitor IT infrastructure security"]
+    N8_7_6 --> N8_7_6_8["8.7.6.8 Manage IT infrastructure/data re..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20905 |
+| Hierarchy ID | 8.7.6 |
+| Level | Process |
+| Parent | [8.7](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageServiceDeliveryOperations
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage service delivery operations` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage service delivery operations"]
+        S1["Operate and monitor online ..."]
+        S2["Run and monitor batch job s..."]
+        S3["Manage service delivery wor..."]
+        S4["Manage infrastructure perfo..."]
+        S5["Respond to unplanned operat..."]
+        S6["Produce and distribute outp..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Operate and monitor online systems](./OperateAndMonitorOnlineSystems) | 8.7.6.1 | Operating and defining methodology of assessment for measuring and monitoring performance of online  |
+| [Run and monitor batch job schedule](./RunAndMonitorBatchJobSchedule) | 8.7.6.2 | Operate and monitor the application of scheduling batch jobs to be run in the background at a certai |
+| [Manage service delivery workloads](./ManageServiceDeliveryWorkloads) | 8.7.6.3 | Analyze and manage workload needs in relation to service delivery |
+| [Manage infrastructure performance and capacity](./ManageInfrastructurePerformanceAndCapacity) | 8.7.6.4 | Managing the performance and capacity of infrastructure by using key performance indicators to routi |
+| [Respond to unplanned operational issues](./RespondToUnplannedOperationalIssues) | 8.7.6.5 | Addressing to an issue in operational activities within the IT function, that occur outside of norma |
+| [Produce and distribute output media](./ProduceAndDistributeOutputMedia) | 8.7.6.6 | Identify and introduce resources to display output in a viewable form to key decision makers and eva |
+| [Monitor IT infrastructure security](./MonitorITInfrastructureSecurity) | 8.7.6.7 | Identifying, examining, and recognizing any flaw or breach in security of IT infrastructure |
+| [Manage IT infrastructure/data recovery](./ManageITInfrastructuredataRecovery) | 8.7.6.8 | Managing resources of IT infrastructure and their recovery capacity |
+
+
+## Related Concepts
+
+- [ServiceDeliveryOperations](/concepts/ServiceDeliveryOperations)
+- [ServiceDeliveryOperations](/concepts/ServiceDeliveryOperations)
+
+
+---
+
+*Source: APQC PCF 20905 (8.7.6) - APQC*

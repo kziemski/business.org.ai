@@ -1,0 +1,107 @@
+---
+id: ManageForeignExchangeRisk
+name: "Manage foreign exchange risk"
+code: "11210"
+hierarchyId: "9.7.5.3"
+type: Activity
+level: 4
+status: complete
+parent: "9.7.5"
+children: ["9.7.5.3.1", "9.7.5.3.2", "9.7.5.3.3", "9.7.5.3.4", "9.7.5.3.5"]
+---
+
+# Manage foreign exchange risk
+
+> Taking care of foreign-exchange risks.
+
+## Overview
+
+Activity 9.7.5.3 is an activity within the Manage Financial Resources framework. 
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_7["9.7 Manage treasury operations"]
+    N9_7 --> N9_7_5["9.7.5 Monitor and execute risk and hedging ..."]
+    N9_7_5 --> N9_7_5_3["9.7.5.3 Manage foreign exchange risk"]
+    style N9_7_5_3 fill:#e1f5fe
+    N9_7_5_3 --> N9_7_5_3_1["9.7.5.3.1 Manage foreign exchange market data"]
+    N9_7_5_3 --> N9_7_5_3_2["9.7.5.3.2 Determine foreign exchange expos..."]
+    N9_7_5_3 --> N9_7_5_3_3["9.7.5.3.3 Determine foreign exchange hedge..."]
+    N9_7_5_3 --> N9_7_5_3_4["9.7.5.3.4 Execute foreign exchange trades"]
+    N9_7_5_3 --> N9_7_5_3_5["9.7.5.3.5 Manage foreign exchange balance ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11210 |
+| Hierarchy ID | 9.7.5.3 |
+| Level | Activity |
+| Parent | [9.7.5](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ForeignExchangeRisk
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `foreign exchange risk` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage foreign exchange risk"]
+        S1["Manage foreign exchange mar..."]
+        S2["Determine foreign exchange ..."]
+        S3["Determine foreign exchange ..."]
+        S4["Execute foreign exchange tr..."]
+        S5["Manage foreign exchange bal..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage foreign exchange market data](./ManageForeignExchangeMarketData) | 9.7.5.3.1 | Handling and processing information about changes in foreign exchange rates |
+| [Determine foreign exchange exposure for all currencies](./DetermineForeignExchangeExposureForAllCurrencies) | 9.7.5.3.2 | Establishing potential foreign exchange risks for all currencies |
+| [Determine foreign exchange hedge requirements in accordance with risk policy](./DetermineForeignExchangeHedgeRequirementsInAccordanceWithRiskPolicy) | 9.7.5.3.3 | Deciding the requirements on investments in foreign exchange made by trading in futures or options m |
+| [Execute foreign exchange trades](./ExecuteForeignExchangeTrades) | 9.7.5.3.4 | Executing all aspects for foreign exchange trade within foreign exchange market |
+| [Manage foreign exchange balance sheet risk](./ManageForeignExchangeBalanceSheetRisk) | 9.7.5.3.5 | Overseeing the foreign exchange balance sheet with an eye towards potential risk |
+
+
+## Related Concepts
+
+- [ForeignExchangeRisk](/concepts/ForeignExchangeRisk)
+
+
+---
+
+*Source: APQC PCF 11210 (9.7.5.3) - APQC*

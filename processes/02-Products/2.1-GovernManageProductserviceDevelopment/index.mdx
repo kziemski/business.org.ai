@@ -1,0 +1,106 @@
+---
+id: GovernAndManageProductserviceDevelopmentProgram
+name: "Govern and manage product/service development program"
+code: "19696"
+hierarchyId: "2.1"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "2"
+children: ["2.1.1", "2.1.2", "2.1.3", "2.1.4"]
+---
+
+# Govern and manage product/service development program
+
+> Supervising the complete product/service program from innovation until its commercial success.
+
+## Overview
+
+Group 2.1 is a process group within APQC Category 2.0 (Design and Develop Products and Services). 
+
+Supervising the complete product/service program from innovation until its commercial success. Meeting the customer demand and expectations. Conduct further development and innovation pertaining to business goals.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_1["2.1 Govern and manage product/service dev..."]
+    style N2_1 fill:#e1f5fe
+    N2_1 --> N2_1_1["2.1.1 Manage product and service portf..."]
+    N2_1 --> N2_1_2["2.1.2 Manage product and service life ..."]
+    N2_1 --> N2_1_3["2.1.3 Manage patents, copyrights, and ..."]
+    N2_1 --> N2_1_4["2.1.4 Manage product and service maste..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19696 |
+| Hierarchy ID | 2.1 |
+| Level | Group |
+| Parent | [2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+govern.AndManageProductserviceDevelopmentProgram
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `govern` | Primary action |
+| Object | `and manage product/service development program` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Govern and manage product/service development program"]
+        S1["Manage product and service ..."]
+        S2["Manage product and service ..."]
+        S3["Manage patents, copyrights,..."]
+        S4["Manage product and service ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage product and service portfolio](./2.1.1-ManageProductServicePortfolio/) | 2.1.1 | Managing a portfolio of product/service offerings to take advantage of shifts in the market expectat |
+| [Manage product and service life cycle](./2.1.2-ManageProductServiceLife/) | 2.1.2 | Manage the introduction and withdrawal of products/services |
+| [Manage patents, copyrights, and regulatory requirements](./2.1.3-ManagePatentsCopyrightsRegulatory/) | 2.1.3 | Determining the attributes necessary to protect and safeguard intellectual assets, maximize the valu |
+| [Manage product and service master data](./2.1.4-ManageProductServiceMaster/) | 2.1.4 | Controlling/authorizing to enable services' and products' data and other critical data of these func |
+
+
+## Related Concepts
+
+- [ProductDevelopmentProgram](/concepts/ProductDevelopmentProgram)
+- [ServiceDevelopmentProgram](/concepts/ServiceDevelopmentProgram)
+- [ProductDevelopmentProgram](/concepts/ProductDevelopmentProgram)
+- [ServiceDevelopmentProgram](/concepts/ServiceDevelopmentProgram)
+
+
+---
+
+*Source: APQC PCF 19696 (2.1) - APQC*

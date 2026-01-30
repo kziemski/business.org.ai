@@ -1,0 +1,108 @@
+---
+id: DevelopSustainabilityCapability
+name: "Develop sustainability capability"
+code: "21589"
+hierarchyId: "13.9.1"
+type: Process
+level: 3
+status: complete
+parent: "13.9"
+children: ["13.9.1.1", "13.9.1.2", "13.9.1.3", "13.9.1.4", "13.9.1.5"]
+---
+
+# Develop sustainability capability
+
+> Developing sustainability (ESG) capabilities for the organization.
+
+## Overview
+
+Process 13.9.1 is a core process that defines the specific procedures for develop sustainability capability. 
+
+Developing sustainability (ESG) capabilities for the organization. Understand and communicate legal, regulatory, and social/environmental requirements. Establish policies, objectives, guidelines and approaches for ESG efforts and reporting.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_9["13.9 Manage sustainability"]
+    N13_9 --> N13_9_1["13.9.1 Develop sustainability capability"]
+    style N13_9_1 fill:#e1f5fe
+    N13_9_1 --> N13_9_1_1["13.9.1.1 Identify sustainability requirem..."]
+    N13_9_1 --> N13_9_1_2["13.9.1.2 Establish sustainability goals/o..."]
+    N13_9_1 --> N13_9_1_3["13.9.1.3 Create sustainability policies"]
+    N13_9_1 --> N13_9_1_4["13.9.1.4 Define sustainability measures"]
+    N13_9_1 --> N13_9_1_5["13.9.1.5 Create sustainability plan(s)"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21589 |
+| Hierarchy ID | 13.9.1 |
+| Level | Process |
+| Parent | [13.9](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.SustainabilityCapability
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `sustainability capability` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop sustainability capability"]
+        S1["Identify sustainability req..."]
+        S2["Establish sustainability go..."]
+        S3["Create sustainability policies"]
+        S4["Define sustainability measures"]
+        S5["Create sustainability plan(s)"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify sustainability requirements](./13.9.1.1-IdentifySustainabilityRequirements/) | 13.9.1.1 | Identifying, documenting, and communicating sustainability requirements |
+| [Establish sustainability goals/objectives](./EstablishSustainabilityGoalsobjectives) | 13.9.1.2 | Establishing organizational sustainability goals/objectives |
+| [Create sustainability policies](./CreateSustainabilityPolicies) | 13.9.1.3 | Establishing, documenting, and communicating sustainability policies |
+| [Define sustainability measures](./DefineSustainabilityMeasures) | 13.9.1.4 | Defining sustainability measures |
+| [Create sustainability plan(s)](./CreateSustainabilityPlans) | 13.9.1.5 | Creating sustainability plans |
+
+
+## Related Concepts
+
+- [SustainabilityCapability](/concepts/SustainabilityCapability)
+
+
+---
+
+*Source: APQC PCF 21589 (13.9.1) - APQC*

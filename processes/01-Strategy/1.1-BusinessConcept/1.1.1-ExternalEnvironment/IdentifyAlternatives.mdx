@@ -1,0 +1,258 @@
+---
+id: IdentifyAlternatives
+name: "Identify potential product or service alternatives"
+code: "21421"
+hierarchyId: "1.1.1.3"
+type: Activity
+level: 4
+status: complete
+parent: "1.1.1"
+---
+
+# Identify potential product or service alternatives
+
+> Examining if there are other existing products or services in the marketplace, and building the business case to make a go/no go decision based upon substitutions.
+
+## Overview
+
+Activity 1.1.1.3 focuses on identifying substitute products and services that could meet the same customer needs through different means. This extends competitive analysis beyond direct competitors to include potential disruptors and alternative solutions that customers might choose instead of the organization's offerings.
+
+Understanding substitutes is critical for strategic planning as it helps organizations anticipate market disruptions, identify innovation opportunities, and develop defensive strategies against emerging alternatives.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"] --> G11["1.1 Define business concept"]
+    G11 --> P111["1.1.1 Assess external environment"]
+    P111 --> A1111["1.1.1.1 Identify competitors"]
+    P111 --> A1112["1.1.1.2 Analyze competition"]
+    P111 --> A1113["1.1.1.3 Identify alternatives"]
+    P111 --> A1114["1.1.1.4 Economic trends"]
+
+    style A1113 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21421 |
+| Hierarchy ID | 1.1.1.3 |
+| Level | Activity |
+| Parent | [1.1.1 Assess external environment](./) |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Customer Needs Analysis"]
+        I2["Technology Trends"]
+        I3["Market Research"]
+        I4["Innovation Reports"]
+        I5["Patent Filings"]
+    end
+
+    subgraph Process["Identify Alternatives"]
+        P1["Map Customer<br/>Jobs-to-be-Done"]
+        P2["Scan for<br/>Substitutes"]
+        P3["Assess Switching<br/>Barriers"]
+        P4["Evaluate Threat<br/>Level"]
+        P5["Develop<br/>Response Options"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Substitute Product Map"]
+        O2["Threat Assessment"]
+        O3["Switching Cost Analysis"]
+        O4["Strategic Recommendations"]
+    end
+
+    Inputs --> Process --> Outputs
+    P1 --> P2 --> P3 --> P4 --> P5
+```
+
+## GraphDL Semantic Structure
+
+```
+identify.ProductServiceAlternatives
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `identify` | Discover and catalog |
+| Object | `ProductServiceAlternatives` | Substitute offerings in the market |
+
+**Extended Form:**
+```
+identify.Alternatives.for.ProductsAndServices
+```
+
+## Detailed Tasks
+
+### Task 1: Map Jobs-to-be-Done
+
+Understand the fundamental customer needs:
+
+| Customer Job | Functional | Emotional | Social |
+|-------------|------------|-----------|--------|
+| Get work done | Task completion | Confidence | Status |
+| Save time | Efficiency | Peace of mind | Approval |
+| Reduce risk | Protection | Security | Trust |
+
+### Task 2: Scan for Substitutes
+
+Categories of potential substitutes:
+
+```mermaid
+graph TD
+    Core["Core<br/>Product/Service"]
+
+    S1["Different Technology<br/>Same Function"]
+    S2["Different Industry<br/>Same Need"]
+    S3["DIY/Self-Service<br/>Alternative"]
+    S4["Do Nothing/<br/>Status Quo"]
+    S5["Emerging<br/>Disruptors"]
+
+    Core --> S1
+    Core --> S2
+    Core --> S3
+    Core --> S4
+    Core --> S5
+```
+
+### Task 3: Assess Switching Barriers
+
+Evaluate factors that influence customer switching:
+
+| Barrier Type | High = Less Threat | Low = Higher Threat |
+|-------------|-------------------|---------------------|
+| Financial | High switching costs | Low/no costs |
+| Technical | Integration required | Plug-and-play |
+| Learning | Steep learning curve | Easy to adopt |
+| Contractual | Long-term contracts | No commitment |
+| Emotional | Brand loyalty | No attachment |
+
+### Task 4: Evaluate Threat Level
+
+Rate substitute threat using standardized criteria:
+
+| Factor | Weight | Score (1-5) |
+|--------|--------|-------------|
+| Price-performance ratio | 25% | - |
+| Customer switching propensity | 25% | - |
+| Technology maturity | 20% | - |
+| Market adoption rate | 15% | - |
+| Strategic fit with trends | 15% | - |
+
+### Task 5: Develop Response Options
+
+Strategic responses to substitute threats:
+
+- **Differentiate** - Emphasize unique value
+- **Integrate** - Adopt substitute capabilities
+- **Acquire** - Purchase substitute providers
+- **Partner** - Collaborate with complementors
+- **Divest** - Exit threatened markets
+
+## RACI Matrix
+
+| Task | Responsible | Accountable | Consulted | Informed |
+|------|-------------|-------------|-----------|----------|
+| Jobs-to-be-Done mapping | Product Team | CMO | Customers | Strategy |
+| Substitute scanning | Market Research | Strategy Dir | R&D | Exec Team |
+| Switching barrier assessment | Product Team | CMO | Sales | Strategy |
+| Threat evaluation | Strategy Team | CSO | All BUs | Board |
+| Response development | Strategy Team | CEO | All Leaders | All Depts |
+
+## Industry Variations
+
+### Banking
+
+Substitute identification includes:
+- Cryptocurrency and blockchain solutions
+- Peer-to-peer lending platforms
+- Buy-now-pay-later services
+- Big tech financial services
+- Embedded finance in non-financial apps
+
+### Healthcare Provider
+
+Alternative care delivery models:
+- Retail clinics (CVS, Walgreens)
+- Telehealth platforms
+- Concierge medicine
+- Medical tourism
+- Home health technology
+- AI-based diagnostic tools
+
+### Aerospace and Defense
+
+Substitute technologies:
+- Unmanned systems replacing manned
+- Commercial space alternatives
+- Satellite vs. terrestrial solutions
+- Cyber capabilities vs. kinetic
+- Commercial off-the-shelf components
+
+### Education
+
+Alternative learning models:
+- Online learning platforms (Coursera, Khan)
+- Corporate training programs
+- Micro-credentials and badges
+- Apprenticeship programs
+- AI-powered personalized learning
+
+### Retail
+
+Shopping alternatives:
+- Direct-to-consumer brands
+- Subscription services
+- Rental/sharing economy
+- Second-hand marketplaces
+- 3D printing/local manufacturing
+
+## Related Occupations
+
+- [Product Managers](/occupations/ProductManagers)
+- [Market Research Analysts](/occupations/MarketResearchAnalysts)
+- [Innovation Managers](/occupations/InnovationManagers)
+- [Strategic Planners](/occupations/StrategicPlanners)
+- [Business Development Managers](/occupations/BusinessDevelopment)
+
+## Disruption Watch Areas
+
+| Technology Trend | Potential Substitute Impact |
+|-----------------|---------------------------|
+| AI/Machine Learning | Automation of services |
+| Blockchain | Disintermediation |
+| IoT | Product-as-a-service models |
+| 3D Printing | Distributed manufacturing |
+| AR/VR | Remote experiences |
+| Platform Economy | Aggregation and matching |
+
+## Related Processes
+
+```mermaid
+graph LR
+    AC["1.1.1.2 Analyze<br/>Competition"] --> IA["1.1.1.3 Identify<br/>Alternatives"]
+    IA --> NT["1.1.1.5 Assess New<br/>Technologies"]
+    IA --> DS["1.2 Develop<br/>Strategy"]
+    IA --> PD["2.0 Product<br/>Development"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Substitute Coverage | % of customer needs with alternatives | >90% mapped |
+| Threat Detection Time | Lead time on emerging substitutes | >12 months |
+| Response Readiness | % of threats with response plans | >80% |
+| Disruption Impact Assessment | Accuracy of impact forecasts | >70% |
+| Strategic Response Rate | Threats addressed proactively | >60% |
+
+---
+
+*Source: APQC PCF 21421 (1.1.1.3) - Cross-Industry*

@@ -1,0 +1,345 @@
+---
+id: PerformPlanningBudgetingForecasting
+name: "Perform Planning/Budgeting/Forecasting"
+code: "10738"
+hierarchyId: "9.1.1"
+type: Process
+status: complete
+---
+
+# Perform Planning/Budgeting/Forecasting
+
+*APQC Process 9.1.1*
+
+> Allocating funds to meet future and current financial goals. Led by the chief financial officer, have the finance function plan, budget, and forecast in order to determine and describe long and short-term financial goals.
+
+## Overview
+
+Perform Planning/Budgeting/Forecasting is the foundational process for financial resource management. This process establishes the framework for allocating organizational resources, setting financial targets, and predicting future performance. Modern organizations are moving from annual static budgets to rolling forecasts and driver-based planning models that adapt to changing business conditions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"] --> G91["9.1 Perform planning and<br/>management accounting"]
+    G91 --> P911["9.1.1 Perform planning/<br/>budgeting/forecasting"]
+
+    P911 --> A9111["9.1.1.1 Develop and maintain<br/>budget policies"]
+    P911 --> A9112["9.1.1.2 Prepare periodic<br/>budgets and plans"]
+    P911 --> A9113["9.1.1.3 Operationalize and<br/>implement plans"]
+    P911 --> A9114["9.1.1.4 Prepare periodic<br/>financial forecasts"]
+    P911 --> A9115["9.1.1.5 Perform variance analysis<br/>against forecasts"]
+
+    style P911 fill:#e1f5fe
+    style G91 fill:#b3e5fc
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10738 |
+| Hierarchy ID | 9.1.1 |
+| Level | Process |
+| Category | [Manage Financial Resources](/processes/09-Finance) |
+| Process Group | [Perform Planning and Management Accounting](./index) |
+| Activities | 5 |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Strategic Plan"]
+        I2["Historical Performance"]
+        I3["Market Conditions"]
+        I4["Operational Assumptions"]
+        I5["Capital Requirements"]
+    end
+
+    subgraph Process["Planning/Budgeting/Forecasting"]
+        P1["Define Budget<br/>Policies"]
+        P2["Establish<br/>Guidelines"]
+        P3["Collect<br/>Department Inputs"]
+        P4["Consolidate<br/>Budgets"]
+        P5["Review &<br/>Approve"]
+        P6["Build<br/>Forecasts"]
+        P7["Analyze<br/>Variances"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+        P7 -.->|Update| P6
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Annual Operating Budget"]
+        O2["Capital Budget"]
+        O3["Rolling Forecasts"]
+        O4["Variance Reports"]
+        O5["Management Reports"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+perform.PlanningBudgetingForecasting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Execute or carry out |
+| Object | `PlanningBudgetingForecasting` | Financial planning activities |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+### Semantic Decomposition
+
+| Sub-Task | GraphDL Notation |
+|----------|------------------|
+| Develop budget policies | `develop.BudgetPolicies` |
+| Prepare periodic budgets | `prepare.PeriodicBudgets` |
+| Prepare financial forecasts | `prepare.FinancialForecasts` |
+| Perform variance analysis | `perform.VarianceAnalysis.against.Budgets` |
+
+## Activities
+
+### 9.1.1.1 - Develop and maintain budget policies and procedures
+
+Formulating financial budgetary guidelines and strategies. Develop a framework for rules and regulations regarding budgets.
+
+```mermaid
+sequenceDiagram
+    participant CFO as CFO
+    participant FPA as FP&A Director
+    participant Controller as Controller
+    participant Legal as Legal/Compliance
+    participant Exec as Executive Team
+
+    CFO->>FPA: Initiate policy review
+    FPA->>Controller: Gather accounting requirements
+    Controller->>FPA: Provide GAAP guidance
+    FPA->>Legal: Review compliance needs
+    Legal->>FPA: Confirm regulatory requirements
+    FPA->>FPA: Draft budget policies
+    FPA->>CFO: Present draft policies
+    CFO->>Exec: Review and approve
+    Exec->>FPA: Approve with modifications
+    FPA->>FPA: Publish final policies
+```
+
+**Tasks:**
+- `define.BudgetCalendar` - Establish annual budget timeline
+- `establish.ApprovalHierarchy` - Define authorization levels
+- `create.BudgetTemplates` - Develop standard budget forms
+- `document.BudgetingMethodology` - Define zero-based vs incremental approach
+
+### 9.1.1.2 - Prepare periodic budgets and plans
+
+Creating reports on a quarterly or annual basis for fund allocation. Create a financial statement that estimates revenues and expenses over a specific period of time.
+
+```mermaid
+sequenceDiagram
+    participant FPA as FP&A Team
+    participant Dept as Department Heads
+    participant Ops as Operations
+    participant HR as Human Resources
+    participant IT as IT
+
+    FPA->>Dept: Distribute budget templates
+    FPA->>Dept: Provide assumptions and guidelines
+    Dept->>Ops: Request operational inputs
+    Ops->>Dept: Provide capacity plans
+    Dept->>HR: Request headcount plans
+    HR->>Dept: Provide compensation data
+    Dept->>IT: Request technology costs
+    IT->>Dept: Provide IT budget inputs
+    Dept->>FPA: Submit department budgets
+    FPA->>FPA: Consolidate all budgets
+    FPA->>FPA: Identify gaps and issues
+    FPA->>Dept: Request revisions
+```
+
+**Tasks:**
+- `distribute.BudgetTemplates.to.Departments` - Send standardized forms
+- `collect.RevenueProjections` - Gather sales forecasts
+- `consolidate.DepartmentBudgets` - Combine all inputs
+- `prepare.ConsolidatedBudget` - Create master budget
+
+### 9.1.1.3 - Operationalize and implement plans to achieve budget
+
+Putting budgeting plans into practical use keeping within designated forecasting parameters.
+
+```mermaid
+sequenceDiagram
+    participant FPA as FP&A
+    participant Exec as Executives
+    participant Dept as Department Heads
+    participant Finance as Finance Ops
+    participant ERP as ERP System
+
+    FPA->>Exec: Present final budget
+    Exec->>FPA: Approve budget
+    FPA->>Dept: Communicate approved budgets
+    FPA->>Finance: Transfer budget data
+    Finance->>ERP: Load budget into system
+    ERP->>Dept: Enable budget tracking
+    Dept->>Dept: Implement spending plans
+    Finance->>Dept: Monitor spending
+```
+
+**Tasks:**
+- `communicate.ApprovedBudgets.to.Stakeholders` - Distribute final budgets
+- `load.BudgetData.into.Systems` - Enter into ERP/EPM
+- `establish.BudgetControls` - Set spending limits
+- `train.BudgetOwners` - Enable budget holders
+
+### 9.1.1.4 - Prepare periodic financial forecasts
+
+Creating estimates of the projected income and expenses required over a predetermined time frame.
+
+```mermaid
+sequenceDiagram
+    participant FPA as FP&A Team
+    participant Sales as Sales/Revenue
+    participant Ops as Operations
+    participant BI as Business Intelligence
+    participant Exec as Management
+
+    FPA->>Sales: Request revenue forecast
+    Sales->>FPA: Provide pipeline data
+    FPA->>Ops: Request cost projections
+    Ops->>FPA: Provide operational outlook
+    FPA->>BI: Pull historical trends
+    BI->>FPA: Provide analytics
+    FPA->>FPA: Build forecast model
+    FPA->>FPA: Run scenarios
+    FPA->>Exec: Present forecast
+    Exec->>FPA: Provide guidance
+    FPA->>FPA: Finalize forecast
+```
+
+**Tasks:**
+- `gather.ForecastInputs.from.BusinessUnits` - Collect driver data
+- `build.ForecastModel` - Create projection model
+- `run.ScenarioAnalysis` - Develop best/worst/expected cases
+- `publish.RollingForecast` - Distribute updated forecasts
+
+### 9.1.1.5 - Perform variance analysis against forecasts and budgets
+
+Conducting a quantitative analysis between what was forecasted and budgeted and actual financial behavior.
+
+```mermaid
+sequenceDiagram
+    participant Accounting as Accounting
+    participant FPA as FP&A Team
+    participant Dept as Department Heads
+    participant Controller as Controller
+    participant CFO as CFO
+
+    Accounting->>FPA: Provide actual results
+    FPA->>FPA: Compare to budget/forecast
+    FPA->>FPA: Calculate variances
+    FPA->>FPA: Identify root causes
+    FPA->>Dept: Request explanations
+    Dept->>FPA: Provide variance commentary
+    FPA->>Controller: Review analysis
+    Controller->>FPA: Validate findings
+    FPA->>CFO: Present variance report
+    CFO->>FPA: Request action plans
+```
+
+**Tasks:**
+- `calculate.BudgetVariances` - Compute actual vs budget
+- `analyze.VarianceDrivers` - Identify root causes
+- `prepare.VarianceCommentary` - Document explanations
+- `recommend.CorrectiveActions` - Propose adjustments
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Develop budget policies | FP&A Director | CFO | Controller, Legal | Executive Team |
+| Prepare department budgets | Department Heads | Business Unit Leaders | FP&A | CFO |
+| Consolidate budgets | FP&A Analysts | FP&A Director | Controller | Department Heads |
+| Approve budgets | CFO | CEO | Board Finance Committee | All Employees |
+| Prepare forecasts | FP&A Analysts | FP&A Director | Sales, Operations | Executive Team |
+| Perform variance analysis | FP&A Analysts | FP&A Director | Department Heads | Controller |
+
+## Related Departments
+
+- [FP&A](/departments/FPA) - Primary process owner and executor
+- [Finance](/departments/Finance) - Overall governance and oversight
+- [Accounting](/departments/Accounting) - Actual data provision
+- [Operations](/departments/Operations) - Operational assumptions
+- [Sales](/departments/Sales) - Revenue forecasting input
+
+## Related Occupations
+
+- [Budget Analysts](/occupations/BudgetAnalysts) - Budget development specialists
+- [Financial Analysts](/occupations/FinancialAnalysts) - Forecasting and analysis
+- [Financial Managers](/occupations/FinancialManagers) - Process leadership
+- [Chief Financial Officers](/occupations/CFO) - Ultimate accountability
+
+## Industry Variations
+
+### Technology/SaaS
+
+SaaS companies focus on subscription metrics like ARR, MRR, churn, and customer acquisition costs. Rolling forecasts update monthly based on bookings data.
+
+**Industry-Specific Activities:**
+- Forecast ARR/MRR growth
+- Model customer acquisition costs
+- Project churn and retention
+- Budget R&D capitalization
+
+### Retail
+
+Retail budgeting is highly seasonal with detailed store-level planning. Open-to-buy budgets control inventory investment.
+
+**Industry-Specific Activities:**
+- Plan by season and category
+- Create open-to-buy budgets
+- Forecast same-store sales growth
+- Budget promotional markdown reserves
+
+### Government/Public Sector
+
+Government budgeting follows strict appropriation cycles with zero-based justification requirements.
+
+**Industry-Specific Activities:**
+- Prepare appropriation requests
+- Justify program budgets
+- Plan multi-year capital programs
+- Budget for grant-funded programs
+
+## Sub-Activities
+
+| Activity | Code | Description |
+|----------|------|-------------|
+| [Develop and maintain budget policies](./DevelopBudgetPolicies) | 9.1.1.1 | Budget policy framework |
+| [Prepare periodic budgets and plans](./PreparePeriodicBudgets) | 9.1.1.2 | Budget creation |
+| [Operationalize plans](./OperationalizePlans) | 9.1.1.3 | Budget implementation |
+| [Prepare financial forecasts](./PrepareFinancialForecasts) | 9.1.1.4 | Forecast development |
+| [Perform variance analysis](./PerformVarianceAnalysis) | 9.1.1.5 | Variance reporting |
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Forecast Accuracy | Revenue forecast vs actual | >95% |
+| Budget Cycle Time | Days from kickoff to approval | <60 days |
+| Rolling Forecast Currency | Days since last forecast update | <30 days |
+| Variance Explanation Rate | % of variances explained | 100% |
+| Budget Iteration Count | Number of revision cycles | <3 |
+| Planning Cost | FP&A cost as % of revenue | <0.5% |
+
+---
+
+*Source: APQC PCF 10738 (9.1.1) - Cross-Industry*

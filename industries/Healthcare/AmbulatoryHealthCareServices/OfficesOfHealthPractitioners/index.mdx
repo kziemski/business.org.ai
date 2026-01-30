@@ -1,0 +1,116 @@
+---
+id: OfficesOfHealthPractitioners
+name: "Offices of Health Practitioners"
+code: "6213"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Offices of Health Practitioners
+
+> This industry group comprises establishments of independent health practitioners (except physicians and dentists).
+
+## Overview
+
+Offices of Health Practitioners represents an important category within the Health Care and Social Assistance sector (NAICS 62). This industry group encompasses establishments primarily engaged in offices of health practitioners.
+
+This industry group comprises establishments of independent health practitioners (except physicians and dentists).
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S62["62: Health Care and Social Assistance"]
+    S62 --> N621["621: Ambulatory Health Care Services"]
+    N621 --> N6213["6213: Offices of Health Practitioners"]
+    style N6213 fill:#f96,stroke:#333,stroke-width:2px
+    N6213 --> N62131["62131: Offices of Chiropractors"]
+    N6213 --> N62132["62132: Offices of Optometrists"]
+    N6213 --> N62133["62133: Offices of Mental Health Practit..."]
+    N6213 --> N62134["62134: Offices of Physical, Occupationa..."]
+    N6213 --> N62139["62139: Offices of All Health Practitioners"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 6213 |
+| Level | Industry Group |
+| Parent | [Ambulatory Health Care Services](../) |
+| Child Industries | 5 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Offices of Chiropractors](./OfficesOfChiropractors/) | 62131 | See industry description for 621310 |
+| [Offices of Optometrists](./OfficesOfOptometrists/) | 62132 | See industry description for 621320 |
+| [Offices of Mental Health Practitioners](./OfficesOfMentalHealthPractitioners/) | 62133 | See industry description for 621330 |
+| [Offices of Physical, Occupational Therapists](./OfficesOfPhysicalOccupationalTherapists/) | 62134 | See industry description for 621340 |
+| [Offices of All Health Practitioners](./OfficesOfAllHealthPractitioners/) | 62139 | This industry comprises establishments of independent health practitioners (exce |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Patient/Client Intake"]
+        O2["Assessment"]
+        O3["Treatment/Service"]
+        O4["Follow-up"]
+        O5["Discharge"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Compliance"]
+        S2["Records Mgmt"]
+        S3["Billing"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Medical Supplies"]
+        I2["Equipment"]
+        I3["Professionals"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Patient Care"]
+        O2["Diagnostics"]
+        O3["Treatment"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Patients"]
+        C2["Insurers"]
+        C3["Government"]
+        C4["Employers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 6213 - Offices of Health Practitioners*

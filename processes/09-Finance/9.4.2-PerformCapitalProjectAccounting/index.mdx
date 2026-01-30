@@ -1,0 +1,107 @@
+---
+id: PerformCapitalProjectAccounting
+name: "Perform capital project accounting"
+code: "10752"
+hierarchyId: "9.4.2"
+type: Process
+level: 3
+status: complete
+parent: "9.4"
+children: ["9.4.2.1", "9.4.2.2", "9.4.2.3", "9.4.2.4", "9.4.2.5"]
+---
+
+# Perform capital project accounting
+
+> Accounting for large-scale and large-cost investments.
+
+## Overview
+
+Process 9.4.2 is a core process that defines the specific procedures for perform capital project accounting. 
+
+Accounting for large-scale and large-cost investments. Manage and account for ongoing activities related to capital projects, including setting up new projects, recording project transactions, monitoring and tracking spending, closing and capitalizing projects, and measuring the financial returns on completed projects.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_4_2["9.4.2 Perform capital project accounting"]
+    style N9_4_2 fill:#e1f5fe
+    N9_4_2 --> N9_4_2_1["9.4.2.1 Create project account codes"]
+    N9_4_2 --> N9_4_2_2["9.4.2.2 Record project-related transactions"]
+    N9_4_2 --> N9_4_2_3["9.4.2.3 Monitor and track capital projec..."]
+    N9_4_2 --> N9_4_2_4["9.4.2.4 Close/capitalize projects"]
+    N9_4_2 --> N9_4_2_5["9.4.2.5 Measure financial returns on com..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10752 |
+| Hierarchy ID | 9.4.2 |
+| Level | Process |
+| Parent | [9.4](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.CapitalProjectAccounting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `capital project accounting` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform capital project accounting"]
+        S1["Create project account codes"]
+        S2["Record project-related tran..."]
+        S3["Monitor and track capital p..."]
+        S4["Close/capitalize projects"]
+        S5["Measure financial returns o..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create project account codes](./CreateProjectAccountCodes) | 9.4.2.1 | Giving reference codes for every project |
+| [Record project-related transactions](./RecordProjectrelatedTransactions) | 9.4.2.2 | Noting every transaction during a project in a common financial database |
+| [Monitor and track capital projects and budget spending](./MonitorAndTrackCapitalProjectsAndBudgetSpending) | 9.4.2.3 | Evaluating project progress and funds invested |
+| [Close/capitalize projects](./ClosecapitalizeProjects) | 9.4.2.4 | Checking for returns generated from projects for decision making |
+| [Measure financial returns on completed capital projects](./MeasureFinancialReturnsOnCompletedCapitalProjects) | 9.4.2.5 | Comparing a finished project's profitability with forecasted returns |
+
+
+## Related Concepts
+
+- [CapitalProjectAccounting](/concepts/CapitalProjectAccounting)
+
+
+---
+
+*Source: APQC PCF 10752 (9.4.2) - APQC*

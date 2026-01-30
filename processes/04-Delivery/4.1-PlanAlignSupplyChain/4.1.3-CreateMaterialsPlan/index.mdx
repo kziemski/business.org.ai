@@ -1,0 +1,112 @@
+---
+id: CreateMaterialsPlan
+name: "Create materials plan"
+code: "10223"
+hierarchyId: "4.1.3"
+type: Process
+level: 3
+status: complete
+parent: "4.1"
+children: ["4.1.3.1", "4.1.3.2", "4.1.3.3", "4.1.3.4", "4.1.3.5", "4.1.3.6"]
+---
+
+# Create materials plan
+
+> Developing a scheme that allows for advance planning for the availability of raw materials and spares.
+
+## Overview
+
+Process 4.1.3 is a core process that defines the specific procedures for create materials plan. 
+
+Developing a scheme that allows for advance planning for the availability of raw materials and spares. Start with an unconstrained plan, and refine based on supply chain realities by identifying critical materials required for production, checking material specifications, and collaborating with all vendors over the supply.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_1["4.1 Plan for and align supply chain resou..."]
+    N4_1 --> N4_1_3["4.1.3 Create materials plan"]
+    style N4_1_3 fill:#e1f5fe
+    N4_1_3 --> N4_1_3_1["4.1.3.1 Create unconstrained plan"]
+    N4_1_3 --> N4_1_3_2["4.1.3.2 Collaborate with supplier and co..."]
+    N4_1_3 --> N4_1_3_3["4.1.3.3 Identify critical materials and ..."]
+    N4_1_3 --> N4_1_3_4["4.1.3.4 Monitor material specifications"]
+    N4_1_3 --> N4_1_3_5["4.1.3.5 Generate constrained plan"]
+    N4_1_3 --> N4_1_3_6["4.1.3.6 Define production balance and co..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10223 |
+| Hierarchy ID | 4.1.3 |
+| Level | Process |
+| Parent | [4.1](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+create.MaterialsPlan
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `create` | Primary action |
+| Object | `materials plan` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Create materials plan"]
+        S1["Create unconstrained plan"]
+        S2["Collaborate with supplier a..."]
+        S3["Identify critical materials..."]
+        S4["Monitor material specificat..."]
+        S5["Generate constrained plan"]
+        S6["Define production balance a..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create unconstrained plan](./CreateUnconstrainedPlan) | 4.1.3.1 | Developing a plan for raw materials and other inventory items in order to meet market demand |
+| [Collaborate with supplier and contract manufacturers](./CollaborateWithSupplierAndContractManufacturers) | 4.1.3.2 | Collaborating with vendors and contractual manufacturers with the objective of ensuring a continual  |
+| [Identify critical materials and supplier capacity](./IdentifyCriticalMaterialsAndSupplierCapacity) | 4.1.3.3 | Identifying principal materials needed for the manufacturing process and the levels of supply that m |
+| [Monitor material specifications](./MonitorMaterialSpecifications) | 4.1.3.4 | Observing and surveying all inventory items in order to check for the veracity of their specificatio |
+| [Generate constrained plan](./GenerateConstrainedPlan) | 4.1.3.5 | Generating a bounded plan that takes stock of the actual supply chain scenario |
+| [Define production balance and control](./DefineProductionBalanceAndControl) | 4.1.3.6 | Defining an equitable volume for the production of products/services that adheres to an equilibrium  |
+
+
+## Related Concepts
+
+- [MaterialsPlan](/concepts/MaterialsPlan)
+
+
+---
+
+*Source: APQC PCF 10223 (4.1.3) - APQC*

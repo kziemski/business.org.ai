@@ -1,0 +1,109 @@
+---
+id: DefineAndMaintainBusinessInformationArchitecture
+name: "Define and maintain business information architecture"
+code: "20770"
+hierarchyId: "8.4.2"
+type: Process
+level: 3
+status: complete
+parent: "8.4"
+children: ["8.4.2.1", "8.4.2.2", "8.4.2.3", "8.4.2.4", "8.4.2.5"]
+---
+
+# Define and maintain business information architecture
+
+> Creating strategies to manage the organization's information and content.
+
+## Overview
+
+Process 8.4.2 is a core process that defines the specific procedures for define and maintain business information architecture. 
+
+Creating strategies to manage the organization's information and content. Outline the architecture for information collection and communication. Administer information resources, data management and content.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_4["8.4 Manage information"]
+    N8_4 --> N8_4_2["8.4.2 Define and maintain business informat..."]
+    style N8_4_2 fill:#e1f5fe
+    N8_4_2 --> N8_4_2_1["8.4.2.1 Determine enterprise business in..."]
+    N8_4_2 --> N8_4_2_2["8.4.2.2 Define enterprise data models"]
+    N8_4_2 --> N8_4_2_3["8.4.2.3 Identify and understand external..."]
+    N8_4_2 --> N8_4_2_4["8.4.2.4 Establish data ownership and ste..."]
+    N8_4_2 --> N8_4_2_5["8.4.2.5 Maintain and evolve enterprise d..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20770 |
+| Hierarchy ID | 8.4.2 |
+| Level | Process |
+| Parent | [8.4](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.AndMaintainBusinessInformationArchitecture
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `and maintain business information architecture` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define and maintain business information architecture"]
+        S1["Determine enterprise busine..."]
+        S2["Define enterprise data models"]
+        S3["Identify and understand ext..."]
+        S4["Establish data ownership an..."]
+        S5["Maintain and evolve enterpr..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine enterprise business information requirements](./DetermineEnterpriseBusinessInformationRequirements) | 8.4.2.1 | Determining strategies to manage the enterprise wide flow of business information and content |
+| [Define enterprise data models](./DefineEnterpriseDataModels) | 8.4.2.2 | Define different ways of representation, usage, and identification of data with independent or inter |
+| [Identify and understand external data sources](./IdentifyAndUnderstandExternalDataSources) | 8.4.2.3 | Identifying and understanding external sources of data in relevance of reliability, security, and au |
+| [Establish data ownership and stewardship responsibilities](./EstablishDataOwnershipAndStewardshipResponsibilities) | 8.4.2.4 | Establishing entities responsible for data accuracy, integrity, and timeliness that can authorize or |
+| [Maintain and evolve enterprise data and information architecture](./MaintainAndEvolveEnterpriseDataAndInformationArchitecture) | 8.4.2.5 | Creating and maintaining the process of designing, creating, deploying, and managing strategies to m |
+
+
+## Related Concepts
+
+- [BusinessInformationArchitecture](/concepts/BusinessInformationArchitecture)
+- [BusinessInformationArchitecture](/concepts/BusinessInformationArchitecture)
+
+
+---
+
+*Source: APQC PCF 20770 (8.4.2) - APQC*

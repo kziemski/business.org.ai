@@ -1,0 +1,109 @@
+---
+id: DefineAndEstablishServiceDeliveryStrategy
+name: "Define and establish service delivery strategy"
+code: "20867"
+hierarchyId: "8.7.1"
+type: Process
+level: 3
+status: complete
+parent: "8.7"
+children: ["8.7.1.1", "8.7.1.2", "8.7.1.3", "8.7.1.4", "8.7.1.5"]
+---
+
+# Define and establish service delivery strategy
+
+> Defining and establishing strategy for delivering IT services and solutions to the users.
+
+## Overview
+
+Process 8.7.1 is a core process that defines the specific procedures for define and establish service delivery strategy. 
+
+Defining and establishing strategy for delivering IT services and solutions to the users. Design an IT service delivery model that defines the processes and procedures needed to deliver the IT services and solutions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_1["8.7.1 Define and establish service delivery..."]
+    style N8_7_1 fill:#e1f5fe
+    N8_7_1 --> N8_7_1_1["8.7.1.1 Assess business objectives and I..."]
+    N8_7_1 --> N8_7_1_2["8.7.1.2 Define IT service delivery portf..."]
+    N8_7_1 --> N8_7_1_3["8.7.1.3 Create and maintain IT service d..."]
+    N8_7_1 --> N8_7_1_4["8.7.1.4 Determine IT service delivery lo..."]
+    N8_7_1 --> N8_7_1_5["8.7.1.5 Define IT service delivery sourc..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20867 |
+| Hierarchy ID | 8.7.1 |
+| Level | Process |
+| Parent | [8.7](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.AndEstablishServiceDeliveryStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `and establish service delivery strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define and establish service delivery strategy"]
+        S1["Assess business objectives ..."]
+        S2["Define IT service delivery ..."]
+        S3["Create and maintain IT serv..."]
+        S4["Determine IT service delive..."]
+        S5["Define IT service delivery ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess business objectives and IT service delivery](./AssessBusinessObjectivesAndITServiceDelivery) | 8.7.1.1 | Assessing the goals and objectives of IT service delivery and how it contributes to the overall busi |
+| [Define IT service delivery portfolio](./DefineITServiceDeliveryPortfolio) | 8.7.1.2 | Creating and establishing a repository of IT service delivery offerings |
+| [Create and maintain IT service delivery model](./CreateAndMaintainITServiceDeliveryModel) | 8.7.1.3 | Design and maintaining an IT service delivery model that defines the processes and procedures needed |
+| [Determine IT service delivery locations and activities](./DetermineITServiceDeliveryLocationsAndActivities) | 8.7.1.4 | Determining locations and types of IT services and solutions which need to be delivered |
+| [Define IT service delivery sourcing strategy](./DefineITServiceDeliverySourcingStrategy) | 8.7.1.5 | Defining a strategy for sourcing delivery of IT services and solutions |
+
+
+## Related Concepts
+
+- [ServiceDeliveryStrategy](/concepts/ServiceDeliveryStrategy)
+- [ServiceDeliveryStrategy](/concepts/ServiceDeliveryStrategy)
+
+
+---
+
+*Source: APQC PCF 20867 (8.7.1) - APQC*

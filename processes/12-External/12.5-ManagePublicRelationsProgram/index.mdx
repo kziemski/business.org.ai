@@ -1,0 +1,107 @@
+---
+id: ManagePublicRelationsProgram
+name: "Manage public relations program"
+code: "11014"
+hierarchyId: "12.5"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "12"
+children: ["12.5.1", "12.5.2", "12.5.3", "12.5.4", "12.5.5"]
+---
+
+# Manage public relations program
+
+> Managing a public relations programs through business and communications skills.
+
+## Overview
+
+Group 12.5 is a process group within APQC Category 12.0 (Manage External Relationships). 
+
+Managing a public relations programs through business and communications skills.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_5["12.5 Manage public relations program"]
+    style N12_5 fill:#e1f5fe
+    N12_5 --> N12_5_1["12.5.1 Manage community relations"]
+    N12_5 --> N12_5_2["12.5.2 Manage media relations"]
+    N12_5 --> N12_5_3["12.5.3 Promote political stability"]
+    N12_5 --> N12_5_4["12.5.4 Create press releases"]
+    N12_5 --> N12_5_5["12.5.5 Issue press releases"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11014 |
+| Hierarchy ID | 12.5 |
+| Level | Group |
+| Parent | [12](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.PublicRelationsProgram
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `public relations program` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage public relations program"]
+        S1["Manage community relations"]
+        S2["Manage media relations"]
+        S3["Promote political stability"]
+        S4["Create press releases"]
+        S5["Issue press releases"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage community relations](./ManageCommunityRelations) | 12.5.1 | Developing and administering community relations |
+| [Manage media relations](./ManageMediaRelations) | 12.5.2 | Developing and managing relations with media |
+| [Promote political stability](./PromotePoliticalStability) | 12.5.3 | Promoting political security and stability in the regions where the organization conducts business |
+| [Create press releases](./CreatePressReleases) | 12.5.4 | Developing press releases to communicate developments and generate interest in the organization |
+| [Issue press releases](./IssuePressReleases) | 12.5.5 | Issuing press releases to carefully selected media in distribution channels such as the web, newspap |
+
+
+## Related Concepts
+
+- [PublicRelationsProgram](/concepts/PublicRelationsProgram)
+
+
+---
+
+*Source: APQC PCF 11014 (12.5) - APQC*

@@ -1,0 +1,109 @@
+---
+id: ScreenAndSelectCandidates
+name: "Screen and select candidates"
+code: "20123"
+hierarchyId: "7.2.3"
+type: Process
+level: 3
+status: complete
+parent: "7.2"
+children: ["7.2.3.1", "7.2.3.2", "7.2.3.3", "7.2.3.4", "7.2.3.5"]
+---
+
+# Screen and select candidates
+
+> Evaluating and selecting potential employees through interviews, tests, etc.
+
+## Overview
+
+Process 7.2.3 is a core process that defines the specific procedures for screen and select candidates. 
+
+Evaluating and selecting potential employees through interviews, tests, etc.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_2["7.2 Recruit, source, and select employees"]
+    N7_2 --> N7_2_3["7.2.3 Screen and select candidates"]
+    style N7_2_3 fill:#e1f5fe
+    N7_2_3 --> N7_2_3_1["7.2.3.1 Identify and deploy candidate se..."]
+    N7_2_3 --> N7_2_3_2["7.2.3.2 Interview candidates"]
+    N7_2_3 --> N7_2_3_3["7.2.3.3 Test candidates"]
+    N7_2_3 --> N7_2_3_4["7.2.3.4 Select and reject candidates"]
+    N7_2_3 --> N7_2_3_5["7.2.3.5 Manage new hire/re-hire"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20123 |
+| Hierarchy ID | 7.2.3 |
+| Level | Process |
+| Parent | [7.2](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+screen.AndSelectCandidates
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `screen` | Primary action |
+| Object | `and select candidates` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Screen and select candidates"]
+        S1["Identify and deploy candida..."]
+        S2["Interview candidates"]
+        S3["Test candidates"]
+        S4["Select and reject candidates"]
+        S5["Manage new hire/re-hire"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify and deploy candidate selection tools](./IdentifyAndDeployCandidateSelectionTools) | 7.2.3.1 | Identifying and implementing tools for the selection of candidates |
+| [Interview candidates](./InterviewCandidates) | 7.2.3.2 | Assessing the candidates by their performance in the interviews |
+| [Test candidates](./TestCandidates) | 7.2.3.3 | Examining the candidates through tests |
+| [Select and reject candidates](./SelectAndRejectCandidates) | 7.2.3.4 | Approving the deserving candidates, and rejecting the others |
+| [Manage new hire/re-hire](./ManageNewHirerehire) | 7.2.3.5 | Creating and making job offers to the selected candidates |
+
+
+## Related Concepts
+
+- [Candidates](/concepts/Candidates)
+- [Candidates](/concepts/Candidates)
+
+
+---
+
+*Source: APQC PCF 20123 (7.2.3) - APQC*

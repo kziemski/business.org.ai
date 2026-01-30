@@ -1,0 +1,96 @@
+---
+id: ManageSupplierRecovery
+name: "Manage supplier recovery"
+code: "20106"
+hierarchyId: "6.3.3"
+type: Process
+level: 3
+status: complete
+parent: "6.3"
+children: ["6.3.3.1", "6.3.3.2"]
+---
+
+# Manage supplier recovery
+
+> Managing the recovery of costs from suppliers for individual claims.
+
+## Overview
+
+Process 6.3.3 is a core process that defines the specific procedures for manage supplier recovery. 
+
+Managing the recovery of costs from suppliers for individual claims.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_3["6.3.3 Manage supplier recovery"]
+    style N6_3_3 fill:#e1f5fe
+    N6_3_3 --> N6_3_3_1["6.3.3.1 Create supplier recovery claims"]
+    N6_3_3 --> N6_3_3_2["6.3.3.2 Negotiate recoveries with suppliers"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20106 |
+| Hierarchy ID | 6.3.3 |
+| Level | Process |
+| Parent | [6.3](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.SupplierRecovery
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `supplier recovery` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage supplier recovery"]
+        S1["Create supplier recovery cl..."]
+        S2["Negotiate recoveries with s..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create supplier recovery claims](./CreateSupplierRecoveryClaims) | 6.3.3.1 | Raising a supplier recovery claim |
+| [Negotiate recoveries with suppliers](./NegotiateRecoveriesWithSuppliers) | 6.3.3.2 | Arranging the returns of recalled products to suppliers |
+
+
+## Related Concepts
+
+- [SupplierRecovery](/concepts/SupplierRecovery)
+
+
+---
+
+*Source: APQC PCF 20106 (6.3.3) - APQC*

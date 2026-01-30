@@ -1,0 +1,109 @@
+---
+id: ScheduleAndPerformConstructionWork
+name: "Schedule and perform construction work"
+code: "19229"
+hierarchyId: "10.2.3"
+type: Process
+level: 3
+status: complete
+parent: "10.2"
+children: ["10.2.3.1", "10.2.3.2", "10.2.3.3", "10.2.3.4", "10.2.3.5"]
+---
+
+# Schedule and perform construction work
+
+> Arranging a timetable for which to perform construction work.
+
+## Overview
+
+Process 10.2.3 is a core process that defines the specific procedures for schedule and perform construction work. 
+
+Arranging a timetable for which to perform construction work. Schedule resources to contract assets for new or replacement assets. Reschedule or redesign assets if needed.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_2["10.2 Design and construct assets"]
+    N10_2 --> N10_2_3["10.2.3 Schedule and perform construction work"]
+    style N10_2_3 fill:#e1f5fe
+    N10_2_3 --> N10_2_3_1["10.2.3.1 Schedule construction work"]
+    N10_2_3 --> N10_2_3_2["10.2.3.2 Obtain resources"]
+    N10_2_3 --> N10_2_3_3["10.2.3.3 Construct new assets"]
+    N10_2_3 --> N10_2_3_4["10.2.3.4 Augment existing assets"]
+    N10_2_3 --> N10_2_3_5["10.2.3.5 Renew/Replace assets"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19229 |
+| Hierarchy ID | 10.2.3 |
+| Level | Process |
+| Parent | [10.2](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+schedule.AndPerformConstructionWork
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `schedule` | Primary action |
+| Object | `and perform construction work` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Schedule and perform construction work"]
+        S1["Schedule construction work"]
+        S2["Obtain resources"]
+        S3["Construct new assets"]
+        S4["Augment existing assets"]
+        S5["Renew/Replace assets"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Schedule construction work](./ScheduleConstructionWork) | 10.2.3.1 | Defining a timetable for which to execute the construction of the asset |
+| [Obtain resources](./ObtainResources) | 10.2.3.2 | Gathering resources needed to complete all construction work |
+| [Construct new assets](./ConstructNewAssets) | 10.2.3.3 | Building new assets necessary for the organization |
+| [Augment existing assets](./AugmentExistingAssets) | 10.2.3.4 | Modifying existing assets to align with the changing needs of the organization |
+| [Renew/Replace assets](./RenewReplaceAssets) | 10.2.3.5 | Determining the need to replace existing assets |
+
+
+## Related Concepts
+
+- [ConstructionWork](/concepts/ConstructionWork)
+- [ConstructionWork](/concepts/ConstructionWork)
+
+
+---
+
+*Source: APQC PCF 19229 (10.2.3) - APQC*

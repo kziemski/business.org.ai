@@ -1,0 +1,99 @@
+---
+id: ManageEnterpriseRisk
+name: "Manage enterprise risk"
+code: "17060"
+hierarchyId: "11.1"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "11"
+children: ["11.1.1", "11.1.2", "11.1.3"]
+---
+
+# Manage enterprise risk
+
+> Creating requisite frameworks and coordinating all risk management activities for the entire organization and each function.
+
+## Overview
+
+Group 11.1 is a process group within APQC Category 11.0 (Manage Enterprise Risk, Compliance, Remediation, Resiliency). 
+
+Creating requisite frameworks and coordinating all risk management activities for the entire organization and each function. Manage the enterprise risk by outlining the risk policies and procedures. Monitor and communicate all risk management activities. Encourage correspondence among the business units. Manage the risk of all business units and functions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk, Compliance, Remediation, Resiliency"]
+    C11 --> N11_1["11.1 Manage enterprise risk"]
+    style N11_1 fill:#e1f5fe
+    N11_1 --> N11_1_1["11.1.1 Establish the enterprise risk fr..."]
+    N11_1 --> N11_1_2["11.1.2 Oversee and coordinate enterpris..."]
+    N11_1 --> N11_1_3["11.1.3 Manage business unit and functio..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17060 |
+| Hierarchy ID | 11.1 |
+| Level | Group |
+| Parent | [11](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EnterpriseRisk
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `enterprise risk` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage enterprise risk"]
+        S1["Establish the enterprise ri..."]
+        S2["Oversee and coordinate ente..."]
+        S3["Manage business unit and fu..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish the enterprise risk framework and policies](./11.1.1-EstablishEnterpriseRiskFramework/) | 11.1.1 | Creating an agenda for the rules and regulations of enterprise risk that deal with hazardous, financ |
+| [Oversee and coordinate enterprise risk management activities](./11.1.2-OverseeCoordinateEnterpriseRisk/) | 11.1.2 | Coordinating to plan, organize, lead, and control the activities of an organization in order to mini |
+| [Manage business unit and function risk](./11.1.3-ManageBusinessUnitFunction/) | 11.1.3 | Analyzing the threats a business unit/function faces to prioritize the controls it implements |
+
+
+## Related Concepts
+
+- [EnterpriseRisk](/concepts/EnterpriseRisk)
+
+
+---
+
+*Source: APQC PCF 17060 (11.1) - APQC*

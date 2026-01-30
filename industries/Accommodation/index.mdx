@@ -1,0 +1,106 @@
+---
+id: AccommodationAndFoodServices
+name: "Accommodation and Food Services"
+code: "72"
+type: Industry
+level: Sector
+status: complete
+---
+
+# Accommodation and Food Services
+
+> The Sector as a Whole The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption.
+
+## Overview
+
+Accommodation and Food Services represents an important category within the Accommodation and Food Services sector (NAICS 72). This sector encompasses establishments primarily engaged in accommodation and food services.
+
+The Sector as a Whole The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment. Some establishments that provide food and beverage services are classified in other sectors. Excluded from this sector are civic and social organizations. These establishments are classified in Sector 81, Other Services (except Public Administration). Amusement and recreation parks, dinner theaters, and other recreation or entertainment facilities are classified in Sector 71, Arts, Entertainment, and Recreation. Motion picture theaters are classified in Sector 51, Information.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S72["72: Accommodation and Food Services"]
+    S72 --> N72["72: Accommodation and Food Services"]
+    style N72 fill:#f96,stroke:#333,stroke-width:2px
+    N72 --> N722["722: Drinking Places"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 72 |
+| Level | Sector |
+| Child Industries | 1 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Drinking Places](./DrinkingPlaces/) | 722 | Industries in the Food Services and Drinking Places subsector prepare meals, sna |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Reservation/Booking"]
+        O2["Guest Check-in"]
+        O3["Service Delivery"]
+        O4["Quality Assurance"]
+        O5["Check-out"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Housekeeping"]
+        S2["Maintenance"]
+        S3["Marketing"]
+        S4["Revenue Mgmt"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 72 - Accommodation and Food Services*

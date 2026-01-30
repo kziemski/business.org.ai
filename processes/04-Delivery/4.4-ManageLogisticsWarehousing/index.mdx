@@ -1,0 +1,104 @@
+---
+id: ManageLogisticsAndWarehousing
+name: "Manage logistics and warehousing"
+code: "10219"
+hierarchyId: "4.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "4"
+children: ["4.4.1", "4.4.2", "4.4.3", "4.4.4"]
+---
+
+# Manage logistics and warehousing
+
+> Administering and overseeing all activities related to logistics and warehousing.
+
+## Overview
+
+Group 4.4 is a process group within APQC Category 4.0 (Deliver Physical Products). 
+
+Administering and overseeing all activities related to logistics and warehousing. Outline and establish a strategy for the logistics function. Plan and administer the flow of inbound materials. Administer the operational activities of warehousing and outbound transportation. Manage reverse logistics including returns and exchanges.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_4["4.4 Manage logistics and warehousing"]
+    style N4_4 fill:#e1f5fe
+    N4_4 --> N4_4_1["4.4.1 Provide logistics governance"]
+    N4_4 --> N4_4_2["4.4.2 Plan and manage inbound material..."]
+    N4_4 --> N4_4_3["4.4.3 Operate warehousing"]
+    N4_4 --> N4_4_4["4.4.4 Operate outbound transportation"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10219 |
+| Hierarchy ID | 4.4 |
+| Level | Group |
+| Parent | [4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.LogisticsAndWarehousing
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `logistics and warehousing` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage logistics and warehousing"]
+        S1["Provide logistics governance"]
+        S2["Plan and manage inbound mat..."]
+        S3["Operate warehousing"]
+        S4["Operate outbound transporta..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Provide logistics governance](./4.4.1-ProvideLogisticsGovernance/) | 4.4.1 | Outlining the strategy for managing logistics |
+| [Plan and manage inbound material flow](./4.4.2-PlanManageInboundMaterial/) | 4.4.2 | Creating and executing a strategy for all the internal activities related to the flow/transfer of in |
+| [Operate warehousing](./4.4.3-OperateWarehousing/) | 4.4.3 | Tracking the inventory deployment |
+| [Operate outbound transportation](./4.4.4-OperateOutboundTransportation/) | 4.4.4 | Creating a plan that specifies the schedule and system for transportation and delivery of the outbou |
+
+
+## Related Concepts
+
+- [Logistics](/concepts/Logistics)
+- [Warehousing](/concepts/Warehousing)
+
+
+---
+
+*Source: APQC PCF 10219 (4.4) - APQC*

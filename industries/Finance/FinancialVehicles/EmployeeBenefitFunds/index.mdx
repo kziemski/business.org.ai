@@ -1,0 +1,111 @@
+---
+id: EmployeeBenefitFunds
+name: "Employee Benefit Funds"
+code: "5251"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Employee Benefit Funds
+
+> This industry group comprises legal entities (i.
+
+## Overview
+
+Employee Benefit Funds represents an important category within the Finance and Insurance sector (NAICS 52). This industry group encompasses establishments primarily engaged in employee benefit funds.
+
+This industry group comprises legal entities (i.e., funds, plans, and/or programs) organized to provide insurance and employee benefits exclusively for the sponsor, firm, or its employees or members.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S52["52: Finance and Insurance"]
+    S52 --> N525["525: Financial Vehicles"]
+    N525 --> N5251["5251: Employee Benefit Funds"]
+    style N5251 fill:#f96,stroke:#333,stroke-width:2px
+    N5251 --> N52512["52512: Welfare Funds"]
+    N5251 --> N52519["52519: Insurance Funds"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 5251 |
+| Level | Industry Group |
+| Parent | [Financial Vehicles](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Welfare Funds](./WelfareFunds/) | 52512 | See industry description for 525120 |
+| [Insurance Funds](./InsuranceFunds/) | 52519 | See industry description for 525190 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Client Acquisition"]
+        O2["Underwriting/Analysis"]
+        O3["Processing"]
+        O4["Service Delivery"]
+        O5["Reporting"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Risk Management"]
+        S2["Compliance"]
+        S3["IT Security"]
+        S4["Customer Relations"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Capital"]
+        I2["Data"]
+        I3["Expertise"]
+        I4["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Financial Products"]
+        O2["Risk Coverage"]
+        O3["Advisory"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Individuals"]
+        C2["Businesses"]
+        C3["Institutions"]
+        C4["Government"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 5251 - Employee Benefit Funds*

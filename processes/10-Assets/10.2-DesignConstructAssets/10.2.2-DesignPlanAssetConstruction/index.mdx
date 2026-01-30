@@ -1,0 +1,109 @@
+---
+id: DesignAndPlanAssetConstruction
+name: "Design and plan asset construction"
+code: "20139"
+hierarchyId: "10.2.2"
+type: Process
+level: 3
+status: complete
+parent: "10.2"
+children: ["10.2.2.1", "10.2.2.2", "10.2.2.3", "10.2.2.4", "10.2.2.5"]
+---
+
+# Design and plan asset construction
+
+> Outlining the steps and strategies needed to construct assets.
+
+## Overview
+
+Process 10.2.2 is a core process that defines the specific procedures for design and plan asset construction. 
+
+Outlining the steps and strategies needed to construct assets. Verify that all regulations are adhered to and that all permissions have been granted. Organize and plan for resources to complete construction.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_2["10.2 Design and construct assets"]
+    N10_2 --> N10_2_2["10.2.2 Design and plan asset construction"]
+    style N10_2_2 fill:#e1f5fe
+    N10_2_2 --> N10_2_2_1["10.2.2.1 Develop construction strategy"]
+    N10_2_2 --> N10_2_2_2["10.2.2.2 Perform construction performance..."]
+    N10_2_2 --> N10_2_2_3["10.2.2.3 Obtain construction permissions"]
+    N10_2_2 --> N10_2_2_4["10.2.2.4 Design assets"]
+    N10_2_2 --> N10_2_2_5["10.2.2.5 Plan construction resources"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20139 |
+| Hierarchy ID | 10.2.2 |
+| Level | Process |
+| Parent | [10.2](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+design.AndPlanAssetConstruction
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Primary action |
+| Object | `and plan asset construction` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Design and plan asset construction"]
+        S1["Develop construction strategy"]
+        S2["Perform construction perfor..."]
+        S3["Obtain construction permiss..."]
+        S4["Design assets"]
+        S5["Plan construction resources"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop construction strategy](./DevelopConstructionStrategy) | 10.2.2.1 | Developing a strategy to perform asset construction |
+| [Perform construction performance management](./PerformConstructionPerformanceManagement) | 10.2.2.2 | Managing the construction process to ensure that activates are on task, on budget, and are being per |
+| [Obtain construction permissions](./ObtainConstructionPermissions) | 10.2.2.3 | Gathering the required permits for construction from the proper jurisdiction |
+| [Design assets](./DesignAssets) | 10.2.2.4 | Designing assets to meet organizational needs as well as ensuring that the asset adheres to all nati |
+| [Plan construction resources](./PlanConstructionResources) | 10.2.2.5 | Determining what resources will need to be acquired in order to carry out construction |
+
+
+## Related Concepts
+
+- [AssetConstruction](/concepts/AssetConstruction)
+- [AssetConstruction](/concepts/AssetConstruction)
+
+
+---
+
+*Source: APQC PCF 20139 (10.2.2) - APQC*

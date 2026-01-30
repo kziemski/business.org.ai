@@ -1,0 +1,103 @@
+---
+id: ManageEmployeeCommunication
+name: "Manage employee communication"
+code: "21451"
+hierarchyId: "7.8"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "7"
+children: ["7.8.1", "7.8.2", "7.8.3", "7.8.4"]
+---
+
+# Manage employee communication
+
+> Creating an effective plan that initiates and promotes communication and engagement among the employees and between employees and management.
+
+## Overview
+
+Group 7.8 is a process group within APQC Category 7.0 (Develop and Manage Human Capital). 
+
+Creating an effective plan that initiates and promotes communication and engagement among the employees and between employees and management.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_8["7.8 Manage employee communication"]
+    style N7_8 fill:#e1f5fe
+    N7_8 --> N7_8_1["7.8.1 Develop employee communication plan"]
+    N7_8 --> N7_8_2["7.8.2 Conduct employee engagement surveys"]
+    N7_8 --> N7_8_3["7.8.3 Deliver employee communications"]
+    N7_8 --> N7_8_4["7.8.4 Manage Information Technology (IT)"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21451 |
+| Hierarchy ID | 7.8 |
+| Level | Group |
+| Parent | [7](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EmployeeCommunication
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `employee communication` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage employee communication"]
+        S1["Develop employee communicat..."]
+        S2["Conduct employee engagement..."]
+        S3["Deliver employee communicat..."]
+        S4["Manage Information Technolo..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop employee communication plan](./DevelopEmployeeCommunicationPlan) | 7.8.1 | Creating a plan for managing communication among employees |
+| [Conduct employee engagement surveys](./ConductEmployeeEngagementSurveys) | 7.8.2 | Questioning employees to ascertain overall workplace satisfaction |
+| [Deliver employee communications](./DeliverEmployeeCommunications) | 7.8.3 | Implementing the communication plan for employees |
+| [Manage Information Technology (IT)](./ManageInformationTechnologyIT) | 7.8.4 | Managing process groups relevant to the business of information technology within an organization |
+
+
+## Related Concepts
+
+- [EmployeeCommunication](/concepts/EmployeeCommunication)
+
+
+---
+
+*Source: APQC PCF 21451 (7.8) - APQC*

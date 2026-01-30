@@ -1,0 +1,175 @@
+---
+id: Sales
+name: "Sales and Related Occupations"
+code: "41"
+type: OccupationCategory
+status: complete
+---
+
+# Sales and Related Occupations
+
+> Category 41 - Sales and Related occupations sell products and services in retail, wholesale, and other sales environments, including supervisory roles and specialized positions like cashiers and rental clerks.
+
+## Overview
+
+Sales and Related Occupations encompass a broad spectrum of roles dedicated to selling products and services, processing transactions, and managing sales teams. This category ranges from entry-level positions like cashiers who handle point-of-sale transactions to first-line supervisors who manage retail and wholesale sales teams. These professionals are essential to the revenue generation of nearly every industry, serving as the primary interface between businesses and their customers.
+
+## Classification Hierarchy
+
+```mermaid
+graph TD
+    Cat41["41 - Sales and Related Occupations"]
+
+    Cat41 --> Group411["41-1000 Supervisors of Sales Workers"]
+    Cat41 --> Group412["41-2000 Retail Sales Workers"]
+    Cat41 --> Group413["41-3000 Sales Representatives"]
+    Cat41 --> Group414["41-4000 Sales Representatives, Wholesale & Manufacturing"]
+    Cat41 --> Group419["41-9000 Other Sales and Related Workers"]
+
+    Group411 --> Retail["41-1011 Retail Sales Supervisors"]
+    Group411 --> NonRetail["41-1012 Non-Retail Sales Supervisors"]
+
+    Group412 --> Cash["41-2011 Cashiers"]
+    Group412 --> Gamble["41-2012 Gambling Cashiers"]
+    Group412 --> Counter["41-2021 Counter and Rental Clerks"]
+    Group412 --> PartsC["41-2022 Parts Salespersons"]
+    Group412 --> RetailS["41-2031 Retail Salespersons"]
+
+    style Cat41 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| SOC Category Code | 41 |
+| Major Groups | 5 |
+| Detailed Occupations | 30+ |
+| Source | O*NET / BLS |
+
+## Occupations in this Category
+
+### Supervisors of Sales Workers (41-1000)
+
+| Occupation | Code | Description |
+|------------|------|-------------|
+| [First-Line Supervisors of Retail Sales Workers](./RetailSupervisors.mdx) | 41-1011.00 | Supervise and coordinate activities of retail sales workers |
+| [First-Line Supervisors of Non-Retail Sales Workers](./WholesaleSupervisors.mdx) | 41-1012.00 | Supervise sales workers in wholesale, manufacturing, and services |
+
+### Retail Sales Workers (41-2000)
+
+| Occupation | Code | Description |
+|------------|------|-------------|
+| [Cashiers](./Cashiers.mdx) | 41-2011.00 | Receive and disburse money in retail establishments |
+| [Gambling Change Persons and Booth Cashiers](./GamblingCashiers.mdx) | 41-2012.00 | Exchange coins, tokens, and chips in gambling establishments |
+| [Counter and Rental Clerks](./RentalClerks.mdx) | 41-2021.00 | Receive orders for repairs, rentals, and services |
+
+## Category Overview Diagram
+
+```mermaid
+mindmap
+    root(("Sales Occupations"))
+        Supervisors
+            Retail Sales Supervisors
+            Wholesale Supervisors
+            Non-Retail Supervisors
+        Transaction Processing
+            Cashiers
+            Gambling Cashiers
+            Counter Clerks
+        Customer Service
+            Rental Clerks
+            Parts Salespersons
+            Retail Salespersons
+        Business Development
+            Sales Representatives
+            Account Executives
+            Technical Sales
+        Specialized Sales
+            Insurance Sales
+            Real Estate Sales
+            Advertising Sales
+```
+
+## Skills Common to Sales Occupations
+
+### Core Competencies
+
+```mermaid
+graph LR
+    subgraph CustomerService["Customer Service"]
+        CS1["Active Listening"]
+        CS2["Problem Resolution"]
+        CS3["Relationship Building"]
+    end
+
+    subgraph Communication["Communication Skills"]
+        C1["Persuasion"]
+        C2["Negotiation"]
+        C3["Product Knowledge"]
+    end
+
+    subgraph Technical["Technical Skills"]
+        T1["POS Systems"]
+        T2["Inventory Management"]
+        T3["Cash Handling"]
+    end
+
+    CustomerService --> Sales["Sales Excellence"]
+    Communication --> Sales
+    Technical --> Sales
+```
+
+## Career Pathways
+
+```mermaid
+graph BT
+    Entry["Entry Level<br/>Cashier / Sales Associate"] --> Mid["Mid-Level<br/>Senior Sales / Rental Clerk"]
+    Mid --> Supervisor["Supervisor<br/>Department Lead"]
+    Supervisor --> Manager["Management<br/>Store Manager / Sales Manager"]
+    Manager --> Director["Director<br/>Regional Manager / VP Sales"]
+
+    Specialist["Specialist Track<br/>Technical Sales"] --> Manager
+    B2B["B2B Sales"] --> Director
+```
+
+## Industries Employing Sales Occupations
+
+- [Retail Trade](/industries/RetailTrade) - Highest concentration
+- [Wholesale Trade](/industries/WholesaleTrade) - B2B sales focus
+- [Accommodation and Food Services](/industries/Hospitality) - Service sales
+- [Real Estate](/industries/RealEstate) - Specialized sales
+- [Finance and Insurance](/industries/FinanceInsurance) - Product sales
+- [Arts, Entertainment, and Recreation](/industries/Entertainment) - Casino and venue sales
+
+## Education & Training Trends
+
+| Level | Percentage of Sales Workers |
+|-------|---------------------------|
+| High School Diploma | 50-60% |
+| Some College | 20-25% |
+| Associate's Degree | 10-15% |
+| Bachelor's Degree | 10-15% |
+
+## GraphDL Task Categories
+
+Sales occupations commonly perform tasks across these semantic categories:
+
+| Verb Category | Example Tasks |
+|---------------|---------------|
+| **receive** | `receive.Payments.from.Customers`, `receive.Orders.for.Products` |
+| **process** | `process.Transactions.using.POSSystem`, `process.Returns.for.Customers` |
+| **supervise** | `supervise.SalesWorkers.in.Department`, `supervise.Operations.of.Store` |
+| **coordinate** | `coordinate.Activities.of.Staff`, `coordinate.Inventory.with.Warehouse` |
+| **assist** | `assist.Customers.with.Purchases`, `assist.Patrons.with.Services` |
+
+## Related Categories
+
+- [Office and Administrative Support](/occupations/Administrative) - Category 43
+- [Management](/occupations/Management) - Category 11
+- [Food Preparation and Serving](/occupations/FoodService) - Category 35
+- [Personal Care and Service](/occupations/PersonalService) - Category 39
+
+---
+
+*Source: O*NET / Bureau of Labor Statistics - SOC Category 41*

@@ -1,0 +1,64 @@
+---
+id: ReleaseProductionOrdersAndCreateLots
+name: "Release production orders and create lots"
+code: "10309"
+hierarchyId: "4.3.1.7"
+type: Activity
+level: 4
+status: complete
+parent: "4.3.1"
+---
+
+# Release production orders and create lots
+
+> Initiating the delivery of production orders, and creating lots.
+
+## Overview
+
+Activity 4.3.1.7 is an activity within the Deliver Physical Products framework. 
+
+Initiating the delivery of production orders, and creating lots. Communicate the order that specifies which material to produce, where to produce it, which operations to require, and on which date production takes place. Define how to settle the order costs. Create production lots, which is a particular production unit of an assembly that is planned and manufactured.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_3["4.3 Produce/Assemble/Test product"]
+    N4_3 --> N4_3_1["4.3.1 Schedule production"]
+    N4_3_1 --> N4_3_1_7["4.3.1.7 Release production orders and create ..."]
+    style N4_3_1_7 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10309 |
+| Hierarchy ID | 4.3.1.7 |
+| Level | Activity |
+| Parent | [4.3.1](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+release.ProductionOrdersAndCreateLots
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `release` | Primary action |
+| Object | `production orders and create lots` | Direct object |
+
+
+## Related Concepts
+
+- [ProductionOrders](/concepts/ProductionOrders)
+- [CreateLots](/concepts/CreateLots)
+
+
+---
+
+*Source: APQC PCF 10309 (4.3.1.7) - APQC*

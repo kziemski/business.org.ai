@@ -1,0 +1,438 @@
+---
+id: AssetAccounting
+name: "Perform fixed-asset accounting"
+code: "10749"
+hierarchyId: "10.5"
+type: Process
+status: complete
+---
+
+# Perform fixed-asset accounting
+
+> Accounting for long-term and fixed assets. Record purchased, fixed assets that are not easily convertible into cash. Account for costs, useful life, resale value, depreciation, and amortization.
+
+## Overview
+
+Perform fixed-asset accounting is a core process group within the Acquire, Construct, and Manage Assets category (10.0). This process group encompasses all financial accounting activities related to an organization's fixed assets, including policy establishment, master data management, transaction processing, depreciation calculation, and regulatory reporting.
+
+Fixed-asset accounting is essential for accurate financial reporting, tax compliance, and capital investment decision-making. Proper asset accounting ensures that balance sheet values accurately reflect asset positions, income statements appropriately recognize depreciation expense, and management has reliable information for capital planning and investment analysis.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"] --> G101["10.1 Plan and acquire assets"]
+    C10 --> G102["10.2 Design and construct assets"]
+    C10 --> G103["10.3 Maintain assets"]
+    C10 --> G104["10.4 Manage asset end-of-life"]
+    C10 --> G105["10.5 Perform fixed-asset accounting"]
+
+    G105 --> P1051["10.5.1 Establish policies and procedures"]
+    G105 --> P1052["10.5.2 Maintain master data files"]
+    G105 --> P1053["10.5.3 Process additions and retires"]
+    G105 --> P1054["10.5.4 Process adjustments and revaluations"]
+    G105 --> P1055["10.5.5 Process maintenance expenses"]
+    G105 --> P1056["10.5.6 Calculate depreciation"]
+    G105 --> P1057["10.5.7 Reconcile asset ledger"]
+    G105 --> P1058["10.5.8 Track assets and inventory"]
+    G105 --> P1059["10.5.9 Provide tax and regulatory data"]
+
+    style G105 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10749 |
+| Hierarchy ID | 10.5 |
+| Level | Process Group |
+| Category | [Acquire, Construct, and Manage Assets](/processes/10-Assets) |
+| Sub-Processes | 9 |
+| Related Categories | 9.0 Manage Financial Resources |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Asset Acquisitions"]
+        I2["Asset Dispositions"]
+        I3["Maintenance Activities"]
+        I4["Accounting Standards"]
+        I5["Tax Regulations"]
+    end
+
+    subgraph Process["Perform Fixed-Asset Accounting"]
+        P1["Establish Policies<br/>and Procedures"]
+        P2["Maintain Master<br/>Data Files"]
+        P3["Process Asset<br/>Transactions"]
+        P4["Calculate<br/>Depreciation"]
+        P5["Reconcile Asset<br/>Ledger"]
+        P6["Provide Reporting<br/>Data"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Asset Register"]
+        O2["Depreciation Schedules"]
+        O3["Financial Statements"]
+        O4["Tax Returns"]
+        O5["Regulatory Reports"]
+        O6["Audit Documentation"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+perform.FixedAssetAccounting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action of executing accounting activities |
+| Object | `FixedAssetAccounting` | Financial accounting for long-term assets |
+| Preposition | `for` | Relationship to asset types |
+| PrepObject | `LongTermAssets` | Assets not easily convertible to cash |
+
+## Activities
+
+### 10.5.1 - Establish Fixed-Asset Policies and Procedures
+
+Creating the governance framework that guides all fixed-asset accounting activities.
+
+```mermaid
+sequenceDiagram
+    participant Standards as Accounting Standards
+    participant Policy as Policy Team
+    participant Finance as Finance Leadership
+    participant Audit as Internal Audit
+    participant Training as Training Team
+
+    Standards->>Policy: Provide GAAP/IFRS requirements
+    Policy->>Policy: Draft policies
+    Policy->>Finance: Submit for approval
+    Finance->>Audit: Request control review
+    Audit->>Finance: Validate controls
+    Finance->>Policy: Approve policies
+    Policy->>Training: Prepare training
+    Training->>Training: Conduct training
+```
+
+**Tasks:**
+- `establish.CapitalizationThresholds` - Define monetary limits
+- `define.DepreciationMethods` - Select depreciation approaches
+- `create.DisposalProcedures` - Document retirement processes
+- `publish.PolicyDocumentation` - Communicate organization-wide
+
+### 10.5.2 - Maintain Fixed-Asset Master Data Files
+
+Managing the central repository of all fixed-asset information.
+
+```mermaid
+sequenceDiagram
+    participant Acquisition as Asset Acquisitions
+    participant Data as Master Data Team
+    participant System as Asset System
+    participant Validation as Data Validation
+    participant Users as System Users
+
+    Acquisition->>Data: Provide asset details
+    Data->>System: Create/update records
+    System->>Validation: Run data quality checks
+    Validation->>Data: Report exceptions
+    Data->>Data: Resolve data issues
+    System->>Users: Provide accurate data
+```
+
+**Tasks:**
+- `create.AssetRecords` - Initialize new asset entries
+- `maintain.AssetAttributes` - Keep data current
+- `validate.DataQuality` - Ensure accuracy
+- `archive.HistoricalData` - Retain per policy
+
+### 10.5.3 - Process and Record Asset Transactions
+
+Recording all asset additions, retirements, and modifications.
+
+```mermaid
+sequenceDiagram
+    participant Transaction as Asset Transaction
+    participant Review as Transaction Review
+    participant Accounting as Accounting
+    participant System as Asset System
+    participant GL as General Ledger
+
+    Transaction->>Review: Submit for processing
+    Review->>Review: Verify authorization
+    Review->>Accounting: Determine treatment
+    Accounting->>System: Record transaction
+    System->>GL: Post journal entries
+```
+
+**Tasks:**
+- `process.Acquisitions` - Record new assets
+- `process.Dispositions` - Record asset retirements
+- `record.Transfers` - Track asset movements
+- `post.JournalEntries` - Update general ledger
+
+### 10.5.6 - Calculate and Record Depreciation
+
+Computing periodic depreciation expense for all active assets.
+
+```mermaid
+sequenceDiagram
+    participant Assets as Asset Register
+    participant Calc as Depreciation Calculation
+    participant Schedule as Depreciation Schedule
+    participant GL as General Ledger
+    participant Reporting as Financial Reporting
+
+    Assets->>Calc: Provide asset data
+    Calc->>Calc: Apply depreciation methods
+    Calc->>Schedule: Update schedules
+    Schedule->>GL: Post depreciation entries
+    GL->>Reporting: Provide expense data
+```
+
+**Tasks:**
+- `calculate.BookDepreciation` - Compute GAAP depreciation
+- `calculate.TaxDepreciation` - Compute tax basis depreciation
+- `post.DepreciationEntries` - Record in general ledger
+- `update.AccumulatedDepreciation` - Maintain running totals
+
+### 10.5.7 - Reconcile Fixed-Asset Ledger
+
+Ensuring agreement between asset subledger and general ledger.
+
+```mermaid
+sequenceDiagram
+    participant Subledger as Asset Subledger
+    participant GL as General Ledger
+    participant Reconciliation as Reconciliation Process
+    participant Exceptions as Exception Handling
+    participant Close as Period Close
+
+    Subledger->>Reconciliation: Provide subledger balances
+    GL->>Reconciliation: Provide GL balances
+    Reconciliation->>Reconciliation: Compare balances
+    Reconciliation->>Exceptions: Identify variances
+    Exceptions->>Exceptions: Investigate and resolve
+    Exceptions->>Close: Confirm reconciled
+```
+
+**Tasks:**
+- `compare.SubledgerToGL` - Match account balances
+- `investigate.Variances` - Research discrepancies
+- `resolve.Differences` - Correct identified errors
+- `document.Reconciliation` - Maintain audit trail
+
+### 10.5.9 - Provide Fixed-Asset Data for Reporting
+
+Supporting tax, statutory, and regulatory reporting requirements.
+
+```mermaid
+sequenceDiagram
+    participant Asset as Asset Data
+    participant Tax as Tax Team
+    participant Regulatory as Regulatory Reporting
+    participant External as External Parties
+    participant Audit as Audit Support
+
+    Asset->>Tax: Provide tax basis data
+    Asset->>Regulatory: Provide statutory data
+    Tax->>External: File tax returns
+    Regulatory->>External: Submit regulatory reports
+    Asset->>Audit: Support audit requests
+```
+
+**Tasks:**
+- `prepare.TaxSchedules` - Generate tax depreciation reports
+- `compile.RegulatoryReports` - Create required filings
+- `support.ExternalAudit` - Respond to auditor requests
+- `maintain.ComplianceDocumentation` - Preserve evidence
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Establish policies | Controller | CFO | External auditors | All departments |
+| Maintain master data | Asset Team | Asset Manager | IT | Finance |
+| Process transactions | Asset Accountant | Controller | Procurement | Department heads |
+| Calculate depreciation | Asset Accountant | Controller | Tax | External auditors |
+| Reconcile ledger | Accounting Team | Controller | Internal Audit | CFO |
+| Provide reporting data | Asset Team | CFO | Tax, Legal | Audit committee |
+
+## Related Departments
+
+- [Finance](/departments/Finance) - Process ownership
+- [Accounting](/departments/Accounting) - Transaction processing
+- [Tax](/departments/Tax) - Tax compliance
+- [Internal Audit](/departments/InternalAudit) - Control assurance
+- [Facilities](/departments/Facilities) - Physical asset information
+- [IT](/departments/IT) - System support
+
+## Related Occupations
+
+- [Chief Financial Officers](/occupations/CFO) - Overall accountability
+- [Financial Managers](/occupations/FinancialManagers) - Process management
+- [Accountants and Auditors](/occupations/Accountants) - Transaction execution
+- [Tax Preparers](/occupations/TaxPreparers) - Tax compliance
+- [Financial Analysts](/occupations/FinancialAnalysts) - Reporting and analysis
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Aerospace fixed-asset accounting addresses government contract cost accounting, specialized equipment with long useful lives, and security classification requirements.
+
+**Industry-Specific Activities:**
+- Apply Cost Accounting Standards (CAS)
+- Track government-furnished property
+- Manage classified asset documentation
+- Support DCAA audit requirements
+
+### Automotive
+
+Automotive manufacturing requires detailed tracking of production tooling, flexible manufacturing equipment, and platform-specific assets.
+
+**Industry-Specific Activities:**
+- Manage high-volume tooling accounting
+- Track platform-specific asset pools
+- Handle supplier-owned tooling arrangements
+- Process model year changeover retirements
+
+### Banking
+
+Banking fixed-asset accounting focuses on branch network assets, ATM equipment, and technology infrastructure with regulatory capital implications.
+
+**Industry-Specific Activities:**
+- Calculate regulatory capital impacts
+- Manage branch consolidation accounting
+- Track technology refresh cycles
+- Report to banking regulators
+
+### Healthcare Provider
+
+Healthcare organizations manage medical equipment with FDA registration, patient safety, and complex reimbursement considerations.
+
+**Industry-Specific Activities:**
+- Track FDA-registered devices
+- Manage clinical equipment lifecycles
+- Support cost-based reimbursement
+- Document biomedical maintenance
+
+### Petroleum (Upstream/Downstream)
+
+Oil and gas companies apply specialized accounting methods for exploration, production, and refining assets.
+
+**Industry-Specific Activities:**
+- Apply successful efforts or full cost method
+- Record asset retirement obligations
+- Allocate joint venture asset costs
+- Track environmental compliance assets
+
+### Retail
+
+Retail organizations manage distributed store assets, fixture programs, and omnichannel infrastructure.
+
+**Industry-Specific Activities:**
+- Standardize fixture accounting
+- Manage store remodel programs
+- Track POS equipment lifecycle
+- Handle seasonal capacity assets
+
+### Utilities
+
+Utility companies maintain long-lived infrastructure with regulatory rate-setting and reliability implications.
+
+**Industry-Specific Activities:**
+- Apply regulatory accounting (ASC 980)
+- Calculate rate base assets
+- Track infrastructure replacement programs
+- Report to utility commissions
+
+## Fixed-Asset Accounting Framework
+
+### Depreciation Methods
+
+| Method | Calculation | Best For |
+|--------|-------------|----------|
+| Straight-Line | (Cost - Salvage) / Useful Life | Assets with even usage |
+| Declining Balance | Book Value x Rate | Assets with early-year benefit |
+| Units of Production | (Cost - Salvage) x (Units / Total Units) | Assets based on usage |
+| Sum-of-Years Digits | (Cost - Salvage) x (Remaining Life / Sum) | Accelerated recognition |
+
+### Key Accounting Standards
+
+| Standard | Description | Applicability |
+|----------|-------------|---------------|
+| ASC 360 | Property, Plant, and Equipment | US GAAP |
+| IAS 16 | Property, Plant, and Equipment | IFRS |
+| ASC 842 | Leases | Finance lease accounting |
+| ASC 350 | Intangibles | Amortization of intangibles |
+| ASC 980 | Regulated Operations | Utility accounting |
+
+### Control Framework
+
+| Control | Description | Frequency |
+|---------|-------------|-----------|
+| Physical Inventory | Count and verify assets | Annual |
+| Subledger Reconciliation | Match to general ledger | Monthly |
+| Policy Compliance Review | Audit policy adherence | Quarterly |
+| Impairment Assessment | Test for impairment | Annual/Trigger |
+| Useful Life Review | Evaluate depreciation assumptions | Annual |
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| [Establish fixed-asset policies and procedures](./AssetPolicies) | 10.5.1 | Governance framework |
+| [Maintain fixed-asset master data files](./AssetMasterData) | 10.5.2 | Data management |
+| [Process and record fixed-asset additions and retires](./AssetChanges) | 10.5.3 | Transaction processing |
+| Process adjustments, enhancements, revaluations | 10.5.4 | Asset modifications |
+| Process maintenance and repair expenses | 10.5.5 | Expense vs. capitalize |
+| Calculate and record depreciation expense | 10.5.6 | Periodic depreciation |
+| Reconcile fixed-asset ledger | 10.5.7 | Account reconciliation |
+| Track fixed-assets including physical inventory | 10.5.8 | Physical verification |
+| Provide fixed-asset data for tax/regulatory reporting | 10.5.9 | External reporting |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Planning["10.1 Plan and<br/>acquire assets"] --> FAA["10.5 Perform fixed-asset<br/>accounting"]
+    Construction["10.2 Design and<br/>construct assets"] --> FAA
+    Maintenance["10.3 Maintain<br/>assets"] --> FAA
+    EOL["10.4 Manage asset<br/>end-of-life"] --> FAA
+
+    FAA --> Finance["9.0 Manage<br/>Financial Resources"]
+    FAA --> Tax["9.9 Manage<br/>Taxes"]
+    FAA --> Reporting["9.3 Perform General<br/>Accounting and Reporting"]
+    FAA --> Controls["9.8 Manage<br/>Internal Controls"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Asset Record Accuracy | Records matching physical inventory | >99% |
+| Depreciation Accuracy | Correct depreciation calculations | >99.9% |
+| Reconciliation Timeliness | Days to complete monthly reconciliation | <3 days |
+| Transaction Processing Time | Days from event to recording | <5 days |
+| Audit Findings | Material asset accounting exceptions | 0 |
+| Policy Compliance Rate | Transactions following policy | >98% |
+| Close Cycle Contribution | Asset close completed on time | 100% |
+| Physical Inventory Variance | Difference from book records | <1% |
+
+---
+
+*Source: APQC PCF 10749 (10.5) - Cross-Industry*

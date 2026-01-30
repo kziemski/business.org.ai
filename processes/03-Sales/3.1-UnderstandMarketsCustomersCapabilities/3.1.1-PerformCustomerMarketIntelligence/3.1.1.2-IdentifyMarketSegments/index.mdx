@@ -1,0 +1,93 @@
+---
+id: IdentifyMarketSegments
+name: "Identify market segments"
+code: "10109"
+hierarchyId: "3.1.1.2"
+type: Activity
+level: 4
+status: complete
+parent: "3.1.1"
+children: ["3.1.1.2.1"]
+---
+
+# Identify market segments
+
+> Identifying a section of the customer population to target for marketing products/services.
+
+## Overview
+
+Activity 3.1.1.2 is an activity within the Market and Sell Products and Services framework. 
+
+Identifying a section of the customer population to target for marketing products/services. Create segments within the customer population for targeted marketing campaigns, which increase the efficacy of marketing outlay. Determine the right customer segments, craft effective marketing messages, and efficiently communicate them. Determine the optimal pricing mix. Consider assistance from professional services for market segmentation studies, with coordination and oversight from the marketing/sales functions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_1["3.1 Understand markets, customers, and ca..."]
+    N3_1 --> N3_1_1["3.1.1 Perform customer and market intellige..."]
+    N3_1_1 --> N3_1_1_2["3.1.1.2 Identify market segments"]
+    style N3_1_1_2 fill:#e1f5fe
+    N3_1_1_2 --> N3_1_1_2_1["3.1.1.2.1 Determine market share gain/loss"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10109 |
+| Hierarchy ID | 3.1.1.2 |
+| Level | Activity |
+| Parent | [3.1.1](../) |
+| Sub-Processes | 1 |
+
+
+## GraphDL Semantic Structure
+
+```
+identify.MarketSegments
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `identify` | Primary action |
+| Object | `market segments` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Identify market segments"]
+        S1["Determine market share gain..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine market share gain/loss](./DetermineMarketShareGainloss) | 3.1.1.2.1 | Determining the increase or decrease of the company's sales volume in the targeted markets |
+
+
+## Related Concepts
+
+- [MarketSegments](/concepts/MarketSegments)
+
+
+---
+
+*Source: APQC PCF 10109 (3.1.1.2) - APQC*

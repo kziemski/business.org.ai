@@ -1,0 +1,110 @@
+---
+id: FinancialVehicles
+name: "Financial Vehicles"
+code: "525"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Financial Vehicles
+
+> Industries in the Funds, Trusts, and Other Financial Vehicles subsector group legal entities (i.
+
+## Overview
+
+Financial Vehicles represents an important category within the Finance and Insurance sector (NAICS 52). This subsector encompasses establishments primarily engaged in financial vehicles.
+
+Industries in the Funds, Trusts, and Other Financial Vehicles subsector group legal entities (i.e., funds, plans, and/or programs) organized to pool securities or other assets on behalf of shareholders or beneficiaries of employee benefit or other trust funds. The portfolios are customized to achieve specific investment characteristics, such as diversification, risk, rate of return, and price volatility. These entities earn interest, dividends, and other investment income, but have little or no employment and no revenue from the sale of services. Establishments with employees devoted to the management of funds are classified in Industry Group 5239, Other Financial Investment Activities. Establishments primarily engaged in holding the securities of (or other equity interests in) other firms are classified in Sector 55, Management of Companies and Enterprises. Equity real estate investment trusts (REITs) that are primarily engaged in leasing buildings, dwellings, or other real estate property to others are classified in Subsector 531, Real Estate.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S52["52: Finance and Insurance"]
+    S52 --> N525["525: Financial Vehicles"]
+    style N525 fill:#f96,stroke:#333,stroke-width:2px
+    N525 --> N5251["5251: Employee Benefit Funds"]
+    N525 --> N5259["5259: Investment Pools"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 525 |
+| Level | Subsector |
+| Parent | [Insurance](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Employee Benefit Funds](./EmployeeBenefitFunds/) | 5251 | This industry group comprises legal entities (i |
+| [Investment Pools](./InvestmentPools/) | 5259 | This industry group comprises legal entities (i |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Client Acquisition"]
+        O2["Underwriting/Analysis"]
+        O3["Processing"]
+        O4["Service Delivery"]
+        O5["Reporting"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Risk Management"]
+        S2["Compliance"]
+        S3["IT Security"]
+        S4["Customer Relations"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Capital"]
+        I2["Data"]
+        I3["Expertise"]
+        I4["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Financial Products"]
+        O2["Risk Coverage"]
+        O3["Advisory"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Individuals"]
+        C2["Businesses"]
+        C3["Institutions"]
+        C4["Government"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 525 - Financial Vehicles*

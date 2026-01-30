@@ -1,0 +1,102 @@
+---
+id: AssignResourcesToProductserviceProject
+name: "Assign resources to product/service project"
+code: "10083"
+hierarchyId: "2.3.1.1"
+type: Activity
+level: 4
+status: complete
+parent: "2.3.1"
+children: ["2.3.1.1.1", "2.3.1.1.2"]
+---
+
+# Assign resources to product/service project
+
+> Allocating resources to the design, development, and evaluation of product/service concepts.
+
+## Overview
+
+Activity 2.3.1.1 is an activity within the Design and Develop Products and Services framework. 
+
+Allocating resources to the design, development, and evaluation of product/service concepts. Allocate funds, personnel, and time for developing the new and/or revised products/services. Begin to design the potential new product/service concepts that have been prioritized and selected for further development.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_3["2.3 Develop products and services"]
+    N2_3 --> N2_3_1["2.3.1 Design and prototype products and ser..."]
+    N2_3_1 --> N2_3_1_1["2.3.1.1 Assign resources to product/service p..."]
+    style N2_3_1_1 fill:#e1f5fe
+    N2_3_1_1 --> N2_3_1_1_1["2.3.1.1.1 Identify requirements for produc..."]
+    N2_3_1_1 --> N2_3_1_1_2["2.3.1.1.2 Prepare high-level business case..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10083 |
+| Hierarchy ID | 2.3.1.1 |
+| Level | Activity |
+| Parent | [2.3.1](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+assign.Resources.to.ProductserviceProject
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `assign` | Primary action |
+| Object | `resources` | Direct object |
+| Preposition | `to` | Relationship |
+| PrepObject | `product/service project` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Assign resources to product/service project"]
+        S1["Identify requirements for p..."]
+        S2["Prepare high-level business..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify requirements for product/service design/development partners](./IdentifyRequirementsForProductserviceDesigndevelopmentPartners) | 2.3.1.1.1 | Determining essential elements for collaborators involved in blueprint/development of product/servic |
+| [Prepare high-level business case and technical assessment](./PrepareHighlevelBusinessCaseAndTechnicalAssessment) | 2.3.1.1.2 | Preparing a business-level business case and a technical feasibility assessment in order to move the |
+
+
+## Related Concepts
+
+- [Resources](/concepts/Resources)
+- [ProductProject](/concepts/ProductProject)
+- [Resources](/concepts/Resources)
+- [ServiceProject](/concepts/ServiceProject)
+
+
+---
+
+*Source: APQC PCF 10083 (2.3.1.1) - APQC*

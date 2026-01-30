@@ -1,0 +1,58 @@
+---
+id: ProcessAccountsReceivableAr
+name: "Process accounts receivable (AR)"
+code: "10744"
+hierarchyId: "9.2.2.6"
+type: Activity
+level: 4
+status: complete
+parent: "9.2.2"
+---
+
+# Process accounts receivable (AR)
+
+> Processing payments due from customers.
+
+## Overview
+
+Activity 9.2.2.6 is an activity within the Manage Financial Resources framework. 
+
+Processing payments due from customers. This includes all processing of funds received, whether by check or electronically. This does not include the generation of invoices.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_2["9.2 Perform revenue accounting"]
+    N9_2 --> N9_2_2["9.2.2 Invoice customer"]
+    N9_2_2 --> N9_2_2_6["9.2.2.6 Process accounts receivable (AR)"]
+    style N9_2_2_6 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10744 |
+| Hierarchy ID | 9.2.2.6 |
+| Level | Activity |
+| Parent | [9.2.2](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.AccountsReceivableAR
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `accounts receivable (AR)` | Direct object |
+
+
+---
+
+*Source: APQC PCF 10744 (9.2.2.6) - APQC*

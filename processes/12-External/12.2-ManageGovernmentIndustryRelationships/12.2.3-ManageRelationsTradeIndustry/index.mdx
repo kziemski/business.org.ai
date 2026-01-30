@@ -1,0 +1,105 @@
+---
+id: ManageRelationsWithTradeOrIndustryGroups
+name: "Manage relations with trade or industry groups"
+code: "11040"
+hierarchyId: "12.2.3"
+type: Process
+level: 3
+status: complete
+parent: "12.2"
+children: ["12.2.3.1", "12.2.3.2", "12.2.3.3"]
+---
+
+# Manage relations with trade or industry groups
+
+> Managing relations with organizations established and financed by businesses that operate in a specific industry.
+
+## Overview
+
+Process 12.2.3 is a core process that defines the specific procedures for manage relations with trade or industry groups. 
+
+Managing relations with organizations established and financed by businesses that operate in a specific industry. Participate in public relations actions such as lobbying and publishing, advertising, education, and political donations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_2["12.2 Manage government and industry relati..."]
+    N12_2 --> N12_2_3["12.2.3 Manage relations with trade or indust..."]
+    style N12_2_3 fill:#e1f5fe
+    N12_2_3 --> N12_2_3_1["12.2.3.1 Evaluate the requirements for st..."]
+    N12_2_3 --> N12_2_3_2["12.2.3.2 Monitor the success of the partn..."]
+    N12_2_3 --> N12_2_3_3["12.2.3.3 Extend or change the relationships"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11040 |
+| Hierarchy ID | 12.2.3 |
+| Level | Process |
+| Parent | [12.2](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Relations.with.TradeOrIndustryGroups
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `relations` | Direct object |
+| Preposition | `with` | Relationship |
+| PrepObject | `trade or industry groups` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage relations with trade or industry groups"]
+        S1["Evaluate the requirements f..."]
+        S2["Monitor the success of the ..."]
+        S3["Extend or change the relati..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Evaluate the requirements for strategic relationships](./EvaluateTheRequirementsForStrategicRelationships) | 12.2.3.1 | Determining the requirements to enter in to an agreement with trade or industry agencies |
+| [Monitor the success of the partnerships](./MonitorTheSuccessOfThePartnerships) | 12.2.3.2 | Analyzing current relationships with trade and industry groups |
+| [Extend or change the relationships](./ExtendOrChangeTheRelationships) | 12.2.3.3 | Providing additional information or inclusion for third party trade or industry entities; or changin |
+
+
+## Related Concepts
+
+- [Relations](/concepts/Relations)
+- [TradeGroups](/concepts/TradeGroups)
+- [Relations](/concepts/Relations)
+- [IndustryGroups](/concepts/IndustryGroups)
+
+
+---
+
+*Source: APQC PCF 11040 (12.2.3) - APQC*

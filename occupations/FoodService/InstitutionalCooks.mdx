@@ -1,0 +1,320 @@
+---
+id: InstitutionalCooks
+name: "Cooks, Institution and Cafeteria"
+code: "35-2012.00"
+type: Occupation
+status: complete
+---
+
+# Cooks, Institution and Cafeteria
+
+> Prepare and cook large quantities of food for institutions, such as schools, hospitals, or cafeterias.
+
+## Overview
+
+Institutional and Cafeteria Cooks specialize in preparing large-volume meals for groups in non-restaurant settings such as schools, hospitals, nursing homes, prisons, military bases, and corporate cafeterias. Unlike restaurant cooks who prepare individual orders, institutional cooks work with standardized recipes scaled for dozens to thousands of servings. The role requires understanding of batch cooking, nutritional requirements, dietary restrictions, and food safety at scale. These cooks balance efficiency with nutrition, often working within strict budgetary constraints while meeting regulatory requirements for specific populations such as students, patients, or elderly residents.
+
+## Classification Hierarchy
+
+```mermaid
+graph TD
+    Cat35["35 - Food Preparation and Serving"] --> Group352["35-2000 Cooks and Food Prep"]
+    Group352 --> Base2012["35-2012 Institution/Cafeteria Cooks"]
+    Base2012 --> InstCook["35-2012.00 Institutional Cooks"]
+
+    subgraph Settings["Institutional Settings"]
+        School["School Cafeteria"]
+        Hospital["Healthcare Facility"]
+        Corporate["Corporate Cafeteria"]
+        Correctional["Correctional Facility"]
+        Military["Military Dining"]
+    end
+
+    InstCook --> Settings
+
+    style InstCook fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| SOC Code | 35-2012.00 |
+| Job Zone | 2 (Some Preparation) |
+| Category | [Food Preparation and Serving](/occupations/FoodService) |
+| Core Tasks | 12+ |
+| Experience Required | Some experience preferred |
+| Source | O*NET |
+
+## Core Tasks
+
+```mermaid
+mindmap
+    root(("Institutional Cooks"))
+        Prepare
+            Large Quantities
+            Batch Cooking
+            Menu Items
+            Special Diets
+        Cook
+            Entrees
+            Vegetables
+            Starches
+            Soups
+        Plan
+            Production Schedules
+            Menu Cycles
+            Portion Control
+        Maintain
+            Food Safety
+            Sanitation
+            Equipment
+            Records
+        Follow
+            Standardized Recipes
+            Dietary Guidelines
+            Budget Constraints
+        Serve
+            Serving Lines
+            Meal Periods
+            Special Functions
+```
+
+### prepare.LargeQuantities
+
+Institutional Cooks specialize in scaling recipes for volume production.
+
+**Actions:**
+- `prepare.Food.for.LargeGroups` - Scale recipes for institutional volume
+- `prepare.Meals.for.Institutions` - Cook for schools, hospitals, cafeterias
+- `prepare.SpecialDiets.for.Patients` - Accommodate dietary restrictions and medical needs
+- `prepare.MenuItems.in.Batches` - Use batch cooking methods for efficiency
+
+### cook.InstitutionalMeals
+
+Institutional Cooks prepare balanced meals for specific populations.
+
+**Actions:**
+- `cook.Entrees.for.MealService` - Prepare main dishes for scheduled meal times
+- `cook.Vegetables.in.Volume` - Steam, roast, or prepare vegetables at scale
+- `cook.Starches.for.Nutrition` - Prepare rice, potatoes, pasta in quantity
+- `cook.Soups.in.Kettles` - Make soups and stews in large steam kettles
+
+### follow.Standards
+
+Institutional Cooks adhere to strict guidelines and regulations.
+
+**Actions:**
+- `follow.Recipes.for.Consistency` - Use standardized recipes exactly
+- `follow.Guidelines.for.Nutrition` - Meet dietary requirements (USDA, healthcare)
+- `follow.Budgets.for.FoodCosts` - Work within per-meal cost constraints
+- `follow.Regulations.for.Safety` - Comply with health department standards
+
+### maintain.Operations
+
+Institutional Cooks ensure smooth daily operations and compliance.
+
+**Actions:**
+- `maintain.Records.of.Production` - Document quantities produced and served
+- `maintain.Equipment.in.Kitchen` - Clean and maintain large-scale equipment
+- `maintain.Sanitation.of.Areas` - Ensure kitchen meets health codes
+- `maintain.Inventory.of.Supplies` - Track stock and assist with ordering
+
+## Skills & Competencies
+
+### Technical Skills
+- **Large-Batch Cooking** - Expert
+- **Recipe Scaling** - Advanced
+- **Food Safety (ServSafe)** - Proficient
+- **Nutritional Knowledge** - Proficient
+- **Commercial Equipment** - Proficient
+- **Inventory Management** - Proficient
+
+### Soft Skills
+- **Time Management** - Critical
+- **Teamwork** - Essential
+- **Organization** - Essential
+- **Physical Stamina** - Essential
+- **Attention to Detail** - Important
+- **Adaptability** - Important
+
+## Related Occupations
+
+```mermaid
+graph LR
+    InstCook["Institutional Cooks"]
+
+    subgraph SameCategory["Same Category"]
+        RestCook["Restaurant Cooks"]
+        FoodPrep["Food Prep Workers"]
+        ShortOrder["Short Order Cooks"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        Chef["Chefs"]
+        FoodSup["Food Service Supervisors"]
+        Dietetic["Dietetic Technicians"]
+    end
+
+    subgraph Specialized["Specialized Roles"]
+        SchoolCook["School Food Service"]
+        HealthcareCook["Healthcare Nutrition"]
+        MilitaryCook["Military Food Service"]
+    end
+
+    InstCook --- SameCategory
+    InstCook --- CrossFunctional
+    InstCook --- Specialized
+```
+
+### Same Category
+- Cooks, Restaurant (35-2014.00)
+- Food Preparation Workers (35-2021.00)
+- [Cooks, Fast Food](./FastFoodCooks.mdx)
+
+### Cross-Functional
+- [Chefs and Head Cooks](./Chefs.mdx)
+- [First-Line Supervisors of Food Preparation and Serving Workers](./FoodServiceSupervisors.mdx)
+- Dietetic Technicians (29-2051.00)
+
+## Industries
+
+- [Elementary and Secondary Schools](/industries/Education) - High Employment
+- [Hospitals](/industries/Hospitals) - High Employment
+- [Nursing Care Facilities](/industries/NursingCare) - High Employment
+- [Colleges and Universities](/industries/HigherEducation) - Moderate Employment
+- [Correctional Institutions](/industries/Corrections) - Moderate Employment
+
+## Industry Variations
+
+```mermaid
+graph TD
+    subgraph Schools["K-12 Schools"]
+        S1["Focus: Child nutrition standards"]
+        S2["Menu: USDA meal patterns"]
+        S3["Schedule: Breakfast & lunch service"]
+        S4["Volume: Hundreds per meal period"]
+    end
+
+    subgraph Healthcare["Healthcare Facilities"]
+        H1["Focus: Therapeutic diets"]
+        H2["Menu: Modified textures, restrictions"]
+        H3["Schedule: 3 meals + snacks"]
+        H4["Volume: Patient + staff meals"]
+    end
+
+    subgraph Corporate["Corporate Cafeterias"]
+        CC1["Focus: Employee satisfaction"]
+        CC2["Menu: Variety and choice"]
+        CC3["Schedule: Lunch-focused"]
+        CC4["Volume: Variable by day"]
+    end
+
+    subgraph Correctional["Correctional Facilities"]
+        CR1["Focus: Cost efficiency, security"]
+        CR2["Menu: Standardized, restricted"]
+        CR3["Schedule: Strict meal times"]
+        CR4["Volume: Very high, controlled"]
+    end
+```
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Food Prep Worker / Kitchen Helper"] --> Cook["Institutional Cook"]
+    Cook --> Lead["Lead Cook"]
+    Lead --> Supervisor["Kitchen Supervisor"]
+    Supervisor --> Manager["Food Service Manager"]
+    Manager --> Director["Food Service Director"]
+
+    Alt1["Culinary Training"] --> Cook
+    Alt2["Restaurant Experience"] --> Cook
+
+    Lateral1["School Nutrition Specialist"] --> Manager
+    Lateral2["Healthcare Food Service"] --> Manager
+```
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent |
+| Work Experience | Less than 1 year to 2 years |
+| On-the-Job Training | Moderate; institutional-specific training |
+| Common Certifications | ServSafe, School Nutrition Specialist (SNS) |
+
+## Professional Development
+
+### Certifications
+- **ServSafe Manager** - Food safety certification
+- **School Nutrition Specialist (SNS)** - School food service credential
+- **Certified Dietary Manager (CDM)** - Healthcare food service
+- **State Food Handler's Permit** - Jurisdiction-specific requirement
+
+### Specialized Training
+- USDA meal pattern requirements (school food service)
+- Therapeutic diet preparation (healthcare)
+- Allergen awareness and management
+- Large-scale equipment operation
+
+## Departments
+
+This occupation typically works in:
+- [Nutrition Services](/departments/NutritionServices)
+- [Food Services](/departments/FoodServices)
+- [Dining Services](/departments/DiningServices)
+- [Dietary Department](/departments/Dietary)
+
+## Work Environment
+
+| Aspect | Description |
+|--------|-------------|
+| Setting | Large institutional kitchens |
+| Schedule | Regular hours aligned with meal service; may include early mornings |
+| Physical | Standing, lifting heavy pots, working in hot environments |
+| Pace | Steady with peak periods during meal service |
+| Supervision | Works under food service manager or chef supervision |
+
+## Equipment Used
+
+| Equipment | Purpose |
+|-----------|---------|
+| Steam Kettles | Cook soups, stews, sauces in volume |
+| Tilt Skillets | Brown, braise, and steam large quantities |
+| Convection Ovens | Bake and roast multiple pans simultaneously |
+| Steamers | Cook vegetables and starches efficiently |
+| Slicers / Mixers | Prep vegetables and doughs |
+| Blast Chillers | Rapidly cool foods for safety |
+| Serving Lines | Portion and serve meals |
+
+## Regulatory Compliance
+
+### Key Regulations by Setting
+- **Schools**: USDA National School Lunch Program, Child Nutrition Act
+- **Healthcare**: Joint Commission standards, CMS regulations
+- **General**: State and local health department codes
+
+### Documentation Requirements
+- Temperature logs
+- Production records
+- Receiving logs
+- Cleaning schedules
+- Allergen tracking
+
+## GraphDL Semantic Structure
+
+```
+InstitutionalCooks.prepare.Food.for.LargeGroups
+InstitutionalCooks.cook.Meals.for.Institutions
+InstitutionalCooks.follow.Recipes.for.Consistency
+InstitutionalCooks.follow.Guidelines.for.Nutrition
+InstitutionalCooks.maintain.Records.of.Production
+InstitutionalCooks.maintain.Sanitation.of.Areas
+InstitutionalCooks.serve.Meals.during.MealPeriods
+InstitutionalCooks.accommodate.Diets.for.SpecialNeeds
+```
+
+---
+
+*Source: O*NET 35-2012.00 - ONETOccupation*

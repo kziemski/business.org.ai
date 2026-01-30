@@ -1,0 +1,98 @@
+---
+id: ManageRelationsWithBoardOfDirectors
+name: "Manage relations with board of directors"
+code: "11012"
+hierarchyId: "12.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "12"
+children: ["12.3.1", "12.3.2"]
+---
+
+# Manage relations with board of directors
+
+> Maintaining relations with representatives of the stockholders.
+
+## Overview
+
+Group 12.3 is a process group within APQC Category 12.0 (Manage External Relationships). 
+
+Maintaining relations with representatives of the stockholders. Establish corporate management-related policies and to make decisions on major company issues. Implement practices designed to engender communication, trust, and cooperation.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_3["12.3 Manage relations with board of directors"]
+    style N12_3 fill:#e1f5fe
+    N12_3 --> N12_3_1["12.3.1 Report financial results"]
+    N12_3 --> N12_3_2["12.3.2 Report audit findings"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11012 |
+| Hierarchy ID | 12.3 |
+| Level | Group |
+| Parent | [12](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Relations.with.BoardOfDirectors
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `relations` | Direct object |
+| Preposition | `with` | Relationship |
+| PrepObject | `board of directors` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage relations with board of directors"]
+        S1["Report financial results"]
+        S2["Report audit findings"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Report financial results](./ReportFinancialResults) | 12.3.1 | Reporting financial results to management, and releasing results to the public |
+| [Report audit findings](./ReportAuditFindings) | 12.3.2 | Reporting audit findings to management |
+
+
+## Related Concepts
+
+- [Relations](/concepts/Relations)
+- [BoardOfDirectors](/concepts/BoardOfDirectors)
+
+
+---
+
+*Source: APQC PCF 11012 (12.3) - APQC*

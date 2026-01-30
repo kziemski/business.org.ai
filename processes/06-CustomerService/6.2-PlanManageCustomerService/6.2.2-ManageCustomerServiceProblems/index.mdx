@@ -1,0 +1,114 @@
+---
+id: ManageCustomerServiceProblemsRequestsAndInquiries
+name: "Manage customer service problems, requests, and inquiries"
+code: "10388"
+hierarchyId: "6.2.2"
+type: Process
+level: 3
+status: complete
+parent: "6.2"
+children: ["6.2.2.1", "6.2.2.2", "6.2.2.3", "6.2.2.4", "6.2.2.5", "6.2.2.6"]
+---
+
+# Manage customer service problems, requests, and inquiries
+
+> Handling the requests and inquiries from customers that seek information regarding the organization's products/services.
+
+## Overview
+
+Process 6.2.2 is a core process that defines the specific procedures for manage customer service problems, requests, and inquiries. 
+
+Handling the requests and inquiries from customers that seek information regarding the organization's products/services. Obtain the customer requests online and by phone. Direct these requests to higher-level representatives. Approve requests, and respond to customers.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_2["6.2 Plan and manage customer service cont..."]
+    N6_2 --> N6_2_2["6.2.2 Manage customer service problems, req..."]
+    style N6_2_2 fill:#e1f5fe
+    N6_2_2 --> N6_2_2_1["6.2.2.1 Receive customer problems, reque..."]
+    N6_2_2 --> N6_2_2_2["6.2.2.2 Analyze problems, requests, and ..."]
+    N6_2_2 --> N6_2_2_3["6.2.2.3 Resolve customer problems, reque..."]
+    N6_2_2 --> N6_2_2_4["6.2.2.4 Respond to customer problems, re..."]
+    N6_2_2 --> N6_2_2_5["6.2.2.5 Identify and capture upsell/cros..."]
+    N6_2_2 --> N6_2_2_6["6.2.2.6 Deliver opportunity to sales team"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10388 |
+| Hierarchy ID | 6.2.2 |
+| Level | Process |
+| Parent | [6.2](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.CustomerServiceProblemsRequestsAndInquiries
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `customer service problems, requests, and inquiries` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage customer service problems, requests, and inquiries"]
+        S1["Receive customer problems, ..."]
+        S2["Analyze problems, requests,..."]
+        S3["Resolve customer problems, ..."]
+        S4["Respond to customer problem..."]
+        S5["Identify and capture upsell..."]
+        S6["Deliver opportunity to sale..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Receive customer problems, requests, and inquiries](./ReceiveCustomerProblemsRequestsAndInquiries) | 6.2.2.1 | Receiving requests for information from customers over multiple channels |
+| [Analyze problems, requests, and inquiries](./AnalyzeProblemsRequestsAndInquiries) | 6.2.2.2 | Analyzing various requests and inquiries from customers regarding products/services |
+| [Resolve customer problems, requests, and inquiries](./ResolveCustomerProblemsRequestsAndInquiries) | 6.2.2.3 | Routing customer inquiries in order to service them with the most apposite response |
+| [Respond to customer problems, requests, and inquiries](./RespondToCustomerProblemsRequestsAndInquiries) | 6.2.2.4 | Responding to customer requests by email, conversation, interactive voice response, mail, etc |
+| [Identify and capture upsell/cross-sell opportunities](./IdentifyAndCaptureUpsellcrosssellOpportunities) | 6.2.2.5 | Utilizing customer inquiries as opportunities to either provide a comparable service to the one in q |
+| [Deliver opportunity to sales team](./DeliverOpportunityToSalesTeam) | 6.2.2.6 | Providing possible sales leads to the sales team in an effort to garner more business opportunities |
+
+
+## Related Concepts
+
+- [CustomerServiceProblems](/concepts/CustomerServiceProblems)
+- [Requests](/concepts/Requests)
+- [Inquiries](/concepts/Inquiries)
+
+
+---
+
+*Source: APQC PCF 10388 (6.2.2) - APQC*

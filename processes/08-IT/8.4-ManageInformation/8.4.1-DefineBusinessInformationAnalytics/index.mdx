@@ -1,0 +1,101 @@
+---
+id: DefineBusinessInformationAndAnalyticsStrategy
+name: "Define business information and analytics strategy"
+code: "20766"
+hierarchyId: "8.4.1"
+type: Process
+level: 3
+status: complete
+parent: "8.4"
+children: ["8.4.1.1", "8.4.1.2", "8.4.1.3"]
+---
+
+# Define business information and analytics strategy
+
+> Create an organization-wide strategy for the IT function by combining skills, technologies, applications, and processes in order to attain organizations objectives.
+
+## Overview
+
+Process 8.4.1 is a core process that defines the specific procedures for define business information and analytics strategy. 
+
+Create an organization-wide strategy for the IT function by combining skills, technologies, applications, and processes in order to attain organizations objectives.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_4["8.4 Manage information"]
+    N8_4 --> N8_4_1["8.4.1 Define business information and analy..."]
+    style N8_4_1 fill:#e1f5fe
+    N8_4_1 --> N8_4_1_1["8.4.1.1 Establish data, information, and..."]
+    N8_4_1 --> N8_4_1_2["8.4.1.2 Establish data, information, and..."]
+    N8_4_1 --> N8_4_1_3["8.4.1.3 Access IT data/analytic capabili..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20766 |
+| Hierarchy ID | 8.4.1 |
+| Level | Process |
+| Parent | [8.4](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.BusinessInformationAndAnalyticsStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `business information and analytics strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define business information and analytics strategy"]
+        S1["Establish data, information..."]
+        S2["Establish data, information..."]
+        S3["Access IT data/analytic cap..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish data, information, and analytic objectives](./EstablishDataInformationAndAnalyticObjectives) | 8.4.1.1 | Implementing strategies for securing and ensuring the privacy of data flows throughout the organizat |
+| [Establish data, information, and analytic governance](./EstablishDataInformationAndAnalyticGovernance) | 8.4.1.2 | Creating a set of guidelines that ensure effective and efficient use of IT |
+| [Access IT data/analytic capabilities](./AccessITDataanalyticCapabilities) | 8.4.1.3 | Determining the request for data accessibility and analysis |
+
+
+## Related Concepts
+
+- [BusinessInformationStrategy](/concepts/BusinessInformationStrategy)
+- [AnalyticsStrategy](/concepts/AnalyticsStrategy)
+
+
+---
+
+*Source: APQC PCF 20766 (8.4.1) - APQC*

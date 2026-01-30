@@ -1,0 +1,102 @@
+---
+id: DeliverServiceToCustomer
+name: "Deliver service to customer"
+code: "20058"
+hierarchyId: "5.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "5"
+children: ["5.3.1", "5.3.2", "5.3.3"]
+---
+
+# Deliver service to customer
+
+> Rendering service to the customer by initiating, executing, and completing tasks associated with service delivery.
+
+## Overview
+
+Group 5.3 is a process group within APQC Category 5.0 (Deliver Services). 
+
+Rendering service to the customer by initiating, executing, and completing tasks associated with service delivery.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_3["5.3 Deliver service to customer"]
+    style N5_3 fill:#e1f5fe
+    N5_3 --> N5_3_1["5.3.1 Initiate service delivery"]
+    N5_3 --> N5_3_2["5.3.2 Execute service delivery"]
+    N5_3 --> N5_3_3["5.3.3 Complete service delivery"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20058 |
+| Hierarchy ID | 5.3 |
+| Level | Group |
+| Parent | [5](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+deliver.Service.to.Customer
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `deliver` | Primary action |
+| Object | `service` | Direct object |
+| Preposition | `to` | Relationship |
+| PrepObject | `customer` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Deliver service to customer"]
+        S1["Initiate service delivery"]
+        S2["Execute service delivery"]
+        S3["Complete service delivery"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Initiate service delivery](./5.3.1-InitiateServiceDelivery/) | 5.3.1 | Collaborating with the customer to understand service needs |
+| [Execute service delivery](./5.3.2-ExecuteServiceDelivery/) | 5.3.2 | Carrying out service delivery to the customer by creating and deploying the necessary solution |
+| [Complete service delivery](./5.3.3-CompleteServiceDelivery/) | 5.3.3 | Implementing final steps to complete service delivery to the customer |
+
+
+## Related Concepts
+
+- [Service](/concepts/Service)
+- [Customer](/concepts/Customer)
+
+
+---
+
+*Source: APQC PCF 20058 (5.3) - APQC*

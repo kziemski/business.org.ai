@@ -1,0 +1,118 @@
+---
+id: DesignTheChange
+name: "Design the change"
+code: "11135"
+hierarchyId: "13.4.2"
+type: Process
+level: 3
+status: complete
+parent: "13.4"
+children: ["13.4.2.1", "13.4.2.2", "13.4.2.3", "13.4.2.4", "13.4.2.5", "13.4.2.6", "13.4.2.7", "13.4.2.8", "13.4.2.9"]
+---
+
+# Design the change
+
+> Developing plans for change management, training, communication, and rewards/incentives.
+
+## Overview
+
+Process 13.4.2 is a core process that defines the specific procedures for design the change. 
+
+Developing plans for change management, training, communication, and rewards/incentives. Establish metrics for measuring the change adoption. Clarify new roles for employees. Identify budgets.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_4["13.4 Manage change"]
+    N13_4 --> N13_4_2["13.4.2 Design the change"]
+    style N13_4_2 fill:#e1f5fe
+    N13_4_2 --> N13_4_2_1["13.4.2.1 Assess connection to other initi..."]
+    N13_4_2 --> N13_4_2_2["13.4.2.2 Develop change management plans"]
+    N13_4_2 --> N13_4_2_3["13.4.2.3 Develop training plan"]
+    N13_4_2 --> N13_4_2_4["13.4.2.4 Develop communication plan"]
+    N13_4_2 --> N13_4_2_5["13.4.2.5 Assign change champion(s)"]
+    N13_4_2 --> N13_4_2_6["13.4.2.6 Develop rewards/incentives plan"]
+    N13_4_2 --> N13_4_2_7["13.4.2.7 Establish change adoption measures"]
+    N13_4_2 --> N13_4_2_8["13.4.2.8 Establish/Clarify new roles"]
+    N13_4_2 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11135 |
+| Hierarchy ID | 13.4.2 |
+| Level | Process |
+| Parent | [13.4](../) |
+| Sub-Processes | 9 |
+
+
+## GraphDL Semantic Structure
+
+```
+design.TheChange
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Primary action |
+| Object | `the change` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Design the change"]
+        S1["Assess connection to other ..."]
+        S2["Develop change management p..."]
+        S3["Develop training plan"]
+        S4["Develop communication plan"]
+        S5["Assign change champion(s)"]
+        S6["Develop rewards/incentives ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess connection to other initiatives](./AssessConnectionToOtherInitiatives) | 13.4.2.1 | Correlating the change initiative with the other initiatives |
+| [Develop change management plans](./DevelopChangeManagementPlans) | 13.4.2.2 | Creating a detailed structure summary for the purposes of managing the change |
+| [Develop training plan](./DevelopTrainingPlan) | 13.4.2.3 | Creating a detailed summary of all the actions relevant to teaching a person a particular skill or t |
+| [Develop communication plan](./DevelopCommunicationPlan) | 13.4.2.4 | Developing a plan for imparting or exchanging information relevant the to change |
+| [Assign change champion(s)](./AssignChangeChampions) | 13.4.2.5 | Utilizing champions that have been trained to carry out needed changes |
+| [Develop rewards/incentives plan](./DevelopRewardsincentivesPlan) | 13.4.2.6 | Creating and designing the plan for rewarding the employees exhibiting the desired behavior |
+| [Establish change adoption measures](./EstablishChangeAdoptionMeasures) | 13.4.2.7 | Establishing a system or standard of measurement for measuring the adoption of the change |
+| [Establish/Clarify new roles](./EstablishClarifyNewRoles) | 13.4.2.8 | Establishing and explaining the new roles to employees |
+| [Identify budget/roles](./IdentifyBudgetroles) | 13.4.2.9 | Creating a plan of financial outlay for the newly defined roles |
+
+
+## Related Concepts
+
+- [Change](/concepts/Change)
+
+
+---
+
+*Source: APQC PCF 11135 (13.4.2) - APQC*

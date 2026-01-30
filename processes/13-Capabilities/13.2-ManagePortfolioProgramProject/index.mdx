@@ -1,0 +1,101 @@
+---
+id: ManagePortfolioProgramAndProject
+name: "Manage portfolio, program, and project"
+code: "16400"
+hierarchyId: "13.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "13"
+children: ["13.2.1", "13.2.2", "13.2.3"]
+---
+
+# Manage portfolio, program, and project
+
+> Managing investments, holdings, products, businesses, and brands, along with the related projects that together constitute a program.
+
+## Overview
+
+Group 13.2 is a process group within APQC Category 13.0 (Develop and Manage Business Capabilities). 
+
+Managing investments, holdings, products, businesses, and brands, along with the related projects that together constitute a program.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_2["13.2 Manage portfolio, program, and project"]
+    style N13_2 fill:#e1f5fe
+    N13_2 --> N13_2_1["13.2.1 Manage portfolio"]
+    N13_2 --> N13_2_2["13.2.2 Manage programs"]
+    N13_2 --> N13_2_3["13.2.3 Manage projects"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16400 |
+| Hierarchy ID | 13.2 |
+| Level | Group |
+| Parent | [13](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.PortfolioProgramAndProject
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `portfolio, program, and project` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage portfolio, program, and project"]
+        S1["Manage portfolio"]
+        S2["Manage programs"]
+        S3["Manage projects"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage portfolio](./13.2.1-ManagePortfolio/) | 13.2.1 | Managing the business portfolio of the organization, including investments, holdings, products, busi |
+| [Manage programs](./13.2.2-ManagePrograms/) | 13.2.2 | Establishing, implementing, and managing business programs |
+| [Manage projects](./13.2.3-ManageProjects/) | 13.2.3 | Establishing the scope of the projects |
+
+
+## Related Concepts
+
+- [Portfolio](/concepts/Portfolio)
+- [Program](/concepts/Program)
+- [Project](/concepts/Project)
+
+
+---
+
+*Source: APQC PCF 16400 (13.2) - APQC*

@@ -1,0 +1,115 @@
+---
+id: MonitorAndExecuteRiskAndHedgingTransactions
+name: "Monitor and execute risk and hedging transactions"
+code: "11208"
+hierarchyId: "9.7.5"
+type: Process
+level: 3
+status: complete
+parent: "9.7"
+children: ["9.7.5.1", "9.7.5.2", "9.7.5.3", "9.7.5.4", "9.7.5.5", "9.7.5.6"]
+---
+
+# Monitor and execute risk and hedging transactions
+
+> Performing transactions that limit investment risk with the help of derivatives, such as options and futures contracts.
+
+## Overview
+
+Process 9.7.5 is a core process that defines the specific procedures for monitor and execute risk and hedging transactions. 
+
+Performing transactions that limit investment risk with the help of derivatives, such as options and futures contracts. Manage interest rates, foreign exchange, and exposure risks. Develop and execute hedging transactions. Evaluate and refine hedging positions. Produce hedge accounting transactions and reports. Monitor credit.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_7["9.7 Manage treasury operations"]
+    N9_7 --> N9_7_5["9.7.5 Monitor and execute risk and hedging ..."]
+    style N9_7_5 fill:#e1f5fe
+    N9_7_5 --> N9_7_5_1["9.7.5.1 Develop risk management/hedging ..."]
+    N9_7_5 --> N9_7_5_2["9.7.5.2 Manage interest rate risk"]
+    N9_7_5 --> N9_7_5_3["9.7.5.3 Manage foreign exchange risk"]
+    N9_7_5 --> N9_7_5_4["9.7.5.4 Manage exposure risk"]
+    N9_7_5 --> N9_7_5_5["9.7.5.5 Execute hedging transactions"]
+    N9_7_5 --> N9_7_5_6["9.7.5.6 Produce hedge accounting transac..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11208 |
+| Hierarchy ID | 9.7.5 |
+| Level | Process |
+| Parent | [9.7](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+monitor.AndExecuteRiskAndHedgingTransactions
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `monitor` | Primary action |
+| Object | `and execute risk and hedging transactions` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Monitor and execute risk and hedging transactions"]
+        S1["Develop risk management/hed..."]
+        S2["Manage interest rate risk"]
+        S3["Manage foreign exchange risk"]
+        S4["Manage exposure risk"]
+        S5["Execute hedging transactions"]
+        S6["Produce hedge accounting tr..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop risk management/hedging strategy](./DevelopRiskManagementhedgingStrategy) | 9.7.5.1 | Taking an investment position to offset exposure to certain risks |
+| [Manage interest rate risk](./9.7.5.2-ManageInterestRateRisk/) | 9.7.5.2 | Handling risks arising from changes in the interest rate |
+| [Manage foreign exchange risk](./9.7.5.3-ManageForeignExchangeRisk/) | 9.7.5.3 | Taking care of foreign-exchange risks |
+| [Manage exposure risk](./9.7.5.4-ManageExposureRisk/) | 9.7.5.4 | Taking care of exposure risks |
+| [Execute hedging transactions](./9.7.5.5-ExecuteHedgingTransactions/) | 9.7.5.5 | Implementing hedging strategy in attempt to alleviate risk |
+| [Produce hedge accounting transactions and reports](./ProduceHedgeAccountingTransactionsAndReports) | 9.7.5.6 | Preparing and documenting accounts and records of all hedging investment transactions to reduce risk |
+
+
+## Related Concepts
+
+- [RiskTransactions](/concepts/RiskTransactions)
+- [HedgingTransactions](/concepts/HedgingTransactions)
+- [RiskTransactions](/concepts/RiskTransactions)
+- [HedgingTransactions](/concepts/HedgingTransactions)
+
+
+---
+
+*Source: APQC PCF 11208 (9.7.5) - APQC*

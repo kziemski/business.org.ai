@@ -1,0 +1,114 @@
+---
+id: ManagePay
+name: "Manage pay"
+code: "10754"
+hierarchyId: "9.5.2"
+type: Process
+level: 3
+status: complete
+parent: "9.5"
+children: ["9.5.2.1", "9.5.2.2", "9.5.2.3", "9.5.2.4", "9.5.2.5", "9.5.2.6", "9.5.2.8"]
+---
+
+# Manage pay
+
+> Managing the total payments made in employees payroll, including bonuses and compensation.
+
+## Overview
+
+Process 9.5.2 is a core process that defines the specific procedures for manage pay. 
+
+Managing the total payments made in employees payroll, including bonuses and compensation.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_5["9.5 Process payroll"]
+    N9_5 --> N9_5_2["9.5.2 Manage pay"]
+    style N9_5_2 fill:#e1f5fe
+    N9_5_2 --> N9_5_2_1["9.5.2.1 Enter employee time worked into ..."]
+    N9_5_2 --> N9_5_2_2["9.5.2.2 Maintain and administer employee..."]
+    N9_5_2 --> N9_5_2_3["9.5.2.3 Maintain and administer applicab..."]
+    N9_5_2 --> N9_5_2_4["9.5.2.4 Monitor changes in tax status of..."]
+    N9_5_2 --> N9_5_2_5["9.5.2.5 Process and distribute payments"]
+    N9_5_2 --> N9_5_2_6["9.5.2.6 Process and distribute manual ch..."]
+    N9_5_2 --> N9_5_2_8["9.5.2.8 Respond to employee payroll inqu..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10754 |
+| Hierarchy ID | 9.5.2 |
+| Level | Process |
+| Parent | [9.5](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Pay
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `pay` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage pay"]
+        S1["Enter employee time worked ..."]
+        S2["Maintain and administer emp..."]
+        S3["Maintain and administer app..."]
+        S4["Monitor changes in tax stat..."]
+        S5["Process and distribute paym..."]
+        S6["Process and distribute manu..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Enter employee time worked into payroll system](./EnterEmployeeTimeWorkedIntoPayrollSystem) | 9.5.2.1 | Tracking the number of hours worked for the payroll system |
+| [Maintain and administer employee earnings information](./MaintainAndAdministerEmployeeEarningsInformation) | 9.5.2.2 | Tracking and oversee salary breakups of employees |
+| [Maintain and administer applicable deductions](./MaintainAndAdministerApplicableDeductions) | 9.5.2.3 | Processing salary deductions for tax purposes |
+| [Monitor changes in tax status of employees](./MonitorChangesInTaxStatusOfEmployees) | 9.5.2.4 | Tracking changes in the salary structure of employees for tax deductions |
+| [Process and distribute payments](./ProcessAndDistributePayments) | 9.5.2.5 | Processing and distributing salaries to all employees |
+| [Process and distribute manual checks](./ProcessAndDistributeManualChecks) | 9.5.2.6 | Handling incorrect/omitted salary payments |
+| [Respond to employee payroll inquiries](./RespondToEmployeePayrollInquiries) | 9.5.2.8 | Addressing salary-related queries raised by employees |
+
+
+## Related Concepts
+
+- [Pay](/concepts/Pay)
+
+
+---
+
+*Source: APQC PCF 10754 (9.5.2) - APQC*

@@ -1,0 +1,286 @@
+---
+id: MarketResearch
+name: "Survey market and determine customer needs and wants"
+code: "10018"
+hierarchyId: "1.1.2"
+type: Process
+status: complete
+---
+
+# Survey market and determine customer needs and wants
+
+> Examining the market to identify customer required solutions. Assess the relevant market(s) to determine the products/services that are needed or wanted by customers. Carry out quantitative and qualitative analyses to capture and investigate products/services. Employ creative techniques that allow for a closer appreciation of the customer, and design relevant solutions.
+
+## Overview
+
+Survey market and determine customer needs and wants is a critical process within the Define Business Concept and Long-Term Vision process group (1.1). This process ensures that organizations understand their target markets and can identify gaps between current offerings and customer expectations. It forms the foundation for product development, marketing strategies, and overall business planning.
+
+The process involves systematic collection and analysis of market data, customer feedback, and competitive intelligence to build a comprehensive picture of market opportunities. Organizations use both quantitative methods (surveys, analytics) and qualitative approaches (focus groups, interviews) to develop deep customer insights.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"] --> G11["1.1 Define the business concept and long-term vision"]
+    G11 --> P111["1.1.1 Assess the external environment"]
+    G11 --> P112["1.1.2 Survey market and determine customer needs"]
+    G11 --> P113["1.1.3 Assess the internal environment"]
+    G11 --> P114["1.1.4 Establish strategic vision"]
+
+    P112 --> A1121["1.1.2.1 Conduct qualitative/quantitative research"]
+    P112 --> A1122["1.1.2.2 Capture customer needs and wants"]
+    P112 --> A1123["1.1.2.3 Assess customer needs and wants"]
+
+    style P112 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10018 |
+| Hierarchy ID | 1.1.2 |
+| Level | Process |
+| Parent Group | [Define business concept and long-term vision](/processes/01-Strategy/DefineTheBusinessConceptAndLongTermVision) |
+| Category | [Develop Vision and Strategy](/processes/01-Strategy) |
+| Child Activities | 3 |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Market Data Sources"]
+        I2["Customer Databases"]
+        I3["Competitive Intelligence"]
+        I4["Industry Reports"]
+        I5["Historical Sales Data"]
+    end
+
+    subgraph Process["Survey Market and Determine Customer Needs"]
+        P1["Define Research Objectives"]
+        P2["Design Research Methodology"]
+        P3["Conduct Qualitative Research"]
+        P4["Conduct Quantitative Research"]
+        P5["Capture Customer Needs"]
+        P6["Assess and Prioritize Needs"]
+        P7["Synthesize Insights"]
+
+        P1 --> P2
+        P2 --> P3
+        P2 --> P4
+        P3 --> P5
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Customer Insights Report"]
+        O2["Market Opportunity Analysis"]
+        O3["Customer Personas"]
+        O4["Needs Prioritization Matrix"]
+        O5["Product/Service Recommendations"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+survey.Market.and.DetermineCustomerNeedsAndWants
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `survey` | Primary action of examining and researching |
+| Object | `Market` | The target market being analyzed |
+| Preposition | `and` | Conjunction linking related activities |
+| PrepObject | `DetermineCustomerNeedsAndWants` | Secondary objective of identifying customer requirements |
+
+## Activities
+
+### 1.1.2.1 - Conduct qualitative/quantitative research and assessments
+
+Investigating key market features and customer characteristics, using qualitative and quantitative measures to capture relevant aspects. Distill key ingredients that allow the organization to capture and assess customer needs and wants. Conduct standardized appraisals by defining selection parameters and setting quotas.
+
+```mermaid
+sequenceDiagram
+    participant Researcher as Market Researcher
+    participant Qual as Qualitative Methods
+    participant Quant as Quantitative Methods
+    participant Analysis as Data Analysis
+
+    Researcher->>Qual: Conduct focus groups
+    Researcher->>Qual: Perform interviews
+    Researcher->>Quant: Deploy surveys
+    Researcher->>Quant: Analyze market data
+    Qual->>Analysis: Provide qualitative insights
+    Quant->>Analysis: Provide statistical data
+    Analysis->>Researcher: Synthesize findings
+```
+
+**Tasks:**
+- `design.ResearchMethodology` - Create comprehensive research plan
+- `conduct.FocusGroups` - Gather qualitative customer feedback
+- `deploy.Surveys` - Collect quantitative market data
+- `analyze.MarketData` - Examine statistical market information
+
+### 1.1.2.2 - Capture customer needs and wants
+
+Identifying and collecting customers' wants and needs of a product and/or services from a marketing perspective. Identify which consumer needs are important and whether needs are being met by current products/services.
+
+```mermaid
+sequenceDiagram
+    participant Sources as Data Sources
+    participant Collection as Data Collection
+    participant Processing as Data Processing
+    participant Repository as Insights Repository
+
+    Sources->>Collection: Customer feedback
+    Sources->>Collection: Support tickets
+    Sources->>Collection: Social media
+    Collection->>Processing: Aggregate data
+    Processing->>Processing: Categorize needs
+    Processing->>Repository: Store customer needs
+    Repository->>Processing: Update priority rankings
+```
+
+**Tasks:**
+- `gather.CustomerFeedback` - Collect direct customer input
+- `analyze.SupportData` - Review customer service interactions
+- `monitor.SocialMedia` - Track social sentiment and requests
+- `categorize.CustomerNeeds` - Organize needs by type and priority
+
+### 1.1.2.3 - Assess customer needs and wants
+
+Creating customer profiles to get a picture of customers and their needs. Identify particular groups of people/organizations that benefit from your product/services and then selling to them.
+
+```mermaid
+sequenceDiagram
+    participant Needs as Captured Needs
+    participant Assessment as Assessment Team
+    participant Profiles as Customer Profiles
+    participant Strategy as Strategic Planning
+
+    Needs->>Assessment: Present captured needs
+    Assessment->>Assessment: Evaluate importance
+    Assessment->>Assessment: Assess feasibility
+    Assessment->>Profiles: Create customer profiles
+    Profiles->>Strategy: Inform product strategy
+    Strategy->>Assessment: Validate assessments
+```
+
+**Tasks:**
+- `evaluate.NeedsImportance` - Rank customer needs by priority
+- `assess.Feasibility` - Determine viability of meeting needs
+- `create.CustomerProfiles` - Develop detailed customer personas
+- `validate.Assessments` - Confirm findings with stakeholders
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define research objectives | Market Research Manager | CMO | Product, Sales | Strategy team |
+| Design research methodology | Market Research Team | Market Research Manager | Analytics | Product team |
+| Conduct qualitative research | Market Research Team | Market Research Manager | External agencies | Marketing |
+| Conduct quantitative research | Analytics Team | Market Research Manager | IT | Marketing |
+| Capture customer needs | Market Research Team | Product Manager | Customer Service | Sales |
+| Assess and prioritize needs | Product Management | VP Product | Engineering | Executive team |
+| Synthesize insights | Market Research Manager | CMO | Strategy | All stakeholders |
+
+## Related Departments
+
+- [Marketing](/departments/Marketing) - Primary ownership of market research activities
+- [Product Management](/departments/Product) - Consumer of insights for product development
+- [Sales](/departments/Sales) - Field intelligence and customer feedback
+- [Customer Service](/departments/CustomerService) - Direct customer interaction data
+- [Strategy](/departments/Strategy) - Strategic planning integration
+
+## Related Occupations
+
+- [Market Research Analysts](/occupations/MarketResearchAnalysts) - Primary execution of research
+- [Marketing Managers](/occupations/MarketingManagers) - Research direction and strategy
+- [Product Managers](/occupations/ProductManagers) - Insight application to products
+- [Data Scientists](/occupations/DataScientists) - Advanced analytics support
+- [Survey Researchers](/occupations/SurveyResearchers) - Quantitative research specialists
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Market research in aerospace focuses on long-term demand forecasting for aircraft fleets and defense systems. Customer needs analysis includes government contracting requirements and military specifications.
+
+**Industry-Specific Activities:**
+- Model customer fleets and aircraft demand
+- Analyze defense budget projections
+- Assess government procurement requirements
+- Evaluate military specification compliance needs
+
+### Consumer Products
+
+Consumer products companies emphasize rapid consumer insight gathering through multiple channels. Focus on trend identification, brand perception, and purchase behavior analysis.
+
+**Industry-Specific Activities:**
+- Conduct consumer panel studies
+- Analyze point-of-sale data
+- Monitor social media trends
+- Perform brand health tracking
+
+### Healthcare Provider
+
+Healthcare market research focuses on patient experience, clinical outcomes expectations, and healthcare service needs. Must comply with HIPAA and other privacy regulations.
+
+**Industry-Specific Activities:**
+- Assess patient experience needs
+- Analyze clinical outcome expectations
+- Evaluate healthcare access requirements
+- Survey community health needs
+
+### Retail
+
+Retail market research emphasizes omnichannel customer behavior, shopping preferences, and price sensitivity analysis.
+
+**Industry-Specific Activities:**
+- Analyze shopping behavior patterns
+- Assess channel preferences
+- Evaluate price sensitivity
+- Monitor competitive positioning
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| [Conduct qualitative/quantitative research](./ConductQualitativeQuantitativeResearch) | 1.1.2.1 | Investigating market features using mixed methods |
+| [Capture customer needs and wants](./CaptureCustomerNeedsAndWants) | 1.1.2.2 | Identifying and collecting customer requirements |
+| [Assess customer needs and wants](./AssessCustomerNeedsAndWants) | 1.1.2.3 | Creating profiles and prioritizing needs |
+
+## Related Processes
+
+```mermaid
+graph LR
+    AEE["1.1.1 Assess External Environment"] --> SM["1.1.2 Survey Market"]
+
+    SM --> AIE["1.1.3 Assess Internal Environment"]
+    SM --> ESV["1.1.4 Establish Strategic Vision"]
+    SM --> DPS["2.0 Develop Products and Services"]
+    SM --> MS["3.0 Market and Sell"]
+
+    DBS["1.2 Develop Business Strategy"] --> SM
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Research Cycle Time | Time from research initiation to insights delivery | <4 weeks |
+| Customer Coverage | Percentage of target segments researched | >90% |
+| Insight Accuracy | Correlation of predictions to actual market behavior | >80% |
+| Research ROI | Value generated from research-driven decisions | >5x investment |
+| Customer Satisfaction | Alignment of products with identified needs | >85% CSAT |
+| Market Share Growth | Growth attributed to market insight application | >2% annually |
+
+---
+
+*Source: APQC PCF 10018 (1.1.2) - Cross-Industry*

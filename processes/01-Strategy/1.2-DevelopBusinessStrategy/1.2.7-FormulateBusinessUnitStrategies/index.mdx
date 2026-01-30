@@ -1,0 +1,100 @@
+---
+id: FormulateBusinessUnitStrategies
+name: "Formulate business unit strategies"
+code: "10043"
+hierarchyId: "1.2.7"
+type: Process
+level: 3
+status: complete
+parent: "1.2"
+children: ["1.2.7.1", "1.2.7.2", "1.2.7.3"]
+---
+
+# Formulate business unit strategies
+
+> Charting a strategic course for business units in order to leverage opportunities, sidestep hurdles, and create synergies among each other.
+
+## Overview
+
+Process 1.2.7 is a core process that defines the specific procedures for formulate business unit strategies. 
+
+Charting a strategic course for business units in order to leverage opportunities, sidestep hurdles, and create synergies among each other. Create strategic road maps for the organization's units--in light of their individual resources and requirements, as well as their relationships with other business units--to achieve organizational goals.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_2["1.2 Develop business strategy"]
+    N1_2 --> N1_2_7["1.2.7 Formulate business unit strategies"]
+    style N1_2_7 fill:#e1f5fe
+    N1_2_7 --> N1_2_7_1["1.2.7.1 Analyze business unit strategies"]
+    N1_2_7 --> N1_2_7_2["1.2.7.2 Identify core competency for eac..."]
+    N1_2_7 --> N1_2_7_3["1.2.7.3 Refine business unit strategies ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10043 |
+| Hierarchy ID | 1.2.7 |
+| Level | Process |
+| Parent | [1.2](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+formulate.BusinessUnitStrategies
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `formulate` | Primary action |
+| Object | `business unit strategies` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Formulate business unit strategies"]
+        S1["Analyze business unit strat..."]
+        S2["Identify core competency fo..."]
+        S3["Refine business unit strate..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Analyze business unit strategies](./AnalyzeBusinessUnitStrategies) | 1.2.7.1 | Assessing the performance of a business unit against set organizational goals which are based on pre |
+| [Identify core competency for each business unit](./IdentifyCoreCompetencyForEachBusinessUnit) | 1.2.7.2 | Determining the resources and skills of each business unit based on knowledge and technical capacity |
+| [Refine business unit strategies in support of organizational strategy](./RefineBusinessUnitStrategiesInSupportOfOrganizationalStrategy) | 1.2.7.3 | Evaluating existing business unit strategy based on the company's strategy and eliminate unwanted/un |
+
+
+## Related Concepts
+
+- [BusinessUnitStrategies](/concepts/BusinessUnitStrategies)
+
+
+---
+
+*Source: APQC PCF 10043 (1.2.7) - APQC*

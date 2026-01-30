@@ -1,0 +1,113 @@
+---
+id: DevelopBusinessStrategy
+name: "Develop business strategy"
+code: "10015"
+hierarchyId: "1.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "1"
+children: ["1.2.1", "1.2.2", "1.2.5", "1.2.6", "1.2.7", "1.2.8", "1.2.9"]
+---
+
+# Develop business strategy
+
+> Developing an organization's mission statement, strategy, and business design.
+
+## Overview
+
+Group 1.2 is a process group within APQC Category 1.0 (Develop Vision and Strategy). 
+
+Developing an organization's mission statement, strategy, and business design. Create a concise statement that clearly articulates the mission of the organization, outlining practicable targets to Establish a strategic vision [10020]. Delineate strategic options by matching these alternatives with the organization's internal capabilities. Create an organizational design, and identify goals by developing strategies at the functional and process levels.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_2["1.2 Develop business strategy"]
+    style N1_2 fill:#e1f5fe
+    N1_2 --> N1_2_1["1.2.1 Develop overall mission statement"]
+    N1_2 --> N1_2_2["1.2.2 Define and evaluate strategic op..."]
+    N1_2 --> N1_2_5["1.2.5 Create organizational design"]
+    N1_2 --> N1_2_6["1.2.6 Develop and set organizational o..."]
+    N1_2 --> N1_2_7["1.2.7 Formulate business unit strategies"]
+    N1_2 --> N1_2_8["1.2.8 Develop customer experience stra..."]
+    N1_2 --> N1_2_9["1.2.9 Communicate strategies internall..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10015 |
+| Hierarchy ID | 1.2 |
+| Level | Group |
+| Parent | [1](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.BusinessStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `business strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop business strategy"]
+        S1["Develop overall mission sta..."]
+        S2["Define and evaluate strateg..."]
+        S3["Create organizational design"]
+        S4["Develop and set organizatio..."]
+        S5["Formulate business unit str..."]
+        S6["Develop customer experience..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop overall mission statement](./1.2.1-DevelopOverallMissionStatement/) | 1.2.1 | Establishing an overarching, compact statement that concisely underscores the mission of the organiz |
+| [Define and evaluate strategic options to achieve the mission](./1.2.2-DefineEvaluateStrategicOptions/) | 1.2.2 | Assessing sets of strategic decisions designed to drive the organization's long-term objectives |
+| [Create organizational design](./1.2.5-CreateOrganizationalDesign/) | 1.2.5 | Formulating a design for the organization's resources that allow it to meet its objectives |
+| [Develop and set organizational objectives](./1.2.6-DevelopSetOrganizationalObjectives/) | 1.2.6 | Developing overall goals for the organization that help in accomplishing its mission |
+| [Formulate business unit strategies](./1.2.7-FormulateBusinessUnitStrategies/) | 1.2.7 | Charting a strategic course for business units in order to leverage opportunities, sidestep hurdles, |
+| [Develop customer experience strategy](./1.2.8-DevelopCustomerExperienceStrategy/) | 1.2.8 | Defining a roadmap to meet customer expectations while considering how it will affect the business |
+| [Communicate strategies internally and externally](./CommunicateStrategiesInternallyAndExternally) | 1.2.9 | Conveying planned procedures and methods to both internal departments and external stakeholders like |
+
+
+## Related Concepts
+
+- [BusinessStrategy](/concepts/BusinessStrategy)
+
+
+---
+
+*Source: APQC PCF 10015 (1.2) - APQC*

@@ -1,0 +1,64 @@
+---
+id: ScheduleFieldService
+name: "Schedule field service"
+code: "12677"
+hierarchyId: "6.3.2.3.2"
+type: SubActivity
+level: 5
+status: complete
+parent: "6.3.2.3"
+---
+
+# Schedule field service
+
+> Scheduling additional investigative field service.
+
+## Overview
+
+Sub-Activity 6.3.2.3.2 is an activity within the Manage Customer Service framework. 
+
+Scheduling additional investigative field service. This is performed for high priority claims or claims that require additional investigation. Field service engineers will gather additional information, perform further investigation, and qualify the definition of the issue.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_2["6.3.2 Process warranty claims"]
+    N6_3_2 --> N6_3_2_3["6.3.2.3 Investigate warranty issues"]
+    N6_3_2_3 --> N6_3_2_3_2["6.3.2.3.2 Schedule field service"]
+    style N6_3_2_3_2 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 12677 |
+| Hierarchy ID | 6.3.2.3.2 |
+| Level | Sub-Activity |
+| Parent | [6.3.2.3](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+schedule.FieldService
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `schedule` | Primary action |
+| Object | `field service` | Direct object |
+
+
+## Related Concepts
+
+- [FieldService](/concepts/FieldService)
+
+
+---
+
+*Source: APQC PCF 12677 (6.3.2.3.2) - APQC*

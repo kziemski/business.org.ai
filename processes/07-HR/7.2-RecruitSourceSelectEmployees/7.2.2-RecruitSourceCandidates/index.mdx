@@ -1,0 +1,109 @@
+---
+id: RecruitsourceCandidates
+name: "Recruit/Source candidates"
+code: "10440"
+hierarchyId: "7.2.2"
+type: Process
+level: 3
+status: complete
+parent: "7.2"
+children: ["7.2.2.1", "7.2.2.2", "7.2.2.3", "7.2.2.4", "7.2.2.5"]
+---
+
+# Recruit/Source candidates
+
+> Recruiting new candidates for deployment across various functional areas inside the organization.
+
+## Overview
+
+Process 7.2.2 is a core process that defines the specific procedures for recruit/source candidates. 
+
+Recruiting new candidates for deployment across various functional areas inside the organization. Select methods for sourcing new employees. Manage relationships with third-party agencies. Stage recruitment fairs and drives. Manage employee referral programs.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_2["7.2 Recruit, source, and select employees"]
+    N7_2 --> N7_2_2["7.2.2 Recruit/Source candidates"]
+    style N7_2_2 fill:#e1f5fe
+    N7_2_2 --> N7_2_2_1["7.2.2.1 Determine recruitment methods an..."]
+    N7_2_2 --> N7_2_2_2["7.2.2.2 Perform recruiting activities/ev..."]
+    N7_2_2 --> N7_2_2_3["7.2.2.3 Manage recruitment vendors"]
+    N7_2_2 --> N7_2_2_4["7.2.2.4 Manage employee referral programs"]
+    N7_2_2 --> N7_2_2_5["7.2.2.5 Manage recruitment channels"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10440 |
+| Hierarchy ID | 7.2.2 |
+| Level | Process |
+| Parent | [7.2](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+recruit/source.Candidates
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `recruit/source` | Primary action |
+| Object | `candidates` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Recruit/Source candidates"]
+        S1["Determine recruitment metho..."]
+        S2["Perform recruiting activiti..."]
+        S3["Manage recruitment vendors"]
+        S4["Manage employee referral pr..."]
+        S5["Manage recruitment channels"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine recruitment methods and channels](./DetermineRecruitmentMethodsAndChannels) | 7.2.2.1 | Defining the methods and channels for recruitments in order to maximize the amount of candidate avai |
+| [Perform recruiting activities/events](./PerformRecruitingActivitiesevents) | 7.2.2.2 | Organizing and executing recruiting activities and events |
+| [Manage recruitment vendors](./ManageRecruitmentVendors) | 7.2.2.3 | Establishing and maintaining relationships with recruitment vendors (suppliers) |
+| [Manage employee referral programs](./ManageEmployeeReferralPrograms) | 7.2.2.4 | Creating and managing a recruiting strategy where current employees are rewarded for referring quali |
+| [Manage recruitment channels](./ManageRecruitmentChannels) | 7.2.2.5 | Establishing and maintaining channels for recruiting |
+
+
+## Related Concepts
+
+- [Candidates](/concepts/Candidates)
+- [Candidates](/concepts/Candidates)
+
+
+---
+
+*Source: APQC PCF 10440 (7.2.2) - APQC*

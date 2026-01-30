@@ -1,0 +1,109 @@
+---
+id: ConductAndAnalyzeItComplianceAssessments
+name: "Conduct and analyze IT compliance assessments"
+code: "20743"
+hierarchyId: "8.3.6"
+type: Process
+level: 3
+status: complete
+parent: "8.3"
+children: ["8.3.6.1", "8.3.6.2", "8.3.6.3", "8.3.6.4", "8.3.6.5"]
+---
+
+# Conduct and analyze IT compliance assessments
+
+> Evaluate and analyze the IT environment for the compliance of industry regulations and government legislation.
+
+## Overview
+
+Process 8.3.6 is a core process that defines the specific procedures for conduct and analyze it compliance assessments. 
+
+Evaluate and analyze the IT environment for the compliance of industry regulations and government legislation. Ensure that IT capability and resources meet the set standards.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    N8_3 --> N8_3_6["8.3.6 Conduct and analyze IT compliance ass..."]
+    style N8_3_6 fill:#e1f5fe
+    N8_3_6 --> N8_3_6_1["8.3.6.1 Conduct projects to enhance IT c..."]
+    N8_3_6 --> N8_3_6_2["8.3.6.2 Conduct IT compliance control au..."]
+    N8_3_6 --> N8_3_6_3["8.3.6.3 Perform IT compliance reporting"]
+    N8_3_6 --> N8_3_6_4["8.3.6.4 Identify and escalate IT complia..."]
+    N8_3_6 --> N8_3_6_5["8.3.6.5 Support external audits and reports"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20743 |
+| Hierarchy ID | 8.3.6 |
+| Level | Process |
+| Parent | [8.3](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+conduct.AndAnalyzeITComplianceAssessments
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `conduct` | Primary action |
+| Object | `and analyze IT compliance assessments` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Conduct and analyze IT compliance assessments"]
+        S1["Conduct projects to enhance..."]
+        S2["Conduct IT compliance contr..."]
+        S3["Perform IT compliance repor..."]
+        S4["Identify and escalate IT co..."]
+        S5["Support external audits and..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Conduct projects to enhance IT compliance and remediate risk](./ConductProjectsToEnhanceITComplianceAndRemediateRisk) | 8.3.6.1 | Conducting projects in order to enhance set standards, established guidelines, and risk preventive m |
+| [Conduct IT compliance control auditing of internal and external services](./ConductITComplianceControlAuditingOfInternalAndExternalServices) | 8.3.6.2 | Examine compliance control systems and tools implemented for internal and external IT services |
+| [Perform IT compliance reporting](./PerformITComplianceReporting) | 8.3.6.3 | Execute IT compliance reporting in order to review processes, standards, regulations, and laws are f |
+| [Identify and escalate IT compliance issues and remediation requirements](./IdentifyAndEscalateITComplianceIssuesAndRemediationRequirements) | 8.3.6.4 | Identify and escalate issues related to IT compliance to ensure that corrective measures are taken |
+| [Support external audits and reports](./SupportExternalAuditsAndReports) | 8.3.6.5 | Supporting audits and reports through external resources |
+
+
+## Related Concepts
+
+- [ITComplianceAssessments](/concepts/ITComplianceAssessments)
+- [ITComplianceAssessments](/concepts/ITComplianceAssessments)
+
+
+---
+
+*Source: APQC PCF 20743 (8.3.6) - APQC*

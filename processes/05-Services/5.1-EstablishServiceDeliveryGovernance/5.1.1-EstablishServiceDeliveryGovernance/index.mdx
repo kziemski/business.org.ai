@@ -1,0 +1,104 @@
+---
+id: EstablishServiceDeliveryGovernance
+name: "Establish service delivery governance"
+code: "20027"
+hierarchyId: "5.1.1"
+type: Process
+level: 3
+status: complete
+parent: "5.1"
+children: ["5.1.1.1", "5.1.1.2", "5.1.1.3", "5.1.1.4"]
+---
+
+# Establish service delivery governance
+
+> Establishing service delivery governance through a system that manages performance, development, and direction.
+
+## Overview
+
+Process 5.1.1 is a core process that defines the specific procedures for establish service delivery governance. 
+
+Establishing service delivery governance through a system that manages performance, development, and direction. Allow for customer feedback on delivery satisfaction.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_1["5.1 Establish service delivery governance..."]
+    N5_1 --> N5_1_1["5.1.1 Establish service delivery governance"]
+    style N5_1_1 fill:#e1f5fe
+    N5_1_1 --> N5_1_1_1["5.1.1.1 Set up and maintain service deli..."]
+    N5_1_1 --> N5_1_1_2["5.1.1.2 Manage service delivery performance"]
+    N5_1_1 --> N5_1_1_3["5.1.1.3 Manage service delivery developm..."]
+    N5_1_1 --> N5_1_1_4["5.1.1.4 Solicit feedback from customer o..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20027 |
+| Hierarchy ID | 5.1.1 |
+| Level | Process |
+| Parent | [5.1](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.ServiceDeliveryGovernance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `service delivery governance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish service delivery governance"]
+        S1["Set up and maintain service..."]
+        S2["Manage service delivery per..."]
+        S3["Manage service delivery dev..."]
+        S4["Solicit feedback from custo..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Set up and maintain service delivery governance and management system](./SetUpAndMaintainServiceDeliveryGovernanceAndManagementSystem) | 5.1.1.1 | Providing a system for which to manage customer needs and a structure for which to facilitate servic |
+| [Manage service delivery performance](./ManageServiceDeliveryPerformance) | 5.1.1.2 | Conducting and implementing performance measures to ensure successful delivery of service to the cus |
+| [Manage service delivery development and direction](./ManageServiceDeliveryDevelopmentAndDirection) | 5.1.1.3 | Providing guidance of resources to ensure that the development and direction of service delivery is  |
+| [Solicit feedback from customer on service delivery satisfaction](./SolicitFeedbackFromCustomerOnServiceDeliverySatisfaction) | 5.1.1.4 | Engaging the customer post delivery to gauge the effectiveness of services rendered in order to impr |
+
+
+## Related Concepts
+
+- [ServiceDeliveryGovernance](/concepts/ServiceDeliveryGovernance)
+
+
+---
+
+*Source: APQC PCF 20027 (5.1.1) - APQC*

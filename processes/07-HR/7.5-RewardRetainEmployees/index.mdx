@@ -1,0 +1,104 @@
+---
+id: RewardAndRetainEmployees
+name: "Reward and retain employees"
+code: "10412"
+hierarchyId: "7.5"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "7"
+children: ["7.5.1", "7.5.2", "7.5.3", "7.5.4"]
+---
+
+# Reward and retain employees
+
+> Creating frameworks for rewarding and recognizing employees with the objective of retaining them.
+
+## Overview
+
+Group 7.5 is a process group within APQC Category 7.0 (Develop and Manage Human Capital). 
+
+Creating frameworks for rewarding and recognizing employees with the objective of retaining them. Create and manage programs for provision of rewards, recognition, and motivation. Manage and administer the benefits for employees. Help assist and retain employees. Administer payroll to employees.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_5["7.5 Reward and retain employees"]
+    style N7_5 fill:#e1f5fe
+    N7_5 --> N7_5_1["7.5.1 Develop and manage reward, recog..."]
+    N7_5 --> N7_5_2["7.5.2 Manage and administer benefits"]
+    N7_5 --> N7_5_3["7.5.3 Manage employee assistance and r..."]
+    N7_5 --> N7_5_4["7.5.4 Administer payroll"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10412 |
+| Hierarchy ID | 7.5 |
+| Level | Group |
+| Parent | [7](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+reward.AndRetainEmployees
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `reward` | Primary action |
+| Object | `and retain employees` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Reward and retain employees"]
+        S1["Develop and manage reward, ..."]
+        S2["Manage and administer benefits"]
+        S3["Manage employee assistance ..."]
+        S4["Administer payroll"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop and manage reward, recognition, and motivation programs](./7.5.1-DevelopManageRewardRecognition/) | 7.5.1 | Developing a salary/compensation structure and plan; developing a benefits and reward plan; develop  |
+| [Manage and administer benefits](./7.5.2-ManageAdministerBenefits/) | 7.5.2 | Managing and ensuring benefits enrollment by the employees |
+| [Manage employee assistance and retention](./7.5.3-ManageEmployeeAssistanceRetention/) | 7.5.3 | Managing activities centered around delivering programs to support work/life balance for employees;  |
+| [Administer payroll](./AdministerPayroll) | 7.5.4 | Managing the sum of all financial records of salaries for an employee, including wages, bonuses, and |
+
+
+## Related Concepts
+
+- [Employees](/concepts/Employees)
+- [Employees](/concepts/Employees)
+
+
+---
+
+*Source: APQC PCF 10412 (7.5) - APQC*

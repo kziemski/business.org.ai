@@ -1,0 +1,115 @@
+---
+id: OrderMaterialsAndServices
+name: "Order materials and services"
+code: "10279"
+hierarchyId: "4.2.3"
+type: Process
+level: 3
+status: complete
+parent: "4.2"
+children: ["4.2.3.1", "4.2.3.2", "4.2.3.3", "4.2.3.4", "4.2.3.5", "4.2.3.6", "4.2.3.7"]
+---
+
+# Order materials and services
+
+> Creating and approving requisitions and distributing purchase orders accordingly.
+
+## Overview
+
+Process 4.2.3 is a core process that defines the specific procedures for order materials and services. 
+
+Creating and approving requisitions and distributing purchase orders accordingly. Hasten the procurement process to satisfy internal needs.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_2["4.2 Procure materials and services"]
+    N4_2 --> N4_2_3["4.2.3 Order materials and services"]
+    style N4_2_3 fill:#e1f5fe
+    N4_2_3 --> N4_2_3_1["4.2.3.1 Process/Review requisitions"]
+    N4_2_3 --> N4_2_3_2["4.2.3.2 Approve requisitions"]
+    N4_2_3 --> N4_2_3_3["4.2.3.3 Solicit supplier quotes"]
+    N4_2_3 --> N4_2_3_4["4.2.3.4 Create/Distribute purchase orders"]
+    N4_2_3 --> N4_2_3_5["4.2.3.5 Expedite orders and satisfy inqu..."]
+    N4_2_3 --> N4_2_3_6["4.2.3.6 Reconcile purchase orders"]
+    N4_2_3 --> N4_2_3_7["4.2.3.7 Research/Resolve order exceptions"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10279 |
+| Hierarchy ID | 4.2.3 |
+| Level | Process |
+| Parent | [4.2](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+order.MaterialsAndServices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `order` | Primary action |
+| Object | `materials and services` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Order materials and services"]
+        S1["Process/Review requisitions"]
+        S2["Approve requisitions"]
+        S3["Solicit supplier quotes"]
+        S4["Create/Distribute purchase ..."]
+        S5["Expedite orders and satisfy..."]
+        S6["Reconcile purchase orders"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Process/Review requisitions](./ProcessReviewRequisitions) | 4.2.3.1 | Handling operations related to processing/reviewing the requisitions |
+| [Approve requisitions](./ApproveRequisitions) | 4.2.3.2 | Approving requisitions for materials and services |
+| [Solicit supplier quotes](./SolicitSupplierQuotes) | 4.2.3.3 | Requesting quotes from suppliers |
+| [Create/Distribute purchase orders](./CreateDistributePurchaseOrders) | 4.2.3.4 | Creating and placing the orders for purchasing materials and services from suppliers |
+| [Expedite orders and satisfy inquiries](./ExpediteOrdersAndSatisfyInquiries) | 4.2.3.5 | Accelerating the purchase orders in order to fulfill the internal needs (for raw materials) depicted |
+| [Reconcile purchase orders](./ReconcilePurchaseOrders) | 4.2.3.6 | Verify that purchase orders are filled as expected: verify that items and quantities are delivered a |
+| [Research/Resolve order exceptions](./ResearchResolveOrderExceptions) | 4.2.3.7 | Identifying and resolving any exceptions |
+
+
+## Related Concepts
+
+- [Materials](/concepts/Materials)
+- [Services](/concepts/Services)
+
+
+---
+
+*Source: APQC PCF 10279 (4.2.3) - APQC*

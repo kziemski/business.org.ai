@@ -1,0 +1,462 @@
+---
+id: QualityMonitoring
+name: "Monitor quality of product delivered"
+code: "10302"
+hierarchyId: "4.2.4"
+type: Process
+status: complete
+---
+
+# Monitor quality of product delivered
+
+> Track the performance of the suppliers on product quality. Use this information to further improve sourcing and supplier performance. Monitor incoming materials, in-process production, and finished goods to ensure quality standards are consistently met throughout the supply chain.
+
+## Overview
+
+Monitor quality of product delivered (APQC 4.2.4) encompasses all activities related to tracking, measuring, and improving the quality of products as they move through the supply chain from suppliers to customers. This process is essential for maintaining customer satisfaction, reducing defect-related costs, and driving continuous improvement across the extended supply chain.
+
+Quality monitoring spans incoming material inspection, supplier performance tracking, in-process quality checks, finished goods inspection, and customer feedback analysis. Effective quality monitoring enables organizations to identify issues early, hold suppliers accountable, and prevent defective products from reaching customers.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"] --> G42["4.2 Procure materials<br/>and services"]
+
+    G42 --> P424["4.2.4 Monitor quality of<br/>product delivered"]
+
+    P424 --> A42411["4.2.4.1 Define quality<br/>requirements"]
+    P424 --> A42412["4.2.4.2 Inspect incoming<br/>materials"]
+    P424 --> A42413["4.2.4.3 Monitor in-process<br/>quality"]
+    P424 --> A42414["4.2.4.4 Inspect finished<br/>goods"]
+    P424 --> A42415["4.2.4.5 Track supplier<br/>quality performance"]
+    P424 --> A42416["4.2.4.6 Manage quality<br/>nonconformances"]
+    P424 --> A42417["4.2.4.7 Analyze quality<br/>data and trends"]
+    P424 --> A42418["4.2.4.8 Drive continuous<br/>improvement"]
+
+    style P424 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10302 |
+| Hierarchy ID | 4.2.4 |
+| Level | Process |
+| Category | [Deliver Physical Products](/processes/04-Delivery) |
+| Parent Process | Procure materials and services |
+| Activities | 8 |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Quality Standards"]
+        I2["Product Specifications"]
+        I3["Supplier Data"]
+        I4["Inspection Results"]
+        I5["Customer Feedback"]
+        I6["Regulatory Requirements"]
+    end
+
+    subgraph Process["Monitor Quality of Product Delivered"]
+        P1["Define Quality<br/>Requirements"]
+        P2["Inspect Incoming<br/>Materials"]
+        P3["Monitor In-Process<br/>Quality"]
+        P4["Inspect Finished<br/>Goods"]
+        P5["Track Supplier<br/>Performance"]
+        P6["Manage<br/>Nonconformances"]
+        P7["Analyze Quality<br/>Data"]
+        P8["Drive Continuous<br/>Improvement"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+        P7 --> P8
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Quality Reports"]
+        O2["Supplier Scorecards"]
+        O3["Nonconformance Records"]
+        O4["Corrective Actions"]
+        O5["Quality Metrics"]
+        O6["Improvement Plans"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+monitor.QualityOfProductDelivered
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `monitor` | Action of tracking and measuring |
+| Object | `QualityOfProductDelivered` | Product quality throughout supply chain |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+## Activities
+
+### 4.2.4.1 - Define quality requirements
+
+Establishing quality standards, specifications, and acceptance criteria for incoming materials, in-process work, and finished products.
+
+```mermaid
+sequenceDiagram
+    participant Quality as Quality
+    participant Eng as Engineering
+    participant Procurement as Procurement
+    participant Supplier as Suppliers
+
+    Eng->>Quality: Provide product specs
+    Quality->>Quality: Define quality standards
+    Quality->>Quality: Establish acceptance criteria
+    Quality->>Procurement: Share requirements
+    Procurement->>Supplier: Communicate standards
+    Supplier->>Quality: Acknowledge requirements
+    Quality->>Quality: Document QA plan
+```
+
+**Tasks:**
+- `define.QualityStandards` - Establish quality criteria
+- `establish.AcceptanceCriteria` - Set pass/fail thresholds
+- `document.InspectionProcedures` - Create inspection methods
+- `communicate.Requirements` - Share with stakeholders
+- `create.QualityAgreements` - Formalize with suppliers
+
+### 4.2.4.2 - Inspect incoming materials
+
+Receiving and inspecting materials from suppliers to verify they meet quality specifications before acceptance into inventory.
+
+```mermaid
+sequenceDiagram
+    participant Receiving as Receiving
+    participant QC as Quality Control
+    participant Lab as Laboratory
+    participant Procurement as Procurement
+
+    Receiving->>QC: Notify material arrival
+    QC->>QC: Sample materials
+    QC->>Lab: Submit for testing
+    Lab->>QC: Report results
+    QC->>QC: Compare to specs
+    QC->>Receiving: Accept or reject
+    QC->>Procurement: Report quality issues
+```
+
+**Tasks:**
+- `receive.InboundMaterials` - Accept deliveries
+- `sample.Materials` - Select representative samples
+- `inspect.Materials` - Perform quality checks
+- `test.MaterialProperties` - Verify specifications
+- `disposition.Materials` - Accept, reject, or quarantine
+
+### 4.2.4.3 - Monitor in-process quality
+
+Tracking quality during production through statistical process control, inspections, and testing to detect and correct issues early.
+
+```mermaid
+sequenceDiagram
+    participant Prod as Production
+    participant QC as Quality Control
+    participant Eng as Engineering
+    participant Systems as QMS
+
+    Prod->>QC: In-process samples
+    QC->>QC: Perform inspections
+    QC->>Systems: Record SPC data
+    Systems->>QC: Alert on trends
+    QC->>Eng: Report deviations
+    Eng->>Prod: Implement corrections
+    QC->>Systems: Document actions
+```
+
+**Tasks:**
+- `collect.ProcessSamples` - Gather in-process samples
+- `perform.SPCMonitoring` - Track statistical measures
+- `conduct.FirstArticleInspection` - Verify setup quality
+- `inspect.WIPQuality` - Check work-in-progress
+- `document.InProcessResults` - Record findings
+
+### 4.2.4.4 - Inspect finished goods
+
+Performing final quality inspections on completed products before release to inventory or shipment to customers.
+
+```mermaid
+sequenceDiagram
+    participant Prod as Production
+    participant QC as Quality Control
+    participant Lab as Laboratory
+    participant Shipping as Shipping
+
+    Prod->>QC: Completed batch
+    QC->>QC: Visual inspection
+    QC->>Lab: Functional testing
+    Lab->>QC: Test results
+    QC->>QC: Compare to specs
+    QC->>QC: Make disposition
+    QC->>Shipping: Release for shipment
+```
+
+**Tasks:**
+- `inspect.FinishedGoods` - Examine completed products
+- `test.ProductFunctionality` - Verify performance
+- `verify.Packaging` - Check packaging quality
+- `review.Documentation` - Confirm records complete
+- `release.Product` - Approve for shipment
+
+### 4.2.4.5 - Track supplier quality performance
+
+Monitoring and measuring supplier quality performance using metrics, scorecards, and regular reviews.
+
+```mermaid
+sequenceDiagram
+    participant Quality as Quality
+    participant Procurement as Procurement
+    participant Supplier as Suppliers
+    participant Systems as Systems
+
+    Quality->>Systems: Compile quality data
+    Systems->>Quality: Generate scorecards
+    Quality->>Procurement: Share performance
+    Procurement->>Supplier: Conduct reviews
+    Supplier->>Procurement: Present improvement plans
+    Procurement->>Quality: Update supplier status
+    Quality->>Systems: Record outcomes
+```
+
+**Tasks:**
+- `calculate.SupplierMetrics` - Compute quality KPIs
+- `generate.SupplierScorecards` - Create performance reports
+- `conduct.SupplierReviews` - Hold review meetings
+- `classify.SupplierStatus` - Rate supplier performance
+- `manage.SupplierDevelopment` - Drive improvements
+
+### 4.2.4.6 - Manage quality nonconformances
+
+Handling quality issues, defects, and nonconforming materials through investigation, disposition, and corrective action.
+
+```mermaid
+sequenceDiagram
+    participant QC as Quality Control
+    participant Eng as Engineering
+    participant Supplier as Suppliers
+    participant CAPA as CAPA Team
+
+    QC->>QC: Identify nonconformance
+    QC->>QC: Document issue
+    QC->>Eng: Investigate root cause
+    Eng->>CAPA: Initiate CAPA
+    CAPA->>Supplier: Request corrective action
+    Supplier->>CAPA: Submit response
+    CAPA->>QC: Verify effectiveness
+```
+
+**Tasks:**
+- `identify.Nonconformances` - Detect quality issues
+- `document.QualityIssues` - Record nonconformances
+- `investigate.RootCause` - Determine causes
+- `disposition.NonconformingProduct` - Decide on disposition
+- `implement.CorrectiveAction` - Execute fixes
+
+### 4.2.4.7 - Analyze quality data and trends
+
+Reviewing quality metrics, trend data, and analytics to identify patterns, risks, and improvement opportunities.
+
+```mermaid
+sequenceDiagram
+    participant Quality as Quality
+    participant Analytics as Analytics
+    participant Mgmt as Management
+    participant CI as Continuous Improvement
+
+    Quality->>Analytics: Compile quality data
+    Analytics->>Analytics: Analyze trends
+    Analytics->>Analytics: Identify patterns
+    Analytics->>Quality: Present findings
+    Quality->>Mgmt: Report insights
+    Mgmt->>CI: Prioritize improvements
+    CI->>Quality: Implement changes
+```
+
+**Tasks:**
+- `compile.QualityData` - Aggregate metrics
+- `analyze.QualityTrends` - Identify patterns
+- `calculate.QualityCosts` - Measure cost of quality
+- `benchmark.Performance` - Compare to standards
+- `report.QualityStatus` - Communicate findings
+
+### 4.2.4.8 - Drive continuous improvement
+
+Using quality data and analysis to identify and implement improvements in products, processes, and supplier performance.
+
+```mermaid
+sequenceDiagram
+    participant CI as CI Team
+    participant Quality as Quality
+    participant Eng as Engineering
+    participant Supplier as Suppliers
+
+    CI->>Quality: Review quality data
+    CI->>CI: Identify improvements
+    CI->>Eng: Develop solutions
+    Eng->>CI: Validate improvements
+    CI->>Supplier: Share best practices
+    Supplier->>CI: Implement changes
+    CI->>Quality: Verify results
+```
+
+**Tasks:**
+- `identify.ImprovementOpportunities` - Find improvement areas
+- `prioritize.Improvements` - Rank by impact
+- `implement.ProcessChanges` - Execute improvements
+- `share.BestPractices` - Spread learnings
+- `measure.ImprovementResults` - Track outcomes
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define quality requirements | Quality Engineering | Quality Director | Engineering, Procurement | Suppliers |
+| Inspect incoming materials | QC Inspectors | Quality Manager | Receiving, Procurement | Production |
+| Monitor in-process quality | QC Team | Production Manager | Engineering, Quality | Management |
+| Inspect finished goods | QC Inspectors | Quality Manager | Production, Shipping | Sales |
+| Track supplier performance | Supplier Quality | Quality Director | Procurement, Suppliers | Management |
+| Manage nonconformances | CAPA Team | Quality Director | Engineering, Suppliers | Production |
+| Analyze quality data | Quality Analytics | Quality Director | Operations, Engineering | Executive Team |
+| Drive improvement | CI Team | VP Operations | Quality, Engineering | All Departments |
+
+## Related Departments
+
+- [Quality Assurance](/departments/Quality) - Quality standards and oversight
+- [Quality Control](/departments/QualityControl) - Inspection and testing
+- [Procurement](/departments/Procurement) - Supplier management
+- [Manufacturing](/departments/Manufacturing) - Production quality
+- [Receiving](/departments/Receiving) - Incoming inspection
+- [Engineering](/departments/Engineering) - Technical support
+
+## Related Occupations
+
+- [Quality Control Inspectors](/occupations/QualityControlInspectors) - Inspection and testing
+- [Quality Engineers](/occupations/QualityEngineers) - Quality systems and analysis
+- [Supplier Quality Engineers](/occupations/SupplierQualityEngineers) - Supplier quality management
+- [Quality Managers](/occupations/QualityManagers) - Quality leadership
+- [Statistical Analysts](/occupations/StatisticalAnalysts) - SPC and data analysis
+- [CAPA Specialists](/occupations/CAPASpecialists) - Corrective action management
+
+## Industry Variations
+
+### Automotive
+
+Automotive quality monitoring follows IATF 16949 standards with emphasis on PPAP, statistical process control, and zero-defect targets. Supplier quality management includes tier-2 and tier-3 oversight.
+
+**Industry-Specific Activities:**
+- Implement Advanced Product Quality Planning (APQP)
+- Monitor supplier PPAP compliance
+- Execute run-at-rate audits
+- Track PPM (parts per million) defect rates
+- Manage 8D problem solving process
+
+### Aerospace and Defense
+
+Aerospace quality requires AS9100 compliance, NADCAP accreditation for special processes, and extensive documentation. First article inspection (FAI) and material traceability are mandatory.
+
+**Industry-Specific Activities:**
+- Execute AS9102 First Article Inspection
+- Maintain material certificates of conformance
+- Monitor special process compliance
+- Conduct flight safety reviews
+- Track age-controlled materials
+
+### Life Sciences / Pharmaceutical
+
+Life sciences quality follows FDA 21 CFR Part 211 (GMP) with emphasis on batch records, stability testing, and regulatory reporting. Quality events require thorough investigation and documentation.
+
+**Industry-Specific Activities:**
+- Execute GMP batch release
+- Perform stability testing programs
+- Conduct annual product quality reviews
+- Manage regulatory deviation reporting
+- Monitor environmental conditions
+
+### Food and Beverage
+
+Food quality emphasizes HACCP critical control points, food safety monitoring, and pathogen testing. Regulatory compliance (FSMA, GFSI) drives quality programs.
+
+**Industry-Specific Activities:**
+- Monitor HACCP critical control points
+- Conduct pathogen testing
+- Track allergen controls
+- Manage food safety incidents
+- Execute supplier food safety audits
+
+### Electronics
+
+Electronics quality focuses on soldering defects, ESD controls, and reliability testing. IPC standards define acceptance criteria. Automated optical inspection (AOI) is common.
+
+**Industry-Specific Activities:**
+- Perform automated optical inspection
+- Monitor solder joint quality per IPC
+- Conduct environmental stress screening
+- Track ESD compliance
+- Execute reliability testing
+
+### Consumer Products
+
+Consumer products quality emphasizes aesthetic quality, packaging integrity, and safety compliance. Customer complaint analysis drives improvement priorities.
+
+**Industry-Specific Activities:**
+- Monitor cosmetic quality standards
+- Track packaging defect rates
+- Manage product safety testing
+- Analyze customer complaint trends
+- Execute retail audit programs
+
+## Sub-Processes
+
+| Process | Code | Description |
+|---------|------|-------------|
+| Define quality requirements | 4.2.4.1 | Establishing standards and criteria |
+| Inspect incoming materials | 4.2.4.2 | Receiving inspection activities |
+| Monitor in-process quality | 4.2.4.3 | Production quality tracking |
+| Inspect finished goods | 4.2.4.4 | Final product inspection |
+| Track supplier performance | 4.2.4.5 | Supplier quality management |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Proc["4.2 Procure Materials<br/>and Services"] --> MQP["4.2.4 Monitor Quality<br/>of Product"]
+    Prod["4.3 Produce/<br/>Manufacture Product"] --> MQP
+
+    MQP --> CS["6.0 Manage<br/>Customer Service"]
+    MQP --> Risk["11.0 Manage<br/>Enterprise Risk"]
+    MQP --> Suppliers["4.2.3 Manage<br/>Suppliers"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Incoming Defect Rate | Defective materials from suppliers | <1% |
+| First Pass Yield | Products passing inspection first time | >98% |
+| Supplier PPM | Parts per million defective from suppliers | <100 |
+| Customer Complaint Rate | Complaints per million units shipped | <50 |
+| Cost of Quality | Total quality costs as % of revenue | <3% |
+| CAPA Effectiveness | Corrective actions preventing recurrence | >90% |
+| On-Time Quality Release | Products released on schedule | >95% |
+| Supplier Audit Compliance | Suppliers meeting audit standards | >95% |
+
+---
+
+*Source: APQC PCF 10302 (4.2.4) - Cross-Industry*

@@ -1,0 +1,115 @@
+---
+id: PerformServiceAndSolutionRollout
+name: "Perform service and solution rollout"
+code: "20858"
+hierarchyId: "8.6.5"
+type: Process
+level: 3
+status: complete
+parent: "8.6"
+children: ["8.6.5.1", "8.6.5.2", "8.6.5.3", "8.6.5.4", "8.6.5.5", "8.6.5.6", "8.6.5.7"]
+---
+
+# Perform service and solution rollout
+
+> Strategizing and executing changes in IT solutions and services.
+
+## Overview
+
+Process 8.6.5 is a core process that defines the specific procedures for perform service and solution rollout. 
+
+Strategizing and executing changes in IT solutions and services. Create a plan for deploying the changes. Communicate with stakeholders about the changes. Administer and implement the changes. Train the resources who will be affected by these changes. Install changes and verify their effect.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_6["8.6 Deploy services/solutions"]
+    N8_6 --> N8_6_5["8.6.5 Perform service and solution rollout"]
+    style N8_6_5 fill:#e1f5fe
+    N8_6_5 --> N8_6_5_1["8.6.5.1 Conduct IT training"]
+    N8_6_5 --> N8_6_5_2["8.6.5.2 Prepare and distribute service/s..."]
+    N8_6_5 --> N8_6_5_3["8.6.5.3 Support organizational changes"]
+    N8_6_5 --> N8_6_5_4["8.6.5.4 Execute rollout plans"]
+    N8_6_5 --> N8_6_5_5["8.6.5.5 Provide rollout support"]
+    N8_6_5 --> N8_6_5_6["8.6.5.6 Manage rollout support capabilities"]
+    N8_6_5 --> N8_6_5_7["8.6.5.7 Monitor and record rollout issues"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20858 |
+| Hierarchy ID | 8.6.5 |
+| Level | Process |
+| Parent | [8.6](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.ServiceAndSolutionRollout
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `service and solution rollout` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform service and solution rollout"]
+        S1["Conduct IT training"]
+        S2["Prepare and distribute serv..."]
+        S3["Support organizational changes"]
+        S4["Execute rollout plans"]
+        S5["Provide rollout support"]
+        S6["Manage rollout support capa..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Conduct IT training](./ConductITTraining) | 8.6.5.1 | Preparing users for changes in IT solutions |
+| [Prepare and distribute service/solution communications](./PrepareAndDistributeServicesolutionCommunications) | 8.6.5.2 | Coordinating communications regarding the changes in IT services and solutions with employees in the |
+| [Support organizational changes](./SupportOrganizationalChanges) | 8.6.5.3 | Creating a strategy for providing support for organizational changes |
+| [Execute rollout plans](./ExecuteRolloutPlans) | 8.6.5.4 | Executing a plan for introducing the IT services and solutions to the organization's end user base |
+| [Provide rollout support](./ProvideRolloutSupport) | 8.6.5.5 | Establishing services for providing support to users of IT services and solutions for rollout |
+| [Manage rollout support capabilities](./ManageRolloutSupportCapabilities) | 8.6.5.6 | Managing the necessary skills and competencies required to efficiently provide IT resolution for rol |
+| [Monitor and record rollout issues](./MonitorAndRecordRolloutIssues) | 8.6.5.7 | Track and record any issues being faced due to rollout |
+
+
+## Related Concepts
+
+- [ServiceRollout](/concepts/ServiceRollout)
+- [SolutionRollout](/concepts/SolutionRollout)
+
+
+---
+
+*Source: APQC PCF 20858 (8.6.5) - APQC*

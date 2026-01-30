@@ -1,0 +1,64 @@
+---
+id: ReturnToFinishedGoodsInventory
+name: "Return to finished goods inventory"
+code: "21605"
+hierarchyId: "4.4.2.5.4"
+type: SubActivity
+level: 5
+status: complete
+parent: "4.4.2.5"
+---
+
+# Return to finished goods inventory
+
+> Moving a returned product back to inventory or stock.
+
+## Overview
+
+Sub-Activity 4.4.2.5.4 is an activity within the Deliver Physical Products framework. 
+
+Moving a returned product back to inventory or stock. Whether a product is sufficient as returned, repaired, or refurbished, moving that product back to inventory for resale or returning to customer is the fnal step in Manage disposition of returned products.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_4["4.4 Manage logistics and warehousing"]
+    N4_4 --> N4_4_2["4.4.2 Plan and manage inbound material flow"]
+    N4_4_2 --> N4_4_2_5["4.4.2.5 Manage disposition of returned products"]
+    N4_4_2_5 --> N4_4_2_5_4["4.4.2.5.4 Return to finished goods inventory"]
+    style N4_4_2_5_4 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21605 |
+| Hierarchy ID | 4.4.2.5.4 |
+| Level | Sub-Activity |
+| Parent | [4.4.2.5](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+return.ToFinishedGoodsInventory
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `return` | Primary action |
+| Object | `to finished goods inventory` | Direct object |
+
+
+## Related Concepts
+
+- [FinishedGoodsInventory](/concepts/FinishedGoodsInventory)
+
+
+---
+
+*Source: APQC PCF 21605 (4.4.2.5.4) - APQC*

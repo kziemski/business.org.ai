@@ -1,0 +1,100 @@
+---
+id: PerformGeneralAccountingAndReporting
+name: "Perform general accounting and reporting"
+code: "10730"
+hierarchyId: "9.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.3.1", "9.3.2", "9.3.4"]
+---
+
+# Perform general accounting and reporting
+
+> Making statements about business activities and functions.
+
+## Overview
+
+Group 9.3 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Making statements about business activities and functions. Prepare financial statements (balance sheet, income statement, statement of cash flows, and statement of stockholders' equity) according to accounting concepts and principles.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_3["9.3 Perform general accounting and reporting"]
+    style N9_3 fill:#e1f5fe
+    N9_3 --> N9_3_1["9.3.1 Manage financial policies and pr..."]
+    N9_3 --> N9_3_2["9.3.2 Perform general accounting"]
+    N9_3 --> N9_3_4["9.3.4 Perform financial reporting"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10730 |
+| Hierarchy ID | 9.3 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.GeneralAccountingAndReporting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `general accounting and reporting` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform general accounting and reporting"]
+        S1["Manage financial policies a..."]
+        S2["Perform general accounting"]
+        S3["Perform financial reporting"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage financial policies and procedures](./9.3.1-ManageFinancialPoliciesProcedures/) | 9.3.1 | Creating procedures to perform general accounting and reporting |
+| [Perform general accounting](./9.3.2-PerformGeneralAccounting/) | 9.3.2 | Applying basic principles, concepts, and accounting practices in recording and preparing final accou |
+| [Perform financial reporting](./9.3.4-PerformFinancialReporting/) | 9.3.4 | Reporting on the organization's financial status to stakeholders |
+
+
+## Related Concepts
+
+- [GeneralAccounting](/concepts/GeneralAccounting)
+- [Reporting](/concepts/Reporting)
+
+
+---
+
+*Source: APQC PCF 10730 (9.3) - APQC*

@@ -1,0 +1,108 @@
+---
+id: ReportTime
+name: "Report time"
+code: "10753"
+hierarchyId: "9.5.1"
+type: Process
+level: 3
+status: complete
+parent: "9.5"
+children: ["9.5.1.1", "9.5.1.2", "9.5.1.3", "9.5.1.4", "9.5.1.5"]
+---
+
+# Report time
+
+> Recording the reporting time of employees on-site.
+
+## Overview
+
+Process 9.5.1 is a core process that defines the specific procedures for report time. 
+
+Recording the reporting time of employees on-site. Track working days, salary calculations, holidays taken, number of hours spend in the office, billing hours, etc.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_5["9.5 Process payroll"]
+    N9_5 --> N9_5_1["9.5.1 Report time"]
+    style N9_5_1 fill:#e1f5fe
+    N9_5_1 --> N9_5_1_1["9.5.1.1 Establish policies and procedures"]
+    N9_5_1 --> N9_5_1_2["9.5.1.2 Collect and record employee time..."]
+    N9_5_1 --> N9_5_1_3["9.5.1.3 Analyze and report paid and unpa..."]
+    N9_5_1 --> N9_5_1_4["9.5.1.4 Monitor regular, overtime, and o..."]
+    N9_5_1 --> N9_5_1_5["9.5.1.5 Analyze and report employee util..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10753 |
+| Hierarchy ID | 9.5.1 |
+| Level | Process |
+| Parent | [9.5](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+report.Time
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `report` | Primary action |
+| Object | `time` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Report time"]
+        S1["Establish policies and proc..."]
+        S2["Collect and record employee..."]
+        S3["Analyze and report paid and..."]
+        S4["Monitor regular, overtime, ..."]
+        S5["Analyze and report employee..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish policies and procedures](./EstablishPoliciesAndProcedures) | 9.5.1.1 | Developing policies and procedures for the HR function to calculate compensation |
+| [Collect and record employee time worked](./CollectAndRecordEmployeeTimeWorked) | 9.5.1.2 | Tracking billing hours of each employee on daily basis |
+| [Analyze and report paid and unpaid leave](./AnalyzeAndReportPaidAndUnpaidLeave) | 9.5.1.3 | Tracking leaves allowed and taken by employees |
+| [Monitor regular, overtime, and other hours](./MonitorRegularOvertimeAndOtherHours) | 9.5.1.4 | Observing the number of hours worked by an employees on daily basis |
+| [Analyze and report employee utilization](./AnalyzeAndReportEmployeeUtilization) | 9.5.1.5 | Monitoring the number of productive hours for employees |
+
+
+## Related Concepts
+
+- [Time](/concepts/Time)
+
+
+---
+
+*Source: APQC PCF 10753 (9.5.1) - APQC*

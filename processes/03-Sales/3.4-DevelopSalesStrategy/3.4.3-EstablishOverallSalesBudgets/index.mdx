@@ -1,0 +1,112 @@
+---
+id: EstablishOverallSalesBudgets
+name: "Establish overall sales budgets"
+code: "10131"
+hierarchyId: "3.4.3"
+type: Process
+level: 3
+status: complete
+parent: "3.4"
+children: ["3.4.3.1", "3.4.3.2", "3.4.3.3", "3.4.3.4", "3.4.3.5", "3.4.3.6"]
+---
+
+# Establish overall sales budgets
+
+> Setting up a financial plan for the sales function.
+
+## Overview
+
+Process 3.4.3 is a core process that defines the specific procedures for establish overall sales budgets. 
+
+Setting up a financial plan for the sales function. Calculate the estimated sales revenue and costs, which helps in calculating the overall net profit. Create a sound plan for resource outlay by comparing the forecast with historical data.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_4["3.4 Develop sales strategy"]
+    N3_4 --> N3_4_3["3.4.3 Establish overall sales budgets"]
+    style N3_4_3 fill:#e1f5fe
+    N3_4_3 --> N3_4_3_1["3.4.3.1 Calculate product market share"]
+    N3_4_3 --> N3_4_3_2["3.4.3.2 Calculate product revenue"]
+    N3_4_3 --> N3_4_3_3["3.4.3.3 Determine variable costs"]
+    N3_4_3 --> N3_4_3_4["3.4.3.4 Determine overhead and fixed costs"]
+    N3_4_3 --> N3_4_3_5["3.4.3.5 Calculate net profit"]
+    N3_4_3 --> N3_4_3_6["3.4.3.6 Create budget"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10131 |
+| Hierarchy ID | 3.4.3 |
+| Level | Process |
+| Parent | [3.4](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.OverallSalesBudgets
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `overall sales budgets` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish overall sales budgets"]
+        S1["Calculate product market share"]
+        S2["Calculate product revenue"]
+        S3["Determine variable costs"]
+        S4["Determine overhead and fixe..."]
+        S5["Calculate net profit"]
+        S6["Create budget"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Calculate product market share](./CalculateProductMarketShare) | 3.4.3.1 | Determining the percentage of total sales volume in the market for a particular product |
+| [Calculate product revenue](./CalculateProductRevenue) | 3.4.3.2 | Estimating revenue from the sale of products/services |
+| [Determine variable costs](./DetermineVariableCosts) | 3.4.3.3 | Calculating the variable costs of production |
+| [Determine overhead and fixed costs](./DetermineOverheadAndFixedCosts) | 3.4.3.4 | Calculating the overhead costs associated with selling the organization's products/services |
+| [Calculate net profit](./CalculateNetProfit) | 3.4.3.5 | Calculating the net income |
+| [Create budget](./CreateBudget) | 3.4.3.6 | Creating a plan in measurable terms for the financial outlay that best captures resource allocation  |
+
+
+## Related Concepts
+
+- [OverallSalesBudgets](/concepts/OverallSalesBudgets)
+
+
+---
+
+*Source: APQC PCF 10131 (3.4.3) - APQC*

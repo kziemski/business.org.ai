@@ -1,0 +1,117 @@
+---
+id: EggProduction
+name: "Egg Production"
+code: "1123"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Egg Production
+
+> This industry group comprises establishments primarily engaged in breeding, hatching, and raising poultry for meat or egg production.
+
+## Overview
+
+Egg Production represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11). This industry group encompasses establishments primarily engaged in egg production.
+
+This industry group comprises establishments primarily engaged in breeding, hatching, and raising poultry for meat or egg production.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S11["11: Agriculture, Forestry, Fishing and Hunting"]
+    S11 --> N112["112: Animal Production"]
+    N112 --> N1123["1123: Egg Production"]
+    style N1123 fill:#f96,stroke:#333,stroke-width:2px
+    N1123 --> N11231["11231: Chicken Egg Production"]
+    N1123 --> N11232["11232: Meat Type Chicken Production"]
+    N1123 --> N11233["11233: Turkey Production"]
+    N1123 --> N11234["11234: Poultry Hatcheries"]
+    N1123 --> N11239["11239: Poultry Production"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 1123 |
+| Level | Industry Group |
+| Parent | [Animal Production](../) |
+| Child Industries | 5 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Chicken Egg Production](./ChickenEggProduction/) | 11231 | See industry description for 112310 |
+| [Meat Type Chicken Production](./MeatTypeChickenProduction/) | 11232 | See industry description for 112320 |
+| [Turkey Production](./TurkeyProduction/) | 11233 | See industry description for 112330 |
+| [Poultry Hatcheries](./PoultryHatcheries/) | 11234 | See industry description for 112340 |
+| [Poultry Production](./PoultryProduction/) | 11239 | See industry description for 112390 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Planning"]
+        O2["Planting/Stocking"]
+        O3["Growing/Raising"]
+        O4["Harvesting"]
+        O5["Processing"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Supply Management"]
+        S3["Quality Control"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Seeds/Stock"]
+        I2["Equipment"]
+        I3["Fertilizers"]
+        I4["Labor"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Crops"]
+        O2["Livestock"]
+        O3["Raw Materials"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Processors"]
+        C2["Distributors"]
+        C3["Retailers"]
+        C4["Export Markets"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 1123 - Egg Production*

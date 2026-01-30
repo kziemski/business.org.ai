@@ -1,0 +1,115 @@
+---
+id: ManageCustomersAndAccounts
+name: "Manage customers and accounts"
+code: "10183"
+hierarchyId: "3.5.2"
+type: Process
+level: 3
+status: complete
+parent: "3.5"
+children: ["3.5.2.1", "3.5.2.2", "3.5.2.3", "3.5.2.4", "3.5.2.5", "3.5.2.6", "3.5.2.7"]
+---
+
+# Manage customers and accounts
+
+> Managing the customer's expectations, with the intent of responsibly increasing the sale of the organization's products/services.
+
+## Overview
+
+Process 3.5.2 is a core process that defines the specific procedures for manage customers and accounts. 
+
+Managing the customer's expectations, with the intent of responsibly increasing the sale of the organization's products/services. Create a systematic method for governing sales, using sales forecasts and customer management measures. Develop a blueprint to manage relationships with customers and the data it holds on them, as well as the sale of its products/services to these customers. Devise a recipe for handling the organization's key customers in order to manage their expectations with tact and responsibility while maximizing revenue.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_5["3.5 Develop and manage sales plans"]
+    N3_5 --> N3_5_2["3.5.2 Manage customers and accounts"]
+    style N3_5_2 fill:#e1f5fe
+    N3_5_2 --> N3_5_2_1["3.5.2.1 Select key customers/accounts"]
+    N3_5_2 --> N3_5_2_2["3.5.2.2 Develop sales/key account plan"]
+    N3_5_2 --> N3_5_2_3["3.5.2.3 Manage sales/key account plan"]
+    N3_5_2 --> N3_5_2_4["3.5.2.4 Manage customer relationships"]
+    N3_5_2 --> N3_5_2_5["3.5.2.5 Manage customer master data"]
+    N3_5_2 --> N3_5_2_6["3.5.2.6 Collect and merge internal and t..."]
+    N3_5_2 --> N3_5_2_7["3.5.2.7 De-duplicate customer data"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10183 |
+| Hierarchy ID | 3.5.2 |
+| Level | Process |
+| Parent | [3.5](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.CustomersAndAccounts
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `customers and accounts` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage customers and accounts"]
+        S1["Select key customers/accounts"]
+        S2["Develop sales/key account plan"]
+        S3["Manage sales/key account plan"]
+        S4["Manage customer relationships"]
+        S5["Manage customer master data"]
+        S6["Collect and merge internal ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Select key customers/accounts](./SelectKeyCustomersaccounts) | 3.5.2.1 | Choosing principal clients that are vital for the company |
+| [Develop sales/key account plan](./DevelopSaleskeyAccountPlan) | 3.5.2.2 | Creating a plan for managing the accounts of key customers in order to better maintain relationships |
+| [Manage sales/key account plan](./ManageSaleskeyAccountPlan) | 3.5.2.3 | Handling the accounts of important clients |
+| [Manage customer relationships](./ManageCustomerRelationships) | 3.5.2.4 | Managing the organization's relationship with its customers, by systematically coordinating interact |
+| [Manage customer master data](./ManageCustomerMasterData) | 3.5.2.5 | Managing the corpus of data relating all customers acquired over time |
+| [Collect and merge internal and third-party customer information](./CollectAndMergeInternalAndThirdpartyCustomerInformation) | 3.5.2.6 | Gathering the data about customers |
+| [De-duplicate customer data](./DeduplicateCustomerData) | 3.5.2.7 | Eliminating redundant information in customer data |
+
+
+## Related Concepts
+
+- [Customers](/concepts/Customers)
+- [Accounts](/concepts/Accounts)
+
+
+---
+
+*Source: APQC PCF 10183 (3.5.2) - APQC*

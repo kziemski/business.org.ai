@@ -1,0 +1,100 @@
+---
+id: ManageEmployeeCareerDevelopment
+name: "Manage employee career development"
+code: "10472"
+hierarchyId: "7.3.3"
+type: Process
+level: 3
+status: complete
+parent: "7.3"
+children: ["7.3.3.1", "7.3.3.2", "7.3.3.3"]
+---
+
+# Manage employee career development
+
+> Establishing employee development guidelines.
+
+## Overview
+
+Process 7.3.3 is a core process that defines the specific procedures for manage employee career development. 
+
+Establishing employee development guidelines. Lay out career paths and plans for them. Manage the development of their skills to enhance their skills, ability, and knowledge.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    N7_3 --> N7_3_3["7.3.3 Manage employee career development"]
+    style N7_3_3 fill:#e1f5fe
+    N7_3_3 --> N7_3_3_1["7.3.3.1 Define employee development guid..."]
+    N7_3_3 --> N7_3_3_2["7.3.3.2 Develop employee career plans an..."]
+    N7_3_3 --> N7_3_3_3["7.3.3.3 Manage employee skill and compet..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10472 |
+| Hierarchy ID | 7.3.3 |
+| Level | Process |
+| Parent | [7.3](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EmployeeCareerDevelopment
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `employee career development` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage employee career development"]
+        S1["Define employee development..."]
+        S2["Develop employee career pla..."]
+        S3["Manage employee skill and c..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define employee development guidelines](./DefineEmployeeDevelopmentGuidelines) | 7.3.3.1 | Outlining the guidelines for development of employees |
+| [Develop employee career plans and career paths](./DevelopEmployeeCareerPlansAndCareerPaths) | 7.3.3.2 | Designing a future career path for the employees that encourages them to explore and gather informat |
+| [Manage employee skill and competency development](./ManageEmployeeSkillAndCompetencyDevelopment) | 7.3.3.3 | Administering the development of employee skills |
+
+
+## Related Concepts
+
+- [EmployeeCareerDevelopment](/concepts/EmployeeCareerDevelopment)
+
+
+---
+
+*Source: APQC PCF 10472 (7.3.3) - APQC*

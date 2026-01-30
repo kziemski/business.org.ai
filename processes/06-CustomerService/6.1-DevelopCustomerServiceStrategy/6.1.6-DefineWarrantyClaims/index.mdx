@@ -1,0 +1,108 @@
+---
+id: DefineWarrantyClaims
+name: "Define warranty claims"
+code: "20089"
+hierarchyId: "6.1.6"
+type: Process
+level: 3
+status: complete
+parent: "6.1"
+children: ["6.1.6.1", "6.1.6.2", "6.1.6.3", "6.1.6.4", "6.1.6.5"]
+---
+
+# Define warranty claims
+
+> Determining the exact terms and conditions under which specific warranties apply to certain goods or services.
+
+## Overview
+
+Process 6.1.6 is a core process that defines the specific procedures for define warranty claims. 
+
+Determining the exact terms and conditions under which specific warranties apply to certain goods or services.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_1["6.1 Develop customer service strategy"]
+    N6_1 --> N6_1_6["6.1.6 Define warranty claims"]
+    style N6_1_6 fill:#e1f5fe
+    N6_1_6 --> N6_1_6_1["6.1.6.1 Determine and document warranty ..."]
+    N6_1_6 --> N6_1_6_2["6.1.6.2 Create and manage warranty rules..."]
+    N6_1_6 --> N6_1_6_3["6.1.6.3 Agree on warranty responsibiliti..."]
+    N6_1_6 --> N6_1_6_4["6.1.6.4 Define warranty related offering..."]
+    N6_1_6 --> N6_1_6_5["6.1.6.5 Communicate warranty policies an..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20089 |
+| Hierarchy ID | 6.1.6 |
+| Level | Process |
+| Parent | [6.1](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.WarrantyClaims
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `warranty claims` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define warranty claims"]
+        S1["Determine and document warr..."]
+        S2["Create and manage warranty ..."]
+        S3["Agree on warranty responsib..."]
+        S4["Define warranty related off..."]
+        S5["Communicate warranty polici..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine and document warranty policies](./DetermineAndDocumentWarrantyPolicies) | 6.1.6.1 | Establishing warranty policies to assure customers that the company will guarantee its warranties th |
+| [Create and manage warranty rules/claim codes for products](./CreateAndManageWarrantyRulesclaimCodesForProducts) | 6.1.6.2 | Establishing and maintaining claims processing and routing rules |
+| [Agree on warranty responsibilities with suppliers](./AgreeOnWarrantyResponsibilitiesWithSuppliers) | 6.1.6.3 | Negotiating with manufacturers and dealers the obligations of each party in upholding warranties |
+| [Define warranty related offerings for customers](./DefineWarrantyRelatedOfferingsForCustomers) | 6.1.6.4 | Informing customers about warranties that apply to promoted products or services |
+| [Communicate warranty policies and offerings](./CommunicateWarrantyPoliciesAndOfferings) | 6.1.6.5 | Communicating rules and updates via training manuals for new products and training resources |
+
+
+## Related Concepts
+
+- [WarrantyClaims](/concepts/WarrantyClaims)
+
+
+---
+
+*Source: APQC PCF 20089 (6.1.6) - APQC*

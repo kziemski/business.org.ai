@@ -1,0 +1,99 @@
+---
+id: MeasureAndBenchmark
+name: "Measure and benchmark"
+code: "21584"
+hierarchyId: "13.6"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "13"
+children: ["13.6.1", "13.6.2", "13.6.3"]
+---
+
+# Measure and benchmark
+
+> Defining and managing measurement and benchmarking.
+
+## Overview
+
+Group 13.6 is a process group within APQC Category 13.0 (Develop and Manage Business Capabilities). 
+
+Defining and managing measurement and benchmarking. Measure and benchmark the performance of internal processes, as well as the organization as a whole.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_6["13.6 Measure and benchmark"]
+    style N13_6 fill:#e1f5fe
+    N13_6 --> N13_6_1["13.6.1 Define and manage organizational..."]
+    N13_6 --> N13_6_2["13.6.2 Benchmark performance"]
+    N13_6 --> N13_6_3["13.6.3 Evaluate performance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21584 |
+| Hierarchy ID | 13.6 |
+| Level | Group |
+| Parent | [13](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+measure.AndBenchmark
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `measure` | Primary action |
+| Object | `and benchmark` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Measure and benchmark"]
+        S1["Define and manage organizat..."]
+        S2["Benchmark performance"]
+        S3["Evaluate performance"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define and manage organizational performance strategy](./13.6.1-DefineManageOrganizationalPerformance/) | 13.6.1 | Creating and implementing a strategy for managing organizational performance |
+| [Benchmark performance](./13.6.2-BenchmarkPerformance/) | 13.6.2 | Comparing organizational performance internally or externally with other organizations |
+| [Evaluate performance](./13.6.3-EvaluatePerformance/) | 13.6.3 | Assessing process data, measures, and trends in an effort to evaluate process performance and identi |
+
+
+## Related Concepts
+
+- [Benchmark](/concepts/Benchmark)
+
+
+---
+
+*Source: APQC PCF 21584 (13.6) - APQC*

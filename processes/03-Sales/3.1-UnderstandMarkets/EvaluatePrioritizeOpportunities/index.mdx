@@ -1,0 +1,323 @@
+---
+id: EvaluateAndPrioritizeMarketOpportunities
+name: "Evaluate and prioritize market opportunities"
+code: "10107"
+hierarchyId: "3.1.2"
+type: Process
+category: "Market and Sell Products and Services"
+processGroup: "Understand markets, customers, and capabilities"
+metricsAvailable: true
+status: complete
+---
+
+# Evaluate and Prioritize Market Opportunities
+
+> Appraising market opportunities by quantifying and subjecting them to prioritization, as well as validation tests. Closely examine the market opportunities that have been identified by Perform customer and market intelligence analysis. Triangulate those opportunities to capitalize by finding a fit between identified opportunities and the composite of organizational capabilities and business strategy.
+
+## Overview
+
+Evaluate and Prioritize Market Opportunities is the strategic decision-making process that transforms market intelligence into actionable business priorities. This process ensures that organizations focus their resources on the most promising opportunities that align with their capabilities and strategic objectives.
+
+The process involves rigorous quantification of market potential, systematic prioritization frameworks, and validation testing to confirm opportunity viability. Effective execution reduces resource waste, accelerates time-to-market, and improves success rates for new market entries.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> G31["3.1 Understand markets, customers, and capabilities"]
+
+    G31 --> P312["3.1.2 Evaluate and prioritize market opportunities"]
+
+    P312 --> A3121["3.1.2.1 Quantify market opportunities"]
+    P312 --> A3122["3.1.2.2 Determine target segments"]
+    P312 --> A3123["3.1.2.3 Prioritize opportunities consistent with capabilities"]
+    P312 --> A3124["3.1.2.4 Validate opportunities"]
+
+    A3122 --> T31221["3.1.2.2.1 Identify under-served and saturated market segments"]
+
+    A3124 --> T31241["3.1.2.4.1 Test with customers/consumers"]
+    A3124 --> T31242["3.1.2.4.2 Confirm internal capabilities"]
+
+    style P312 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10107 |
+| Hierarchy ID | 3.1.2 |
+| Level | Process |
+| Parent Group | [3.1 Understand markets, customers, and capabilities](../index.mdx) |
+| Category | [3.0 Market and Sell Products and Services](../../index.mdx) |
+| Child Activities | 4 |
+| Metrics Available | Yes |
+
+## GraphDL Semantic Structure
+
+```
+evaluate.MarketOpportunities.and.Prioritize
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `evaluate` | Primary action of assessing and appraising |
+| Object | `MarketOpportunities` | Potential business opportunities in the market |
+| Preposition | `and` | Conjunction linking evaluation to prioritization |
+| PrepObject | `Prioritize` | Secondary action of ranking and ordering |
+
+### Decomposed Actions
+
+| GraphDL Action | Description |
+|----------------|-------------|
+| `quantify.MarketOpportunities` | Attach measurable indicators to opportunities |
+| `determine.TargetSegments` | Identify specific customer segments to pursue |
+| `prioritize.Opportunities` | Rank opportunities by strategic fit |
+| `validate.Opportunities` | Confirm practicability and feasibility |
+| `test.WithCustomers` | Validate with actual customer feedback |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Market Intelligence Reports"]
+        I2["Capability Assessments"]
+        I3["Business Strategy"]
+        I4["Financial Projections"]
+        I5["Competitive Analysis"]
+    end
+
+    subgraph Process["Evaluate and Prioritize Opportunities"]
+        P1["Quantify Market Size"]
+        P2["Estimate Revenue Potential"]
+        P3["Determine Target Segments"]
+        P4["Assess Strategic Fit"]
+        P5["Evaluate Capability Match"]
+        P6["Prioritize Opportunities"]
+        P7["Customer Validation"]
+        P8["Internal Validation"]
+        P9["Final Prioritization"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+        P6 --> P8
+        P7 --> P9
+        P8 --> P9
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Quantified Opportunity Analysis"]
+        O2["Target Segment Selection"]
+        O3["Prioritized Opportunity Roadmap"]
+        O4["Validation Test Results"]
+        O5["Go/No-Go Recommendations"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## Activities
+
+### 3.1.2.1 - Quantify market opportunities
+
+Attaching quantifiable indicators to opportunities that have been identified in the market. Compute estimated figures of the approximate value that can be captured with the provision of existing products/services.
+
+```mermaid
+sequenceDiagram
+    participant MR as Market Research
+    participant FIN as Finance
+    participant STRAT as Strategy
+    participant EXEC as Executive Team
+
+    MR->>FIN: Market size data
+    FIN->>FIN: Revenue modeling
+    FIN->>STRAT: Financial projections
+    STRAT->>STRAT: Strategic assessment
+    STRAT->>EXEC: Quantified opportunities
+    EXEC->>STRAT: Approval to proceed
+```
+
+**Key Actions:**
+- `calculate.TotalAddressableMarket` - Determine full market potential
+- `estimate.ServiceableMarket` - Define reachable market portion
+- `project.RevenueOpportunity` - Forecast potential revenue
+- `assess.MarketGrowthRate` - Evaluate market trajectory
+
+### 3.1.2.2 - Determine target segments
+
+Identifying the targeted segment of customers. Deduce those particular customer segments that are to be targeted from among the market segments.
+
+```mermaid
+sequenceDiagram
+    participant DATA as Customer Data
+    participant ANAL as Analytics
+    participant MKT as Marketing
+    participant SALES as Sales
+
+    DATA->>ANAL: Segmentation data
+    ANAL->>ANAL: Segment analysis
+    ANAL->>MKT: Segment recommendations
+    MKT->>SALES: Target segment validation
+    SALES->>MKT: Field feedback
+    MKT->>ANAL: Refined targeting
+```
+
+**Tasks:**
+- [Identify under-served and saturated market segments](./DetermineTargetSegments/IdentifyMarketSegmentStatus.mdx)
+
+**Key Actions:**
+- `identify.UnderservedSegments` - Find unmet customer needs
+- `analyze.SegmentAttractiveness` - Evaluate segment potential
+- `select.TargetSegments` - Choose segments to pursue
+
+### 3.1.2.3 - Prioritize opportunities consistent with capabilities and overall business strategy
+
+Creating an index of market opportunities and arranging them in order of preference. Prioritize based on the opportunities' adherence to the overall business strategy. Correlate with the competencies and capacities that the organization possesses.
+
+```mermaid
+sequenceDiagram
+    participant STRAT as Strategy
+    participant OPS as Operations
+    participant FIN as Finance
+    participant EXEC as Executive Team
+
+    STRAT->>STRAT: Strategic alignment assessment
+    STRAT->>OPS: Capability matching
+    OPS->>FIN: Resource requirements
+    FIN->>STRAT: Financial feasibility
+    STRAT->>EXEC: Prioritized opportunity list
+    EXEC->>STRAT: Final approval
+```
+
+**Key Actions:**
+- `assess.StrategicAlignment` - Evaluate strategy fit
+- `match.Capabilities` - Align with organizational abilities
+- `rank.Opportunities` - Order by priority score
+- `allocate.Resources` - Plan resource distribution
+
+### 3.1.2.4 - Validate opportunities
+
+Confirming the practicability and reasonableness of the market opportunities that have been identified. Give substance to the real-time feasibility of the market opportunities.
+
+```mermaid
+sequenceDiagram
+    participant PROD as Product Team
+    participant CUST as Customers
+    participant OPS as Operations
+    participant STRAT as Strategy
+
+    PROD->>CUST: Customer testing
+    CUST->>PROD: Feedback
+    PROD->>OPS: Capability confirmation
+    OPS->>STRAT: Feasibility report
+    STRAT->>PROD: Go/No-Go decision
+```
+
+**Tasks:**
+- [Test with customers/consumers](./ValidateOpportunities/TestWithCustomers.mdx)
+- [Confirm internal capabilities](./ValidateOpportunities/ConfirmInternalCapabilities.mdx)
+
+**Key Actions:**
+- `test.CustomerAcceptance` - Validate with target customers
+- `confirm.OperationalCapability` - Verify execution ability
+- `validate.FinancialViability` - Confirm financial feasibility
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Quantify opportunities | Business Development | CFO | Marketing, Finance | Executive Team |
+| Determine target segments | Marketing Analytics | CMO | Sales, Product | Operations |
+| Prioritize opportunities | Strategy Team | CEO | All Functions | Board |
+| Test with customers | Product Team | VP Product | Marketing, Sales | Strategy |
+| Confirm capabilities | Operations | COO | Finance, IT | Executive Team |
+
+## Related Departments
+
+- [Strategy](/departments/Strategy) - Strategic prioritization oversight
+- [Marketing](/departments/Marketing) - Segment analysis and targeting
+- [Finance](/departments/Finance) - Financial modeling and validation
+- [Operations](/departments/Operations) - Capability assessment
+- [Product Management](/departments/Product) - Customer validation
+
+## Related Occupations
+
+- [Strategic Planners](/occupations/StrategicPlanners) - Opportunity prioritization
+- [Business Development Managers](/occupations/BusinessDevelopmentManagers) - Opportunity quantification
+- [Marketing Managers](/occupations/MarketingManagers) - Segment targeting
+- [Financial Analysts](/occupations/FinancialAnalysts) - Financial modeling
+- [Product Managers](/occupations/ProductManagers) - Customer validation
+
+## Industry Variations
+
+### Consumer Products
+
+Emphasis on retailer validation, trade feasibility, and consumer testing through panels.
+
+**Industry-Specific Activities:**
+- Retailer acceptance testing
+- Consumer panel validation
+- Trade margin analysis
+- Shelf space feasibility
+
+### Banking
+
+Focus on regulatory compliance validation, risk assessment, and capital requirements.
+
+**Industry-Specific Activities:**
+- Regulatory compliance review
+- Capital requirement analysis
+- Risk-adjusted return calculation
+- Compliance validation testing
+
+### Retail
+
+Emphasis on store-level feasibility, real estate requirements, and omnichannel validation.
+
+**Industry-Specific Activities:**
+- Store format validation
+- Location feasibility analysis
+- E-commerce capability assessment
+- Omnichannel readiness evaluation
+
+### Healthcare Provider
+
+Focus on clinical capability validation, regulatory compliance, and payer acceptance.
+
+**Industry-Specific Activities:**
+- Clinical capability assessment
+- Regulatory compliance validation
+- Payer contract feasibility
+- Physician acceptance testing
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Opportunity Conversion Rate | Prioritized opportunities that succeed | >40% |
+| Validation Accuracy | Validated opportunities that perform as expected | >75% |
+| Time to Validation | Days from opportunity identification to validation | <45 days |
+| Resource Efficiency | Resources allocated to successful opportunities | >60% |
+| Strategic Alignment Score | Opportunities aligned with strategy | >80% |
+| Customer Validation Rate | Opportunities validated by customers | >70% |
+
+## Related Processes
+
+```mermaid
+graph LR
+    PMI["3.1.1 Perform Market Intelligence"] --> EPO["3.1.2 Evaluate and Prioritize"]
+    EPO --> DMS["3.2 Develop Marketing Strategy"]
+    EPO --> DSS["3.4 Develop Sales Strategy"]
+    EPO --> DPS["2.0 Develop Products and Services"]
+    DVS["1.0 Vision and Strategy"] --> EPO
+```
+
+---
+
+*Source: APQC PCF 10107 (3.1.2) - Cross-Industry*

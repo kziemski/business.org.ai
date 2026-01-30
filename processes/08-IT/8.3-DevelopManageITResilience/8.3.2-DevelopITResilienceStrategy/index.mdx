@@ -1,0 +1,104 @@
+---
+id: DevelopItResilienceStrategy
+name: "Develop IT resilience strategy"
+code: "20716"
+hierarchyId: "8.3.2"
+type: Process
+level: 3
+status: complete
+parent: "8.3"
+children: ["8.3.2.1", "8.3.2.2", "8.3.2.3", "8.3.2.4"]
+---
+
+# Develop IT resilience strategy
+
+> Developing resilience strategies of IT across the organization so that prospective risks can be avoided.
+
+## Overview
+
+Process 8.3.2 is a core process that defines the specific procedures for develop it resilience strategy. 
+
+Developing resilience strategies of IT across the organization so that prospective risks can be avoided.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    N8_3 --> N8_3_2["8.3.2 Develop IT resilience strategy"]
+    style N8_3_2 fill:#e1f5fe
+    N8_3_2 --> N8_3_2_1["8.3.2.1 Determine IT delivery resiliency"]
+    N8_3_2 --> N8_3_2_2["8.3.2.2 Determine critical IT risks"]
+    N8_3_2 --> N8_3_2_3["8.3.2.3 Prioritize IT risks"]
+    N8_3_2 --> N8_3_2_4["8.3.2.4 Establish mitigation approaches ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20716 |
+| Hierarchy ID | 8.3.2 |
+| Level | Process |
+| Parent | [8.3](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.ITResilienceStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `IT resilience strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop IT resilience strategy"]
+        S1["Determine IT delivery resil..."]
+        S2["Determine critical IT risks"]
+        S3["Prioritize IT risks"]
+        S4["Establish mitigation approa..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine IT delivery resiliency](./DetermineITDeliveryResiliency) | 8.3.2.1 | Determining resilience strategies to ensure that IT effectively manages it's delivery process to mit |
+| [Determine critical IT risks](./DetermineCriticalITRisks) | 8.3.2.2 | Determining risks that could disrupt objectives of IT |
+| [Prioritize IT risks](./PrioritizeITRisks) | 8.3.2.3 | Prioritize potential IT risks based on business need to ensure overall IT stability |
+| [Establish mitigation approaches for IT risks](./EstablishMitigationApproachesForITRisks) | 8.3.2.4 | Establishing activities to improve opportunities and lessen threats for IT |
+
+
+## Related Concepts
+
+- [ITResilienceStrategy](/concepts/ITResilienceStrategy)
+
+
+---
+
+*Source: APQC PCF 20716 (8.3.2) - APQC*

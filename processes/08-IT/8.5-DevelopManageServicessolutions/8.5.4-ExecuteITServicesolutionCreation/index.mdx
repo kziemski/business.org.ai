@@ -1,0 +1,94 @@
+---
+id: ExecuteItServicesolutionCreationAndTesting
+name: "Execute IT service/solution creation and testing"
+code: "20808"
+hierarchyId: "8.5.4"
+type: Process
+level: 3
+status: complete
+parent: "8.5"
+children: ["8.5.4.1"]
+---
+
+# Execute IT service/solution creation and testing
+
+> Understanding customer requirements.
+
+## Overview
+
+Process 8.5.4 is a core process that defines the specific procedures for execute it service/solution creation and testing. 
+
+Understanding customer requirements. Design the IT services and solutions based on the requirements. Develop components for providing the requirements. Train resources to provide support. Test the IT services and solutions in advance. Confirm the customer experience post-sale.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_5["8.5 Develop and manage services/solutions"]
+    N8_5 --> N8_5_4["8.5.4 Execute IT service/solution creation ..."]
+    style N8_5_4 fill:#e1f5fe
+    N8_5_4 --> N8_5_4_1["8.5.4.1 Execute IT service/solution deve..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20808 |
+| Hierarchy ID | 8.5.4 |
+| Level | Process |
+| Parent | [8.5](../) |
+| Sub-Processes | 1 |
+
+
+## GraphDL Semantic Structure
+
+```
+execute.ITServicesolutionCreationAndTesting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `execute` | Primary action |
+| Object | `IT service/solution creation and testing` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Execute IT service/solution creation and testing"]
+        S1["Execute IT service/solution..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Execute IT service/solution development lifecycle](./8.5.4.1-ExecuteITServicesolutionDevelopment/) | 8.5.4.1 | Executing an information system, aiming to produce a high quality system that meets or exceeds custo |
+
+
+## Related Concepts
+
+- [ITServiceCreation](/concepts/ITServiceCreation)
+- [ITSolutionCreation](/concepts/ITSolutionCreation)
+- [Testing](/concepts/Testing)
+
+
+---
+
+*Source: APQC PCF 20808 (8.5.4) - APQC*

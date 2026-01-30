@@ -1,0 +1,119 @@
+---
+id: DevelopAndManageItSecurityPrivacyAndDataProtection
+name: "Develop and manage IT security, privacy, and data protection"
+code: "20735"
+hierarchyId: "8.3.5"
+type: Process
+level: 3
+status: complete
+parent: "8.3"
+children: ["8.3.5.1", "8.3.5.2", "8.3.5.3", "8.3.5.4", "8.3.5.5", "8.3.5.6", "8.3.5.7"]
+---
+
+# Develop and manage IT security, privacy, and data protection
+
+> Creating and deploying an architecture for securing and ensuring the privacy of data flows throughout the organization.
+
+## Overview
+
+Process 8.3.5 is a core process that defines the specific procedures for develop and manage it security, privacy, and data protection. 
+
+Creating and deploying an architecture for securing and ensuring the privacy of data flows throughout the organization. Create and develop protocols that ensure proper and efficient use of IT services and solutions
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    N8_3 --> N8_3_5["8.3.5 Develop and manage IT security, priva..."]
+    style N8_3_5 fill:#e1f5fe
+    N8_3_5 --> N8_3_5_1["8.3.5.1 Assess IT regulatory and confide..."]
+    N8_3_5 --> N8_3_5_2["8.3.5.2 Create IT security, privacy, and..."]
+    N8_3_5 --> N8_3_5_3["8.3.5.3 Define IT data security and priv..."]
+    N8_3_5 --> N8_3_5_4["8.3.5.4 Review and monitor physical and ..."]
+    N8_3_5 --> N8_3_5_5["8.3.5.5 Review and monitor application s..."]
+    N8_3_5 --> N8_3_5_6["8.3.5.6 Review and monitor IT physical e..."]
+    N8_3_5 --> N8_3_5_7["8.3.5.7 Monitor/analyze network intrusio..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20735 |
+| Hierarchy ID | 8.3.5 |
+| Level | Process |
+| Parent | [8.3](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageITSecurityPrivacyAndDataProtection
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage IT security, privacy, and data protection` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage IT security, privacy, and data protection"]
+        S1["Assess IT regulatory and co..."]
+        S2["Create IT security, privacy..."]
+        S3["Define IT data security and..."]
+        S4["Review and monitor physical..."]
+        S5["Review and monitor applicat..."]
+        S6["Review and monitor IT physi..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess IT regulatory and confidentiality requirements and policies](./AssessITRegulatoryAndConfidentialityRequirementsAndPolicies) | 8.3.5.1 | Evaluate principles or rules employed in controlling, directing, or managing IT services |
+| [Create IT security, privacy, and data protection risk governance](./CreateITSecurityPrivacyAndDataProtectionRiskGovernance) | 8.3.5.2 | Defining and managing organization's approach to governing IT security and ensuring the privacy of d |
+| [Define IT data security and privacy policies, standards, and procedures](./DefineITDataSecurityAndPrivacyPoliciesStandardsAndProcedures) | 8.3.5.3 | Outlining and establishing policies, regulations, standards, and procedures for IT data security and |
+| [Review and monitor physical and logical IT data security measures](./ReviewAndMonitorPhysicalAndLogicalITDataSecurityMeasures) | 8.3.5.4 | Identifying, examining, and reviewing physical and logical IT data security measures such as hardwar |
+| [Review and monitor application security controls](./ReviewAndMonitorApplicationSecurityControls) | 8.3.5.5 | Identifying, examining, and reviewing security control for IT applications |
+| [Review and monitor IT physical environment security controls](./ReviewAndMonitorITPhysicalEnvironmentSecurityControls) | 8.3.5.6 | Identifying and examining security controls for physical environment of information technology such  |
+| [Monitor/analyze network intrusion detection data and resolve threats](./MonitoranalyzeNetworkIntrusionDetectionDataAndResolveThreats) | 8.3.5.7 | Monitoring and evaluating network intrusion detection for any malicious activity or policy violation |
+
+
+## Related Concepts
+
+- [ITSecurity](/concepts/ITSecurity)
+- [Privacy](/concepts/Privacy)
+- [DataProtection](/concepts/DataProtection)
+- [ITSecurity](/concepts/ITSecurity)
+- [Privacy](/concepts/Privacy)
+- [DataProtection](/concepts/DataProtection)
+
+
+---
+
+*Source: APQC PCF 20735 (8.3.5) - APQC*

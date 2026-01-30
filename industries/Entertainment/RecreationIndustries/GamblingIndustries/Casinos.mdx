@@ -1,0 +1,100 @@
+---
+id: Casinos
+name: "Casinos"
+code: "71321"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Casinos
+
+> See industry description for 713210.
+
+## Overview
+
+Casinos represents an important category within the Arts, Entertainment, and Recreation sector (NAICS 71). This industry encompasses establishments primarily engaged in casinos.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S71["71: Arts, Entertainment, and Recreation"]
+    S71 --> N713["713: Recreation Industries"]
+    N713 --> N7132["7132: Gambling Industries"]
+    N7132 --> N71321["71321: Casinos"]
+    style N71321 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 71321 |
+| Level | Industry |
+| Parent | [Gambling Industries](../) |
+| Child Industries | 0 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Content/Event Planning"]
+        O2["Production"]
+        O3["Marketing"]
+        O4["Delivery"]
+        O5["Guest Services"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Venue/Facility Mgmt"]
+        S2["Ticketing"]
+        S3["Safety"]
+        S4["Talent Management"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 71321 - Casinos*

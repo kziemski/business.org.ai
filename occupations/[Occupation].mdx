@@ -1,0 +1,123 @@
+# {name}
+
+> {description}
+
+## Overview
+
+{overview}
+
+## Classification Hierarchy
+
+```mermaid
+graph TD
+    {category}["{categoryName}"] --> {group}["{groupName}"]
+    {group} --> {occupation}["{name}"]
+    {#if hasVariants}
+    {occupation} --> {variant}["{variantName}"]
+    {/if}
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| SOC Code | {code} |
+| Job Zone | {jobZone} |
+| Category | [{categoryName}](/occupations/{categoryPath}) |
+| Task Count | {taskCount} |
+
+## Core Tasks
+
+```mermaid
+mindmap
+    root(("{name}"))
+        {#each taskGroups}
+        {groupName}
+            {#each tasks}
+            {taskName}
+            {/each}
+        {/each}
+```
+
+{#each coreTasks}
+### {verb}.{object}
+
+{description}
+
+**Actions:**
+{#each actions}
+- `{verb}.{object}.{preposition}.{prepObject}` - {actionDescription}
+{/each}
+{/each}
+
+## Skills & Competencies
+
+### Technical Skills
+{#each technicalSkills}
+- **{name}** - {proficiencyLevel}
+{/each}
+
+### Soft Skills
+{#each softSkills}
+- **{name}** - {importance}
+{/each}
+
+## Related Occupations
+
+```mermaid
+graph LR
+    {occupation}["{name}"]
+
+    subgraph SameCategory["Same Category"]
+        {#each sameCategoryOccupations}
+        {id}["{name}"]
+        {/each}
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        {#each crossFunctionalOccupations}
+        {id}["{name}"]
+        {/each}
+    end
+
+    {occupation} --- SameCategory
+    {occupation} --- CrossFunctional
+```
+
+## Industries
+
+{#each industries}
+- [{name}](/industries/{path}) - {employmentLevel}
+{/each}
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Entry Level"] --> Mid["Mid-Level"]
+    Mid --> Senior["Senior Level"]
+    Senior --> Executive["Executive"]
+
+    {#each careerPath}
+    {fromId}["{fromName}"] --> {toId}["{toName}"]
+    {/each}
+```
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | {typicalEducation} |
+| Work Experience | {workExperience} |
+| On-the-Job Training | {training} |
+
+## Departments
+
+This occupation typically works in:
+{#each departments}
+- [{name}](/departments/{path})
+{/each}
+
+---
+
+*Source: O*NET {code} - {sourceType}*

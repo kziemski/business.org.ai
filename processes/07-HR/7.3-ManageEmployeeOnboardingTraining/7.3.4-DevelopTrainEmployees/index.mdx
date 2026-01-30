@@ -1,0 +1,115 @@
+---
+id: DevelopAndTrainEmployees
+name: "Develop and train employees"
+code: "10473"
+hierarchyId: "7.3.4"
+type: Process
+level: 3
+status: complete
+parent: "7.3"
+children: ["7.3.4.1", "7.3.4.2", "7.3.4.3", "7.3.4.4", "7.3.4.5", "7.3.4.6", "7.3.4.7"]
+---
+
+# Develop and train employees
+
+> Creating a link between employee and organizational development needs.
+
+## Overview
+
+Process 7.3.4 is a core process that defines the specific procedures for develop and train employees. 
+
+Creating a link between employee and organizational development needs. Conduct and manage employee training programs by considering the need and availability of these programs.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    N7_3 --> N7_3_4["7.3.4 Develop and train employees"]
+    style N7_3_4 fill:#e1f5fe
+    N7_3_4 --> N7_3_4_1["7.3.4.1 Align employee with organization..."]
+    N7_3_4 --> N7_3_4_2["7.3.4.2 Define employee competencies and..."]
+    N7_3_4 --> N7_3_4_3["7.3.4.3 Align learning programs with com..."]
+    N7_3_4 --> N7_3_4_4["7.3.4.4 Establish training needs by anal..."]
+    N7_3_4 --> N7_3_4_5["7.3.4.5 Develop, conduct, and manage emp..."]
+    N7_3_4 --> N7_3_4_6["7.3.4.6 Manage examinations and certific..."]
+    N7_3_4 --> N7_3_4_7["7.3.4.7 Monitor and evaluate learning pr..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10473 |
+| Hierarchy ID | 7.3.4 |
+| Level | Process |
+| Parent | [7.3](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndTrainEmployees
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and train employees` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and train employees"]
+        S1["Align employee with organiz..."]
+        S2["Define employee competencie..."]
+        S3["Align learning programs wit..."]
+        S4["Establish training needs by..."]
+        S5["Develop, conduct, and manag..."]
+        S6["Manage examinations and cer..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Align employee with organization development needs](./AlignEmployeeWithOrganizationDevelopmentNeeds) | 7.3.4.1 | Aligning the needs of the employees to development needs |
+| [Define employee competencies and skills](./DefineEmployeeCompetenciesAndSkills) | 7.3.4.2 | Defining the skills, knowledge, abilities, and attributes needed to carry out a specific job |
+| [Align learning programs with competencies and skills](./AlignLearningProgramsWithCompetenciesAndSkills) | 7.3.4.3 | Aligning the learning programs with the core capabilities and competencies of the organization |
+| [Establish training needs by analysis of required and available skills](./EstablishTrainingNeedsByAnalysisOfRequiredAndAvailableSkills) | 7.3.4.4 | Determining the training necessitated by business processes, using an examination of skill sets that |
+| [Develop, conduct, and manage employee and/or management training programs](./DevelopConductAndManageEmployeeAndorManagementTrainingPrograms) | 7.3.4.5 | Creating, implementing, and managing the programs for training employees |
+| [Manage examinations and certifications](./7.3.4.6-ManageExaminationsCertifications/) | 7.3.4.6 | Managing identified training programs for employees |
+| [Monitor and evaluate learning programs](./MonitorAndEvaluateLearningPrograms) | 7.3.4.7 | Oversight of the organization's learning programs |
+
+
+## Related Concepts
+
+- [Employees](/concepts/Employees)
+- [Employees](/concepts/Employees)
+
+
+---
+
+*Source: APQC PCF 10473 (7.3.4) - APQC*

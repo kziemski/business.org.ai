@@ -1,0 +1,104 @@
+---
+id: ManagePrograms
+name: "Manage programs"
+code: "16405"
+hierarchyId: "13.2.2"
+type: Process
+level: 3
+status: complete
+parent: "13.2"
+children: ["13.2.2.1", "13.2.2.2", "13.2.2.3", "13.2.2.4"]
+---
+
+# Manage programs
+
+> Establishing, implementing, and managing business programs.
+
+## Overview
+
+Process 13.2.2 is a core process that defines the specific procedures for manage programs. 
+
+Establishing, implementing, and managing business programs. Successfully handle related projects that together constitute a program. Establish the program structure and approach. Coordinate with stakeholders and partners. Execute the program. Assess and report the performance of the program. Coordinate and prioritize resources across projects. Manage links between the projects and the overall costs and risks of the program.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_2["13.2 Manage portfolio, program, and project"]
+    N13_2 --> N13_2_2["13.2.2 Manage programs"]
+    style N13_2_2 fill:#e1f5fe
+    N13_2_2 --> N13_2_2_1["13.2.2.1 Establish program structure and ..."]
+    N13_2_2 --> N13_2_2_2["13.2.2.2 Manage program stakeholders and ..."]
+    N13_2_2 --> N13_2_2_3["13.2.2.3 Manage program execution"]
+    N13_2_2 --> N13_2_2_4["13.2.2.4 Review and report program perfor..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16405 |
+| Hierarchy ID | 13.2.2 |
+| Level | Process |
+| Parent | [13.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Programs
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `programs` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage programs"]
+        S1["Establish program structure..."]
+        S2["Manage program stakeholders..."]
+        S3["Manage program execution"]
+        S4["Review and report program p..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish program structure and approach](./EstablishProgramStructureAndApproach) | 13.2.2.1 | Constructing and instituting the framework and approach to manage business programs |
+| [Manage program stakeholders and partners](./ManageProgramStakeholdersAndPartners) | 13.2.2.2 | Managing relationships with stakeholders and partners of the business programs |
+| [Manage program execution](./ManageProgramExecution) | 13.2.2.3 | Administering and implementing business programs |
+| [Review and report program performance](./ReviewAndReportProgramPerformance) | 13.2.2.4 | Evaluating and documenting the performance of business programs |
+
+
+## Related Concepts
+
+- [Programs](/concepts/Programs)
+
+
+---
+
+*Source: APQC PCF 16405 (13.2.2) - APQC*

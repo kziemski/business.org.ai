@@ -1,0 +1,116 @@
+---
+id: DevelopMarketingCommunicationStrategy
+name: "Develop marketing communication strategy"
+code: "16848"
+hierarchyId: "3.2.5"
+type: Process
+level: 3
+status: complete
+parent: "3.2"
+children: ["3.2.5.1", "3.2.5.2", "3.2.5.3", "3.2.5.4", "3.2.5.5", "3.2.5.6", "3.2.5.7", "3.2.5.8"]
+---
+
+# Develop marketing communication strategy
+
+> Establishing marketing communications that deliver promotional messages, in a coordinated way, through multiple marketing channels, such as print, radio, television, direct mail, online or mobile advertising, email, social media or personal selling.
+
+## Overview
+
+Process 3.2.5 is a core process that defines the specific procedures for develop marketing communication strategy. 
+
+Establishing marketing communications that deliver promotional messages, in a coordinated way, through multiple marketing channels, such as print, radio, television, direct mail, online or mobile advertising, email, social media or personal selling.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_2["3.2 Develop marketing strategy"]
+    N3_2 --> N3_2_5["3.2.5 Develop marketing communication strategy"]
+    style N3_2_5 fill:#e1f5fe
+    N3_2_5 --> N3_2_5_1["3.2.5.1 Develop customer communication c..."]
+    N3_2_5 --> N3_2_5_2["3.2.5.2 Define public relations (PR) str..."]
+    N3_2_5 --> N3_2_5_3["3.2.5.3 Define direct marketing strategy"]
+    N3_2_5 --> N3_2_5_4["3.2.5.4 Define internal marketing commun..."]
+    N3_2_5 --> N3_2_5_5["3.2.5.5 Identify new media for marketing..."]
+    N3_2_5 --> N3_2_5_6["3.2.5.6 Define new media communication s..."]
+    N3_2_5 --> N3_2_5_7["3.2.5.7 Define point of sale (POS) commu..."]
+    N3_2_5 --> N3_2_5_8["3.2.5.8 Define communication guidelines ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16848 |
+| Hierarchy ID | 3.2.5 |
+| Level | Process |
+| Parent | [3.2](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.MarketingCommunicationStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `marketing communication strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop marketing communication strategy"]
+        S1["Develop customer communicat..."]
+        S2["Define public relations (PR..."]
+        S3["Define direct marketing str..."]
+        S4["Define internal marketing c..."]
+        S5["Identify new media for mark..."]
+        S6["Define new media communicat..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop customer communication calendar](./DevelopCustomerCommunicationCalendar) | 3.2.5.1 | Timing and scheduling the delivery of marketing messages to maximize their impact on customer purcha |
+| [Define public relations (PR) strategy](./DefinePublicRelationsPRStrategy) | 3.2.5.2 | Deciding how to promote and maintain a favorable public image of the company in the eyes of its empl |
+| [Define direct marketing strategy](./DefineDirectMarketingStrategy) | 3.2.5.3 | Devising a master plan how to select potential customers or qualified clients for customized offers, |
+| [Define internal marketing communication strategy](./DefineInternalMarketingCommunicationStrategy) | 3.2.5.4 | Developing a program to promote the objectives, values, products and services of the company to its  |
+| [Identify new media for marketing communication](./IdentifyNewMediaForMarketingCommunication) | 3.2.5.5 | Finding emerging media based on digital or other technologies that would enable the company to incre |
+| [Define new media communication strategy](./DefineNewMediaCommunicationStrategy) | 3.2.5.6 | Developing a marketing strategy that is maximally effective in a new or emerging media channel by ca |
+| [Define point of sale (POS) communication strategy](./DefinePointOfSalePOSCommunicationStrategy) | 3.2.5.7 | Establishing a framework for coordinated marketing to increase the profitability and increase brand  |
+| [Define communication guidelines and mechanisms](./DefineCommunicationGuidelinesAndMechanisms) | 3.2.5.8 | Establishing standardized procedures for effective communication that maximizes ROI, promotes brand  |
+
+
+## Related Concepts
+
+- [MarketingCommunicationStrategy](/concepts/MarketingCommunicationStrategy)
+
+
+---
+
+*Source: APQC PCF 16848 (3.2.5) - APQC*

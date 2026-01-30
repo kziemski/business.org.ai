@@ -1,0 +1,115 @@
+---
+id: EvaluateAndManageFinancialPerformance
+name: "Evaluate and manage financial performance"
+code: "10741"
+hierarchyId: "9.1.4"
+type: Process
+level: 3
+status: complete
+parent: "9.1"
+children: ["9.1.4.1", "9.1.4.2", "9.1.4.3", "9.1.4.4", "9.1.4.5", "9.1.4.6", "9.1.4.7"]
+---
+
+# Evaluate and manage financial performance
+
+> Checking and achieving predetermined financial targets and timelines.
+
+## Overview
+
+Process 9.1.4 is a core process that defines the specific procedures for evaluate and manage financial performance. 
+
+Checking and achieving predetermined financial targets and timelines. Assess and manage the profitability, feasibility, and consistency of a business or project. Study the revenues generated.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_1["9.1 Perform planning and management accou..."]
+    N9_1 --> N9_1_4["9.1.4 Evaluate and manage financial perform..."]
+    style N9_1_4 fill:#e1f5fe
+    N9_1_4 --> N9_1_4_1["9.1.4.1 Assess customer and product prof..."]
+    N9_1_4 --> N9_1_4_2["9.1.4.2 Evaluate new products"]
+    N9_1_4 --> N9_1_4_3["9.1.4.3 Perform life cycle costing"]
+    N9_1_4 --> N9_1_4_4["9.1.4.4 Optimize customer and product mix"]
+    N9_1_4 --> N9_1_4_5["9.1.4.5 Track performance of new-custome..."]
+    N9_1_4 --> N9_1_4_6["9.1.4.6 Prepare activity-based performan..."]
+    N9_1_4 --> N9_1_4_7["9.1.4.7 Manage continuous cost improvement"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10741 |
+| Hierarchy ID | 9.1.4 |
+| Level | Process |
+| Parent | [9.1](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+evaluate.AndManageFinancialPerformance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `evaluate` | Primary action |
+| Object | `and manage financial performance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Evaluate and manage financial performance"]
+        S1["Assess customer and product..."]
+        S2["Evaluate new products"]
+        S3["Perform life cycle costing"]
+        S4["Optimize customer and produ..."]
+        S5["Track performance of new-cu..."]
+        S6["Prepare activity-based perf..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess customer and product profitability](./AssessCustomerAndProductProfitability) | 9.1.4.1 | Studying product demand and targeted customer preferences |
+| [Evaluate new products](./EvaluateNewProducts) | 9.1.4.2 | Checking demand about a specific product by a customer segment |
+| [Perform life cycle costing](./PerformLifeCycleCosting) | 9.1.4.3 | Determining the cost of delivering an end product at different stages of production |
+| [Optimize customer and product mix](./OptimizeCustomerAndProductMix) | 9.1.4.4 | Creating the best fit between a product and the end user |
+| [Track performance of new-customer and product strategies](./TrackPerformanceOfNewcustomerAndProductStrategies) | 9.1.4.5 | Observing the behavior of a new set of customers for different products |
+| [Prepare activity-based performance measures](./PrepareActivitybasedPerformanceMeasures) | 9.1.4.6 | Evaluating performance based on different sets of activities created by management to measure perfor |
+| [Manage continuous cost improvement](./ManageContinuousCostImprovement) | 9.1.4.7 | Conducting activities to improve cost distribution regularly |
+
+
+## Related Concepts
+
+- [FinancialPerformance](/concepts/FinancialPerformance)
+- [FinancialPerformance](/concepts/FinancialPerformance)
+
+
+---
+
+*Source: APQC PCF 10741 (9.1.4) - APQC*

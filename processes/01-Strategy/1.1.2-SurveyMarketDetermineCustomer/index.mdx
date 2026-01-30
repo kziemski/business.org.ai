@@ -1,0 +1,102 @@
+---
+id: SurveyMarketAndDetermineCustomerNeedsAndWants
+name: "Survey market and determine customer needs and wants"
+code: "10018"
+hierarchyId: "1.1.2"
+type: Process
+level: 3
+status: complete
+parent: "1.1"
+children: ["1.1.2.1", "1.1.2.2", "1.1.2.3"]
+---
+
+# Survey market and determine customer needs and wants
+
+> Examining the market to identify customer required solutions.
+
+## Overview
+
+Process 1.1.2 is a core process that defines the specific procedures for survey market and determine customer needs and wants. 
+
+Examining the market to identify customer required solutions. Assess the relevant market(s) to determine the products/services that are needed or wanted by customers. Carry out quantitative and qualitative analyses to capture and investigate products/services. Employ creative techniques that allow for a closer appreciation of the customer, and design relevant solutions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_1_2["1.1.2 Survey market and determine customer ..."]
+    style N1_1_2 fill:#e1f5fe
+    N1_1_2 --> N1_1_2_1["1.1.2.1 Conduct qualitative/quantitative..."]
+    N1_1_2 --> N1_1_2_2["1.1.2.2 Capture customer needs and wants"]
+    N1_1_2 --> N1_1_2_3["1.1.2.3 Assess customer needs and wants"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10018 |
+| Hierarchy ID | 1.1.2 |
+| Level | Process |
+| Parent | [1.1](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+survey.MarketAndDetermineCustomerNeedsAndWants
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `survey` | Primary action |
+| Object | `market and determine customer needs and wants` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Survey market and determine customer needs and wants"]
+        S1["Conduct qualitative/quantit..."]
+        S2["Capture customer needs and ..."]
+        S3["Assess customer needs and w..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Conduct qualitative/quantitative research and assessments](./ConductQualitativequantitativeResearchAndAssessments) | 1.1.2.1 | Investigating key market features and customer characteristics, using qualitative and quantitative m |
+| [Capture customer needs and wants](./CaptureCustomerNeedsAndWants) | 1.1.2.2 | Identifying and collecting customers' wants and needs of a product and/or services from a marketing  |
+| [Assess customer needs and wants](./AssessCustomerNeedsAndWants) | 1.1.2.3 | Creating customer profiles to get a picture of customers and their needs |
+
+
+## Related Concepts
+
+- [MarketCustomerNeeds](/concepts/MarketCustomerNeeds)
+- [Wants](/concepts/Wants)
+- [DetermineCustomerNeeds](/concepts/DetermineCustomerNeeds)
+- [Wants](/concepts/Wants)
+
+
+---
+
+*Source: APQC PCF 10018 (1.1.2) - APQC*

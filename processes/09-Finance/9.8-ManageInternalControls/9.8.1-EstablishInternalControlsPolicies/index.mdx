@@ -1,0 +1,110 @@
+---
+id: EstablishInternalControlsPoliciesAndProcedures
+name: "Establish internal controls, policies, and procedures"
+code: "10762"
+hierarchyId: "9.8.1"
+type: Process
+level: 3
+status: complete
+parent: "9.8"
+children: ["9.8.1.1", "9.8.1.2", "9.8.1.3", "9.8.1.4", "9.8.1.5"]
+---
+
+# Establish internal controls, policies, and procedures
+
+> Forming rules and regulations to ensure the achievement of effectiveness, proficiency of operations, and reliability of financial reporting.
+
+## Overview
+
+Process 9.8.1 is a core process that defines the specific procedures for establish internal controls, policies, and procedures. 
+
+Forming rules and regulations to ensure the achievement of effectiveness, proficiency of operations, and reliability of financial reporting.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_8["9.8 Manage internal controls"]
+    N9_8 --> N9_8_1["9.8.1 Establish internal controls, policies..."]
+    style N9_8_1 fill:#e1f5fe
+    N9_8_1 --> N9_8_1_1["9.8.1.1 Establish board of directors and..."]
+    N9_8_1 --> N9_8_1_2["9.8.1.2 Define and communicate code of e..."]
+    N9_8_1 --> N9_8_1_3["9.8.1.3 Assign roles and responsibility ..."]
+    N9_8_1 --> N9_8_1_4["9.8.1.4 Define business process objectiv..."]
+    N9_8_1 --> N9_8_1_5["9.8.1.5 Define entity/unit risk tolerances"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10762 |
+| Hierarchy ID | 9.8.1 |
+| Level | Process |
+| Parent | [9.8](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.InternalControlsPoliciesAndProcedures
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `internal controls, policies, and procedures` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish internal controls, policies, and procedures"]
+        S1["Establish board of director..."]
+        S2["Define and communicate code..."]
+        S3["Assign roles and responsibi..."]
+        S4["Define business process obj..."]
+        S5["Define entity/unit risk tol..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish board of directors and audit committee](./EstablishBoardOfDirectorsAndAuditCommittee) | 9.8.1.1 | Establishing board of directors and auditing committee in order to assign roles and responsibilities |
+| [Define and communicate code of ethics](./DefineAndCommunicateCodeOfEthics) | 9.8.1.2 | Outlining and communicating a code of ethics act responsibly |
+| [Assign roles and responsibility for internal controls](./AssignRolesAndResponsibilityForInternalControls) | 9.8.1.3 | Defining roles, responsibilities, and accountabilities for effectiveness and proficiency of operatio |
+| [Define business process objectives and risks](./DefineBusinessProcessObjectivesAndRisks) | 9.8.1.4 | Outlining the objectives and risks associated with a process |
+| [Define entity/unit risk tolerances](./DefineEntityunitRiskTolerances) | 9.8.1.5 | Outlining the risk tolerance levels of individual units, as well as the organization as a whole |
+
+
+## Related Concepts
+
+- [InternalControls](/concepts/InternalControls)
+- [Policies](/concepts/Policies)
+- [Procedures](/concepts/Procedures)
+
+
+---
+
+*Source: APQC PCF 10762 (9.8.1) - APQC*

@@ -1,0 +1,107 @@
+---
+id: ManageTreasuryOperations
+name: "Manage treasury operations"
+code: "10734"
+hierarchyId: "9.7"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.7.1", "9.7.2", "9.7.4", "9.7.5", "9.7.6"]
+---
+
+# Manage treasury operations
+
+> Managing business's investments in trading in bonds, currencies, financial derivatives, etc.
+
+## Overview
+
+Group 9.7 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Managing business's investments in trading in bonds, currencies, financial derivatives, etc. Manage the financial assets and holdings of the organization. Optimize the organization's liquidity. Invest excess cash. Reduce financial risks.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_7["9.7 Manage treasury operations"]
+    style N9_7 fill:#e1f5fe
+    N9_7 --> N9_7_1["9.7.1 Manage treasury policies and pro..."]
+    N9_7 --> N9_7_2["9.7.2 Manage cash"]
+    N9_7 --> N9_7_4["9.7.4 Manage debt and investment"]
+    N9_7 --> N9_7_5["9.7.5 Monitor and execute risk and hed..."]
+    N9_7 --> N9_7_6["9.7.6 Manage financial fraud/dispute c..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10734 |
+| Hierarchy ID | 9.7 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.TreasuryOperations
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `treasury operations` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage treasury operations"]
+        S1["Manage treasury policies an..."]
+        S2["Manage cash"]
+        S3["Manage debt and investment"]
+        S4["Monitor and execute risk an..."]
+        S5["Manage financial fraud/disp..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage treasury policies and procedures](./9.7.1-ManageTreasuryPoliciesProcedures/) | 9.7.1 | Managing rules and regulations for investments in trading in bonds, currencies, financial derivative |
+| [Manage cash](./9.7.2-ManageCash/) | 9.7.2 | Taking care of all cash-related activities in the business |
+| [Manage debt and investment](./9.7.4-ManageDebtInvestment/) | 9.7.4 | Taking care of the organization's financial position |
+| [Monitor and execute risk and hedging transactions](./9.7.5-MonitorExecuteRiskHedging/) | 9.7.5 | Performing transactions that limit investment risk with the help of derivatives, such as options and |
+| [Manage financial fraud/dispute cases](./ManageFinancialFrauddisputeCases) | 9.7.6 | Handling cases that involve financial fraud |
+
+
+## Related Concepts
+
+- [TreasuryOperations](/concepts/TreasuryOperations)
+
+
+---
+
+*Source: APQC PCF 10734 (9.7) - APQC*

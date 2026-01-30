@@ -1,0 +1,108 @@
+---
+id: PlanFacility
+name: "Plan facility"
+code: "10943"
+hierarchyId: "10.1.2"
+type: Process
+level: 3
+status: complete
+parent: "10.1"
+children: ["10.1.2.1", "10.1.2.2", "10.1.2.3", "10.1.2.4", "10.1.2.5"]
+---
+
+# Plan facility
+
+> Recognizing the needs of facility users in order to construct a project proposal that meets those needs.
+
+## Overview
+
+Process 10.1.2 is a core process that defines the specific procedures for plan facility. 
+
+Recognizing the needs of facility users in order to construct a project proposal that meets those needs.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_1["10.1 Plan and acquire assets"]
+    N10_1 --> N10_1_2["10.1.2 Plan facility"]
+    style N10_1_2 fill:#e1f5fe
+    N10_1_2 --> N10_1_2_1["10.1.2.1 Design facility"]
+    N10_1_2 --> N10_1_2_2["10.1.2.2 Analyze budget"]
+    N10_1_2 --> N10_1_2_3["10.1.2.3 Select property"]
+    N10_1_2 --> N10_1_2_4["10.1.2.4 Negotiate terms for facility"]
+    N10_1_2 --> N10_1_2_5["10.1.2.5 Manage construction or modificat..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10943 |
+| Hierarchy ID | 10.1.2 |
+| Level | Process |
+| Parent | [10.1](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.Facility
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `facility` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan facility"]
+        S1["Design facility"]
+        S2["Analyze budget"]
+        S3["Select property"]
+        S4["Negotiate terms for facility"]
+        S5["Manage construction or modi..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Design facility](./DesignFacility) | 10.1.2.1 | Preparing and analyzing different designs for a facility in order to finalize which design will be t |
+| [Analyze budget](./AnalyzeBudget) | 10.1.2.2 | Evaluating the feasibility of budgets prepared for the construction of facilities |
+| [Select property](./SelectProperty) | 10.1.2.3 | Assessing and choosing the appropriate property |
+| [Negotiate terms for facility](./NegotiateTermsForFacility) | 10.1.2.4 | Discussing the terms and conditions of facilities to be occupied according to the business requireme |
+| [Manage construction or modification to building](./ManageConstructionOrModificationToBuilding) | 10.1.2.5 | Constructing the buildings |
+
+
+## Related Concepts
+
+- [Facility](/concepts/Facility)
+
+
+---
+
+*Source: APQC PCF 10943 (10.1.2) - APQC*

@@ -1,0 +1,100 @@
+---
+id: DevelopProductsAndServices
+name: "Develop products and services"
+code: "10062"
+hierarchyId: "2.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "2"
+children: ["2.3.1", "2.3.2", "2.3.3"]
+---
+
+# Develop products and services
+
+> Developing new products/services from scratch, including all activities associated with the design, prototyping, evaluation, and market testing of these planned offerings.
+
+## Overview
+
+Group 2.3 is a process group within APQC Category 2.0 (Design and Develop Products and Services). 
+
+Developing new products/services from scratch, including all activities associated with the design, prototyping, evaluation, and market testing of these planned offerings.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_3["2.3 Develop products and services"]
+    style N2_3 fill:#e1f5fe
+    N2_3 --> N2_3_1["2.3.1 Design and prototype products an..."]
+    N2_3 --> N2_3_2["2.3.2 Test market for new or revised p..."]
+    N2_3 --> N2_3_3["2.3.3 Prepare for production/service d..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10062 |
+| Hierarchy ID | 2.3 |
+| Level | Group |
+| Parent | [2](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.ProductsAndServices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `products and services` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop products and services"]
+        S1["Design and prototype produc..."]
+        S2["Test market for new or revi..."]
+        S3["Prepare for production/serv..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Design and prototype products and services](./2.3.1-DesignPrototypeProductsServices/) | 2.3.1 | Sketching and standardizing product and service based on the market |
+| [Test market for new or revised products and services](./2.3.2-TestMarketNewRevised/) | 2.3.2 | Expanding on the marketplace analysis that took place earlier in the product development lifecycle b |
+| [Prepare for production/service delivery](./2.3.3-PrepareProductionserviceDelivery/) | 2.3.3 | Devising business plans and procedures for manufacturing/operations/production and delivery of servi |
+
+
+## Related Concepts
+
+- [Products](/concepts/Products)
+- [Services](/concepts/Services)
+
+
+---
+
+*Source: APQC PCF 10062 (2.3) - APQC*

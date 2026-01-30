@@ -1,0 +1,111 @@
+---
+id: AssessTheInternalEnvironment
+name: "Assess the internal environment"
+code: "10019"
+hierarchyId: "1.1.3"
+type: Process
+level: 3
+status: complete
+parent: "1.1"
+children: ["1.1.3.1", "1.1.3.2", "1.1.3.3", "1.1.3.4", "1.1.3.5", "1.1.3.6"]
+---
+
+# Assess the internal environment
+
+> Undertaking a review of the organization's in-house skills and resources in order to create a big-picture understanding of internal capacities.
+
+## Overview
+
+Process 1.1.3 is a core process that defines the specific procedures for assess the internal environment. 
+
+Undertaking a review of the organization's in-house skills and resources in order to create a big-picture understanding of internal capacities. Assess the organization's capabilities in order to advance the advantageous and weed out the detrimental aspects. Identify synergic associations within the backdrop of the forces and players active in the market, and take into account all externalities.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_1_3["1.1.3 Assess the internal environment"]
+    style N1_1_3 fill:#e1f5fe
+    N1_1_3 --> N1_1_3_1["1.1.3.1 Analyze organizational character..."]
+    N1_1_3 --> N1_1_3_2["1.1.3.2 Analyze internal operations"]
+    N1_1_3 --> N1_1_3_3["1.1.3.3 Create baselines for current pro..."]
+    N1_1_3 --> N1_1_3_4["1.1.3.4 Analyze systems and technology"]
+    N1_1_3 --> N1_1_3_5["1.1.3.5 Analyze financial health"]
+    N1_1_3 --> N1_1_3_6["1.1.3.6 Identify core competencies"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10019 |
+| Hierarchy ID | 1.1.3 |
+| Level | Process |
+| Parent | [1.1](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+assess.TheInternalEnvironment
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `assess` | Primary action |
+| Object | `the internal environment` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Assess the internal environment"]
+        S1["Analyze organizational char..."]
+        S2["Analyze internal operations"]
+        S3["Create baselines for curren..."]
+        S4["Analyze systems and technology"]
+        S5["Analyze financial health"]
+        S6["Identify core competencies"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Analyze organizational characteristics](./AnalyzeOrganizationalCharacteristics) | 1.1.3.1 | Identifying and examining key attributes that differentiate the organization in the market and those |
+| [Analyze internal operations](./AnalyzeInternalOperations) | 1.1.3.2 | Identify key elements of operations and measure effectiveness of these elements within internal oper |
+| [Create baselines for current processes](./CreateBaselinesForCurrentProcesses) | 1.1.3.3 | Establishing baselines that provide standards for assessing performance levels and allow for a relat |
+| [Analyze systems and technology](./AnalyzeSystemsAndTechnology) | 1.1.3.4 | Analyzing the capabilities of technology and process automation systems deployed within the organiza |
+| [Analyze financial health](./AnalyzeFinancialHealth) | 1.1.3.5 | Appraising the financial state of the organization so that management can create resource allocation |
+| [Identify core competencies](./IdentifyCoreCompetencies) | 1.1.3.6 | Determining a strategically significant aggregate of competence and capacities that differentiates t |
+
+
+## Related Concepts
+
+- [InternalEnvironment](/concepts/InternalEnvironment)
+
+
+---
+
+*Source: APQC PCF 10019 (1.1.3) - APQC*

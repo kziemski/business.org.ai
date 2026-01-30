@@ -1,0 +1,227 @@
+---
+id: Logging
+name: "Logging"
+code: "1133"
+type: Industry
+status: complete
+---
+
+# Logging
+
+> Industries in the Logging industry group cut timber; produce rough, round, or hewn primary wood and forest products; and transport logs and primary wood and forest products from the forest to the first processing facility.
+
+## Overview
+
+The Logging industry group represents the harvesting component of the forestry sector, encompassing establishments primarily engaged in cutting timber, processing it into rough products, and transporting it to mills and other processing facilities. Unlike timber tract operations that focus on growing and selling standing timber, logging operations perform the physical harvesting work.
+
+Logging establishments may operate on their own timber tracts or on tracts owned by others, including federal, state, and private landowners. The industry includes traditional ground-based logging operations as well as specialized operations such as helicopter logging for steep terrain or sensitive areas.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S11["NAICS 11: Agriculture, Forestry, Fishing and Hunting"]
+    S11 --> SS113["113: Forestry and Logging"]
+    SS113 --> G1133["1133: Logging"]
+    G1133 --> I11331["11331: Logging"]
+
+    I11331 --> T1["Timber Cutting Operations"]
+    I11331 --> T2["Log Hauling"]
+    I11331 --> T3["Chipping Operations"]
+    I11331 --> T4["Pulpwood Contractors"]
+
+    T1 --> M1["Ground-based Logging"]
+    T1 --> M2["Cable Logging"]
+    T1 --> M3["Helicopter Logging"]
+
+    M1 --> E1["Clear-cutting"]
+    M1 --> E2["Selective Harvest"]
+    M1 --> E3["Thinning Operations"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 1133 |
+| Level | Industry Group |
+| Parent Subsector | [Forestry and Logging](../Forestry/) |
+| Industries | 1 |
+| National Industries | 1 |
+
+## Logging Methods
+
+| Method | Description | Terrain |
+|--------|-------------|---------|
+| Ground-based | Uses wheeled or tracked equipment on the forest floor | Gentle to moderate slopes |
+| Cable | Uses steel cables to lift and transport logs | Steep terrain |
+| Helicopter | Uses helicopters to extract logs | Very steep or sensitive areas |
+| Cut-to-length | Processes trees at the stump into logs | Various |
+| Whole-tree | Removes entire tree for processing at landing | Ground-based terrain |
+
+## Related Occupations
+
+- [Fallers](/occupations/Fallers) - Cut down trees using chainsaws or mechanical equipment
+- [Logging Equipment Operators](/occupations/LoggingEquipmentOperators) - Operate skidders, feller-bunchers, and processors
+- [Log Graders and Scalers](/occupations/LogGradersAndScalers) - Grade logs for quality and measure volume
+- [Logging Workers, All Other](/occupations/LoggingWorkersAllOther) - Perform various logging support tasks
+- [First-Line Supervisors of Farming, Fishing, and Forestry Workers](/occupations/FirstLineSupervisorsOfFarmingFishingAndForestryWorkers) - Supervise logging crews
+- [Heavy and Tractor-Trailer Truck Drivers](/occupations/HeavyAndTractorTrailerTruckDrivers) - Haul logs to mills
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Prep["Pre-Harvest"]
+        P1["Site Assessment"]
+        P2["Road Planning"]
+        P3["Equipment Mobilization"]
+        P4["Crew Assignment"]
+    end
+
+    subgraph Harvest["Harvest Operations"]
+        H1["Felling"]
+        H2["Limbing/Bucking"]
+        H3["Skidding/Forwarding"]
+        H4["Landing Operations"]
+    end
+
+    subgraph Process["Processing"]
+        R1["Log Sorting"]
+        R2["Scaling/Grading"]
+        R3["Loading"]
+        R4["Chipping Residuals"]
+    end
+
+    subgraph Transport["Transportation"]
+        T1["Log Trucking"]
+        T2["Delivery to Mill"]
+        T3["Documentation"]
+    end
+
+    Prep --> Harvest --> Process --> Transport
+```
+
+### Pre-Harvest Planning
+
+Preparing for harvest operations through site assessment and logistics planning.
+
+**Key Activities:**
+- Assess timber sale or harvest unit boundaries
+- Plan road construction and landing locations
+- Determine appropriate harvest methods
+- Mobilize equipment and crews
+- Coordinate with landowners and regulators
+
+### Harvest Operations
+
+Executing the timber harvest using appropriate methods and equipment.
+
+**Key Activities:**
+- Fell trees using chainsaws or mechanical harvesters
+- Remove limbs and cut logs to length
+- Skid or forward logs to landing areas
+- Manage operations to minimize site damage
+- Maintain safety protocols
+
+### Log Processing and Transport
+
+Preparing harvested timber for market and delivering to buyers.
+
+**Key Activities:**
+- Sort logs by species, grade, and destination
+- Scale logs for accurate volume measurement
+- Load logs onto trucks using loaders
+- Process residuals into chips or biomass
+- Transport logs to mills and processing facilities
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Standing Timber"]
+        I2["Equipment Fleet"]
+        I3["Skilled Operators"]
+        I4["Fuel & Supplies"]
+        I5["Road Access"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Felling"]
+        A2["Processing"]
+        A3["Skidding"]
+        A4["Loading"]
+        A5["Hauling"]
+    end
+
+    subgraph Outputs["Products"]
+        O1["Sawlogs"]
+        O2["Veneer Logs"]
+        O3["Pulpwood"]
+        O4["Biomass/Chips"]
+        O5["Firewood"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Sawmills"]
+        C2["Veneer Plants"]
+        C3["Pulp Mills"]
+        C4["Power Plants"]
+        C5["Direct Consumers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+## Regulatory Environment
+
+Logging operations are heavily regulated to protect worker safety and environmental quality:
+
+- **OSHA**: Comprehensive logging safety standards (29 CFR 1910.266)
+- **EPA**: Clean Water Act, wetland protection, spill prevention
+- **State Forest Practice Acts**: Rules governing harvest methods, road construction, reforestation
+- **Federal Land Agencies**: Timber sale contract requirements on federal lands
+- **State Transportation**: Log truck weight and safety regulations
+
+Key compliance areas include:
+- Logging safety training and certification
+- Personal protective equipment requirements
+- Streamside buffer zones and water crossings
+- Erosion and sediment control
+- Endangered species protection
+- Log truck safety and weight limits
+
+## Technology & Innovation
+
+Modern logging operations increasingly rely on advanced technology:
+
+- **Mechanized Harvesting**: Single-grip harvesters, feller-bunchers, cut-to-length systems, tracked carriers for sensitive sites
+- **GPS and GIS Technology**: Real-time machine tracking, harvest area mapping, production monitoring
+- **Telemetry Systems**: Equipment diagnostics, fuel consumption monitoring, maintenance scheduling
+- **Safety Technology**: Proximity detection systems, backup cameras, enclosed operator cabs
+- **Processing Technology**: Computer-optimized bucking, scanning systems, quality sensors
+- **Environmental Technology**: Low-impact equipment, biomass recovery systems, erosion control measures
+
+## Equipment Types
+
+| Equipment | Function | Application |
+|-----------|----------|-------------|
+| Feller-buncher | Cuts and accumulates multiple trees | High-volume ground-based logging |
+| Harvester | Fells, delimbs, and bucks trees | Cut-to-length operations |
+| Skidder | Drags logs to landing | Ground-based log extraction |
+| Forwarder | Carries processed logs to landing | Cut-to-length operations |
+| Loader | Loads logs onto trucks | Landing operations |
+| Log Truck | Transports logs to mill | Highway transport |
+| Chipper | Processes residuals into chips | Biomass recovery |
+
+## Related Industries
+
+- [Forestry](../Forestry/) - Timber tract management and forest nurseries
+- [Support Activities for Forestry](../AgriculturalSupport/) - Contract services for forestry and logging
+- [Wood Product Manufacturing](/industries/Manufacturing/WoodProductManufacturing/) - Sawmills and wood processing
+- [Trucking](/industries/Transportation/TruckingTransportation/) - Log transportation services
+
+---
+
+*Source: NAICS 1133 - Logging*

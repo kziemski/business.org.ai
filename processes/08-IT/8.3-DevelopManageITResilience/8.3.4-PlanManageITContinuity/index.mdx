@@ -1,0 +1,101 @@
+---
+id: PlanAndManageItContinuity
+name: "Plan and manage IT continuity"
+code: "20731"
+hierarchyId: "8.3.4"
+type: Process
+level: 3
+status: complete
+parent: "8.3"
+children: ["8.3.4.1", "8.3.4.2", "8.3.4.3"]
+---
+
+# Plan and manage IT continuity
+
+> Planning and managing IT's ability to recover from exposure to internal and external threats.
+
+## Overview
+
+Process 8.3.4 is a core process that defines the specific procedures for plan and manage it continuity. 
+
+Planning and managing IT's ability to recover from exposure to internal and external threats.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    N8_3 --> N8_3_4["8.3.4 Plan and manage IT continuity"]
+    style N8_3_4 fill:#e1f5fe
+    N8_3_4 --> N8_3_4_1["8.3.4.1 Evaluate IT continuity"]
+    N8_3_4 --> N8_3_4_2["8.3.4.2 Identify IT continuity gaps"]
+    N8_3_4 --> N8_3_4_3["8.3.4.3 Manage IT business continuity"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20731 |
+| Hierarchy ID | 8.3.4 |
+| Level | Process |
+| Parent | [8.3](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.AndManageITContinuity
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `and manage IT continuity` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan and manage IT continuity"]
+        S1["Evaluate IT continuity"]
+        S2["Identify IT continuity gaps"]
+        S3["Manage IT business continuity"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Evaluate IT continuity](./EvaluateITContinuity) | 8.3.4.1 | Evaluating IT business needs and IT's ability to recover from internal or external threat exposure |
+| [Identify IT continuity gaps](./IdentifyITContinuityGaps) | 8.3.4.2 | Identifying the limitations of the IT organization's ability to remediate disruptions in IT services |
+| [Manage IT business continuity](./ManageITBusinessContinuity) | 8.3.4.3 | Integrating the disciplines of Emergency Response, Crisis Management, Disaster Recovery (technology  |
+
+
+## Related Concepts
+
+- [ITContinuity](/concepts/ITContinuity)
+- [ITContinuity](/concepts/ITContinuity)
+
+
+---
+
+*Source: APQC PCF 20731 (8.3.4) - APQC*

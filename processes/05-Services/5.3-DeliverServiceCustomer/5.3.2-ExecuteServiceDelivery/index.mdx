@@ -1,0 +1,114 @@
+---
+id: ExecuteServiceDelivery
+name: "Execute service delivery"
+code: "20069"
+hierarchyId: "5.3.2"
+type: Process
+level: 3
+status: complete
+parent: "5.3"
+children: ["5.3.2.1", "5.3.2.2", "5.3.2.3", "5.3.2.4", "5.3.2.5", "5.3.2.6", "5.3.2.7"]
+---
+
+# Execute service delivery
+
+> Carrying out service delivery to the customer by creating and deploying the necessary solution.
+
+## Overview
+
+Process 5.3.2 is a core process that defines the specific procedures for execute service delivery. 
+
+Carrying out service delivery to the customer by creating and deploying the necessary solution. Analyze need and create a solution. Validate the solution and make changes if needed. Obtain approval to build/buy solution and then deploy solution to customer.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_3["5.3 Deliver service to customer"]
+    N5_3 --> N5_3_2["5.3.2 Execute service delivery"]
+    style N5_3_2 fill:#e1f5fe
+    N5_3_2 --> N5_3_2_1["5.3.2.1 Analyze environment and customer..."]
+    N5_3_2 --> N5_3_2_2["5.3.2.2 Define solution"]
+    N5_3_2 --> N5_3_2_3["5.3.2.3 Validate solution"]
+    N5_3_2 --> N5_3_2_4["5.3.2.4 Identify changes"]
+    N5_3_2 --> N5_3_2_5["5.3.2.5 Obtain approval to proceed"]
+    N5_3_2 --> N5_3_2_6["5.3.2.6 Make build/buy solution"]
+    N5_3_2 --> N5_3_2_7["5.3.2.7 Deploy solution"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20069 |
+| Hierarchy ID | 5.3.2 |
+| Level | Process |
+| Parent | [5.3](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+execute.ServiceDelivery
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `execute` | Primary action |
+| Object | `service delivery` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Execute service delivery"]
+        S1["Analyze environment and cus..."]
+        S2["Define solution"]
+        S3["Validate solution"]
+        S4["Identify changes"]
+        S5["Obtain approval to proceed"]
+        S6["Make build/buy solution"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Analyze environment and customer needs](./AnalyzeEnvironmentAndCustomerNeeds) | 5.3.2.1 | Understanding the needs of the customer and providing the necessary resources to meet those requirem |
+| [Define solution](./DefineSolution) | 5.3.2.2 | Creating a plan of action to provide service delivery to the customer through a possible solution |
+| [Validate solution](./ValidateSolution) | 5.3.2.3 | Validating that the proposed solution is feasible and provides the needed services for the customer |
+| [Identify changes](./IdentifyChanges) | 5.3.2.4 | Realizing issues within the original drafted solution and providing changes to correct those issues |
+| [Obtain approval to proceed](./ObtainApprovalToProceed) | 5.3.2.5 | Gaining approval from all avenues to proceed with providing solutions for service delivery |
+| [Make build/buy solution](./MakeBuildbuySolution) | 5.3.2.6 | Constructing or purchasing solutions necessary to provide service delivery |
+| [Deploy solution](./DeploySolution) | 5.3.2.7 | Providing the customer with promised services and solutions |
+
+
+## Related Concepts
+
+- [ServiceDelivery](/concepts/ServiceDelivery)
+
+
+---
+
+*Source: APQC PCF 20069 (5.3.2) - APQC*

@@ -1,0 +1,104 @@
+---
+id: ProcureMaterialsAndServices
+name: "Procure materials and services"
+code: "10216"
+hierarchyId: "4.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "4"
+children: ["4.2.1", "4.2.2", "4.2.3", "4.2.4"]
+---
+
+# Procure materials and services
+
+> Creating a plan for procuring materials and services.
+
+## Overview
+
+Group 4.2 is a process group within APQC Category 4.0 (Deliver Physical Products). 
+
+Creating a plan for procuring materials and services. Develop strategies for sourcing materials and services. Choose the most appropriate suppliers, and develop contracts with them. Order the materials and services as per the requirements. Manage relationships with suppliers.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_2["4.2 Procure materials and services"]
+    style N4_2 fill:#e1f5fe
+    N4_2 --> N4_2_1["4.2.1 Provide sourcing governance and ..."]
+    N4_2 --> N4_2_2["4.2.2 Select suppliers and develop/mai..."]
+    N4_2 --> N4_2_3["4.2.3 Order materials and services"]
+    N4_2 --> N4_2_4["4.2.4 Manage suppliers"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10216 |
+| Hierarchy ID | 4.2 |
+| Level | Group |
+| Parent | [4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+procure.MaterialsAndServices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `procure` | Primary action |
+| Object | `materials and services` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Procure materials and services"]
+        S1["Provide sourcing governance..."]
+        S2["Select suppliers and develo..."]
+        S3["Order materials and services"]
+        S4["Manage suppliers"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Provide sourcing governance and perform category management](./4.2.1-ProvideSourcingGovernancePerform/) | 4.2.1 | Creating strategies for procuring materials and services from various sources, and for managing and  |
+| [Select suppliers and develop/maintain contracts](./4.2.2-SelectSuppliersDevelopmaintainContracts/) | 4.2.2 | Evaluating supplier options to select the most effective and efficient suppliers |
+| [Order materials and services](./4.2.3-OrderMaterialsServices/) | 4.2.3 | Creating and approving requisitions and distributing purchase orders accordingly |
+| [Manage suppliers](./4.2.4-ManageSuppliers/) | 4.2.4 | Collecting and analyzing new information in order to track and rate suppliers through a supplier inf |
+
+
+## Related Concepts
+
+- [Materials](/concepts/Materials)
+- [Services](/concepts/Services)
+
+
+---
+
+*Source: APQC PCF 10216 (4.2) - APQC*

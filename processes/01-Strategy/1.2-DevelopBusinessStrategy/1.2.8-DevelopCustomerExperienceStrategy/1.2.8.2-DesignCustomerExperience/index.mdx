@@ -1,0 +1,115 @@
+---
+id: DesignCustomerExperience
+name: "Design customer experience"
+code: "19964"
+hierarchyId: "1.2.8.2"
+type: Activity
+level: 4
+status: complete
+parent: "1.2.8"
+children: ["1.2.8.2.1", "1.2.8.2.2", "1.2.8.2.3", "1.2.8.2.4", "1.2.8.2.5", "1.2.8.2.6", "1.2.8.2.7"]
+---
+
+# Design customer experience
+
+> Creating a design of how customers interact with the business by analyzing data captured through various customer interaction and customer involvement.
+
+## Overview
+
+Activity 1.2.8.2 is an activity within the Develop Vision and Strategy framework. 
+
+Creating a design of how customers interact with the business by analyzing data captured through various customer interaction and customer involvement. These will be captured through various channels such as customer satisfaction surveys, feedback forms, product reviews, targeted studies, observational studies, or voice of customer research.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_2["1.2 Develop business strategy"]
+    N1_2 --> N1_2_8["1.2.8 Develop customer experience strategy"]
+    N1_2_8 --> N1_2_8_2["1.2.8.2 Design customer experience"]
+    style N1_2_8_2 fill:#e1f5fe
+    N1_2_8_2 --> N1_2_8_2_1["1.2.8.2.1 Define and manage personas"]
+    N1_2_8_2 --> N1_2_8_2_2["1.2.8.2.2 Create customer journey maps"]
+    N1_2_8_2 --> N1_2_8_2_3["1.2.8.2.3 Define single view of the custom..."]
+    N1_2_8_2 --> N1_2_8_2_4["1.2.8.2.4 Define a vision for the customer..."]
+    N1_2_8_2 --> N1_2_8_2_5["1.2.8.2.5 Validate with customers"]
+    N1_2_8_2 --> N1_2_8_2_6["1.2.8.2.6 Align experience with brand valu..."]
+    N1_2_8_2 --> N1_2_8_2_7["1.2.8.2.7 Develop content strategy"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19964 |
+| Hierarchy ID | 1.2.8.2 |
+| Level | Activity |
+| Parent | [1.2.8](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+design.CustomerExperience
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Primary action |
+| Object | `customer experience` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Design customer experience"]
+        S1["Define and manage personas"]
+        S2["Create customer journey maps"]
+        S3["Define single view of the c..."]
+        S4["Define a vision for the cus..."]
+        S5["Validate with customers"]
+        S6["Align experience with brand..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define and manage personas](./DefineAndManagePersonas) | 1.2.8.2.1 | Identifying a set of characteristics that define the demographic and behavioral patterns of the cust |
+| [Create customer journey maps](./CreateCustomerJourneyMaps) | 1.2.8.2.2 | Creating a story of the customer's experience: from initial contact, through the process of engageme |
+| [Define single view of the customer for the organization](./DefineSingleViewOfTheCustomerForTheOrganization) | 1.2.8.2.3 | Defining parameters to show aggregated, consistent, and holistic representation of known data about  |
+| [Define a vision for the customer experience](./DefineAVisionForTheCustomerExperience) | 1.2.8.2.4 | Establishing a direction and vision on how the organization behaves towards customers in a consisten |
+| [Validate with customers](./ValidateWithCustomers) | 1.2.8.2.5 | Creating a process to validate the sales process and the assumptions that underpin the business mode |
+| [Align experience with brand values and business strategies](./AlignExperienceWithBrandValuesAndBusinessStrategies) | 1.2.8.2.6 | Aligning and defining a relevant, differentiated, and credible value proposition for the brand |
+| [Develop content strategy](./DevelopContentStrategy) | 1.2.8.2.7 | Planning, development, and management of content-written or in other media |
+
+
+## Related Concepts
+
+- [CustomerExperience](/concepts/CustomerExperience)
+
+
+---
+
+*Source: APQC PCF 19964 (1.2.8.2) - APQC*

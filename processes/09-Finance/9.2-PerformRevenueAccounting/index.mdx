@@ -1,0 +1,103 @@
+---
+id: PerformRevenueAccounting
+name: "Perform revenue accounting"
+code: "10729"
+hierarchyId: "9.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.2.1", "9.2.2", "9.2.4", "9.2.5"]
+---
+
+# Perform revenue accounting
+
+> Comparing revenue targets to reality.
+
+## Overview
+
+Group 9.2 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Comparing revenue targets to reality. Review all transactions and entries passed in final accounts in a year in order to examine profits.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_2["9.2 Perform revenue accounting"]
+    style N9_2 fill:#e1f5fe
+    N9_2 --> N9_2_1["9.2.1 Process customer credit"]
+    N9_2 --> N9_2_2["9.2.2 Invoice customer"]
+    N9_2 --> N9_2_4["9.2.4 Manage and process collections"]
+    N9_2 --> N9_2_5["9.2.5 Manage and process adjustments/d..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10729 |
+| Hierarchy ID | 9.2 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.RevenueAccounting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `revenue accounting` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform revenue accounting"]
+        S1["Process customer credit"]
+        S2["Invoice customer"]
+        S3["Manage and process collections"]
+        S4["Manage and process adjustme..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Process customer credit](./9.2.1-ProcessCustomerCredit/) | 9.2.1 | Evaluating and processing requests for advances |
+| [Invoice customer](./9.2.2-InvoiceCustomer/) | 9.2.2 | Preparing detailed reports of customer purchases |
+| [Manage and process collections](./9.2.4-ManageProcessCollections/) | 9.2.4 | Posting entries to respective accounts, and preparing accounts for receivables |
+| [Manage and process adjustments/deductions](./9.2.5-ManageProcessAdjustmentsdeductions/) | 9.2.5 | Creating and providing funds for necessary adjustments and deductions, including all expenses that w |
+
+
+## Related Concepts
+
+- [RevenueAccounting](/concepts/RevenueAccounting)
+
+
+---
+
+*Source: APQC PCF 10729 (9.2) - APQC*

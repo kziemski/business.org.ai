@@ -1,0 +1,116 @@
+---
+id: OperateWarehousing
+name: "Operate warehousing"
+code: "10340"
+hierarchyId: "4.4.3"
+type: Process
+level: 3
+status: complete
+parent: "4.4"
+children: ["4.4.3.1", "4.4.3.2", "4.4.3.3", "4.4.3.4", "4.4.3.5", "4.4.3.6", "4.4.3.7", "4.4.3.8"]
+---
+
+# Operate warehousing
+
+> Tracking the inventory deployment.
+
+## Overview
+
+Process 4.4.3 is a core process that defines the specific procedures for operate warehousing. 
+
+Tracking the inventory deployment. Accept and store products. Ship the products. Measure the accuracy of the inventory. Assess the performance of the outsourced logistics activities.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_4["4.4 Manage logistics and warehousing"]
+    N4_4 --> N4_4_3["4.4.3 Operate warehousing"]
+    style N4_4_3 fill:#e1f5fe
+    N4_4_3 --> N4_4_3_1["4.4.3.1 Manage and track inventory deplo..."]
+    N4_4_3 --> N4_4_3_2["4.4.3.2 Receive, inspect, and store inbo..."]
+    N4_4_3 --> N4_4_3_3["4.4.3.3 Track product availability"]
+    N4_4_3 --> N4_4_3_4["4.4.3.4 Pick, pack, and ship product for..."]
+    N4_4_3 --> N4_4_3_5["4.4.3.5 Track inventory accuracy"]
+    N4_4_3 --> N4_4_3_6["4.4.3.6 Track third-party logistics stor..."]
+    N4_4_3 --> N4_4_3_7["4.4.3.7 Manage physical finished goods i..."]
+    N4_4_3 --> N4_4_3_8["4.4.3.8 Manage warehouse transfers"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10340 |
+| Hierarchy ID | 4.4.3 |
+| Level | Process |
+| Parent | [4.4](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+operate.Warehousing
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `operate` | Primary action |
+| Object | `warehousing` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Operate warehousing"]
+        S1["Manage and track inventory ..."]
+        S2["Receive, inspect, and store..."]
+        S3["Track product availability"]
+        S4["Pick, pack, and ship produc..."]
+        S5["Track inventory accuracy"]
+        S6["Track third-party logistics..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage and track inventory deployment](./ManageAndTrackInventoryDeployment) | 4.4.3.1 | Tracking the logistical act of delivering or releasing an inventory item or entity to targeted end u |
+| [Receive, inspect, and store inbound deliveries](./ReceiveInspectAndStoreInboundDeliveries) | 4.4.3.2 | Coordinating the incoming inbound materials/products |
+| [Track product availability](./TrackProductAvailability) | 4.4.3.3 | Keeping track of the availability of different materials/products at the warehouse and distribution  |
+| [Pick, pack, and ship product for delivery](./PickPackAndShipProductForDelivery) | 4.4.3.4 | Packing and shipping the product to deliver to the customer |
+| [Track inventory accuracy](./TrackInventoryAccuracy) | 4.4.3.5 | Monitoring any discrepancies between electronic records that represent the inventory and the physica |
+| [Track third-party logistics storage and shipping performance](./TrackThirdpartyLogisticsStorageAndShippingPerformance) | 4.4.3.6 | Keeping a track on the storage and shipping performance of third-party agencies |
+| [Manage physical finished goods inventory](./ManagePhysicalFinishedGoodsInventory) | 4.4.3.7 | Administering the movement of the finished products that are processed by the organization through i |
+| [Manage warehouse transfers](./ManageWarehouseTransfers) | 4.4.3.8 | Shipping items from one warehouse to another in a multi-warehouse environment |
+
+
+## Related Concepts
+
+- [Warehousing](/concepts/Warehousing)
+
+
+---
+
+*Source: APQC PCF 10340 (4.4.3) - APQC*

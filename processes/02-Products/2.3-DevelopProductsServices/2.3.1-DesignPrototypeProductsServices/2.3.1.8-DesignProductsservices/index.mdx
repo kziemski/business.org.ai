@@ -1,0 +1,114 @@
+---
+id: DesignProductsservices
+name: "Design products/services"
+code: "19995"
+hierarchyId: "2.3.1.8"
+type: Activity
+level: 4
+status: complete
+parent: "2.3.1"
+children: ["2.3.1.8.1", "2.3.1.8.2", "2.3.1.8.3", "2.3.1.8.4", "2.3.1.8.5", "2.3.1.8.6"]
+---
+
+# Design products/services
+
+> Creating a sketch of the customer focused product/service in Develop and Manage Products and Services [10003].
+
+## Overview
+
+Activity 2.3.1.8 is an activity within the Design and Develop Products and Services framework. 
+
+Creating a sketch of the customer focused product/service in Develop and Manage Products and Services [10003].
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_3["2.3 Develop products and services"]
+    N2_3 --> N2_3_1["2.3.1 Design and prototype products and ser..."]
+    N2_3_1 --> N2_3_1_8["2.3.1.8 Design products/services"]
+    style N2_3_1_8 fill:#e1f5fe
+    N2_3_1_8 --> N2_3_1_8_1["2.3.1.8.1 Design for manufacturing"]
+    N2_3_1_8 --> N2_3_1_8_2["2.3.1.8.2 Design for product servicing"]
+    N2_3_1_8 --> N2_3_1_8_3["2.3.1.8.3 Design for re-manufacturing"]
+    N2_3_1_8 --> N2_3_1_8_4["2.3.1.8.4 Review product troubleshooting m..."]
+    N2_3_1_8 --> N2_3_1_8_5["2.3.1.8.5 Design and manage product data, ..."]
+    N2_3_1_8 --> N2_3_1_8_6["2.3.1.8.6 Design for product upgrades"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19995 |
+| Hierarchy ID | 2.3.1.8 |
+| Level | Activity |
+| Parent | [2.3.1](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+design.Productsservices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Primary action |
+| Object | `products/services` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Design products/services"]
+        S1["Design for manufacturing"]
+        S2["Design for product servicing"]
+        S3["Design for re-manufacturing"]
+        S4["Review product troubleshoot..."]
+        S5["Design and manage product d..."]
+        S6["Design for product upgrades"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Design for manufacturing](./DesignForManufacturing) | 2.3.1.8.1 | Carrying out the steps necessary to appropriately manufacture correct parts |
+| [Design for product servicing](./DesignForProductServicing) | 2.3.1.8.2 | Creating product application service view to allow for product servicing and refurbishing |
+| [Design for re-manufacturing](./DesignForRemanufacturing) | 2.3.1.8.3 | Replacing core components and republishing |
+| [Review product troubleshooting methodology](./ReviewProductTroubleshootingMethodology) | 2.3.1.8.4 | Reviewing the design and approach for troubleshooting the product |
+| [Design and manage product data, design, and bill of materials](./DesignAndManageProductDataDesignAndBillOfMaterials) | 2.3.1.8.5 | Designing the BOM-Bill of material, manufacturing BOM and Service BOMA bill of materials list for al |
+| [Design for product upgrades](./DesignForProductUpgrades) | 2.3.1.8.6 | Designing hardware and software upgrade techniques |
+
+
+## Related Concepts
+
+- [Products](/concepts/Products)
+- [Services](/concepts/Services)
+
+
+---
+
+*Source: APQC PCF 19995 (2.3.1.8) - APQC*

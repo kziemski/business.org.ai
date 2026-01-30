@@ -1,0 +1,96 @@
+---
+id: ManageFacilitiesOperations
+name: "Manage facilities operations"
+code: "10949"
+hierarchyId: "10.1.4"
+type: Process
+level: 3
+status: complete
+parent: "10.1"
+children: ["10.1.4.1", "10.1.4.2"]
+---
+
+# Manage facilities operations
+
+> Managing all operational activities of the facility.
+
+## Overview
+
+Process 10.1.4 is a core process that defines the specific procedures for manage facilities operations. 
+
+Managing all operational activities of the facility. Manage how each function/business unit works. Support the manufacturing facility to attain organizational goals.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_1["10.1 Plan and acquire assets"]
+    N10_1 --> N10_1_4["10.1.4 Manage facilities operations"]
+    style N10_1_4 fill:#e1f5fe
+    N10_1_4 --> N10_1_4_1["10.1.4.1 Relocate people"]
+    N10_1_4 --> N10_1_4_2["10.1.4.2 Relocate material and tools"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10949 |
+| Hierarchy ID | 10.1.4 |
+| Level | Process |
+| Parent | [10.1](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.FacilitiesOperations
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `facilities operations` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage facilities operations"]
+        S1["Relocate people"]
+        S2["Relocate material and tools"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Relocate people](./RelocatePeople) | 10.1.4.1 | Shifting staff or employees from one place to another place according to changes in business require |
+| [Relocate material and tools](./RelocateMaterialAndTools) | 10.1.4.2 | Relocating the tools and raw materials |
+
+
+## Related Concepts
+
+- [FacilitiesOperations](/concepts/FacilitiesOperations)
+
+
+---
+
+*Source: APQC PCF 10949 (10.1.4) - APQC*

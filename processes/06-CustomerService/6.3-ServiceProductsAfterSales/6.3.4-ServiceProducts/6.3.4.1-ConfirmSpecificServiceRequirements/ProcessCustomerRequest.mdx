@@ -1,0 +1,64 @@
+---
+id: ProcessCustomerRequest
+name: "Process customer request"
+code: "10324"
+hierarchyId: "6.3.4.1.1"
+type: SubActivity
+level: 5
+status: complete
+parent: "6.3.4.1"
+---
+
+# Process customer request
+
+> Soliciting or acquiring information using various sources such as databases, customer interactions, and customer request forms.
+
+## Overview
+
+Sub-Activity 6.3.4.1.1 is an activity within the Manage Customer Service framework. 
+
+Soliciting or acquiring information using various sources such as databases, customer interactions, and customer request forms. Hand them further up the hierarchy to deal with them. Categorize the user's request, determining if the request is supportable and prioritizing the request.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_4["6.3.4 Service products"]
+    N6_3_4 --> N6_3_4_1["6.3.4.1 Confirm specific service requirements..."]
+    N6_3_4_1 --> N6_3_4_1_1["6.3.4.1.1 Process customer request"]
+    style N6_3_4_1_1 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10324 |
+| Hierarchy ID | 6.3.4.1.1 |
+| Level | Sub-Activity |
+| Parent | [6.3.4.1](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.CustomerRequest
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `customer request` | Direct object |
+
+
+## Related Concepts
+
+- [CustomerRequest](/concepts/CustomerRequest)
+
+
+---
+
+*Source: APQC PCF 10324 (6.3.4.1.1) - APQC*

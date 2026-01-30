@@ -1,0 +1,112 @@
+---
+id: BeefCattleRanchingAndFarming
+name: "Beef Cattle Ranching and Farming"
+code: "11211"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Beef Cattle Ranching and Farming
+
+> This industry comprises establishments primarily engaged in raising cattle (including cattle for dairy herd replacements), or feeding cattle for fattening.
+
+## Overview
+
+Beef Cattle Ranching and Farming represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11). This industry encompasses establishments primarily engaged in beef cattle ranching and farming.
+
+This industry comprises establishments primarily engaged in raising cattle (including cattle for dairy herd replacements), or feeding cattle for fattening. Cross-References. Establishments primarily engaged in--
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S11["11: Agriculture, Forestry, Fishing and Hunting"]
+    S11 --> N112["112: Animal Production"]
+    N112 --> N1121["1121: Cattle Ranching"]
+    N1121 --> N11211["11211: Beef Cattle Ranching and Farming"]
+    style N11211 fill:#f96,stroke:#333,stroke-width:2px
+    N11211 --> N112111["112111: Beef Cattle Ranching"]
+    N11211 --> N112112["112112: Cattle Feedlots"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 11211 |
+| Level | Industry |
+| Parent | [Cattle Ranching](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Beef Cattle Ranching](./BeefCattleRanching.mdx) | 112111 | This U |
+| [Cattle Feedlots](./CattleFeedlots.mdx) | 112112 | This U |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Planning"]
+        O2["Planting/Stocking"]
+        O3["Growing/Raising"]
+        O4["Harvesting"]
+        O5["Processing"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Equipment Maintenance"]
+        S2["Supply Management"]
+        S3["Quality Control"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Seeds/Stock"]
+        I2["Equipment"]
+        I3["Fertilizers"]
+        I4["Labor"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Crops"]
+        O2["Livestock"]
+        O3["Raw Materials"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Processors"]
+        C2["Distributors"]
+        C3["Retailers"]
+        C4["Export Markets"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 11211 - Beef Cattle Ranching and Farming*

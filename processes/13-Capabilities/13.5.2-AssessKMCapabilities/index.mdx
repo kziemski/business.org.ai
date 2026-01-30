@@ -1,0 +1,99 @@
+---
+id: AssessKmCapabilities
+name: "Assess KM capabilities"
+code: "11096"
+hierarchyId: "13.5.2"
+type: Process
+level: 3
+status: complete
+parent: "13.5"
+children: ["13.5.2.1", "13.5.2.2", "13.5.2.3"]
+---
+
+# Assess KM capabilities
+
+> Assessing the maturity of the existing initiatives in knowledge management, and evaluating existing KM approaches.
+
+## Overview
+
+Process 13.5.2 is a core process that defines the specific procedures for assess km capabilities. 
+
+Assessing the maturity of the existing initiatives in knowledge management, and evaluating existing KM approaches. Identify the gaps and needs in order to enhance the existing KM approaches. Develop and implement new KM approaches.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_5_2["13.5.2 Assess KM capabilities"]
+    style N13_5_2 fill:#e1f5fe
+    N13_5_2 --> N13_5_2_1["13.5.2.1 Assess maturity of existing KM i..."]
+    N13_5_2 --> N13_5_2_2["13.5.2.2 Evaluate existing KM approaches"]
+    N13_5_2 --> N13_5_2_3["13.5.2.3 Identify gaps and needs"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11096 |
+| Hierarchy ID | 13.5.2 |
+| Level | Process |
+| Parent | [13.5](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+assess.KMCapabilities
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `assess` | Primary action |
+| Object | `KM capabilities` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Assess KM capabilities"]
+        S1["Assess maturity of existing..."]
+        S2["Evaluate existing KM approa..."]
+        S3["Identify gaps and needs"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess maturity of existing KM initiatives](./AssessMaturityOfExistingKMInitiatives) | 13.5.2.1 | Evaluating if initiatives are effective or should be discarded |
+| [Evaluate existing KM approaches](./EvaluateExistingKMApproaches) | 13.5.2.2 | Evaluating existing procedures, policies, and guidelines for knowledge management |
+| [Identify gaps and needs](./IdentifyGapsAndNeeds) | 13.5.2.3 | Assessing the KM approach evaluations in order to identify any gaps or needs |
+
+
+## Related Concepts
+
+- [KmCapabilities](/concepts/KmCapabilities)
+
+
+---
+
+*Source: APQC PCF 11096 (13.5.2) - APQC*

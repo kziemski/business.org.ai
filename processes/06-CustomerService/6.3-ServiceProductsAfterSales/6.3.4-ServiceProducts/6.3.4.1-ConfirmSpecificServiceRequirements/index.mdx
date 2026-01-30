@@ -1,0 +1,104 @@
+---
+id: ConfirmSpecificServiceRequirementsForIndividualCustomer
+name: "Confirm specific service requirements for individual customer"
+code: "10320"
+hierarchyId: "6.3.4.1"
+type: Activity
+level: 4
+status: complete
+parent: "6.3.4"
+children: ["6.3.4.1.1", "6.3.4.1.2", "6.3.4.1.3"]
+---
+
+# Confirm specific service requirements for individual customer
+
+> Acquiring or soliciting information about specific service requirements for individual customers through the customer service function.
+
+## Overview
+
+Activity 6.3.4.1 is an activity within the Manage Customer Service framework. 
+
+Acquiring or soliciting information about specific service requirements for individual customers through the customer service function. Obtain information about customer specific requests, process these requests, and create customer profiles to generate a service order.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_4["6.3.4 Service products"]
+    N6_3_4 --> N6_3_4_1["6.3.4.1 Confirm specific service requirements..."]
+    style N6_3_4_1 fill:#e1f5fe
+    N6_3_4_1 --> N6_3_4_1_1["6.3.4.1.1 Process customer request"]
+    N6_3_4_1 --> N6_3_4_1_2["6.3.4.1.2 Create customer profile"]
+    N6_3_4_1 --> N6_3_4_1_3["6.3.4.1.3 Generate service order"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10320 |
+| Hierarchy ID | 6.3.4.1 |
+| Level | Activity |
+| Parent | [6.3.4](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+confirm.SpecificServiceRequirements.for.IndividualCustomer
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `confirm` | Primary action |
+| Object | `specific service requirements` | Direct object |
+| Preposition | `for` | Relationship |
+| PrepObject | `individual customer` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Confirm specific service requirements for individual customer"]
+        S1["Process customer request"]
+        S2["Create customer profile"]
+        S3["Generate service order"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Process customer request](./ProcessCustomerRequest) | 6.3.4.1.1 | Soliciting or acquiring information using various sources such as databases, customer interactions,  |
+| [Create customer profile](./CreateCustomerProfile) | 6.3.4.1.2 | Documenting the individual customer service requirements solicited, along with personal information  |
+| [Generate service order](./GenerateServiceOrder) | 6.3.4.1.3 | Designing a short-term agreement between the service provider and customer |
+
+
+## Related Concepts
+
+- [SpecificServiceRequirements](/concepts/SpecificServiceRequirements)
+- [IndividualCustomer](/concepts/IndividualCustomer)
+
+
+---
+
+*Source: APQC PCF 10320 (6.3.4.1) - APQC*

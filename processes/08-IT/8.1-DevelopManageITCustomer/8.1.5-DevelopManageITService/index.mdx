@@ -1,0 +1,115 @@
+---
+id: DevelopAndManageItServiceLevels
+name: "Develop and manage IT service levels"
+code: "20632"
+hierarchyId: "8.1.5"
+type: Process
+level: 3
+status: complete
+parent: "8.1"
+children: ["8.1.5.1", "8.1.5.2", "8.1.5.3", "8.1.5.4", "8.1.5.5", "8.1.5.6", "8.1.5.7"]
+---
+
+# Develop and manage IT service levels
+
+> Establishing and maintaining service levels for the provision of IT services and solutions.
+
+## Overview
+
+Process 8.1.5 is a core process that defines the specific procedures for develop and manage it service levels. 
+
+Establishing and maintaining service levels for the provision of IT services and solutions. Design and maintain the IT services and solution catalogue, as well as service level agreements. Evaluate the performance of IT service level agreements. Communicate the results to the management.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    N8_1 --> N8_1_5["8.1.5 Develop and manage IT service levels"]
+    style N8_1_5 fill:#e1f5fe
+    N8_1_5 --> N8_1_5_1["8.1.5.1 Understand IT service requirements"]
+    N8_1_5 --> N8_1_5_2["8.1.5.2 Forecast IT service demand"]
+    N8_1_5 --> N8_1_5_3["8.1.5.3 Maintain IT services catalog"]
+    N8_1_5 --> N8_1_5_4["8.1.5.4 Define service level agreement"]
+    N8_1_5 --> N8_1_5_5["8.1.5.5 Maintain IT customer contracts"]
+    N8_1_5 --> N8_1_5_6["8.1.5.6 Negotiate and establish service ..."]
+    N8_1_5 --> N8_1_5_7["8.1.5.7 Develop and maintain improvement..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20632 |
+| Hierarchy ID | 8.1.5 |
+| Level | Process |
+| Parent | [8.1](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageITServiceLevels
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage IT service levels` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage IT service levels"]
+        S1["Understand IT service requi..."]
+        S2["Forecast IT service demand"]
+        S3["Maintain IT services catalog"]
+        S4["Define service level agreement"]
+        S5["Maintain IT customer contracts"]
+        S6["Negotiate and establish ser..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Understand IT service requirements](./UnderstandITServiceRequirements) | 8.1.5.1 | Understand requirements related to information technology services considering enterprise-level effe |
+| [Forecast IT service demand](./ForecastITServiceDemand) | 8.1.5.2 | Forecasting demand for IT services using current business growth, research, and customer feedback |
+| [Maintain IT services catalog](./MaintainITServicesCatalog) | 8.1.5.3 | Maintain information about IT deliverables, prices, contact points, and processes for requesting a s |
+| [Define service level agreement](./DefineServiceLevelAgreement) | 8.1.5.4 | Designing and maintaining commitment of service by performance evaluation of IT services and communi |
+| [Maintain IT customer contracts](./MaintainITCustomerContracts) | 8.1.5.5 | Maintaining and documenting commitment of service to staff for information technology contracts incl |
+| [Negotiate and establish service level agreements](./NegotiateAndEstablishServiceLevelAgreements) | 8.1.5.6 | Establish a service level agreement, which is a negotiated agreement designed to create a common und |
+| [Develop and maintain improvement processes](./DevelopAndMaintainImprovementProcesses) | 8.1.5.7 | Conveying the improvement opportunities for the business and level of IT services |
+
+
+## Related Concepts
+
+- [ITServiceLevels](/concepts/ITServiceLevels)
+- [ITServiceLevels](/concepts/ITServiceLevels)
+
+
+---
+
+*Source: APQC PCF 20632 (8.1.5) - APQC*

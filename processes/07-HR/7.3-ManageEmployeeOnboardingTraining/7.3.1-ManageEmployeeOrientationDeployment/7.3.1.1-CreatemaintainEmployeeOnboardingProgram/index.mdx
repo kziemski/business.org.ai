@@ -1,0 +1,98 @@
+---
+id: CreatemaintainEmployeeOnboardingProgram
+name: "Create/maintain employee onboarding program"
+code: "10474"
+hierarchyId: "7.3.1.1"
+type: Activity
+level: 4
+status: complete
+parent: "7.3.1"
+children: ["7.3.1.1.1", "7.3.1.1.2"]
+---
+
+# Create/maintain employee onboarding program
+
+> Creating and maintaining a mechanism through which new employees acquire the necessary knowledge, skills, and behaviors to become effective organizational members and insiders.
+
+## Overview
+
+Activity 7.3.1.1 is an activity within the Develop and Manage Human Capital framework. 
+
+Creating and maintaining a mechanism through which new employees acquire the necessary knowledge, skills, and behaviors to become effective organizational members and insiders. Conduct formal meetings, lectures, videos, printed materials, and/or computer-based orientations to introduce newcomers to their new jobs and the organization.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    N7_3 --> N7_3_1["7.3.1 Manage employee orientation and deplo..."]
+    N7_3_1 --> N7_3_1_1["7.3.1.1 Create/maintain employee onboarding p..."]
+    style N7_3_1_1 fill:#e1f5fe
+    N7_3_1_1 --> N7_3_1_1_1["7.3.1.1.1 Develop employee induction program"]
+    N7_3_1_1 --> N7_3_1_1_2["7.3.1.1.2 Maintain/Update employee inducti..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10474 |
+| Hierarchy ID | 7.3.1.1 |
+| Level | Activity |
+| Parent | [7.3.1](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+create/maintain.EmployeeOnboardingProgram
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `create/maintain` | Primary action |
+| Object | `employee onboarding program` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Create/maintain employee onboarding program"]
+        S1["Develop employee induction ..."]
+        S2["Maintain/Update employee in..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop employee induction program](./DevelopEmployeeInductionProgram) | 7.3.1.1.1 | Designing a program to systematically introduce newly hired employees to the organizational culture  |
+| [Maintain/Update employee induction program](./MaintainUpdateEmployeeInductionProgram) | 7.3.1.1.2 | Managing the orientation and training of new employees about the organizational culture of the compa |
+
+
+## Related Concepts
+
+- [EmployeeOnboardingProgram](/concepts/EmployeeOnboardingProgram)
+- [EmployeeOnboardingProgram](/concepts/EmployeeOnboardingProgram)
+
+
+---
+
+*Source: APQC PCF 10474 (7.3.1.1) - APQC*

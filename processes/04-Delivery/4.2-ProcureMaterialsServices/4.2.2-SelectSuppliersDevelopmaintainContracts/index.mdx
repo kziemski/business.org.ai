@@ -1,0 +1,106 @@
+---
+id: SelectSuppliersAndDevelopmaintainContracts
+name: "Select suppliers and develop/maintain contracts"
+code: "10278"
+hierarchyId: "4.2.2"
+type: Process
+level: 3
+status: complete
+parent: "4.2"
+children: ["4.2.2.1", "4.2.2.2", "4.2.2.3", "4.2.2.4"]
+---
+
+# Select suppliers and develop/maintain contracts
+
+> Evaluating supplier options to select the most effective and efficient suppliers.
+
+## Overview
+
+Process 4.2.2 is a core process that defines the specific procedures for select suppliers and develop/maintain contracts. 
+
+Evaluating supplier options to select the most effective and efficient suppliers. Validate selected suppliers. Establish and manage supplier contracts.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_2["4.2 Procure materials and services"]
+    N4_2 --> N4_2_2["4.2.2 Select suppliers and develop/maintain..."]
+    style N4_2_2 fill:#e1f5fe
+    N4_2_2 --> N4_2_2_1["4.2.2.1 Select suppliers"]
+    N4_2_2 --> N4_2_2_2["4.2.2.2 Certify and validate suppliers"]
+    N4_2_2 --> N4_2_2_3["4.2.2.3 Negotiate and establish contracts"]
+    N4_2_2 --> N4_2_2_4["4.2.2.4 Manage contracts"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10278 |
+| Hierarchy ID | 4.2.2 |
+| Level | Process |
+| Parent | [4.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+select.SuppliersAndDevelopmaintainContracts
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `select` | Primary action |
+| Object | `suppliers and develop/maintain contracts` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Select suppliers and develop/maintain contracts"]
+        S1["Select suppliers"]
+        S2["Certify and validate suppliers"]
+        S3["Negotiate and establish con..."]
+        S4["Manage contracts"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Select suppliers](./SelectSuppliers) | 4.2.2.1 | Evaluating the pros and cons of various suppliers |
+| [Certify and validate suppliers](./CertifyAndValidateSuppliers) | 4.2.2.2 | Validating the supply sources, and provide certification as an official supplier |
+| [Negotiate and establish contracts](./NegotiateAndEstablishContracts) | 4.2.2.3 | Legally binding suppliers with the company |
+| [Manage contracts](./ManageContracts) | 4.2.2.4 | Keeping contracts up-to-date with routine evaluation |
+
+
+## Related Concepts
+
+- [SuppliersContracts](/concepts/SuppliersContracts)
+- [DevelopContracts](/concepts/DevelopContracts)
+- [MaintainContracts](/concepts/MaintainContracts)
+
+
+---
+
+*Source: APQC PCF 10278 (4.2.2) - APQC*

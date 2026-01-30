@@ -1,0 +1,104 @@
+---
+id: DevelopSalesForecast
+name: "Develop sales forecast"
+code: "10129"
+hierarchyId: "3.4.1"
+type: Process
+level: 3
+status: complete
+parent: "3.4"
+children: ["3.4.1.1", "3.4.1.2", "3.4.1.3", "3.4.1.4"]
+---
+
+# Develop sales forecast
+
+> Developing a sales forecast for the organization's portfolio of offerings, bearing in mind the effect of promotional events, and fine-tuning these in the context of the new forecast.
+
+## Overview
+
+Process 3.4.1 is a core process that defines the specific procedures for develop sales forecast. 
+
+Developing a sales forecast for the organization's portfolio of offerings, bearing in mind the effect of promotional events, and fine-tuning these in the context of the new forecast. Estimate the future demand for the organization's products/services by analyzing historical information and any promotional activity.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_4["3.4 Develop sales strategy"]
+    N3_4 --> N3_4_1["3.4.1 Develop sales forecast"]
+    style N3_4_1 fill:#e1f5fe
+    N3_4_1 --> N3_4_1_1["3.4.1.1 Gather current and historic orde..."]
+    N3_4_1 --> N3_4_1_2["3.4.1.2 Analyze sales trends and patterns"]
+    N3_4_1 --> N3_4_1_3["3.4.1.3 Generate sales forecast"]
+    N3_4_1 --> N3_4_1_4["3.4.1.4 Analyze historical and planned p..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10129 |
+| Hierarchy ID | 3.4.1 |
+| Level | Process |
+| Parent | [3.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.SalesForecast
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `sales forecast` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop sales forecast"]
+        S1["Gather current and historic..."]
+        S2["Analyze sales trends and pa..."]
+        S3["Generate sales forecast"]
+        S4["Analyze historical and plan..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Gather current and historic order information](./GatherCurrentAndHistoricOrderInformation) | 3.4.1.1 | Gathering all information about sales orders into an index |
+| [Analyze sales trends and patterns](./AnalyzeSalesTrendsAndPatterns) | 3.4.1.2 | Analyzing sales order data to identify patterns in order to capitalize on emerging trends in the ind |
+| [Generate sales forecast](./GenerateSalesForecast) | 3.4.1.3 | Calculating the future demand for the organization's products/services |
+| [Analyze historical and planned promotions and events](./AnalyzeHistoricalAndPlannedPromotionsAndEvents) | 3.4.1.4 | Reviewing promotional activities' effect on the sales orders |
+
+
+## Related Concepts
+
+- [SalesForecast](/concepts/SalesForecast)
+
+
+---
+
+*Source: APQC PCF 10129 (3.4.1) - APQC*

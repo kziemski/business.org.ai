@@ -1,0 +1,104 @@
+---
+id: ManageItValuePortfolio
+name: "Manage IT value portfolio"
+code: "20693"
+hierarchyId: "8.2.6"
+type: Process
+level: 3
+status: complete
+parent: "8.2"
+children: ["8.2.6.1", "8.2.6.2", "8.2.6.3", "8.2.6.4"]
+---
+
+# Manage IT value portfolio
+
+> Creating and establishing the value portfolio.
+
+## Overview
+
+Process 8.2.6 is a core process that defines the specific procedures for manage it value portfolio. 
+
+Creating and establishing the value portfolio. Defining, analyzing, and examining the value of projects, investments, and activities of the IT function.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_2["8.2 Develop and manage IT business strategy"]
+    N8_2 --> N8_2_6["8.2.6 Manage IT value portfolio"]
+    style N8_2_6 fill:#e1f5fe
+    N8_2_6 --> N8_2_6_1["8.2.6.1 Assess performance against IT se..."]
+    N8_2_6 --> N8_2_6_2["8.2.6.2 Quantify value of IT service and..."]
+    N8_2_6 --> N8_2_6_3["8.2.6.3 Communicate business technology ..."]
+    N8_2_6 --> N8_2_6_4["8.2.6.4 Determine and implement IT portf..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20693 |
+| Hierarchy ID | 8.2.6 |
+| Level | Process |
+| Parent | [8.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ITValuePortfolio
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `IT value portfolio` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage IT value portfolio"]
+        S1["Assess performance against ..."]
+        S2["Quantify value of IT servic..."]
+        S3["Communicate business techno..."]
+        S4["Determine and implement IT ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess performance against IT service and project value criteria](./AssessPerformanceAgainstITServiceAndProjectValueCriteria) | 8.2.6.1 | Process of evaluating performance to collect and analyze IT services and projects |
+| [Quantify value of IT service and project portfolio investments](./QuantifyValueOfITServiceAndProjectPortfolioInvestments) | 8.2.6.2 | Evaluate the value of the investments, projects, and activities of IT function by assigning it a qua |
+| [Communicate business technology value contribution](./CommunicateBusinessTechnologyValueContribution) | 8.2.6.3 | Conveying the value addition through adopting technology targeting towards integrated profitable bus |
+| [Determine and implement IT portfolio adjustments](./DetermineAndImplementITPortfolioAdjustments) | 8.2.6.4 | Determining and implementing IT investments, projects, and activities based on trending technologica |
+
+
+## Related Concepts
+
+- [ITValuePortfolio](/concepts/ITValuePortfolio)
+
+
+---
+
+*Source: APQC PCF 20693 (8.2.6) - APQC*

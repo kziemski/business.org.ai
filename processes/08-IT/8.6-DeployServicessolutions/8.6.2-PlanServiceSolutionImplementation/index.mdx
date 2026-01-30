@@ -1,0 +1,115 @@
+---
+id: PlanServiceAndSolutionImplementation
+name: "Plan service and solution implementation"
+code: "20832"
+hierarchyId: "8.6.2"
+type: Process
+level: 3
+status: complete
+parent: "8.6"
+children: ["8.6.2.1", "8.6.2.2", "8.6.2.3", "8.6.2.4", "8.6.2.5", "8.6.2.6", "8.6.2.7"]
+---
+
+# Plan service and solution implementation
+
+> Strategizing and executing changes in IT solutions and services.
+
+## Overview
+
+Process 8.6.2 is a core process that defines the specific procedures for plan service and solution implementation. 
+
+Strategizing and executing changes in IT solutions and services. Create a plan for deploying the changes. Communicate with stakeholders about the changes. Administer and implement the changes. Train the resources who will be affected by these changes. Install changes and verify their effect.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_6["8.6 Deploy services/solutions"]
+    N8_6 --> N8_6_2["8.6.2 Plan service and solution implementation"]
+    style N8_6_2 fill:#e1f5fe
+    N8_6_2 --> N8_6_2_1["8.6.2.1 Assess IT deployment risk"]
+    N8_6_2 --> N8_6_2_2["8.6.2.2 Define implementation schedule a..."]
+    N8_6_2 --> N8_6_2_3["8.6.2.3 Determine implementation require..."]
+    N8_6_2 --> N8_6_2_4["8.6.2.4 Plan and align user testing and ..."]
+    N8_6_2 --> N8_6_2_5["8.6.2.5 Develop IT training"]
+    N8_6_2 --> N8_6_2_6["8.6.2.6 Create implementation communicat..."]
+    N8_6_2 --> N8_6_2_7["8.6.2.7 Manage IT roll-back procedures"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20832 |
+| Hierarchy ID | 8.6.2 |
+| Level | Process |
+| Parent | [8.6](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.ServiceAndSolutionImplementation
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `service and solution implementation` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan service and solution implementation"]
+        S1["Assess IT deployment risk"]
+        S2["Define implementation sched..."]
+        S3["Determine implementation re..."]
+        S4["Plan and align user testing..."]
+        S5["Develop IT training"]
+        S6["Create implementation commu..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess IT deployment risk](./AssessITDeploymentRisk) | 8.6.2.1 | Accessing threats and potential failures related to the deployment of IT services/solutions |
+| [Define implementation schedule and roll-out sequence](./DefineImplementationScheduleAndRolloutSequence) | 8.6.2.2 | Defining the schedule for implementation of change |
+| [Determine implementation requirements](./DetermineImplementationRequirements) | 8.6.2.3 | Determine requirements for implementation of IT deployment |
+| [Plan and align user testing and resources](./PlanAndAlignUserTestingAndResources) | 8.6.2.4 | Plan methodologies and align resources for user testing of IT deployment |
+| [Develop IT training](./DevelopITTraining) | 8.6.2.5 | Create and manage employee training programs by considering the need and availability of these progr |
+| [Create implementation communications](./CreateImplementationCommunications) | 8.6.2.6 | Coordinating change implementation in IT services and solutions communications with employees and st |
+| [Manage IT roll-back procedures](./ManageITRollbackProcedures) | 8.6.2.7 | Managing procedures to return to initial pre-deployment stage or previous state from current environ |
+
+
+## Related Concepts
+
+- [Service](/concepts/Service)
+- [SolutionImplementation](/concepts/SolutionImplementation)
+
+
+---
+
+*Source: APQC PCF 20832 (8.6.2) - APQC*

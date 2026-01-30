@@ -1,0 +1,114 @@
+---
+id: EnableServiceDeliveryResources
+name: "Enable service delivery resources"
+code: "12127"
+hierarchyId: "5.2.3"
+type: Process
+level: 3
+status: complete
+parent: "5.2"
+children: ["5.2.3.1", "5.2.3.2", "5.2.3.3", "5.2.3.4", "5.2.3.5", "5.2.3.6", "5.2.3.7"]
+---
+
+# Enable service delivery resources
+
+> Instituting training to enable resources to provide service delivery to the customer.
+
+## Overview
+
+Process 5.2.3 is a core process that defines the specific procedures for enable service delivery resources. 
+
+Instituting training to enable resources to provide service delivery to the customer. Develop a training plan. Create materials that provide for operation and technical training. Schedule, perform, and evaluate training.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_2["5.2 Manage service delivery resources"]
+    N5_2 --> N5_2_3["5.2.3 Enable service delivery resources"]
+    style N5_2_3 fill:#e1f5fe
+    N5_2_3 --> N5_2_3_1["5.2.3.1 Develop service delivery trainin..."]
+    N5_2_3 --> N5_2_3_2["5.2.3.2 Develop training materials"]
+    N5_2_3 --> N5_2_3_3["5.2.3.3 Manage training schedule"]
+    N5_2_3 --> N5_2_3_4["5.2.3.4 Deliver operations training"]
+    N5_2_3 --> N5_2_3_5["5.2.3.5 Deliver technical training"]
+    N5_2_3 --> N5_2_3_6["5.2.3.6 Perform skill and capability tes..."]
+    N5_2_3 --> N5_2_3_7["5.2.3.7 Evaluate training effectiveness"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 12127 |
+| Hierarchy ID | 5.2.3 |
+| Level | Process |
+| Parent | [5.2](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+enable.ServiceDeliveryResources
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `enable` | Primary action |
+| Object | `service delivery resources` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Enable service delivery resources"]
+        S1["Develop service delivery tr..."]
+        S2["Develop training materials"]
+        S3["Manage training schedule"]
+        S4["Deliver operations training"]
+        S5["Deliver technical training"]
+        S6["Perform skill and capabilit..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop service delivery training plan](./DevelopServiceDeliveryTrainingPlan) | 5.2.3.1 | Creating a detailed summary of all the actions relevant to teaching a person a particular skill or t |
+| [Develop training materials](./DevelopTrainingMaterials) | 5.2.3.2 | Developing materials necessary to provide comprehensive training for the skills or behavior needed t |
+| [Manage training schedule](./ManageTrainingSchedule) | 5.2.3.3 | Providing training to the employee within a manageable timeframe to meet the needs of both the indiv |
+| [Deliver operations training](./DeliverOperationsTraining) | 5.2.3.4 | Educating service delivery personnel on all aspects of the operations process of the organization |
+| [Deliver technical training](./DeliverTechnicalTraining) | 5.2.3.5 | Ensuring that all personnel are trained on all technical aspects of service delivery |
+| [Perform skill and capability testing](./PerformSkillAndCapabilityTesting) | 5.2.3.6 | Verifying that training provided to the person was successful through the administration testing and |
+| [Evaluate training effectiveness](./EvaluateTrainingEffectiveness) | 5.2.3.7 | Eliciting feedback from various sources to evaluate the training provided |
+
+
+## Related Concepts
+
+- [ServiceDeliveryResources](/concepts/ServiceDeliveryResources)
+
+
+---
+
+*Source: APQC PCF 12127 (5.2.3) - APQC*

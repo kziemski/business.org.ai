@@ -1,0 +1,104 @@
+---
+id: ManageInternationalFundsconsolidation
+name: "Manage international funds/consolidation"
+code: "10737"
+hierarchyId: "9.10"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.10.1", "9.10.2", "9.10.3", "9.10.4"]
+---
+
+# Manage international funds/consolidation
+
+> Managing cash collections and disbursements made by operating units across the enterprise.
+
+## Overview
+
+Group 9.10 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Managing cash collections and disbursements made by operating units across the enterprise. When appropriate, transfer cash from the operating units to parent-level bank accounts managed by the organization's treasury team.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_10["9.10 Manage international funds/consolidation"]
+    style N9_10 fill:#e1f5fe
+    N9_10 --> N9_10_1["9.10.1 Monitor international rates"]
+    N9_10 --> N9_10_2["9.10.2 Manage transactions"]
+    N9_10 --> N9_10_3["9.10.3 Monitor currency exposure/hedge ..."]
+    N9_10 --> N9_10_4["9.10.4 Report results"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10737 |
+| Hierarchy ID | 9.10 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.InternationalFundsconsolidation
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `international funds/consolidation` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage international funds/consolidation"]
+        S1["Monitor international rates"]
+        S2["Manage transactions"]
+        S3["Monitor currency exposure/h..."]
+        S4["Report results"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Monitor international rates](./MonitorInternationalRates) | 9.10.1 | Forecasting and monitoring changes in foreign currency value or interest rates around the world that |
+| [Manage transactions](./ManageTransactions) | 9.10.2 | Managing any transfer of funds in the course of conducting cross-border trades or investments, inclu |
+| [Monitor currency exposure/hedge currency](./MonitorCurrencyExposurehedgeCurrency) | 9.10.3 | Assessing exposure to potential financial losses as a result of changes in the value of currencies |
+| [Report results](./ReportResults) | 9.10.4 | Documenting and reporting accounting entries to formally report financial gains or losses experience |
+
+
+## Related Concepts
+
+- [InternationalFunds](/concepts/InternationalFunds)
+- [InternationalConsolidation](/concepts/InternationalConsolidation)
+
+
+---
+
+*Source: APQC PCF 10737 (9.10) - APQC*

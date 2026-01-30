@@ -1,0 +1,97 @@
+---
+id: DesignCustomerExperienceSupportStructure
+name: "Design customer experience support structure"
+code: "19971"
+hierarchyId: "1.2.8.3"
+type: Activity
+level: 4
+status: complete
+parent: "1.2.8"
+children: ["1.2.8.3.1", "1.2.8.3.2"]
+---
+
+# Design customer experience support structure
+
+> Creating a roadmap for customer experience support with an overall approach, process flow, and impact timeframe.
+
+## Overview
+
+Activity 1.2.8.3 is an activity within the Develop Vision and Strategy framework. 
+
+Creating a roadmap for customer experience support with an overall approach, process flow, and impact timeframe.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_2["1.2 Develop business strategy"]
+    N1_2 --> N1_2_8["1.2.8 Develop customer experience strategy"]
+    N1_2_8 --> N1_2_8_3["1.2.8.3 Design customer experience support st..."]
+    style N1_2_8_3 fill:#e1f5fe
+    N1_2_8_3 --> N1_2_8_3_1["1.2.8.3.1 Identify required capabilities"]
+    N1_2_8_3 --> N1_2_8_3_2["1.2.8.3.2 Identify impact on functional pr..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19971 |
+| Hierarchy ID | 1.2.8.3 |
+| Level | Activity |
+| Parent | [1.2.8](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+design.CustomerExperienceSupportStructure
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Primary action |
+| Object | `customer experience support structure` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Design customer experience support structure"]
+        S1["Identify required capabilities"]
+        S2["Identify impact on function..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify required capabilities](./IdentifyRequiredCapabilities) | 1.2.8.3.1 | Determining the necessary skills and competencies required to efficiently collect customer experienc |
+| [Identify impact on functional processes](./IdentifyImpactOnFunctionalProcesses) | 1.2.8.3.2 | Identifying the affect of customer experience through customer experience support structure on other |
+
+
+## Related Concepts
+
+- [CustomerExperienceSupportStructure](/concepts/CustomerExperienceSupportStructure)
+
+
+---
+
+*Source: APQC PCF 19971 (1.2.8.3) - APQC*

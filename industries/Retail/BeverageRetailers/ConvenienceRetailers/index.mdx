@@ -1,0 +1,110 @@
+---
+id: ConvenienceRetailers
+name: "Convenience Retailers"
+code: "4451"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Convenience Retailers
+
+> This industry group comprises establishments primarily engaged in retailing a general line of food products.
+
+## Overview
+
+Convenience Retailers represents an important category within the Retail Trade sector (NAICS 44-45). This industry group encompasses establishments primarily engaged in convenience retailers.
+
+This industry group comprises establishments primarily engaged in retailing a general line of food products. This industry group also includes vending machine operators.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S44-45["44-45: Retail Trade"]
+    S44-45 --> N445["445: Beverage Retailers"]
+    N445 --> N4451["4451: Convenience Retailers"]
+    style N4451 fill:#f96,stroke:#333,stroke-width:2px
+    N4451 --> N44511["44511: Grocery Retailers"]
+    N4451 --> N44513["44513: Convenience Retailers Operators"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 4451 |
+| Level | Industry Group |
+| Parent | [Beverage Retailers](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Grocery Retailers](./GroceryRetailers/) | 44511 | See industry description for 445110 |
+| [Convenience Retailers Operators](./ConvenienceRetailersOperators/) | 44513 | This industry comprises establishments primarily engaged in retailing a limited  |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Procurement"]
+        O2["Warehousing"]
+        O3["Merchandising"]
+        O4["Sales"]
+        O5["Distribution"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Inventory Mgmt"]
+        S2["Marketing"]
+        S3["Customer Service"]
+        S4["IT Systems"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Products"]
+        I2["Inventory"]
+        I3["Store/Warehouse"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Goods for Sale"]
+        O2["Services"]
+        O3["Delivery"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Institutions"]
+        C4["Government"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 4451 - Convenience Retailers*

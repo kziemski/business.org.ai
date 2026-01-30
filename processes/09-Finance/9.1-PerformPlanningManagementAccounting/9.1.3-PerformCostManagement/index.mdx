@@ -1,0 +1,104 @@
+---
+id: PerformCostManagement
+name: "Perform cost management"
+code: "10740"
+hierarchyId: "9.1.3"
+type: Process
+level: 3
+status: complete
+parent: "9.1"
+children: ["9.1.3.1", "9.1.3.2", "9.1.3.3", "9.1.3.4"]
+---
+
+# Perform cost management
+
+> Deciding which expenses can be avoided to reduce some costs and increase revenues.
+
+## Overview
+
+Process 9.1.3 is a core process that defines the specific procedures for perform cost management. 
+
+Deciding which expenses can be avoided to reduce some costs and increase revenues. Plan and control the organization's budget to forecast future expenditures.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_1["9.1 Perform planning and management accou..."]
+    N9_1 --> N9_1_3["9.1.3 Perform cost management"]
+    style N9_1_3 fill:#e1f5fe
+    N9_1_3 --> N9_1_3_1["9.1.3.1 Determine key cost drivers"]
+    N9_1_3 --> N9_1_3_2["9.1.3.2 Measure cost drivers"]
+    N9_1_3 --> N9_1_3_3["9.1.3.3 Determine critical activities"]
+    N9_1_3 --> N9_1_3_4["9.1.3.4 Manage asset resource deployment..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10740 |
+| Hierarchy ID | 9.1.3 |
+| Level | Process |
+| Parent | [9.1](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.CostManagement
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `cost management` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform cost management"]
+        S1["Determine key cost drivers"]
+        S2["Measure cost drivers"]
+        S3["Determine critical activities"]
+        S4["Manage asset resource deplo..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine key cost drivers](./DetermineKeyCostDrivers) | 9.1.3.1 | Defining cost drivers for a particular activity |
+| [Measure cost drivers](./MeasureCostDrivers) | 9.1.3.2 | Calculating cost drivers |
+| [Determine critical activities](./DetermineCriticalActivities) | 9.1.3.3 | Determine the activities that hinder the progress of finance activities |
+| [Manage asset resource deployment and utilization](./ManageAssetResourceDeploymentAndUtilization) | 9.1.3.4 | Distributing or allocating asset resources in different processes for optimal utilization |
+
+
+## Related Concepts
+
+- [CostManagement](/concepts/CostManagement)
+
+
+---
+
+*Source: APQC PCF 10740 (9.1.3) - APQC*

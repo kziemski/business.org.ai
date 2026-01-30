@@ -1,0 +1,96 @@
+---
+id: UnderstandItCustomerNeeds
+name: "Understand IT customer needs"
+code: "20609"
+hierarchyId: "8.1.1"
+type: Process
+level: 3
+status: complete
+parent: "8.1"
+children: ["8.1.1.1", "8.1.1.2"]
+---
+
+# Understand IT customer needs
+
+> Assessing the customer communities along with current IT operational capabilities and usage.
+
+## Overview
+
+Process 8.1.1 is a core process that defines the specific procedures for understand it customer needs. 
+
+Assessing the customer communities along with current IT operational capabilities and usage.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    N8_1 --> N8_1_1["8.1.1 Understand IT customer needs"]
+    style N8_1_1 fill:#e1f5fe
+    N8_1_1 --> N8_1_1_1["8.1.1.1 Understand IT customer communities"]
+    N8_1_1 --> N8_1_1_2["8.1.1.2 Assess IT customer operational c..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20609 |
+| Hierarchy ID | 8.1.1 |
+| Level | Process |
+| Parent | [8.1](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+understand.ITCustomerNeeds
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `understand` | Primary action |
+| Object | `IT customer needs` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Understand IT customer needs"]
+        S1["Understand IT customer comm..."]
+        S2["Assess IT customer operatio..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Understand IT customer communities](./UnderstandITCustomerCommunities) | 8.1.1.1 | Interacting with IT customers to understand the IT needs through a collaborative community through i |
+| [Assess IT customer operational capabilities](./AssessITCustomerOperationalCapabilities) | 8.1.1.2 | Evaluate the ability of the group of staff dependent on information technology, to align resources a |
+
+
+## Related Concepts
+
+- [ITCustomerNeeds](/concepts/ITCustomerNeeds)
+
+
+---
+
+*Source: APQC PCF 20609 (8.1.1) - APQC*

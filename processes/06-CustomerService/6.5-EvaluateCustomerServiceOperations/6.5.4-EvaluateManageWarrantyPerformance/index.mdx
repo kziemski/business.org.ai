@@ -1,0 +1,109 @@
+---
+id: EvaluateAndManageWarrantyPerformance
+name: "Evaluate and manage warranty performance"
+code: "12672"
+hierarchyId: "6.5.4"
+type: Process
+level: 3
+status: complete
+parent: "6.5"
+children: ["6.5.4.1", "6.5.4.2", "6.5.4.3", "6.5.4.4", "6.5.4.5"]
+---
+
+# Evaluate and manage warranty performance
+
+> Assessing the cost and effectiveness of warranties.
+
+## Overview
+
+Process 6.5.4 is a core process that defines the specific procedures for evaluate and manage warranty performance. 
+
+Assessing the cost and effectiveness of warranties.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_5["6.5 Evaluate customer service operations ..."]
+    N6_5 --> N6_5_4["6.5.4 Evaluate and manage warranty performance"]
+    style N6_5_4 fill:#e1f5fe
+    N6_5_4 --> N6_5_4_1["6.5.4.1 Measure customer satisfaction wi..."]
+    N6_5_4 --> N6_5_4_2["6.5.4.2 Monitor and report on warranty m..."]
+    N6_5_4 --> N6_5_4_3["6.5.4.3 Identify improvement opportunities"]
+    N6_5_4 --> N6_5_4_4["6.5.4.4 Identify opportunities to elimin..."]
+    N6_5_4 --> N6_5_4_5["6.5.4.5 Investigate fraudulent claims"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 12672 |
+| Hierarchy ID | 6.5.4 |
+| Level | Process |
+| Parent | [6.5](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+evaluate.AndManageWarrantyPerformance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `evaluate` | Primary action |
+| Object | `and manage warranty performance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Evaluate and manage warranty performance"]
+        S1["Measure customer satisfacti..."]
+        S2["Monitor and report on warra..."]
+        S3["Identify improvement opport..."]
+        S4["Identify opportunities to e..."]
+        S5["Investigate fraudulent claims"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Measure customer satisfaction with warranty handling and resolution](./MeasureCustomerSatisfactionWithWarrantyHandlingAndResolution) | 6.5.4.1 | Evaluating how satisfied customers are with how product warranties are managed and resolved |
+| [Monitor and report on warranty management metrics](./MonitorAndReportOnWarrantyManagementMetrics) | 6.5.4.2 | Comparing warranties by using applicable metrics to see how they are handled and resolved |
+| [Identify improvement opportunities](./IdentifyImprovementOpportunities) | 6.5.4.3 | Determining how warranties and warranty management can be made better and more efficient |
+| [Identify opportunities to eliminate warranty waste](./IdentifyOpportunitiesToEliminateWarrantyWaste) | 6.5.4.4 | Finding ways to phase out unused or seldom used warranties |
+| [Investigate fraudulent claims](./InvestigateFraudulentClaims) | 6.5.4.5 | Reviewing and assessing claims that contain deliberately incorrect information or that have been sub |
+
+
+## Related Concepts
+
+- [WarrantyPerformance](/concepts/WarrantyPerformance)
+- [WarrantyPerformance](/concepts/WarrantyPerformance)
+
+
+---
+
+*Source: APQC PCF 12672 (6.5.4) - APQC*

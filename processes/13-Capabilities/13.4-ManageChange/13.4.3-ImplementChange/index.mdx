@@ -1,0 +1,108 @@
+---
+id: ImplementChange
+name: "Implement change"
+code: "11136"
+hierarchyId: "13.4.3"
+type: Process
+level: 3
+status: complete
+parent: "13.4"
+children: ["13.4.3.1", "13.4.3.2", "13.4.3.3", "13.4.3.4", "13.4.3.5"]
+---
+
+# Implement change
+
+> Effectuating the change within the desired impact areas of the organization.
+
+## Overview
+
+Process 13.4.3 is a core process that defines the specific procedures for implement change. 
+
+Effectuating the change within the desired impact areas of the organization. Ensure adequate commitment from all corners of the organization for the desired change. Create support structures. Refashion all processes deemed necessary. Observe the progress.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_4["13.4 Manage change"]
+    N13_4 --> N13_4_3["13.4.3 Implement change"]
+    style N13_4_3 fill:#e1f5fe
+    N13_4_3 --> N13_4_3_1["13.4.3.1 Create commitment for improvemen..."]
+    N13_4_3 --> N13_4_3_2["13.4.3.2 Reengineer business processes an..."]
+    N13_4_3 --> N13_4_3_3["13.4.3.3 Support transition to new roles ..."]
+    N13_4_3 --> N13_4_3_4["13.4.3.4 Monitor change"]
+    N13_4_3 --> N13_4_3_5["13.4.3.5 Report on change"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11136 |
+| Hierarchy ID | 13.4.3 |
+| Level | Process |
+| Parent | [13.4](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+implement.Change
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `implement` | Primary action |
+| Object | `change` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Implement change"]
+        S1["Create commitment for impro..."]
+        S2["Reengineer business process..."]
+        S3["Support transition to new r..."]
+        S4["Monitor change"]
+        S5["Report on change"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create commitment for improvement/change](./CreateCommitmentForImprovementchange) | 13.4.3.1 | Kindling an organization wide commitment for effectuating the change |
+| [Reengineer business processes and systems](./ReengineerBusinessProcessesAndSystems) | 13.4.3.2 | Restructuring, redesigning, repurposing, and/or retrofitting existing business processes, activities |
+| [Support transition to new roles or exit strategies for incumbents](./SupportTransitionToNewRolesOrExitStrategiesForIncumbents) | 13.4.3.3 | Supporting the transition of personnel to new roles and the dismissal of any existing employees, nec |
+| [Monitor change](./MonitorChange) | 13.4.3.4 | Monitoring activities in the change process in order to assess the performance of individual agents  |
+| [Report on change](./ReportOnChange) | 13.4.3.5 | Reporting on the outcome of the change |
+
+
+## Related Concepts
+
+- [Change](/concepts/Change)
+
+
+---
+
+*Source: APQC PCF 11136 (13.4.3) - APQC*

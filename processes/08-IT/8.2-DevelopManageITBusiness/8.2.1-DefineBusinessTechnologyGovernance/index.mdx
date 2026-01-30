@@ -1,0 +1,113 @@
+---
+id: DefineBusinessTechnologyAndGovernanceStrategy
+name: "Define business technology and governance strategy"
+code: "20653"
+hierarchyId: "8.2.1"
+type: Process
+level: 3
+status: complete
+parent: "8.2"
+children: ["8.2.1.1", "8.2.1.2", "8.2.1.3", "8.2.1.4", "8.2.1.5", "8.2.1.6"]
+---
+
+# Define business technology and governance strategy
+
+> Defining the need of technology in business and systematic implementation of IT investments.
+
+## Overview
+
+Process 8.2.1 is a core process that defines the specific procedures for define business technology and governance strategy. 
+
+Defining the need of technology in business and systematic implementation of IT investments. It comprises of assessing competitive technology components to ensure structural analysis, development, usage and security of technology for efficient business operations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_2["8.2 Develop and manage IT business strategy"]
+    N8_2 --> N8_2_1["8.2.1 Define business technology and govern..."]
+    style N8_2_1 fill:#e1f5fe
+    N8_2_1 --> N8_2_1_1["8.2.1.1 Build and maintain IT strategic ..."]
+    N8_2_1 --> N8_2_1_2["8.2.1.2 Monitor and map current and emer..."]
+    N8_2_1 --> N8_2_1_3["8.2.1.3 Define and communicate digital t..."]
+    N8_2_1 --> N8_2_1_4["8.2.1.4 Develop IT strategic alignment"]
+    N8_2_1 --> N8_2_1_5["8.2.1.5 Articulate IT alignment principles"]
+    N8_2_1 --> N8_2_1_6["8.2.1.6 Maintain IT strategic alignment"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20653 |
+| Hierarchy ID | 8.2.1 |
+| Level | Process |
+| Parent | [8.2](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.BusinessTechnologyAndGovernanceStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `business technology and governance strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define business technology and governance strategy"]
+        S1["Build and maintain IT strat..."]
+        S2["Monitor and map current and..."]
+        S3["Define and communicate digi..."]
+        S4["Develop IT strategic alignment"]
+        S5["Articulate IT alignment pri..."]
+        S6["Maintain IT strategic align..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Build and maintain IT strategic intelligence](./BuildAndMaintainITStrategicIntelligence) | 8.2.1.1 | Building and maintaining intelligence towards changing organizational goals, supporting management,  |
+| [Monitor and map current and emerging technologies](./MonitorAndMapCurrentAndEmergingTechnologies) | 8.2.1.2 | Monitoring and evaluating existing and forthcoming technologies to meet the current and future growt |
+| [Define and communicate digital transformation strategy](./DefineAndCommunicateDigitalTransformationStrategy) | 8.2.1.3 | Defining the integration of digital technology into business operations and service delivery, and co |
+| [Develop IT strategic alignment](./DevelopITStrategicAlignment) | 8.2.1.4 | Developing the process of aligning the organization's business divisions and staff members with the  |
+| [Articulate IT alignment principles](./ArticulateITAlignmentPrinciples) | 8.2.1.5 | Systematic approach to clearly communicate and operate the usage of information technology as it rel |
+| [Maintain IT strategic alignment](./MaintainITStrategicAlignment) | 8.2.1.6 | Maintaining alignment of the organization's business divisions and staff members with the organizati |
+
+
+## Related Concepts
+
+- [BusinessTechnologyStrategy](/concepts/BusinessTechnologyStrategy)
+- [GovernanceStrategy](/concepts/GovernanceStrategy)
+
+
+---
+
+*Source: APQC PCF 20653 (8.2.1) - APQC*

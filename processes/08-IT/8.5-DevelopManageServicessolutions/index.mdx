@@ -1,0 +1,110 @@
+---
+id: DevelopAndManageServicessolutions
+name: "Develop and manage services/solutions"
+code: "20784"
+hierarchyId: "8.5"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "8"
+children: ["8.5.1", "8.5.2", "8.5.3", "8.5.4", "8.5.5"]
+---
+
+# Develop and manage services/solutions
+
+> Designing and maintaining the IT services/solutions catalogue.
+
+## Overview
+
+Group 8.5 is a process group within APQC Category 8.0 (Manage Information Technology). 
+
+Designing and maintaining the IT services/solutions catalogue. Evaluate the performance of IT services/solutions. Communicate the results to the management.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_5["8.5 Develop and manage services/solutions"]
+    style N8_5 fill:#e1f5fe
+    N8_5 --> N8_5_1["8.5.1 Develop service/solution and int..."]
+    N8_5 --> N8_5_2["8.5.2 Manage service/solution lifecycl..."]
+    N8_5 --> N8_5_3["8.5.3 Develop and manage service/solut..."]
+    N8_5 --> N8_5_4["8.5.4 Execute IT service/solution crea..."]
+    N8_5 --> N8_5_5["8.5.5 Perform service/solution mainten..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20784 |
+| Hierarchy ID | 8.5 |
+| Level | Group |
+| Parent | [8](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageServicessolutions
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage services/solutions` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage services/solutions"]
+        S1["Develop service/solution an..."]
+        S2["Manage service/solution lif..."]
+        S3["Develop and manage service/..."]
+        S4["Execute IT service/solution..."]
+        S5["Perform service/solution ma..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop service/solution and integration strategy](./8.5.1-DevelopServicesolutionIntegrationStrategy/) | 8.5.1 | Developing service/solution along with creating a strategy that provides a base for delivering servi |
+| [Manage service/solution lifecycle planning](./8.5.2-ManageServicesolutionLifecyclePlanning/) | 8.5.2 | Executing life-cycle planning for IT services and solutions |
+| [Develop and manage service/solution architecture](./8.5.3-DevelopManageServicesolutionArchitecture/) | 8.5.3 | Creating the architecture for the IT services and solutions |
+| [Execute IT service/solution creation and testing](./8.5.4-ExecuteITServicesolutionCreation/) | 8.5.4 | Understanding customer requirements |
+| [Perform service/solution maintenance and testing](./8.5.5-PerformServicesolutionMaintenanceTesting/) | 8.5.5 | Engaging in all aspects of service/solution maintenance and testing includes all preventative, routi |
+
+
+## Related Concepts
+
+- [Services](/concepts/Services)
+- [Solutions](/concepts/Solutions)
+- [Services](/concepts/Services)
+- [Solutions](/concepts/Solutions)
+
+
+---
+
+*Source: APQC PCF 20784 (8.5) - APQC*

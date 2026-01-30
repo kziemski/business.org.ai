@@ -1,0 +1,114 @@
+---
+id: ManageAssetMaintenance
+name: "Manage asset maintenance"
+code: "19245"
+hierarchyId: "10.3.2"
+type: Process
+level: 3
+status: complete
+parent: "10.3"
+children: ["10.3.2.1", "10.3.2.2", "10.3.2.3", "10.3.2.4", "10.3.2.5", "10.3.2.6", "10.3.2.7"]
+---
+
+# Manage asset maintenance
+
+> Ensuring that asset maintenance is conducted in a timely manner and successfully.
+
+## Overview
+
+Process 10.3.2 is a core process that defines the specific procedures for manage asset maintenance. 
+
+Ensuring that asset maintenance is conducted in a timely manner and successfully. Schedule work with the required resources with an eye on quality control and safety. Verify that contracted maintenance meets performance targets.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_3["10.3 Maintain assets"]
+    N10_3 --> N10_3_2["10.3.2 Manage asset maintenance"]
+    style N10_3_2 fill:#e1f5fe
+    N10_3_2 --> N10_3_2_1["10.3.2.1 Schedule maintenance work"]
+    N10_3_2 --> N10_3_2_2["10.3.2.2 Obtain required resources"]
+    N10_3_2 --> N10_3_2_3["10.3.2.3 Undertake quality control"]
+    N10_3_2 --> N10_3_2_4["10.3.2.4 Update work and asset records"]
+    N10_3_2 --> N10_3_2_5["10.3.2.5 Manage maintenance work safety"]
+    N10_3_2 --> N10_3_2_6["10.3.2.6 Define maintenance performance t..."]
+    N10_3_2 --> N10_3_2_7["10.3.2.7 Monitor maintenance performance ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19245 |
+| Hierarchy ID | 10.3.2 |
+| Level | Process |
+| Parent | [10.3](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.AssetMaintenance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `asset maintenance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage asset maintenance"]
+        S1["Schedule maintenance work"]
+        S2["Obtain required resources"]
+        S3["Undertake quality control"]
+        S4["Update work and asset records"]
+        S5["Manage maintenance work safety"]
+        S6["Define maintenance performa..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Schedule maintenance work](./ScheduleMaintenanceWork) | 10.3.2.1 | Defining a timetable for which to execute the maintenance of the asset |
+| [Obtain required resources](./ObtainRequiredResources) | 10.3.2.2 | Gathering resources needed to complete all maintenance work |
+| [Undertake quality control](./UndertakeQualityControl) | 10.3.2.3 | Implementing a checks and balances system to verify that the maintenance was performed correctly |
+| [Update work and asset records](./UpdateWorkAndAssetRecords) | 10.3.2.4 | Modifying existing maintenance records to include all new work that has been performed, what assets  |
+| [Manage maintenance work safety](./ManageMaintenanceWorkSafety) | 10.3.2.5 | Assuring that all safety laws and regulations are being implemented and followed |
+| [Define maintenance performance targets](./DefineMaintenancePerformanceTargets) | 10.3.2.6 | Outlining what should be achieved through predictive indicators with regard to performing maintenanc |
+| [Monitor maintenance performance against targets/contracts](./MonitorMaintenancePerformanceAgainstTargetscontracts) | 10.3.2.7 | Following set performance targets, monitor and gage the success of the organization in meeting those |
+
+
+## Related Concepts
+
+- [AssetMaintenance](/concepts/AssetMaintenance)
+
+
+---
+
+*Source: APQC PCF 19245 (10.3.2) - APQC*

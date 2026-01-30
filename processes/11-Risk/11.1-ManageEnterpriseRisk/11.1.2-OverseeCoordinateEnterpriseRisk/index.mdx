@@ -1,0 +1,119 @@
+---
+id: OverseeAndCoordinateEnterpriseRiskManagementActivities
+name: "Oversee and coordinate enterprise risk management activities"
+code: "16445"
+hierarchyId: "11.1.2"
+type: Process
+level: 3
+status: complete
+parent: "11.1"
+children: ["11.1.2.1", "11.1.2.2", "11.1.2.3", "11.1.2.4", "11.1.2.5", "11.1.2.6", "11.1.2.7", "11.1.2.8", "11.1.2.9"]
+---
+
+# Oversee and coordinate enterprise risk management activities
+
+> Coordinating to plan, organize, lead, and control the activities of an organization in order to minimize the special effects of risk on capital and earnings.
+
+## Overview
+
+Process 11.1.2 is a core process that defines the specific procedures for oversee and coordinate enterprise risk management activities. 
+
+Coordinating to plan, organize, lead, and control the activities of an organization in order to minimize the special effects of risk on capital and earnings.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk, Compliance, Remediation, Resiliency"]
+    C11 --> N11_1["11.1 Manage enterprise risk"]
+    N11_1 --> N11_1_2["11.1.2 Oversee and coordinate enterprise ris..."]
+    style N11_1_2 fill:#e1f5fe
+    N11_1_2 --> N11_1_2_1["11.1.2.1 Identify enterprise level risks"]
+    N11_1_2 --> N11_1_2_2["11.1.2.2 Assess risks to determine which ..."]
+    N11_1_2 --> N11_1_2_3["11.1.2.3 Develop risk mitigation and mana..."]
+    N11_1_2 --> N11_1_2_4["11.1.2.4 Verify business unit and functio..."]
+    N11_1_2 --> N11_1_2_5["11.1.2.5 Ensure risks and risk mitigation..."]
+    N11_1_2 --> N11_1_2_6["11.1.2.6 Report on enterprise risk activi..."]
+    N11_1_2 --> N11_1_2_7["11.1.2.7 Coordinate business unit and fun..."]
+    N11_1_2 --> N11_1_2_8["11.1.2.8 Ensure that each business unit/f..."]
+    N11_1_2 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16445 |
+| Hierarchy ID | 11.1.2 |
+| Level | Process |
+| Parent | [11.1](../) |
+| Sub-Processes | 9 |
+
+
+## GraphDL Semantic Structure
+
+```
+oversee.AndCoordinateEnterpriseRiskManagementActivities
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `oversee` | Primary action |
+| Object | `and coordinate enterprise risk management activities` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Oversee and coordinate enterprise risk management activities"]
+        S1["Identify enterprise level r..."]
+        S2["Assess risks to determine w..."]
+        S3["Develop risk mitigation and..."]
+        S4["Verify business unit and fu..."]
+        S5["Ensure risks and risk mitig..."]
+        S6["Report on enterprise risk a..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify enterprise level risks](./IdentifyEnterpriseLevelRisks) | 11.1.2.1 | Determining risks that could thwart objectives |
+| [Assess risks to determine which to mitigate](./AssessRisksToDetermineWhichToMitigate) | 11.1.2.2 | Identifying options/actions to enhance opportunities and reduce threats |
+| [Develop risk mitigation and management strategy and integrate with existing performance management processes](./DevelopRiskMitigationAndManagementStrategyAndIntegrateWithExistingPerformanceManagementProcesses) | 11.1.2.3 | Developing activities to improve opportunities and lessen threats |
+| [Verify business unit and functional risk mitigation plans are implemented](./VerifyBusinessUnitAndFunctionalRiskMitigationPlansAreImplemented) | 11.1.2.4 | Checking that the blueprint created for managing risk in individual business units and divisions is  |
+| [Ensure risks and risk mitigation actions are monitored](./EnsureRisksAndRiskMitigationActionsAreMonitored) | 11.1.2.5 | Ensuring risk monitoring and mitigation activities |
+| [Report on enterprise risk activities](./ReportOnEnterpriseRiskActivities) | 11.1.2.6 | Creating a report of activities to address hazard risks, liability torts, financial risks, operation |
+| [Coordinate business unit and functional risk management activities](./CoordinateBusinessUnitAndFunctionalRiskManagementActivities) | 11.1.2.7 | Coordinating risk management activities to improve opportunities and lessen threats |
+| [Ensure that each business unit/function follows the enterprise risk management process](./EnsureThatEachBusinessUnitfunctionFollowsTheEnterpriseRiskManagementProcess) | 11.1.2.8 | Checking each business unit's/function's options and activities to improve opportunities and lessen  |
+| [Ensure that each business unit/function follows the enterprise risk reporting process](./EnsureThatEachBusinessUnitfunctionFollowsTheEnterpriseRiskReportingProcess) | 11.1.2.9 | Checking the reporting process of each business unit's/function's options and activities to improve  |
+
+
+## Related Concepts
+
+- [EnterpriseRiskManagementActivities](/concepts/EnterpriseRiskManagementActivities)
+- [EnterpriseRiskManagementActivities](/concepts/EnterpriseRiskManagementActivities)
+
+
+---
+
+*Source: APQC PCF 16445 (11.1.2) - APQC*

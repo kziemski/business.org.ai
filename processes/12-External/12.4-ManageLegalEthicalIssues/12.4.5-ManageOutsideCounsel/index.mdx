@@ -1,0 +1,112 @@
+---
+id: ManageOutsideCounsel
+name: "Manage outside counsel"
+code: "11048"
+hierarchyId: "12.4.5"
+type: Process
+level: 3
+status: complete
+parent: "12.4"
+children: ["12.4.5.1", "12.4.5.2", "12.4.5.3", "12.4.5.4", "12.4.5.5", "12.4.5.6"]
+---
+
+# Manage outside counsel
+
+> Managing professionals, sought externally for assistance over legal and ethical concerns.
+
+## Overview
+
+Process 12.4.5 is a core process that defines the specific procedures for manage outside counsel. 
+
+Managing professionals, sought externally for assistance over legal and ethical concerns. Administer and oversee assistance from subject matter experts and professionals for sourcing expert opinion and counseling over legal and ethical matters.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_4["12.4 Manage legal and ethical issues"]
+    N12_4 --> N12_4_5["12.4.5 Manage outside counsel"]
+    style N12_4_5 fill:#e1f5fe
+    N12_4_5 --> N12_4_5_1["12.4.5.1 Assess problem and determine wor..."]
+    N12_4_5 --> N12_4_5_2["12.4.5.2 Engage/Retain outside counsel if..."]
+    N12_4_5 --> N12_4_5_3["12.4.5.3 Receive strategy/budget"]
+    N12_4_5 --> N12_4_5_4["12.4.5.4 Receive work product and manage/..."]
+    N12_4_5 --> N12_4_5_5["12.4.5.5 Process payment for legal services"]
+    N12_4_5 --> N12_4_5_6["12.4.5.6 Track legal activity/performance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11048 |
+| Hierarchy ID | 12.4.5 |
+| Level | Process |
+| Parent | [12.4](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.OutsideCounsel
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `outside counsel` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage outside counsel"]
+        S1["Assess problem and determin..."]
+        S2["Engage/Retain outside couns..."]
+        S3["Receive strategy/budget"]
+        S4["Receive work product and ma..."]
+        S5["Process payment for legal s..."]
+        S6["Track legal activity/perfor..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess problem and determine work requirements](./AssessProblemAndDetermineWorkRequirements) | 12.4.5.1 | Examining the problems and deciding the action requirements for engaging outside counsel |
+| [Engage/Retain outside counsel if necessary](./EngageRetainOutsideCounselIfNecessary) | 12.4.5.2 | Recruiting the assistance of outside counsel for any legal and/or ethical concerns |
+| [Receive strategy/budget](./ReceiveStrategybudget) | 12.4.5.3 | Making a financial plan |
+| [Receive work product and manage/monitor case and work performed](./ReceiveWorkProductAndManagemonitorCaseAndWorkPerformed) | 12.4.5.4 | Receiving deliverables from outside counsel, and monitoring the efforts committed by them |
+| [Process payment for legal services](./ProcessPaymentForLegalServices) | 12.4.5.5 | Making payments to legal advisers for their services |
+| [Track legal activity/performance](./TrackLegalActivityperformance) | 12.4.5.6 | Keeping track of the legal activities and performance of the organization |
+
+
+## Related Concepts
+
+- [Counsel](/concepts/Counsel)
+
+
+---
+
+*Source: APQC PCF 11048 (12.4.5) - APQC*

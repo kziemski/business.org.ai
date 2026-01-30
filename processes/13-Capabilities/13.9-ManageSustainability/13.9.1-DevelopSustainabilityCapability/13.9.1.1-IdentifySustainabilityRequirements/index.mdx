@@ -1,0 +1,101 @@
+---
+id: IdentifySustainabilityRequirements
+name: "Identify sustainability requirements"
+code: "21590"
+hierarchyId: "13.9.1.1"
+type: Activity
+level: 4
+status: complete
+parent: "13.9.1"
+children: ["13.9.1.1.1", "13.9.1.1.2", "13.9.1.1.3"]
+---
+
+# Identify sustainability requirements
+
+> Identifying, documenting, and communicating sustainability requirements.
+
+## Overview
+
+Activity 13.9.1.1 is an activity within the Develop and Manage Business Capabilities framework. 
+
+Identifying, documenting, and communicating sustainability requirements. Closely examine all standards and matters of compliance relating to ESG. Determine protocols or standards to comply with, set by regulatory agencies or the organizations stakeholders.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_9["13.9 Manage sustainability"]
+    N13_9 --> N13_9_1["13.9.1 Develop sustainability capability"]
+    N13_9_1 --> N13_9_1_1["13.9.1.1 Identify sustainability requirements"]
+    style N13_9_1_1 fill:#e1f5fe
+    N13_9_1_1 --> N13_9_1_1_1["13.9.1.1.1 Define sustainability disclosure..."]
+    N13_9_1_1 --> N13_9_1_1_2["13.9.1.1.2 Define sustainability governance..."]
+    N13_9_1_1 --> N13_9_1_1_3["13.9.1.1.3 Define sustainability functional..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21590 |
+| Hierarchy ID | 13.9.1.1 |
+| Level | Activity |
+| Parent | [13.9.1](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+identify.SustainabilityRequirements
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `identify` | Primary action |
+| Object | `sustainability requirements` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Identify sustainability requirements"]
+        S1["Define sustainability discl..."]
+        S2["Define sustainability gover..."]
+        S3["Define sustainability funct..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define sustainability disclosure requirements](./DefineSustainabilityDisclosureRequirements) | 13.9.1.1.1 | Defining and communicating sustainability disclosure requirements |
+| [Define sustainability governance requirements](./DefineSustainabilityGovernanceRequirements) | 13.9.1.1.2 | Defining governance requirements for sustainability |
+| [Define sustainability functional and performance requirements](./DefineSustainabilityFunctionalAndPerformanceRequirements) | 13.9.1.1.3 | Defining functional and performance requirements for sustainability |
+
+
+## Related Concepts
+
+- [SustainabilityRequirements](/concepts/SustainabilityRequirements)
+
+
+---
+
+*Source: APQC PCF 21590 (13.9.1.1) - APQC*

@@ -1,0 +1,111 @@
+---
+id: ManageRemediationEfforts
+name: "Manage remediation efforts"
+code: "11185"
+hierarchyId: "11.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "11"
+children: ["11.3.1", "11.3.2", "11.3.3", "11.3.4", "11.3.5", "11.3.6"]
+---
+
+# Manage remediation efforts
+
+> Administering the efforts and activities for remediation.
+
+## Overview
+
+Group 11.3 is a process group within APQC Category 11.0 (Manage Enterprise Risk, Compliance, Remediation, Resiliency). 
+
+Administering the efforts and activities for remediation. This process element requires the organization to create plans for corrective action in collaboration with government agencies and pertinent professional services agencies which specialize in remediation efforts relevant to the organization's operations. Additionally, the organization needs to consult experts to validate the plan, determine resources allocation, resolve any legal concerns, and formulate a company-wide policy for remediation.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk, Compliance, Remediation, Resiliency"]
+    C11 --> N11_3["11.3 Manage remediation efforts"]
+    style N11_3 fill:#e1f5fe
+    N11_3 --> N11_3_1["11.3.1 Create remediation plans"]
+    N11_3 --> N11_3_2["11.3.2 Contact and confer with experts"]
+    N11_3 --> N11_3_3["11.3.3 Identify/dedicate resources"]
+    N11_3 --> N11_3_4["11.3.4 Investigate legal aspects"]
+    N11_3 --> N11_3_5["11.3.5 Investigate damage cause"]
+    N11_3 --> N11_3_6["11.3.6 Amend or create policy"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11185 |
+| Hierarchy ID | 11.3 |
+| Level | Group |
+| Parent | [11](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.RemediationEfforts
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `remediation efforts` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage remediation efforts"]
+        S1["Create remediation plans"]
+        S2["Contact and confer with exp..."]
+        S3["Identify/dedicate resources"]
+        S4["Investigate legal aspects"]
+        S5["Investigate damage cause"]
+        S6["Amend or create policy"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create remediation plans](./CreateRemediationPlans) | 11.3.1 | Creating plans for remediation efforts |
+| [Contact and confer with experts](./ContactAndConferWithExperts) | 11.3.2 | Discussing and soliciting advice from experts for in order to incorporate their suggestion (regardin |
+| [Identify/dedicate resources](./IdentifydedicateResources) | 11.3.3 | Identifying and dedicating the resources for managing remediation efforts |
+| [Investigate legal aspects](./InvestigateLegalAspects) | 11.3.4 | Examining regulatory and legislative frameworks |
+| [Investigate damage cause](./InvestigateDamageCause) | 11.3.5 | Studying the causes of damage, which could be environmental, physical, social, etc |
+| [Amend or create policy](./AmendOrCreatePolicy) | 11.3.6 | Crafting a new framework of policies and procedures for deploying remediation efforts, or change exi |
+
+
+## Related Concepts
+
+- [RemediationEfforts](/concepts/RemediationEfforts)
+
+
+---
+
+*Source: APQC PCF 11185 (11.3) - APQC*

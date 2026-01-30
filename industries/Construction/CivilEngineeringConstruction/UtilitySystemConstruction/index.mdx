@@ -1,0 +1,113 @@
+---
+id: UtilitySystemConstruction
+name: "Utility System Construction"
+code: "2371"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Utility System Construction
+
+> This industry group comprises establishments primarily engaged in the construction of distribution lines and related buildings and structures for utilities (i.
+
+## Overview
+
+Utility System Construction represents an important category within the Construction sector (NAICS 23). This industry group encompasses establishments primarily engaged in utility system construction.
+
+This industry group comprises establishments primarily engaged in the construction of distribution lines and related buildings and structures for utilities (i.e., water, sewer, petroleum, gas, power, and communication). All structures (including buildings) that are integral parts of utility systems (e.g., storage tanks, pumping stations, power plants, and refineries) are included in this industry group.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S23["23: Construction"]
+    S23 --> N237["237: Civil Engineering Construction"]
+    N237 --> N2371["2371: Utility System Construction"]
+    style N2371 fill:#f96,stroke:#333,stroke-width:2px
+    N2371 --> N23711["23711: Related Structures Construction"]
+    N2371 --> N23712["23712: Gas Pipeline"]
+    N2371 --> N23713["23713: Communication Line"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 2371 |
+| Level | Industry Group |
+| Parent | [Civil Engineering Construction](../) |
+| Child Industries | 3 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Related Structures Construction](./RelatedStructuresConstruction/) | 23711 | See industry description for 237110 |
+| [Gas Pipeline](./GasPipeline/) | 23712 | See industry description for 237120 |
+| [Communication Line](./CommunicationLine/) | 23713 | See industry description for 237130 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Design/Planning"]
+        O2["Site Preparation"]
+        O3["Construction"]
+        O4["Inspection"]
+        O5["Completion"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Project Management"]
+        S2["Safety Systems"]
+        S3["Procurement"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Materials"]
+        I2["Equipment"]
+        I3["Labor"]
+        I4["Plans"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Buildings"]
+        O2["Infrastructure"]
+        O3["Renovations"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Property Owners"]
+        C2["Government"]
+        C3["Developers"]
+        C4["Businesses"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 2371 - Utility System Construction*

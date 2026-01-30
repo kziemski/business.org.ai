@@ -1,0 +1,99 @@
+---
+id: ManageInternalControls
+name: "Manage internal controls"
+code: "10735"
+hierarchyId: "9.8"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.8.1", "9.8.2", "9.8.3"]
+---
+
+# Manage internal controls
+
+> Administering internal controls.
+
+## Overview
+
+Group 9.8 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Administering internal controls. This process requires the organization to manage entity's board of trustees, management, and other personnel in order to offer judicious assurance about the achievement of effectiveness, proficiency of operations, and reliability of financial reporting.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_8["9.8 Manage internal controls"]
+    style N9_8 fill:#e1f5fe
+    N9_8 --> N9_8_1["9.8.1 Establish internal controls, pol..."]
+    N9_8 --> N9_8_2["9.8.2 Operate controls and monitor com..."]
+    N9_8 --> N9_8_3["9.8.3 Report on internal controls comp..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10735 |
+| Hierarchy ID | 9.8 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.InternalControls
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `internal controls` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage internal controls"]
+        S1["Establish internal controls..."]
+        S2["Operate controls and monito..."]
+        S3["Report on internal controls..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish internal controls, policies, and procedures](./9.8.1-EstablishInternalControlsPolicies/) | 9.8.1 | Forming rules and regulations to ensure the achievement of effectiveness, proficiency of operations, |
+| [Operate controls and monitor compliance with internal controls policies and procedures](./9.8.2-OperateControlsMonitorCompliance/) | 9.8.2 | Performing planning, management, operations, and monitoring of internal control mechanism policies a |
+| [Report on internal controls compliance](./9.8.3-ReportInternalControlsCompliance/) | 9.8.3 | Reporting on internal controls compliance to the appropriate authority, including IT regulations and |
+
+
+## Related Concepts
+
+- [InternalControls](/concepts/InternalControls)
+
+
+---
+
+*Source: APQC PCF 10735 (9.8) - APQC*

@@ -1,0 +1,109 @@
+---
+id: GenerateNewProductserviceConcepts
+name: "Generate new product/service concepts"
+code: "19669"
+hierarchyId: "2.2.2"
+type: Process
+level: 3
+status: complete
+parent: "2.2"
+children: ["2.2.2.1", "2.2.2.2", "2.2.2.3", "2.2.2.4", "2.2.2.5"]
+---
+
+# Generate new product/service concepts
+
+> Producing and defining ideologies for new product/service offerings.
+
+## Overview
+
+Process 2.2.2 is a core process that defines the specific procedures for generate new product/service concepts. 
+
+Producing and defining ideologies for new product/service offerings.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_2["2.2 Generate and define new product/servi..."]
+    N2_2 --> N2_2_2["2.2.2 Generate new product/service concepts"]
+    style N2_2_2 fill:#e1f5fe
+    N2_2_2 --> N2_2_2_1["2.2.2.1 Gather new product/service ideas..."]
+    N2_2_2 --> N2_2_2_2["2.2.2.2 Analyze new product/service idea..."]
+    N2_2_2 --> N2_2_2_3["2.2.2.3 Evaluate new product/service inp..."]
+    N2_2_2 --> N2_2_2_4["2.2.2.4 Formulate new product/service co..."]
+    N2_2_2 --> N2_2_2_5["2.2.2.5 Identify potential improvements ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19669 |
+| Hierarchy ID | 2.2.2 |
+| Level | Process |
+| Parent | [2.2](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+generate.NewProductserviceConcepts
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `generate` | Primary action |
+| Object | `new product/service concepts` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Generate new product/service concepts"]
+        S1["Gather new product/service ..."]
+        S2["Analyze new product/service..."]
+        S3["Evaluate new product/servic..."]
+        S4["Formulate new product/servi..."]
+        S5["Identify potential improvem..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Gather new product/service ideas and requirements](./GatherNewProductserviceIdeasAndRequirements) | 2.2.2.1 | Collecting necessary items, documents, regulatory requirements, etc |
+| [Analyze new product/service ideas and requirements](./AnalyzeNewProductserviceIdeasAndRequirements) | 2.2.2.2 | Assessing and reviewing the concepts and requirements of Generate and define new product/service ide |
+| [Evaluate new product/service inputs and requirements](./EvaluateNewProductserviceInputsAndRequirements) | 2.2.2.3 | Assessing and reviewing the required inputs and necessary elements such as automation, technology, h |
+| [Formulate new product/service concepts](./FormulateNewProductserviceConcepts) | 2.2.2.4 | Devising ideas and elements necessary for thoughts on new product/service development |
+| [Identify potential improvements to existing products and services](./IdentifyPotentialImprovementsToExistingProductsAndServices) | 2.2.2.5 | Defining potential enhancements to current products/services in order to take advantage of a shift i |
+
+
+## Related Concepts
+
+- [NewProductConcepts](/concepts/NewProductConcepts)
+- [NewServiceConcepts](/concepts/NewServiceConcepts)
+
+
+---
+
+*Source: APQC PCF 19669 (2.2.2) - APQC*

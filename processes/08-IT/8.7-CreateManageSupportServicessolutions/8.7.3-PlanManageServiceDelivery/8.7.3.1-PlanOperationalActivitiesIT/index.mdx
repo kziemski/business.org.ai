@@ -1,0 +1,116 @@
+---
+id: PlanOperationalActivitiesForItServiceDelivery
+name: "Plan operational activities for IT service delivery"
+code: "20881"
+hierarchyId: "8.7.3.1"
+type: Activity
+level: 4
+status: complete
+parent: "8.7.3"
+children: ["8.7.3.1.1", "8.7.3.1.2", "8.7.3.1.3", "8.7.3.1.4", "8.7.3.1.5", "8.7.3.1.6"]
+---
+
+# Plan operational activities for IT service delivery
+
+> Planning different delivery services for operational activities within the IT function.
+
+## Overview
+
+Activity 8.7.3.1 is an activity within the Manage Information Technology framework. 
+
+Planning different delivery services for operational activities within the IT function. Use service delivery systems to manage the IT service delivery services.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_3["8.7.3 Plan and manage service delivery control"]
+    N8_7_3 --> N8_7_3_1["8.7.3.1 Plan operational activities for IT se..."]
+    style N8_7_3_1 fill:#e1f5fe
+    N8_7_3_1 --> N8_7_3_1_1["8.7.3.1.1 Schedule service delivery resources"]
+    N8_7_3_1 --> N8_7_3_1_2["8.7.3.1.2 Maintain/optimize batch job sche..."]
+    N8_7_3_1 --> N8_7_3_1_3["8.7.3.1.3 Schedule change/release windows"]
+    N8_7_3_1 --> N8_7_3_1_4["8.7.3.1.4 Schedule/optimize backup and arc..."]
+    N8_7_3_1 --> N8_7_3_1_5["8.7.3.1.5 Balance operational workloads ac..."]
+    N8_7_3_1 --> N8_7_3_1_6["8.7.3.1.6 Determine specific problem suppo..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20881 |
+| Hierarchy ID | 8.7.3.1 |
+| Level | Activity |
+| Parent | [8.7.3](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.OperationalActivities.for.ITServiceDelivery
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `operational activities` | Direct object |
+| Preposition | `for` | Relationship |
+| PrepObject | `IT service delivery` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan operational activities for IT service delivery"]
+        S1["Schedule service delivery r..."]
+        S2["Maintain/optimize batch job..."]
+        S3["Schedule change/release win..."]
+        S4["Schedule/optimize backup an..."]
+        S5["Balance operational workloa..."]
+        S6["Determine specific problem ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Schedule service delivery resources](./ScheduleServiceDeliveryResources) | 8.7.3.1.1 | Scheduling resources to provide service delivery to IT users |
+| [Maintain/optimize batch job schedule](./MaintainoptimizeBatchJobSchedule) | 8.7.3.1.2 | Maintaining and scheduling batch jobs to run in the background at a certain date and time |
+| [Schedule change/release windows](./ScheduleChangereleaseWindows) | 8.7.3.1.3 | Determine the timely change or release of IT services or support |
+| [Schedule/optimize backup and archive activities](./ScheduleoptimizeBackupAndArchiveActivities) | 8.7.3.1.4 | Schedule or optimize backup and archive activities for IT services and solutions |
+| [Balance operational workloads across available infrastructure components](./BalanceOperationalWorkloadsAcrossAvailableInfrastructureComponents) | 8.7.3.1.5 | Balancing workloads of all the processes and services that are provisioned to their internal or exte |
+| [Determine specific problem support procedures](./DetermineSpecificProblemSupportProcedures) | 8.7.3.1.6 | Determining process and procedure to provide support for specific IT service problems |
+
+
+## Related Concepts
+
+- [OperationalActivities](/concepts/OperationalActivities)
+- [ITServiceDelivery](/concepts/ITServiceDelivery)
+
+
+---
+
+*Source: APQC PCF 20881 (8.7.3.1) - APQC*

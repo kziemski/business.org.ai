@@ -1,0 +1,101 @@
+---
+id: ManageEmployeePerformance
+name: "Manage employee performance"
+code: "10470"
+hierarchyId: "7.3.2"
+type: Process
+level: 3
+status: complete
+parent: "7.3"
+children: ["7.3.2.1", "7.3.2.2", "7.3.2.4"]
+---
+
+# Manage employee performance
+
+> Defining individual performance objectives.
+
+## Overview
+
+Process 7.3.2 is a core process that defines the specific procedures for manage employee performance. 
+
+Defining individual performance objectives. Review performance in order to provide appraisals. Evaluate the efficiency and effectiveness of the current performance program. Update it regularly.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    N7_3 --> N7_3_2["7.3.2 Manage employee performance"]
+    style N7_3_2 fill:#e1f5fe
+    N7_3_2 --> N7_3_2_1["7.3.2.1 Define employee performance obje..."]
+    N7_3_2 --> N7_3_2_2["7.3.2.2 Review employee performance"]
+    N7_3_2 --> N7_3_2_4["7.3.2.4 Evaluate and review performance ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10470 |
+| Hierarchy ID | 7.3.2 |
+| Level | Process |
+| Parent | [7.3](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EmployeePerformance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `employee performance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage employee performance"]
+        S1["Define employee performance..."]
+        S2["Review employee performance"]
+        S3["Evaluate and review perform..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define employee performance objectives](./DefineEmployeePerformanceObjectives) | 7.3.2.1 | Outlining the objectives for employee performance |
+| [Review employee performance](./ReviewEmployeePerformance) | 7.3.2.2 | Execution of employee reviews/performance on a frequent basis |
+| [Evaluate and review performance program](./EvaluateAndReviewPerformanceProgram) | 7.3.2.4 | Assessing and revamping performance programs, including the instruments used to measure employee per |
+
+
+## Related Concepts
+
+- [EmployeePerformance](/concepts/EmployeePerformance)
+- [EmployeePerformance](/concepts/EmployeePerformance)
+
+
+---
+
+*Source: APQC PCF 10470 (7.3.2) - APQC*

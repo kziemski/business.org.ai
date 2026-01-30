@@ -1,0 +1,105 @@
+---
+id: DefineOfferingAndCustomerValueProposition
+name: "Define offering and customer value proposition"
+code: "11168"
+hierarchyId: "3.2.1"
+type: Process
+level: 3
+status: complete
+parent: "3.2"
+children: ["3.2.1.1", "3.2.1.2", "3.2.1.3", "3.2.1.4"]
+---
+
+# Define offering and customer value proposition
+
+> Refining the attributes of organizational offerings to define their value proposition for the customer.
+
+## Overview
+
+Process 3.2.1 is a core process that defines the specific procedures for define offering and customer value proposition. 
+
+Refining the attributes of organizational offerings to define their value proposition for the customer. Clearly define the suite of offerings in terms of the value delivered, from the perspective of what the customer desires. Validate the benefits delivered to the customers against target market segments, using techniques such as minimum viable product. Position brands for the respective products/services, in line with their unique value proposition and aligned with customers needs.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_2["3.2 Develop marketing strategy"]
+    N3_2 --> N3_2_1["3.2.1 Define offering and customer value pr..."]
+    style N3_2_1 fill:#e1f5fe
+    N3_2_1 --> N3_2_1_1["3.2.1.1 Define offering and positioning"]
+    N3_2_1 --> N3_2_1_2["3.2.1.2 Develop value proposition includ..."]
+    N3_2_1 --> N3_2_1_3["3.2.1.3 Validate value proposition with ..."]
+    N3_2_1 --> N3_2_1_4["3.2.1.4 Develop new branding"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11168 |
+| Hierarchy ID | 3.2.1 |
+| Level | Process |
+| Parent | [3.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.OfferingAndCustomerValueProposition
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `offering and customer value proposition` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define offering and customer value proposition"]
+        S1["Define offering and positio..."]
+        S2["Develop value proposition i..."]
+        S3["Validate value proposition ..."]
+        S4["Develop new branding"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define offering and positioning](./DefineOfferingAndPositioning) | 3.2.1.1 | Defining problem(s) that the organization's products/services solve for the customers, thereby deter |
+| [Develop value proposition including brand positioning for target segments](./DevelopValuePropositionIncludingBrandPositioningForTargetSegments) | 3.2.1.2 | Boosting the attractiveness of products/services to the targeted customers, and creating a unique br |
+| [Validate value proposition with target segments](./ValidateValuePropositionWithTargetSegments) | 3.2.1.3 | Validating the desirability of the perceived value delivered by the organization's offerings, to the |
+| [Develop new branding](./DevelopNewBranding) | 3.2.1.4 | Creating branding collaterals and campaigns that carve a significant and differentiated presence for |
+
+
+## Related Concepts
+
+- [OfferingValueProposition](/concepts/OfferingValueProposition)
+- [CustomerValueProposition](/concepts/CustomerValueProposition)
+
+
+---
+
+*Source: APQC PCF 11168 (3.2.1) - APQC*

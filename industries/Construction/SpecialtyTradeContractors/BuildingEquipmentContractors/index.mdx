@@ -1,0 +1,111 @@
+---
+id: BuildingEquipmentContractors
+name: "Building Equipment Contractors"
+code: "2382"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Building Equipment Contractors
+
+> This industry group comprises establishments primarily engaged in installing or servicing equipment that forms part of a building mechanical system (e.
+
+## Overview
+
+Building Equipment Contractors represents an important category within the Construction sector (NAICS 23). This industry group encompasses establishments primarily engaged in building equipment contractors.
+
+This industry group comprises establishments primarily engaged in installing or servicing equipment that forms part of a building mechanical system (e.g., electricity, water, heating, and cooling). The work performed may include new work, additions, alterations, maintenance, and repairs. Contractors installing specialized building equipment, such as elevators, escalators, service station equipment, and central vacuum cleaning systems, are also included.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S23["23: Construction"]
+    S23 --> N238["238: Specialty Trade Contractors"]
+    N238 --> N2382["2382: Building Equipment Contractors"]
+    style N2382 fill:#f96,stroke:#333,stroke-width:2px
+    N2382 --> N23821["23821: Wiring Installation Contractors"]
+    N2382 --> N23822["23822: Air-Conditioning Contractors"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 2382 |
+| Level | Industry Group |
+| Parent | [Specialty Trade Contractors](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Wiring Installation Contractors](./WiringInstallationContractors/) | 23821 | See industry description for 238210 |
+| [Air-Conditioning Contractors](./AirconditioningContractors/) | 23822 | See industry description for 238220 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Design/Planning"]
+        O2["Site Preparation"]
+        O3["Construction"]
+        O4["Inspection"]
+        O5["Completion"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Project Management"]
+        S2["Safety Systems"]
+        S3["Procurement"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Materials"]
+        I2["Equipment"]
+        I3["Labor"]
+        I4["Plans"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Buildings"]
+        O2["Infrastructure"]
+        O3["Renovations"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Property Owners"]
+        C2["Government"]
+        C3["Developers"]
+        C4["Businesses"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 2382 - Building Equipment Contractors*

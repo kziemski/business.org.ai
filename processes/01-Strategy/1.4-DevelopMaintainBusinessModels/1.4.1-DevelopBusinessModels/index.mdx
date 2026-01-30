@@ -1,0 +1,104 @@
+---
+id: DevelopBusinessModels
+name: "Develop business models"
+code: "20945"
+hierarchyId: "1.4.1"
+type: Process
+level: 3
+status: complete
+parent: "1.4"
+children: ["1.4.1.1", "1.4.1.2", "1.4.1.3", "1.4.1.4"]
+---
+
+# Develop business models
+
+> Creating an economic model that describes the goals of an organization and the business processes needed to achieve those goals.
+
+## Overview
+
+Process 1.4.1 is a core process that defines the specific procedures for develop business models. 
+
+Creating an economic model that describes the goals of an organization and the business processes needed to achieve those goals. This involves information gathering, securing necessary approvals and authorizations, integrating with preexisting models, including the general business concept [10002] and business strategy [10015], and formally accepting the model as the basis for organization's day-to-day operations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_4["1.4 Develop and maintain business models"]
+    N1_4 --> N1_4_1["1.4.1 Develop business models"]
+    style N1_4_1 fill:#e1f5fe
+    N1_4_1 --> N1_4_1_1["1.4.1.1 Assemble business model information"]
+    N1_4_1 --> N1_4_1_2["1.4.1.2 Secure appropriate approvals"]
+    N1_4_1 --> N1_4_1_3["1.4.1.3 Identify integration points with..."]
+    N1_4_1 --> N1_4_1_4["1.4.1.4 Adopt the business model"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20945 |
+| Hierarchy ID | 1.4.1 |
+| Level | Process |
+| Parent | [1.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.BusinessModels
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `business models` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop business models"]
+        S1["Assemble business model inf..."]
+        S2["Secure appropriate approvals"]
+        S3["Identify integration points..."]
+        S4["Adopt the business model"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assemble business model information](./AssembleBusinessModelInformation) | 1.4.1.1 | Collecting all relevant materials needed to develop the business model, so that it can adequately mo |
+| [Secure appropriate approvals](./SecureAppropriateApprovals) | 1.4.1.2 | Obtaining required permissions, licenses and authorizations that legitimize the business, help to mi |
+| [Identify integration points with existing models](./IdentifyIntegrationPointsWithExistingModels) | 1.4.1.3 | Ensuring coherence with pre-exsiting models to avoid contradictions between models |
+| [Adopt the business model](./AdoptTheBusinessModel) | 1.4.1.4 | Consenting to a particular business model and formally accepting it to serve as the set of guiding p |
+
+
+## Related Concepts
+
+- [BusinessModels](/concepts/BusinessModels)
+
+
+---
+
+*Source: APQC PCF 20945 (1.4.1) - APQC*

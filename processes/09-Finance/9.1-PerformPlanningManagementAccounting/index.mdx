@@ -1,0 +1,104 @@
+---
+id: PerformPlanningAndManagementAccounting
+name: "Perform planning and management accounting"
+code: "10728"
+hierarchyId: "9.1"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "9"
+children: ["9.1.1", "9.1.2", "9.1.3", "9.1.4"]
+---
+
+# Perform planning and management accounting
+
+> Determining different stages of the planning process and accounting.
+
+## Overview
+
+Group 9.1 is a process group within APQC Category 9.0 (Manage Financial Resources). 
+
+Determining different stages of the planning process and accounting. Classify, determine, analyze, interpret, and communicate information to make up-to-date business decisions for better management and control functions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_1["9.1 Perform planning and management accou..."]
+    style N9_1 fill:#e1f5fe
+    N9_1 --> N9_1_1["9.1.1 Perform planning/budgeting/forec..."]
+    N9_1 --> N9_1_2["9.1.2 Perform cost accounting and control"]
+    N9_1 --> N9_1_3["9.1.3 Perform cost management"]
+    N9_1 --> N9_1_4["9.1.4 Evaluate and manage financial pe..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10728 |
+| Hierarchy ID | 9.1 |
+| Level | Group |
+| Parent | [9](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.PlanningAndManagementAccounting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `planning and management accounting` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform planning and management accounting"]
+        S1["Perform planning/budgeting/..."]
+        S2["Perform cost accounting and..."]
+        S3["Perform cost management"]
+        S4["Evaluate and manage financi..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Perform planning/budgeting/forecasting](./9.1.1-PerformPlanningbudgetingforecasting/) | 9.1.1 | Allocating funds to meet future and current financial goals |
+| [Perform cost accounting and control](./9.1.2-PerformCostAccountingControl/) | 9.1.2 | Defining costs to be incurred and methods for optimum utilization |
+| [Perform cost management](./9.1.3-PerformCostManagement/) | 9.1.3 | Deciding which expenses can be avoided to reduce some costs and increase revenues |
+| [Evaluate and manage financial performance](./9.1.4-EvaluateManageFinancialPerformance/) | 9.1.4 | Checking and achieving predetermined financial targets and timelines |
+
+
+## Related Concepts
+
+- [Planning](/concepts/Planning)
+- [ManagementAccounting](/concepts/ManagementAccounting)
+
+
+---
+
+*Source: APQC PCF 10728 (9.1) - APQC*

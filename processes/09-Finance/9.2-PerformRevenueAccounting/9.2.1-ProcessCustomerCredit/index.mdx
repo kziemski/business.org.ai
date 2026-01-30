@@ -1,0 +1,114 @@
+---
+id: ProcessCustomerCredit
+name: "Process customer credit"
+code: "10742"
+hierarchyId: "9.2.1"
+type: Process
+level: 3
+status: complete
+parent: "9.2"
+children: ["9.2.1.1", "9.2.1.2", "9.2.1.3", "9.2.1.4", "9.2.1.5", "9.2.1.6", "9.2.1.7"]
+---
+
+# Process customer credit
+
+> Evaluating and processing requests for advances.
+
+## Overview
+
+Process 9.2.1 is a core process that defines the specific procedures for process customer credit. 
+
+Evaluating and processing requests for advances. Evaluate credit requests by customers requiring loans to buy products/services.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_2["9.2 Perform revenue accounting"]
+    N9_2 --> N9_2_1["9.2.1 Process customer credit"]
+    style N9_2_1 fill:#e1f5fe
+    N9_2_1 --> N9_2_1_1["9.2.1.1 Establish credit policies"]
+    N9_2_1 --> N9_2_1_2["9.2.1.2 Analyze/Approve new account appl..."]
+    N9_2_1 --> N9_2_1_3["9.2.1.3 Analyze credit scoring history"]
+    N9_2_1 --> N9_2_1_4["9.2.1.4 Forecast credit scoring requirement"]
+    N9_2_1 --> N9_2_1_5["9.2.1.5 Review existing accounts"]
+    N9_2_1 --> N9_2_1_6["9.2.1.6 Produce credit/collection reports"]
+    N9_2_1 --> N9_2_1_7["9.2.1.7 Reinstate or suspend accounts ba..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10742 |
+| Hierarchy ID | 9.2.1 |
+| Level | Process |
+| Parent | [9.2](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.CustomerCredit
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `customer credit` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Process customer credit"]
+        S1["Establish credit policies"]
+        S2["Analyze/Approve new account..."]
+        S3["Analyze credit scoring history"]
+        S4["Forecast credit scoring req..."]
+        S5["Review existing accounts"]
+        S6["Produce credit/collection r..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish credit policies](./EstablishCreditPolicies) | 9.2.1.1 | Creating guidelines for providing advances |
+| [Analyze/Approve new account applications](./AnalyzeApproveNewAccountApplications) | 9.2.1.2 | Checking and accepting new requests based on eligibility criteria |
+| [Analyze credit scoring history](./AnalyzeCreditScoringHistory) | 9.2.1.3 | Reviewing past credit scores to determine the if a line of credit will be extended to potential cust |
+| [Forecast credit scoring requirement](./ForecastCreditScoringRequirement) | 9.2.1.4 | Planning credit score requirements based on established credit policies |
+| [Review existing accounts](./ReviewExistingAccounts) | 9.2.1.5 | Evaluating existing account holders and their past performance |
+| [Produce credit/collection reports](./ProduceCreditcollectionReports) | 9.2.1.6 | Preparing account payable reports about payments to be made according to accounting rules and princi |
+| [Reinstate or suspend accounts based on credit policies](./ReinstateOrSuspendAccountsBasedOnCreditPolicies) | 9.2.1.7 | Closing or restarting accounts according to changes made in credit policies |
+
+
+## Related Concepts
+
+- [CustomerCredit](/concepts/CustomerCredit)
+
+
+---
+
+*Source: APQC PCF 10742 (9.2.1) - APQC*

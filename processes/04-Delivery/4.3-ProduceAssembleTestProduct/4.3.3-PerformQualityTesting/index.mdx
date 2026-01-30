@@ -1,0 +1,112 @@
+---
+id: PerformQualityTesting
+name: "Perform quality testing"
+code: "10369"
+hierarchyId: "4.3.3"
+type: Process
+level: 3
+status: complete
+parent: "4.3"
+children: ["4.3.3.1", "4.3.3.2", "4.3.3.3", "4.3.3.4", "4.3.3.5", "4.3.3.6"]
+---
+
+# Perform quality testing
+
+> Executing tests to evaluate the quality of the products manufactured.
+
+## Overview
+
+Process 4.3.3 is a core process that defines the specific procedures for perform quality testing. 
+
+Executing tests to evaluate the quality of the products manufactured. Calibrate the test equipment. Conduct the actual tests. Record the results and outcomes of the quality test conducted.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_3["4.3 Produce/Assemble/Test product"]
+    N4_3 --> N4_3_3["4.3.3 Perform quality testing"]
+    style N4_3_3 fill:#e1f5fe
+    N4_3_3 --> N4_3_3_1["4.3.3.1 Calibrate test equipment"]
+    N4_3_3 --> N4_3_3_2["4.3.3.2 Perform testing using the standa..."]
+    N4_3_3 --> N4_3_3_3["4.3.3.3 Manage quality samples"]
+    N4_3_3 --> N4_3_3_4["4.3.3.4 Record test results"]
+    N4_3_3 --> N4_3_3_5["4.3.3.5 Track and analyze non-conformanc..."]
+    N4_3_3 --> N4_3_3_6["4.3.3.6 Perform root cause analysis"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10369 |
+| Hierarchy ID | 4.3.3 |
+| Level | Process |
+| Parent | [4.3](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.QualityTesting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `quality testing` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform quality testing"]
+        S1["Calibrate test equipment"]
+        S2["Perform testing using the s..."]
+        S3["Manage quality samples"]
+        S4["Record test results"]
+        S5["Track and analyze non-confo..."]
+        S6["Perform root cause analysis"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Calibrate test equipment](./CalibrateTestEquipment) | 4.3.3.1 | Regulating the equipment used for performing quality tests |
+| [Perform testing using the standard testing procedure](./PerformTestingUsingTheStandardTestingProcedure) | 4.3.3.2 | Performing testing using calibrated equipment and in consent with the standard testing procedure, in |
+| [Manage quality samples](./ManageQualitySamples) | 4.3.3.3 | Selecting a set of elements from a product lot to draw conclusions or make inferences about the qual |
+| [Record test results](./RecordTestResults) | 4.3.3.4 | Documenting the results and outcomes of the quality tests |
+| [Track and analyze non-conformance trends](./TrackAndAnalyzeNonconformanceTrends) | 4.3.3.5 | Managing and monitoring the occurrences of problems with a process or product |
+| [Perform root cause analysis](./PerformRootCauseAnalysis) | 4.3.3.6 | Using a technique that helps people answer the question of why a problem occurred in the first place |
+
+
+## Related Concepts
+
+- [QualityTesting](/concepts/QualityTesting)
+
+
+---
+
+*Source: APQC PCF 10369 (4.3.3) - APQC*

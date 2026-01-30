@@ -1,0 +1,104 @@
+---
+id: ManageSuppliers
+name: "Manage suppliers"
+code: "10280"
+hierarchyId: "4.2.4"
+type: Process
+level: 3
+status: complete
+parent: "4.2"
+children: ["4.2.4.1", "4.2.4.2", "4.2.4.3", "4.2.4.4"]
+---
+
+# Manage suppliers
+
+> Collecting and analyzing new information in order to track and rate suppliers through a supplier information management system.
+
+## Overview
+
+Process 4.2.4 is a core process that defines the specific procedures for manage suppliers. 
+
+Collecting and analyzing new information in order to track and rate suppliers through a supplier information management system.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_2["4.2 Procure materials and services"]
+    N4_2 --> N4_2_4["4.2.4 Manage suppliers"]
+    style N4_2_4 fill:#e1f5fe
+    N4_2_4 --> N4_2_4_1["4.2.4.1 Monitor/Manage supplier information"]
+    N4_2_4 --> N4_2_4_2["4.2.4.2 Prepare/Analyze procurement and ..."]
+    N4_2_4 --> N4_2_4_3["4.2.4.3 Support inventory and production..."]
+    N4_2_4 --> N4_2_4_4["4.2.4.4 Monitor quality of product deliv..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10280 |
+| Hierarchy ID | 4.2.4 |
+| Level | Process |
+| Parent | [4.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Suppliers
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `suppliers` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage suppliers"]
+        S1["Monitor/Manage supplier inf..."]
+        S2["Prepare/Analyze procurement..."]
+        S3["Support inventory and produ..."]
+        S4["Monitor quality of product ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Monitor/Manage supplier information](./MonitorManageSupplierInformation) | 4.2.4.1 | Examining procurement and vendor performance |
+| [Prepare/Analyze procurement and supplier performance](./PrepareAnalyzeProcurementAndSupplierPerformance) | 4.2.4.2 | Assisting the production and inventory processes through the information and reports created |
+| [Support inventory and production processes](./SupportInventoryAndProductionProcesses) | 4.2.4.3 | Support inventory and production processes by analyzing impact of procurement decisions and collabor |
+| [Monitor quality of product delivered](./MonitorQualityOfProductDelivered) | 4.2.4.4 | Track the performance of the suppliers on product quality |
+
+
+## Related Concepts
+
+- [Suppliers](/concepts/Suppliers)
+
+
+---
+
+*Source: APQC PCF 10280 (4.2.4) - APQC*

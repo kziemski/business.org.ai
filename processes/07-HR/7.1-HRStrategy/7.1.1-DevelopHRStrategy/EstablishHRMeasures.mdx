@@ -1,0 +1,174 @@
+---
+id: EstablishHRMeasures
+name: "Establish HR measures"
+code: "10421"
+hierarchyId: "7.1.1.4"
+type: Activity
+level: 4
+parent: "7.1.1"
+category: "Human Capital"
+metricsAvailable: true
+status: complete
+---
+
+# Establish HR Measures
+
+> Evaluating the performance of HR function. Lay out the course of HR procedures that would formulate a plan of action needed to fulfill strategic HR needs. Deploy measures such as hiring policies, leave management, internal code of conducts, and compensation structure.
+
+## Overview
+
+Activity 7.1.1.4 creates the measurement framework that enables HR to demonstrate value and drive continuous improvement. This includes defining key performance indicators, establishing data collection processes, and creating reporting mechanisms.
+
+Effective HR measurement balances lagging indicators (outcomes) with leading indicators (predictive metrics) and connects HR activities to business results.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    P711["7.1.1 Develop HR Strategy"] --> A7114["7.1.1.4 Establish HR measures"]
+
+    A7114 --> T1["Define strategic KPIs"]
+    A7114 --> T2["Create operational metrics"]
+    A7114 --> T3["Establish data collection"]
+    A7114 --> T4["Build reporting dashboards"]
+    A7114 --> T5["Set performance targets"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10421 |
+| Hierarchy ID | 7.1.1.4 |
+| Level | Activity |
+| Parent | [7.1.1 Develop HR Strategy](../) |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Business Objectives"]
+        I2["HR Strategy"]
+        I3["Industry Benchmarks"]
+        I4["Stakeholder Needs"]
+    end
+
+    subgraph Process["Establish HR Measures"]
+        P1["Identify Measurement Priorities"]
+        P2["Define KPI Definitions"]
+        P3["Set Up Data Collection"]
+        P4["Build Dashboards"]
+        P5["Establish Review Cadence"]
+
+        P1 --> P2 --> P3 --> P4 --> P5
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["KPI Framework"]
+        O2["HR Dashboard"]
+        O3["Reporting Calendar"]
+        O4["Target Setting Guide"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+establish.HRMeasures
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Creating and implementing |
+| Object | `HRMeasures` | HR performance metrics |
+
+## HR Measurement Framework
+
+### Strategic Metrics (Board/C-Suite Level)
+
+| Metric | Definition | Frequency |
+|--------|------------|-----------|
+| Employee Engagement | Annual survey score | Annual |
+| Total Turnover | Separations / avg headcount | Monthly |
+| Revenue per Employee | Revenue / FTEs | Quarterly |
+| Time to Productivity | Days for new hire to full productivity | Quarterly |
+| Leadership Bench Strength | Ready-now successors for key roles | Annual |
+
+### Operational Metrics (HR Leadership Level)
+
+| Metric | Definition | Frequency |
+|--------|------------|-----------|
+| Time to Fill | Req open to start date | Monthly |
+| Cost per Hire | Recruiting costs / hires | Monthly |
+| Training Hours per Employee | Total hours / headcount | Quarterly |
+| HR Cost per Employee | HR budget / headcount | Annual |
+| Benefits Participation | Enrolled / eligible | Annual |
+
+### Transactional Metrics (HR Operations Level)
+
+| Metric | Definition | Frequency |
+|--------|------------|-----------|
+| Payroll Accuracy | Correct payments / total | Per pay period |
+| Ticket Resolution Time | Avg time to close HR tickets | Weekly |
+| Self-Service Adoption | Transactions via self-service | Monthly |
+| Compliance Training Completion | Completed / required | Monthly |
+
+## Dashboard Design
+
+```mermaid
+graph TD
+    subgraph Executive["Executive Dashboard"]
+        E1["Engagement Trend"]
+        E2["Turnover Heatmap"]
+        E3["Headcount vs Plan"]
+    end
+
+    subgraph Operations["Operations Dashboard"]
+        O1["Recruiting Pipeline"]
+        O2["Training Completion"]
+        O3["Service Metrics"]
+    end
+
+    subgraph Compliance["Compliance Dashboard"]
+        C1["Required Training"]
+        C2["Policy Acknowledgments"]
+        C3["Audit Readiness"]
+    end
+```
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define KPIs | HR Analytics | CHRO | Business leaders | HR team |
+| Set up data collection | HRIS Team | CHRO | IT | HR operations |
+| Build dashboards | HR Analytics | CHRO | Stakeholders | All HR |
+| Set targets | HR Leadership | CHRO | Finance | Budget owners |
+| Review performance | HR Analytics | CHRO | Executive team | All HR |
+
+## Industry Variations
+
+### Technology
+Focus on time-to-hire, offer acceptance rates, and engineering productivity.
+
+### Healthcare
+Emphasis on credential compliance, mandatory training, and patient safety metrics.
+
+### Retail
+Priority on seasonal hiring velocity, turnover by location, and labor scheduling efficiency.
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Data Accuracy | Clean data in HRIS | >95% |
+| Report Automation | Automated vs manual reports | >80% |
+| Dashboard Usage | HR leaders using dashboards | >90% |
+| Metric Coverage | Processes with KPIs defined | >80% |
+
+---
+
+*Source: APQC PCF 10421 (7.1.1.4) - Cross-Industry*

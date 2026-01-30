@@ -1,0 +1,338 @@
+---
+id: EstablishEnterpriseRiskFramework
+name: "Establish the enterprise risk framework and policies"
+code: "16439"
+hierarchyId: "11.1.1"
+type: Process
+level: 3
+status: complete
+parent: "11.1"
+children: ["11.1.1.1", "11.1.1.2", "11.1.1.3", "11.1.1.4", "11.1.1.5"]
+---
+
+# Establish the enterprise risk framework and policies
+
+> Creating an agenda for the rules and regulations of enterprise risk that deal with hazardous, financial, operational, and strategic risks.
+
+## Overview
+
+Process 11.1.1 establishes the foundational governance structure for enterprise risk management. This process defines the organization's risk tolerance, develops comprehensive policies and procedures, implements tools and methodologies, facilitates knowledge sharing, and ensures appropriate reporting to leadership.
+
+The outputs from this process create the architecture within which all other risk management activities operate. A well-designed framework enables consistent risk identification, assessment, and response across all business units while maintaining flexibility for unit-specific risk profiles.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk,<br/>Compliance, Remediation,<br/>and Resiliency"] --> G111["11.1 Manage enterprise risk"]
+    G111 --> P1111["11.1.1 Establish enterprise risk<br/>framework and policies"]
+
+    P1111 --> A11111["11.1.1.1 Determine risk tolerance<br/>for organization"]
+    P1111 --> A11112["11.1.1.2 Develop and maintain enterprise<br/>risk policies and procedures"]
+    P1111 --> A11113["11.1.1.3 Identify and implement<br/>enterprise risk management tools"]
+    P1111 --> A11114["11.1.1.4 Coordinate sharing of<br/>risk knowledge"]
+    P1111 --> A11115["11.1.1.5 Prepare and report enterprise<br/>risk to leadership"]
+
+    style P1111 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16439 |
+| Hierarchy ID | 11.1.1 |
+| Level | Process |
+| Category | [11.0 Manage Enterprise Risk](/processes/11-Risk) |
+| Parent | [11.1 Manage enterprise risk](../) |
+| Activities | 5 |
+
+## Process Flow
+
+```mermaid
+flowchart TB
+    subgraph Inputs["Inputs"]
+        I1["Strategic Plan"]
+        I2["Regulatory Requirements"]
+        I3["Industry Standards"]
+        I4["Stakeholder Expectations"]
+        I5["Historical Risk Data"]
+        I6["Benchmark Data"]
+    end
+
+    subgraph Process["Establish Framework"]
+        P1["Determine Risk<br/>Tolerance"]
+        P2["Develop Policies<br/>& Procedures"]
+        P3["Implement<br/>ERM Tools"]
+        P4["Coordinate<br/>Knowledge Sharing"]
+        P5["Report to<br/>Leadership"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 -.-> P1
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Risk Appetite Statement"]
+        O2["ERM Policy Manual"]
+        O3["Risk Assessment Tools"]
+        O4["Risk Knowledge Base"]
+        O5["Board Risk Reports"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+establish.EnterpriseRiskFramework.and.Policies
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action of creating and formalizing |
+| Object | `EnterpriseRiskFramework` | Comprehensive risk governance structure |
+| Preposition | `and` | Connector for additional element |
+| PrepObject | `Policies` | Formal rules governing risk management |
+
+## Activities
+
+### [11.1.1.1 Determine risk tolerance for organization](./DetermineRiskTolerance.mdx)
+
+Recognizing the organization's tolerance for risk, given risk-return trade-offs for one or more anticipated and predictable consequences.
+
+**APQC Code:** 16440
+
+```mermaid
+sequenceDiagram
+    participant Board as Board/Risk Committee
+    participant Exec as Executive Team
+    participant ERM as ERM Function
+    participant BU as Business Units
+
+    ERM->>Exec: Present risk tolerance options
+    Exec->>Board: Recommend tolerance levels
+    Board->>Board: Deliberate on risk appetite
+    Board->>ERM: Approve risk tolerance
+    ERM->>BU: Communicate tolerance thresholds
+    BU->>ERM: Acknowledge and implement
+```
+
+**Tasks:**
+- `assess.StrategicRiskAppetite` - Evaluate strategic risk-taking capacity
+- `define.QuantitativeTolerances` - Set numerical risk limits
+- `establish.QualitativeGuidelines` - Create risk acceptance criteria
+- `align.StakeholderExpectations` - Ensure investor/regulator alignment
+
+### [11.1.1.2 Develop and maintain enterprise risk policies and procedures](./DevelopRiskPolicies.mdx)
+
+Establishing and maintaining the policies and procedures for managing risk. Create rules and regulations for enterprise risk dealing with hazardous, financial, operational, and strategic risks.
+
+**APQC Code:** 16441
+
+```mermaid
+sequenceDiagram
+    participant ERM as ERM Function
+    participant Legal as Legal/Compliance
+    participant BU as Business Units
+    participant Exec as Executive Sponsor
+
+    ERM->>ERM: Draft policy framework
+    ERM->>Legal: Legal review
+    Legal->>ERM: Compliance feedback
+    ERM->>BU: Collect operational input
+    BU->>ERM: Practical considerations
+    ERM->>Exec: Present for approval
+    Exec->>ERM: Approve policies
+    ERM->>BU: Publish and train
+```
+
+**Tasks:**
+- `draft.RiskPolicyFramework` - Create comprehensive policy documents
+- `define.RiskCategories` - Establish risk taxonomy
+- `establish.AssessmentProcedures` - Create risk evaluation methods
+- `document.MitigationGuidelines` - Define response strategies
+
+### [11.1.1.3 Identify and implement enterprise risk management tools](./ImplementERMTools.mdx)
+
+Recognizing and implementing tools for managing risk. Identify and apply enterprise risk management tools. Leverage methods and processes to manage risks and opportunities associated with business objectives.
+
+**APQC Code:** 16442
+
+```mermaid
+sequenceDiagram
+    participant ERM as ERM Function
+    participant IT as IT Department
+    participant Vendor as Tool Vendors
+    participant Users as Risk Practitioners
+
+    ERM->>ERM: Assess tool requirements
+    ERM->>Vendor: Evaluate solutions
+    Vendor->>ERM: Demonstrations
+    ERM->>IT: Technical assessment
+    IT->>ERM: Integration feasibility
+    ERM->>Vendor: Select and procure
+    IT->>Users: Deploy and configure
+    ERM->>Users: Train on tools
+```
+
+**Tasks:**
+- `assess.ToolRequirements` - Identify capability needs
+- `evaluate.SoftwareOptions` - Compare GRC platforms
+- `implement.RiskSystems` - Deploy selected tools
+- `integrate.EnterpriseApplications` - Connect to ERP/BI systems
+
+### [11.1.1.4 Coordinate the sharing of risk knowledge across the organization](./ShareRiskKnowledge.mdx)
+
+Communicating the knowledge about risk within the organization. Identify operational risks. Share risk information within the organization.
+
+**APQC Code:** 16443
+
+```mermaid
+sequenceDiagram
+    participant ERM as ERM Function
+    participant BU as Business Units
+    participant Training as L&D Team
+    participant Comms as Communications
+
+    ERM->>ERM: Compile risk insights
+    ERM->>Comms: Develop messaging
+    Comms->>BU: Distribute communications
+    ERM->>Training: Create training content
+    Training->>BU: Deliver risk training
+    BU->>ERM: Share local insights
+    ERM->>ERM: Update knowledge base
+```
+
+**Tasks:**
+- `compile.RiskInsights` - Aggregate lessons learned
+- `develop.TrainingContent` - Create risk education materials
+- `facilitate.KnowledgeExchange` - Enable cross-BU sharing
+- `maintain.RiskKnowledgeBase` - Curate risk information repository
+
+### [11.1.1.5 Prepare and report enterprise risk to executive management and board](./ReportEnterpriseRisk.mdx)
+
+Preparing and presenting reports about enterprise risk to the management of the organization. Create reports for management on hazard risks, financial risks, and operational risks.
+
+**APQC Code:** 16444
+
+```mermaid
+sequenceDiagram
+    participant ERM as ERM Function
+    participant Analytics as Risk Analytics
+    participant CRO as Chief Risk Officer
+    participant Board as Board/Audit Committee
+
+    ERM->>Analytics: Request risk data
+    Analytics->>ERM: Provide analysis
+    ERM->>ERM: Prepare reports
+    ERM->>CRO: Review and refine
+    CRO->>Board: Present risk overview
+    Board->>CRO: Questions and guidance
+    CRO->>ERM: Incorporate feedback
+```
+
+**Tasks:**
+- `aggregate.RiskData` - Compile enterprise risk information
+- `analyze.RiskTrends` - Identify patterns and emerging risks
+- `prepare.BoardMaterials` - Create executive presentations
+- `present.RiskStatus` - Deliver risk updates to leadership
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Determine risk tolerance | ERM Director | CRO | Board, CEO, CFO | All BU Leaders |
+| Develop policies | ERM Team | CRO | Legal, Compliance, BUs | All Employees |
+| Implement ERM tools | ERM Team | CRO | IT, Procurement | Risk Practitioners |
+| Share risk knowledge | ERM Team | CRO | L&D, Communications | All Employees |
+| Report to leadership | CRO | CEO | ERM Team, Legal | Board Members |
+
+## Related Departments
+
+- [Enterprise Risk Management](/departments/ERM) - Process owner
+- [Legal](/departments/Legal) - Policy review and compliance
+- [Internal Audit](/departments/InternalAudit) - Framework validation
+- [Information Technology](/departments/IT) - Tool implementation
+- [Learning & Development](/departments/LD) - Training delivery
+
+## Related Occupations
+
+- [Chief Risk Officers](/occupations/CRO) - Framework accountability
+- [Risk Managers](/occupations/RiskManagers) - Policy development
+- [Compliance Officers](/occupations/ComplianceOfficers) - Regulatory alignment
+- [Internal Auditors](/occupations/InternalAuditors) - Framework assessment
+- [IT Project Managers](/occupations/ITProjectManagers) - Tool implementation
+
+## Industry Variations
+
+### Banking
+
+Banking risk frameworks must address Basel III/IV requirements, including capital adequacy, liquidity coverage, and net stable funding ratios. The framework integrates with regulatory stress testing programs.
+
+**Industry-Specific Activities:**
+- Develop risk-weighted asset methodology
+- Establish internal capital adequacy assessment
+- Create liquidity risk framework
+- Implement model risk governance
+
+### Aerospace and Defense
+
+Defense contractors establish frameworks addressing program-specific risks, cost-plus contract requirements, and DFARS compliance.
+
+**Industry-Specific Activities:**
+- Define program risk frameworks
+- Establish earned value risk integration
+- Create technology readiness risk criteria
+- Develop supply chain risk policies
+
+### Healthcare Provider
+
+Healthcare frameworks balance clinical, operational, and financial risks within HIPAA and patient safety requirements.
+
+**Industry-Specific Activities:**
+- Establish clinical risk framework
+- Create patient safety governance
+- Develop privacy risk policies
+- Define revenue integrity controls
+
+## Sub-Processes
+
+| Activity | Code | Description |
+|----------|------|-------------|
+| [Determine risk tolerance](./DetermineRiskTolerance.mdx) | 11.1.1.1 | Define organizational risk appetite |
+| [Develop policies](./DevelopRiskPolicies.mdx) | 11.1.1.2 | Create risk management rules |
+| [Implement tools](./ImplementERMTools.mdx) | 11.1.1.3 | Deploy GRC systems |
+| [Share knowledge](./ShareRiskKnowledge.mdx) | 11.1.1.4 | Facilitate risk learning |
+| [Report to leadership](./ReportEnterpriseRisk.mdx) | 11.1.1.5 | Executive risk communication |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Strategy["1.0 Vision<br/>and Strategy"] --> EERF["11.1.1 Establish<br/>Risk Framework"]
+    Governance["Corporate<br/>Governance"] --> EERF
+
+    EERF --> Oversight["11.1.2 ERM<br/>Oversight"]
+    EERF --> BURisk["11.1.4 BU Risk<br/>Management"]
+    EERF --> Compliance["11.2 Manage<br/>Compliance"]
+    EERF --> Resiliency["11.4 Business<br/>Resiliency"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Policy Coverage | Risk categories with approved policies | 100% |
+| Framework Maturity | RIMS RMM or similar assessment score | Level 4+ |
+| Tool Adoption | Users actively using GRC platform | >90% |
+| Training Completion | Employees completing risk training | >95% |
+| Board Reporting | Quarters with risk presentation | 4/4 |
+| Policy Currency | Policies reviewed within 12 months | 100% |
+
+---
+
+*Source: APQC PCF 16439 (11.1.1) - Cross-Industry Process Classification Framework*

@@ -1,0 +1,408 @@
+---
+id: RedesignWorkshops
+name: "Perform organization redesign workshops"
+code: "10052"
+hierarchyId: "1.2.5.4"
+type: Process
+status: complete
+---
+
+# Perform organization redesign workshops
+
+> Organizing workshop sessions to adopt organizational redesign. Communicate the organizational structure and mapping of responsibilities against job roles in order to facilitate an effective understanding among personnel. Use a collaborative process that may include participative workshop sessions.
+
+## Overview
+
+Perform organization redesign workshops (APQC 1.2.5.4/10052) is a critical activity within the Create Organizational Design process. This activity focuses on facilitating collaborative sessions that engage stakeholders in the organizational redesign process. The workshops serve multiple purposes: communicating proposed changes, gathering feedback, building consensus, and ensuring personnel understand their roles within the new structure.
+
+Effective redesign workshops transform organizational change from a top-down mandate into a participative process. By involving employees and managers in discussions about structure, responsibilities, and workflows, organizations can identify implementation challenges early, leverage frontline insights, and build the commitment necessary for successful transitions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"] --> G12["1.2 Develop business strategy"]
+    G12 --> P125["1.2.5 Create organizational design"]
+    P125 --> A4["1.2.5.4 Perform organization<br/>redesign workshops"]
+
+    A4 --> T1["Plan workshop sessions"]
+    A4 --> T2["Develop workshop materials"]
+    A4 --> T3["Facilitate redesign discussions"]
+    A4 --> T4["Gather stakeholder feedback"]
+    A4 --> T5["Document workshop outcomes"]
+    A4 --> T6["Build change consensus"]
+
+    style A4 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10052 |
+| Hierarchy ID | 1.2.5.4 |
+| Level | Activity |
+| Category | [Develop Vision and Strategy](/processes/01-Strategy) |
+| Parent Process | [Create organizational design](./OrgDesign.mdx) |
+| Typical Duration | 2-8 weeks |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Proposed Org Design"]
+        I2["Current State Analysis"]
+        I3["Role Definitions"]
+        I4["Process Maps"]
+        I5["Stakeholder List"]
+        I6["Workshop Objectives"]
+    end
+
+    subgraph Process["Perform Redesign Workshops"]
+        P1["Plan Workshop<br/>Sessions"]
+        P2["Develop<br/>Materials"]
+        P3["Conduct<br/>Workshops"]
+        P4["Facilitate<br/>Discussions"]
+        P5["Gather<br/>Feedback"]
+        P6["Build<br/>Consensus"]
+        P7["Document<br/>Outcomes"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+        P6 --> P7
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Workshop Minutes"]
+        O2["Feedback Synthesis"]
+        O3["Refined Design"]
+        O4["Consensus Agreement"]
+        O5["Action Items"]
+        O6["Communication Plan"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+perform.OrganizationRedesignWorkshops
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action of executing and facilitating |
+| Object | `OrganizationRedesignWorkshops` | Collaborative sessions for design adoption |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
+
+## Activities
+
+### Plan workshop sessions
+
+Developing a comprehensive workshop plan that defines objectives, participants, schedule, and logistics for each redesign session.
+
+```mermaid
+sequenceDiagram
+    participant OD as OD Team
+    participant HR as HR
+    participant Exec as Executive Sponsor
+    participant Logistics as Logistics
+
+    OD->>OD: Define workshop objectives
+    OD->>HR: Identify key stakeholders
+    HR->>OD: Provide participant list
+    OD->>OD: Design workshop agenda
+    OD->>Exec: Review and approve plan
+    Exec->>OD: Approve workshop plan
+    OD->>Logistics: Arrange facilities
+    Logistics->>OD: Confirm logistics
+```
+
+**Tasks:**
+- `define.WorkshopObjectives` - Establish clear goals for each session
+- `identify.Participants` - Determine who should attend each workshop
+- `design.WorkshopAgenda` - Create structured session flow
+- `schedule.Sessions` - Coordinate timing across stakeholder groups
+- `arrange.Logistics` - Secure facilities and resources
+
+### Develop workshop materials
+
+Creating the presentations, exercises, templates, and supporting materials needed to conduct effective redesign workshops.
+
+```mermaid
+sequenceDiagram
+    participant OD as OD Team
+    participant Design as Design Team
+    participant Comms as Communications
+    participant Review as Review Team
+
+    OD->>Design: Request org charts and diagrams
+    Design->>OD: Provide visual materials
+    OD->>OD: Create presentation decks
+    OD->>OD: Develop exercises and activities
+    OD->>Comms: Draft key messages
+    Comms->>OD: Refine messaging
+    OD->>Review: Submit for review
+    Review->>OD: Approve materials
+```
+
+**Tasks:**
+- `create.Presentations` - Develop visual presentations of proposed design
+- `design.Exercises` - Create interactive activities for engagement
+- `prepare.Templates` - Build feedback collection tools
+- `develop.KeyMessages` - Craft consistent communication points
+- `compile.MaterialPackets` - Assemble participant materials
+
+### Facilitate redesign discussions
+
+Leading collaborative discussions that enable participants to understand, question, and contribute to the organizational redesign.
+
+```mermaid
+sequenceDiagram
+    participant Facilitator as Facilitator
+    participant Participants as Participants
+    participant SME as Subject Matter Experts
+    participant Scribe as Scribe
+
+    Facilitator->>Participants: Present proposed design
+    Participants->>Facilitator: Ask clarifying questions
+    Facilitator->>SME: Defer technical questions
+    SME->>Participants: Provide expert context
+    Facilitator->>Participants: Guide breakout discussions
+    Participants->>Scribe: Share insights and concerns
+    Scribe->>Facilitator: Summarize key themes
+    Facilitator->>Participants: Synthesize discussion
+```
+
+**Tasks:**
+- `present.ProposedDesign` - Share organizational design proposal
+- `facilitate.QandA` - Manage question and answer sessions
+- `lead.BreakoutGroups` - Guide small group discussions
+- `manage.GroupDynamics` - Handle conflicts and ensure participation
+- `synthesize.Discussions` - Summarize key themes and insights
+
+### Gather stakeholder feedback
+
+Collecting, organizing, and analyzing input from workshop participants on the proposed organizational design.
+
+```mermaid
+sequenceDiagram
+    participant Facilitator as Facilitator
+    participant Participants as Participants
+    participant Analysis as Analysis Team
+    participant OD as OD Team
+
+    Facilitator->>Participants: Distribute feedback forms
+    Participants->>Facilitator: Submit written feedback
+    Facilitator->>Facilitator: Capture verbal feedback
+    Facilitator->>Analysis: Provide all feedback
+    Analysis->>Analysis: Categorize feedback
+    Analysis->>Analysis: Identify themes
+    Analysis->>OD: Deliver feedback synthesis
+    OD->>OD: Prioritize recommendations
+```
+
+**Tasks:**
+- `collect.WrittenFeedback` - Gather formal feedback submissions
+- `capture.VerbalInput` - Document discussion insights
+- `categorize.Feedback` - Organize input by theme and impact
+- `analyze.Patterns` - Identify common concerns and suggestions
+- `prioritize.Recommendations` - Rank feedback for action
+
+### Build change consensus
+
+Working with stakeholders to develop agreement and commitment to the organizational redesign through collaborative decision-making.
+
+```mermaid
+sequenceDiagram
+    participant OD as OD Team
+    participant Stakeholders as Key Stakeholders
+    participant Exec as Executive Team
+    participant Comms as Communications
+
+    OD->>Stakeholders: Present refined design
+    Stakeholders->>OD: Discuss remaining concerns
+    OD->>OD: Facilitate resolution
+    OD->>Stakeholders: Propose consensus items
+    Stakeholders->>OD: Agree on design elements
+    OD->>Exec: Present consensus design
+    Exec->>OD: Endorse final design
+    OD->>Comms: Communicate agreement
+```
+
+**Tasks:**
+- `address.Concerns` - Respond to stakeholder issues
+- `negotiate.Compromises` - Find acceptable middle ground
+- `document.Agreements` - Record consensus decisions
+- `secure.Commitment` - Obtain stakeholder buy-in
+- `communicate.Consensus` - Share agreed-upon design
+
+### Document workshop outcomes
+
+Recording and distributing the results, decisions, and action items from redesign workshops.
+
+```mermaid
+sequenceDiagram
+    participant Scribe as Scribe
+    participant OD as OD Team
+    participant Review as Review Team
+    participant Distribution as Distribution
+
+    Scribe->>OD: Provide raw notes
+    OD->>OD: Synthesize into report
+    OD->>OD: Document decisions made
+    OD->>OD: List action items
+    OD->>Review: Submit for accuracy review
+    Review->>OD: Validate and approve
+    OD->>Distribution: Distribute to participants
+    Distribution->>Distribution: Archive documentation
+```
+
+**Tasks:**
+- `compile.WorkshopNotes` - Gather all session documentation
+- `synthesize.Outcomes` - Create summary report
+- `document.Decisions` - Record all decisions made
+- `assign.ActionItems` - Define follow-up responsibilities
+- `distribute.Documentation` - Share outcomes with stakeholders
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Plan workshop sessions | OD Team | CHRO | Executive Sponsor | Participants |
+| Develop workshop materials | OD Team | OD Manager | Communications, Design | HR |
+| Facilitate redesign discussions | OD Facilitators | OD Manager | SMEs | Executive Team |
+| Gather stakeholder feedback | OD Team | OD Manager | Participants | Analysis Team |
+| Build change consensus | OD Team | CHRO | Key Stakeholders | All Participants |
+| Document workshop outcomes | OD Team | OD Manager | Review Team | All Stakeholders |
+
+## Related Departments
+
+- [Human Resources](/departments/HR) - Primary owner and facilitator
+- [Organizational Development](/departments/OD) - Workshop design and facilitation
+- [Communications](/departments/Communications) - Messaging and materials
+- [Strategy & Planning](/departments/Strategy) - Design context and rationale
+- [All Business Units](/departments) - Participants and stakeholders
+
+## Related Occupations
+
+- [Organizational Development Specialists](/occupations/OrgDevelopment) - Workshop facilitation
+- [Training and Development Managers](/occupations/TrainingManagers) - Session design
+- [Human Resources Specialists](/occupations/HRSpecialists) - Coordination and support
+- [Management Analysts](/occupations/ManagementAnalysts) - Analysis and consulting
+- [Change Management Specialists](/occupations/ChangeManagement) - Consensus building
+
+## Industry Variations
+
+### Banking
+
+Banking redesign workshops must address regulatory implications, risk management considerations, and compliance requirements. Sessions often include compliance officers and risk managers as key participants.
+
+**Industry-Specific Activities:**
+- Include regulatory impact assessments in discussions
+- Address segregation of duties requirements
+- Review compliance with banking regulations
+- Assess risk management structure implications
+
+### Healthcare Provider
+
+Healthcare workshops focus on clinical workflow impacts, patient safety considerations, and medical staff governance. Physician involvement is critical for clinical department restructuring.
+
+**Industry-Specific Activities:**
+- Include physician leaders in clinical restructuring
+- Address patient care continuity implications
+- Review quality and safety reporting impacts
+- Consider medical staff bylaws requirements
+
+### Aerospace and Defense
+
+Aerospace workshops must consider program management structures, engineering disciplines, and security clearance requirements. Sessions often involve government relations considerations.
+
+**Industry-Specific Activities:**
+- Address program management authority changes
+- Review engineering discipline organization
+- Consider security clearance implications
+- Assess government contract requirements
+
+### Retail
+
+Retail workshops balance headquarters and field perspectives, addressing store operations, merchandising, and omnichannel considerations.
+
+**Industry-Specific Activities:**
+- Include field leadership representation
+- Address store-level operational impacts
+- Review merchandising team structures
+- Consider omnichannel integration implications
+
+## Workshop Design Elements
+
+### Typical Workshop Agenda
+
+| Time | Activity | Purpose |
+|------|----------|---------|
+| 0:00-0:15 | Welcome and Objectives | Set context and expectations |
+| 0:15-0:45 | Current State Overview | Review existing structure |
+| 0:45-1:15 | Proposed Design Presentation | Present new organizational design |
+| 1:15-1:30 | Break | - |
+| 1:30-2:30 | Breakout Discussions | Small group analysis |
+| 2:30-3:00 | Feedback Sharing | Report out from groups |
+| 3:00-3:30 | Consensus Building | Address concerns and agreements |
+| 3:30-4:00 | Action Items and Close | Summarize and next steps |
+
+### Workshop Facilitation Best Practices
+
+```mermaid
+graph TD
+    A["Establish Ground Rules"] --> B["Create Safe Environment"]
+    B --> C["Encourage Participation"]
+    C --> D["Manage Time Effectively"]
+    D --> E["Capture All Input"]
+    E --> F["Summarize and Validate"]
+    F --> G["Define Clear Next Steps"]
+```
+
+## Sub-Tasks
+
+| Task | Description |
+|------|-------------|
+| Stakeholder Mapping | Identify all affected parties and their interests |
+| Agenda Development | Create structured workshop flow |
+| Material Preparation | Develop presentations and exercises |
+| Facilitation | Lead workshop sessions |
+| Feedback Collection | Gather and organize participant input |
+| Consensus Building | Develop agreement on design elements |
+| Documentation | Record outcomes and action items |
+
+## Related Processes
+
+```mermaid
+graph LR
+    Eval["1.2.5.1 Evaluate<br/>org structure"] --> RW["1.2.5.4 Perform<br/>redesign workshops"]
+    Roles["1.2.5.2 Map roles<br/>and value-added"] --> RW
+    Activity["1.2.5.3 Develop<br/>activity diagrams"] --> RW
+
+    RW --> Units["1.2.5.5 Design<br/>unit relationships"]
+    RW --> Assess["1.2.5.7 Assess<br/>design alternatives"]
+    RW --> Migrate["1.2.5.8 Migrate to<br/>new organization"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Participation Rate | Percentage of invited stakeholders attending | >90% |
+| Feedback Response Rate | Percentage of participants providing feedback | >85% |
+| Consensus Achievement | Percentage of design elements with stakeholder agreement | >80% |
+| Workshop Satisfaction | Participant satisfaction with workshop quality | >4.0/5.0 |
+| Action Item Completion | Percentage of workshop action items completed | >95% |
+| Time to Consensus | Duration from first workshop to design agreement | <6 weeks |
+
+---
+
+*Source: APQC PCF 10052 (1.2.5.4) - Cross-Industry*

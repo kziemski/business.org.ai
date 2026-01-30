@@ -1,0 +1,120 @@
+---
+id: BuildingExteriorContractors
+name: "Building Exterior Contractors"
+code: "2381"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Building Exterior Contractors
+
+> This industry group comprises establishments primarily engaged in the specialty trades needed to complete the basic structure (i.
+
+## Overview
+
+Building Exterior Contractors represents an important category within the Construction sector (NAICS 23). This industry group encompasses establishments primarily engaged in building exterior contractors.
+
+This industry group comprises establishments primarily engaged in the specialty trades needed to complete the basic structure (i.e., foundation, frame, and shell) of buildings. The work performed may include new work, additions, alterations, maintenance, and repairs.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S23["23: Construction"]
+    S23 --> N238["238: Specialty Trade Contractors"]
+    N238 --> N2381["2381: Building Exterior Contractors"]
+    style N2381 fill:#f96,stroke:#333,stroke-width:2px
+    N2381 --> N23811["23811: Poured Concrete Foundation"]
+    N2381 --> N23812["23812: Precast Concrete Contractors"]
+    N2381 --> N23813["23813: Framing Contractors"]
+    N2381 --> N23814["23814: Masonry Contractors"]
+    N2381 --> N23815["23815: Glazing Contractors"]
+    N2381 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 2381 |
+| Level | Industry Group |
+| Parent | [Specialty Trade Contractors](../) |
+| Child Industries | 7 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Poured Concrete Foundation](./PouredConcreteFoundation/) | 23811 | See industry description for 238110 |
+| [Precast Concrete Contractors](./PrecastConcreteContractors/) | 23812 | See industry description for 238120 |
+| [Framing Contractors](./FramingContractors/) | 23813 | See industry description for 238130 |
+| [Masonry Contractors](./MasonryContractors/) | 23814 | See industry description for 238140 |
+| [Glazing Contractors](./GlazingContractors/) | 23815 | See industry description for 238150 |
+| [Roofing Contractors](./RoofingContractors/) | 23816 | See industry description for 238160 |
+| [Siding Contractors](./SidingContractors/) | 23817 | See industry description for 238170 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Design/Planning"]
+        O2["Site Preparation"]
+        O3["Construction"]
+        O4["Inspection"]
+        O5["Completion"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Project Management"]
+        S2["Safety Systems"]
+        S3["Procurement"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Materials"]
+        I2["Equipment"]
+        I3["Labor"]
+        I4["Plans"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Buildings"]
+        O2["Infrastructure"]
+        O3["Renovations"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Property Owners"]
+        C2["Government"]
+        C3["Developers"]
+        C4["Businesses"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 2381 - Building Exterior Contractors*

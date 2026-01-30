@@ -1,0 +1,277 @@
+---
+id: NursingAssistants
+name: "Nursing Assistants"
+code: "31-1131.00"
+type: Occupation
+status: complete
+---
+
+# Nursing Assistants
+
+> Provide or assist with basic care or support under the direction of onsite licensed nursing staff. Perform duties such as monitoring of health status, feeding, bathing, dressing, grooming, toileting, or ambulation of patients in a health or nursing facility. May include medication administration and other health-related tasks. Includes nursing care attendants, nursing aides, and nursing attendants.
+
+## Overview
+
+Nursing Assistants, also known as Certified Nursing Assistants (CNAs), provide essential hands-on patient care in healthcare facilities under the supervision of licensed nurses. They assist patients with daily activities, monitor vital signs, document patient information, and serve as a critical link between patients and nursing staff. Nursing Assistants work in hospitals, nursing homes, and other healthcare settings, providing compassionate care to patients who need assistance with basic health needs.
+
+## Classification Hierarchy
+
+```mermaid
+graph TD
+    Cat31["31 - Healthcare Support"] --> Group3111["31-1100 Home Health and Personal Care Aides"]
+    Group3111 --> Base3113["31-1130 Nursing Assistants, Orderlies, and Psychiatric Aides"]
+    Base3113 --> NA["31-1131.00 Nursing Assistants"]
+    Base3113 --> Order["31-1132.00 Orderlies"]
+    Base3113 --> Psych["31-1133.00 Psychiatric Aides"]
+
+    Group3111 --> HHA["31-1120 Home Health Aides"]
+
+    style NA fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| SOC Code | 31-1131.00 |
+| Job Zone | 2 (Some Preparation) |
+| Category | [Healthcare Support](/occupations/HealthcareSupport) |
+| Core Tasks | 20+ |
+| Source | O*NET |
+
+## Core Tasks
+
+```mermaid
+mindmap
+    root(("Nursing Assistants"))
+        Turn
+            Bedridden Patients
+            Repositioning
+            Pressure Prevention
+        Answer
+            Call Signals
+            Patient Requests
+            Emergency Bells
+        Feed
+            Meal Assistance
+            Hydration
+            Dietary Needs
+        Measure
+            Vital Signs
+            Temperature
+            Blood Pressure
+            Pulse
+        Record
+            Patient Information
+            Intake Output
+            Care Activities
+        Clean
+            Patient Rooms
+            Equipment
+            Linens
+        Observe
+            Patient Condition
+            Changes
+            Concerns
+        Assist
+            Bathing
+            Dressing
+            Grooming
+            Toileting
+        Transport
+            Patients
+            Wheelchairs
+            Gurneys
+        Supply
+            Stock Rooms
+            Equipment
+            Linens
+```
+
+### turn.BedriddenPatients
+
+Nursing Assistants reposition patients to prevent complications.
+
+**Actions:**
+- `turn.BedriddenPatients` - Reposition immobile patients
+- `reposition.BedriddenPatients` - Change patient positions
+
+### answer.PatientCallSignals
+
+Nursing Assistants respond promptly to patient needs.
+
+**Actions:**
+- `answer.PatientCallSignals.to.determine.PatientsNeeds` - Respond to call buttons
+- `answer.SignalLights.to.determine.PatientsNeeds` - React to signal lights
+- `answer.Bells.to.determine.PatientsNeeds` - Answer call bells
+- `answer.IntercomSystems.to.determine.PatientsNeeds` - Respond to intercoms
+
+### feed.Patients
+
+Nursing Assistants assist patients with nutrition.
+
+**Actions:**
+- `feed.Patients.to.Eat` - Help patients eat
+- `feed.Patients.to.Drink` - Assist with hydration
+- `feed.AssistPatients.to.Eat` - Support eating activities
+- `feed.AssistPatients.to.Drink` - Encourage fluid intake
+
+### measure.VitalSigns
+
+Nursing Assistants monitor patient health indicators.
+
+**Actions:**
+- `measure.Temperature` - Take temperature readings
+- `measure.BloodPressure` - Check blood pressure
+- `measure.Pulse` - Monitor heart rate
+- `measure.Respiration` - Count respiratory rate
+
+### record.PatientInformation
+
+Nursing Assistants document patient care and observations.
+
+**Actions:**
+- `record.PatientInformation` - Document patient data
+- `record.IntakeOutput` - Track fluid balance
+- `record.VitalSigns` - Log vital sign readings
+- `record.CareActivities` - Note care provided
+
+### clean.Rooms
+
+Nursing Assistants maintain clean patient environments.
+
+**Actions:**
+- `clean.PatientRooms` - Clean and organize rooms
+- `clean.Equipment` - Sanitize medical equipment
+- `change.BedLinens` - Replace soiled linens
+
+### observe.Patients
+
+Nursing Assistants monitor and report patient conditions.
+
+**Actions:**
+- `observe.PatientCondition` - Watch for changes
+- `observe.Changes` - Note any deterioration
+- `report.Concerns` - Communicate issues to nurses
+
+### assist.PersonalCare
+
+Nursing Assistants help patients with daily activities.
+
+**Actions:**
+- `assist.Bathing` - Help with bathing
+- `assist.Dressing` - Assist with clothing
+- `assist.Grooming` - Support personal hygiene
+- `assist.Toileting` - Help with bathroom needs
+- `assist.Ambulation` - Support walking
+
+### transport.Patients
+
+Nursing Assistants move patients within facilities.
+
+**Actions:**
+- `transport.Patients` - Move patients safely
+- `use.Wheelchairs` - Operate wheelchairs
+- `use.Gurneys` - Manage stretchers
+
+### supply.Rooms
+
+Nursing Assistants maintain adequate supplies.
+
+**Actions:**
+- `stock.SupplyRooms` - Replenish supplies
+- `organize.Equipment` - Arrange equipment
+- `inventory.Linens` - Track linen supply
+
+## Skills & Competencies
+
+### Technical Skills
+- **Patient Care** - Proficient
+- **Vital Signs Monitoring** - Proficient
+- **Medical Documentation** - Basic
+- **Infection Control** - Proficient
+- **Patient Transfer Techniques** - Proficient
+- **CPR/First Aid** - Certified
+- **Medical Terminology** - Basic
+
+### Soft Skills
+- **Compassion** - Critical
+- **Physical Stamina** - Critical
+- **Communication** - Essential
+- **Attention to Detail** - Essential
+- **Patience** - Critical
+- **Teamwork** - Essential
+
+## Related Occupations
+
+```mermaid
+graph LR
+    NA["Nursing Assistants"]
+
+    subgraph SameCategory["Same Category"]
+        HHA["Home Health Aides"]
+        PCA["Personal Care Aides"]
+        Order["Orderlies"]
+        Psych["Psychiatric Aides"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        LPN["Licensed Practical Nurses"]
+        RN["Registered Nurses"]
+        MedAsst["Medical Assistants"]
+        PCT["Patient Care Technicians"]
+    end
+
+    NA --- SameCategory
+    NA --- CrossFunctional
+```
+
+## Industries
+
+- [Nursing Care Facilities](/industries/NursingCare) - Primary Employment
+- [Hospitals](/industries/Hospitals) - Acute Care
+- [Residential Care Facilities](/industries/ResidentialCare) - Long-term Care
+- [Home Healthcare Services](/industries/HomeHealthcare) - Community Care
+- [Government](/industries/Government) - VA and Public Hospitals
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Nursing Assistant"] --> CNA["Certified Nursing Assistant"]
+    CNA --> Senior["Senior CNA / Charge Aide"]
+    Senior --> Lead["Unit Coordinator"]
+
+    CNA --> LPN["Licensed Practical Nurse"]
+    LPN --> RN["Registered Nurse"]
+    RN --> BSN["BSN / Specialty Nurse"]
+
+    CNA --> PCT["Patient Care Technician"]
+    PCT --> MA["Medical Assistant"]
+
+    Lead --> Supervisor["Nursing Supervisor"]
+```
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent |
+| Work Experience | None required for entry |
+| Training Program | State-approved CNA program (75-120 hours) |
+| Certification | State CNA certification required |
+| Competency Exam | Written and clinical skills test |
+| Continuing Education | Annual training requirements |
+
+## Departments
+
+This occupation typically works in:
+- [Nursing Services](/departments/NursingServices)
+- [Patient Care Units](/departments/PatientCare)
+- [Long-term Care](/departments/LongTermCare)
+- [Rehabilitation](/departments/Rehabilitation)
+- [Medical-Surgical Units](/departments/MedSurg)
+
+---
+
+*Source: O*NET 31-1131.00 - ONETOccupation*

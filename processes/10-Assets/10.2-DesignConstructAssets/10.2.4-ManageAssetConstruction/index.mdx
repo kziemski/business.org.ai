@@ -1,0 +1,104 @@
+---
+id: ManageAssetConstruction
+name: "Manage asset construction"
+code: "19224"
+hierarchyId: "10.2.4"
+type: Process
+level: 3
+status: complete
+parent: "10.2"
+children: ["10.2.4.1", "10.2.4.2", "10.2.4.3", "10.2.4.4"]
+---
+
+# Manage asset construction
+
+> Overseeing the performance and quality of work.
+
+## Overview
+
+Process 10.2.4 is a core process that defines the specific procedures for manage asset construction. 
+
+Overseeing the performance and quality of work. Assure that records are maintained throughout the construction process. Adhere to all safety, security, and access regulations set forth by the organization and all government standards.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_2["10.2 Design and construct assets"]
+    N10_2 --> N10_2_4["10.2.4 Manage asset construction"]
+    style N10_2_4 fill:#e1f5fe
+    N10_2_4 --> N10_2_4_1["10.2.4.1 Monitor work performance"]
+    N10_2_4 --> N10_2_4_2["10.2.4.2 Undertake construction quality c..."]
+    N10_2_4 --> N10_2_4_3["10.2.4.3 Create work and asset records"]
+    N10_2_4 --> N10_2_4_4["10.2.4.4 Manage safety, security, and acc..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19224 |
+| Hierarchy ID | 10.2.4 |
+| Level | Process |
+| Parent | [10.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.AssetConstruction
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `asset construction` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage asset construction"]
+        S1["Monitor work performance"]
+        S2["Undertake construction qual..."]
+        S3["Create work and asset records"]
+        S4["Manage safety, security, an..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Monitor work performance](./MonitorWorkPerformance) | 10.2.4.1 | Monitoring construction to insure that all regulatory laws are being adhered to, that all work is be |
+| [Undertake construction quality control](./UndertakeConstructionQualityControl) | 10.2.4.2 | Implementing a checks and balances system to verify that the construction was performed correctly |
+| [Create work and asset records](./CreateWorkAndAssetRecords) | 10.2.4.3 | Implementing records to include all construction work that has been performed |
+| [Manage safety, security, and access to sites](./ManageSafetySecurityAndAccessToSites) | 10.2.4.4 | Ensuring that safety, security, and access is maintained |
+
+
+## Related Concepts
+
+- [AssetConstruction](/concepts/AssetConstruction)
+
+
+---
+
+*Source: APQC PCF 19224 (10.2.4) - APQC*

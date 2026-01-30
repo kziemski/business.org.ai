@@ -1,0 +1,114 @@
+---
+id: AutomobileDealers
+name: "Automobile Dealers"
+code: "4411"
+type: Industry
+status: complete
+---
+
+# Automobile Dealers
+
+> This industry group comprises establishments primarily engaged in retailing new and used automobiles and light trucks, such as sport utility vehicles, and passenger and cargo vans.
+
+## Overview
+
+Automobile dealers represent the primary retail channel for passenger vehicles in North America. These establishments operate under franchise agreements with manufacturers (for new vehicles) or as independent used car operations. The industry combines vehicle sales with financing, insurance products, service, and parts operations to create a comprehensive automotive retail experience.
+
+The automobile dealer channel handles over 40 million vehicle transactions annually in the United States, including approximately 15 million new vehicles and 25 million used vehicles.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    SS441["441: Motor Vehicle and Parts Dealers"]
+    SS441 --> G4411["4411: Automobile Dealers"]
+
+    G4411 --> I44111["44111: New Car Dealers"]
+    G4411 --> I44112["44112: Used Car Dealers"]
+
+    I44111 --> N441110["441110: New Car Dealers"]
+    I44112 --> N441120["441120: Used Car Dealers"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 4411 |
+| Level | Industry Group |
+| Parent | [Motor Vehicle and Parts Dealers](../) |
+| Industries | 2 |
+| US Dealerships | ~18,000 franchised, 40,000+ independent |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [New Car Dealers](./NewCarDealers.mdx) | 44111/441110 | Franchised new vehicle dealers |
+| [Used Car Dealers](./UsedCarDealers.mdx) | 44112/441120 | Independent used vehicle dealers |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Acquisition["Vehicle Acquisition"]
+        A1["Factory Orders"]
+        A2["Dealer Trades"]
+        A3["Auction Purchases"]
+        A4["Trade-Ins"]
+    end
+
+    subgraph Sales["Sales Process"]
+        S1["Lead Generation"]
+        S2["Customer Greeting"]
+        S3["Needs Assessment"]
+        S4["Vehicle Selection"]
+        S5["Test Drive"]
+        S6["Trade Appraisal"]
+        S7["Negotiation"]
+        S8["F&I"]
+        S9["Delivery"]
+    end
+
+    subgraph AfterSales["After-Sales"]
+        P1["Service Follow-up"]
+        P2["Loyalty Programs"]
+        P3["Repurchase Marketing"]
+    end
+
+    Acquisition --> Sales --> AfterSales
+```
+
+## Omnichannel Strategies
+
+Modern automobile dealers are implementing omnichannel capabilities:
+
+| Channel | Capability |
+|---------|------------|
+| **Website** | Inventory browsing, pricing, trade valuations |
+| **Mobile** | Appointment scheduling, service status |
+| **In-Store** | Traditional showroom experience |
+| **Remote** | Video walkarounds, virtual F&I |
+| **Delivery** | Home test drives, delivery to customer |
+
+## Regulatory Environment
+
+- State dealer licensing requirements
+- Franchise law compliance
+- Federal odometer disclosure requirements
+- State lemon law compliance
+- Truth in lending (TILA) requirements
+- Buyer's Guide requirements for used vehicles
+- EPA fuel economy labeling
+
+## Technology & Innovation
+
+- **Digital Retailing Platforms**: Upstart, Roadster, Cox Automotive
+- **Inventory Pricing Tools**: vAuto, DealerSocket
+- **CRM Systems**: DealerTrack, Elead
+- **Virtual Sales**: Video calls, 360-degree vehicle views
+- **AI Lead Scoring**: Predictive customer analytics
+
+---
+
+*Source: NAICS 4411 - Automobile Dealers*

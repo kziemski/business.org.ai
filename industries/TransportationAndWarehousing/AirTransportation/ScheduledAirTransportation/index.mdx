@@ -1,0 +1,169 @@
+---
+title: Scheduled Air Transportation
+naicsCode: "4811"
+naicsLevel: industryGroup
+parentCode: "481"
+$type: Industry
+$id: https://industries.org.ai/ScheduledAirTransportation
+sameAs: https://naics.org.ai/IndustryGroup/4811
+regulatoryAgencies:
+  - FAA
+  - TSA
+  - DOT
+---
+
+# Scheduled Air Transportation
+
+> This industry group comprises establishments primarily engaged in providing air transportation of passengers, passengers and cargo, or cargo over regular routes and on regular schedules.
+
+## Overview
+
+Scheduled Air Transportation (NAICS 4811) includes airlines and air carriers that operate on fixed routes and schedules, flying even when loads are partial. This distinguishes them from charter and nonscheduled operations. The industry includes major network carriers, low-cost carriers, regional airlines, and all-cargo carriers operating scheduled freight services.
+
+Key characteristics:
+- Network-based operations with interconnecting routes
+- Published schedules and fares
+- High fixed costs requiring load factor optimization
+- Code-sharing and alliance agreements
+- FAA Part 121 certification requirements
+
+## NAICS Hierarchy
+
+```mermaid
+graph TD
+    S["48-49: Transportation and Warehousing"]
+    S --> A481["481: Air Transportation"]
+    A481 --> A4811["4811: Scheduled Air Transportation"]
+    A4811 --> A481111["481111: Scheduled Passenger Air Transportation"]
+    A4811 --> A481112["481112: Scheduled Freight Air Transportation"]
+
+    style A4811 fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 4811 |
+| Level | Industry Group |
+| Parent | [481: Air Transportation](../) |
+| National Industries | 2 |
+| US Employment | ~450,000 |
+| Annual Revenue | ~$220 billion |
+
+## National Industries
+
+| Code | National Industry | Description |
+|------|-------------------|-------------|
+| 481111 | [Scheduled Passenger Air Transportation](./ScheduledPassengerAirTransportation.mdx) | Regular passenger service including commuter and helicopter |
+| 481112 | [Scheduled Freight Air Transportation](./ScheduledFreightAirTransportation.mdx) | Regular cargo-only service and mail transport |
+
+## Regulatory Framework
+
+### FAA Part 121 Certification
+
+All scheduled air carriers must obtain FAA Part 121 certification, which requires:
+- Operations Specifications (OpSpecs)
+- Approved training programs
+- Maintenance programs
+- Safety Management Systems (SMS)
+- Minimum equipment lists (MEL)
+
+### DOT Economic Regulation
+
+- Certificate of Public Convenience and Necessity
+- Fitness determinations for new entrants
+- Consumer protection rules (tarmac delays, oversales)
+- Pricing transparency requirements
+
+## Logistics Models
+
+### Hub-and-Spoke Network
+
+```mermaid
+graph TD
+    subgraph Hub["Major Hub (e.g., ATL)"]
+        H[Hub Airport]
+    end
+
+    subgraph Spokes["Spoke Cities"]
+        S1[City A]
+        S2[City B]
+        S3[City C]
+        S4[City D]
+        S5[City E]
+        S6[City F]
+    end
+
+    S1 --> H
+    S2 --> H
+    S3 --> H
+    H --> S4
+    H --> S5
+    H --> S6
+
+    S1 -.->|"Connection via Hub"| S4
+```
+
+### Revenue Management
+
+```mermaid
+flowchart LR
+    subgraph Demand["Demand Forecasting"]
+        D1[Historical Data]
+        D2[Booking Curves]
+        D3[Competitive Analysis]
+    end
+
+    subgraph Optimization["Inventory Control"]
+        O1[Fare Classes]
+        O2[Seat Allocation]
+        O3[Overbooking]
+    end
+
+    subgraph Pricing["Dynamic Pricing"]
+        P1[Real-time Adjustments]
+        P2[Ancillary Revenue]
+    end
+
+    Demand --> Optimization --> Pricing --> Revenue[Maximized Revenue]
+```
+
+## Technology
+
+### Operations Technology
+
+| System | Function |
+|--------|----------|
+| Departure Control System (DCS) | Check-in, boarding, load control |
+| Flight Operations System | Flight planning, dispatch, tracking |
+| Crew Management System | Scheduling, tracking, compliance |
+| Revenue Management System | Pricing, inventory optimization |
+| Maintenance System (MRO) | Aircraft maintenance tracking |
+
+### Aircraft Systems
+
+- **ADS-B (Automatic Dependent Surveillance-Broadcast)**: Position reporting
+- **ACARS**: Digital datalink for communications
+- **EFB (Electronic Flight Bag)**: Digital charts, manuals, calculations
+- **FMS (Flight Management System)**: Navigation and fuel optimization
+
+## Related Industries
+
+- [Nonscheduled Air Transportation](../NonscheduledAirTransportation/) - Charter operations
+- [Support Activities for Air Transportation](../../SupportActivities/AirTransportSupport/) - Ground handling, fueling
+- [Couriers and Messengers](../../CouriersAndMessengers/) - Integrated express carriers
+
+## Related Occupations
+
+| Occupation | Role | Certification |
+|------------|------|---------------|
+| Airline Pilot | Aircraft operation | ATP Certificate |
+| First Officer | Co-pilot duties | Commercial Certificate |
+| Flight Dispatcher | Flight planning, monitoring | FAA Dispatcher Certificate |
+| Flight Attendant | Cabin safety, service | FAA Certification |
+| Aircraft Mechanic | Maintenance | A&P Certificate |
+
+---
+
+*Source: NAICS 4811 - U.S. Census Bureau, FAA, Airlines for America*

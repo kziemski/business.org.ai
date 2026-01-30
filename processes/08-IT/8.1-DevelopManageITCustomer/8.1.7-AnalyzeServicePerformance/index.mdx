@@ -1,0 +1,104 @@
+---
+id: AnalyzeServicePerformance
+name: "Analyze service performance"
+code: "20648"
+hierarchyId: "8.1.7"
+type: Process
+level: 3
+status: complete
+parent: "8.1"
+children: ["8.1.7.1", "8.1.7.2", "8.1.7.3", "8.1.7.4"]
+---
+
+# Analyze service performance
+
+> Proactively manage IT service levels against IT customer requirements.
+
+## Overview
+
+Process 8.1.7 is a core process that defines the specific procedures for analyze service performance. 
+
+Proactively manage IT service levels against IT customer requirements.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    N8_1 --> N8_1_7["8.1.7 Analyze service performance"]
+    style N8_1_7 fill:#e1f5fe
+    N8_1_7 --> N8_1_7_1["8.1.7.1 Assess SLA compliance"]
+    N8_1_7 --> N8_1_7_2["8.1.7.2 Triage SLA compliance issues"]
+    N8_1_7 --> N8_1_7_3["8.1.7.3 Collect feedback about IT produc..."]
+    N8_1_7 --> N8_1_7_4["8.1.7.4 Synthesize and distribute IT per..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20648 |
+| Hierarchy ID | 8.1.7 |
+| Level | Process |
+| Parent | [8.1](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+analyze.ServicePerformance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `analyze` | Primary action |
+| Object | `service performance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Analyze service performance"]
+        S1["Assess SLA compliance"]
+        S2["Triage SLA compliance issues"]
+        S3["Collect feedback about IT p..."]
+        S4["Synthesize and distribute I..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess SLA compliance](./AssessSLACompliance) | 8.1.7.1 | Gather data from each service target defined in an SLA for a time segment or review period to evalua |
+| [Triage SLA compliance issues](./TriageSLAComplianceIssues) | 8.1.7.2 | Prioritizing SLA compliance issues and plan for remediation |
+| [Collect feedback about IT products and services](./CollectFeedbackAboutITProductsAndServices) | 8.1.7.3 | Collecting customer feedback about IT products and services effectiveness based on overall satisfact |
+| [Synthesize and distribute IT performance information](./SynthesizeAndDistributeITPerformanceInformation) | 8.1.7.4 | Providing stakeholders with collected IT performance measures for further development based on evalu |
+
+
+## Related Concepts
+
+- [ServicePerformance](/concepts/ServicePerformance)
+
+
+---
+
+*Source: APQC PCF 20648 (8.1.7) - APQC*

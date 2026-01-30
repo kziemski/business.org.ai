@@ -1,0 +1,107 @@
+---
+id: ManageBusinessResiliency
+name: "Manage business resiliency"
+code: "11216"
+hierarchyId: "11.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "11"
+children: ["11.4.1", "11.4.2", "11.4.3", "11.4.4", "11.4.5"]
+---
+
+# Manage business resiliency
+
+> Including the processes required to rapidly adapt and respond to any internal or external opportunity, demand, disruption, or threat.
+
+## Overview
+
+Group 11.4 is a process group within APQC Category 11.0 (Manage Enterprise Risk, Compliance, Remediation, Resiliency). 
+
+Including the processes required to rapidly adapt and respond to any internal or external opportunity, demand, disruption, or threat. Develop a more dynamic, strategic, and integrated approach to managing compliance obligations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk, Compliance, Remediation, Resiliency"]
+    C11 --> N11_4["11.4 Manage business resiliency"]
+    style N11_4 fill:#e1f5fe
+    N11_4 --> N11_4_1["11.4.1 Develop the business resilience ..."]
+    N11_4 --> N11_4_2["11.4.2 Perform continuous business oper..."]
+    N11_4 --> N11_4_3["11.4.3 Test continuous business operations"]
+    N11_4 --> N11_4_4["11.4.4 Maintain continuous business ope..."]
+    N11_4 --> N11_4_5["11.4.5 Share knowledge of specific risk..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11216 |
+| Hierarchy ID | 11.4 |
+| Level | Group |
+| Parent | [11](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.BusinessResiliency
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `business resiliency` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage business resiliency"]
+        S1["Develop the business resili..."]
+        S2["Perform continuous business..."]
+        S3["Test continuous business op..."]
+        S4["Maintain continuous busines..."]
+        S5["Share knowledge of specific..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop the business resilience strategy](./DevelopTheBusinessResilienceStrategy) | 11.4.1 | Creating a strategy for rapidly adapting to disturbances |
+| [Perform continuous business operations planning](./PerformContinuousBusinessOperationsPlanning) | 11.4.2 | Developing plans to ensure continuous business operations |
+| [Test continuous business operations](./TestContinuousBusinessOperations) | 11.4.3 | Assessing ongoing activities within the organization that are not intended to stop except for in an  |
+| [Maintain continuous business operations](./MaintainContinuousBusinessOperations) | 11.4.4 | Evaluating business operations |
+| [Share knowledge of specific risks across other parts of the organization](./ShareKnowledgeOfSpecificRisksAcrossOtherPartsOfTheOrganization) | 11.4.5 | Sharing information about risks and resilience strategies of business operations across the organiza |
+
+
+## Related Concepts
+
+- [BusinessResiliency](/concepts/BusinessResiliency)
+
+
+---
+
+*Source: APQC PCF 11216 (11.4) - APQC*

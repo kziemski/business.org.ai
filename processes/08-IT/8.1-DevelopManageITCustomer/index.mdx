@@ -1,0 +1,114 @@
+---
+id: DevelopAndManageItCustomerRelationships
+name: "Develop and manage IT customer relationships"
+code: "20608"
+hierarchyId: "8.1"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "8"
+children: ["8.1.1", "8.1.2", "8.1.3", "8.1.4", "8.1.5", "8.1.6", "8.1.7"]
+---
+
+# Develop and manage IT customer relationships
+
+> Creating and administering relationships with IT customers.
+
+## Overview
+
+Group 8.1 is a process group within APQC Category 8.0 (Manage Information Technology). 
+
+Creating and administering relationships with IT customers. Understanding customer needs including high-level business requirements for IT transformation. Plan for and communicate IT services along with establishing IT service levels, providing transformation guidance, and performance analysis that foster IT customer relationships.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    style N8_1 fill:#e1f5fe
+    N8_1 --> N8_1_1["8.1.1 Understand IT customer needs"]
+    N8_1 --> N8_1_2["8.1.2 Identify IT customer transformat..."]
+    N8_1 --> N8_1_3["8.1.3 Plan and communicate IT services"]
+    N8_1 --> N8_1_4["8.1.4 Provide IT transformation guidance"]
+    N8_1 --> N8_1_5["8.1.5 Develop and manage IT service le..."]
+    N8_1 --> N8_1_6["8.1.6 Manage IT customer relationships"]
+    N8_1 --> N8_1_7["8.1.7 Analyze service performance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20608 |
+| Hierarchy ID | 8.1 |
+| Level | Group |
+| Parent | [8](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageITCustomerRelationships
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage IT customer relationships` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage IT customer relationships"]
+        S1["Understand IT customer needs"]
+        S2["Identify IT customer transf..."]
+        S3["Plan and communicate IT ser..."]
+        S4["Provide IT transformation g..."]
+        S5["Develop and manage IT servi..."]
+        S6["Manage IT customer relation..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Understand IT customer needs](./8.1.1-UnderstandITCustomerNeeds/) | 8.1.1 | Assessing the customer communities along with current IT operational capabilities and usage |
+| [Identify IT customer transformation needs](./8.1.2-IdentifyITCustomerTransformation/) | 8.1.2 | Identifying changing needs of staff dependent on information technology based on continuous improvem |
+| [Plan and communicate IT services](./8.1.3-PlanCommunicateITServices/) | 8.1.3 | Create and design an organized and curated collection of all IT-related services that can be perform |
+| [Provide IT transformation guidance](./8.1.4-ProvideITTransformationGuidance/) | 8.1.4 | Understanding the necessity of IT transformation for the business |
+| [Develop and manage IT service levels](./8.1.5-DevelopManageITService/) | 8.1.5 | Establishing and maintaining service levels for the provision of IT services and solutions |
+| [Manage IT customer relationships](./8.1.6-ManageITCustomerRelationships/) | 8.1.6 | Managing the IT relationship with its customers by systematically coordinating interactions over mul |
+| [Analyze service performance](./8.1.7-AnalyzeServicePerformance/) | 8.1.7 | Proactively manage IT service levels against IT customer requirements |
+
+
+## Related Concepts
+
+- [ITCustomerRelationships](/concepts/ITCustomerRelationships)
+- [ITCustomerRelationships](/concepts/ITCustomerRelationships)
+
+
+---
+
+*Source: APQC PCF 20608 (8.1) - APQC*

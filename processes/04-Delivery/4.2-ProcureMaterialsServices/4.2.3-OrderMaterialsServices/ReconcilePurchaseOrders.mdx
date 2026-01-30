@@ -1,0 +1,63 @@
+---
+id: ReconcilePurchaseOrders
+name: "Reconcile purchase orders"
+code: "10297"
+hierarchyId: "4.2.3.6"
+type: Activity
+level: 4
+status: complete
+parent: "4.2.3"
+---
+
+# Reconcile purchase orders
+
+> Verify that purchase orders are filled as expected: verify that items and quantities are delivered as expected, based on purchase order details and goods receipts.
+
+## Overview
+
+Activity 4.2.3.6 is an activity within the Deliver Physical Products framework. 
+
+Verify that purchase orders are filled as expected: verify that items and quantities are delivered as expected, based on purchase order details and goods receipts.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_2["4.2 Procure materials and services"]
+    N4_2 --> N4_2_3["4.2.3 Order materials and services"]
+    N4_2_3 --> N4_2_3_6["4.2.3.6 Reconcile purchase orders"]
+    style N4_2_3_6 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10297 |
+| Hierarchy ID | 4.2.3.6 |
+| Level | Activity |
+| Parent | [4.2.3](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+reconcile.PurchaseOrders
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `reconcile` | Primary action |
+| Object | `purchase orders` | Direct object |
+
+
+## Related Concepts
+
+- [PurchaseOrders](/concepts/PurchaseOrders)
+
+
+---
+
+*Source: APQC PCF 10297 (4.2.3.6) - APQC*

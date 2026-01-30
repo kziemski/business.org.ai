@@ -1,0 +1,107 @@
+---
+id: ManageEmployeeRelations
+name: "Manage employee relations"
+code: "17052"
+hierarchyId: "7.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "7"
+children: ["7.4.1", "7.4.2", "7.4.3", "7.4.4", "7.4.5"]
+---
+
+# Manage employee relations
+
+> Assisting general management in developing, maintaining, and improving employee relationships.
+
+## Overview
+
+Group 7.4 is a process group within APQC Category 7.0 (Develop and Manage Human Capital). 
+
+Assisting general management in developing, maintaining, and improving employee relationships. This is accomplished through communication, performance management, processing grievances, and/or dispute. Interpret and convey organizational policies.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_4["7.4 Manage employee relations"]
+    style N7_4 fill:#e1f5fe
+    N7_4 --> N7_4_1["7.4.1 Manage labor relations"]
+    N7_4 --> N7_4_2["7.4.2 Manage collective bargaining pro..."]
+    N7_4 --> N7_4_3["7.4.3 Manage labor management partners..."]
+    N7_4 --> N7_4_4["7.4.4 Manage employee grievances"]
+    N7_4 --> N7_4_5["7.4.5 Monitor legal and regulatory env..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17052 |
+| Hierarchy ID | 7.4 |
+| Level | Group |
+| Parent | [7](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EmployeeRelations
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `employee relations` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage employee relations"]
+        S1["Manage labor relations"]
+        S2["Manage collective bargainin..."]
+        S3["Manage labor management par..."]
+        S4["Manage employee grievances"]
+        S5["Monitor legal and regulator..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage labor relations](./ManageLaborRelations) | 7.4.1 | Managing labor relations, the collective bargaining process, and the relationships between the labor |
+| [Manage collective bargaining process](./ManageCollectiveBargainingProcess) | 7.4.2 | Managing any negotiations between an employer and a group of employees that determine the conditions |
+| [Manage labor management partnerships](./ManageLaborManagementPartnerships) | 7.4.3 | Handling partnerships between labor and management |
+| [Manage employee grievances](./ManageEmployeeGrievances) | 7.4.4 | Taking care or resolving any complaint raised by an employee by procedures provided for in a collect |
+| [Monitor legal and regulatory environment](./MonitorLegalAndRegulatoryEnvironment) | 7.4.5 | Awareness of the employee legislature that is in place for the organization |
+
+
+## Related Concepts
+
+- [EmployeeRelations](/concepts/EmployeeRelations)
+
+
+---
+
+*Source: APQC PCF 17052 (7.4) - APQC*

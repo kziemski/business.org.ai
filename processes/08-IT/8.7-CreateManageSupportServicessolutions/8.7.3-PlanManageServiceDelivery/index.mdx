@@ -1,0 +1,93 @@
+---
+id: PlanAndManageServiceDeliveryControl
+name: "Plan and manage service delivery control"
+code: "20880"
+hierarchyId: "8.7.3"
+type: Process
+level: 3
+status: complete
+parent: "8.7"
+children: ["8.7.3.1"]
+---
+
+# Plan and manage service delivery control
+
+> Determine and manage service delivery flow across different business functions.
+
+## Overview
+
+Process 8.7.3 is a core process that defines the specific procedures for plan and manage service delivery control. 
+
+Determine and manage service delivery flow across different business functions. Understand the level of services needed by different stakeholders. Identify major service delivery touch points and criticality associated. Ensure timely communication with users.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_3["8.7.3 Plan and manage service delivery control"]
+    style N8_7_3 fill:#e1f5fe
+    N8_7_3 --> N8_7_3_1["8.7.3.1 Plan operational activities for ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20880 |
+| Hierarchy ID | 8.7.3 |
+| Level | Process |
+| Parent | [8.7](../) |
+| Sub-Processes | 1 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.AndManageServiceDeliveryControl
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `and manage service delivery control` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan and manage service delivery control"]
+        S1["Plan operational activities..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Plan operational activities for IT service delivery](./8.7.3.1-PlanOperationalActivitiesIT/) | 8.7.3.1 | Planning different delivery services for operational activities within the IT function |
+
+
+## Related Concepts
+
+- [ServiceDeliveryControl](/concepts/ServiceDeliveryControl)
+- [ServiceDeliveryControl](/concepts/ServiceDeliveryControl)
+
+
+---
+
+*Source: APQC PCF 20880 (8.7.3) - APQC*

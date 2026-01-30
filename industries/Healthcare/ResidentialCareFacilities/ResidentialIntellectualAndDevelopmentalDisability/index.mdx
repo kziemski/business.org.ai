@@ -1,0 +1,110 @@
+---
+id: ResidentialIntellectualAndDevelopmentalDisability
+name: "Residential Intellectual and Developmental Disability"
+code: "6232"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Residential Intellectual and Developmental Disability
+
+> This industry group comprises establishments primarily engaged in providing residential care (but not licensed hospital care) to people with intellectual and developmental disabilities, mental illness, or substance abuse problems.
+
+## Overview
+
+Residential Intellectual and Developmental Disability represents an important category within the Health Care and Social Assistance sector (NAICS 62). This industry group encompasses establishments primarily engaged in residential intellectual and developmental disability.
+
+This industry group comprises establishments primarily engaged in providing residential care (but not licensed hospital care) to people with intellectual and developmental disabilities, mental illness, or substance abuse problems.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S62["62: Health Care and Social Assistance"]
+    S62 --> N623["623: Residential Care Facilities"]
+    N623 --> N6232["6232: Residential Intellectual and Developm..."]
+    style N6232 fill:#f96,stroke:#333,stroke-width:2px
+    N6232 --> N62321["62321: Developmental Disability Facilities"]
+    N6232 --> N62322["62322: Residential Mental Health"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 6232 |
+| Level | Industry Group |
+| Parent | [Residential Care Facilities](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Developmental Disability Facilities](./DevelopmentalDisabilityFacilities/) | 62321 | See industry description for 623210 |
+| [Residential Mental Health](./ResidentialMentalHealth/) | 62322 | See industry description for 623220 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Patient/Client Intake"]
+        O2["Assessment"]
+        O3["Treatment/Service"]
+        O4["Follow-up"]
+        O5["Discharge"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Compliance"]
+        S2["Records Mgmt"]
+        S3["Billing"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Medical Supplies"]
+        I2["Equipment"]
+        I3["Professionals"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Patient Care"]
+        O2["Diagnostics"]
+        O3["Treatment"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Patients"]
+        C2["Insurers"]
+        C3["Government"]
+        C4["Employers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 6232 - Residential Intellectual and Developmental Disability*

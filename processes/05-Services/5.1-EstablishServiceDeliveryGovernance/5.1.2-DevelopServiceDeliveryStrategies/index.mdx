@@ -1,0 +1,114 @@
+---
+id: DevelopServiceDeliveryStrategies
+name: "Develop service delivery strategies"
+code: "20032"
+hierarchyId: "5.1.2"
+type: Process
+level: 3
+status: complete
+parent: "5.1"
+children: ["5.1.2.1", "5.1.2.2", "5.1.2.3", "5.1.2.4", "5.1.2.5", "5.1.2.6", "5.1.2.7"]
+---
+
+# Develop service delivery strategies
+
+> Constructing strategies that identify goals, policies, processes, and procedures in relation to service delivery.
+
+## Overview
+
+Process 5.1.2 is a core process that defines the specific procedures for develop service delivery strategies. 
+
+Constructing strategies that identify goals, policies, processes, and procedures in relation to service delivery. Review and validate strategies. Define the workplace layout and infrastructure.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_1["5.1 Establish service delivery governance..."]
+    N5_1 --> N5_1_2["5.1.2 Develop service delivery strategies"]
+    style N5_1_2 fill:#e1f5fe
+    N5_1_2 --> N5_1_2_1["5.1.2.1 Define service delivery goals"]
+    N5_1_2 --> N5_1_2_2["5.1.2.2 Define labor policies"]
+    N5_1_2 --> N5_1_2_3["5.1.2.3 Evaluate resource availability"]
+    N5_1_2 --> N5_1_2_4["5.1.2.4 Define service delivery network ..."]
+    N5_1_2 --> N5_1_2_5["5.1.2.5 Define service delivery process"]
+    N5_1_2 --> N5_1_2_6["5.1.2.6 Review and validate service deli..."]
+    N5_1_2 --> N5_1_2_7["5.1.2.7 Define service delivery workplac..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20032 |
+| Hierarchy ID | 5.1.2 |
+| Level | Process |
+| Parent | [5.1](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.ServiceDeliveryStrategies
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `service delivery strategies` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop service delivery strategies"]
+        S1["Define service delivery goals"]
+        S2["Define labor policies"]
+        S3["Evaluate resource availability"]
+        S4["Define service delivery net..."]
+        S5["Define service delivery pro..."]
+        S6["Review and validate service..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define service delivery goals](./DefineServiceDeliveryGoals) | 5.1.2.1 | Aligning organization practices to meet the needs of the customer by creating service delivery goals |
+| [Define labor policies](./DefineLaborPolicies) | 5.1.2.2 | Outlining labor policies for resources and ensuring that those policies meet the needs of the organi |
+| [Evaluate resource availability](./EvaluateResourceAvailability) | 5.1.2.3 | Understanding the needs of the customer and providing the necessary resources to meet those requirem |
+| [Define service delivery network and supply constraints](./DefineServiceDeliveryNetworkAndSupplyConstraints) | 5.1.2.4 | Identifying and understanding the limitations imposed upon service delivery network and supply |
+| [Define service delivery process](./DefineServiceDeliveryProcess) | 5.1.2.5 | Defanging policies and procedures that focus on meeting the needs and expectations of the customer w |
+| [Review and validate service delivery procedures](./ReviewAndValidateServiceDeliveryProcedures) | 5.1.2.6 | Revisioning service delivery procedures that fall short of performance parameters |
+| [Define service delivery workplace layout and infrastructure](./DefineServiceDeliveryWorkplaceLayoutAndInfrastructure) | 5.1.2.7 | Creating a workplace that best serves the needs of the organization and customer through strategic l |
+
+
+## Related Concepts
+
+- [ServiceDeliveryStrategies](/concepts/ServiceDeliveryStrategies)
+
+
+---
+
+*Source: APQC PCF 20032 (5.1.2) - APQC*

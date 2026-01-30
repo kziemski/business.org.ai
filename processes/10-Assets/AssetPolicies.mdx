@@ -1,0 +1,384 @@
+---
+id: AssetPolicies
+name: "Establish fixed-asset policies and procedures"
+code: "10828"
+hierarchyId: "10.5.1"
+type: Process
+status: complete
+---
+
+# Establish fixed-asset policies and procedures
+
+> Creating rules for fixed assets market valuation. Make rules and regulations for fixed assets regarding depreciation, provisions, resale, usage, etc.
+
+## Overview
+
+Establish fixed-asset policies and procedures is a foundational process within the Perform fixed-asset accounting process group (10.5). This process defines the governance framework that guides how an organization acquires, values, depreciates, maintains, and disposes of its fixed assets. Well-defined policies ensure consistent treatment of assets across the organization, compliance with accounting standards (GAAP/IFRS), regulatory requirements, and internal controls.
+
+Fixed-asset policies cover critical areas including capitalization thresholds, depreciation methods, useful life determinations, impairment testing, physical inventory procedures, and disposal protocols. These policies directly impact financial statements, tax obligations, and operational decision-making.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"] --> G105["10.5 Perform fixed-asset accounting"]
+    G105 --> P1051["10.5.1 Establish fixed-asset policies and procedures"]
+    G105 --> P1052["10.5.2 Maintain fixed-asset master data files"]
+    G105 --> P1053["10.5.3 Process and record fixed-asset additions and retires"]
+    G105 --> P1054["10.5.4 Process adjustments, enhancements, revaluations"]
+    G105 --> P1055["10.5.5 Process maintenance and repair expenses"]
+    G105 --> P1056["10.5.6 Calculate and record depreciation"]
+    G105 --> P1057["10.5.7 Reconcile fixed-asset ledger"]
+
+    style P1051 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10828 |
+| Hierarchy ID | 10.5.1 |
+| Level | Process |
+| Parent Process | [Perform fixed-asset accounting](/processes/10-Assets/AssetAccounting) |
+| Category | [Acquire, Construct, and Manage Assets](/processes/10-Assets) |
+| Related Categories | 9.0 Manage Financial Resources |
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Accounting Standards<br/>(GAAP/IFRS)"]
+        I2["Regulatory Requirements"]
+        I3["Tax Regulations"]
+        I4["Industry Best Practices"]
+        I5["Business Strategy"]
+    end
+
+    subgraph Process["Establish Fixed-Asset Policies"]
+        P1["Define Capitalization<br/>Thresholds"]
+        P2["Establish Depreciation<br/>Methods"]
+        P3["Set Useful Life<br/>Standards"]
+        P4["Create Impairment<br/>Testing Procedures"]
+        P5["Define Disposal<br/>Protocols"]
+        P6["Document and<br/>Publish Policies"]
+
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> P5
+        P5 --> P6
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Fixed-Asset Policy Manual"]
+        O2["Capitalization Guidelines"]
+        O3["Depreciation Schedules"]
+        O4["Procedure Documentation"]
+        O5["Control Frameworks"]
+        O6["Training Materials"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## GraphDL Semantic Structure
+
+```
+establish.FixedAssetPoliciesAndProcedures
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action of creating and implementing |
+| Object | `FixedAssetPoliciesAndProcedures` | Governance rules for asset management |
+| Preposition | `for` | Relationship to asset valuation |
+| PrepObject | `MarketValuation` | Purpose of establishing standards |
+
+## Activities
+
+### Define Capitalization Thresholds
+
+Establishing monetary thresholds that determine whether an expenditure should be capitalized as a fixed asset or expensed in the current period.
+
+```mermaid
+sequenceDiagram
+    participant Finance as Finance Team
+    participant Accounting as Accounting
+    participant Tax as Tax Team
+    participant Audit as Internal Audit
+    participant Management as Management
+
+    Finance->>Accounting: Research industry standards
+    Accounting->>Tax: Assess tax implications
+    Tax->>Finance: Provide tax guidance
+    Finance->>Finance: Propose thresholds
+    Finance->>Audit: Review controls
+    Audit->>Finance: Validate compliance
+    Finance->>Management: Present recommendations
+    Management->>Finance: Approve thresholds
+```
+
+**Tasks:**
+- `research.IndustryStandards` - Review peer company practices and benchmarks
+- `assess.TaxImplications` - Evaluate tax treatment of capitalization decisions
+- `define.ThresholdLevels` - Set monetary limits for capitalization
+- `document.CapitalizationCriteria` - Specify qualifying conditions
+
+### Establish Depreciation Methods
+
+Determining the appropriate depreciation methods for different asset classes based on usage patterns, regulatory requirements, and financial objectives.
+
+```mermaid
+sequenceDiagram
+    participant Policy as Policy Team
+    participant Assets as Asset Classes
+    participant Standards as Accounting Standards
+    participant Systems as Financial Systems
+    participant Approval as Approval Process
+
+    Policy->>Assets: Categorize asset types
+    Policy->>Standards: Review GAAP/IFRS requirements
+    Standards->>Policy: Provide guidance
+    Policy->>Policy: Select depreciation methods
+    Policy->>Systems: Configure system settings
+    Systems->>Policy: Confirm implementation
+    Policy->>Approval: Submit for approval
+```
+
+**Tasks:**
+- `categorize.AssetClasses` - Group assets by type and usage
+- `select.DepreciationMethods` - Choose straight-line, declining balance, units-of-production
+- `determine.UsefulLives` - Establish expected service periods
+- `configure.SystemSettings` - Implement in financial systems
+
+### Create Impairment Testing Procedures
+
+Developing procedures to identify and measure asset impairment when carrying values exceed recoverable amounts.
+
+```mermaid
+sequenceDiagram
+    participant Finance as Finance
+    participant Valuation as Valuation Team
+    participant Operations as Operations
+    participant External as External Experts
+    participant Reporting as Financial Reporting
+
+    Finance->>Operations: Request asset condition data
+    Operations->>Finance: Provide utilization reports
+    Finance->>Valuation: Initiate impairment analysis
+    Valuation->>External: Engage appraisers if needed
+    External->>Valuation: Provide fair value estimates
+    Valuation->>Reporting: Document impairment conclusions
+    Reporting->>Finance: Update financial records
+```
+
+**Tasks:**
+- `identify.ImpairmentIndicators` - Define triggers for impairment review
+- `calculate.RecoverableAmount` - Determine fair value less costs to sell
+- `measure.ImpairmentLoss` - Quantify write-down amounts
+- `document.ImpairmentDecisions` - Record rationale and approvals
+
+### Define Disposal and Retirement Protocols
+
+Establishing procedures for the proper disposal, sale, or retirement of fixed assets including authorization requirements and gain/loss recognition.
+
+```mermaid
+sequenceDiagram
+    participant Owner as Asset Owner
+    participant Approval as Approval Authority
+    participant Accounting as Accounting
+    participant Disposal as Disposal Team
+    participant Records as Asset Records
+
+    Owner->>Approval: Request asset disposal
+    Approval->>Approval: Evaluate disposal rationale
+    Approval->>Accounting: Authorize disposal
+    Accounting->>Accounting: Calculate gain/loss
+    Accounting->>Disposal: Coordinate physical removal
+    Disposal->>Records: Update asset register
+    Records->>Accounting: Confirm record closure
+```
+
+**Tasks:**
+- `define.ApprovalAuthorities` - Establish authorization levels
+- `create.DisposalProcedures` - Document step-by-step disposal process
+- `establish.GainLossRecognition` - Define accounting treatment
+- `specify.EnvironmentalCompliance` - Address regulatory disposal requirements
+
+### Document and Publish Policies
+
+Formalizing all fixed-asset policies into comprehensive documentation and ensuring organization-wide communication.
+
+```mermaid
+sequenceDiagram
+    participant Policy as Policy Team
+    participant Legal as Legal Review
+    participant Compliance as Compliance
+    participant Training as Training Team
+    participant Users as End Users
+
+    Policy->>Policy: Compile policy documentation
+    Policy->>Legal: Submit for legal review
+    Legal->>Policy: Provide legal clearance
+    Policy->>Compliance: Validate regulatory alignment
+    Compliance->>Policy: Confirm compliance
+    Policy->>Training: Develop training materials
+    Training->>Users: Conduct policy training
+    Users->>Policy: Acknowledge policy receipt
+```
+
+**Tasks:**
+- `compile.PolicyManual` - Create comprehensive policy document
+- `obtain.LegalApproval` - Secure legal clearance
+- `develop.TrainingMaterials` - Create user guidance
+- `distribute.Policies` - Publish and communicate organization-wide
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define capitalization thresholds | Controller | CFO | Tax, Audit | All departments |
+| Establish depreciation methods | Accounting Manager | Controller | External auditors | Finance team |
+| Create impairment procedures | Financial Reporting | CFO | Valuation experts | Audit committee |
+| Define disposal protocols | Asset Manager | Controller | Legal, Compliance | Operations |
+| Document and publish policies | Policy Team | CFO | Legal, Audit | All employees |
+| Annual policy review | Controller | CFO | External auditors | Board |
+
+## Related Departments
+
+- [Finance](/departments/Finance) - Primary policy ownership
+- [Accounting](/departments/Accounting) - Policy implementation
+- [Legal](/departments/Legal) - Compliance review
+- [Tax](/departments/Tax) - Tax implications assessment
+- [Internal Audit](/departments/InternalAudit) - Control validation
+- [Facilities](/departments/Facilities) - Operational input
+
+## Related Occupations
+
+- [Chief Financial Officers](/occupations/CFO) - Policy accountability
+- [Financial Managers](/occupations/FinancialManagers) - Policy development
+- [Accountants and Auditors](/occupations/Accountants) - Policy implementation
+- [Compliance Officers](/occupations/ComplianceOfficers) - Regulatory alignment
+- [Tax Examiners](/occupations/TaxExaminers) - Tax policy input
+
+## Industry Variations
+
+### Aerospace and Defense
+
+Aerospace companies manage highly specialized, long-lived assets with government contract implications. Policies must address government property management, FAR compliance, and security classifications.
+
+**Industry-Specific Activities:**
+- Establish government property accountability policies
+- Define DCAA-compliant depreciation methods
+- Create security clearance requirements for asset access
+- Implement export control compliance procedures
+
+### Banking
+
+Banking fixed-asset policies focus on branch networks, ATM equipment, and technology infrastructure. Regulatory capital requirements influence asset treatment.
+
+**Industry-Specific Activities:**
+- Define policies for leasehold improvements
+- Establish ATM and technology asset standards
+- Create branch closure and consolidation procedures
+- Implement regulatory reporting requirements
+
+### Healthcare Provider
+
+Healthcare organizations manage medical equipment with regulatory and patient safety implications. Policies must address FDA requirements and clinical asset management.
+
+**Industry-Specific Activities:**
+- Establish medical equipment capitalization criteria
+- Define biomedical asset management procedures
+- Create patient safety compliance requirements
+- Implement HIPAA-compliant asset tracking
+
+### Petroleum (Upstream/Downstream)
+
+Oil and gas companies manage exploration, production, and refining assets with unique accounting requirements including successful efforts vs. full cost methods.
+
+**Industry-Specific Activities:**
+- Define exploration and development capitalization
+- Establish asset retirement obligation policies
+- Create environmental remediation procedures
+- Implement joint venture asset accounting
+
+### Retail
+
+Retail organizations manage store fixtures, point-of-sale equipment, and inventory systems across distributed locations.
+
+**Industry-Specific Activities:**
+- Establish store fixture capitalization thresholds
+- Define POS equipment standards
+- Create store remodel capitalization criteria
+- Implement multi-location asset tracking
+
+### Utilities
+
+Utility companies manage long-lived infrastructure assets with regulatory rate-setting implications. Policies directly impact allowed cost recovery.
+
+**Industry-Specific Activities:**
+- Define regulatory asset accounting policies
+- Establish rate base asset procedures
+- Create infrastructure replacement programs
+- Implement regulatory reporting requirements
+
+## Policy Components Framework
+
+### Capitalization Policy Elements
+
+| Element | Description | Typical Threshold |
+|---------|-------------|-------------------|
+| Monetary Threshold | Minimum cost for capitalization | $2,500 - $10,000 |
+| Useful Life | Minimum service period | >1 year |
+| Asset Categories | Types eligible for capitalization | Equipment, Furniture, Vehicles, Buildings |
+| Betterments | Improvements extending useful life | Extends life >25% or increases capacity |
+
+### Depreciation Method Selection
+
+| Asset Type | Common Method | Rationale |
+|------------|---------------|-----------|
+| Buildings | Straight-Line | Even consumption over long lives |
+| Equipment | Straight-Line or Accelerated | Based on usage pattern |
+| Vehicles | Straight-Line | Predictable decline |
+| Technology | Accelerated | Rapid obsolescence |
+| Leasehold Improvements | Straight-Line | Over lease term |
+
+### Control Requirements
+
+| Control | Description | Frequency |
+|---------|-------------|-----------|
+| Physical Inventory | Count and verify assets | Annual |
+| Reconciliation | Match subledger to GL | Monthly |
+| Authorization Review | Validate approval compliance | Quarterly |
+| Policy Compliance | Audit policy adherence | Annual |
+
+## Related Processes
+
+```mermaid
+graph LR
+    MFP["9.3.1 Manage financial<br/>policies and procedures"] --> EFAP["10.5.1 Establish fixed-asset<br/>policies and procedures"]
+    Standards["Accounting<br/>Standards"] --> EFAP
+
+    EFAP --> MFMD["10.5.2 Maintain fixed-asset<br/>master data files"]
+    EFAP --> PFA["10.5.3 Process fixed-asset<br/>additions and retires"]
+    EFAP --> CD["10.5.6 Calculate and<br/>record depreciation"]
+    EFAP --> Reporting["Financial Reporting"]
+```
+
+## Metrics & KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Policy Compliance Rate | Percentage of transactions following policy | >98% |
+| Audit Findings | Number of fixed-asset policy exceptions | 0 material |
+| Policy Review Cycle | Time since last policy update | <12 months |
+| Training Completion | Percentage of staff trained on policies | 100% |
+| Threshold Appropriateness | Percentage of items properly capitalized/expensed | >99% |
+| Depreciation Accuracy | Variance between calculated and actual wear | <5% |
+
+---
+
+*Source: APQC PCF 10828 (10.5.1) - Cross-Industry*

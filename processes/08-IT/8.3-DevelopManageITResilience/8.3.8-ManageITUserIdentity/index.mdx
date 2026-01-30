@@ -1,0 +1,117 @@
+---
+id: ManageItUserIdentityAndAuthorization
+name: "Manage IT user identity and authorization"
+code: "20756"
+hierarchyId: "8.3.8"
+type: Process
+level: 3
+status: complete
+parent: "8.3"
+children: ["8.3.8.1", "8.3.8.2", "8.3.8.3", "8.3.8.4", "8.3.8.5", "8.3.8.6", "8.3.8.7", "8.3.8.8"]
+---
+
+# Manage IT user identity and authorization
+
+> The process of identifying, authenticating, and authorizing IT users to have access to applications, systems, IT components, or networks by associating user rights and restrictions with established identities.
+
+## Overview
+
+Process 8.3.8 is a core process that defines the specific procedures for manage it user identity and authorization. 
+
+The process of identifying, authenticating, and authorizing IT users to have access to applications, systems, IT components, or networks by associating user rights and restrictions with established identities.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    N8_3 --> N8_3_8["8.3.8 Manage IT user identity and authoriza..."]
+    style N8_3_8 fill:#e1f5fe
+    N8_3_8 --> N8_3_8_1["8.3.8.1 Support integration of identity ..."]
+    N8_3_8 --> N8_3_8_2["8.3.8.2 Manage IT user directory"]
+    N8_3_8 --> N8_3_8_3["8.3.8.3 Manage IT user authorization"]
+    N8_3_8 --> N8_3_8_4["8.3.8.4 Manage IT user authentication me..."]
+    N8_3_8 --> N8_3_8_5["8.3.8.5 Audit IT user identity and autho..."]
+    N8_3_8 --> N8_3_8_6["8.3.8.6 Respond to IT information securi..."]
+    N8_3_8 --> N8_3_8_7["8.3.8.7 Conduct penetration testing"]
+    N8_3_8 --> N8_3_8_8["8.3.8.8 Audit integration of user identi..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20756 |
+| Hierarchy ID | 8.3.8 |
+| Level | Process |
+| Parent | [8.3](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ITUserIdentityAndAuthorization
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `IT user identity and authorization` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage IT user identity and authorization"]
+        S1["Support integration of iden..."]
+        S2["Manage IT user directory"]
+        S3["Manage IT user authorization"]
+        S4["Manage IT user authenticati..."]
+        S5["Audit IT user identity and ..."]
+        S6["Respond to IT information s..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Support integration of identity and authorization policies](./SupportIntegrationOfIdentityAndAuthorizationPolicies) | 8.3.8.1 | Create and implement policies that integrate authorization policies with authorized profiles of user |
+| [Manage IT user directory](./ManageITUserDirectory) | 8.3.8.2 | Managing directory of user profiles and access requirements across different levels in the organizat |
+| [Manage IT user authorization](./ManageITUserAuthorization) | 8.3.8.3 | Managing the process of authorizing IT users to access applications, systems, IT components, or netw |
+| [Manage IT user authentication mechanisms](./ManageITUserAuthenticationMechanisms) | 8.3.8.4 | Create and manage the process to authenticate IT users from user directory based on the internal pol |
+| [Audit IT user identity and authorization systems](./AuditITUserIdentityAndAuthorizationSystems) | 8.3.8.5 | Examine the processes responsible for reviewing IT user identity and authorization |
+| [Respond to IT information security and network breaches](./RespondToITInformationSecurityAndNetworkBreaches) | 8.3.8.6 | Address any form of unauthorized network breach such as unauthorized access or usage of data, applic |
+| [Conduct penetration testing](./ConductPenetrationTesting) | 8.3.8.7 | Conduct penetration testing (pen test) through an authorized stimulated attack to identify security  |
+| [Audit integration of user identity and authorization systems](./AuditIntegrationOfUserIdentityAndAuthorizationSystems) | 8.3.8.8 | Reviewing the processes responsible for integration of user identity and access authorization in ord |
+
+
+## Related Concepts
+
+- [ITUserIdentity](/concepts/ITUserIdentity)
+- [Authorization](/concepts/Authorization)
+
+
+---
+
+*Source: APQC PCF 20756 (8.3.8) - APQC*

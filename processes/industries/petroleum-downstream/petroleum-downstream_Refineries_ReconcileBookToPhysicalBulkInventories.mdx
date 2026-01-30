@@ -1,0 +1,34 @@
+---
+id: petroleum-downstream_Refineries_ReconcileBookToPhysicalBulkInventories
+name: "Reconcile book to physical bulk inventories"
+code: "4.4.5.5"
+industry: "petroleum-downstream"
+type: IndustryProcess
+status: complete
+canonicalProcessId: "ReconcileBookToPhysicalBulkInventories"
+pcfId: "19611"
+subject: "Refineries"
+---
+
+# Reconcile book to physical bulk inventories
+
+## Overview
+
+This is written from a provider point of view. From the retailer point of view: We forecast demand. We determine best buy. We order. We receive. We reconcile. There are tanks that hold product. You don’t want too much in the tank as it can be risky (price goes down) or too little in the tank (price goes up or you run out). You want just the right amount in the tank unless you are buying long or short and taking a risk on a price move. Likewise when you order, you pay for the fuel so you want to buy smart and you pay for the transportation so you want to order full trucks (there are compartments for different grades) and you want the combination of fuel price and transportation cost to equal the least delivered cost. Sometimes it is smarter to by higher cost fuel from a closer terminal (less transport cost) and visa versa.
+
+## Industry Context
+
+- **Industry**: Petroleum Downstream
+- **Subject**: Refineries
+- **APQC Code**: 4.4.5.5
+- **PCF ID**: 19611
+
+## Canonical Process
+
+This is an industry-specific implementation of [ReconcileBookToPhysicalBulkInventories](/processes/ReconcileBookToPhysicalBulkInventories).
+
+## GraphDL Statement
+
+```
+Refineries.reconcile.Book.to.PhysicalBulkInventories
+```

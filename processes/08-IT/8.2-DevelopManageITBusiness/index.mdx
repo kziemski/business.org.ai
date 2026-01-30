@@ -1,0 +1,114 @@
+---
+id: DevelopAndManageItBusinessStrategy
+name: "Develop and manage IT business strategy"
+code: "20652"
+hierarchyId: "8.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "8"
+children: ["8.2.1", "8.2.2", "8.2.3", "8.2.4", "8.2.5", "8.2.6", "8.2.7"]
+---
+
+# Develop and manage IT business strategy
+
+> Handling the business of IT.
+
+## Overview
+
+Group 8.2 is a process group within APQC Category 8.0 (Manage Information Technology). 
+
+Handling the business of IT. Create a organization-wide strategy for the IT function. Define the organization's IT architecture. Manage the IT portfolio. Research and innovate in the field of IT. Assess and convey the performance and the value of the IT function.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_2["8.2 Develop and manage IT business strategy"]
+    style N8_2 fill:#e1f5fe
+    N8_2 --> N8_2_1["8.2.1 Define business technology and g..."]
+    N8_2 --> N8_2_2["8.2.2 Manage IT portfolio strategy"]
+    N8_2 --> N8_2_3["8.2.3 Define and maintain enterprise a..."]
+    N8_2 --> N8_2_4["8.2.4 Define IT service management str..."]
+    N8_2 --> N8_2_5["8.2.5 Control IT management system"]
+    N8_2 --> N8_2_6["8.2.6 Manage IT value portfolio"]
+    N8_2 --> N8_2_7["8.2.7 Define and manage technology inn..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20652 |
+| Hierarchy ID | 8.2 |
+| Level | Group |
+| Parent | [8](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageITBusinessStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage IT business strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage IT business strategy"]
+        S1["Define business technology ..."]
+        S2["Manage IT portfolio strategy"]
+        S3["Define and maintain enterpr..."]
+        S4["Define IT service managemen..."]
+        S5["Control IT management system"]
+        S6["Manage IT value portfolio"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define business technology and governance strategy](./8.2.1-DefineBusinessTechnologyGovernance/) | 8.2.1 | Defining the need of technology in business and systematic implementation of IT investments |
+| [Manage IT portfolio strategy](./8.2.2-ManageITPortfolioStrategy/) | 8.2.2 | Strategy for systematic management of IT investments, projects, and activities |
+| [Define and maintain enterprise architecture](./8.2.3-DefineMaintainEnterpriseArchitecture/) | 8.2.3 | Outlining and maintaining the organization's IT architecture |
+| [Define IT service management strategy](./8.2.4-DefineITServiceManagement/) | 8.2.4 | Defining perspective, position, plans, and patterns needed to execute designing, delivering, managin |
+| [Control IT management system](./8.2.5-ControlITManagementSystem/) | 8.2.5 | Regulating the IT management system through performance measures, governance, analysis, and monitori |
+| [Manage IT value portfolio](./8.2.6-ManageITValuePortfolio/) | 8.2.6 | Creating and establishing the value portfolio |
+| [Define and manage technology innovation](./8.2.7-DefineManageTechnologyInnovation/) | 8.2.7 | Outline and manage the innovation of technology within the organization |
+
+
+## Related Concepts
+
+- [ITBusinessStrategy](/concepts/ITBusinessStrategy)
+- [ITBusinessStrategy](/concepts/ITBusinessStrategy)
+
+
+---
+
+*Source: APQC PCF 20652 (8.2) - APQC*

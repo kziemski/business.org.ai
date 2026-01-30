@@ -1,0 +1,98 @@
+---
+id: ConductCustomerAndMarketResearch
+name: "Conduct customer and market research"
+code: "10108"
+hierarchyId: "3.1.1.1"
+type: Activity
+level: 4
+status: complete
+parent: "3.1.1"
+children: ["3.1.1.1.1", "3.1.1.1.2"]
+---
+
+# Conduct customer and market research
+
+> Carrying out research studies to understand the behavior of customers and the realities of the market.
+
+## Overview
+
+Activity 3.1.1.1 is an activity within the Market and Sell Products and Services framework. 
+
+Carrying out research studies to understand the behavior of customers and the realities of the market. Undertake research to understand the market conditions as well as the characteristics, drives, and desires of prospective customers. Gather highly contextualized intelligence through primary and secondary research methods, with the objective of gaining insights over how to best seize a market opportunity. Consider assistance from professional research services.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_1["3.1 Understand markets, customers, and ca..."]
+    N3_1 --> N3_1_1["3.1.1 Perform customer and market intellige..."]
+    N3_1_1 --> N3_1_1_1["3.1.1.1 Conduct customer and market research"]
+    style N3_1_1_1 fill:#e1f5fe
+    N3_1_1_1 --> N3_1_1_1_1["3.1.1.1.1 Understand consumer needs and hi..."]
+    N3_1_1_1 --> N3_1_1_1_2["3.1.1.1.2 Predict customer purchasing beha..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10108 |
+| Hierarchy ID | 3.1.1.1 |
+| Level | Activity |
+| Parent | [3.1.1](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+conduct.CustomerAndMarketResearch
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `conduct` | Primary action |
+| Object | `customer and market research` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Conduct customer and market research"]
+        S1["Understand consumer needs a..."]
+        S2["Predict customer purchasing..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Understand consumer needs and historical behaviors](./UnderstandConsumerNeedsAndHistoricalBehaviors) | 3.1.1.1.1 | Identifying the factors that drive the targeted market segment |
+| [Predict customer purchasing behavior](./PredictCustomerPurchasingBehavior) | 3.1.1.1.2 | Using customer segmentation tools to examine past customer behavior to predict future purchasing pat |
+
+
+## Related Concepts
+
+- [Customer](/concepts/Customer)
+- [MarketResearch](/concepts/MarketResearch)
+
+
+---
+
+*Source: APQC PCF 10108 (3.1.1.1) - APQC*

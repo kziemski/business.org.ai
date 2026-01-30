@@ -1,0 +1,113 @@
+---
+id: EstablishProjectScope
+name: "Establish project scope"
+code: "16411"
+hierarchyId: "13.2.3.1"
+type: Activity
+level: 4
+status: complete
+parent: "13.2.3"
+children: ["13.2.3.1.1", "13.2.3.1.2", "13.2.3.1.3", "13.2.3.1.4", "13.2.3.1.5", "13.2.3.1.6"]
+---
+
+# Establish project scope
+
+> Establishing the horizons of business projects.
+
+## Overview
+
+Activity 13.2.3.1 is an activity within the Develop and Manage Business Capabilities framework. 
+
+Establishing the horizons of business projects. Identify the objectives of the program, along with the resource requirements. Assess the readiness for the project management approach. Identify methodologies for project management. Obtain funding. Develop performance measures and indicators.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_2["13.2 Manage portfolio, program, and project"]
+    N13_2 --> N13_2_3["13.2.3 Manage projects"]
+    N13_2_3 --> N13_2_3_1["13.2.3.1 Establish project scope"]
+    style N13_2_3_1 fill:#e1f5fe
+    N13_2_3_1 --> N13_2_3_1_1["13.2.3.1.1 Identify project requirements an..."]
+    N13_2_3_1 --> N13_2_3_1_2["13.2.3.1.2 Identify project resource requir..."]
+    N13_2_3_1 --> N13_2_3_1_3["13.2.3.1.3 Assess culture and readiness for..."]
+    N13_2_3_1 --> N13_2_3_1_4["13.2.3.1.4 Create business case"]
+    N13_2_3_1 --> N13_2_3_1_5["13.2.3.1.5 Develop project measures and ind..."]
+    N13_2_3_1 --> N13_2_3_1_6["13.2.3.1.6 Prioritize and select projects f..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16411 |
+| Hierarchy ID | 13.2.3.1 |
+| Level | Activity |
+| Parent | [13.2.3](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.ProjectScope
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `project scope` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish project scope"]
+        S1["Identify project requiremen..."]
+        S2["Identify project resource r..."]
+        S3["Assess culture and readines..."]
+        S4["Create business case"]
+        S5["Develop project measures an..."]
+        S6["Prioritize and select proje..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify project requirements and objectives](./IdentifyProjectRequirementsAndObjectives) | 13.2.3.1.1 | Recognizing and defining what the project is ultimately supposed to do |
+| [Identify project resource requirements](./IdentifyProjectResourceRequirements) | 13.2.3.1.2 | Identifying the prerequisites of business projects |
+| [Assess culture and readiness for project management approach](./AssessCultureAndReadinessForProjectManagementApproach) | 13.2.3.1.3 | Evaluating the culture and readiness of the organizational environment is order to implement the pro |
+| [Create business case](./CreateBusinessCase) | 13.2.3.1.4 | Creating a document that includes the current situation, proposed solution, financial analysis, conc |
+| [Develop project measures and indicators](./DevelopProjectMeasuresAndIndicators) | 13.2.3.1.5 | Developing procedures and indictors to assess performance of business projects |
+| [Prioritize and select projects for the portfolio](./PrioritizeAndSelectProjectsForThePortfolio) | 13.2.3.1.6 | Stack ranking of projects in the portfolio based upon preestablished criteria |
+
+
+## Related Concepts
+
+- [ProjectScope](/concepts/ProjectScope)
+
+
+---
+
+*Source: APQC PCF 16411 (13.2.3.1) - APQC*

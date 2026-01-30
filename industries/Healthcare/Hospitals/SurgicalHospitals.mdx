@@ -1,0 +1,99 @@
+---
+id: SurgicalHospitals
+name: "Surgical Hospitals"
+code: "6221"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Surgical Hospitals
+
+> Establishments primarily engaged in surgical hospitals.
+
+## Overview
+
+Surgical Hospitals represents an important category within the Health Care and Social Assistance sector (NAICS 62). This industry group encompasses establishments primarily engaged in surgical hospitals.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S62["62: Health Care and Social Assistance"]
+    S62 --> N622["622: Hospitals"]
+    N622 --> N6221["6221: Surgical Hospitals"]
+    style N6221 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 6221 |
+| Level | Industry Group |
+| Parent | [Hospitals](../) |
+| Child Industries | 0 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Patient/Client Intake"]
+        O2["Assessment"]
+        O3["Treatment/Service"]
+        O4["Follow-up"]
+        O5["Discharge"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Compliance"]
+        S2["Records Mgmt"]
+        S3["Billing"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Medical Supplies"]
+        I2["Equipment"]
+        I3["Professionals"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Patient Care"]
+        O2["Diagnostics"]
+        O3["Treatment"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Patients"]
+        C2["Insurers"]
+        C3["Government"]
+        C4["Employers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 6221 - Surgical Hospitals*

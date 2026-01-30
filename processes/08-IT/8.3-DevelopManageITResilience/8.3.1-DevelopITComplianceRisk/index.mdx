@@ -1,0 +1,121 @@
+---
+id: DevelopItComplianceRiskAndSecurityStrategy
+name: "Develop IT compliance, risk, and security strategy"
+code: "20707"
+hierarchyId: "8.3.1"
+type: Process
+level: 3
+status: complete
+parent: "8.3"
+children: ["8.3.1.1", "8.3.1.2", "8.3.1.3", "8.3.1.4", "8.3.1.5", "8.3.1.6", "8.3.1.7", "8.3.1.8", "8.3.1.9", "8.3.1.10"]
+---
+
+# Develop IT compliance, risk, and security strategy
+
+> Ensuring that the organization effectively manages risk.
+
+## Overview
+
+Process 8.3.1 is a core process that defines the specific procedures for develop it compliance, risk, and security strategy. 
+
+Ensuring that the organization effectively manages risk. Develop rules and standards for robust IT operations, manage risk, and adopt measures to protect integrity, confidentiality, and security of IT assets.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    N8_3 --> N8_3_1["8.3.1 Develop IT compliance, risk, and secu..."]
+    style N8_3_1 fill:#e1f5fe
+    N8_3_1 --> N8_3_1_1["8.3.1.1 Determine and evaluate IT regula..."]
+    N8_3_1 --> N8_3_1_2["8.3.1.2 Understand business unit risk to..."]
+    N8_3_1 --> N8_3_1_3["8.3.1.3 Establish IT risk tolerance"]
+    N8_3_1 --> N8_3_1_4["8.3.1.4 Establish risk ownership"]
+    N8_3_1 --> N8_3_1_5["8.3.1.5 Establish and maintain risk mana..."]
+    N8_3_1 --> N8_3_1_6["8.3.1.6 Establish compliance objectives"]
+    N8_3_1 --> N8_3_1_7["8.3.1.7 Identify systems to support comp..."]
+    N8_3_1 --> N8_3_1_8["8.3.1.8 Identify and evaluate IT risk"]
+    N8_3_1 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20707 |
+| Hierarchy ID | 8.3.1 |
+| Level | Process |
+| Parent | [8.3](../) |
+| Sub-Processes | 10 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.ITComplianceRiskAndSecurityStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `IT compliance, risk, and security strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop IT compliance, risk, and security strategy"]
+        S1["Determine and evaluate IT r..."]
+        S2["Understand business unit ri..."]
+        S3["Establish IT risk tolerance"]
+        S4["Establish risk ownership"]
+        S5["Establish and maintain risk..."]
+        S6["Establish compliance object..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine and evaluate IT regulatory and audit requirements](./DetermineAndEvaluateITRegulatoryAndAuditRequirements) | 8.3.1.1 | Determining and evaluating IT regulatory and audit requirements |
+| [Understand business unit risk tolerance](./UnderstandBusinessUnitRiskTolerance) | 8.3.1.2 | Understand the risk tolerance levels of individual business units, given risk-return trade-offs for  |
+| [Establish IT risk tolerance](./EstablishITRiskTolerance) | 8.3.1.3 | Determine the specific maximum risk to take in quantitative terms for each relevant risk sub-categor |
+| [Establish risk ownership](./EstablishRiskOwnership) | 8.3.1.4 | Establish an individual or a group who is ultimately accountable for ensuring that IT risks are mana |
+| [Establish and maintain risk management roles](./EstablishAndMaintainRiskManagementRoles) | 8.3.1.5 | Determine and maintain roles that are specialized in each risk areas and coordinating all risk manag |
+| [Establish compliance objectives](./EstablishComplianceObjectives) | 8.3.1.6 | Establishing compliance objectives which ensures that the organization has systems of internal contr |
+| [Identify systems to support compliance](./IdentifySystemsToSupportCompliance) | 8.3.1.7 | Identifying and adopting information technology solutions to support changing regulatory compliance |
+| [Identify and evaluate IT risk](./IdentifyAndEvaluateITRisk) | 8.3.1.8 | Developing a timely and continuous process to identify and evaluate activities that might hinder IT  |
+| [Evaluate IT-related risks resiliency](./EvaluateITrelatedRisksResiliency) | 8.3.1.9 | Assess IT-related risk resilience strategies to ensure that the organization effectively manages its |
+| [Create IT risk mitigation strategies and approaches](./CreateITRiskMitigationStrategiesAndApproaches) | 8.3.1.10 | Developing activities to improve performance opportunities and lessen threats in IT |
+
+
+## Related Concepts
+
+- [ITCompliance](/concepts/ITCompliance)
+- [Risk](/concepts/Risk)
+- [SecurityStrategy](/concepts/SecurityStrategy)
+
+
+---
+
+*Source: APQC PCF 20707 (8.3.1) - APQC*

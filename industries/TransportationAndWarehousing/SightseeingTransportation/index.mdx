@@ -1,0 +1,110 @@
+---
+id: SightseeingTransportation
+name: "Sightseeing Transportation"
+code: "487"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Sightseeing Transportation
+
+> Industries in the Scenic and Sightseeing Transportation subsector utilize transportation equipment to provide recreation and entertainment.
+
+## Overview
+
+Sightseeing Transportation represents an important category within the Transportation and Warehousing sector (NAICS 48-49). This subsector encompasses establishments primarily engaged in sightseeing transportation.
+
+Industries in the Scenic and Sightseeing Transportation subsector utilize transportation equipment to provide recreation and entertainment. These activities have a production process distinct from passenger transportation carried out for the purpose of other types of for-hire transportation. This process does not emphasize efficient transportation; in fact, such activities often use obsolete vehicles, such as steam trains, to provide some extra ambience. The activity is local in nature, usually involving a same-day return to the point of departure. The Scenic and Sightseeing Transportation subsector is separated into three industries based on the mode: land, water, and other. Activities that are recreational in nature and involve participation by the customer, such as white water rafting, are generally excluded from this subsector, unless they impose an impact on part of the transportation system. Charter boat fishing, for example, is included in the Scenic and Sightseeing Transportation, Water industry.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S48-49["48-49: Transportation and Warehousing"]
+    S48-49 --> N487["487: Sightseeing Transportation"]
+    style N487 fill:#f96,stroke:#333,stroke-width:2px
+    N487 --> N4871["4871: Sightseeing Transportation, Land"]
+    N487 --> N4872["4872: Sightseeing Transportation, Water"]
+    N487 --> N4879["4879: Sightseeing Transportation, Other"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 487 |
+| Level | Subsector |
+| Child Industries | 3 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Sightseeing Transportation, Land](./SightseeingTransportationLand/) | 4871 | Sightseeing Transportation, Land |
+| [Sightseeing Transportation, Water](./SightseeingTransportationWater/) | 4872 | Sightseeing Transportation, Water |
+| [Sightseeing Transportation, Other](./SightseeingTransportationOther/) | 4879 | Sightseeing Transportation, Other |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Receiving"]
+        O2["Routing/Planning"]
+        O3["Transport/Storage"]
+        O4["Delivery"]
+        O5["Tracking"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Fleet Management"]
+        S2["Safety Systems"]
+        S3["Compliance"]
+        S4["IT Systems"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Resources"]
+        I2["Expertise"]
+        I3["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Products"]
+        O2["Services"]
+        O3["Solutions"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Institutions"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 487 - Sightseeing Transportation*

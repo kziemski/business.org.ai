@@ -1,0 +1,104 @@
+---
+id: ImproveProcesses
+name: "Improve processes"
+code: "21453"
+hierarchyId: "13.1.5"
+type: Process
+level: 3
+status: complete
+parent: "13.1"
+children: ["13.1.5.1", "13.1.5.2", "13.1.5.3", "13.1.5.4"]
+---
+
+# Improve processes
+
+> Identifying, selecting, and managing improvements.
+
+## Overview
+
+Process 13.1.5 is a core process that defines the specific procedures for improve processes. 
+
+Identifying, selecting, and managing improvements. Based on the type and scope of the improvement, determination of the appropriate improvement methodology (e.g., Lean, Six Sigma, etc.) should guide the effort. This includes continuous improvement, process redesign, process reengineering, and application of the organizations approaches for Manage projects.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_1["13.1 Manage business processes"]
+    N13_1 --> N13_1_5["13.1.5 Improve processes"]
+    style N13_1_5 fill:#e1f5fe
+    N13_1_5 --> N13_1_5_1["13.1.5.1 Identify and select improvement ..."]
+    N13_1_5 --> N13_1_5_2["13.1.5.2 Select process improvement metho..."]
+    N13_1_5 --> N13_1_5_3["13.1.5.3 Manage improvement projects"]
+    N13_1_5 --> N13_1_5_4["13.1.5.4 Perform continuous improvement a..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21453 |
+| Hierarchy ID | 13.1.5 |
+| Level | Process |
+| Parent | [13.1](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+improve.Processes
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `improve` | Primary action |
+| Object | `processes` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Improve processes"]
+        S1["Identify and select improve..."]
+        S2["Select process improvement ..."]
+        S3["Manage improvement projects"]
+        S4["Perform continuous improvem..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify and select improvement opportunities](./IdentifyAndSelectImprovementOpportunities) | 13.1.5.1 | Helping a process owner to identify, analyze, and improve existing business processes within an orga |
+| [Select process improvement methodology](./SelectProcessImprovementMethodology) | 13.1.5.2 | Assessing and choosing methodologies to identify, analyze, and improve existing processes within an  |
+| [Manage improvement projects](./ManageImprovementProjects) | 13.1.5.3 | Developing and implementing a systematic approach to help the organization optimize its underlying p |
+| [Perform continuous improvement activities](./PerformContinuousImprovementActivities) | 13.1.5.4 | Persistently implementing activities for improving business processes |
+
+
+## Related Concepts
+
+- [Processes](/concepts/Processes)
+
+
+---
+
+*Source: APQC PCF 21453 (13.1.5) - APQC*

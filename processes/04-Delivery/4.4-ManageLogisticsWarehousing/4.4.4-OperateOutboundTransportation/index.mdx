@@ -1,0 +1,104 @@
+---
+id: OperateOutboundTransportation
+name: "Operate outbound transportation"
+code: "10341"
+hierarchyId: "4.4.4"
+type: Process
+level: 3
+status: complete
+parent: "4.4"
+children: ["4.4.4.1", "4.4.4.2", "4.4.4.3", "4.4.4.4"]
+---
+
+# Operate outbound transportation
+
+> Creating a plan that specifies the schedule and system for transportation and delivery of the outbound products, as well as tracking the performance of the carrier delivery system.
+
+## Overview
+
+Process 4.4.4 is a core process that defines the specific procedures for operate outbound transportation. 
+
+Creating a plan that specifies the schedule and system for transportation and delivery of the outbound products, as well as tracking the performance of the carrier delivery system. Conduct vehicle management and processing of all carrier-related documents.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_4["4.4 Manage logistics and warehousing"]
+    N4_4 --> N4_4_4["4.4.4 Operate outbound transportation"]
+    style N4_4_4 fill:#e1f5fe
+    N4_4_4 --> N4_4_4_1["4.4.4.1 Plan, transport, and deliver out..."]
+    N4_4_4 --> N4_4_4_2["4.4.4.2 Track carrier delivery performance"]
+    N4_4_4 --> N4_4_4_3["4.4.4.3 Manage transportation fleet"]
+    N4_4_4 --> N4_4_4_4["4.4.4.4 Process and audit carrier invoic..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10341 |
+| Hierarchy ID | 4.4.4 |
+| Level | Process |
+| Parent | [4.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+operate.OutboundTransportation
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `operate` | Primary action |
+| Object | `outbound transportation` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Operate outbound transportation"]
+        S1["Plan, transport, and delive..."]
+        S2["Track carrier delivery perf..."]
+        S3["Manage transportation fleet"]
+        S4["Process and audit carrier i..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Plan, transport, and deliver outbound product](./PlanTransportAndDeliverOutboundProduct) | 4.4.4.1 | Organizing the transportation and delivery of outbound products |
+| [Track carrier delivery performance](./TrackCarrierDeliveryPerformance) | 4.4.4.2 | Monitoring delivery performance when carrying products from the warehouse/distribution centers to th |
+| [Manage transportation fleet](./ManageTransportationFleet) | 4.4.4.3 | Taking care of a range of functions related to the means of transport used for delivering the end pr |
+| [Process and audit carrier invoices and documents](./ProcessAndAuditCarrierInvoicesAndDocuments) | 4.4.4.4 | Organizing and inspecting all account statements and any other documentation for the carriers used i |
+
+
+## Related Concepts
+
+- [OutboundTransportation](/concepts/OutboundTransportation)
+
+
+---
+
+*Source: APQC PCF 10341 (4.4.4) - APQC*

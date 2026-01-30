@@ -1,0 +1,100 @@
+---
+id: VideoProduction
+name: "Video Production"
+code: "51211"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Video Production
+
+> See industry description for 512110.
+
+## Overview
+
+Video Production represents an important category within the Information sector (NAICS 51). This industry encompasses establishments primarily engaged in video production.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S51["51: Information"]
+    S51 --> N512["512: Sound Recording Industries"]
+    N512 --> N5121["5121: Video Industries"]
+    N5121 --> N51211["51211: Video Production"]
+    style N51211 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 51211 |
+| Level | Industry |
+| Parent | [Video Industries](../) |
+| Child Industries | 0 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Content Creation"]
+        O2["Production"]
+        O3["Distribution"]
+        O4["Customer Access"]
+        O5["Support"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Technology Mgmt"]
+        S2["Rights Management"]
+        S3["Marketing"]
+        S4["Analytics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Content"]
+        I2["Technology"]
+        I3["Talent"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Information Products"]
+        O2["Software"]
+        O3["Media"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Education"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 51211 - Video Production*

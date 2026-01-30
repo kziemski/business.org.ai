@@ -1,0 +1,100 @@
+---
+id: ManageGovernmentAndIndustryRelationships
+name: "Manage government and industry relationships"
+code: "11011"
+hierarchyId: "12.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "12"
+children: ["12.2.1", "12.2.3", "12.2.4"]
+---
+
+# Manage government and industry relationships
+
+> Creating and maintaining relationships with government and industry representatives.
+
+## Overview
+
+Group 12.2 is a process group within APQC Category 12.0 (Manage External Relationships). 
+
+Creating and maintaining relationships with government and industry representatives.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C12["12.0 Manage External Relationships"]
+    C12 --> N12_2["12.2 Manage government and industry relati..."]
+    style N12_2 fill:#e1f5fe
+    N12_2 --> N12_2_1["12.2.1 Manage government relations"]
+    N12_2 --> N12_2_3["12.2.3 Manage relations with trade or i..."]
+    N12_2 --> N12_2_4["12.2.4 Manage lobby activities"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11011 |
+| Hierarchy ID | 12.2 |
+| Level | Group |
+| Parent | [12](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.GovernmentAndIndustryRelationships
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `government and industry relationships` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage government and industry relationships"]
+        S1["Manage government relations"]
+        S2["Manage relations with trade..."]
+        S3["Manage lobby activities"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage government relations](./12.2.1-ManageGovernmentRelations/) | 12.2.1 | Persuading public and government policy at the local, regional, national, and global level (subject  |
+| [Manage relations with trade or industry groups](./12.2.3-ManageRelationsTradeIndustry/) | 12.2.3 | Managing relations with organizations established and financed by businesses that operate in a speci |
+| [Manage lobby activities](./ManageLobbyActivities) | 12.2.4 | Managing lobbying activities to affect government policies |
+
+
+## Related Concepts
+
+- [GovernmentRelationships](/concepts/GovernmentRelationships)
+- [IndustryRelationships](/concepts/IndustryRelationships)
+
+
+---
+
+*Source: APQC PCF 11011 (12.2) - APQC*

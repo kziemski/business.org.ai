@@ -1,0 +1,104 @@
+---
+id: ServiceProducts
+name: "Service products"
+code: "10218"
+hierarchyId: "6.3.4"
+type: Process
+level: 3
+status: complete
+parent: "6.3"
+children: ["6.3.4.1", "6.3.4.2", "6.3.4.3", "6.3.4.4"]
+---
+
+# Service products
+
+> Validating specific service requirements for individual customers.
+
+## Overview
+
+Process 6.3.4 is a core process that defines the specific procedures for service products. 
+
+Validating specific service requirements for individual customers. Determine and schedule resource to fulfill these requirements. Provide service to specific individual customers. Ensure the quality of service delivery.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_4["6.3.4 Service products"]
+    style N6_3_4 fill:#e1f5fe
+    N6_3_4 --> N6_3_4_1["6.3.4.1 Confirm specific service require..."]
+    N6_3_4 --> N6_3_4_2["6.3.4.2 Identify and schedule resources ..."]
+    N6_3_4 --> N6_3_4_3["6.3.4.3 Provide service to specific cust..."]
+    N6_3_4 --> N6_3_4_4["6.3.4.4 Ensure quality of service"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10218 |
+| Hierarchy ID | 6.3.4 |
+| Level | Process |
+| Parent | [6.3](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+service.Products
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `service` | Primary action |
+| Object | `products` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Service products"]
+        S1["Confirm specific service re..."]
+        S2["Identify and schedule resou..."]
+        S3["Provide service to specific..."]
+        S4["Ensure quality of service"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Confirm specific service requirements for individual customer](./6.3.4.1-ConfirmSpecificServiceRequirements/) | 6.3.4.1 | Acquiring or soliciting information about specific service requirements for individual customers thr |
+| [Identify and schedule resources to meet service requirements](./6.3.4.2-IdentifyScheduleResourcesMeet/) | 6.3.4.2 | Determining and scheduling the resources required to fulfill customer service requirements |
+| [Provide service to specific customers](./6.3.4.3-ProvideServiceSpecificCustomers/) | 6.3.4.3 | Dispatching resources for managing and fulfilling daily service requirements |
+| [Ensure quality of service](./6.3.4.4-EnsureQualityService/) | 6.3.4.4 | Guaranteeing the quality of service provided to customers |
+
+
+## Related Concepts
+
+- [Products](/concepts/Products)
+
+
+---
+
+*Source: APQC PCF 10218 (6.3.4) - APQC*

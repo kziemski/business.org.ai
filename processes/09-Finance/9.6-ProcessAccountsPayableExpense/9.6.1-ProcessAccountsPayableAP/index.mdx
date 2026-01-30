@@ -1,0 +1,115 @@
+---
+id: ProcessAccountsPayableAp
+name: "Process accounts payable (AP)"
+code: "10756"
+hierarchyId: "9.6.1"
+type: Process
+level: 3
+status: complete
+parent: "9.6"
+children: ["9.6.1.1", "9.6.1.2", "9.6.1.3", "9.6.1.4", "9.6.1.5", "9.6.1.6", "9.6.1.7", "9.6.1.8", "9.6.1.9", "9.6.1.10", "9.6.1.11"]
+---
+
+# Process accounts payable (AP)
+
+> Processing payments of operating expenses and other supplier charges.
+
+## Overview
+
+Process 9.6.1 is a core process that defines the specific procedures for process accounts payable (ap). 
+
+Processing payments of operating expenses and other supplier charges. This includes the development of policies and procedures around processing of accounts payable and all operations. This process is often supported by key technology enablers.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_6["9.6 Process accounts payable and expense ..."]
+    N9_6 --> N9_6_1["9.6.1 Process accounts payable (AP)"]
+    style N9_6_1 fill:#e1f5fe
+    N9_6_1 --> N9_6_1_1["9.6.1.1 Verify AP pay file with purchase..."]
+    N9_6_1 --> N9_6_1_2["9.6.1.2 Maintain/Manage electronic commerce"]
+    N9_6_1 --> N9_6_1_3["9.6.1.3 Audit invoices and key data in A..."]
+    N9_6_1 --> N9_6_1_4["9.6.1.4 Approve payments"]
+    N9_6_1 --> N9_6_1_5["9.6.1.5 Process financial accruals and r..."]
+    N9_6_1 --> N9_6_1_6["9.6.1.6 Process payables taxes"]
+    N9_6_1 --> N9_6_1_7["9.6.1.7 Research/Resolve payable exceptions"]
+    N9_6_1 --> N9_6_1_8["9.6.1.8 Process payments"]
+    N9_6_1 --> more["... +3 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10756 |
+| Hierarchy ID | 9.6.1 |
+| Level | Process |
+| Parent | [9.6](../) |
+| Sub-Processes | 11 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.AccountsPayableAP
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `accounts payable (AP)` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Process accounts payable (AP)"]
+        S1["Verify AP pay file with pur..."]
+        S2["Maintain/Manage electronic ..."]
+        S3["Audit invoices and key data..."]
+        S4["Approve payments"]
+        S5["Process financial accruals ..."]
+        S6["Process payables taxes"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Verify AP pay file with purchase order vendor master file](./VerifyAPPayFileWithPurchaseOrderVendorMasterFile) | 9.6.1.1 | Matching records of bills to be paid with accounts |
+| [Maintain/Manage electronic commerce](./MaintainManageElectronicCommerce) | 9.6.1.2 | Tracking all online transactions |
+| [Audit invoices and key data in AP system](./AuditInvoicesAndKeyDataInAPSystem) | 9.6.1.3 | Monitoring and evaluating bills registered in accounts books |
+| [Approve payments](./ApprovePayments) | 9.6.1.4 | Processing payments for products/services |
+| [Process financial accruals and reversals](./ProcessFinancialAccrualsAndReversals) | 9.6.1.5 | Handling transactions for accruals and reversals |
+| [Process payables taxes](./ProcessPayablesTaxes) | 9.6.1.6 | Filing the amount of taxes that a company owes as of the balance sheet date |
+| [Research/Resolve payable exceptions](./ResearchResolvePayableExceptions) | 9.6.1.7 | Resolving any atypical or inconsistent situation concerning payments to be made by the organization |
+| [Process payments](./ProcessPayments) | 9.6.1.8 | Making payments for products/services on due dates (payment cycle) decided by parties involved |
+| [Respond to AP inquiries](./RespondToAPInquiries) | 9.6.1.9 | Clarifying or address queries relating to the particulars of AP such as date, discounts, amount, and |
+| [Retain records](./RetainRecords) | 9.6.1.10 | Keeping bills of every transaction for future reference |
+| [Adjust accounting records](./AdjustAccountingRecords) | 9.6.1.11 | Rectifying for alterations occurred in accounts while recording |
+
+
+---
+
+*Source: APQC PCF 10756 (9.6.1) - APQC*

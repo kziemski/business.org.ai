@@ -1,0 +1,104 @@
+---
+id: MaintainBusinessModels
+name: "Maintain business models"
+code: "20950"
+hierarchyId: "1.4.2"
+type: Process
+level: 3
+status: complete
+parent: "1.4"
+children: ["1.4.2.1", "1.4.2.2", "1.4.2.3", "1.4.2.4"]
+---
+
+# Maintain business models
+
+> Revising and updating business models to reflect the changes in the marketed services, product inventory, market behavior, available resources or accrued expenses.
+
+## Overview
+
+Process 1.4.2 is a core process that defines the specific procedures for maintain business models. 
+
+Revising and updating business models to reflect the changes in the marketed services, product inventory, market behavior, available resources or accrued expenses. Determine how and when to modify the accepted business model in response to incoming feedback.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_4["1.4 Develop and maintain business models"]
+    N1_4 --> N1_4_2["1.4.2 Maintain business models"]
+    style N1_4_2 fill:#e1f5fe
+    N1_4_2 --> N1_4_2_1["1.4.2.1 Establish business model mainten..."]
+    N1_4_2 --> N1_4_2_2["1.4.2.2 Accept business model feedback p..."]
+    N1_4_2 --> N1_4_2_3["1.4.2.3 Prioritize and manage incoming f..."]
+    N1_4_2 --> N1_4_2_4["1.4.2.4 Update existing models"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20950 |
+| Hierarchy ID | 1.4.2 |
+| Level | Process |
+| Parent | [1.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+maintain.BusinessModels
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `maintain` | Primary action |
+| Object | `business models` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Maintain business models"]
+        S1["Establish business model ma..."]
+        S2["Accept business model feedb..."]
+        S3["Prioritize and manage incom..."]
+        S4["Update existing models"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish business model maintenance parameters](./EstablishBusinessModelMaintenanceParameters) | 1.4.2.1 | Determining the timeline, procedures and responsibilities for reviewing the business model and for u |
+| [Accept business model feedback parameters](./AcceptBusinessModelFeedbackParameters) | 1.4.2.2 | Deciding the type of responses, reactions, sentiments and insights that are crucial to be taken into |
+| [Prioritize and manage incoming feedback](./PrioritizeAndManageIncomingFeedback) | 1.4.2.3 | Evaluating the feedback regarding products, services, processes or resources |
+| [Update existing models](./UpdateExistingModels) | 1.4.2.4 | Modifying the business models that are presently in use in response to incoming feedback or changing |
+
+
+## Related Concepts
+
+- [BusinessModels](/concepts/BusinessModels)
+
+
+---
+
+*Source: APQC PCF 20950 (1.4.2) - APQC*

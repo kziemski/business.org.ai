@@ -1,0 +1,100 @@
+---
+id: DevelopOverallMissionStatement
+name: "Develop overall mission statement"
+code: "10037"
+hierarchyId: "1.2.1"
+type: Process
+level: 3
+status: complete
+parent: "1.2"
+children: ["1.2.1.1", "1.2.1.2", "1.2.1.3"]
+---
+
+# Develop overall mission statement
+
+> Establishing an overarching, compact statement that concisely underscores the mission of the organization.
+
+## Overview
+
+Process 1.2.1 is a core process that defines the specific procedures for develop overall mission statement. 
+
+Establishing an overarching, compact statement that concisely underscores the mission of the organization. Define and communicate a clear and succinct mission statement, which encapsulates how the organization aims to proceed in order to Establish a strategic vision [10020]. Solicit critical inputs from senior management and strategy executives, and collaborate with marketing or personnel from allied functions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_2["1.2 Develop business strategy"]
+    N1_2 --> N1_2_1["1.2.1 Develop overall mission statement"]
+    style N1_2_1 fill:#e1f5fe
+    N1_2_1 --> N1_2_1_1["1.2.1.1 Define current business"]
+    N1_2_1 --> N1_2_1_2["1.2.1.2 Formulate mission"]
+    N1_2_1 --> N1_2_1_3["1.2.1.3 Communicate mission"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10037 |
+| Hierarchy ID | 1.2.1 |
+| Level | Process |
+| Parent | [1.2](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.OverallMissionStatement
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `overall mission statement` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop overall mission statement"]
+        S1["Define current business"]
+        S2["Formulate mission"]
+        S3["Communicate mission"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define current business](./DefineCurrentBusiness) | 1.2.1.1 | Defining the status quo relating to the de facto core of what the business is |
+| [Formulate mission](./FormulateMission) | 1.2.1.2 | Outlining actionable objectives that effectively set a course to fulfill the organization's vision |
+| [Communicate mission](./CommunicateMission) | 1.2.1.3 | Developing and executing a communication strategy to convey the mission statement |
+
+
+## Related Concepts
+
+- [OverallMissionStatement](/concepts/OverallMissionStatement)
+
+
+---
+
+*Source: APQC PCF 10037 (1.2.1) - APQC*

@@ -1,0 +1,110 @@
+---
+id: OutpatientCareCenters
+name: "Outpatient Care Centers"
+code: "6214"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Outpatient Care Centers
+
+> This industry group comprises establishments with medical staff primarily engaged in providing a range of outpatient services, such as family planning, diagnosis and treatment of mental health disorders and alcohol and other substance abuse, and other general or specialized outpatient care.
+
+## Overview
+
+Outpatient Care Centers represents an important category within the Health Care and Social Assistance sector (NAICS 62). This industry group encompasses establishments primarily engaged in outpatient care centers.
+
+This industry group comprises establishments with medical staff primarily engaged in providing a range of outpatient services, such as family planning, diagnosis and treatment of mental health disorders and alcohol and other substance abuse, and other general or specialized outpatient care.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S62["62: Health Care and Social Assistance"]
+    S62 --> N621["621: Ambulatory Health Care Services"]
+    N621 --> N6214["6214: Outpatient Care Centers"]
+    style N6214 fill:#f96,stroke:#333,stroke-width:2px
+    N6214 --> N62141["62141: Family Planning Centers"]
+    N6214 --> N62142["62142: Outpatient Mental Health"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 6214 |
+| Level | Industry Group |
+| Parent | [Ambulatory Health Care Services](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Family Planning Centers](./FamilyPlanningCenters/) | 62141 | See industry description for 621410 |
+| [Outpatient Mental Health](./OutpatientMentalHealth/) | 62142 | See industry description for 621420 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Patient/Client Intake"]
+        O2["Assessment"]
+        O3["Treatment/Service"]
+        O4["Follow-up"]
+        O5["Discharge"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Compliance"]
+        S2["Records Mgmt"]
+        S3["Billing"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Medical Supplies"]
+        I2["Equipment"]
+        I3["Professionals"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Patient Care"]
+        O2["Diagnostics"]
+        O3["Treatment"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Patients"]
+        C2["Insurers"]
+        C3["Government"]
+        C4["Employers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 6214 - Outpatient Care Centers*

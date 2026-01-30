@@ -1,0 +1,103 @@
+---
+id: ManageInformation
+name: "Manage information"
+code: "20765"
+hierarchyId: "8.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "8"
+children: ["8.4.1", "8.4.2", "8.4.3", "8.4.4"]
+---
+
+# Manage information
+
+> Creating strategies to manage the organization's information and content.
+
+## Overview
+
+Group 8.4 is a process group within APQC Category 8.0 (Manage Information Technology). 
+
+Creating strategies to manage the organization's information and content. Outline the architecture for information. Administer information resources. Administer the management of data and content.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_4["8.4 Manage information"]
+    style N8_4 fill:#e1f5fe
+    N8_4 --> N8_4_1["8.4.1 Define business information and ..."]
+    N8_4 --> N8_4_2["8.4.2 Define and maintain business inf..."]
+    N8_4 --> N8_4_3["8.4.3 Define and execute business info..."]
+    N8_4 --> N8_4_4["8.4.4 Manage business information"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20765 |
+| Hierarchy ID | 8.4 |
+| Level | Group |
+| Parent | [8](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Information
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `information` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage information"]
+        S1["Define business information..."]
+        S2["Define and maintain busines..."]
+        S3["Define and execute business..."]
+        S4["Manage business information"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define business information and analytics strategy](./8.4.1-DefineBusinessInformationAnalytics/) | 8.4.1 | Create an organization-wide strategy for the IT function by combining skills, technologies, applicat |
+| [Define and maintain business information architecture](./8.4.2-DefineMaintainBusinessInformation/) | 8.4.2 | Creating strategies to manage the organization's information and content |
+| [Define and execute business information lifecycle planning and control](./8.4.3-DefineExecuteBusinessInformation/) | 8.4.3 | Develop and implement strategies to plan and manage the flow of an information system's data from cr |
+| [Manage business information](./8.4.4-ManageBusinessInformation/) | 8.4.4 | Creating strategies to administer information and content |
+
+
+## Related Concepts
+
+- [Information](/concepts/Information)
+
+
+---
+
+*Source: APQC PCF 20765 (8.4) - APQC*

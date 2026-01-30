@@ -1,0 +1,113 @@
+---
+id: DepositoryCreditIntermediation
+name: "Depository Credit Intermediation"
+code: "5221"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Depository Credit Intermediation
+
+> This industry group comprises establishments primarily engaged in accepting deposits (or share deposits) and in lending funds from these deposits.
+
+## Overview
+
+Depository Credit Intermediation represents an important category within the Finance and Insurance sector (NAICS 52). This industry group encompasses establishments primarily engaged in depository credit intermediation.
+
+This industry group comprises establishments primarily engaged in accepting deposits (or share deposits) and in lending funds from these deposits. Within this group, industries are defined on the basis of differences in the types of deposit liabilities assumed and in the nature of the credit extended.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S52["52: Finance and Insurance"]
+    S52 --> N522["522: Credit Intermediation"]
+    N522 --> N5221["5221: Depository Credit Intermediation"]
+    style N5221 fill:#f96,stroke:#333,stroke-width:2px
+    N5221 --> N52211["52211: Commercial Banking"]
+    N5221 --> N52213["52213: Credit Unions"]
+    N5221 --> N52218["52218: Savings Institutions"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 5221 |
+| Level | Industry Group |
+| Parent | [Credit Intermediation](../) |
+| Child Industries | 3 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Commercial Banking](./CommercialBanking/) | 52211 | See industry description for 522110 |
+| [Credit Unions](./CreditUnions/) | 52213 | See industry description for 522130 |
+| [Savings Institutions](./SavingsInstitutions/) | 52218 | See industry description for 522180 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Client Acquisition"]
+        O2["Underwriting/Analysis"]
+        O3["Processing"]
+        O4["Service Delivery"]
+        O5["Reporting"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Risk Management"]
+        S2["Compliance"]
+        S3["IT Security"]
+        S4["Customer Relations"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Capital"]
+        I2["Data"]
+        I3["Expertise"]
+        I4["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Financial Products"]
+        O2["Risk Coverage"]
+        O3["Advisory"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Individuals"]
+        C2["Businesses"]
+        C3["Institutions"]
+        C4["Government"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 5221 - Depository Credit Intermediation*

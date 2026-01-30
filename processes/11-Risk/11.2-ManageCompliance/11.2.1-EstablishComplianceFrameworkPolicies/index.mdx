@@ -1,0 +1,105 @@
+---
+id: EstablishComplianceFrameworkAndPolicies
+name: "Establish compliance framework and policies"
+code: "17468"
+hierarchyId: "11.2.1"
+type: Process
+level: 3
+status: complete
+parent: "11.2"
+children: ["11.2.1.1", "11.2.1.2", "11.2.1.3", "11.2.1.4"]
+---
+
+# Establish compliance framework and policies
+
+> Developing a set of procedures detailing an organization's progress in complying with established guidelines, provisions, and legislation.
+
+## Overview
+
+Process 11.2.1 is a core process that defines the specific procedures for establish compliance framework and policies. 
+
+Developing a set of procedures detailing an organization's progress in complying with established guidelines, provisions, and legislation.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C11["11.0 Manage Enterprise Risk, Compliance, Remediation, Resiliency"]
+    C11 --> N11_2["11.2 Manage compliance"]
+    N11_2 --> N11_2_1["11.2.1 Establish compliance framework and po..."]
+    style N11_2_1 fill:#e1f5fe
+    N11_2_1 --> N11_2_1_1["11.2.1.1 Develop enterprise compliance po..."]
+    N11_2_1 --> N11_2_1_2["11.2.1.2 Implement enterprise compliance ..."]
+    N11_2_1 --> N11_2_1_3["11.2.1.3 Manage internal audits"]
+    N11_2_1 --> N11_2_1_4["11.2.1.4 Maintain controls-related techno..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17468 |
+| Hierarchy ID | 11.2.1 |
+| Level | Process |
+| Parent | [11.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.ComplianceFrameworkAndPolicies
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `compliance framework and policies` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish compliance framework and policies"]
+        S1["Develop enterprise complian..."]
+        S2["Implement enterprise compli..."]
+        S3["Manage internal audits"]
+        S4["Maintain controls-related t..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop enterprise compliance policies and procedures](./DevelopEnterpriseCompliancePoliciesAndProcedures) | 11.2.1.1 | Creating a standardized approach to ethics and compliance |
+| [Implement enterprise compliance activities](./ImplementEnterpriseComplianceActivities) | 11.2.1.2 | Implementing standardized for ethics and compliance |
+| [Manage internal audits](./ManageInternalAudits) | 11.2.1.3 | Managing accounts and prepare regular reports on financial performance |
+| [Maintain controls-related technologies and tools](./MaintainControlsrelatedTechnologiesAndTools) | 11.2.1.4 | Managing technologies and tools related to the confidentiality, integrity, and availability of data  |
+
+
+## Related Concepts
+
+- [ComplianceFramework](/concepts/ComplianceFramework)
+- [Policies](/concepts/Policies)
+
+
+---
+
+*Source: APQC PCF 17468 (11.2.1) - APQC*

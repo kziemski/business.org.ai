@@ -1,0 +1,118 @@
+---
+id: ProvideItTransformationGuidance
+name: "Provide IT transformation guidance"
+code: "20623"
+hierarchyId: "8.1.4"
+type: Process
+level: 3
+status: complete
+parent: "8.1"
+children: ["8.1.4.1", "8.1.4.2", "8.1.4.3", "8.1.4.4", "8.1.4.5", "8.1.4.6", "8.1.4.7", "8.1.4.8", "8.1.4.9"]
+---
+
+# Provide IT transformation guidance
+
+> Understanding the necessity of IT transformation for the business.
+
+## Overview
+
+Process 8.1.4 is a core process that defines the specific procedures for provide it transformation guidance. 
+
+Understanding the necessity of IT transformation for the business. Collect and analyze customer requirements. Identify opportunities and prioritize outcomes. Develop and support business case for transformation. Develop transformation plan and roadmap.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    N8_1 --> N8_1_4["8.1.4 Provide IT transformation guidance"]
+    style N8_1_4 fill:#e1f5fe
+    N8_1_4 --> N8_1_4_1["8.1.4.1 Develop IT transformation plans"]
+    N8_1_4 --> N8_1_4_2["8.1.4.2 Collect IT customer requirements"]
+    N8_1_4 --> N8_1_4_3["8.1.4.3 Analyze IT customer requirements"]
+    N8_1_4 --> N8_1_4_4["8.1.4.4 Identify and prioritize IT oppor..."]
+    N8_1_4 --> N8_1_4_5["8.1.4.5 Facilitate solution design activ..."]
+    N8_1_4 --> N8_1_4_6["8.1.4.6 Prioritize IT outcomes"]
+    N8_1_4 --> N8_1_4_7["8.1.4.7 Develop business cases"]
+    N8_1_4 --> N8_1_4_8["8.1.4.8 Support business case"]
+    N8_1_4 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20623 |
+| Hierarchy ID | 8.1.4 |
+| Level | Process |
+| Parent | [8.1](../) |
+| Sub-Processes | 9 |
+
+
+## GraphDL Semantic Structure
+
+```
+provide.ITTransformationGuidance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `provide` | Primary action |
+| Object | `IT transformation guidance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Provide IT transformation guidance"]
+        S1["Develop IT transformation p..."]
+        S2["Collect IT customer require..."]
+        S3["Analyze IT customer require..."]
+        S4["Identify and prioritize IT ..."]
+        S5["Facilitate solution design ..."]
+        S6["Prioritize IT outcomes"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop IT transformation plans](./DevelopITTransformationPlans) | 8.1.4.1 | Developing a robust plan to replace or upgrade an organization's information technology systems |
+| [Collect IT customer requirements](./CollectITCustomerRequirements) | 8.1.4.2 | Identifying existing or potential IT gaps between the expected business performance levels and curre |
+| [Analyze IT customer requirements](./AnalyzeITCustomerRequirements) | 8.1.4.3 | Assessing identified IT gaps to plan for remediation efforts to allow outcomes to meet established p |
+| [Identify and prioritize IT opportunities](./IdentifyAndPrioritizeITOpportunities) | 8.1.4.4 | Identifying IT opportunities on the basis of collection and analysis of IT customer requirements, th |
+| [Facilitate solution design activities](./FacilitateSolutionDesignActivities) | 8.1.4.5 | Providing a plan of action to provide solution to IT customers |
+| [Prioritize IT outcomes](./PrioritizeITOutcomes) | 8.1.4.6 | Prioritizing IT outcomes based on need, effectiveness, and efficiency |
+| [Develop business cases](./DevelopBusinessCases) | 8.1.4.7 | Create a business case with value proposition indicating current situation, proposed solution, finan |
+| [Support business case](./SupportBusinessCase) | 8.1.4.8 | Supporting business case with supporting research, business analysis, and background information on  |
+| [Develop transformation roadmap](./DevelopTransformationRoadmap) | 8.1.4.9 | Creating a blueprint for execution of IT transformation from the existing state to the planned organ |
+
+
+## Related Concepts
+
+- [ITTransformationGuidance](/concepts/ITTransformationGuidance)
+
+
+---
+
+*Source: APQC PCF 20623 (8.1.4) - APQC*

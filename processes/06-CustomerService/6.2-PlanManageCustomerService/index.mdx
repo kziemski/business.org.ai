@@ -1,0 +1,108 @@
+---
+id: PlanAndManageCustomerServiceContacts
+name: "Plan and manage customer service contacts"
+code: "10379"
+hierarchyId: "6.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "6"
+children: ["6.2.1", "6.2.2", "6.2.3", "6.2.4", "6.2.5"]
+---
+
+# Plan and manage customer service contacts
+
+> Planning and administering work force operations for customer service provision by taking care of customer services requests/inquiries, as well as the complaints.
+
+## Overview
+
+Group 6.2 is a process group within APQC Category 6.0 (Manage Customer Service). 
+
+Planning and administering work force operations for customer service provision by taking care of customer services requests/inquiries, as well as the complaints.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_2["6.2 Plan and manage customer service cont..."]
+    style N6_2 fill:#e1f5fe
+    N6_2 --> N6_2_1["6.2.1 Plan and manage customer service..."]
+    N6_2 --> N6_2_2["6.2.2 Manage customer service problems..."]
+    N6_2 --> N6_2_3["6.2.3 Manage customer complaints"]
+    N6_2 --> N6_2_4["6.2.4 Process returns"]
+    N6_2 --> N6_2_5["6.2.5 Report incidents and risks to re..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10379 |
+| Hierarchy ID | 6.2 |
+| Level | Group |
+| Parent | [6](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.AndManageCustomerServiceContacts
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `and manage customer service contacts` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan and manage customer service contacts"]
+        S1["Plan and manage customer se..."]
+        S2["Manage customer service pro..."]
+        S3["Manage customer complaints"]
+        S4["Process returns"]
+        S5["Report incidents and risks ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Plan and manage customer service work force](./6.2.1-PlanManageCustomerService/) | 6.2.1 | Creating and administering the work force deployed for the customer service process |
+| [Manage customer service problems, requests, and inquiries](./6.2.2-ManageCustomerServiceProblems/) | 6.2.2 | Handling the requests and inquiries from customers that seek information regarding the organization' |
+| [Manage customer complaints](./6.2.3-ManageCustomerComplaints/) | 6.2.3 | Obtaining customer complaints online or by phone |
+| [Process returns](./6.2.4-ProcessReturns/) | 6.2.4 | Acquiring returns and identify if the returns are scraped or salvaged |
+| [Report incidents and risks to regulatory bodies](./ReportIncidentsAndRisksToRegulatoryBodies) | 6.2.5 | Notifying all stakeholders, legal, and industry regulatory bodies of the incidents and risks related |
+
+
+## Related Concepts
+
+- [CustomerServiceContacts](/concepts/CustomerServiceContacts)
+- [CustomerServiceContacts](/concepts/CustomerServiceContacts)
+
+
+---
+
+*Source: APQC PCF 10379 (6.2) - APQC*

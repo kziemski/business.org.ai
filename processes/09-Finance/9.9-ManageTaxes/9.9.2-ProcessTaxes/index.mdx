@@ -1,0 +1,114 @@
+---
+id: ProcessTaxes
+name: "Process taxes"
+code: "10766"
+hierarchyId: "9.9.2"
+type: Process
+level: 3
+status: complete
+parent: "9.9"
+children: ["9.9.2.1", "9.9.2.2", "9.9.2.3", "9.9.2.4", "9.9.2.5", "9.9.2.6", "9.9.2.7"]
+---
+
+# Process taxes
+
+> Processing the taxes of the organization in line with the regional taxation structure, including corporate, property, excise, and service taxes.
+
+## Overview
+
+Process 9.9.2 is a core process that defines the specific procedures for process taxes. 
+
+Processing the taxes of the organization in line with the regional taxation structure, including corporate, property, excise, and service taxes.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_9["9.9 Manage taxes"]
+    N9_9 --> N9_9_2["9.9.2 Process taxes"]
+    style N9_9_2 fill:#e1f5fe
+    N9_9_2 --> N9_9_2_1["9.9.2.1 Perform tax planning/strategy"]
+    N9_9_2 --> N9_9_2_2["9.9.2.2 Prepare tax returns"]
+    N9_9_2 --> N9_9_2_3["9.9.2.3 Prepare foreign taxes"]
+    N9_9_2 --> N9_9_2_4["9.9.2.4 Calculate deferred taxes"]
+    N9_9_2 --> N9_9_2_5["9.9.2.5 Account for taxes"]
+    N9_9_2 --> N9_9_2_6["9.9.2.6 Monitor tax compliance"]
+    N9_9_2 --> N9_9_2_7["9.9.2.7 Address tax inquiries"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10766 |
+| Hierarchy ID | 9.9.2 |
+| Level | Process |
+| Parent | [9.9](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+process.Taxes
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `process` | Primary action |
+| Object | `taxes` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Process taxes"]
+        S1["Perform tax planning/strategy"]
+        S2["Prepare tax returns"]
+        S3["Prepare foreign taxes"]
+        S4["Calculate deferred taxes"]
+        S5["Account for taxes"]
+        S6["Monitor tax compliance"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Perform tax planning/strategy](./PerformTaxPlanningstrategy) | 9.9.2.1 | Creating and implementing strategies for taxes to be paid or collected by the business |
+| [Prepare tax returns](./PrepareTaxReturns) | 9.9.2.2 | Preparing and submitting tax reports for every employee to the tax department in order to show the t |
+| [Prepare foreign taxes](./PrepareForeignTaxes) | 9.9.2.3 | Preparing reports about paid or accrued foreign taxes to an overseas country |
+| [Calculate deferred taxes](./CalculateDeferredTaxes) | 9.9.2.4 | Calculating the income that has been realized when the tax on that income has not |
+| [Account for taxes](./AccountForTaxes) | 9.9.2.5 | Managing the organization's financial accounts for the purpose of taxation |
+| [Monitor tax compliance](./MonitorTaxCompliance) | 9.9.2.6 | Checking and correcting the tax policies according to the rules and regulations set by the organizat |
+| [Address tax inquiries](./AddressTaxInquiries) | 9.9.2.7 | Addressing any tax queries by any regulatory or government authorities |
+
+
+## Related Concepts
+
+- [Taxes](/concepts/Taxes)
+
+
+---
+
+*Source: APQC PCF 10766 (9.9.2) - APQC*

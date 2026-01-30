@@ -1,0 +1,99 @@
+---
+id: EstablishStrategicVision
+name: "Establish strategic vision"
+code: "10020"
+hierarchyId: "1.1.4"
+type: Process
+level: 3
+status: complete
+parent: "1.1"
+children: ["1.1.4.1", "1.1.4.2", "1.1.4.3"]
+---
+
+# Establish strategic vision
+
+> Establishing the organization's long-term vision as a strategic positioning and engagement of stakeholders.
+
+## Overview
+
+Process 1.1.4 is a core process that defines the specific procedures for establish strategic vision. 
+
+Establishing the organization's long-term vision as a strategic positioning and engagement of stakeholders. Institute the vision by creating strategic orientations of all stakeholders. Understand the strategy development frameworks in this context.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_1_4["1.1.4 Establish strategic vision"]
+    style N1_1_4 fill:#e1f5fe
+    N1_1_4 --> N1_1_4_1["1.1.4.1 Define the strategic vision"]
+    N1_1_4 --> N1_1_4_2["1.1.4.2 Align stakeholders around strate..."]
+    N1_1_4 --> N1_1_4_3["1.1.4.3 Communicate strategic vision to ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10020 |
+| Hierarchy ID | 1.1.4 |
+| Level | Process |
+| Parent | [1.1](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.StrategicVision
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `strategic vision` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish strategic vision"]
+        S1["Define the strategic vision"]
+        S2["Align stakeholders around s..."]
+        S3["Communicate strategic visio..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define the strategic vision](./DefineTheStrategicVision) | 1.1.4.1 | Developing goals to define organizations vision |
+| [Align stakeholders around strategic vision](./AlignStakeholdersAroundStrategicVision) | 1.1.4.2 | Orienting those entities, associated with the organization that have a direct bearing on its operati |
+| [Communicate strategic vision to stakeholders](./CommunicateStrategicVisionToStakeholders) | 1.1.4.3 | Developing and executing communication strategies to convey an alignment plan of all organizational  |
+
+
+## Related Concepts
+
+- [StrategicVision](/concepts/StrategicVision)
+
+
+---
+
+*Source: APQC PCF 10020 (1.1.4) - APQC*

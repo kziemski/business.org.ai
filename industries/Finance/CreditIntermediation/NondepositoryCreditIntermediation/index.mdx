@@ -1,0 +1,111 @@
+---
+id: NondepositoryCreditIntermediation
+name: "Nondepository Credit Intermediation"
+code: "5222"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Nondepository Credit Intermediation
+
+> This industry group comprises establishments, both public (government-sponsored enterprises) and private, primarily engaged in extending credit or lending funds raised by credit market borrowing, such as issuing commercial paper or other debt instruments or by borrowing from other financial intermediaries.
+
+## Overview
+
+Nondepository Credit Intermediation represents an important category within the Finance and Insurance sector (NAICS 52). This industry group encompasses establishments primarily engaged in nondepository credit intermediation.
+
+This industry group comprises establishments, both public (government-sponsored enterprises) and private, primarily engaged in extending credit or lending funds raised by credit market borrowing, such as issuing commercial paper or other debt instruments or by borrowing from other financial intermediaries. Within this group, industries are defined on the basis of the type of credit being extended.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S52["52: Finance and Insurance"]
+    S52 --> N522["522: Credit Intermediation"]
+    N522 --> N5222["5222: Nondepository Credit Intermediation"]
+    style N5222 fill:#f96,stroke:#333,stroke-width:2px
+    N5222 --> N52221["52221: Credit Card Issuing"]
+    N5222 --> N52222["52222: Sales Financing"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 5222 |
+| Level | Industry Group |
+| Parent | [Credit Intermediation](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Credit Card Issuing](./CreditCardIssuing/) | 52221 | See industry description for 522210 |
+| [Sales Financing](./SalesFinancing/) | 52222 | See industry description for 522220 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Client Acquisition"]
+        O2["Underwriting/Analysis"]
+        O3["Processing"]
+        O4["Service Delivery"]
+        O5["Reporting"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Risk Management"]
+        S2["Compliance"]
+        S3["IT Security"]
+        S4["Customer Relations"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Capital"]
+        I2["Data"]
+        I3["Expertise"]
+        I4["Technology"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Financial Products"]
+        O2["Risk Coverage"]
+        O3["Advisory"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Individuals"]
+        C2["Businesses"]
+        C3["Institutions"]
+        C4["Government"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 5222 - Nondepository Credit Intermediation*

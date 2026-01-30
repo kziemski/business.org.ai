@@ -1,0 +1,116 @@
+---
+id: ManageServiceDeliveryResourceDemand
+name: "Manage service delivery resource demand"
+code: "20041"
+hierarchyId: "5.2.1"
+type: Process
+level: 3
+status: complete
+parent: "5.2"
+children: ["5.2.1.1", "5.2.1.2", "5.2.1.3", "5.2.1.4", "5.2.1.5", "5.2.1.6", "5.2.1.7", "5.2.1.8"]
+---
+
+# Manage service delivery resource demand
+
+> Ensuring necessary resources are maintained through monitoring pipeline, developing forecasts, and collaborating with customers.
+
+## Overview
+
+Process 5.2.1 is a core process that defines the specific procedures for manage service delivery resource demand. 
+
+Ensuring necessary resources are maintained through monitoring pipeline, developing forecasts, and collaborating with customers. Determine skills needed for service deliver and forecast customer orders. Monitor forecasted orders and modify if where needed. Measure forecast accuracy.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_2["5.2 Manage service delivery resources"]
+    N5_2 --> N5_2_1["5.2.1 Manage service delivery resource demand"]
+    style N5_2_1 fill:#e1f5fe
+    N5_2_1 --> N5_2_1_1["5.2.1.1 Monitor pipeline"]
+    N5_2_1 --> N5_2_1_2["5.2.1.2 Develop baseline forecasts"]
+    N5_2_1 --> N5_2_1_3["5.2.1.3 Collaborate with customers"]
+    N5_2_1 --> N5_2_1_4["5.2.1.4 Develop consensus forecast"]
+    N5_2_1 --> N5_2_1_5["5.2.1.5 Determine availability of skills..."]
+    N5_2_1 --> N5_2_1_6["5.2.1.6 Monitor activity against forecas..."]
+    N5_2_1 --> N5_2_1_7["5.2.1.7 Evaluate and revise forecasting ..."]
+    N5_2_1 --> N5_2_1_8["5.2.1.8 Measure forecast accuracy"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20041 |
+| Hierarchy ID | 5.2.1 |
+| Level | Process |
+| Parent | [5.2](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ServiceDeliveryResourceDemand
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `service delivery resource demand` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage service delivery resource demand"]
+        S1["Monitor pipeline"]
+        S2["Develop baseline forecasts"]
+        S3["Collaborate with customers"]
+        S4["Develop consensus forecast"]
+        S5["Determine availability of s..."]
+        S6["Monitor activity against fo..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Monitor pipeline](./MonitorPipeline) | 5.2.1.1 | Tracking potential opportunities as they move through the various stages of the pipeline |
+| [Develop baseline forecasts](./DevelopBaselineForecasts) | 5.2.1.2 | Identifying the demand anticipated for the organization's services |
+| [Collaborate with customers](./CollaborateWithCustomers) | 5.2.1.3 | Providing a collaborative meeting in which to engage the customer to understand the scope of their n |
+| [Develop consensus forecast](./DevelopConsensusForecast) | 5.2.1.4 | Arriving at a consensus over the forecasted levels of demand for services by analyzing baseline fore |
+| [Determine availability of skills to deliver on current and forecast customer orders](./DetermineAvailabilityOfSkillsToDeliverOnCurrentAndForecastCustomerOrders) | 5.2.1.5 | Identifying what skillset is necessary for the delivery of opportunities |
+| [Monitor activity against forecast and revise forecast](./MonitorActivityAgainstForecastAndReviseForecast) | 5.2.1.6 | Overseeing all activities necessary to deliver services to customer |
+| [Evaluate and revise forecasting approach](./EvaluateAndReviseForecastingApproach) | 5.2.1.7 | Recognizing potential problems in the current forecast and making the necessary changes to align the |
+| [Measure forecast accuracy](./MeasureForecastAccuracy) | 5.2.1.8 | Analyzing forecasting against actuals to determine accuracy |
+
+
+## Related Concepts
+
+- [ServiceDeliveryResourceDemand](/concepts/ServiceDeliveryResourceDemand)
+
+
+---
+
+*Source: APQC PCF 20041 (5.2.1) - APQC*

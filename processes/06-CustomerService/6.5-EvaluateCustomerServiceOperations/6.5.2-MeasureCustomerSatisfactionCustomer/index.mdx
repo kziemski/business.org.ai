@@ -1,0 +1,105 @@
+---
+id: MeasureCustomerSatisfactionWithCustomerComplaintHandlingAndResolution
+name: "Measure customer satisfaction with customer- complaint handling and resolution"
+code: "10402"
+hierarchyId: "6.5.2"
+type: Process
+level: 3
+status: complete
+parent: "6.5"
+children: ["6.5.2.1", "6.5.2.2", "6.5.2.3"]
+---
+
+# Measure customer satisfaction with customer- complaint handling and resolution
+
+> Measuring the satisfaction level of customers as pertains to how their complaints are handled and resolved.
+
+## Overview
+
+Process 6.5.2 is a core process that defines the specific procedures for measure customer satisfaction with customer- complaint handling and resolution. 
+
+Measuring the satisfaction level of customers as pertains to how their complaints are handled and resolved. This process element requires the organization to estimate the customers level of fulfillment with the process reconciling their complaints and towards the objective of ensuring customer retention. The feedback received can be used to develop concepts for new opportunities to boost the level of customer satisfaction.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_5["6.5 Evaluate customer service operations ..."]
+    N6_5 --> N6_5_2["6.5.2 Measure customer satisfaction with cu..."]
+    style N6_5_2 fill:#e1f5fe
+    N6_5_2 --> N6_5_2_1["6.5.2.1 Solicit customer feedback on com..."]
+    N6_5_2 --> N6_5_2_2["6.5.2.2 Analyze customer complaint data ..."]
+    N6_5_2 --> N6_5_2_3["6.5.2.3 Identify common customer complaints"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10402 |
+| Hierarchy ID | 6.5.2 |
+| Level | Process |
+| Parent | [6.5](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+measure.CustomerSatisfaction.with.CustomerComplaintHandlingAndResolution
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `measure` | Primary action |
+| Object | `customer satisfaction` | Direct object |
+| Preposition | `with` | Relationship |
+| PrepObject | `customer- complaint handling and resolution` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Measure customer satisfaction with customer- complaint handling and resolution"]
+        S1["Solicit customer feedback o..."]
+        S2["Analyze customer complaint ..."]
+        S3["Identify common customer co..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Solicit customer feedback on complaint handling and resolution](./SolicitCustomerFeedbackOnComplaintHandlingAndResolution) | 6.5.2.1 | Requesting customer feedback on the process of handling and resolving customer complaints |
+| [Analyze customer complaint data and identify improvement opportunities](./AnalyzeCustomerComplaintDataAndIdentifyImprovementOpportunities) | 6.5.2.2 | Examining the information obtained through handling and resolving complaints for development/improve |
+| [Identify common customer complaints](./IdentifyCommonCustomerComplaints) | 6.5.2.3 | Determining complaint patterns in order to identify common issues |
+
+
+## Related Concepts
+
+- [CustomerSatisfaction](/concepts/CustomerSatisfaction)
+- [CustomerComplaintHandling](/concepts/CustomerComplaintHandling)
+- [CustomerSatisfaction](/concepts/CustomerSatisfaction)
+- [Resolution](/concepts/Resolution)
+
+
+---
+
+*Source: APQC PCF 10402 (6.5.2) - APQC*

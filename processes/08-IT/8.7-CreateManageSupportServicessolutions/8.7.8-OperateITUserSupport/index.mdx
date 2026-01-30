@@ -1,0 +1,112 @@
+---
+id: OperateItUserSupport
+name: "Operate IT user support"
+code: "20921"
+hierarchyId: "8.7.8"
+type: Process
+level: 3
+status: complete
+parent: "8.7"
+children: ["8.7.8.1", "8.7.8.2", "8.7.8.3", "8.7.8.4", "8.7.8.5", "8.7.8.6"]
+---
+
+# Operate IT user support
+
+> Managing systematic user support functionality and capability through defined procedures.
+
+## Overview
+
+Process 8.7.8 is a core process that defines the specific procedures for operate it user support. 
+
+Managing systematic user support functionality and capability through defined procedures. Determine, record, and monitor user requests. Execute issue/request resolution. Utilize escalation path when needed. Resolve issue/request.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_8["8.7.8 Operate IT user support"]
+    style N8_7_8 fill:#e1f5fe
+    N8_7_8 --> N8_7_8_1["8.7.8.1 Triage IT issues/requests"]
+    N8_7_8 --> N8_7_8_2["8.7.8.2 Provide IT resolution capabilities"]
+    N8_7_8 --> N8_7_8_3["8.7.8.3 Manage IT user requests"]
+    N8_7_8 --> N8_7_8_4["8.7.8.4 Escalate IT requests"]
+    N8_7_8 --> N8_7_8_5["8.7.8.5 Resolve IT issues/requests"]
+    N8_7_8 --> N8_7_8_6["8.7.8.6 Execute IT continuity and recove..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20921 |
+| Hierarchy ID | 8.7.8 |
+| Level | Process |
+| Parent | [8.7](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+operate.ITUserSupport
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `operate` | Primary action |
+| Object | `IT user support` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Operate IT user support"]
+        S1["Triage IT issues/requests"]
+        S2["Provide IT resolution capab..."]
+        S3["Manage IT user requests"]
+        S4["Escalate IT requests"]
+        S5["Resolve IT issues/requests"]
+        S6["Execute IT continuity and r..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Triage IT issues/requests](./TriageITIssuesrequests) | 8.7.8.1 | Evaluate and assign IT issues/requests accordingly to allow for the correct routing of IT issues to  |
+| [Provide IT resolution capabilities](./ProvideITResolutionCapabilities) | 8.7.8.2 | Providing the necessary skills and competencies required to efficiently provide IT resolution throug |
+| [Manage IT user requests](./ManageITUserRequests) | 8.7.8.3 | Creating an effective plan and structure to address and resolve requests of IT users |
+| [Escalate IT requests](./EscalateITRequests) | 8.7.8.4 | Follow processes and procedures to escalate IT requests to required levels for resolution or effecti |
+| [Resolve IT issues/requests](./ResolveITIssuesrequests) | 8.7.8.5 | Creating a structure to resolve issues/requests of IT services using different mechanisms |
+| [Execute IT continuity and recovery action](./ExecuteITContinuityAndRecoveryAction) | 8.7.8.6 | Successfully implement preventive measures to manage IT risk of exposure to internal and external th |
+
+
+## Related Concepts
+
+- [ITUserSupport](/concepts/ITUserSupport)
+
+
+---
+
+*Source: APQC PCF 20921 (8.7.8) - APQC*

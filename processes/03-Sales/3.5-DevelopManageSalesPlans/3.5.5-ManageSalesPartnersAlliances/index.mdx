@@ -1,0 +1,105 @@
+---
+id: ManageSalesPartnersAndAlliances
+name: "Manage sales partners and alliances"
+code: "10187"
+hierarchyId: "3.5.5"
+type: Process
+level: 3
+status: complete
+parent: "3.5"
+children: ["3.5.5.1", "3.5.5.2", "3.5.5.3", "3.5.5.4"]
+---
+
+# Manage sales partners and alliances
+
+> Managing the organization's partners and alliances, with the objective of maximizing revenue.
+
+## Overview
+
+Process 3.5.5 is a core process that defines the specific procedures for manage sales partners and alliances. 
+
+Managing the organization's partners and alliances, with the objective of maximizing revenue. Train partners regarding the organization's portfolio of products/services. Craft sales forecasts. Examine their performance. Manage all data held by the organization on these partners.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_5["3.5 Develop and manage sales plans"]
+    N3_5 --> N3_5_5["3.5.5 Manage sales partners and alliances"]
+    style N3_5_5 fill:#e1f5fe
+    N3_5_5 --> N3_5_5_1["3.5.5.1 Provide sales and product/servic..."]
+    N3_5_5 --> N3_5_5_2["3.5.5.2 Provide marketing materials to s..."]
+    N3_5_5 --> N3_5_5_3["3.5.5.3 Evaluate partner/alliance results"]
+    N3_5_5 --> N3_5_5_4["3.5.5.4 Manage sales partner/alliance ma..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10187 |
+| Hierarchy ID | 3.5.5 |
+| Level | Process |
+| Parent | [3.5](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.SalesPartnersAndAlliances
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `sales partners and alliances` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage sales partners and alliances"]
+        S1["Provide sales and product/s..."]
+        S2["Provide marketing materials..."]
+        S3["Evaluate partner/alliance r..."]
+        S4["Manage sales partner/allian..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Provide sales and product/service training to sales partners/alliances](./3.5.5.1-ProvideSalesProductserviceTraining/) | 3.5.5.1 | Imparting guidance and instruction to sales partners/alliances concerning products/services |
+| [Provide marketing materials to sales partners/alliances](./ProvideMarketingMaterialsToSalesPartnersalliances) | 3.5.5.2 | Distributing marketing materials and sales brochures to entities that the company partners with |
+| [Evaluate partner/alliance results](./EvaluatePartnerallianceResults) | 3.5.5.3 | Examining the performance of its partners/alliances in selling its products/services |
+| [Manage sales partner/alliance master data](./ManageSalesPartnerallianceMasterData) | 3.5.5.4 | Managing the repository of data relating to the organization's partners/alliances over time |
+
+
+## Related Concepts
+
+- [SalesPartners](/concepts/SalesPartners)
+- [Alliances](/concepts/Alliances)
+
+
+---
+
+*Source: APQC PCF 10187 (3.5.5) - APQC*

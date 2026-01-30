@@ -1,0 +1,112 @@
+---
+id: ManageProductRecallsAndRegulatoryAudits
+name: "Manage product recalls and regulatory audits"
+code: "20110"
+hierarchyId: "6.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "6"
+children: ["6.4.1", "6.4.2", "6.4.3", "6.4.4", "6.4.5", "6.4.6"]
+---
+
+# Manage product recalls and regulatory audits
+
+> Removing defective products from the distribution chain.
+
+## Overview
+
+Group 6.4 is a process group within APQC Category 6.0 (Manage Customer Service). 
+
+Removing defective products from the distribution chain. Participate in audits from watchdog agencies.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_4["6.4 Manage product recalls and regulatory..."]
+    style N6_4 fill:#e1f5fe
+    N6_4 --> N6_4_1["6.4.1 Initiate recall"]
+    N6_4 --> N6_4_2["6.4.2 Assess the likelihood and conseq..."]
+    N6_4 --> N6_4_3["6.4.3 Manage recall related communicat..."]
+    N6_4 --> N6_4_4["6.4.4 Submit regulatory reports"]
+    N6_4 --> N6_4_5["6.4.5 Monitor and audit recall effecti..."]
+    N6_4 --> N6_4_6["6.4.6 Manage recall termination"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20110 |
+| Hierarchy ID | 6.4 |
+| Level | Group |
+| Parent | [6](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ProductRecallsAndRegulatoryAudits
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `product recalls and regulatory audits` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage product recalls and regulatory audits"]
+        S1["Initiate recall"]
+        S2["Assess the likelihood and c..."]
+        S3["Manage recall related commu..."]
+        S4["Submit regulatory reports"]
+        S5["Monitor and audit recall ef..."]
+        S6["Manage recall termination"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Initiate recall](./InitiateRecall) | 6.4.1 | Commencing the removal process of defective products |
+| [Assess the likelihood and consequences of occurrence of any hazards](./AssessTheLikelihoodAndConsequencesOfOccurrenceOfAnyHazards) | 6.4.2 | Performing risk analysis |
+| [Manage recall related communications](./ManageRecallRelatedCommunications) | 6.4.3 | Handling communications that are related to product recalls |
+| [Submit regulatory reports](./SubmitRegulatoryReports) | 6.4.4 | Creating and delivering reports to regulatory agencies to provide details about handling product rec |
+| [Monitor and audit recall effectiveness](./MonitorAndAuditRecallEffectiveness) | 6.4.5 | Analyzing the effectiveness of product recalls |
+| [Manage recall termination](./ManageRecallTermination) | 6.4.6 | Ending product recalls, communicating to the public and filing reports |
+
+
+## Related Concepts
+
+- [ProductRecallsAudits](/concepts/ProductRecallsAudits)
+- [RegulatoryAudits](/concepts/RegulatoryAudits)
+
+
+---
+
+*Source: APQC PCF 20110 (6.4) - APQC*

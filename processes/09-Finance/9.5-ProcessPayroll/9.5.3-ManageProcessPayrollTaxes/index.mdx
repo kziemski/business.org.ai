@@ -1,0 +1,109 @@
+---
+id: ManageAndProcessPayrollTaxes
+name: "Manage and process payroll taxes"
+code: "10755"
+hierarchyId: "9.5.3"
+type: Process
+level: 3
+status: complete
+parent: "9.5"
+children: ["9.5.3.1", "9.5.3.2", "9.5.3.3", "9.5.3.4", "9.5.3.5"]
+---
+
+# Manage and process payroll taxes
+
+> Deducting and paying taxes from employees' salaries.
+
+## Overview
+
+Process 9.5.3 is a core process that defines the specific procedures for manage and process payroll taxes. 
+
+Deducting and paying taxes from employees' salaries.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_5["9.5 Process payroll"]
+    N9_5 --> N9_5_3["9.5.3 Manage and process payroll taxes"]
+    style N9_5_3 fill:#e1f5fe
+    N9_5_3 --> N9_5_3_1["9.5.3.1 Develop tax plan"]
+    N9_5_3 --> N9_5_3_2["9.5.3.2 Manage tax plan"]
+    N9_5_3 --> N9_5_3_3["9.5.3.3 Calculate and pay applicable pay..."]
+    N9_5_3 --> N9_5_3_4["9.5.3.4 Produce and distribute employee ..."]
+    N9_5_3 --> N9_5_3_5["9.5.3.5 File regulatory payroll tax forms"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10755 |
+| Hierarchy ID | 9.5.3 |
+| Level | Process |
+| Parent | [9.5](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.AndProcessPayrollTaxes
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `and process payroll taxes` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage and process payroll taxes"]
+        S1["Develop tax plan"]
+        S2["Manage tax plan"]
+        S3["Calculate and pay applicabl..."]
+        S4["Produce and distribute empl..."]
+        S5["File regulatory payroll tax..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop tax plan](./DevelopTaxPlan) | 9.5.3.1 | Devising a method to minimize payroll tax liability by means of allowances, deductions, exclusions o |
+| [Manage tax plan](./ManageTaxPlan) | 9.5.3.2 | Overseeing maintaining the reduction of payroll taxes [14075] |
+| [Calculate and pay applicable payroll taxes](./CalculateAndPayApplicablePayrollTaxes) | 9.5.3.3 | Paying tax according to appropriate deductions made from salaries |
+| [Produce and distribute employee annual tax statements](./ProduceAndDistributeEmployeeAnnualTaxStatements) | 9.5.3.4 | Providing tax deductions statements created by certified chartered accountants to every employee for |
+| [File regulatory payroll tax forms](./FileRegulatoryPayrollTaxForms) | 9.5.3.5 | Filling taxes, and highlighting different sources of income and expenditures made |
+
+
+## Related Concepts
+
+- [PayrollTaxes](/concepts/PayrollTaxes)
+- [PayrollTaxes](/concepts/PayrollTaxes)
+
+
+---
+
+*Source: APQC PCF 10755 (9.5.3) - APQC*

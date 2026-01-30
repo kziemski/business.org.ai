@@ -1,0 +1,96 @@
+---
+id: ManageProductMarketingMaterial
+name: "Manage product marketing material"
+code: "16629"
+hierarchyId: "3.3.9"
+type: Process
+level: 3
+status: complete
+parent: "3.3"
+children: ["3.3.9.1", "3.3.9.2"]
+---
+
+# Manage product marketing material
+
+> Creating descriptions of products that are promotional and informative in content in order to initiate and increase sales.
+
+## Overview
+
+Process 3.3.9 is a core process that defines the specific procedures for manage product marketing material. 
+
+Creating descriptions of products that are promotional and informative in content in order to initiate and increase sales. Marketing content consists of text, and optionally, images.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_3["3.3 Develop and manage marketing plans"]
+    N3_3 --> N3_3_9["3.3.9 Manage product marketing material"]
+    style N3_3_9 fill:#e1f5fe
+    N3_3_9 --> N3_3_9_1["3.3.9.1 Manage product images"]
+    N3_3_9 --> N3_3_9_2["3.3.9.2 Manage product copy"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16629 |
+| Hierarchy ID | 3.3.9 |
+| Level | Process |
+| Parent | [3.3](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ProductMarketingMaterial
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `product marketing material` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage product marketing material"]
+        S1["Manage product images"]
+        S2["Manage product copy"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage product images](./ManageProductImages) | 3.3.9.1 | Producing or overseeing the creation or acquisition of photos, images and graphics for a product des |
+| [Manage product copy](./ManageProductCopy) | 3.3.9.2 | Authoring or overseeing the creation of the textual portion of a product description, advertisement, |
+
+
+## Related Concepts
+
+- [ProductMarketingMaterial](/concepts/ProductMarketingMaterial)
+
+
+---
+
+*Source: APQC PCF 16629 (3.3.9) - APQC*

@@ -1,0 +1,114 @@
+---
+id: ManageEmployeeRequisitions
+name: "Manage employee requisitions"
+code: "10439"
+hierarchyId: "7.2.1"
+type: Process
+level: 3
+status: complete
+parent: "7.2"
+children: ["7.2.1.1", "7.2.1.2", "7.2.1.3", "7.2.1.4", "7.2.1.5", "7.2.1.6", "7.2.1.7"]
+---
+
+# Manage employee requisitions
+
+> Handling the requirements for new employees.
+
+## Overview
+
+Process 7.2.1 is a core process that defines the specific procedures for manage employee requisitions. 
+
+Handling the requirements for new employees. Create and open job requisitions by clearly defining the job descriptions. Post these requirements internally and externally, and modify them as appropriate. Manage the dates of the whole requisition process.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_2["7.2 Recruit, source, and select employees"]
+    N7_2 --> N7_2_1["7.2.1 Manage employee requisitions"]
+    style N7_2_1 fill:#e1f5fe
+    N7_2_1 --> N7_2_1_1["7.2.1.1 Align staffing plan to work forc..."]
+    N7_2_1 --> N7_2_1_2["7.2.1.2 Develop and maintain job descrip..."]
+    N7_2_1 --> N7_2_1_3["7.2.1.3 Open job requisitions"]
+    N7_2_1 --> N7_2_1_4["7.2.1.4 Post job requisitions"]
+    N7_2_1 --> N7_2_1_5["7.2.1.5 Modify job requisitions"]
+    N7_2_1 --> N7_2_1_6["7.2.1.6 Notify hiring manager"]
+    N7_2_1 --> N7_2_1_7["7.2.1.7 Manage requisition dates"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10439 |
+| Hierarchy ID | 7.2.1 |
+| Level | Process |
+| Parent | [7.2](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EmployeeRequisitions
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `employee requisitions` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage employee requisitions"]
+        S1["Align staffing plan to work..."]
+        S2["Develop and maintain job de..."]
+        S3["Open job requisitions"]
+        S4["Post job requisitions"]
+        S5["Modify job requisitions"]
+        S6["Notify hiring manager"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Align staffing plan to work force plan and business unit strategies/resource needs](./AlignStaffingPlanToWorkForcePlanAndBusinessUnitStrategiesresourceNeeds) | 7.2.1.1 | Creating a correspondence between the plan for hiring new employees and the desired employee require |
+| [Develop and maintain job descriptions](./DevelopAndMaintainJobDescriptions) | 7.2.1.2 | Creating descriptions for job requisitions |
+| [Open job requisitions](./OpenJobRequisitions) | 7.2.1.3 | Developing specific job requisitions, and ensuring their accessibility |
+| [Post job requisitions](./PostJobRequisitions) | 7.2.1.4 | Posting and advertising job descriptions |
+| [Modify job requisitions](./ModifyJobRequisitions) | 7.2.1.5 | Making the necessary alterations to job requisitions |
+| [Notify hiring manager](./NotifyHiringManager) | 7.2.1.6 | Informing and communicating with the hiring manager |
+| [Manage requisition dates](./ManageRequisitionDates) | 7.2.1.7 | Determining and managing the dates for the employee requisition process |
+
+
+## Related Concepts
+
+- [EmployeeRequisitions](/concepts/EmployeeRequisitions)
+
+
+---
+
+*Source: APQC PCF 10439 (7.2.1) - APQC*

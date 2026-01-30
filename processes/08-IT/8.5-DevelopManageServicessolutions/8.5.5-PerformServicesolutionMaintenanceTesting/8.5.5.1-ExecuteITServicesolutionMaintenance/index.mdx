@@ -1,0 +1,110 @@
+---
+id: ExecuteItServicesolutionMaintenanceLifecycle
+name: "Execute IT service/solution maintenance lifecycle"
+code: "20818"
+hierarchyId: "8.5.5.1"
+type: Activity
+level: 4
+status: complete
+parent: "8.5.5"
+children: ["8.5.5.1.1", "8.5.5.1.2", "8.5.5.1.3", "8.5.5.1.4", "8.5.5.1.5"]
+---
+
+# Execute IT service/solution maintenance lifecycle
+
+> Executing IT service/solution maintenance lifecycle in order to reduce maintenance costs and increase reliability of IT infrastructure concerning service/solution related problems.
+
+## Overview
+
+Activity 8.5.5.1 is an activity within the Manage Information Technology framework. 
+
+Executing IT service/solution maintenance lifecycle in order to reduce maintenance costs and increase reliability of IT infrastructure concerning service/solution related problems.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_5["8.5 Develop and manage services/solutions"]
+    N8_5 --> N8_5_5["8.5.5 Perform service/solution maintenance ..."]
+    N8_5_5 --> N8_5_5_1["8.5.5.1 Execute IT service/solution maintenan..."]
+    style N8_5_5_1 fill:#e1f5fe
+    N8_5_5_1 --> N8_5_5_1_1["8.5.5.1.1 Assess IT remediation"]
+    N8_5_5_1 --> N8_5_5_1_2["8.5.5.1.2 Modify service/solution design"]
+    N8_5_5_1 --> N8_5_5_1_3["8.5.5.1.3 Perform IT service/solution reme..."]
+    N8_5_5_1 --> N8_5_5_1_4["8.5.5.1.4 Manage service/solution operations"]
+    N8_5_5_1 --> N8_5_5_1_5["8.5.5.1.5 Prepare fixed/enhanced service/s..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20818 |
+| Hierarchy ID | 8.5.5.1 |
+| Level | Activity |
+| Parent | [8.5.5](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+execute.ITServicesolutionMaintenanceLifecycle
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `execute` | Primary action |
+| Object | `IT service/solution maintenance lifecycle` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Execute IT service/solution maintenance lifecycle"]
+        S1["Assess IT remediation"]
+        S2["Modify service/solution design"]
+        S3["Perform IT service/solution..."]
+        S4["Manage service/solution ope..."]
+        S5["Prepare fixed/enhanced serv..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess IT remediation](./AssessITRemediation) | 8.5.5.1.1 | Evaluate plans to address information technology environmental adulteration for rectification effort |
+| [Modify service/solution design](./ModifyServicesolutionDesign) | 8.5.5.1.2 | Redesign the roadmap to seek solution or service with an overall process flow and impact timeframe |
+| [Perform IT service/solution remediation](./PerformITServicesolutionRemediation) | 8.5.5.1.3 | Administering the efforts and activities for IT service/solution remediation |
+| [Manage service/solution operations](./ManageServicesolutionOperations) | 8.5.5.1.4 | Understanding customer requirements |
+| [Prepare fixed/enhanced service/solution packaging](./PrepareFixedenhancedServicesolutionPackaging) | 8.5.5.1.5 | Developing packaging for fixed/enhanced service/solution based on the standalone or bundled offering |
+
+
+## Related Concepts
+
+- [ITServiceMaintenanceLifecycle](/concepts/ITServiceMaintenanceLifecycle)
+- [ITSolutionMaintenanceLifecycle](/concepts/ITSolutionMaintenanceLifecycle)
+
+
+---
+
+*Source: APQC PCF 20818 (8.5.5.1) - APQC*

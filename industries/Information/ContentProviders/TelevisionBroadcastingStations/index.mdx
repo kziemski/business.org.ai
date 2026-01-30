@@ -1,0 +1,108 @@
+---
+id: TelevisionBroadcastingStations
+name: "Television Broadcasting Stations"
+code: "5161"
+type: Industry
+level: Industry Group
+status: complete
+---
+
+# Television Broadcasting Stations
+
+> This industry group comprises establishments operating radio or television broadcasting stations for the programming and transmission of programs to the public.
+
+## Overview
+
+Television Broadcasting Stations represents an important category within the Information sector (NAICS 51). This industry group encompasses establishments primarily engaged in television broadcasting stations.
+
+This industry group comprises establishments operating radio or television broadcasting stations for the programming and transmission of programs to the public. Programming may originate in their own studio, from an affiliated network, or from external sources.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S51["51: Information"]
+    S51 --> N516["516: Content Providers"]
+    N516 --> N5161["5161: Television Broadcasting Stations"]
+    style N5161 fill:#f96,stroke:#333,stroke-width:2px
+    N5161 --> N51611["51611: Radio Broadcasting Stations"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 5161 |
+| Level | Industry Group |
+| Parent | [Content Providers](../) |
+| Child Industries | 1 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Radio Broadcasting Stations](./RadioBroadcastingStations/) | 51611 | See industry description for 516110 |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Content Creation"]
+        O2["Production"]
+        O3["Distribution"]
+        O4["Customer Access"]
+        O5["Support"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Technology Mgmt"]
+        S2["Rights Management"]
+        S3["Marketing"]
+        S4["Analytics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Content"]
+        I2["Technology"]
+        I3["Talent"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Information Products"]
+        O2["Software"]
+        O3["Media"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Education"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 5161 - Television Broadcasting Stations*

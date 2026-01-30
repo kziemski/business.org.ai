@@ -1,0 +1,103 @@
+---
+id: PerformAbandonment
+name: "Perform abandonment"
+code: "21582"
+hierarchyId: "10.4.10"
+type: Process
+level: 3
+status: complete
+parent: "10.4"
+children: ["10.4.10.1", "10.4.10.2", "10.4.10.3", "10.4.10.4"]
+---
+
+# Perform abandonment
+
+> Planning and performing abandonment activities.
+
+## Overview
+
+Process 10.4.10 is a core process that defines the specific procedures for perform abandonment. 
+
+Planning and performing abandonment activities. Whether facilities or equipment, ensure assets to be abandoned are safe, secure, and meet all legal, regulatory, and social/environmental responsibilities.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_4_10["10.4.10 Perform abandonment"]
+    style N10_4_10 fill:#e1f5fe
+    N10_4_10 --> N10_4_10_1["10.4.10.1 Demolish and secure"]
+    N10_4_10 --> N10_4_10_2["10.4.10.2 Restore site"]
+    N10_4_10 --> N10_4_10_3["10.4.10.3 Monitor site for duration of tim..."]
+    N10_4_10 --> N10_4_10_4["10.4.10.4 Prepare handover to new operator..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21582 |
+| Hierarchy ID | 10.4.10 |
+| Level | Process |
+| Parent | [10.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.Abandonment
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `abandonment` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform abandonment"]
+        S1["Demolish and secure"]
+        S2["Restore site"]
+        S3["Monitor site for duration o..."]
+        S4["Prepare handover to new ope..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Demolish and secure](./DemolishAndSecure) | 10.4.10.1 | Demolishing and securing asset and resulting parts/debris |
+| [Restore site](./RestoreSite) | 10.4.10.2 | Performing remediation or restoration activities |
+| [Monitor site for duration of time required by regulators](./MonitorSiteForDurationOfTimeRequiredByRegulators) | 10.4.10.3 | Managing and reporting site status |
+| [Prepare handover to new operator or landowner](./PrepareHandoverToNewOperatorOrLandowner) | 10.4.10.4 | Supporting handover to new operator or landowner |
+
+
+## Related Concepts
+
+- [Abandonment](/concepts/Abandonment)
+
+
+---
+
+*Source: APQC PCF 21582 (10.4.10) - APQC*

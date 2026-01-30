@@ -1,0 +1,107 @@
+---
+id: DevelopSalesStrategy
+name: "Develop sales strategy"
+code: "10103"
+hierarchyId: "3.4"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "3"
+children: ["3.4.1", "3.4.2", "3.4.3", "3.4.4", "3.4.5"]
+---
+
+# Develop sales strategy
+
+> Developing concrete plans for guiding and providing support to the sales function.
+
+## Overview
+
+Group 3.4 is a process group within APQC Category 3.0 (Market and Sell Products and Services). 
+
+Developing concrete plans for guiding and providing support to the sales function. Chart a road map for the sales function, including an analysis of historical sales data to create forecasts for anticipated sales, forming sales targets, forging partnerships with other economic agents to boost sales, devising a budget for this function, and determining metrics to measure customer management activities as well as progress in achieving sales targets.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_4["3.4 Develop sales strategy"]
+    style N3_4 fill:#e1f5fe
+    N3_4 --> N3_4_1["3.4.1 Develop sales forecast"]
+    N3_4 --> N3_4_2["3.4.2 Develop sales partner/alliance r..."]
+    N3_4 --> N3_4_3["3.4.3 Establish overall sales budgets"]
+    N3_4 --> N3_4_4["3.4.4 Establish sales goals and measures"]
+    N3_4 --> N3_4_5["3.4.5 Establish customer management me..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10103 |
+| Hierarchy ID | 3.4 |
+| Level | Group |
+| Parent | [3](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.SalesStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `sales strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop sales strategy"]
+        S1["Develop sales forecast"]
+        S2["Develop sales partner/allia..."]
+        S3["Establish overall sales bud..."]
+        S4["Establish sales goals and m..."]
+        S5["Establish customer manageme..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop sales forecast](./3.4.1-DevelopSalesForecast/) | 3.4.1 | Developing a sales forecast for the organization's portfolio of offerings, bearing in mind the effec |
+| [Develop sales partner/alliance relationships](./3.4.2-DevelopSalesPartnerallianceRelationships/) | 3.4.2 | Cultivating an alliance of partners by identifying, analyzing, negotiating, and managing partnership |
+| [Establish overall sales budgets](./3.4.3-EstablishOverallSalesBudgets/) | 3.4.3 | Setting up a financial plan for the sales function |
+| [Establish sales goals and measures](./EstablishSalesGoalsAndMeasures) | 3.4.4 | Establishing specific quantitative and qualitative measures of realizing sales targets |
+| [Establish customer management measures](./EstablishCustomerManagementMeasures) | 3.4.5 | Identifying the appropriate measures that can represent key attributes of the customer management fu |
+
+
+## Related Concepts
+
+- [SalesStrategy](/concepts/SalesStrategy)
+
+
+---
+
+*Source: APQC PCF 10103 (3.4) - APQC*

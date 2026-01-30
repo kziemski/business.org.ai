@@ -1,0 +1,100 @@
+---
+id: ManageProcessPerformance
+name: "Manage process performance"
+code: "16392"
+hierarchyId: "13.1.4"
+type: Process
+level: 3
+status: complete
+parent: "13.1"
+children: ["13.1.4.1", "13.1.4.2", "13.1.4.3"]
+---
+
+# Manage process performance
+
+> Evaluating and handling the performance of business processes.
+
+## Overview
+
+Process 13.1.4 is a core process that defines the specific procedures for manage process performance. 
+
+Evaluating and handling the performance of business processes. Provide training to process owners. Support the execution of business processes. Measure and report the performance of the business processes.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_1["13.1 Manage business processes"]
+    N13_1 --> N13_1_4["13.1.4 Manage process performance"]
+    style N13_1_4 fill:#e1f5fe
+    N13_1_4 --> N13_1_4_1["13.1.4.1 Provide process training"]
+    N13_1_4 --> N13_1_4_2["13.1.4.2 Support process execution"]
+    N13_1_4 --> N13_1_4_3["13.1.4.3 Measure and report process perfo..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16392 |
+| Hierarchy ID | 13.1.4 |
+| Level | Process |
+| Parent | [13.1](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ProcessPerformance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `process performance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage process performance"]
+        S1["Provide process training"]
+        S2["Support process execution"]
+        S3["Measure and report process ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Provide process training](./ProvideProcessTraining) | 13.1.4.1 | Providing training for the employees and process owners that administer the business processes |
+| [Support process execution](./SupportProcessExecution) | 13.1.4.2 | Assisting and executing the business processes |
+| [Measure and report process performance](./13.1.4.3-MeasureReportProcessPerformance/) | 13.1.4.3 | Defining and using performance indicators to consider the financial perspective, customer perspectiv |
+
+
+## Related Concepts
+
+- [ProcessPerformance](/concepts/ProcessPerformance)
+
+
+---
+
+*Source: APQC PCF 16392 (13.1.4) - APQC*

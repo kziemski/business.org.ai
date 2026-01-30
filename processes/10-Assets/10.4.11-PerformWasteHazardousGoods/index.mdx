@@ -1,0 +1,116 @@
+---
+id: PerformWasteAndHazardousGoodsManagement
+name: "Perform waste and hazardous goods management"
+code: "21583"
+hierarchyId: "10.4.11"
+type: Process
+level: 3
+status: complete
+parent: "10.4"
+children: ["10.4.11.1", "10.4.11.2", "10.4.11.3", "10.4.11.4", "10.4.11.5", "10.4.11.6", "10.4.11.7", "10.4.11.8"]
+---
+
+# Perform waste and hazardous goods management
+
+> Planning and performing waste and hazardous goods management.
+
+## Overview
+
+Process 10.4.11 is a core process that defines the specific procedures for perform waste and hazardous goods management. 
+
+Planning and performing waste and hazardous goods management. In compliance with all legal, regulatory, and social/environmental requirements, plan, document, and conduct hazardous material handling, disposal, and reporting.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_4_11["10.4.11 Perform waste and hazardous goods man..."]
+    style N10_4_11 fill:#e1f5fe
+    N10_4_11 --> N10_4_11_1["10.4.11.1 Maintain material safety data sh..."]
+    N10_4_11 --> N10_4_11_2["10.4.11.2 Maintain awareness of and commun..."]
+    N10_4_11 --> N10_4_11_3["10.4.11.3 Maintain hazardous material hand..."]
+    N10_4_11 --> N10_4_11_4["10.4.11.4 Manage compliance audits"]
+    N10_4_11 --> N10_4_11_5["10.4.11.5 Recognize need to disposition ha..."]
+    N10_4_11 --> N10_4_11_6["10.4.11.6 Determine disposition and associ..."]
+    N10_4_11 --> N10_4_11_7["10.4.11.7 Manage disposition, disposal, re..."]
+    N10_4_11 --> N10_4_11_8["10.4.11.8 Manage documentation and reporting"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21583 |
+| Hierarchy ID | 10.4.11 |
+| Level | Process |
+| Parent | [10.4](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.WasteAndHazardousGoodsManagement
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `waste and hazardous goods management` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform waste and hazardous goods management"]
+        S1["Maintain material safety da..."]
+        S2["Maintain awareness of and c..."]
+        S3["Maintain hazardous material..."]
+        S4["Manage compliance audits"]
+        S5["Recognize need to dispositi..."]
+        S6["Determine disposition and a..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Maintain material safety data sheets](./MaintainMaterialSafetyDataSheets) | 10.4.11.1 | Preparing material safety sheets |
+| [Maintain awareness of and communicate regulatory requirements](./MaintainAwarenessOfAndCommunicateRegulatoryRequirements) | 10.4.11.2 | Understanding and communicating hazardous material regulatory requirements |
+| [Maintain hazardous material handling and disposal](./MaintainHazardousMaterialHandlingAndDisposal) | 10.4.11.3 | Planning, overseeing, and tracking hazardous material handling and disposal |
+| [Manage compliance audits](./ManageComplianceAudits) | 10.4.11.4 | Planning, supporting, and documenting hazardous material audits |
+| [Recognize need to disposition hazardous materials/waste](./RecognizeNeedToDispositionHazardousMaterialswaste) | 10.4.11.5 | Identifying and establishing approaches to dispose of hazardous materials/waste |
+| [Determine disposition and associated processing](./DetermineDispositionAndAssociatedProcessing) | 10.4.11.6 | Evaluating hazardous materials and waste for appropriate disposition |
+| [Manage disposition, disposal, reprocessing activities](./ManageDispositionDisposalReprocessingActivities) | 10.4.11.7 | Performing disposition, disposal, and reprocessing activities |
+| [Manage documentation and reporting](./ManageDocumentationAndReporting) | 10.4.11.8 | Documenting and reporting disposition, disposal, and reprocessing activities |
+
+
+## Related Concepts
+
+- [WasteGoodsManagement](/concepts/WasteGoodsManagement)
+- [HazardousGoodsManagement](/concepts/HazardousGoodsManagement)
+
+
+---
+
+*Source: APQC PCF 21583 (10.4.11) - APQC*

@@ -1,0 +1,114 @@
+---
+id: ManageChangeDeploymentControl
+name: "Manage change deployment control"
+code: "20840"
+hierarchyId: "8.6.3"
+type: Process
+level: 3
+status: complete
+parent: "8.6"
+children: ["8.6.3.1", "8.6.3.2", "8.6.3.3", "8.6.3.4", "8.6.3.5", "8.6.3.6", "8.6.3.7"]
+---
+
+# Manage change deployment control
+
+> Creating and deploying an architecture for securing the changes deployed in the organization.
+
+## Overview
+
+Process 8.6.3 is a core process that defines the specific procedures for manage change deployment control. 
+
+Creating and deploying an architecture for securing the changes deployed in the organization. Create and develop protocols that ensure proper and efficient use of deployed IT services and solutions. Test, evaluate, and implement the policies and protocols.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_6["8.6 Deploy services/solutions"]
+    N8_6 --> N8_6_3["8.6.3 Manage change deployment control"]
+    style N8_6_3 fill:#e1f5fe
+    N8_6_3 --> N8_6_3_1["8.6.3.1 Asses IT change/release impact"]
+    N8_6_3 --> N8_6_3_2["8.6.3.2 Confirm change/release compliance"]
+    N8_6_3 --> N8_6_3_3["8.6.3.3 Assess IT change/release risk"]
+    N8_6_3 --> N8_6_3_4["8.6.3.4 Consolidate IT change"]
+    N8_6_3 --> N8_6_3_5["8.6.3.5 Create and communicate deploymen..."]
+    N8_6_3 --> N8_6_3_6["8.6.3.6 Approve change/release deployment"]
+    N8_6_3 --> N8_6_3_7["8.6.3.7 Document IT change/release outcome"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20840 |
+| Hierarchy ID | 8.6.3 |
+| Level | Process |
+| Parent | [8.6](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ChangeDeploymentControl
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `change deployment control` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage change deployment control"]
+        S1["Asses IT change/release impact"]
+        S2["Confirm change/release comp..."]
+        S3["Assess IT change/release risk"]
+        S4["Consolidate IT change"]
+        S5["Create and communicate depl..."]
+        S6["Approve change/release depl..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Asses IT change/release impact](./AssesITChangereleaseImpact) | 8.6.3.1 | Evaluating the impact of IT change/release on the business |
+| [Confirm change/release compliance](./ConfirmChangereleaseCompliance) | 8.6.3.2 | Ensure that change/release meets change guidelines set by the organization |
+| [Assess IT change/release risk](./AssessITChangereleaseRisk) | 8.6.3.3 | Evaluating for any kind of risks or threats which could be caused due to IT change/release deploymen |
+| [Consolidate IT change](./ConsolidateITChange) | 8.6.3.4 | Integrate all forms of changes in IT in order to make more efficient use of resources and down time, |
+| [Create and communicate deployment schedule](./CreateAndCommunicateDeploymentSchedule) | 8.6.3.5 | Defining and communicating the schedule for implementation to related stakeholders and functions |
+| [Approve change/release deployment](./ApproveChangereleaseDeployment) | 8.6.3.6 | Permitting for the change/release deployment |
+| [Document IT change/release outcome](./DocumentITChangereleaseOutcome) | 8.6.3.7 | Recording outcomes related to the change/release deployment |
+
+
+## Related Concepts
+
+- [ChangeDeploymentControl](/concepts/ChangeDeploymentControl)
+
+
+---
+
+*Source: APQC PCF 20840 (8.6.3) - APQC*

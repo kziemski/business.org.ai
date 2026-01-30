@@ -1,0 +1,124 @@
+---
+id: Rubber
+name: "Rubber"
+code: "32622"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Rubber
+
+> See industry description for 326220.
+
+## Overview
+
+Rubber represents an important category within the U.S. Manufacturing sector (NAICS 31-33). This industry encompasses establishments primarily engaged in rubber.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S31["31-33: Manufacturing"]
+    S31 --> N326["326: Plastics"]
+    N326 --> N3262["3262: Rubber Product Manufacturing"]
+    N3262 --> N32622["32622: Rubber"]
+    style N32622 fill:#f96,stroke:#333,stroke-width:2px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 32622 |
+| Level | Industry |
+| Parent | [Rubber Product Manufacturing](../) |
+| Child Industries | 0 |
+
+## Related Occupations
+
+- [Industrial Production Managers](/occupations/IndustrialProductionManagers) - Plan and coordinate production activities
+- [First-Line Supervisors of Production Workers](/occupations/FirstLineSupervisorsOfProductionAndOperatingWorkers) - Supervise production floor operations
+- [Quality Control Inspectors](/occupations/QualityControlInspectors) - Inspect products for defects and compliance
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Compound Prep"]
+        O2["Molding/Extrusion"]
+        O3["Finishing"]
+        O4["Quality Control"]
+        O5["Packaging"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Material Handling"]
+        S2["Mold Maintenance"]
+        S3["Quality Systems"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Raw Materials"]
+        I2["Components"]
+        I3["Equipment"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Manufacturing Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound Logistics"]
+    end
+
+    subgraph Outputs["Products"]
+        O1["Finished Products"]
+        O2["Components"]
+        O3["Assemblies"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Industrial Buyers"]
+        C2["Retailers"]
+        C3["Distributors"]
+        C4["End Users"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+## Regulatory Environment
+
+Manufacturing operations in this industry are subject to various federal, state, and local regulations:
+
+- **OSHA Regulations**: Workplace safety standards, machine guarding, hazard communication
+- **EPA Requirements**: Air emissions, water discharge, hazardous waste management
+- **State/Local Requirements**: Zoning, permits, and local environmental regulations
+
+## Technology & Innovation
+
+The rubber industry is experiencing significant technological advancement:
+
+- **Industry 4.0**: Connected manufacturing, IoT sensors, and real-time monitoring
+- **Automation & Robotics**: Automated production lines and robotic assembly
+- **Data Analytics**: Predictive maintenance, quality analytics, and process optimization
+- **Sustainability**: Carbon reduction, circular economy, and green manufacturing
+- **Digital Twin**: Virtual replicas for simulation and optimization
+
+---
+
+*Source: NAICS 32622 - Rubber*

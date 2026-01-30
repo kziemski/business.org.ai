@@ -1,0 +1,105 @@
+---
+id: EstablishAndMaintainProcessManagementGovernance
+name: "Establish and maintain process management governance"
+code: "16379"
+hierarchyId: "13.1.1"
+type: Process
+level: 3
+status: complete
+parent: "13.1"
+children: ["13.1.1.1", "13.1.1.2", "13.1.1.3", "13.1.1.4"]
+---
+
+# Establish and maintain process management governance
+
+> Defining and managing the organization's approach to governing business process management.
+
+## Overview
+
+Process 13.1.1 is a core process that defines the specific procedures for establish and maintain process management governance. 
+
+Defining and managing the organization's approach to governing business process management. Establish and manage tools to support the governance process. Assign ownership for all business processes. Perform activities to administer the governing process.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_1["13.1 Manage business processes"]
+    N13_1 --> N13_1_1["13.1.1 Establish and maintain process manage..."]
+    style N13_1_1 fill:#e1f5fe
+    N13_1_1 --> N13_1_1_1["13.1.1.1 Define and manage governance app..."]
+    N13_1_1 --> N13_1_1_2["13.1.1.2 Establish and maintain process t..."]
+    N13_1_1 --> N13_1_1_3["13.1.1.3 Assign and support process owner..."]
+    N13_1_1 --> N13_1_1_4["13.1.1.4 Perform process governance activ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16379 |
+| Hierarchy ID | 13.1.1 |
+| Level | Process |
+| Parent | [13.1](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.AndMaintainProcessManagementGovernance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `and maintain process management governance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish and maintain process management governance"]
+        S1["Define and manage governanc..."]
+        S2["Establish and maintain proc..."]
+        S3["Assign and support process ..."]
+        S4["Perform process governance ..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Define and manage governance approach](./DefineAndManageGovernanceApproach) | 13.1.1.1 | Outlining and managing the methodology for administering business process management (BPM) |
+| [Establish and maintain process tools and templates](./EstablishAndMaintainProcessToolsAndTemplates) | 13.1.1.2 | Instituting, organizing, and maintaining the upkeep of the techniques used for business process mana |
+| [Assign and support process ownership](./AssignAndSupportProcessOwnership) | 13.1.1.3 | Assigning resources (employees) ownership of tasks |
+| [Perform process governance activities](./PerformProcessGovernanceActivities) | 13.1.1.4 | Implementing and executing activities for governing business processes |
+
+
+## Related Concepts
+
+- [ProcessManagementGovernance](/concepts/ProcessManagementGovernance)
+- [ProcessManagementGovernance](/concepts/ProcessManagementGovernance)
+
+
+---
+
+*Source: APQC PCF 16379 (13.1.1) - APQC*

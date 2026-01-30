@@ -1,0 +1,114 @@
+---
+id: RedeployAndRetireEmployees
+name: "Redeploy and retire employees"
+code: "10413"
+hierarchyId: "7.6"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "7"
+children: ["7.6.1", "7.6.2", "7.6.3", "7.6.4", "7.6.5", "7.6.6", "7.6.7"]
+---
+
+# Redeploy and retire employees
+
+> Managing the reassignment and retirement of employees.
+
+## Overview
+
+Group 7.6 is a process group within APQC Category 7.0 (Develop and Manage Human Capital). 
+
+Managing the reassignment and retirement of employees. Manage the process of employee promotion and demotion. Administer separation, retirement, and leaves of absence. Outplace employees. Deploy personnel. Relocate employees in order to manage assignments.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_6["7.6 Redeploy and retire employees"]
+    style N7_6 fill:#e1f5fe
+    N7_6 --> N7_6_1["7.6.1 Manage promotion and demotion pr..."]
+    N7_6 --> N7_6_2["7.6.2 Manage separation"]
+    N7_6 --> N7_6_3["7.6.3 Manage retirement"]
+    N7_6 --> N7_6_4["7.6.4 Manage leave of absence"]
+    N7_6 --> N7_6_5["7.6.5 Develop and implement employee o..."]
+    N7_6 --> N7_6_6["7.6.6 Manage workforce scheduling"]
+    N7_6 --> N7_6_7["7.6.7 Relocate employees and manage as..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10413 |
+| Hierarchy ID | 7.6 |
+| Level | Group |
+| Parent | [7](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+redeploy.AndRetireEmployees
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `redeploy` | Primary action |
+| Object | `and retire employees` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Redeploy and retire employees"]
+        S1["Manage promotion and demoti..."]
+        S2["Manage separation"]
+        S3["Manage retirement"]
+        S4["Manage leave of absence"]
+        S5["Develop and implement emplo..."]
+        S6["Manage workforce scheduling"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage promotion and demotion process](./ManagePromotionAndDemotionProcess) | 7.6.1 | Administering the process of promoting and demoting employees |
+| [Manage separation](./ManageSeparation) | 7.6.2 | Managing the process of employee separation, including resignations, discharges, and layoffs |
+| [Manage retirement](./ManageRetirement) | 7.6.3 | Managing and administering instances where a person stops employment completely |
+| [Manage leave of absence](./ManageLeaveOfAbsence) | 7.6.4 | Managing the period of time that an employee must be away from their primary job, while maintaining  |
+| [Develop and implement employee outplacement](./DevelopAndImplementEmployeeOutplacement) | 7.6.5 | Helping former employees transition to new jobs or to re-orient themselves in the job market |
+| [Manage workforce scheduling](./7.6.6-ManageWorkforceScheduling/) | 7.6.6 | Organizing the workforce so that all positions are covered for all shifts with the necessary skilled |
+| [Relocate employees and manage assignments](./7.6.7-RelocateEmployeesManageAssignments/) | 7.6.7 | Managing the relocation of employees in order to carry out assignments |
+
+
+## Related Concepts
+
+- [Employees](/concepts/Employees)
+- [Employees](/concepts/Employees)
+
+
+---
+
+*Source: APQC PCF 10413 (7.6) - APQC*

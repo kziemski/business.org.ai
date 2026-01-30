@@ -1,0 +1,182 @@
+---
+title: Air Transportation
+naicsCode: "481"
+naicsLevel: subsector
+parentCode: "48-49"
+$type: Industry
+$id: https://industries.org.ai/AirTransportation
+sameAs: https://naics.org.ai/Subsector/481
+regulatoryAgencies:
+  - FAA
+  - TSA
+  - DOT
+---
+
+# Air Transportation
+
+> Industries in the Air Transportation subsector provide air transportation of passengers and/or cargo using aircraft, such as airplanes, helicopters, and spacecraft.
+
+## Overview
+
+Air Transportation (NAICS 481) comprises establishments that provide air transportation services for passengers and cargo. The subsector distinguishes scheduled from nonscheduled air transportation, with scheduled carriers operating regular routes and schedules regardless of load factors, while nonscheduled carriers offer charter and specialty flying services.
+
+Key characteristics:
+- High capital intensity (aircraft, infrastructure)
+- Hub-and-spoke network operations
+- Stringent safety and security requirements
+- Volatile fuel costs as major operating expense
+- Labor-intensive with highly skilled workforce
+
+## NAICS Hierarchy
+
+```mermaid
+graph TD
+    S["48-49: Transportation and Warehousing"]
+    S --> A481["481: Air Transportation"]
+    A481 --> A4811["4811: Scheduled Air Transportation"]
+    A481 --> A4812["4812: Nonscheduled Air Transportation"]
+    A4811 --> A481111["481111: Scheduled Passenger"]
+    A4811 --> A481112["481112: Scheduled Freight"]
+    A4812 --> A481211["481211: Chartered Passenger"]
+    A4812 --> A481212["481212: Chartered Freight"]
+    A4812 --> A481219["481219: Other Nonscheduled"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 481 |
+| Level | Subsector |
+| Parent | [48-49: Transportation and Warehousing](../) |
+| Industry Groups | 2 |
+| National Industries | 5 |
+| US Employment | ~500,000 |
+| Annual Revenue | ~$250 billion |
+
+## Industry Groups
+
+| Code | Industry Group | Description |
+|------|----------------|-------------|
+| 4811 | [Scheduled Air Transportation](./ScheduledAirTransportation/) | Regular routes and schedules for passengers and cargo |
+| 4812 | [Nonscheduled Air Transportation](./NonscheduledAirTransportation/) | Charter, cargo, and specialty flying services |
+
+## Regulatory Framework
+
+### Federal Aviation Administration (FAA)
+
+The FAA regulates all aspects of civil aviation:
+- **Part 121**: Air carrier certification (large aircraft, scheduled)
+- **Part 135**: Commuter and on-demand operations
+- **Part 91**: General operating and flight rules
+- **Part 139**: Certification of airports
+
+### Transportation Security Administration (TSA)
+
+- Passenger and baggage screening
+- Air cargo security programs
+- Known shipper programs
+- Flight crew security training
+
+### Department of Transportation (DOT)
+
+- Economic regulation of airlines
+- Consumer protection rules
+- International route authority
+- Essential Air Service program
+
+## Technology and Operations
+
+### Fleet Technology
+
+```mermaid
+mindmap
+  root((Aircraft Tech))
+    Propulsion
+      Turbofan Engines
+      Sustainable Aviation Fuel
+      Electric/Hybrid
+    Avionics
+      Glass Cockpits
+      Autopilot Systems
+      ADS-B
+    Materials
+      Composites
+      Lightweight Alloys
+      Noise Reduction
+    Safety
+      TCAS
+      EGPWS
+      ELT Systems
+```
+
+### Operational Models
+
+| Model | Description | Examples |
+|-------|-------------|----------|
+| Hub-and-Spoke | Concentrate traffic at central hubs | Delta (ATL), United (ORD), American (DFW) |
+| Point-to-Point | Direct routes without hubs | Southwest, JetBlue |
+| Regional Feed | Connect small cities to hubs | SkyWest, Republic Airways |
+| All-Cargo | Dedicated freight operations | FedEx Express, UPS Airlines |
+
+## Logistics Models
+
+### Passenger Operations
+
+```mermaid
+flowchart LR
+    subgraph Ground["Ground Operations"]
+        G1[Check-in/Ticketing]
+        G2[Baggage Handling]
+        G3[Gate Operations]
+    end
+
+    subgraph Flight["Flight Operations"]
+        F1[Flight Planning]
+        F2[Crew Scheduling]
+        F3[Air Traffic Control]
+    end
+
+    subgraph Support["Support Services"]
+        S1[Catering]
+        S2[Fueling]
+        S3[Maintenance]
+    end
+
+    Ground --> Flight
+    Support --> Flight
+    Flight --> Arrival[Passenger Arrival]
+```
+
+### Air Cargo Operations
+
+```mermaid
+flowchart LR
+    Shipper[Shipper] --> Pickup[Pickup/Collection]
+    Pickup --> Sort1[Origin Sort]
+    Sort1 --> Load[Aircraft Loading]
+    Load --> Flight[Air Transport]
+    Flight --> Unload[Aircraft Unloading]
+    Unload --> Sort2[Destination Sort]
+    Sort2 --> Delivery[Final Delivery]
+```
+
+## Related Industries
+
+- [Support Activities for Air Transportation](/industries/TransportationAndWarehousing/SupportActivities/AirTransportSupport/) - Airport operations, aircraft services
+- [Couriers and Messengers](/industries/TransportationAndWarehousing/CouriersAndMessengers/) - Express delivery integration
+- [Travel Arrangement](/industries/Services/TravelArrangement/) - Booking and reservations
+
+## Related Occupations
+
+| Occupation | Employment | Median Wage |
+|------------|------------|-------------|
+| Airline Pilots and Flight Engineers | 130,000+ | $134,630 |
+| Flight Attendants | 120,000+ | $61,640 |
+| Aircraft Mechanics | 85,000+ | $65,380 |
+| Air Traffic Controllers | 25,000+ | $138,556 |
+| Reservation and Ticket Agents | 80,000+ | $38,030 |
+
+---
+
+*Source: NAICS 481 - U.S. Census Bureau, Bureau of Labor Statistics, FAA*

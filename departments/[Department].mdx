@@ -1,0 +1,140 @@
+# {name}
+
+> {description}
+
+## Overview
+
+{overview}
+
+## Department Structure
+
+```mermaid
+graph TD
+    {parent}["{parentName}"] --> {department}["{name}"]
+
+    subgraph Teams["Teams & Units"]
+        {#each teams}
+        {id}["{name}"]
+        {/each}
+    end
+
+    {department} --> Teams
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| Function Code | {code} |
+| Parent Function | [{parentName}](../{parentPath}) |
+| Process Group | [{processGroupName}](/processes/{processGroupPath}) |
+| Typical Headcount | {headcountRange} |
+
+## Core Responsibilities
+
+```mermaid
+mindmap
+    root(("{name}"))
+        {#each responsibilityGroups}
+        {groupName}
+            {#each responsibilities}
+            {name}
+            {/each}
+        {/each}
+```
+
+{#each coreResponsibilities}
+### {name}
+
+{description}
+
+**Key Activities:**
+{#each activities}
+- {name}
+{/each}
+{/each}
+
+## Key Roles
+
+| Role | Level | Description |
+|------|-------|-------------|
+{#each roles}
+| [{name}](/occupations/{path}) | {level} | {shortDescription} |
+{/each}
+
+## Processes Owned
+
+```mermaid
+flowchart TB
+    subgraph Primary["Primary Processes"]
+        {#each primaryProcesses}
+        {id}["{name}"]
+        {/each}
+    end
+
+    subgraph Support["Support Processes"]
+        {#each supportProcesses}
+        {id}["{name}"]
+        {/each}
+    end
+```
+
+{#each ownedProcesses}
+- [{name}](/processes/{path}) - {ownership}
+{/each}
+
+## Cross-Functional Relationships
+
+```mermaid
+graph LR
+    {department}["{name}"]
+
+    {#each upstreamDepts}
+    {id}["{name}"] --> {department}
+    {/each}
+
+    {#each downstreamDepts}
+    {department} --> {id}["{name}"]
+    {/each}
+```
+
+### Upstream Dependencies
+{#each upstreamDepts}
+- [{name}](../{path}) - {dependency}
+{/each}
+
+### Downstream Consumers
+{#each downstreamDepts}
+- [{name}](../{path}) - {output}
+{/each}
+
+## Industry Variations
+
+{#each industryVariations}
+### {industryName}
+
+{variationDescription}
+
+**Specific Focus Areas:**
+{#each focusAreas}
+- {name}
+{/each}
+{/each}
+
+## KPIs & Metrics
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+{#each kpis}
+| {name} | {description} | {target} |
+{/each}
+
+## Technology Stack
+
+{#each technologies}
+- **{category}**: {tools}
+{/each}
+
+---
+
+*Source: APQC PCF {code} + GS1 Functional Entity*

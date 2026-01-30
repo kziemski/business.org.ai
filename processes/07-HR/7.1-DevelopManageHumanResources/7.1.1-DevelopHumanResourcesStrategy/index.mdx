@@ -1,0 +1,119 @@
+---
+id: DevelopHumanResourcesStrategy
+name: "Develop human resources strategy"
+code: "20958"
+hierarchyId: "7.1.1"
+type: Process
+level: 3
+status: complete
+parent: "7.1"
+children: ["7.1.1.1", "7.1.1.2", "7.1.1.3", "7.1.1.4", "7.1.1.5", "7.1.1.6", "7.1.1.7", "7.1.1.8", "7.1.1.9", "7.1.1.10"]
+---
+
+# Develop human resources strategy
+
+> Creating a long-term plan to associate human resource requirements with the strategic goals of the company to ensure that there is enough qualified staffing to achieve those goals, to maintain competitive advantage and to reduce employee turnover.
+
+## Overview
+
+Process 7.1.1 is a core process that defines the specific procedures for develop human resources strategy. 
+
+Creating a long-term plan to associate human resource requirements with the strategic goals of the company to ensure that there is enough qualified staffing to achieve those goals, to maintain competitive advantage and to reduce employee turnover.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_1["7.1 Develop and manage human resources pl..."]
+    N7_1 --> N7_1_1["7.1.1 Develop human resources strategy"]
+    style N7_1_1 fill:#e1f5fe
+    N7_1_1 --> N7_1_1_1["7.1.1.1 Identify strategic HR needs"]
+    N7_1_1 --> N7_1_1_2["7.1.1.2 Define HR and business function ..."]
+    N7_1_1 --> N7_1_1_3["7.1.1.3 Determine HR function roles and ..."]
+    N7_1_1 --> N7_1_1_4["7.1.1.4 Determine HR delivery model"]
+    N7_1_1 --> N7_1_1_5["7.1.1.5 Determine HR costs"]
+    N7_1_1 --> N7_1_1_6["7.1.1.6 Establish HR measures"]
+    N7_1_1 --> N7_1_1_7["7.1.1.7 Communicate HR strategies"]
+    N7_1_1 --> N7_1_1_8["7.1.1.8 Develop strategy for HR systems/..."]
+    N7_1_1 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20958 |
+| Hierarchy ID | 7.1.1 |
+| Level | Process |
+| Parent | [7.1](../) |
+| Sub-Processes | 10 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.HumanResourcesStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `human resources strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop human resources strategy"]
+        S1["Identify strategic HR needs"]
+        S2["Define HR and business func..."]
+        S3["Determine HR function roles..."]
+        S4["Determine HR delivery model"]
+        S5["Determine HR costs"]
+        S6["Establish HR measures"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify strategic HR needs](./IdentifyStrategicHRNeeds) | 7.1.1.1 | Strategically defining the current and future needs for developing an efficient HR strategy |
+| [Define HR and business function roles and accountability](./DefineHRAndBusinessFunctionRolesAndAccountability) | 7.1.1.2 | Outlining the charge and duty of the HR function by defining its responsibility areas, as well as en |
+| [Determine HR function roles and structure](./DetermineHRFunctionRolesAndStructure) | 7.1.1.3 | Establishing the roles that are required to execute the HR function |
+| [Determine HR delivery model](./DetermineHRDeliveryModel) | 7.1.1.4 | Determining how an organization's human resources department offers services to and interacts with e |
+| [Determine HR costs](./DetermineHRCosts) | 7.1.1.5 | Ascertaining the costs and expenses of the HR function |
+| [Establish HR measures](./EstablishHRMeasures) | 7.1.1.6 | Evaluating the performance of HR function |
+| [Communicate HR strategies](./CommunicateHRStrategies) | 7.1.1.7 | Conveying the strategies of HR function to employees and management |
+| [Develop strategy for HR systems/technologies/tools](./DevelopStrategyForHRSystemstechnologiestools) | 7.1.1.8 | Creating a strategy for the use of systems/technologies/tools in operating the HR function |
+| [Manage employer branding](./ManageEmployerBranding) | 7.1.1.9 | Creating, maintaining and communicating company's reputation and values to keep current employees an |
+| [Manage job families and positions](./ManageJobFamiliesAndPositions) | 7.1.1.10 | Overseeing a group of similar individual or teams with similar education, skills, training, or exper |
+
+
+## Related Concepts
+
+- [HumanResourcesStrategy](/concepts/HumanResourcesStrategy)
+
+
+---
+
+*Source: APQC PCF 20958 (7.1.1) - APQC*

@@ -1,0 +1,112 @@
+---
+id: ManageProjects
+name: "Manage projects"
+code: "16410"
+hierarchyId: "13.2.3"
+type: Process
+level: 3
+status: complete
+parent: "13.2"
+children: ["13.2.3.1", "13.2.3.2", "13.2.3.3", "13.2.3.4", "13.2.3.5", "13.2.3.6"]
+---
+
+# Manage projects
+
+> Establishing the scope of the projects.
+
+## Overview
+
+Process 13.2.3 is a core process that defines the specific procedures for manage projects. 
+
+Establishing the scope of the projects. Create plans for implementing the projects. Initiate projects. Review and report project performance to management. Close projects.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_2["13.2 Manage portfolio, program, and project"]
+    N13_2 --> N13_2_3["13.2.3 Manage projects"]
+    style N13_2_3 fill:#e1f5fe
+    N13_2_3 --> N13_2_3_1["13.2.3.1 Establish project scope"]
+    N13_2_3 --> N13_2_3_2["13.2.3.2 Identify appropriate project man..."]
+    N13_2_3 --> N13_2_3_3["13.2.3.3 Develop project plans"]
+    N13_2_3 --> N13_2_3_4["13.2.3.4 Execute projects"]
+    N13_2_3 --> N13_2_3_5["13.2.3.5 Review and report project perfor..."]
+    N13_2_3 --> N13_2_3_6["13.2.3.6 Close projects"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16410 |
+| Hierarchy ID | 13.2.3 |
+| Level | Process |
+| Parent | [13.2](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Projects
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `projects` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage projects"]
+        S1["Establish project scope"]
+        S2["Identify appropriate projec..."]
+        S3["Develop project plans"]
+        S4["Execute projects"]
+        S5["Review and report project p..."]
+        S6["Close projects"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish project scope](./13.2.3.1-EstablishProjectScope/) | 13.2.3.1 | Establishing the horizons of business projects |
+| [Identify appropriate project management methodologies](./IdentifyAppropriateProjectManagementMethodologies) | 13.2.3.2 | Identifying and implementing the techniques and procedures for managing business projects |
+| [Develop project plans](./13.2.3.3-DevelopProjectPlans/) | 13.2.3.3 | Defining the resources and their roles |
+| [Execute projects](./13.2.3.4-ExecuteProjects/) | 13.2.3.4 | Implementing the business projects of the organization |
+| [Review and report project performance](./ReviewAndReportProjectPerformance) | 13.2.3.5 | Measuring the performance of a business project against key performance indicators including the pro |
+| [Close projects](./CloseProjects) | 13.2.3.6 | Settling each contract |
+
+
+## Related Concepts
+
+- [Projects](/concepts/Projects)
+
+
+---
+
+*Source: APQC PCF 16410 (13.2.3) - APQC*

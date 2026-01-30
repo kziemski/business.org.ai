@@ -1,0 +1,132 @@
+---
+id: Plastics
+name: "Plastics"
+code: "326"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Plastics
+
+> Industries in the Plastics and Rubber Products Manufacturing subsector make goods by processing plastics materials and raw rubber.
+
+## Overview
+
+Plastics represents an important category within the U.S. Manufacturing sector (NAICS 31-33). This subsector encompasses establishments primarily engaged in plastics.
+
+Industries in the Plastics and Rubber Products Manufacturing subsector make goods by processing plastics materials and raw rubber. The core technology employed by establishments in this subsector is that of plastics or rubber product production. Plastics and rubber are combined in the same subsector because plastics are increasingly being used as a substitute for rubber; however, the subsector is generally restricted to the production of products made of just one material, either solely plastics or rubber. Many manufacturing activities use plastics or rubber, for example the manufacture of footwear or furniture. Typically, the production process of these products involves more than one material. In these cases, technologies that allow disparate materials to be formed and combined are of central importance in describing the manufacturing activity. In NAICS, such activities (footwear and furniture manufacturing) are not classified in the Plastics and Rubber Products Manufacturing subsector because the core technologies for these activities are diverse and involve multiple materials. Within the Plastics and Rubber Products Manufacturing subsector, a distinction is made between plastics and rubber products at the industry group level, although it is not a rigid distinction, as can be seen from the definition of Industry 32622, Rubber and Plastics Hoses and Belting Manufacturing. In the case of hoses and belting, plastics are used as a substitute for rubber, and the distinction in materials is not useful as a basis for establishment classification. In keeping with the core technology focus of plastics, lamination of plastics film to plastics film as well as the production of bags from plastics only is classified in this subsector. Lamination and bag production involving plastics and materials other than plastics are classified in Subsector 322, Paper Manufacturing.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S31["31-33: Manufacturing"]
+    S31 --> N326["326: Plastics"]
+    style N326 fill:#f96,stroke:#333,stroke-width:2px
+    N326 --> N3261["3261: Plastics Product Manufacturing"]
+    N326 --> N3262["3262: Rubber Product Manufacturing"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 326 |
+| Level | Subsector |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Plastics Product Manufacturing](./PlasticsProductManufacturing/) | 3261 | This industry group comprises establishments primarily engaged in processing new |
+| [Rubber Product Manufacturing](./RubberProductManufacturing/) | 3262 | This industry group comprises establishments primarily engaged in processing nat |
+
+## Related Occupations
+
+- [Industrial Production Managers](/occupations/IndustrialProductionManagers) - Plan and coordinate production activities
+- [First-Line Supervisors of Production Workers](/occupations/FirstLineSupervisorsOfProductionAndOperatingWorkers) - Supervise production floor operations
+- [Quality Control Inspectors](/occupations/QualityControlInspectors) - Inspect products for defects and compliance
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Compound Prep"]
+        O2["Molding/Extrusion"]
+        O3["Finishing"]
+        O4["Quality Control"]
+        O5["Packaging"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Material Handling"]
+        S2["Mold Maintenance"]
+        S3["Quality Systems"]
+        S4["Logistics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Raw Materials"]
+        I2["Components"]
+        I3["Equipment"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Manufacturing Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound Logistics"]
+    end
+
+    subgraph Outputs["Products"]
+        O1["Finished Products"]
+        O2["Components"]
+        O3["Assemblies"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Industrial Buyers"]
+        C2["Retailers"]
+        C3["Distributors"]
+        C4["End Users"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+## Regulatory Environment
+
+Manufacturing operations in this industry are subject to various federal, state, and local regulations:
+
+- **OSHA Regulations**: Workplace safety standards, machine guarding, hazard communication
+- **EPA Requirements**: Air emissions, water discharge, hazardous waste management
+- **State/Local Requirements**: Zoning, permits, and local environmental regulations
+
+## Technology & Innovation
+
+The plastics industry is experiencing significant technological advancement:
+
+- **Industry 4.0**: Connected manufacturing, IoT sensors, and real-time monitoring
+- **Automation & Robotics**: Automated production lines and robotic assembly
+- **Data Analytics**: Predictive maintenance, quality analytics, and process optimization
+- **Sustainability**: Carbon reduction, circular economy, and green manufacturing
+- **Digital Twin**: Virtual replicas for simulation and optimization
+
+---
+
+*Source: NAICS 326 - Plastics*

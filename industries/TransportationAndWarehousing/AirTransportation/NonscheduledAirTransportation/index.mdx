@@ -1,0 +1,176 @@
+---
+title: Nonscheduled Air Transportation
+naicsCode: "4812"
+naicsLevel: industryGroup
+parentCode: "481"
+$type: Industry
+$id: https://industries.org.ai/NonscheduledAirTransportation
+sameAs: https://naics.org.ai/IndustryGroup/4812
+regulatoryAgencies:
+  - FAA
+  - TSA
+  - DOT
+---
+
+# Nonscheduled Air Transportation
+
+> This industry group comprises establishments primarily engaged in providing air transportation with no regular routes and regular schedules.
+
+## Overview
+
+Nonscheduled Air Transportation (NAICS 4812) includes charter airlines, air taxi services, and specialty flying operations that do not operate on fixed schedules. These establishments offer flexibility in routes, timing, and services, catering to customers with specific transportation needs not met by scheduled carriers.
+
+Key segments:
+- Charter passenger airlines (vacation, sports teams, casinos)
+- Charter cargo operations (ACMI, wet lease)
+- Air taxi and on-demand services
+- Specialty flying (aerial surveying, firefighting, ambulance)
+
+## NAICS Hierarchy
+
+```mermaid
+graph TD
+    S["48-49: Transportation and Warehousing"]
+    S --> A481["481: Air Transportation"]
+    A481 --> A4811["4811: Scheduled Air Transportation"]
+    A481 --> A4812["4812: Nonscheduled Air Transportation"]
+    A4812 --> A481211["481211: Nonscheduled Chartered Passenger"]
+    A4812 --> A481212["481212: Nonscheduled Chartered Freight"]
+    A4812 --> A481219["481219: Other Nonscheduled"]
+
+    style A4812 fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 4812 |
+| Level | Industry Group |
+| Parent | [481: Air Transportation](../) |
+| National Industries | 3 |
+| US Employment | ~50,000 |
+| Annual Revenue | ~$25 billion |
+
+## National Industries
+
+| Code | National Industry | Description |
+|------|-------------------|-------------|
+| 481211 | [Nonscheduled Chartered Passenger](./NonscheduledCharteredPassenger.mdx) | Charter passenger transportation |
+| 481212 | [Nonscheduled Chartered Freight](./NonscheduledCharteredFreight.mdx) | Charter cargo transportation |
+| 481219 | [Other Nonscheduled Air Transportation](./OtherNonscheduledAir.mdx) | Air ambulance, aerial surveying, firefighting |
+
+## Regulatory Framework
+
+### FAA Part 135 Operations
+
+On-demand and charter operations under Part 135:
+- Commuter operations (scheduled, <10 seats)
+- On-demand operations (charter, air taxi)
+- Specific pilot requirements (ATP for turbine multiengine)
+- Aircraft maintenance requirements
+- Operational control requirements
+
+### FAA Part 91 Subpart K
+
+Fractional ownership programs:
+- Management companies
+- Dry lease arrangements
+- Owner training requirements
+- Maintenance programs
+
+### DOT Economic Authority
+
+- Part 298: Air taxi operators
+- Part 380: Public charter operations
+- Fitness determinations for charter brokers
+
+## Logistics Models
+
+### Charter Operations Model
+
+```mermaid
+flowchart LR
+    subgraph Demand["Charter Demand"]
+        D1[Sports Teams]
+        D2[Tour Operators]
+        D3[Corporate Events]
+        D4[Casino Groups]
+        D5[Government/Military]
+    end
+
+    subgraph Operator["Charter Operator"]
+        O1[Fleet Management]
+        O2[Crew Scheduling]
+        O3[Operations]
+    end
+
+    subgraph Execution["Flight Execution"]
+        E1[Pre-Flight Planning]
+        E2[Ground Handling]
+        E3[Flight Operations]
+    end
+
+    Demand --> Operator --> Execution --> Customer[Customer at Destination]
+```
+
+### ACMI Leasing Model
+
+```mermaid
+flowchart TD
+    subgraph ACMI["ACMI Provider"]
+        A1[Aircraft]
+        A2[Crew]
+        A3[Maintenance]
+        A4[Insurance]
+    end
+
+    subgraph Client["Client Provides"]
+        C1[Fuel]
+        C2[Airport Fees]
+        C3[Ground Handling]
+        C4[Catering]
+    end
+
+    ACMI --> Operations[Flight Operations]
+    Client --> Operations
+```
+
+## Technology
+
+### On-Demand Platforms
+
+| Platform | Function |
+|----------|----------|
+| Charter Marketplaces | Real-time pricing, booking |
+| Fleet Management | Aircraft tracking, maintenance |
+| Crew Management | Scheduling, duty time tracking |
+| FBO Integration | Ground handling coordination |
+
+### Operational Technology
+
+| System | Function |
+|--------|----------|
+| Trip Planning | Route, fuel, weather optimization |
+| Dispatch | Flight following, release |
+| Weight & Balance | Load calculations |
+| Passenger Manifesting | TSA compliance |
+
+## Related Industries
+
+- [Scheduled Air Transportation](../ScheduledAirTransportation/) - Scheduled services
+- [Support Activities for Air Transportation](../../SupportActivities/AirTransportSupport/) - FBO services
+- [Travel Arrangement](/industries/Services/TravelArrangement/) - Charter booking
+
+## Related Occupations
+
+| Occupation | Role | Certification |
+|------------|------|---------------|
+| Charter Pilot | Aircraft operation | ATP or Commercial |
+| Flight Attendant | Cabin service (large aircraft) | FAA |
+| Dispatcher | Flight planning, release | FAA Dispatcher |
+| Charter Sales | Client relations, pricing | None |
+
+---
+
+*Source: NAICS 4812 - U.S. Census Bureau, FAA, NBAA*

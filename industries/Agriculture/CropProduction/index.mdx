@@ -1,0 +1,212 @@
+---
+id: CropProduction
+name: "Crop Production"
+code: "111"
+type: Industry
+status: complete
+---
+
+# Crop Production
+
+> Industries in the Crop Production subsector grow crops mainly for food and fiber. The subsector comprises establishments, such as farms, orchards, groves, greenhouses, and nurseries, primarily engaged in growing crops, plants, vines, or trees and their seeds.
+
+## Overview
+
+Crop Production represents the foundational subsector of American agriculture, encompassing a wide range of establishments engaged in growing plants for food, fiber, and other uses. The industries in this subsector are grouped by similarity of production activity, including biological and physiological characteristics, economic requirements, length of growing season, degree of crop rotation, extent of input specialization, labor requirements, and capital demands.
+
+The production process is typically completed when the raw product or commodity grown reaches the "farm gate" for market - the point of first sale or price determination. Establishments are classified in this subsector when crop production accounts for one-half or more of total agricultural production.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S11["NAICS 11: Agriculture, Forestry, Fishing and Hunting"]
+    S11 --> SS111["111: Crop Production"]
+
+    SS111 --> G1111["1111: Oilseed and Grain Farming"]
+    SS111 --> G1112["1112: Vegetable and Melon Farming"]
+    SS111 --> G1113["1113: Fruit and Tree Nut Farming"]
+    SS111 --> G1114["1114: Greenhouse, Nursery, and Floriculture"]
+    SS111 --> G1119["1119: Other Crop Farming"]
+
+    G1111 --> I11111["11111: Soybean Farming"]
+    G1111 --> I11112["11112: Oilseed (except Soybean) Farming"]
+    G1111 --> I11113["11113: Dry Pea and Bean Farming"]
+    G1111 --> I11114["11114: Wheat Farming"]
+    G1111 --> I11115["11115: Corn Farming"]
+    G1111 --> I11116["11116: Rice Farming"]
+    G1111 --> I11119["11119: Other Grain Farming"]
+
+    G1113 --> I11131["11131: Orange Groves"]
+    G1113 --> I11132["11132: Citrus (except Orange) Groves"]
+    G1113 --> I11133["11133: Noncitrus Fruit and Tree Nut Farming"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 111 |
+| Level | Subsector |
+| Parent Sector | [Agriculture, Forestry, Fishing and Hunting](../) |
+| Industry Groups | 5 |
+| Industries | 10+ |
+| National Industries | 20+ |
+
+## Sub-Industries
+
+| Industry Group | Code | Description |
+|----------------|------|-------------|
+| Oilseed and Grain Farming | 1111 | Growing oilseed and grain crops with annual life cycles in open fields |
+| Vegetable and Melon Farming | 1112 | Growing vegetables and melons for fresh and processed markets |
+| Fruit and Tree Nut Farming | 1113 | Growing perennial fruit and tree nut crops |
+| Greenhouse, Nursery, and Floriculture | 1114 | Growing crops under protective cover and nursery operations |
+| Other Crop Farming | 1119 | Tobacco, cotton, sugarcane, hay, and specialty crops |
+
+## Related Occupations
+
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
+- [Agricultural Workers](/occupations/AgriculturalWorkers) - Crop cultivation and harvesting
+- [First-Line Supervisors of Farming Workers](/occupations/FirstLineSupervisorsOfFarmingFishingAndForestryWorkers) - Supervise farm labor
+- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Agricultural Inspectors](/occupations/AgriculturalInspectors) - Inspect agricultural products and operations
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Planning["Production Planning"]
+        P1["Crop Selection"]
+        P2["Resource Planning"]
+        P3["Schedule Development"]
+    end
+
+    subgraph Preparation["Land Preparation"]
+        L1["Soil Testing"]
+        L2["Tillage"]
+        L3["Fertilization"]
+    end
+
+    subgraph Growing["Growing Operations"]
+        G1["Planting"]
+        G2["Irrigation"]
+        G3["Pest Management"]
+        G4["Crop Monitoring"]
+    end
+
+    subgraph Harvest["Harvest & Post-Harvest"]
+        H1["Harvesting"]
+        H2["Grading/Sorting"]
+        H3["Storage"]
+        H4["Transport to Market"]
+    end
+
+    Planning --> Preparation --> Growing --> Harvest
+```
+
+### Production Planning
+
+Developing comprehensive plans for the growing season based on market demand, soil conditions, weather patterns, and resource availability.
+
+**Key Activities:**
+- Analyze market conditions and commodity prices
+- Select appropriate crop varieties
+- Plan crop rotation schedules
+- Secure seeds, fertilizers, and other inputs
+- Arrange financing and insurance
+
+### Field Operations
+
+Managing day-to-day cultivation activities throughout the growing season.
+
+**Key Activities:**
+- Prepare fields and seedbeds
+- Plant crops using appropriate techniques
+- Apply irrigation and nutrients
+- Monitor crop health and pest pressure
+- Implement integrated pest management
+
+### Harvest Operations
+
+Collecting mature crops and preparing them for market or storage.
+
+**Key Activities:**
+- Determine optimal harvest timing
+- Operate harvesting equipment
+- Transport crops from field
+- Grade and sort products
+- Manage post-harvest storage
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Seeds & Planting Stock"]
+        I2["Fertilizers & Chemicals"]
+        I3["Equipment & Machinery"]
+        I4["Land & Water"]
+        I5["Labor"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Land Preparation"]
+        A2["Planting"]
+        A3["Crop Management"]
+        A4["Harvesting"]
+    end
+
+    subgraph Outputs["Products"]
+        O1["Grains & Oilseeds"]
+        O2["Fruits & Vegetables"]
+        O3["Fiber Crops"]
+        O4["Specialty Crops"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Food Processors"]
+        C2["Grain Elevators"]
+        C3["Fresh Markets"]
+        C4["Export Markets"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+## Regulatory Environment
+
+Crop production operations are subject to extensive federal, state, and local regulations:
+
+- **USDA Programs**: Commodity programs, crop insurance, conservation compliance
+- **EPA Regulations**: Pesticide registration and use, water quality standards, Clean Water Act compliance
+- **FDA Requirements**: Food safety standards for produce under FSMA
+- **State Agriculture Departments**: Seed certification, pest quarantines, marketing orders
+- **Labor Regulations**: H-2A visa program, worker safety (OSHA), wage and hour laws
+
+Key compliance areas include:
+- Pesticide applicator licensing
+- Worker Protection Standard (WPS)
+- Food safety plans (for covered produce)
+- Nutrient management plans
+- Endangered species protections
+
+## Technology & Innovation
+
+The crop production industry is undergoing significant technological transformation:
+
+- **Precision Agriculture**: GPS-guided tractors and planters, variable rate application technology, yield mapping and monitoring
+- **Digital Farming**: Farm management software, satellite and drone imagery, IoT sensors for soil and weather monitoring
+- **Biotechnology**: Genetically modified crops, CRISPR gene editing, enhanced seed traits for yield and resistance
+- **Automation**: Autonomous tractors, robotic weeding systems, automated irrigation
+- **Data Analytics**: Predictive yield modeling, machine learning for pest detection, market price forecasting
+- **Sustainable Practices**: Cover cropping, no-till farming, integrated pest management, carbon sequestration programs
+
+## Related Industries
+
+- [Animal Production](../AnimalProduction/) - Livestock operations often integrated with crop farming
+- [Support Activities for Agriculture](../AgriculturalSupport/) - Contract services for crop production
+- [Food Manufacturing](/industries/Manufacturing/FoodManufacturing/) - Primary customers for crop products
+
+---
+
+*Source: NAICS 111 - Crop Production*

@@ -1,0 +1,97 @@
+---
+id: ProvideWorkspaceAndFacilities
+name: "Provide workspace and facilities"
+code: "10944"
+hierarchyId: "10.1.3"
+type: Process
+level: 3
+status: complete
+parent: "10.1"
+children: ["10.1.3.1", "10.1.3.2"]
+---
+
+# Provide workspace and facilities
+
+> Managing the provision of the workspace and its assets.
+
+## Overview
+
+Process 10.1.3 is a core process that defines the specific procedures for provide workspace and facilities. 
+
+Managing the provision of the workspace and its assets. Arrange an office space with all assets (tables, chairs, computers, admin staff, etc.) according to requirements.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_1["10.1 Plan and acquire assets"]
+    N10_1 --> N10_1_3["10.1.3 Provide workspace and facilities"]
+    style N10_1_3 fill:#e1f5fe
+    N10_1_3 --> N10_1_3_1["10.1.3.1 Acquire workspace and facilities"]
+    N10_1_3 --> N10_1_3_2["10.1.3.2 Change fit/form/function of work..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10944 |
+| Hierarchy ID | 10.1.3 |
+| Level | Process |
+| Parent | [10.1](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+provide.WorkspaceAndFacilities
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `provide` | Primary action |
+| Object | `workspace and facilities` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Provide workspace and facilities"]
+        S1["Acquire workspace and facil..."]
+        S2["Change fit/form/function of..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Acquire workspace and facilities](./AcquireWorkspaceAndFacilities) | 10.1.3.1 | Attaining the office space with all assets (tables, chairs, computers, admin staff, etc |
+| [Change fit/form/function of workspace and facilities](./ChangeFitformfunctionOfWorkspaceAndFacilities) | 10.1.3.2 | Modifying the formation of the workspace and its assets |
+
+
+## Related Concepts
+
+- [Workspace](/concepts/Workspace)
+- [Facilities](/concepts/Facilities)
+
+
+---
+
+*Source: APQC PCF 10944 (10.1.3) - APQC*

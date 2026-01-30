@@ -1,0 +1,119 @@
+---
+id: DevelopAndManageServicesolutionArchitecture
+name: "Develop and manage service/solution architecture"
+code: "20799"
+hierarchyId: "8.5.3"
+type: Process
+level: 3
+status: complete
+parent: "8.5"
+children: ["8.5.3.1", "8.5.3.2", "8.5.3.3", "8.5.3.4", "8.5.3.5", "8.5.3.6", "8.5.3.7", "8.5.3.8"]
+---
+
+# Develop and manage service/solution architecture
+
+> Creating the architecture for the IT services and solutions.
+
+## Overview
+
+Process 8.5.3 is a core process that defines the specific procedures for develop and manage service/solution architecture. 
+
+Creating the architecture for the IT services and solutions. Assess architecture and business constraints in order to understand integration requirements. Promote existing architecture. Manage exceptions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_5["8.5 Develop and manage services/solutions"]
+    N8_5 --> N8_5_3["8.5.3 Develop and manage service/solution a..."]
+    style N8_5_3 fill:#e1f5fe
+    N8_5_3 --> N8_5_3_1["8.5.3.1 Assess IT application and infras..."]
+    N8_5_3 --> N8_5_3_2["8.5.3.2 Assess business constraints on I..."]
+    N8_5_3 --> N8_5_3_3["8.5.3.3 Determine IT component integrati..."]
+    N8_5_3 --> N8_5_3_4["8.5.3.4 Identify opportunities for IT co..."]
+    N8_5_3 --> N8_5_3_5["8.5.3.5 Promote adoption of existing ser..."]
+    N8_5_3 --> N8_5_3_6["8.5.3.6 Develop and maintain service/sol..."]
+    N8_5_3 --> N8_5_3_7["8.5.3.7 Assess IT service/solution archi..."]
+    N8_5_3 --> N8_5_3_8["8.5.3.8 Manage architectural exceptions"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20799 |
+| Hierarchy ID | 8.5.3 |
+| Level | Process |
+| Parent | [8.5](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageServicesolutionArchitecture
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage service/solution architecture` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage service/solution architecture"]
+        S1["Assess IT application and i..."]
+        S2["Assess business constraints..."]
+        S3["Determine IT component inte..."]
+        S4["Identify opportunities for ..."]
+        S5["Promote adoption of existin..."]
+        S6["Develop and maintain servic..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess IT application and infrastructure architecture constraints](./AssessITApplicationAndInfrastructureArchitectureConstraints) | 8.5.3.1 | Assessing limitations in IT application and infrastructure architecture that may hinder expected per |
+| [Assess business constraints on IT service/solution](./AssessBusinessConstraintsOnITServicesolution) | 8.5.3.2 | Evaluate business limitations that may hinder IT service/solution performance |
+| [Determine IT component integration requirements](./DetermineITComponentIntegrationRequirements) | 8.5.3.3 | Determining the requirements to integrate IT components such as hardware, software, database, teleco |
+| [Identify opportunities for IT component reuse](./IdentifyOpportunitiesForITComponentReuse) | 8.5.3.4 | Identification of opportunities for reusing IT components so that they can be cost-effective and eff |
+| [Promote adoption of existing service/solution architecture](./PromoteAdoptionOfExistingServicesolutionArchitecture) | 8.5.3.5 | Encouraging acceptance of existing IT service/solution architecture in the organization |
+| [Develop and maintain service/solution architectures](./DevelopAndMaintainServicesolutionArchitectures) | 8.5.3.6 | Creating and maintaining a services and solutions architecture over a network that can be revised as |
+| [Assess IT service/solution architecture conformance](./AssessITServicesolutionArchitectureConformance) | 8.5.3.7 | Assessing functional compliance of the IT service/solution architecture |
+| [Manage architectural exceptions](./ManageArchitecturalExceptions) | 8.5.3.8 | Identifying and resolving any architectural exceptions |
+
+
+## Related Concepts
+
+- [ServiceArchitecture](/concepts/ServiceArchitecture)
+- [SolutionArchitecture](/concepts/SolutionArchitecture)
+- [ServiceArchitecture](/concepts/ServiceArchitecture)
+- [SolutionArchitecture](/concepts/SolutionArchitecture)
+
+
+---
+
+*Source: APQC PCF 20799 (8.5.3) - APQC*

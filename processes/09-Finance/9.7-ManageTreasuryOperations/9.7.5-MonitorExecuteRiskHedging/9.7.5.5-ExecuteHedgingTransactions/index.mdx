@@ -1,0 +1,109 @@
+---
+id: ExecuteHedgingTransactions
+name: "Execute hedging transactions"
+code: "20137"
+hierarchyId: "9.7.5.5"
+type: Activity
+level: 4
+status: complete
+parent: "9.7.5"
+children: ["9.7.5.5.1", "9.7.5.5.2", "9.7.5.5.3", "9.7.5.5.4", "9.7.5.5.5"]
+---
+
+# Execute hedging transactions
+
+> Implementing hedging strategy in attempt to alleviate risk.
+
+## Overview
+
+Activity 9.7.5.5 is an activity within the Manage Financial Resources framework. 
+
+Implementing hedging strategy in attempt to alleviate risk. This will include all options, depravities, and futures contracts agreed upon in Develop risk management/hedging strategy [12974].
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_7["9.7 Manage treasury operations"]
+    N9_7 --> N9_7_5["9.7.5 Monitor and execute risk and hedging ..."]
+    N9_7_5 --> N9_7_5_5["9.7.5.5 Execute hedging transactions"]
+    style N9_7_5_5 fill:#e1f5fe
+    N9_7_5_5 --> N9_7_5_5_1["9.7.5.5.1 Measure physical positions"]
+    N9_7_5_5 --> N9_7_5_5_2["9.7.5.5.2 Establish hedges"]
+    N9_7_5_5 --> N9_7_5_5_3["9.7.5.5.3 Unwind hedges"]
+    N9_7_5_5 --> N9_7_5_5_4["9.7.5.5.4 Evaluate and refine hedging posi..."]
+    N9_7_5_5 --> N9_7_5_5_5["9.7.5.5.5 Monitor credit"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20137 |
+| Hierarchy ID | 9.7.5.5 |
+| Level | Activity |
+| Parent | [9.7.5](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+execute.HedgingTransactions
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `execute` | Primary action |
+| Object | `hedging transactions` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Execute hedging transactions"]
+        S1["Measure physical positions"]
+        S2["Establish hedges"]
+        S3["Unwind hedges"]
+        S4["Evaluate and refine hedging..."]
+        S5["Monitor credit"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Measure physical positions](./MeasurePhysicalPositions) | 9.7.5.5.1 | Evaluating investments made in some market to offset the risks of investing in a contrary or opposin |
+| [Establish hedges](./EstablishHedges) | 9.7.5.5.2 | Determining which hedge options to execute |
+| [Unwind hedges](./UnwindHedges) | 9.7.5.5.3 | Closing out a position or cashing in derivatives early |
+| [Evaluate and refine hedging positions](./EvaluateAndRefineHedgingPositions) | 9.7.5.5.4 | Examining options in the market for hedging investments |
+| [Monitor credit](./MonitorCredit) | 9.7.5.5.5 | Revising credit reports periodically for accurateness and changes that could be suggestive of duplic |
+
+
+## Related Concepts
+
+- [HedgingTransactions](/concepts/HedgingTransactions)
+
+
+---
+
+*Source: APQC PCF 20137 (9.7.5.5) - APQC*

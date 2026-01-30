@@ -1,0 +1,114 @@
+---
+id: CompleteServiceDelivery
+name: "Complete service delivery"
+code: "20077"
+hierarchyId: "5.3.3"
+type: Process
+level: 3
+status: complete
+parent: "5.3"
+children: ["5.3.3.1", "5.3.3.2", "5.3.3.3", "5.3.3.4", "5.3.3.5", "5.3.3.6", "5.3.3.7"]
+---
+
+# Complete service delivery
+
+> Implementing final steps to complete service delivery to the customer.
+
+## Overview
+
+Process 5.3.3 is a core process that defines the specific procedures for complete service delivery. 
+
+Implementing final steps to complete service delivery to the customer. Evaluate success through project review, complete finance activities, and confirm delivery. Release resources and manage completion by harvesting knowledge and systems by archiving records.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_3["5.3 Deliver service to customer"]
+    N5_3 --> N5_3_3["5.3.3 Complete service delivery"]
+    style N5_3_3 fill:#e1f5fe
+    N5_3_3 --> N5_3_3_1["5.3.3.1 Conduct service delivery/project..."]
+    N5_3_3 --> N5_3_3_2["5.3.3.2 Complete/finalize financial mana..."]
+    N5_3_3 --> N5_3_3_3["5.3.3.3 Confirm delivery according to co..."]
+    N5_3_3 --> N5_3_3_4["5.3.3.4 Release resources"]
+    N5_3_3 --> N5_3_3_5["5.3.3.5 Manage service delivery completion"]
+    N5_3_3 --> N5_3_3_6["5.3.3.6 Harvest knowledge"]
+    N5_3_3 --> N5_3_3_7["5.3.3.7 Archive records and update systems"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20077 |
+| Hierarchy ID | 5.3.3 |
+| Level | Process |
+| Parent | [5.3](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+complete.ServiceDelivery
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `complete` | Primary action |
+| Object | `service delivery` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Complete service delivery"]
+        S1["Conduct service delivery/pr..."]
+        S2["Complete/finalize financial..."]
+        S3["Confirm delivery according ..."]
+        S4["Release resources"]
+        S5["Manage service delivery com..."]
+        S6["Harvest knowledge"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Conduct service delivery/project review and evaluate success](./ConductServiceDeliveryprojectReviewAndEvaluateSuccess) | 5.3.3.1 | Reviewing the entire service delivery process to evaluate the success of the project from beginning  |
+| [Complete/finalize financial management activities](./CompletefinalizeFinancialManagementActivities) | 5.3.3.2 | Insuring all payments are received and all activates therein are completed |
+| [Confirm delivery according to contract terms](./ConfirmDeliveryAccordingToContractTerms) | 5.3.3.3 | Confirming that the organization has satisfied all terms of the delivery contract set forth in colla |
+| [Release resources](./ReleaseResources) | 5.3.3.4 | Discharging leveraged resources from service delivery commitments upon completion |
+| [Manage service delivery completion](./ManageServiceDeliveryCompletion) | 5.3.3.5 | Ensuring that all aspects of the service delivery process are completed both internally and external |
+| [Harvest knowledge](./HarvestKnowledge) | 5.3.3.6 | Garnering feedback from all avenues to collect a knowledge base concerning services rendered |
+| [Archive records and update systems](./ArchiveRecordsAndUpdateSystems) | 5.3.3.7 | Completing and archiving all records associated with requested services |
+
+
+## Related Concepts
+
+- [ServiceDelivery](/concepts/ServiceDelivery)
+
+
+---
+
+*Source: APQC PCF 20077 (5.3.3) - APQC*

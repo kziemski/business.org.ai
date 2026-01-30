@@ -1,0 +1,114 @@
+---
+id: PlanAssetMaintenance
+name: "Plan asset maintenance"
+code: "19239"
+hierarchyId: "10.3.1"
+type: Process
+level: 3
+status: complete
+parent: "10.3"
+children: ["10.3.1.1", "10.3.1.2", "10.3.1.3", "10.3.1.4", "10.3.1.5", "10.3.1.6", "10.3.1.7"]
+---
+
+# Plan asset maintenance
+
+> Ensuring that necessary resources are available and tasks are prioritized accordingly through planning.
+
+## Overview
+
+Process 10.3.1 is a core process that defines the specific procedures for plan asset maintenance. 
+
+Ensuring that necessary resources are available and tasks are prioritized accordingly through planning. Provide strategies and policies that identify tasks that need to be completed, and the resources necessary to fulfill those tasks.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_3["10.3 Maintain assets"]
+    N10_3 --> N10_3_1["10.3.1 Plan asset maintenance"]
+    style N10_3_1 fill:#e1f5fe
+    N10_3_1 --> N10_3_1_1["10.3.1.1 Develop maintenance strategies"]
+    N10_3_1 --> N10_3_1_2["10.3.1.2 Analyze assets and predict maint..."]
+    N10_3_1 --> N10_3_1_3["10.3.1.3 Specify maintenance policies"]
+    N10_3_1 --> N10_3_1_4["10.3.1.4 Integrate preventive maintenance..."]
+    N10_3_1 --> N10_3_1_5["10.3.1.5 Identify work management tasks &..."]
+    N10_3_1 --> N10_3_1_6["10.3.1.6 Conduct resource planning"]
+    N10_3_1 --> N10_3_1_7["10.3.1.7 Create work plans"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19239 |
+| Hierarchy ID | 10.3.1 |
+| Level | Process |
+| Parent | [10.3](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.AssetMaintenance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `asset maintenance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan asset maintenance"]
+        S1["Develop maintenance strategies"]
+        S2["Analyze assets and predict ..."]
+        S3["Specify maintenance policies"]
+        S4["Integrate preventive mainte..."]
+        S5["Identify work management ta..."]
+        S6["Conduct resource planning"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop maintenance strategies](./DevelopMaintenanceStrategies) | 10.3.1.1 | Creating goals and agendas to better realize the success of the maintenance policies that have been  |
+| [Analyze assets and predict maintenance requirements](./AnalyzeAssetsAndPredictMaintenanceRequirements) | 10.3.1.2 | Evaluating assets in order to project future requirements for maintenance |
+| [Specify maintenance policies](./SpecifyMaintenancePolicies) | 10.3.1.3 | Communicating policies in regards to asset maintenance |
+| [Integrate preventive maintenance into operations schedule](./IntegratePreventiveMaintenanceIntoOperationsSchedule) | 10.3.1.4 | Devising a methodology and procedure for assimilating the works of planned maintenance into the sche |
+| [Identify work management tasks & priorities](./IdentifyWorkManagementTasksPriorities) | 10.3.1.5 | Identifying the steps needed for asset maintenance |
+| [Conduct resource planning](./ConductResourcePlanning) | 10.3.1.6 | Analyzing workload needs in relation to asset maintenance and plan resources around those needs |
+| [Create work plans](./CreateWorkPlans) | 10.3.1.7 | Creating procedures on how to maintain productive assets |
+
+
+## Related Concepts
+
+- [AssetMaintenance](/concepts/AssetMaintenance)
+
+
+---
+
+*Source: APQC PCF 19239 (10.3.1) - APQC*

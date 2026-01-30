@@ -1,0 +1,101 @@
+---
+id: ManageEmployeeOrientationAndDeployment
+name: "Manage employee orientation and deployment"
+code: "10469"
+hierarchyId: "7.3.1"
+type: Process
+level: 3
+status: complete
+parent: "7.3"
+children: ["7.3.1.1", "7.3.1.2", "7.3.1.3"]
+---
+
+# Manage employee orientation and deployment
+
+> Creating and maintaining various employee on-boarding programs typically known as induction programs in order to ensure that the new employees are effectively introduced to the organization and its existing employees.
+
+## Overview
+
+Process 7.3.1 is a core process that defines the specific procedures for manage employee orientation and deployment. 
+
+Creating and maintaining various employee on-boarding programs typically known as induction programs in order to ensure that the new employees are effectively introduced to the organization and its existing employees. Examine and evaluate the performance of these induction programs. Execute these programs on the ground level.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    N7_3 --> N7_3_1["7.3.1 Manage employee orientation and deplo..."]
+    style N7_3_1 fill:#e1f5fe
+    N7_3_1 --> N7_3_1_1["7.3.1.1 Create/maintain employee onboard..."]
+    N7_3_1 --> N7_3_1_2["7.3.1.2 Evaluate the effectiveness of th..."]
+    N7_3_1 --> N7_3_1_3["7.3.1.3 Execute onboarding program"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10469 |
+| Hierarchy ID | 7.3.1 |
+| Level | Process |
+| Parent | [7.3](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EmployeeOrientationAndDeployment
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `employee orientation and deployment` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage employee orientation and deployment"]
+        S1["Create/maintain employee on..."]
+        S2["Evaluate the effectiveness ..."]
+        S3["Execute onboarding program"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create/maintain employee onboarding program](./7.3.1.1-CreatemaintainEmployeeOnboardingProgram/) | 7.3.1.1 | Creating and maintaining a mechanism through which new employees acquire the necessary knowledge, sk |
+| [Evaluate the effectiveness of the employee onboarding program](./EvaluateTheEffectivenessOfTheEmployeeOnboardingProgram) | 7.3.1.2 | Assessing the performance and effectiveness of employee on-boarding program |
+| [Execute onboarding program](./ExecuteOnboardingProgram) | 7.3.1.3 | Bringing the employee on-boarding program into effect |
+
+
+## Related Concepts
+
+- [EmployeeOrientation](/concepts/EmployeeOrientation)
+- [Deployment](/concepts/Deployment)
+
+
+---
+
+*Source: APQC PCF 10469 (7.3.1) - APQC*

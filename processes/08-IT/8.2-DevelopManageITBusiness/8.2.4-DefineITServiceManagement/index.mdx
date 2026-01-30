@@ -1,0 +1,114 @@
+---
+id: DefineItServiceManagementStrategy
+name: "Define IT service management strategy"
+code: "20674"
+hierarchyId: "8.2.4"
+type: Process
+level: 3
+status: complete
+parent: "8.2"
+children: ["8.2.4.1", "8.2.4.2", "8.2.4.3", "8.2.4.4", "8.2.4.5", "8.2.4.6", "8.2.4.7"]
+---
+
+# Define IT service management strategy
+
+> Defining perspective, position, plans, and patterns needed to execute designing, delivering, managing, and improving the way information technology is used within an organization.
+
+## Overview
+
+Process 8.2.4 is a core process that defines the specific procedures for define it service management strategy. 
+
+Defining perspective, position, plans, and patterns needed to execute designing, delivering, managing, and improving the way information technology is used within an organization.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_2["8.2 Develop and manage IT business strategy"]
+    N8_2 --> N8_2_4["8.2.4 Define IT service management strategy"]
+    style N8_2_4 fill:#e1f5fe
+    N8_2_4 --> N8_2_4_1["8.2.4.1 Establish IT service management ..."]
+    N8_2_4 --> N8_2_4_2["8.2.4.2 Identify IT service operating an..."]
+    N8_2_4 --> N8_2_4_3["8.2.4.3 Define IT service catalog"]
+    N8_2_4 --> N8_2_4_4["8.2.4.4 Establish IT service management ..."]
+    N8_2_4 --> N8_2_4_5["8.2.4.5 Define and implement IT service ..."]
+    N8_2_4 --> N8_2_4_6["8.2.4.6 Define and deploy support servic..."]
+    N8_2_4 --> N8_2_4_7["8.2.4.7 Monitor and report IT performance"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20674 |
+| Hierarchy ID | 8.2.4 |
+| Level | Process |
+| Parent | [8.2](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.ITServiceManagementStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `IT service management strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define IT service management strategy"]
+        S1["Establish IT service manage..."]
+        S2["Identify IT service operati..."]
+        S3["Define IT service catalog"]
+        S4["Establish IT service manage..."]
+        S5["Define and implement IT ser..."]
+        S6["Define and deploy support s..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish IT service management strategy and goals](./EstablishITServiceManagementStrategyAndGoals) | 8.2.4.1 | Implementing strategy for designing, delivering, managing, and improving the way information technol |
+| [Identify IT service operating and process requirements](./IdentifyITServiceOperatingAndProcessRequirements) | 8.2.4.2 | Identifying operating and process requirement for designing, delivering, managing, and improving the |
+| [Define IT service catalog](./DefineITServiceCatalog) | 8.2.4.3 | Create and design an organized and curated collection of all IT-related services that can be perform |
+| [Establish IT service management framework](./EstablishITServiceManagementFramework) | 8.2.4.4 | Create a layered structure for IT service management framework ensuring right processes, people, and |
+| [Define and implement IT service management](./DefineAndImplementITServiceManagement) | 8.2.4.5 | Defining and implementing activities involved in designing, creating, delivering, supporting, and ma |
+| [Define and deploy support service management process tools and methods](./DefineAndDeploySupportServiceManagementProcessToolsAndMethods) | 8.2.4.6 | Establishing services for providing support to users of IT services and solutions |
+| [Monitor and report IT performance](./MonitorAndReportITPerformance) | 8.2.4.7 | Supervising, analyzing, and reporting performance of information technology to ensure they are on-co |
+
+
+## Related Concepts
+
+- [ITServiceManagementStrategy](/concepts/ITServiceManagementStrategy)
+
+
+---
+
+*Source: APQC PCF 20674 (8.2.4) - APQC*

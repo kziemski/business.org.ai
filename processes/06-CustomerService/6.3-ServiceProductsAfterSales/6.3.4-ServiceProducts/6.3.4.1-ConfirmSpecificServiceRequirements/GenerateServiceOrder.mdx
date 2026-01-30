@@ -1,0 +1,64 @@
+---
+id: GenerateServiceOrder
+name: "Generate service order"
+code: "10326"
+hierarchyId: "6.3.4.1.3"
+type: SubActivity
+level: 5
+status: complete
+parent: "6.3.4.1"
+---
+
+# Generate service order
+
+> Designing a short-term agreement between the service provider and customer.
+
+## Overview
+
+Sub-Activity 6.3.4.1.3 is an activity within the Manage Customer Service framework. 
+
+Designing a short-term agreement between the service provider and customer. One-time services are ordered by the service recipient and resource-related billing is performed upon completion. Use the service order to document service and customer service work.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_4["6.3.4 Service products"]
+    N6_3_4 --> N6_3_4_1["6.3.4.1 Confirm specific service requirements..."]
+    N6_3_4_1 --> N6_3_4_1_3["6.3.4.1.3 Generate service order"]
+    style N6_3_4_1_3 fill:#e1f5fe
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10326 |
+| Hierarchy ID | 6.3.4.1.3 |
+| Level | Sub-Activity |
+| Parent | [6.3.4.1](../) |
+| Sub-Processes | 0 |
+
+
+## GraphDL Semantic Structure
+
+```
+generate.ServiceOrder
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `generate` | Primary action |
+| Object | `service order` | Direct object |
+
+
+## Related Concepts
+
+- [ServiceOrder](/concepts/ServiceOrder)
+
+
+---
+
+*Source: APQC PCF 10326 (6.3.4.1.3) - APQC*

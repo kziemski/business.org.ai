@@ -1,0 +1,95 @@
+---
+id: ManageEnterpriseQuality
+name: "Manage enterprise quality"
+code: "17471"
+hierarchyId: "13.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "13"
+children: ["13.3.1", "13.3.2"]
+---
+
+# Manage enterprise quality
+
+> Managing organizational attributes that are closely associated with the quality of output.
+
+## Overview
+
+Group 13.3 is a process group within APQC Category 13.0 (Develop and Manage Business Capabilities). 
+
+Managing organizational attributes that are closely associated with the quality of output. Determine the quality requirements. Evaluate the correspondence between the quality performance and requirements. Manage non-conformance activities. Ensure implementation and maintenance of the enterprise quality management system.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_3["13.3 Manage enterprise quality"]
+    style N13_3 fill:#e1f5fe
+    N13_3 --> N13_3_1["13.3.1 Establish quality requirements"]
+    N13_3 --> N13_3_2["13.3.2 Evaluate performance to requirem..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17471 |
+| Hierarchy ID | 13.3 |
+| Level | Group |
+| Parent | [13](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EnterpriseQuality
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `enterprise quality` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage enterprise quality"]
+        S1["Establish quality requirements"]
+        S2["Evaluate performance to req..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish quality requirements](./13.3.1-EstablishQualityRequirements/) | 13.3.1 | Determining essential activities, processes, and attributes for securing enterprise quality |
+| [Evaluate performance to requirements](./13.3.2-EvaluatePerformanceRequirements/) | 13.3.2 | Analyzing if the performance of the quality plan has achieved the estimated and desired requirements |
+
+
+## Related Concepts
+
+- [EnterpriseQuality](/concepts/EnterpriseQuality)
+
+
+---
+
+*Source: APQC PCF 17471 (13.3) - APQC*

@@ -1,0 +1,112 @@
+---
+id: PerformAssetMaintenance
+name: "Perform asset maintenance"
+code: "19253"
+hierarchyId: "10.3.3"
+type: Process
+level: 3
+status: complete
+parent: "10.3"
+children: ["10.3.3.1", "10.3.3.2", "10.3.3.3", "10.3.3.4", "10.3.3.5", "10.3.3.6"]
+---
+
+# Perform asset maintenance
+
+> Engaging in all aspects of asset maintenance.
+
+## Overview
+
+Process 10.3.3 is a core process that defines the specific procedures for perform asset maintenance. 
+
+Engaging in all aspects of asset maintenance. Ensure that all assets are functioning properly and to all specified codes and regulations where applicable. Maintenance includes all preventative, routine, and corrective activates.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_3["10.3 Maintain assets"]
+    N10_3 --> N10_3_3["10.3.3 Perform asset maintenance"]
+    style N10_3_3 fill:#e1f5fe
+    N10_3_3 --> N10_3_3_1["10.3.3.1 Perform preventative asset maint..."]
+    N10_3_3 --> N10_3_3_2["10.3.3.2 Perform routine asset maintenance"]
+    N10_3_3 --> N10_3_3_3["10.3.3.3 Perform corrective asset mainten..."]
+    N10_3_3 --> N10_3_3_4["10.3.3.4 Identify unplanned maintenance r..."]
+    N10_3_3 --> N10_3_3_5["10.3.3.5 Perform unplanned maintenance an..."]
+    N10_3_3 --> N10_3_3_6["10.3.3.6 Manage asset end-of-life"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19253 |
+| Hierarchy ID | 10.3.3 |
+| Level | Process |
+| Parent | [10.3](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.AssetMaintenance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `asset maintenance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform asset maintenance"]
+        S1["Perform preventative asset ..."]
+        S2["Perform routine asset maint..."]
+        S3["Perform corrective asset ma..."]
+        S4["Identify unplanned maintena..."]
+        S5["Perform unplanned maintenan..."]
+        S6["Manage asset end-of-life"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Perform preventative asset maintenance](./PerformPreventativeAssetMaintenance) | 10.3.3.1 | Performing prophylactic maintenance in an effort to avoid corrective or unplanned repairs |
+| [Perform routine asset maintenance](./PerformRoutineAssetMaintenance) | 10.3.3.2 | Carrying out required maintenance to continue upkeep of equipment or assets |
+| [Perform corrective asset maintenance and repairs](./PerformCorrectiveAssetMaintenanceAndRepairs) | 10.3.3.3 | Repairing or correcting faults that occur with an asset |
+| [Identify unplanned maintenance requirements](./IdentifyUnplannedMaintenanceRequirements) | 10.3.3.4 | Realizing potential or current problems with assets that would require unplanned maintenance |
+| [Perform unplanned maintenance and repairs](./PerformUnplannedMaintenanceAndRepairs) | 10.3.3.5 | Performing repairs that occur outside of normal routine or preventative maintenance |
+| [Manage asset end-of-life](./ManageAssetEndoflife) | 10.3.3.6 | Managing the disposition of assets at their end-of-life |
+
+
+## Related Concepts
+
+- [AssetMaintenance](/concepts/AssetMaintenance)
+
+
+---
+
+*Source: APQC PCF 19253 (10.3.3) - APQC*

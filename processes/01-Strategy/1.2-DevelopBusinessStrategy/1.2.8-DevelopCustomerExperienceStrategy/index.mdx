@@ -1,0 +1,104 @@
+---
+id: DevelopCustomerExperienceStrategy
+name: "Develop customer experience strategy"
+code: "19959"
+hierarchyId: "1.2.8"
+type: Process
+level: 3
+status: complete
+parent: "1.2"
+children: ["1.2.8.1", "1.2.8.2", "1.2.8.3", "1.2.8.4"]
+---
+
+# Develop customer experience strategy
+
+> Defining a roadmap to meet customer expectations while considering how it will affect the business.
+
+## Overview
+
+Process 1.2.8 is a core process that defines the specific procedures for develop customer experience strategy. 
+
+Defining a roadmap to meet customer expectations while considering how it will affect the business.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_2["1.2 Develop business strategy"]
+    N1_2 --> N1_2_8["1.2.8 Develop customer experience strategy"]
+    style N1_2_8 fill:#e1f5fe
+    N1_2_8 --> N1_2_8_1["1.2.8.1 Assess customer experience"]
+    N1_2_8 --> N1_2_8_2["1.2.8.2 Design customer experience"]
+    N1_2_8 --> N1_2_8_3["1.2.8.3 Design customer experience suppo..."]
+    N1_2_8 --> N1_2_8_4["1.2.8.4 Develop customer experience road..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 19959 |
+| Hierarchy ID | 1.2.8 |
+| Level | Process |
+| Parent | [1.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.CustomerExperienceStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `customer experience strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop customer experience strategy"]
+        S1["Assess customer experience"]
+        S2["Design customer experience"]
+        S3["Design customer experience ..."]
+        S4["Develop customer experience..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess customer experience](./1.2.8.1-AssessCustomerExperience/) | 1.2.8.1 | Measuring customer feedback in regard to product and services effectiveness based on overall satisfa |
+| [Design customer experience](./1.2.8.2-DesignCustomerExperience/) | 1.2.8.2 | Creating a design of how customers interact with the business by analyzing data captured through var |
+| [Design customer experience support structure](./1.2.8.3-DesignCustomerExperienceSupport/) | 1.2.8.3 | Creating a roadmap for customer experience support with an overall approach, process flow, and impac |
+| [Develop customer experience roadmap to develop and implement defined capabilities](./DevelopCustomerExperienceRoadmapToDevelopAndImplementDefinedCapabilities) | 1.2.8.4 | Defining a standard guideline to create and execute the capacities of registering customer experienc |
+
+
+## Related Concepts
+
+- [CustomerExperienceStrategy](/concepts/CustomerExperienceStrategy)
+
+
+---
+
+*Source: APQC PCF 19959 (1.2.8) - APQC*

@@ -1,0 +1,117 @@
+---
+id: AmbulatoryHealthCareServices
+name: "Ambulatory Health Care Services"
+code: "621"
+type: Industry
+level: Subsector
+status: complete
+---
+
+# Ambulatory Health Care Services
+
+> Industries in the Ambulatory Health Care Services subsector provide health care services directly or indirectly to ambulatory patients and do not usually provide inpatient services.
+
+## Overview
+
+Ambulatory Health Care Services represents an important category within the Health Care and Social Assistance sector (NAICS 62). This subsector encompasses establishments primarily engaged in ambulatory health care services.
+
+Industries in the Ambulatory Health Care Services subsector provide health care services directly or indirectly to ambulatory patients and do not usually provide inpatient services. Health practitioners in this subsector provide outpatient services, with the facilities and equipment not usually being the most significant part of the production process.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S62["62: Health Care and Social Assistance"]
+    S62 --> N621["621: Ambulatory Health Care Services"]
+    style N621 fill:#f96,stroke:#333,stroke-width:2px
+    N621 --> N6211["6211: Offices of Physicians"]
+    N621 --> N6212["6212: Offices of Dentists"]
+    N621 --> N6213["6213: Offices of Health Practitioners"]
+    N621 --> N6214["6214: Outpatient Care Centers"]
+    N621 --> N6215["6215: Diagnostic Laboratories"]
+    N621 --> more["... +1 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 621 |
+| Level | Subsector |
+| Parent | [Social Assistance](../) |
+| Child Industries | 6 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Offices of Physicians](./OfficesOfPhysicians/) | 6211 | Offices of Physicians |
+| [Offices of Dentists](./OfficesOfDentists/) | 6212 | Offices of Dentists |
+| [Offices of Health Practitioners](./OfficesOfHealthPractitioners/) | 6213 | This industry group comprises establishments of independent health practitioners |
+| [Outpatient Care Centers](./OutpatientCareCenters/) | 6214 | This industry group comprises establishments with medical staff primarily engage |
+| [Diagnostic Laboratories](./DiagnosticLaboratories/) | 6215 | Diagnostic Laboratories |
+| [Home Health Care Services](./HomeHealthCareServices/) | 6216 | Home Health Care Services |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Patient/Client Intake"]
+        O2["Assessment"]
+        O3["Treatment/Service"]
+        O4["Follow-up"]
+        O5["Discharge"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Compliance"]
+        S2["Records Mgmt"]
+        S3["Billing"]
+        S4["Quality Assurance"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Medical Supplies"]
+        I2["Equipment"]
+        I3["Professionals"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Patient Care"]
+        O2["Diagnostics"]
+        O3["Treatment"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Patients"]
+        C2["Insurers"]
+        C3["Government"]
+        C4["Employers"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 621 - Ambulatory Health Care Services*

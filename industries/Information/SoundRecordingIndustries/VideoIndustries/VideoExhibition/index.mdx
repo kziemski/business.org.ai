@@ -1,0 +1,111 @@
+---
+id: VideoExhibition
+name: "Video Exhibition"
+code: "51213"
+type: Industry
+level: Industry
+status: complete
+---
+
+# Video Exhibition
+
+> This industry comprises establishments primarily engaged in operating motion picture theaters and/or exhibiting motion pictures or videos at film festivals, and so forth.
+
+## Overview
+
+Video Exhibition represents an important category within the Information sector (NAICS 51). This industry encompasses establishments primarily engaged in video exhibition.
+
+This industry comprises establishments primarily engaged in operating motion picture theaters and/or exhibiting motion pictures or videos at film festivals, and so forth.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S51["51: Information"]
+    S51 --> N512["512: Sound Recording Industries"]
+    N512 --> N5121["5121: Video Industries"]
+    N5121 --> N51213["51213: Video Exhibition"]
+    style N51213 fill:#f96,stroke:#333,stroke-width:2px
+    N51213 --> N512131["512131: Motion Picture Theaters"]
+    N51213 --> N512132["512132: Drive-In Motion Picture Theaters"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 51213 |
+| Level | Industry |
+| Parent | [Video Industries](../) |
+| Child Industries | 2 |
+
+## Sub-Industries
+
+| Industry | Code | Description |
+|----------|------|-------------|
+| [Motion Picture Theaters](./MotionPictureTheaters.mdx) | 512131 | This U |
+| [Drive-In Motion Picture Theaters](./DriveinMotionPictureTheaters.mdx) | 512132 | This U |
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        O1["Content Creation"]
+        O2["Production"]
+        O3["Distribution"]
+        O4["Customer Access"]
+        O5["Support"]
+    end
+
+    subgraph Support["Support Processes"]
+        S1["Technology Mgmt"]
+        S2["Rights Management"]
+        S3["Marketing"]
+        S4["Analytics"]
+    end
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+    O4 --> O5
+    S1 -.-> O2
+    S2 -.-> O3
+```
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Content"]
+        I2["Technology"]
+        I3["Talent"]
+    end
+
+    subgraph Primary["Primary Activities"]
+        A1["Inbound Logistics"]
+        A2["Core Operations"]
+        A3["Quality Assurance"]
+        A4["Outbound/Delivery"]
+    end
+
+    subgraph Outputs["Products/Services"]
+        O1["Information Products"]
+        O2["Software"]
+        O3["Media"]
+    end
+
+    subgraph Customers["Markets"]
+        C1["Businesses"]
+        C2["Consumers"]
+        C3["Government"]
+        C4["Education"]
+    end
+
+    Inputs --> Primary --> Outputs --> Customers
+```
+
+---
+
+*Source: NAICS 51213 - Video Exhibition*

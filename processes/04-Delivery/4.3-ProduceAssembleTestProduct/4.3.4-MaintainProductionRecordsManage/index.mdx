@@ -1,0 +1,97 @@
+---
+id: MaintainProductionRecordsAndManageLotTraceability
+name: "Maintain production records and manage lot traceability"
+code: "10370"
+hierarchyId: "4.3.4"
+type: Process
+level: 3
+status: complete
+parent: "4.3"
+children: ["4.3.4.1", "4.3.4.2"]
+---
+
+# Maintain production records and manage lot traceability
+
+> Perpetuating the production records by systematically documenting and using it to ensure the effective management of lots.
+
+## Overview
+
+Process 4.3.4 is a core process that defines the specific procedures for maintain production records and manage lot traceability. 
+
+Perpetuating the production records by systematically documenting and using it to ensure the effective management of lots. Determine the lot numbering system and its use. (The lot number enables tracking of the constituent parts, as well as labor and equipment records involved in the manufacturing of a product. It enables manufacturers and to perform quality control checks, calculate expiration dates, and issue corrections of their production output.)
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_3["4.3 Produce/Assemble/Test product"]
+    N4_3 --> N4_3_4["4.3.4 Maintain production records and manag..."]
+    style N4_3_4 fill:#e1f5fe
+    N4_3_4 --> N4_3_4_1["4.3.4.1 Determine lot numbering system"]
+    N4_3_4 --> N4_3_4_2["4.3.4.2 Determine lot use"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10370 |
+| Hierarchy ID | 4.3.4 |
+| Level | Process |
+| Parent | [4.3](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+maintain.ProductionRecordsAndManageLotTraceability
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `maintain` | Primary action |
+| Object | `production records and manage lot traceability` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Maintain production records and manage lot traceability"]
+        S1["Determine lot numbering system"]
+        S2["Determine lot use"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine lot numbering system](./DetermineLotNumberingSystem) | 4.3.4.1 | Allotting an identification number to a particular quantity or lot of material manufactured |
+| [Determine lot use](./DetermineLotUse) | 4.3.4.2 | Identifying the use of production lots |
+
+
+## Related Concepts
+
+- [ProductionRecords](/concepts/ProductionRecords)
+- [ManageLotTraceability](/concepts/ManageLotTraceability)
+
+
+---
+
+*Source: APQC PCF 10370 (4.3.4) - APQC*

@@ -1,0 +1,108 @@
+---
+id: DevelopWorkforceAnalytics
+name: "Develop workforce analytics"
+code: "21441"
+hierarchyId: "7.7.7"
+type: Process
+level: 3
+status: complete
+parent: "7.7"
+children: ["7.7.7.1", "7.7.7.2", "7.7.7.3", "7.7.7.4", "7.7.7.5"]
+---
+
+# Develop workforce analytics
+
+> Understand, develop, and gather workforce data in support of stakeholder requirements.
+
+## Overview
+
+Process 7.7.7 is a core process that defines the specific procedures for develop workforce analytics. 
+
+Understand, develop, and gather workforce data in support of stakeholder requirements.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_7["7.7 Manage employee information and analy..."]
+    N7_7 --> N7_7_7["7.7.7 Develop workforce analytics"]
+    style N7_7_7 fill:#e1f5fe
+    N7_7_7 --> N7_7_7_1["7.7.7.1 Determine stakeholder requirements"]
+    N7_7_7 --> N7_7_7_2["7.7.7.2 Identify research questions"]
+    N7_7_7 --> N7_7_7_3["7.7.7.3 Select workforce analysis method..."]
+    N7_7_7 --> N7_7_7_4["7.7.7.4 Identify workforce data sources"]
+    N7_7_7 --> N7_7_7_5["7.7.7.5 Gather workforce data"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21441 |
+| Hierarchy ID | 7.7.7 |
+| Level | Process |
+| Parent | [7.7](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.WorkforceAnalytics
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `workforce analytics` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop workforce analytics"]
+        S1["Determine stakeholder requi..."]
+        S2["Identify research questions"]
+        S3["Select workforce analysis m..."]
+        S4["Identify workforce data sou..."]
+        S5["Gather workforce data"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Determine stakeholder requirements](./DetermineStakeholderRequirements) | 7.7.7.1 | Collect and manage requirements from various enterprise stakeholders about workforce analytics |
+| [Identify research questions](./IdentifyResearchQuestions) | 7.7.7.2 | Summarize stakeholder requirements into discrete research questions in support of workforce analytic |
+| [Select workforce analysis methodology](./SelectWorkforceAnalysisMethodology) | 7.7.7.3 | Consider stakeholder requirements, research questions, and organizations standards around research t |
+| [Identify workforce data sources](./IdentifyWorkforceDataSources) | 7.7.7.4 | Identify appropriate data sources for workforce analytics data while considering organizational stan |
+| [Gather workforce data](./GatherWorkforceData) | 7.7.7.5 | Collect and procure, as needed, workforce data from internal and external data sources in support of |
+
+
+## Related Concepts
+
+- [WorkforceAnalytics](/concepts/WorkforceAnalytics)
+
+
+---
+
+*Source: APQC PCF 21441 (7.7.7) - APQC*

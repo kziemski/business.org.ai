@@ -1,0 +1,112 @@
+---
+id: ManageItPortfolioStrategy
+name: "Manage IT portfolio strategy"
+code: "20660"
+hierarchyId: "8.2.2"
+type: Process
+level: 3
+status: complete
+parent: "8.2"
+children: ["8.2.2.1", "8.2.2.2", "8.2.2.3", "8.2.2.4", "8.2.2.5", "8.2.2.6"]
+---
+
+# Manage IT portfolio strategy
+
+> Strategy for systematic management of IT investments, projects, and activities.
+
+## Overview
+
+Process 8.2.2 is a core process that defines the specific procedures for manage it portfolio strategy. 
+
+Strategy for systematic management of IT investments, projects, and activities. Analyze and examine the value of the IT portfolio and allocate resources based on business objectives.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_2["8.2 Develop and manage IT business strategy"]
+    N8_2 --> N8_2_2["8.2.2 Manage IT portfolio strategy"]
+    style N8_2_2 fill:#e1f5fe
+    N8_2_2 --> N8_2_2_1["8.2.2.1 Establish and validate IT value ..."]
+    N8_2_2 --> N8_2_2_2["8.2.2.2 Determine IT portfolio investmen..."]
+    N8_2_2 --> N8_2_2_3["8.2.2.3 Evaluate proposed IT investment ..."]
+    N8_2_2 --> N8_2_2_4["8.2.2.4 Prioritize IT projects"]
+    N8_2_2 --> N8_2_2_5["8.2.2.5 Align IT resources to strategic ..."]
+    N8_2_2 --> N8_2_2_6["8.2.2.6 Align IT portfolio to business o..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20660 |
+| Hierarchy ID | 8.2.2 |
+| Level | Process |
+| Parent | [8.2](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.ITPortfolioStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `IT portfolio strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage IT portfolio strategy"]
+        S1["Establish and validate IT v..."]
+        S2["Determine IT portfolio inve..."]
+        S3["Evaluate proposed IT invest..."]
+        S4["Prioritize IT projects"]
+        S5["Align IT resources to strat..."]
+        S6["Align IT portfolio to busin..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish and validate IT value criteria](./EstablishAndValidateITValueCriteria) | 8.2.2.1 | Create and certify the standards to determine the value of the investments, projects, and activities |
+| [Determine IT portfolio investment balance](./DetermineITPortfolioInvestmentBalance) | 8.2.2.2 | Determining the uninvested amount out of the total approved amount for overall IT management, IT inv |
+| [Evaluate proposed IT investment projects](./EvaluateProposedITInvestmentProjects) | 8.2.2.3 | Evaluating IT investment projects to achieve overall business objectives in regard to implementation |
+| [Prioritize IT projects](./PrioritizeITProjects) | 8.2.2.4 | Listing the IT projects in the order of most important to the least |
+| [Align IT resources to strategic priorities](./AlignITResourcesToStrategicPriorities) | 8.2.2.5 | Aligning physical IT resources like software, IT infrastructure, networks, and non-physical resource |
+| [Align IT portfolio to business objectives](./AlignITPortfolioToBusinessObjectives) | 8.2.2.6 | Aligning IT investments, projects, and activities to achieve overall business objectives |
+
+
+## Related Concepts
+
+- [ITPortfolioStrategy](/concepts/ITPortfolioStrategy)
+
+
+---
+
+*Source: APQC PCF 20660 (8.2.2) - APQC*

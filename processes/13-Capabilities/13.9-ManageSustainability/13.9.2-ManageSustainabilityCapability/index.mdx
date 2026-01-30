@@ -1,0 +1,100 @@
+---
+id: ManageSustainabilityCapability
+name: "Manage sustainability capability"
+code: "21598"
+hierarchyId: "13.9.2"
+type: Process
+level: 3
+status: complete
+parent: "13.9"
+children: ["13.9.2.1", "13.9.2.2", "13.9.2.3"]
+---
+
+# Manage sustainability capability
+
+> Managing sustainability across the organization.
+
+## Overview
+
+Process 13.9.2 is a core process that defines the specific procedures for manage sustainability capability. 
+
+Managing sustainability across the organization. Provide training, support, reporting, and oversight to the distributed sustainability efforts across functional units and support services.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_9["13.9 Manage sustainability"]
+    N13_9 --> N13_9_2["13.9.2 Manage sustainability capability"]
+    style N13_9_2 fill:#e1f5fe
+    N13_9_2 --> N13_9_2_1["13.9.2.1 Provide sustainability training"]
+    N13_9_2 --> N13_9_2_2["13.9.2.2 Provide sustainability support"]
+    N13_9_2 --> N13_9_2_3["13.9.2.3 Perform sustainability reporting"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21598 |
+| Hierarchy ID | 13.9.2 |
+| Level | Process |
+| Parent | [13.9](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.SustainabilityCapability
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `sustainability capability` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage sustainability capability"]
+        S1["Provide sustainability trai..."]
+        S2["Provide sustainability support"]
+        S3["Perform sustainability repo..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Provide sustainability training](./ProvideSustainabilityTraining) | 13.9.2.1 | Providing sustainability training and awareness |
+| [Provide sustainability support](./ProvideSustainabilitySupport) | 13.9.2.2 | Providing support for sustainability activities |
+| [Perform sustainability reporting](./13.9.2.3-PerformSustainabilityReporting/) | 13.9.2.3 | Conducting and supporting sustainability reporting |
+
+
+## Related Concepts
+
+- [SustainabilityCapability](/concepts/SustainabilityCapability)
+
+
+---
+
+*Source: APQC PCF 21598 (13.9.2) - APQC*

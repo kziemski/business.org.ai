@@ -1,0 +1,119 @@
+---
+id: DefineServiceSupportPlanning
+name: "Define service support planning"
+code: "20895"
+hierarchyId: "8.7.5"
+type: Process
+level: 3
+status: complete
+parent: "8.7"
+children: ["8.7.5.1", "8.7.5.2", "8.7.5.3", "8.7.5.4", "8.7.5.5", "8.7.5.6", "8.7.5.7", "8.7.5.8", "8.7.5.9", "8.7.5.10"]
+---
+
+# Define service support planning
+
+> Develop strategies and methodologies to provide service support.
+
+## Overview
+
+Process 8.7.5 is a core process that defines the specific procedures for define service support planning. 
+
+Develop strategies and methodologies to provide service support. Examine service levels, support complexity, stakeholder requirements to offer service support.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_5["8.7.5 Define service support planning"]
+    style N8_7_5 fill:#e1f5fe
+    N8_7_5 --> N8_7_5_1["8.7.5.1 Understand IT support demand pat..."]
+    N8_7_5 --> N8_7_5_2["8.7.5.2 Determine required support resou..."]
+    N8_7_5 --> N8_7_5_3["8.7.5.3 Maintain service support knowled..."]
+    N8_7_5 --> N8_7_5_4["8.7.5.4 Maintain service support learning"]
+    N8_7_5 --> N8_7_5_5["8.7.5.5 Communicate service support needs"]
+    N8_7_5 --> N8_7_5_6["8.7.5.6 Define IT escalation mechanisms"]
+    N8_7_5 --> N8_7_5_7["8.7.5.7 Manage IT service support resources"]
+    N8_7_5 --> N8_7_5_8["8.7.5.8 Coordinate with external support..."]
+    N8_7_5 --> more["... +2 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20895 |
+| Hierarchy ID | 8.7.5 |
+| Level | Process |
+| Parent | [8.7](../) |
+| Sub-Processes | 10 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.ServiceSupportPlanning
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `service support planning` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define service support planning"]
+        S1["Understand IT support deman..."]
+        S2["Determine required support ..."]
+        S3["Maintain service support kn..."]
+        S4["Maintain service support le..."]
+        S5["Communicate service support..."]
+        S6["Define IT escalation mechan..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Understand IT support demand patterns](./UnderstandITSupportDemandPatterns) | 8.7.5.1 | Evaluate criticality catered by the IT support and expectations to resolve raised or identified issu |
+| [Determine required support resource levels, responsibilities, and capabilities](./DetermineRequiredSupportResourceLevelsResponsibilitiesAndCapabilities) | 8.7.5.2 | Determining levels of required support resources along with their responsibilities, and capabilities |
+| [Maintain service support knowledge repository](./MaintainServiceSupportKnowledgeRepository) | 8.7.5.3 | Create and maintain service support knowledge repository |
+| [Maintain service support learning](./MaintainServiceSupportLearning) | 8.7.5.4 | Maintaining and transfer of knowledge towards service support with the change/upgrade in technology  |
+| [Communicate service support needs](./CommunicateServiceSupportNeeds) | 8.7.5.5 | Conveying service support needs within the organization, with the objective of providing required su |
+| [Define IT escalation mechanisms](./DefineITEscalationMechanisms) | 8.7.5.6 | Determining mechanisms to report for a higher degree of decision making depending on the criticality |
+| [Manage IT service support resources](./ManageITServiceSupportResources) | 8.7.5.7 | Managing resources required for administration of IT service support |
+| [Coordinate with external support providers](./CoordinateWithExternalSupportProviders) | 8.7.5.8 | Developing a strategy that will make use of multiple resources to coordinate with external support p |
+| [Triage IT service delivery incidents](./TriageITServiceDeliveryIncidents) | 8.7.5.9 | Sorting the incidents of IT service delivery in certain order so that the services could be delivere |
+| [Monitor IT service support performance](./MonitorITServiceSupportPerformance) | 8.7.5.10 | Defining methodology and frequency of assessment for measuring and monitoring performance of various |
+
+
+## Related Concepts
+
+- [ServiceSupportPlanning](/concepts/ServiceSupportPlanning)
+
+
+---
+
+*Source: APQC PCF 20895 (8.7.5) - APQC*

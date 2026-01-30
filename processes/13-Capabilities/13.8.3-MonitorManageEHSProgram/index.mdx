@@ -1,0 +1,112 @@
+---
+id: MonitorAndManageEhsProgram
+name: "Monitor and manage EHS program"
+code: "21587"
+hierarchyId: "13.8.3"
+type: Process
+level: 3
+status: complete
+parent: "13.8"
+children: ["13.8.3.1", "13.8.3.2", "13.8.3.3", "13.8.3.4", "13.8.3.5", "13.8.3.6"]
+---
+
+# Monitor and manage EHS program
+
+> Managing the performance, costs and benefits of EHS.
+
+## Overview
+
+Process 13.8.3 is a core process that defines the specific procedures for monitor and manage ehs program. 
+
+Managing the performance, costs and benefits of EHS. Measure and report the performance of EHS. Implement plans for emergency response and pollution prevention. Train and educate employees. Provide EHS support.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_8_3["13.8.3 Monitor and manage EHS program"]
+    style N13_8_3 fill:#e1f5fe
+    N13_8_3 --> N13_8_3_1["13.8.3.1 Manage EHS costs and benefits"]
+    N13_8_3 --> N13_8_3_2["13.8.3.2 Measure and report EHS performance"]
+    N13_8_3 --> N13_8_3_3["13.8.3.3 Implement emergency response pro..."]
+    N13_8_3 --> N13_8_3_4["13.8.3.4 Implement pollution prevention p..."]
+    N13_8_3 --> N13_8_3_5["13.8.3.5 Train and educate functional emp..."]
+    N13_8_3 --> N13_8_3_6["13.8.3.6 Provide EHS support"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21587 |
+| Hierarchy ID | 13.8.3 |
+| Level | Process |
+| Parent | [13.8](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+monitor.AndManageEHSProgram
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `monitor` | Primary action |
+| Object | `and manage EHS program` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Monitor and manage EHS program"]
+        S1["Manage EHS costs and benefits"]
+        S2["Measure and report EHS perf..."]
+        S3["Implement emergency respons..."]
+        S4["Implement pollution prevent..."]
+        S5["Train and educate functiona..."]
+        S6["Provide EHS support"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage EHS costs and benefits](./ManageEHSCostsAndBenefits) | 13.8.3.1 | Administering the costs and benefits of EHS management program |
+| [Measure and report EHS performance](./MeasureAndReportEHSPerformance) | 13.8.3.2 | Using performance techniques and indicators |
+| [Implement emergency response program](./ImplementEmergencyResponseProgram) | 13.8.3.3 | Implementing a program for organizing, coordinating, and directing available resources to respond to |
+| [Implement pollution prevention program](./ImplementPollutionPreventionProgram) | 13.8.3.4 | Implementing a program that reduces or eliminates the creation of pollutants through increased effic |
+| [Train and educate functional employees](./TrainAndEducateFunctionalEmployees) | 13.8.3.5 | Conducting programs such as on-the-job training sessions, group training workshops, and online train |
+| [Provide EHS support](./ProvideEHSSupport) | 13.8.3.6 | Supporting employees in light of the organization's environmental, health, and safety policies and s |
+
+
+## Related Concepts
+
+- [EHSProgram](/concepts/EHSProgram)
+- [EHSProgram](/concepts/EHSProgram)
+
+
+---
+
+*Source: APQC PCF 21587 (13.8.3) - APQC*

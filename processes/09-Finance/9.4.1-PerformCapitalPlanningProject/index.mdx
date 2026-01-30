@@ -1,0 +1,104 @@
+---
+id: PerformCapitalPlanningAndProjectApproval
+name: "Perform capital planning and project approval"
+code: "10751"
+hierarchyId: "9.4.1"
+type: Process
+level: 3
+status: complete
+parent: "9.4"
+children: ["9.4.1.1", "9.4.1.2", "9.4.1.3", "9.4.1.4"]
+---
+
+# Perform capital planning and project approval
+
+> Preparing a project finance report to solicit approvals in capital projects.
+
+## Overview
+
+Process 9.4.1 is a core process that defines the specific procedures for perform capital planning and project approval. 
+
+Preparing a project finance report to solicit approvals in capital projects. Prepare budgets for projects that require heavy investments. Report on project finances to solicit approvals from management.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_4_1["9.4.1 Perform capital planning and project ..."]
+    style N9_4_1 fill:#e1f5fe
+    N9_4_1 --> N9_4_1_1["9.4.1.1 Develop capital investment polic..."]
+    N9_4_1 --> N9_4_1_2["9.4.1.2 Develop and approve capital expe..."]
+    N9_4_1 --> N9_4_1_3["9.4.1.3 Review and approve capital proje..."]
+    N9_4_1 --> N9_4_1_4["9.4.1.4 Conduct financial justification ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10751 |
+| Hierarchy ID | 9.4.1 |
+| Level | Process |
+| Parent | [9.4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.CapitalPlanningAndProjectApproval
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `capital planning and project approval` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform capital planning and project approval"]
+        S1["Develop capital investment ..."]
+        S2["Develop and approve capital..."]
+        S3["Review and approve capital ..."]
+        S4["Conduct financial justifica..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop capital investment policies and procedures](./DevelopCapitalInvestmentPoliciesAndProcedures) | 9.4.1.1 | Creating procedures and policies to follow for investing in capital projects |
+| [Develop and approve capital expenditure plans and budgets](./DevelopAndApproveCapitalExpenditurePlansAndBudgets) | 9.4.1.2 | Creating budgets, and soliciting approvals for capital projects |
+| [Review and approve capital projects and fixed-asset acquisitions](./ReviewAndApproveCapitalProjectsAndFixedassetAcquisitions) | 9.4.1.3 | Evaluating and supporting capital investments in projects and fixed assets |
+| [Conduct financial justification for project approval](./ConductFinancialJustificationForProjectApproval) | 9.4.1.4 | Reviewing all project business cases in order to substantiate projected financial gains |
+
+
+## Related Concepts
+
+- [CapitalPlanning](/concepts/CapitalPlanning)
+- [ProjectApproval](/concepts/ProjectApproval)
+
+
+---
+
+*Source: APQC PCF 10751 (9.4.1) - APQC*

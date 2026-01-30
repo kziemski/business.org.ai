@@ -1,0 +1,120 @@
+---
+id: ManageCash
+name: "Manage cash"
+code: "10759"
+hierarchyId: "9.7.2"
+type: Process
+level: 3
+status: complete
+parent: "9.7"
+children: ["9.7.2.1", "9.7.2.2", "9.7.2.3", "9.7.2.4", "9.7.2.5", "9.7.2.6", "9.7.2.7", "9.7.2.8", "9.7.2.9", "9.7.2.10", "9.7.2.11"]
+---
+
+# Manage cash
+
+> Taking care of all cash-related activities in the business.
+
+## Overview
+
+Process 9.7.2 is a core process that defines the specific procedures for manage cash. 
+
+Taking care of all cash-related activities in the business. Manage and reconcile cash positions. Manage cash equivalents. Process and oversee electronic fund transfers. Develop cash flow forecasts. Manage cash flows. Produce cash management accounting transactions and reports. Manage and oversee banking relationships. Analyze, negotiate, resolve, and confirm bank fees.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_7["9.7 Manage treasury operations"]
+    N9_7 --> N9_7_2["9.7.2 Manage cash"]
+    style N9_7_2 fill:#e1f5fe
+    N9_7_2 --> N9_7_2_1["9.7.2.1 Manage and reconcile cash positions"]
+    N9_7_2 --> N9_7_2_2["9.7.2.2 Manage cash equivalents"]
+    N9_7_2 --> N9_7_2_3["9.7.2.3 Process and oversee electronic f..."]
+    N9_7_2 --> N9_7_2_4["9.7.2.4 Develop cash flow forecasts"]
+    N9_7_2 --> N9_7_2_5["9.7.2.5 Manage cash flows"]
+    N9_7_2 --> N9_7_2_6["9.7.2.6 Produce cash management accounti..."]
+    N9_7_2 --> N9_7_2_7["9.7.2.7 Manage and oversee banking relat..."]
+    N9_7_2 --> N9_7_2_8["9.7.2.8 Analyze, negotiate, resolve, and..."]
+    N9_7_2 --> more["... +3 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10759 |
+| Hierarchy ID | 9.7.2 |
+| Level | Process |
+| Parent | [9.7](../) |
+| Sub-Processes | 11 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.Cash
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `cash` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage cash"]
+        S1["Manage and reconcile cash p..."]
+        S2["Manage cash equivalents"]
+        S3["Process and oversee electro..."]
+        S4["Develop cash flow forecasts"]
+        S5["Manage cash flows"]
+        S6["Produce cash management acc..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage and reconcile cash positions](./ManageAndReconcileCashPositions) | 9.7.2.1 | Correcting cash differences in the books of accounts |
+| [Manage cash equivalents](./ManageCashEquivalents) | 9.7.2.2 | Taking care of all cash-related activities in the business |
+| [Process and oversee electronic fund transfers (EFTs)](./ProcessAndOverseeElectronicFundTransfersEFTs) | 9.7.2.3 | Supervising all online transactions |
+| [Develop cash flow forecasts](./DevelopCashFlowForecasts) | 9.7.2.4 | Preparing forecasts for the cash generated or used by the organization |
+| [Manage cash flows](./ManageCashFlows) | 9.7.2.5 | Delaying the outflow of funds as long as possible, but encourage the inflow of as fast as possible |
+| [Produce cash management accounting transactions and reports](./ProduceCashManagementAccountingTransactionsAndReports) | 9.7.2.6 | Presenting reports on all cash-related activities |
+| [Manage and oversee banking relationships](./ManageAndOverseeBankingRelationships) | 9.7.2.7 | Maintaining and directing the course of relationships with banking partners |
+| [Analyze, negotiate, resolve, and confirm bank fees](./AnalyzeNegotiateResolveAndConfirmBankFees) | 9.7.2.8 | Studying and finalizing bank fees for services provided by banks |
+| [Manage in-house bank accounts](./ManageInhouseBankAccounts) | 9.7.2.9 | Managing financial services provided by an in-house bank structure in the corporation that is operat |
+| [Manage in-house bank accounts for subsidiaries](./ManageInhouseBankAccountsForSubsidiaries) | 9.7.2.10 | Maintaining subsidiaries' company accounts opened with bank inside the corporation |
+| [Manage and facilitate inter-company borrowing transactions](./ManageAndFacilitateIntercompanyBorrowingTransactions) | 9.7.2.11 | Arranging loans for subsidiaries from in-house banks |
+
+
+## Related Concepts
+
+- [Cash](/concepts/Cash)
+
+
+---
+
+*Source: APQC PCF 10759 (9.7.2) - APQC*

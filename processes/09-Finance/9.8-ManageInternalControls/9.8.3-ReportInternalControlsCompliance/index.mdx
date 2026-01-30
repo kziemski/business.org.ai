@@ -1,0 +1,104 @@
+---
+id: ReportOnInternalControlsCompliance
+name: "Report on internal controls compliance"
+code: "10764"
+hierarchyId: "9.8.3"
+type: Process
+level: 3
+status: complete
+parent: "9.8"
+children: ["9.8.3.1", "9.8.3.2", "9.8.3.3", "9.8.3.4"]
+---
+
+# Report on internal controls compliance
+
+> Reporting on internal controls compliance to the appropriate authority, including IT regulations and pertinent data.
+
+## Overview
+
+Process 9.8.3 is a core process that defines the specific procedures for report on internal controls compliance. 
+
+Reporting on internal controls compliance to the appropriate authority, including IT regulations and pertinent data.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_8["9.8 Manage internal controls"]
+    N9_8 --> N9_8_3["9.8.3 Report on internal controls compliance"]
+    style N9_8_3 fill:#e1f5fe
+    N9_8_3 --> N9_8_3_1["9.8.3.1 Report to external auditors"]
+    N9_8_3 --> N9_8_3_2["9.8.3.2 Report to regulators, share-/deb..."]
+    N9_8_3 --> N9_8_3_3["9.8.3.3 Report to third parties"]
+    N9_8_3 --> N9_8_3_4["9.8.3.4 Report to internal management"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10764 |
+| Hierarchy ID | 9.8.3 |
+| Level | Process |
+| Parent | [9.8](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+report.OnInternalControlsCompliance
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `report` | Primary action |
+| Object | `on internal controls compliance` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Report on internal controls compliance"]
+        S1["Report to external auditors"]
+        S2["Report to regulators, share..."]
+        S3["Report to third parties"]
+        S4["Report to internal management"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Report to external auditors](./ReportToExternalAuditors) | 9.8.3.1 | Reporting to external auditors |
+| [Report to regulators, share-/debt-holders, securities exchanges, etc.](./ReportToRegulatorsSharedebtholdersSecuritiesExchangesEtc) | 9.8.3.2 | Reporting to regulators, shareholders, debt holders, securities exchanges, etc |
+| [Report to third parties](./ReportToThirdParties) | 9.8.3.3 | Reporting to suppliers, customers, and partners that are doing business with the company about IT re |
+| [Report to internal management](./ReportToInternalManagement) | 9.8.3.4 | Reporting to internal management (all employees, directors, and management) about IT regulations and |
+
+
+## Related Concepts
+
+- [InternalControlsCompliance](/concepts/InternalControlsCompliance)
+
+
+---
+
+*Source: APQC PCF 10764 (9.8.3) - APQC*

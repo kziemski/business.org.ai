@@ -1,0 +1,109 @@
+---
+id: EvaluateAndPrioritizeMarketOpportunities
+name: "Evaluate and prioritize market opportunities"
+code: "10107"
+hierarchyId: "3.1.2"
+type: Process
+level: 3
+status: complete
+parent: "3.1"
+children: ["3.1.2.1", "3.1.2.2", "3.1.2.3", "3.1.2.3", "3.1.2.4"]
+---
+
+# Evaluate and prioritize market opportunities
+
+> Appraising market opportunities by quantifying and subjecting them to prioritization, as well as validation tests.
+
+## Overview
+
+Process 3.1.2 is a core process that defines the specific procedures for evaluate and prioritize market opportunities. 
+
+Appraising market opportunities by quantifying and subjecting them to prioritization, as well as validation tests. Closely examine the market opportunities that have been identified by Perform customer and market intelligence analysis [10106]. Triangulate those opportunities to capitalize by finding a fit between identified opportunities and the composite of organizational capabilities and business strategy.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C3["3.0 Market and Sell Products and Services"]
+    C3 --> N3_1["3.1 Understand markets, customers, and ca..."]
+    N3_1 --> N3_1_2["3.1.2 Evaluate and prioritize market opport..."]
+    style N3_1_2 fill:#e1f5fe
+    N3_1_2 --> N3_1_2_1["3.1.2.1 Quantify market opportunities"]
+    N3_1_2 --> N3_1_2_2["3.1.2.2 Determine target segments"]
+    N3_1_2 --> N3_1_2_3["3.1.2.3 Identify under-served and satura..."]
+    N3_1_2 --> N3_1_2_3["3.1.2.3 Prioritize opportunities consist..."]
+    N3_1_2 --> N3_1_2_4["3.1.2.4 Validate opportunities"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10107 |
+| Hierarchy ID | 3.1.2 |
+| Level | Process |
+| Parent | [3.1](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+evaluate.AndPrioritizeMarketOpportunities
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `evaluate` | Primary action |
+| Object | `and prioritize market opportunities` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Evaluate and prioritize market opportunities"]
+        S1["Quantify market opportunities"]
+        S2["Determine target segments"]
+        S3["Identify under-served and s..."]
+        S4["Prioritize opportunities co..."]
+        S5["Validate opportunities"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Quantify market opportunities](./QuantifyMarketOpportunities) | 3.1.2.1 | Attaching quantifiable indicators to opportunities that have been identified in the market |
+| [Determine target segments](./DetermineTargetSegments) | 3.1.2.2 | Identifying the targeted segment of customers |
+| [Identify under-served and saturated market segments](./IdentifyUnderservedAndSaturatedMarketSegments) | 3.1.2.3 | Determining which groups of potential customers do not yet, or already do have access to the product |
+| [Prioritize opportunities consistent with capabilities and overall business strategy](./PrioritizeOpportunitiesConsistentWithCapabilitiesAndOverallBusinessStrategy) | 3.1.2.3 | Creating an index of market opportunities, and arrange them in order of preference |
+| [Validate opportunities](./3.1.2.4-ValidateOpportunities/) | 3.1.2.4 | Confirming the practicability and reasonableness of the market opportunities that have been identifi |
+
+
+## Related Concepts
+
+- [MarketOpportunities](/concepts/MarketOpportunities)
+- [MarketOpportunities](/concepts/MarketOpportunities)
+
+
+---
+
+*Source: APQC PCF 10107 (3.1.2) - APQC*

@@ -1,0 +1,105 @@
+---
+id: OperateControlsAndMonitorComplianceWithInternalControlsPoliciesAndProcedures
+name: "Operate controls and monitor compliance with internal controls policies and procedures"
+code: "21574"
+hierarchyId: "9.8.2"
+type: Process
+level: 3
+status: complete
+parent: "9.8"
+children: ["9.8.2.1", "9.8.2.2"]
+---
+
+# Operate controls and monitor compliance with internal controls policies and procedures
+
+> Performing planning, management, operations, and monitoring of internal control mechanism policies and procedures in order to manage internal controls.
+
+## Overview
+
+Process 9.8.2 is a core process that defines the specific procedures for operate controls and monitor compliance with internal controls policies and procedures. 
+
+Performing planning, management, operations, and monitoring of internal control mechanism policies and procedures in order to manage internal controls.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C9["9.0 Manage Financial Resources"]
+    C9 --> N9_8["9.8 Manage internal controls"]
+    N9_8 --> N9_8_2["9.8.2 Operate controls and monitor complian..."]
+    style N9_8_2 fill:#e1f5fe
+    N9_8_2 --> N9_8_2_1["9.8.2.1 Monitor control effectiveness"]
+    N9_8_2 --> N9_8_2_2["9.8.2.2 Remediate control deficiencies"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21574 |
+| Hierarchy ID | 9.8.2 |
+| Level | Process |
+| Parent | [9.8](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+operate.ControlsAndMonitorCompliance.with.InternalControlsPoliciesAndProcedures
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `operate` | Primary action |
+| Object | `controls and monitor compliance` | Direct object |
+| Preposition | `with` | Relationship |
+| PrepObject | `internal controls policies and procedures` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Operate controls and monitor compliance with internal controls policies and procedures"]
+        S1["Monitor control effectiveness"]
+        S2["Remediate control deficiencies"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Monitor control effectiveness](./MonitorControlEffectiveness) | 9.8.2.1 | Overseeing the activities for internal controls |
+| [Remediate control deficiencies](./RemediateControlDeficiencies) | 9.8.2.2 | Taking corrective measures for policies, procedures, techniques, and mechanisms actions taken to min |
+
+
+## Related Concepts
+
+- [ControlsCompliance](/concepts/ControlsCompliance)
+- [InternalControlsPolicies](/concepts/InternalControlsPolicies)
+- [ControlsCompliance](/concepts/ControlsCompliance)
+- [Procedures](/concepts/Procedures)
+- [MonitorCompliance](/concepts/MonitorCompliance)
+- [InternalControlsPolicies](/concepts/InternalControlsPolicies)
+- [MonitorCompliance](/concepts/MonitorCompliance)
+- [Procedures](/concepts/Procedures)
+
+
+---
+
+*Source: APQC PCF 21574 (9.8.2) - APQC*

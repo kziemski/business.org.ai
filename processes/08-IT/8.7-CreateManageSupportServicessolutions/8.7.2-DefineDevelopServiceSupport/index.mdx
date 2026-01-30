@@ -1,0 +1,113 @@
+---
+id: DefineAndDevelopServiceSupportStrategy
+name: "Define and develop service support strategy"
+code: "20873"
+hierarchyId: "8.7.2"
+type: Process
+level: 3
+status: complete
+parent: "8.7"
+children: ["8.7.2.1", "8.7.2.2", "8.7.2.3", "8.7.2.4", "8.7.2.5", "8.7.2.6"]
+---
+
+# Define and develop service support strategy
+
+> Defining and creating a strategy for provision of support to users of IT services and solutions.
+
+## Overview
+
+Process 8.7.2 is a core process that defines the specific procedures for define and develop service support strategy. 
+
+Defining and creating a strategy for provision of support to users of IT services and solutions.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_2["8.7.2 Define and develop service support st..."]
+    style N8_7_2 fill:#e1f5fe
+    N8_7_2 --> N8_7_2_1["8.7.2.1 Assess business objectives and I..."]
+    N8_7_2 --> N8_7_2_2["8.7.2.2 Define IT service support portfolio"]
+    N8_7_2 --> N8_7_2_3["8.7.2.3 Create and maintain IT support m..."]
+    N8_7_2 --> N8_7_2_4["8.7.2.4 Develop IT support service sourc..."]
+    N8_7_2 --> N8_7_2_5["8.7.2.5 Establish support service framework"]
+    N8_7_2 --> N8_7_2_6["8.7.2.6 Provide service support tools an..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20873 |
+| Hierarchy ID | 8.7.2 |
+| Level | Process |
+| Parent | [8.7](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.AndDevelopServiceSupportStrategy
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `and develop service support strategy` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define and develop service support strategy"]
+        S1["Assess business objectives ..."]
+        S2["Define IT service support p..."]
+        S3["Create and maintain IT supp..."]
+        S4["Develop IT support service ..."]
+        S5["Establish support service f..."]
+        S6["Provide service support too..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Assess business objectives and IT service support delivery](./AssessBusinessObjectivesAndITServiceSupportDelivery) | 8.7.2.1 | Assessing the goals of IT service support delivery and how it aligns to contribute to the overall bu |
+| [Define IT service support portfolio](./DefineITServiceSupportPortfolio) | 8.7.2.2 | Defining different IT support services and solutions such as remote support and cloud support |
+| [Create and maintain IT support model](./CreateAndMaintainITSupportModel) | 8.7.2.3 | Design and maintaining an IT support model that defines the processes and procedures needed to suppo |
+| [Develop IT support service sourcing strategy](./DevelopITSupportServiceSourcingStrategy) | 8.7.2.4 | Developing a strategy for sourcing resources to support users of IT services and solutions |
+| [Establish support service framework](./EstablishSupportServiceFramework) | 8.7.2.5 | Creating an agenda for the rules and regulations of support service that deal with providing support |
+| [Provide service support tools and technology](./ProvideServiceSupportToolsAndTechnology) | 8.7.2.6 | Providing the tools and techniques to support users of IT services and solutions, and choosing the m |
+
+
+## Related Concepts
+
+- [ServiceSupportStrategy](/concepts/ServiceSupportStrategy)
+- [ServiceSupportStrategy](/concepts/ServiceSupportStrategy)
+
+
+---
+
+*Source: APQC PCF 20873 (8.7.2) - APQC*

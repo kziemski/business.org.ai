@@ -1,0 +1,113 @@
+---
+id: MeasureCustomerSatisfactionWithProductsAndServices
+name: "Measure customer satisfaction with products and services"
+code: "10403"
+hierarchyId: "6.5.3"
+type: Process
+level: 3
+status: complete
+parent: "6.5"
+children: ["6.5.3.1", "6.5.3.2", "6.5.3.3", "6.5.3.4", "6.5.3.5"]
+---
+
+# Measure customer satisfaction with products and services
+
+> Calculating satisfaction levels of customers with products/services.
+
+## Overview
+
+Process 6.5.3 is a core process that defines the specific procedures for measure customer satisfaction with products and services. 
+
+Calculating satisfaction levels of customers with products/services. Obtain customer feedback on products/services, as well as the effectiveness of the advertising campaigns. Examine this information to reach meaningful conclusions, which could then be used to enhance the customer service operations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_5["6.5 Evaluate customer service operations ..."]
+    N6_5 --> N6_5_3["6.5.3 Measure customer satisfaction with pr..."]
+    style N6_5_3 fill:#e1f5fe
+    N6_5_3 --> N6_5_3_1["6.5.3.1 Gather and solicit post-sale cus..."]
+    N6_5_3 --> N6_5_3_2["6.5.3.2 Solicit post-sale customer feedb..."]
+    N6_5_3 --> N6_5_3_3["6.5.3.3 Solicit customer feedback on cro..."]
+    N6_5_3 --> N6_5_3_4["6.5.3.4 Analyze product and service sati..."]
+    N6_5_3 --> N6_5_3_5["6.5.3.5 Provide feedback and insights to..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10403 |
+| Hierarchy ID | 6.5.3 |
+| Level | Process |
+| Parent | [6.5](../) |
+| Sub-Processes | 5 |
+
+
+## GraphDL Semantic Structure
+
+```
+measure.CustomerSatisfaction.with.ProductsAndServices
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `measure` | Primary action |
+| Object | `customer satisfaction` | Direct object |
+| Preposition | `with` | Relationship |
+| PrepObject | `products and services` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Measure customer satisfaction with products and services"]
+        S1["Gather and solicit post-sal..."]
+        S2["Solicit post-sale customer ..."]
+        S3["Solicit customer feedback o..."]
+        S4["Analyze product and service..."]
+        S5["Provide feedback and insigh..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Gather and solicit post-sale customer feedback on products and services](./GatherAndSolicitPostsaleCustomerFeedbackOnProductsAndServices) | 6.5.3.1 | Obtaining customer feedback/review on the quality and utility derived from the products/services aft |
+| [Solicit post-sale customer feedback on ad effectiveness](./SolicitPostsaleCustomerFeedbackOnAdEffectiveness) | 6.5.3.2 | Assessing the influence of advertisements on purchasing behavior |
+| [Solicit customer feedback on cross-channel experience](./SolicitCustomerFeedbackOnCrosschannelExperience) | 6.5.3.3 | Engaging with the customer to understand their cross-channel experience |
+| [Analyze product and service satisfaction data and identify improvement opportunities](./AnalyzeProductAndServiceSatisfactionDataAndIdentifyImprovementOpportunities) | 6.5.3.4 | Assessing the information collected on customer satisfaction levels with products/services in order  |
+| [Provide feedback and insights to appropriate teams (product design/development, marketing, manufacturing)](./ProvideFeedbackAndInsightsToAppropriateTeamsProductDesigndevelopmentMarketingManufacturing) | 6.5.3.5 | Providing feedback from customers on products/services to the product management team |
+
+
+## Related Concepts
+
+- [CustomerSatisfaction](/concepts/CustomerSatisfaction)
+- [Products](/concepts/Products)
+- [CustomerSatisfaction](/concepts/CustomerSatisfaction)
+- [Services](/concepts/Services)
+
+
+---
+
+*Source: APQC PCF 10403 (6.5.3) - APQC*

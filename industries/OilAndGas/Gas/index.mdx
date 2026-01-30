@@ -1,0 +1,291 @@
+---
+id: Gas
+name: "Natural Gas Extraction"
+code: "21113"
+type: Industry
+status: complete
+---
+
+# Natural Gas Extraction
+
+> Industries in the Oil and Gas Extraction subsector operate and/or develop oil and gas field properties. This includes the production of natural gas, sulfur recovery from natural gas, and recovery of hydrocarbon liquids.
+
+## Overview
+
+The Natural Gas Extraction subsector encompasses all activities related to the production of natural gas from underground reservoirs. This includes conventional gas production from traditional formations, unconventional gas extraction from shale and tight formations, and the recovery of associated products including natural gas liquids (NGLs), condensate, and sulfur.
+
+Natural gas production involves a complex series of operations from initial exploration through processing and delivery to pipeline systems. Modern natural gas operations increasingly focus on unconventional resources, which require specialized drilling and completion techniques.
+
+Key operational activities include:
+- Exploration for natural gas deposits
+- Drilling and completing gas wells
+- Operating gas processing and treatment facilities
+- Recovering natural gas liquids and condensate
+- Sulfur recovery from sour gas streams
+- Managing gathering systems and compression
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S21["NAICS 21: Mining, Quarrying, Oil & Gas Extraction"]
+    S21 --> SS211["211: Oil and Gas Extraction"]
+    SS211 --> G2111["2111: Oil and Gas Extraction"]
+    G2111 --> I21112["21112: Crude Petroleum Extraction"]
+    G2111 --> I21113["21113: Natural Gas Extraction"]
+
+    I21113 --> Type1["Conventional<br/>Gas Production"]
+    I21113 --> Type2["Shale Gas<br/>Production"]
+    I21113 --> Type3["Tight Gas<br/>Production"]
+    I21113 --> Type4["Coalbed Methane<br/>Production"]
+    I21113 --> Type5["Associated Gas<br/>(with Oil)"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 21113 |
+| Level | Industry |
+| Parent Subsector | [211: Oil and Gas Extraction](../) |
+| Related Industry | [21112: Crude Petroleum Extraction](../Oil/) |
+| Support Services | [213: Support Activities for Mining](../MiningSupport/) |
+
+## Natural Gas Types
+
+| Gas Type | Description | Key Characteristics |
+|----------|-------------|---------------------|
+| Conventional Gas | Gas trapped in permeable reservoir rock | High permeability, vertical wells |
+| Shale Gas | Gas trapped in organic-rich shale formations | Requires hydraulic fracturing |
+| Tight Gas | Gas in low-permeability sandstone or limestone | Horizontal drilling and stimulation |
+| Coalbed Methane | Gas adsorbed in coal seams | Dewatering required for production |
+| Associated Gas | Gas produced with crude oil | Separated at production facilities |
+| Non-Associated Gas | Gas from dedicated gas reservoirs | Primarily methane production |
+
+## Related Occupations
+
+- [Petroleum Engineers](/occupations/PetroleumEngineers) - Design gas extraction and processing systems
+- [Geoscientists](/occupations/Geoscientists) - Identify gas-bearing formations and estimate reserves
+- [Rotary Drill Operators, Oil and Gas](/occupations/RotaryDrillOperators) - Operate drilling equipment for gas wells
+- [Derrick Operators, Oil and Gas](/occupations/DerrickOperatorsOilAndGas) - Rig equipment and manage drilling operations
+- [Service Unit Operators](/occupations/ServiceUnitOperators) - Operate well servicing equipment
+- [Gas Plant Operators](/occupations/GasPlantOperators) - Operate gas processing and treatment facilities
+- [Gas Compressor and Gas Pumping Station Operators](/occupations/GasCompressorOperators) - Operate compression equipment
+- [Chemical Engineers](/occupations/ChemicalEngineers) - Design gas processing systems
+- [First-Line Supervisors of Extraction Workers](/occupations/FirstLineSupervisorsExtractionWorkers) - Supervise production operations
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Exploration["Exploration"]
+        E1["Geological<br/>Analysis"]
+        E2["Seismic<br/>Acquisition"]
+        E3["Reserve<br/>Estimation"]
+    end
+
+    subgraph Development["Development"]
+        D1["Well<br/>Planning"]
+        D2["Drilling &<br/>Completion"]
+        D3["Facilities<br/>Design"]
+    end
+
+    subgraph Production["Production"]
+        P1["Well<br/>Operations"]
+        P2["Gathering &<br/>Compression"]
+        P3["Gas<br/>Processing"]
+        P4["NGL<br/>Recovery"]
+    end
+
+    subgraph Delivery["Delivery"]
+        Del1["Pipeline<br/>Delivery"]
+        Del2["LNG<br/>Export"]
+    end
+
+    subgraph Support["Support Functions"]
+        S1["Reservoir<br/>Engineering"]
+        S2["Environmental<br/>Compliance"]
+        S3["Measurement<br/>& Allocation"]
+    end
+
+    E1 --> E2 --> E3 --> D1 --> D2 --> D3 --> P1
+    P1 --> P2 --> P3 --> P4 --> Del1
+    P3 --> Del1
+    P3 --> Del2
+    S1 -.-> P1
+    S2 -.-> P2
+    S3 -.-> P3
+```
+
+### Exploration and Appraisal
+
+Identifying prospective gas-bearing formations and quantifying resource potential.
+
+**Key Activities:**
+- Acquire and process seismic data
+- Analyze geological and petrophysical data
+- Conduct reservoir characterization studies
+- Estimate reserves and contingent resources
+- Evaluate economic viability of prospects
+
+### Drilling and Completion
+
+Creating wellbores and preparing wells for gas production.
+
+**Key Activities:**
+- Design well trajectories (vertical, deviated, horizontal)
+- Execute drilling programs with appropriate mud systems
+- Run and cement casing strings
+- Perform hydraulic fracturing in unconventional wells
+- Install completion equipment and wellheads
+- Conduct well testing and flow analysis
+
+### Gas Processing
+
+Treating raw natural gas to meet pipeline quality specifications and recovering valuable liquids.
+
+**Key Activities:**
+- Remove water and dehydrate gas streams
+- Extract hydrogen sulfide and CO2 (acid gas removal)
+- Recover natural gas liquids (NGLs)
+- Fractionate NGLs into component products
+- Compress gas for pipeline delivery
+- Monitor gas quality and specifications
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    subgraph Inputs["Inputs"]
+        I1["Mineral Rights<br/>& Leases"]
+        I2["Drilling &<br/>Completion Services"]
+        I3["Processing<br/>Equipment"]
+        I4["Compression<br/>Systems"]
+        I5["Technical<br/>Expertise"]
+    end
+
+    subgraph Operations["Operations"]
+        O1["Exploration &<br/>Development"]
+        O2["Production<br/>Operations"]
+        O3["Gathering &<br/>Processing"]
+        O4["Compression &<br/>Treatment"]
+    end
+
+    subgraph Outputs["Products"]
+        Out1["Pipeline-Quality<br/>Natural Gas"]
+        Out2["Natural Gas<br/>Liquids (NGLs)"]
+        Out3["Condensate"]
+        Out4["Sulfur"]
+        Out5["LNG"]
+    end
+
+    subgraph Customers["Customers"]
+        C1["Pipeline<br/>Companies"]
+        C2["Gas Utilities"]
+        C3["Power<br/>Generators"]
+        C4["Petrochemical<br/>Plants"]
+        C5["Industrial<br/>Users"]
+        C6["LNG Export<br/>Facilities"]
+    end
+
+    I1 --> O1
+    I2 --> O1
+    I3 --> O3
+    I4 --> O4
+    I5 --> O1
+    O1 --> O2 --> O3 --> O4
+    O4 --> Out1 & Out2 & Out3 & Out4 & Out5
+    Out1 --> C1 & C2 & C3 & C5
+    Out2 --> C4
+    Out5 --> C6
+```
+
+## Natural Gas Products
+
+| Product | Description | Primary Uses |
+|---------|-------------|--------------|
+| Methane (CH4) | Primary component of pipeline gas | Power generation, heating, industrial fuel |
+| Ethane (C2H6) | Lightest NGL | Ethylene production for petrochemicals |
+| Propane (C3H8) | NGL/LPG component | Heating, petrochemical feedstock |
+| Butane (C4H10) | NGL/LPG component | Gasoline blending, petrochemical feedstock |
+| Natural Gasoline | Pentanes and heavier NGLs | Gasoline blending, diluent |
+| Condensate | Light hydrocarbon liquid | Refinery feedstock, diluent |
+| Sulfur | Recovered from sour gas | Fertilizers, chemicals |
+
+## Related Industries
+
+- [Crude Petroleum Extraction](../Oil/) - Often produces associated natural gas
+- [Support Activities for Mining](../MiningSupport/) - Contract drilling and well services
+- [Natural Gas Distribution](/industries/Utilities/) - Distribution to end users
+- [Pipeline Transportation of Natural Gas](/industries/Transportation/) - Interstate transportation
+- [Chemical Manufacturing](/industries/Manufacturing/) - Uses gas as feedstock
+- [Electric Power Generation](/industries/Utilities/) - Gas-fired power plants
+
+## Regulatory Environment
+
+Natural gas extraction operates under comprehensive federal and state regulations:
+
+- **Federal Energy Regulatory Commission (FERC)**: Interstate pipeline regulation and gas markets
+- **Bureau of Land Management (BLM)**: Federal onshore leasing and development
+- **Bureau of Ocean Energy Management (BOEM)**: Offshore development approvals
+- **Environmental Protection Agency (EPA)**:
+  - New Source Performance Standards (NSPS) for methane
+  - National Emission Standards for Hazardous Air Pollutants (NESHAP)
+  - Underground Injection Control (UIC) for disposal wells
+  - Greenhouse Gas Reporting Program (GHGRP)
+- **Pipeline and Hazardous Materials Safety Administration (PHMSA)**: Gathering line safety
+- **State Agencies**:
+  - State oil and gas commissions
+  - State environmental quality agencies
+  - Production and well spacing regulations
+
+### Key Compliance Areas
+
+- Methane emissions monitoring and reduction
+- Hydraulic fracturing fluid disclosure
+- Produced water management
+- Air quality permits and monitoring
+- Well integrity and blowout prevention
+- Groundwater protection
+- Surface use and reclamation
+
+## Technology & Innovation
+
+The natural gas extraction industry continues advancing through technological innovation:
+
+### Drilling and Completion
+- **Extended Reach Drilling**: Access larger areas from single pad locations
+- **Multi-Well Pads**: Reduce surface disturbance and improve efficiency
+- **Zipper Fracturing**: Simultaneous operations on adjacent wells
+- **Refracturing**: Re-stimulate existing wells for additional production
+- **Proppant Technology**: Improved fracture conductivity materials
+
+### Processing Technologies
+- **Cryogenic Processing**: Enhanced NGL recovery
+- **Membrane Separation**: CO2 and H2S removal
+- **Molecular Sieves**: High-efficiency dehydration
+- **Modular Processing**: Rapid deployment of processing capacity
+
+### Digital and Automation
+- **SCADA Systems**: Real-time monitoring and control
+- **Advanced Analytics**: Production optimization and forecasting
+- **Remote Operations**: Centralized control of distributed assets
+- **Artificial Intelligence**: Predictive maintenance and automated decision-making
+- **Digital Twins**: Simulation and optimization of facilities
+
+### Environmental Technologies
+- **Methane Detection**: Continuous monitoring and LDAR programs
+- **Reduced Emission Completions (Green Completions)**: Capture gas during flowback
+- **Vapor Recovery Units**: Capture tank emissions
+- **Electric Fracturing**: Reduce diesel emissions from completion operations
+- **Water Recycling**: Reuse of produced and flowback water
+
+### Emerging Areas
+- **Responsibly Sourced Gas (RSG)**: Certified low-emission production
+- **Carbon Capture**: Integration with blue hydrogen production
+- **Hydrogen Blending**: Natural gas infrastructure for hydrogen transport
+- **Renewable Natural Gas (RNG)**: Biogas injection into pipelines
+
+---
+
+*Source: NAICS 21113 - Natural Gas Extraction*

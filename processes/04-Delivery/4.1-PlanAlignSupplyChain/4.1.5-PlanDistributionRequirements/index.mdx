@@ -1,0 +1,121 @@
+---
+id: PlanDistributionRequirements
+name: "Plan distribution requirements"
+code: "17042"
+hierarchyId: "4.1.5"
+type: Process
+level: 3
+status: complete
+parent: "4.1"
+children: ["4.1.5.1", "4.1.5.2", "4.1.5.3", "4.1.5.4", "4.1.5.5", "4.1.5.6", "4.1.5.7", "4.1.5.8", "4.1.5.9", "4.1.5.10", "4.1.5.11", "4.1.5.12"]
+---
+
+# Plan distribution requirements
+
+> Maintaining master data of finished products and inventory.
+
+## Overview
+
+Process 4.1.5 is a core process that defines the specific procedures for plan distribution requirements. 
+
+Maintaining master data of finished products and inventory. Identify the requirements of finished products at the destination, as well as partner requirements. Calculate the consolidation at source. Manage replenishment planning. Create and administer a dispatch plan. Calculate load plans for destinations and partners. Manage the cost of supplying these products. Ensure effective utilization of capacity.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_1["4.1 Plan for and align supply chain resou..."]
+    N4_1 --> N4_1_5["4.1.5 Plan distribution requirements"]
+    style N4_1_5 fill:#e1f5fe
+    N4_1_5 --> N4_1_5_1["4.1.5.1 Maintain master data"]
+    N4_1_5 --> N4_1_5_2["4.1.5.2 Determine finished goods invento..."]
+    N4_1_5 --> N4_1_5_3["4.1.5.3 Determine product storage facili..."]
+    N4_1_5 --> N4_1_5_4["4.1.5.4 Calculate requirements at destin..."]
+    N4_1_5 --> N4_1_5_5["4.1.5.5 Calculate consolidation at source"]
+    N4_1_5 --> N4_1_5_6["4.1.5.6 Manage collaborative replenishme..."]
+    N4_1_5 --> N4_1_5_7["4.1.5.7 Calculate and optimize destinati..."]
+    N4_1_5 --> N4_1_5_8["4.1.5.8 Manage dispatch plan attainment"]
+    N4_1_5 --> more["... +4 more"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 17042 |
+| Hierarchy ID | 4.1.5 |
+| Level | Process |
+| Parent | [4.1](../) |
+| Sub-Processes | 12 |
+
+
+## GraphDL Semantic Structure
+
+```
+plan.DistributionRequirements
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `plan` | Primary action |
+| Object | `distribution requirements` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Plan distribution requirements"]
+        S1["Maintain master data"]
+        S2["Determine finished goods in..."]
+        S3["Determine product storage f..."]
+        S4["Calculate requirements at d..."]
+        S5["Calculate consolidation at ..."]
+        S6["Manage collaborative replen..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Maintain master data](./MaintainMasterData) | 4.1.5.1 | Maintaining and preserving the master data plan for distribution requirements |
+| [Determine finished goods inventory requirements at destination](./DetermineFinishedGoodsInventoryRequirementsAtDestination) | 4.1.5.2 | Interact with the concerned person at the destination to validate the requirements and to avoid any  |
+| [Determine product storage facility requirements](./DetermineProductStorageFacilityRequirements) | 4.1.5.3 | Evaluate constraints, needs, parameters, and conditions for physical storage and retrieval of compon |
+| [Calculate requirements at destination](./CalculateRequirementsAtDestination) | 4.1.5.4 | Interact with the concerned authority at the destination to reach a specific figure that correctly r |
+| [Calculate consolidation at source](./CalculateConsolidationAtSource) | 4.1.5.5 | Determining the aggregate volume of products/services consolidated at the source |
+| [Manage collaborative replenishment planning](./ManageCollaborativeReplenishmentPlanning) | 4.1.5.6 | Administering the plan for collaborative replenishment of goods |
+| [Calculate and optimize destination dispatch plan](./CalculateAndOptimizeDestinationDispatchPlan) | 4.1.5.7 | Estimating the timing and duration of the delivery of the inventory from the source to the destinati |
+| [Manage dispatch plan attainment](./ManageDispatchPlanAttainment) | 4.1.5.8 | Accomplishing the dispatch plan |
+| [Calculate and optimize destination load plans](./CalculateAndOptimizeDestinationLoadPlans) | 4.1.5.9 | Evaluating the plans for delivering loads to destinations |
+| [Manage partner load plan](./ManagePartnerLoadPlan) | 4.1.5.10 | Administering the load plan for partners |
+| [Manage cost of supply](./ManageCostOfSupply) | 4.1.5.11 | Managing all expenses to provide products/services in the market |
+| [Manage capacity utilization](./ManageCapacityUtilization) | 4.1.5.12 | Determining the capacity utilization of the organization's production process |
+
+
+## Related Concepts
+
+- [DistributionRequirements](/concepts/DistributionRequirements)
+
+
+---
+
+*Source: APQC PCF 17042 (4.1.5) - APQC*

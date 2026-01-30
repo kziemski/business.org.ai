@@ -1,0 +1,153 @@
+---
+id: Agriculture
+name: "Agriculture, Forestry, Fishing and Hunting"
+code: "11"
+type: Industry
+status: complete
+---
+
+# Agriculture, Forestry, Fishing and Hunting
+
+> The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.
+
+## Overview
+
+This sector encompasses a diverse range of establishments including farms, ranches, dairies, greenhouses, nurseries, orchards, and hatcheries. The sector distinguishes two basic activities: agricultural production (establishments performing complete farm or ranch operations) and agricultural support activities (establishments performing activities such as soil preparation, planting, harvesting, and management on a contract or fee basis).
+
+A farm may consist of a single tract of land or multiple separate tracts held under different tenures. Operations may be run by the operator alone, with household members, hired employees, or through partnerships and corporations.
+
+## Industry Hierarchy
+
+```mermaid
+graph TD
+    S11["NAICS 11: Agriculture, Forestry, Fishing and Hunting"]
+    S11 --> SS111["111: Crop Production"]
+    S11 --> SS112["112: Animal Production & Aquaculture"]
+    S11 --> SS113["113: Forestry and Logging"]
+    S11 --> SS114["114: Fishing, Hunting and Trapping"]
+    S11 --> SS115["115: Support Activities for Agriculture"]
+
+    SS111 --> G1111["1111: Oilseed and Grain Farming"]
+    SS111 --> G1112["1112: Vegetable and Melon Farming"]
+    SS111 --> G1113["1113: Fruit and Tree Nut Farming"]
+    SS111 --> G1114["1114: Greenhouse and Nursery"]
+    SS111 --> G1119["1119: Other Crop Farming"]
+
+    SS113 --> G1131["1131: Timber Tract Operations"]
+    SS113 --> G1132["1132: Forest Nurseries"]
+    SS113 --> G1133["1133: Logging"]
+
+    SS114 --> G1141["1141: Fishing"]
+    SS114 --> G1142["1142: Hunting and Trapping"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| NAICS Code | 11 |
+| Level | Sector |
+| Subsectors | 5 |
+| Industry Groups | 19 |
+| Industries | 42+ |
+
+## Sub-Industries
+
+| Subsector | Code | Description |
+|-----------|------|-------------|
+| [Crop Production](./CropProduction/) | 111 | Growing crops for food and fiber including farms, orchards, greenhouses, and nurseries |
+| [Animal Production & Aquaculture](./AnimalProduction/) | 112 | Raising or fattening animals for sale or animal products, and aquaculture operations |
+| [Forestry and Logging](./Forestry/) | 113 | Growing and harvesting timber on long production cycles (10+ years) |
+| [Fishing, Hunting and Trapping](./FishingAndHunting/) | 114 | Harvesting fish and wild animals from natural habitats |
+| [Support Activities](./AgriculturalSupport/) | 115 | Essential support services for agricultural and forestry production |
+
+## Related Occupations
+
+- [Farmers, Ranchers, and Agricultural Managers](/occupations/FarmersRanchersAndAgriculturalManagers) - Farm operations management
+- [Agricultural Workers](/occupations/AgriculturalWorkers) - Crop and livestock production
+- [Forest and Conservation Workers](/occupations/ForestAndConservationWorkers) - Timber and forestry operations
+- [Fishing and Hunting Workers](/occupations/FishingAndHuntingWorkers) - Commercial fishing and game management
+- [Agricultural Equipment Operators](/occupations/AgriculturalEquipmentOperators) - Farm machinery operation
+
+## Core Business Processes
+
+```mermaid
+flowchart LR
+    subgraph Operating["Operating Processes"]
+        A1["Plan Production"]
+        A2["Prepare Land/Resources"]
+        A3["Plant/Stock/Deploy"]
+        A4["Cultivate/Maintain"]
+        A5["Harvest/Capture"]
+        A6["Process/Package"]
+        A7["Market/Distribute"]
+    end
+
+    subgraph Support["Support Processes"]
+        B1["Equipment Management"]
+        B2["Resource Conservation"]
+        B3["Compliance Management"]
+        B4["Financial Planning"]
+    end
+
+    A1 --> A2 --> A3 --> A4 --> A5 --> A6 --> A7
+    B1 -.-> A2
+    B2 -.-> A4
+    B3 -.-> A5
+```
+
+### Production Planning
+
+Developing seasonal and long-term production plans based on market demand, weather patterns, and resource availability. This includes crop rotation planning, livestock breeding schedules, and timber harvest cycles.
+
+**Key Activities:**
+- Analyze market conditions and pricing trends
+- Plan resource allocation and labor requirements
+- Coordinate with suppliers and buyers
+- Manage seasonal timing and cycles
+
+### Harvest and Post-Harvest Operations
+
+Managing the collection, initial processing, and preparation of agricultural products for market.
+
+**Key Activities:**
+- Coordinate harvest timing for optimal quality
+- Operate specialized harvesting equipment
+- Manage initial processing and grading
+- Arrange storage and transportation
+
+## Industry Value Chain
+
+```mermaid
+graph LR
+    Inputs["Inputs & Resources<br/>Seeds, Feed, Equipment<br/>Land, Water, Labor"] --> Primary["Primary Activities<br/>Planting, Growing<br/>Harvesting, Raising"]
+    Primary --> Outputs["Products & Services<br/>Crops, Livestock<br/>Timber, Fish"]
+    Outputs --> Customers["Customer Segments<br/>Food Processors<br/>Wholesalers, Retailers"]
+
+    Support["Support Activities<br/>Equipment Maintenance<br/>Soil Conservation<br/>Regulatory Compliance"] -.-> Primary
+```
+
+## Regulatory Environment
+
+This sector is subject to extensive federal and state regulations including:
+
+- **USDA Regulations**: Agricultural standards, inspection requirements, and subsidy programs
+- **EPA Requirements**: Pesticide use, water quality, and environmental protection
+- **Fish and Wildlife Service**: Hunting and fishing licenses, endangered species protection
+- **State Agricultural Departments**: Local production standards and marketing orders
+
+Agricultural research establishments and government conservation program administration are classified in other sectors (54171 and 92412 respectively).
+
+## Technology & Innovation
+
+The sector is experiencing significant technological transformation:
+
+- **Precision Agriculture**: GPS-guided equipment, drone monitoring, and satellite imagery for optimized resource application
+- **Automation**: Robotic harvesters, automated feeding systems, and smart irrigation
+- **Biotechnology**: Improved crop varieties, sustainable pest management, and enhanced livestock genetics
+- **Data Analytics**: Predictive modeling for weather, market prices, and yield optimization
+- **Sustainable Practices**: Organic farming, regenerative agriculture, and carbon sequestration
+
+---
+
+*Source: NAICS 11 - Agriculture, Forestry, Fishing and Hunting*

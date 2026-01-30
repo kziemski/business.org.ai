@@ -1,0 +1,105 @@
+---
+id: ManageEmployeeOnboardingTrainingAndDevelopment
+name: "Manage employee onboarding, training, and development"
+code: "20599"
+hierarchyId: "7.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "7"
+children: ["7.3.1", "7.3.2", "7.3.3", "7.3.4"]
+---
+
+# Manage employee onboarding, training, and development
+
+> Assisting employees in developing their capabilities, and providing them counseling services.
+
+## Overview
+
+Group 7.3 is a process group within APQC Category 7.0 (Develop and Manage Human Capital). 
+
+Assisting employees in developing their capabilities, and providing them counseling services. Handle the orientation and deployment of the employees. Administer the performance of employees. Administer the development and enhancement of the employees. Provide training and development programs for employees.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C7["7.0 Develop and Manage Human Capital"]
+    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    style N7_3 fill:#e1f5fe
+    N7_3 --> N7_3_1["7.3.1 Manage employee orientation and ..."]
+    N7_3 --> N7_3_2["7.3.2 Manage employee performance"]
+    N7_3 --> N7_3_3["7.3.3 Manage employee career development"]
+    N7_3 --> N7_3_4["7.3.4 Develop and train employees"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20599 |
+| Hierarchy ID | 7.3 |
+| Level | Group |
+| Parent | [7](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.EmployeeOnboardingTrainingAndDevelopment
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `employee onboarding, training, and development` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage employee onboarding, training, and development"]
+        S1["Manage employee orientation..."]
+        S2["Manage employee performance"]
+        S3["Manage employee career deve..."]
+        S4["Develop and train employees"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage employee orientation and deployment](./7.3.1-ManageEmployeeOrientationDeployment/) | 7.3.1 | Creating and maintaining various employee on-boarding programs typically known as induction programs |
+| [Manage employee performance](./7.3.2-ManageEmployeePerformance/) | 7.3.2 | Defining individual performance objectives |
+| [Manage employee career development](./7.3.3-ManageEmployeeCareerDevelopment/) | 7.3.3 | Establishing employee development guidelines |
+| [Develop and train employees](./7.3.4-DevelopTrainEmployees/) | 7.3.4 | Creating a link between employee and organizational development needs |
+
+
+## Related Concepts
+
+- [EmployeeOnboarding](/concepts/EmployeeOnboarding)
+- [Training](/concepts/Training)
+- [Development](/concepts/Development)
+
+
+---
+
+*Source: APQC PCF 20599 (7.3) - APQC*

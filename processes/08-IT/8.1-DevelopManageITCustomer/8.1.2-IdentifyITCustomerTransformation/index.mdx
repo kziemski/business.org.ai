@@ -1,0 +1,104 @@
+---
+id: IdentifyItCustomerTransformationNeeds
+name: "Identify IT customer transformation needs"
+code: "20612"
+hierarchyId: "8.1.2"
+type: Process
+level: 3
+status: complete
+parent: "8.1"
+children: ["8.1.2.1", "8.1.2.2", "8.1.2.3", "8.1.2.4"]
+---
+
+# Identify IT customer transformation needs
+
+> Identifying changing needs of staff dependent on information technology based on continuous improvement to deliver results according to organizational goals.
+
+## Overview
+
+Process 8.1.2 is a core process that defines the specific procedures for identify it customer transformation needs. 
+
+Identifying changing needs of staff dependent on information technology based on continuous improvement to deliver results according to organizational goals.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    N8_1 --> N8_1_2["8.1.2 Identify IT customer transformation n..."]
+    style N8_1_2 fill:#e1f5fe
+    N8_1_2 --> N8_1_2_1["8.1.2.1 Understand business requirements..."]
+    N8_1_2 --> N8_1_2_2["8.1.2.2 Understand IT landscape"]
+    N8_1_2 --> N8_1_2_3["8.1.2.3 Develop IT visioning"]
+    N8_1_2 --> N8_1_2_4["8.1.2.4 Outline IT service expectations"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20612 |
+| Hierarchy ID | 8.1.2 |
+| Level | Process |
+| Parent | [8.1](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+identify.ITCustomerTransformationNeeds
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `identify` | Primary action |
+| Object | `IT customer transformation needs` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Identify IT customer transformation needs"]
+        S1["Understand business require..."]
+        S2["Understand IT landscape"]
+        S3["Develop IT visioning"]
+        S4["Outline IT service expectat..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Understand business requirements for IT capabilities](./UnderstandBusinessRequirementsForITCapabilities) | 8.1.2.1 | Understanding business requirements for the existing IT environment as well as future IT needs |
+| [Understand IT landscape](./UnderstandITLandscape) | 8.1.2.2 | Understanding the complete logical structure and working of the organization's IT landscape |
+| [Develop IT visioning](./DevelopITVisioning) | 8.1.2.3 | Developing goals to define IT vision |
+| [Outline IT service expectations](./OutlineITServiceExpectations) | 8.1.2.4 | Defining a roadmap to meet organizational expectations from information technology services while co |
+
+
+## Related Concepts
+
+- [ITCustomerTransformationNeeds](/concepts/ITCustomerTransformationNeeds)
+
+
+---
+
+*Source: APQC PCF 20612 (8.1.2) - APQC*

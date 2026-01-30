@@ -1,0 +1,93 @@
+---
+id: AnalyzeProcesses
+name: "Analyze processes"
+code: "16389"
+hierarchyId: "13.1.3.2"
+type: Activity
+level: 4
+status: complete
+parent: "13.1.3"
+children: ["13.1.3.2.1"]
+---
+
+# Analyze processes
+
+> Assessing and examining the set of activities and tasks that, once completed, will accomplish an organizational goal.
+
+## Overview
+
+Activity 13.1.3.2 is an activity within the Develop and Manage Business Capabilities framework. 
+
+Assessing and examining the set of activities and tasks that, once completed, will accomplish an organizational goal. Create a business process model that captures how a business process works and how individuals from different groups work together to achieve a business goal.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C13["13.0 Develop and Manage Business Capabilities"]
+    C13 --> N13_1["13.1 Manage business processes"]
+    N13_1 --> N13_1_3["13.1.3 Define processes"]
+    N13_1_3 --> N13_1_3_2["13.1.3.2 Analyze processes"]
+    style N13_1_3_2 fill:#e1f5fe
+    N13_1_3_2 --> N13_1_3_2_1["13.1.3.2.1 Identify published best practices"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 16389 |
+| Hierarchy ID | 13.1.3.2 |
+| Level | Activity |
+| Parent | [13.1.3](../) |
+| Sub-Processes | 1 |
+
+
+## GraphDL Semantic Structure
+
+```
+analyze.Processes
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `analyze` | Primary action |
+| Object | `processes` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Analyze processes"]
+        S1["Identify published best pra..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify published best practices](./IdentifyPublishedBestPractices) | 13.1.3.2.1 | Realizing those practices and procedures that are the most effective to the success of the business  |
+
+
+## Related Concepts
+
+- [Processes](/concepts/Processes)
+
+
+---
+
+*Source: APQC PCF 16389 (13.1.3.2) - APQC*

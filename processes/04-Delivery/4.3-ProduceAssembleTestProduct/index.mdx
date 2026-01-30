@@ -1,0 +1,103 @@
+---
+id: ProduceassembletestProduct
+name: "Produce/Assemble/Test product"
+code: "10217"
+hierarchyId: "4.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "4"
+children: ["4.3.1", "4.3.2", "4.3.3", "4.3.4"]
+---
+
+# Produce/Assemble/Test product
+
+> Processing and delivering the finished goods manufactured by the organization.
+
+## Overview
+
+Group 4.3 is a process group within APQC Category 4.0 (Deliver Physical Products). 
+
+Processing and delivering the finished goods manufactured by the organization. Schedule the production of products. Execute the product production activities. Perform tests to oversee and ensure quality of production. Maintain records of the production process. Track lots.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C4["4.0 Deliver Physical Products"]
+    C4 --> N4_3["4.3 Produce/Assemble/Test product"]
+    style N4_3 fill:#e1f5fe
+    N4_3 --> N4_3_1["4.3.1 Schedule production"]
+    N4_3 --> N4_3_2["4.3.2 Produce/Assemble product"]
+    N4_3 --> N4_3_3["4.3.3 Perform quality testing"]
+    N4_3 --> N4_3_4["4.3.4 Maintain production records and ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10217 |
+| Hierarchy ID | 4.3 |
+| Level | Group |
+| Parent | [4](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+produce/assemble/test.Product
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `produce/assemble/test` | Primary action |
+| Object | `product` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Produce/Assemble/Test product"]
+        S1["Schedule production"]
+        S2["Produce/Assemble product"]
+        S3["Perform quality testing"]
+        S4["Maintain production records..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Schedule production](./4.3.1-ScheduleProduction/) | 4.3.1 | Scheduling the production of final products |
+| [Produce/Assemble product](./4.3.2-ProduceAssembleProduct/) | 4.3.2 | Manufacturing the product |
+| [Perform quality testing](./4.3.3-PerformQualityTesting/) | 4.3.3 | Executing tests to evaluate the quality of the products manufactured |
+| [Maintain production records and manage lot traceability](./4.3.4-MaintainProductionRecordsManage/) | 4.3.4 | Perpetuating the production records by systematically documenting and using it to ensure the effecti |
+
+
+## Related Concepts
+
+- [/Assemble/TestProduct](/concepts//Assemble/TestProduct)
+
+
+---
+
+*Source: APQC PCF 10217 (4.3) - APQC*

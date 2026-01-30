@@ -1,0 +1,96 @@
+---
+id: EstablishServiceDeliveryGovernanceAndStrategies
+name: "Establish service delivery governance and strategies"
+code: "20026"
+hierarchyId: "5.1"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "5"
+children: ["5.1.1", "5.1.2"]
+---
+
+# Establish service delivery governance and strategies
+
+> Creating rules and regulations for service delivery to the customer.
+
+## Overview
+
+Group 5.1 is a process group within APQC Category 5.0 (Deliver Services). 
+
+Creating rules and regulations for service delivery to the customer. Establish a system to manage performance, delivery, and direction of service delivery. Engage with the customer for satisfaction feedback. Define goals, policies, processes, and workplace layout and infrastructure as a part of the service delivery strategy.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C5["5.0 Deliver Services"]
+    C5 --> N5_1["5.1 Establish service delivery governance..."]
+    style N5_1 fill:#e1f5fe
+    N5_1 --> N5_1_1["5.1.1 Establish service delivery gover..."]
+    N5_1 --> N5_1_2["5.1.2 Develop service delivery strategies"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20026 |
+| Hierarchy ID | 5.1 |
+| Level | Group |
+| Parent | [5](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+establish.ServiceDeliveryGovernanceAndStrategies
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `establish` | Primary action |
+| Object | `service delivery governance and strategies` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Establish service delivery governance and strategies"]
+        S1["Establish service delivery ..."]
+        S2["Develop service delivery st..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Establish service delivery governance](./5.1.1-EstablishServiceDeliveryGovernance/) | 5.1.1 | Establishing service delivery governance through a system that manages performance, development, and |
+| [Develop service delivery strategies](./5.1.2-DevelopServiceDeliveryStrategies/) | 5.1.2 | Constructing strategies that identify goals, policies, processes, and procedures in relation to serv |
+
+
+## Related Concepts
+
+- [ServiceDeliveryGovernance](/concepts/ServiceDeliveryGovernance)
+- [Strategies](/concepts/Strategies)
+
+
+---
+
+*Source: APQC PCF 20026 (5.1) - APQC*

@@ -1,0 +1,104 @@
+---
+id: DesignAndConstructAssets
+name: "Design and construct assets"
+code: "21575"
+hierarchyId: "10.2"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "10"
+children: ["10.2.1", "10.2.2", "10.2.3", "10.2.4"]
+---
+
+# Design and construct assets
+
+> Designing and constructing assets such as machines, tools, factories, etc.
+
+## Overview
+
+Group 10.2 is a process group within APQC Category 10.0 (Acquire, Construct, and Manage Assets). 
+
+Designing and constructing assets such as machines, tools, factories, etc. Manage steps to acquire assets including managing capital, as well as planning, scheduling, and overseeing acquisition/construction.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C10["10.0 Acquire, Construct, and Manage Assets"]
+    C10 --> N10_2["10.2 Design and construct assets"]
+    style N10_2 fill:#e1f5fe
+    N10_2 --> N10_2_1["10.2.1 Manage capital program for assets"]
+    N10_2 --> N10_2_2["10.2.2 Design and plan asset construction"]
+    N10_2 --> N10_2_3["10.2.3 Schedule and perform constructio..."]
+    N10_2 --> N10_2_4["10.2.4 Manage asset construction"]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 21575 |
+| Hierarchy ID | 10.2 |
+| Level | Group |
+| Parent | [10](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+design.AndConstructAssets
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Primary action |
+| Object | `and construct assets` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Design and construct assets"]
+        S1["Manage capital program for ..."]
+        S2["Design and plan asset const..."]
+        S3["Schedule and perform constr..."]
+        S4["Manage asset construction"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage capital program for assets](./10.2.1-ManageCapitalProgramAssets/) | 10.2.1 | Producing and maintaining a planning schedule and a financial plan to purchase or manufacture produc |
+| [Design and plan asset construction](./10.2.2-DesignPlanAssetConstruction/) | 10.2.2 | Outlining the steps and strategies needed to construct assets |
+| [Schedule and perform construction work](./10.2.3-SchedulePerformConstructionWork/) | 10.2.3 | Arranging a timetable for which to perform construction work |
+| [Manage asset construction](./10.2.4-ManageAssetConstruction/) | 10.2.4 | Overseeing the performance and quality of work |
+
+
+## Related Concepts
+
+- [Assets](/concepts/Assets)
+- [Assets](/concepts/Assets)
+
+
+---
+
+*Source: APQC PCF 21575 (10.2) - APQC*

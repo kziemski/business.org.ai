@@ -1,0 +1,118 @@
+---
+id: DevelopAndManageItResilienceAndRisk
+name: "Develop and manage IT resilience and risk"
+code: "20706"
+hierarchyId: "8.3"
+type: ProcessGroup
+level: 2
+status: complete
+parent: "8"
+children: ["8.3.1", "8.3.2", "8.3.3", "8.3.4", "8.3.5", "8.3.6", "8.3.7", "8.3.8"]
+---
+
+# Develop and manage IT resilience and risk
+
+> Develop and include the processes required to rapidly adapt and respond to any internal or external opportunity, demand, disruption, or threat to IT.
+
+## Overview
+
+Group 8.3 is a process group within APQC Category 8.0 (Manage Information Technology). 
+
+Develop and include the processes required to rapidly adapt and respond to any internal or external opportunity, demand, disruption, or threat to IT. Develop a more dynamic, strategic, and integrated approach to managing risk and compliance obligations.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    style N8_3 fill:#e1f5fe
+    N8_3 --> N8_3_1["8.3.1 Develop IT compliance, risk, and..."]
+    N8_3 --> N8_3_2["8.3.2 Develop IT resilience strategy"]
+    N8_3 --> N8_3_3["8.3.3 Control IT risk, compliance, and..."]
+    N8_3 --> N8_3_4["8.3.4 Plan and manage IT continuity"]
+    N8_3 --> N8_3_5["8.3.5 Develop and manage IT security, ..."]
+    N8_3 --> N8_3_6["8.3.6 Conduct and analyze IT complianc..."]
+    N8_3 --> N8_3_7["8.3.7 Develop and execute IT resilienc..."]
+    N8_3 --> N8_3_8["8.3.8 Manage IT user identity and auth..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20706 |
+| Hierarchy ID | 8.3 |
+| Level | Group |
+| Parent | [8](../) |
+| Sub-Processes | 8 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndManageITResilienceAndRisk
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and manage IT resilience and risk` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and manage IT resilience and risk"]
+        S1["Develop IT compliance, risk..."]
+        S2["Develop IT resilience strategy"]
+        S3["Control IT risk, compliance..."]
+        S4["Plan and manage IT continuity"]
+        S5["Develop and manage IT secur..."]
+        S6["Conduct and analyze IT comp..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Develop IT compliance, risk, and security strategy](./8.3.1-DevelopITComplianceRisk/) | 8.3.1 | Ensuring that the organization effectively manages risk |
+| [Develop IT resilience strategy](./8.3.2-DevelopITResilienceStrategy/) | 8.3.2 | Developing resilience strategies of IT across the organization so that prospective risks can be avoi |
+| [Control IT risk, compliance, and security](./8.3.3-ControlITRiskCompliance/) | 8.3.3 | Ensure effective control in overall IT risk management, formulate and execute guidelines in-line wit |
+| [Plan and manage IT continuity](./8.3.4-PlanManageITContinuity/) | 8.3.4 | Planning and managing IT's ability to recover from exposure to internal and external threats |
+| [Develop and manage IT security, privacy, and data protection](./8.3.5-DevelopManageITSecurity/) | 8.3.5 | Creating and deploying an architecture for securing and ensuring the privacy of data flows throughou |
+| [Conduct and analyze IT compliance assessments](./8.3.6-ConductAnalyzeITCompliance/) | 8.3.6 | Evaluate and analyze the IT environment for the compliance of industry regulations and government le |
+| [Develop and execute IT resilience and continuity operations](./8.3.7-DevelopExecuteITResilience/) | 8.3.7 | Create and execute a process to rapidly adapt and respond to any internal or external opportunity, d |
+| [Manage IT user identity and authorization](./8.3.8-ManageITUserIdentity/) | 8.3.8 | The process of identifying, authenticating, and authorizing IT users to have access to applications, |
+
+
+## Related Concepts
+
+- [ITResilience](/concepts/ITResilience)
+- [Risk](/concepts/Risk)
+- [ITResilience](/concepts/ITResilience)
+- [Risk](/concepts/Risk)
+
+
+---
+
+*Source: APQC PCF 20706 (8.3) - APQC*

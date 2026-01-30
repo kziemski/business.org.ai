@@ -1,0 +1,112 @@
+---
+id: ManageInfrastructureResourceAdministration
+name: "Manage infrastructure resource administration"
+code: "20914"
+hierarchyId: "8.7.7"
+type: Process
+level: 3
+status: complete
+parent: "8.7"
+children: ["8.7.7.1", "8.7.7.2", "8.7.7.3", "8.7.7.4", "8.7.7.5", "8.7.7.6"]
+---
+
+# Manage infrastructure resource administration
+
+> Managing the resources required for administration of IT infrastructure.
+
+## Overview
+
+Process 8.7.7 is a core process that defines the specific procedures for manage infrastructure resource administration. 
+
+Managing the resources required for administration of IT infrastructure. Manage the IT inventory and assets. Take care of the organization's IT resource capacity.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    N8_7 --> N8_7_7["8.7.7 Manage infrastructure resource admini..."]
+    style N8_7_7 fill:#e1f5fe
+    N8_7_7 --> N8_7_7_1["8.7.7.1 Manage infrastructure configuration"]
+    N8_7_7 --> N8_7_7_2["8.7.7.2 Perform infrastructure component..."]
+    N8_7_7 --> N8_7_7_3["8.7.7.3 Install/configure/upgrade infras..."]
+    N8_7_7 --> N8_7_7_4["8.7.7.4 Maintain IT asset records"]
+    N8_7_7 --> N8_7_7_5["8.7.7.5 Administer IT licenses/user agre..."]
+    N8_7_7 --> N8_7_7_6["8.7.7.6 Provide IT infrastructure servic..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20914 |
+| Hierarchy ID | 8.7.7 |
+| Level | Process |
+| Parent | [8.7](../) |
+| Sub-Processes | 6 |
+
+
+## GraphDL Semantic Structure
+
+```
+manage.InfrastructureResourceAdministration
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `manage` | Primary action |
+| Object | `infrastructure resource administration` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Manage infrastructure resource administration"]
+        S1["Manage infrastructure confi..."]
+        S2["Perform infrastructure comp..."]
+        S3["Install/configure/upgrade i..."]
+        S4["Maintain IT asset records"]
+        S5["Administer IT licenses/user..."]
+        S6["Provide IT infrastructure s..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Manage infrastructure configuration](./ManageInfrastructureConfiguration) | 8.7.7.1 | Identifying and tracking individual configuration items, documenting functional capabilities and int |
+| [Perform infrastructure component maintenance](./PerformInfrastructureComponentMaintenance) | 8.7.7.2 | Evaluating and maintaining all aspects of infrastructure component maintenance |
+| [Install/configure/upgrade infrastructure components](./InstallconfigureupgradeInfrastructureComponents) | 8.7.7.3 | Installing/configuring/upgrading all the components required for operational activities within IT in |
+| [Maintain IT asset records](./MaintainITAssetRecords) | 8.7.7.4 | Maintaining the complete list of IT items or resources available with the organization with the deta |
+| [Administer IT licenses/user agreements](./AdministerITLicensesuserAgreements) | 8.7.7.5 | Administering and overseeing the terms and policies associated with licensing the IT intellectual pr |
+| [Provide IT infrastructure service and capabilities](./ProvideITInfrastructureServiceAndCapabilities) | 8.7.7.6 | Providing all the infrastructure services and capabilities required for operational activities withi |
+
+
+## Related Concepts
+
+- [InfrastructureResourceAdministration](/concepts/InfrastructureResourceAdministration)
+
+
+---
+
+*Source: APQC PCF 20914 (8.7.7) - APQC*

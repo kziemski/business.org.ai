@@ -1,0 +1,102 @@
+---
+id: IdentifyAndScheduleResourcesToMeetServiceRequirements
+name: "Identify and schedule resources to meet service requirements"
+code: "10321"
+hierarchyId: "6.3.4.2"
+type: Activity
+level: 4
+status: complete
+parent: "6.3.4"
+children: ["6.3.4.2.1", "6.3.4.2.2"]
+---
+
+# Identify and schedule resources to meet service requirements
+
+> Determining and scheduling the resources required to fulfill customer service requirements.
+
+## Overview
+
+Activity 6.3.4.2 is an activity within the Manage Customer Service framework. 
+
+Determining and scheduling the resources required to fulfill customer service requirements. Create a detailed schedule about the service orders and development of these service orders.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C6["6.0 Manage Customer Service"]
+    C6 --> N6_3["6.3 Service products after sales"]
+    N6_3 --> N6_3_4["6.3.4 Service products"]
+    N6_3_4 --> N6_3_4_2["6.3.4.2 Identify and schedule resources to me..."]
+    style N6_3_4_2 fill:#e1f5fe
+    N6_3_4_2 --> N6_3_4_2_1["6.3.4.2.1 Create resourcing plan and schedule"]
+    N6_3_4_2 --> N6_3_4_2_2["6.3.4.2.2 Create service order fulfillment..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10321 |
+| Hierarchy ID | 6.3.4.2 |
+| Level | Activity |
+| Parent | [6.3.4](../) |
+| Sub-Processes | 2 |
+
+
+## GraphDL Semantic Structure
+
+```
+identify.AndScheduleResources.to.MeetServiceRequirements
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `identify` | Primary action |
+| Object | `and schedule resources` | Direct object |
+| Preposition | `to` | Relationship |
+| PrepObject | `meet service requirements` | Indirect object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Identify and schedule resources to meet service requirements"]
+        S1["Create resourcing plan and ..."]
+        S2["Create service order fulfil..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create resourcing plan and schedule](./CreateResourcingPlanAndSchedule) | 6.3.4.2.1 | Developing a plan for sourcing and deploying the resources required to fulfill customer service need |
+| [Create service order fulfillment schedule](./CreateServiceOrderFulfillmentSchedule) | 6.3.4.2.2 | Designing a detailed summary of customer service order requirements, along with information concerni |
+
+
+## Related Concepts
+
+- [Resources](/concepts/Resources)
+- [MeetServiceRequirements](/concepts/MeetServiceRequirements)
+- [Resources](/concepts/Resources)
+- [MeetServiceRequirements](/concepts/MeetServiceRequirements)
+
+
+---
+
+*Source: APQC PCF 10321 (6.3.4.2) - APQC*

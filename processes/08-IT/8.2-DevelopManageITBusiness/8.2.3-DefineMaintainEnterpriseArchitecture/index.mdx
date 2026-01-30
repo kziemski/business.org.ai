@@ -1,0 +1,105 @@
+---
+id: DefineAndMaintainEnterpriseArchitecture
+name: "Define and maintain enterprise architecture"
+code: "20668"
+hierarchyId: "8.2.3"
+type: Process
+level: 3
+status: complete
+parent: "8.2"
+children: ["8.2.3.1", "8.2.3.2", "8.2.3.3", "8.2.3.4"]
+---
+
+# Define and maintain enterprise architecture
+
+> Outlining and maintaining the organization's IT architecture.
+
+## Overview
+
+Process 8.2.3 is a core process that defines the specific procedures for define and maintain enterprise architecture. 
+
+Outlining and maintaining the organization's IT architecture. Establish the IT architecture definition and framework. Ensure the relevance of IT. Create and confirm the approach for IT maintenance. Create rules and regulations to guide IT architecture. Authenticate and finalize all IT related research and innovation that takes place within the organization.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_2["8.2 Develop and manage IT business strategy"]
+    N8_2 --> N8_2_3["8.2.3 Define and maintain enterprise archit..."]
+    style N8_2_3 fill:#e1f5fe
+    N8_2_3 --> N8_2_3_1["8.2.3.1 Create and publish enterprise ar..."]
+    N8_2_3 --> N8_2_3_2["8.2.3.2 Establish and operate enterprise..."]
+    N8_2_3 --> N8_2_3_3["8.2.3.3 Research technologies to innovat..."]
+    N8_2_3 --> N8_2_3_4["8.2.3.4 Provide input to definition and ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20668 |
+| Hierarchy ID | 8.2.3 |
+| Level | Process |
+| Parent | [8.2](../) |
+| Sub-Processes | 4 |
+
+
+## GraphDL Semantic Structure
+
+```
+define.AndMaintainEnterpriseArchitecture
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `define` | Primary action |
+| Object | `and maintain enterprise architecture` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Define and maintain enterprise architecture"]
+        S1["Create and publish enterpri..."]
+        S2["Establish and operate enter..."]
+        S3["Research technologies to in..."]
+        S4["Provide input to definition..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Create and publish enterprise architecture principles](./CreateAndPublishEnterpriseArchitecturePrinciples) | 8.2.3.1 | Creating and publishing high level statements of the fundamental values (principles) based on the or |
+| [Establish and operate enterprise architecture governance](./EstablishAndOperateEnterpriseArchitectureGovernance) | 8.2.3.2 | Establishing and operating a structure by which an enterprise defines appropriate strategies and ens |
+| [Research technologies to innovate IT services and solutions](./ResearchTechnologiesToInnovateITServicesAndSolutions) | 8.2.3.3 | Systematically investigating and studying materials and sources relevant to the IT function |
+| [Provide input to definition and prioritization of IT projects](./ProvideInputToDefinitionAndPrioritizationOfITProjects) | 8.2.3.4 | Analyze the value driven through IT projects and redefine and/or reprioritize |
+
+
+## Related Concepts
+
+- [EnterpriseArchitecture](/concepts/EnterpriseArchitecture)
+- [EnterpriseArchitecture](/concepts/EnterpriseArchitecture)
+
+
+---
+
+*Source: APQC PCF 20668 (8.2.3) - APQC*

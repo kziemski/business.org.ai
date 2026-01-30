@@ -1,0 +1,94 @@
+---
+id: PerformServicesolutionMaintenanceAndTesting
+name: "Perform service/solution maintenance and testing"
+code: "20817"
+hierarchyId: "8.5.5"
+type: Process
+level: 3
+status: complete
+parent: "8.5"
+children: ["8.5.5.1"]
+---
+
+# Perform service/solution maintenance and testing
+
+> Engaging in all aspects of service/solution maintenance and testing includes all preventative, routine, and corrective activates.
+
+## Overview
+
+Process 8.5.5 is a core process that defines the specific procedures for perform service/solution maintenance and testing. 
+
+Engaging in all aspects of service/solution maintenance and testing includes all preventative, routine, and corrective activates. Ensure that IT service/solution are functioning properly and regulations where applicable.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C8["8.0 Manage Information Technology"]
+    C8 --> N8_5["8.5 Develop and manage services/solutions"]
+    N8_5 --> N8_5_5["8.5.5 Perform service/solution maintenance ..."]
+    style N8_5_5 fill:#e1f5fe
+    N8_5_5 --> N8_5_5_1["8.5.5.1 Execute IT service/solution main..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 20817 |
+| Hierarchy ID | 8.5.5 |
+| Level | Process |
+| Parent | [8.5](../) |
+| Sub-Processes | 1 |
+
+
+## GraphDL Semantic Structure
+
+```
+perform.ServicesolutionMaintenanceAndTesting
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `perform` | Primary action |
+| Object | `service/solution maintenance and testing` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Perform service/solution maintenance and testing"]
+        S1["Execute IT service/solution..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Execute IT service/solution maintenance lifecycle](./8.5.5.1-ExecuteITServicesolutionMaintenance/) | 8.5.5.1 | Executing IT service/solution maintenance lifecycle in order to reduce maintenance costs and increas |
+
+
+## Related Concepts
+
+- [ServiceMaintenance](/concepts/ServiceMaintenance)
+- [SolutionMaintenance](/concepts/SolutionMaintenance)
+- [Testing](/concepts/Testing)
+
+
+---
+
+*Source: APQC PCF 20817 (8.5.5) - APQC*

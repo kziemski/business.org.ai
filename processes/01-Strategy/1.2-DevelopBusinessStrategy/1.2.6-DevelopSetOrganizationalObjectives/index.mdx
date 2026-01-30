@@ -1,0 +1,101 @@
+---
+id: DevelopAndSetOrganizationalObjectives
+name: "Develop and set organizational objectives"
+code: "10042"
+hierarchyId: "1.2.6"
+type: Process
+level: 3
+status: complete
+parent: "1.2"
+children: ["1.2.6.1", "1.2.6.2", "1.2.6.3"]
+---
+
+# Develop and set organizational objectives
+
+> Developing overall goals for the organization that help in accomplishing its mission.
+
+## Overview
+
+Process 1.2.6 is a core process that defines the specific procedures for develop and set organizational objectives. 
+
+Developing overall goals for the organization that help in accomplishing its mission. Formulate organization-wide targets in the near to middle term, which will accumulate and propel the organization to realize its long-term objectives, as outlined in Develop an overall mission statement [10037]. Enlist business unit heads or equivalent personnel, in close collaboration with senior management executives.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C1["1.0 Develop Vision and Strategy"]
+    C1 --> N1_2["1.2 Develop business strategy"]
+    N1_2 --> N1_2_6["1.2.6 Develop and set organizational object..."]
+    style N1_2_6 fill:#e1f5fe
+    N1_2_6 --> N1_2_6_1["1.2.6.1 Identify organizational objectives"]
+    N1_2_6 --> N1_2_6_2["1.2.6.2 Establish baseline metrics"]
+    N1_2_6 --> N1_2_6_3["1.2.6.3 Monitor performance against obje..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 10042 |
+| Hierarchy ID | 1.2.6 |
+| Level | Process |
+| Parent | [1.2](../) |
+| Sub-Processes | 3 |
+
+
+## GraphDL Semantic Structure
+
+```
+develop.AndSetOrganizationalObjectives
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Primary action |
+| Object | `and set organizational objectives` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Develop and set organizational objectives"]
+        S1["Identify organizational obj..."]
+        S2["Establish baseline metrics"]
+        S3["Monitor performance against..."]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Identify organizational objectives](./IdentifyOrganizationalObjectives) | 1.2.6.1 | Creating and developing strategic objectives that establishes a process to outline expected outcomes |
+| [Establish baseline metrics](./EstablishBaselineMetrics) | 1.2.6.2 | Establishing baselines that provide standards for assessing performance |
+| [Monitor performance against objective](./MonitorPerformanceAgainstObjective) | 1.2.6.3 | Defining methodology and frequency of assessment for measuring and monitoring performance of various |
+
+
+## Related Concepts
+
+- [OrganizationalObjectives](/concepts/OrganizationalObjectives)
+- [OrganizationalObjectives](/concepts/OrganizationalObjectives)
+
+
+---
+
+*Source: APQC PCF 10042 (1.2.6) - APQC*

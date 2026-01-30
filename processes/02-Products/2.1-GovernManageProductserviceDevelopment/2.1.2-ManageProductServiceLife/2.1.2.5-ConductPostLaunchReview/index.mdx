@@ -1,0 +1,115 @@
+---
+id: ConductPostLaunchReview
+name: "Conduct post launch review"
+code: "11423"
+hierarchyId: "2.1.2.5"
+type: Activity
+level: 4
+status: complete
+parent: "2.1.2"
+children: ["2.1.2.5.1", "2.1.2.5.2", "2.1.2.5.3", "2.1.2.5.4", "2.1.2.5.5", "2.1.2.5.6", "2.1.2.5.7"]
+---
+
+# Conduct post launch review
+
+> Learning from either a test or a full production run within the consumer market.
+
+## Overview
+
+Activity 2.1.2.5 is an activity within the Design and Develop Products and Services framework. 
+
+Learning from either a test or a full production run within the consumer market. Companies use this as an opportunity to both test and react to new products, ideas, or innovations based on the initial reaction of consumers on an individual level. Within this process, analytics are used to determine the relative success of a new product offering. Within this process, companies will launch key analytics to test a products acceptance. They will also review market performance and compare to similar products and against the business case or the financial plan. Companies can also measure the effectiveness of their supply chain network, and can apply what is learned from the post launch review to other new products, processes, and procedures to ensure and enhance the product quality.
+
+## Process Hierarchy
+
+```mermaid
+graph TD
+    C2["2.0 Design and Develop Products and Services"]
+    C2 --> N2_1["2.1 Govern and manage product/service dev..."]
+    N2_1 --> N2_1_2["2.1.2 Manage product and service life cycle"]
+    N2_1_2 --> N2_1_2_5["2.1.2.5 Conduct post launch review"]
+    style N2_1_2_5 fill:#e1f5fe
+    N2_1_2_5 --> N2_1_2_5_1["2.1.2.5.1 Carry out post launch analytics ..."]
+    N2_1_2_5 --> N2_1_2_5_2["2.1.2.5.2 Review market performance"]
+    N2_1_2_5 --> N2_1_2_5_3["2.1.2.5.3 Review effectiveness of supply c..."]
+    N2_1_2_5 --> N2_1_2_5_4["2.1.2.5.4 Apply data and analytics to revi..."]
+    N2_1_2_5 --> N2_1_2_5_5["2.1.2.5.5 Review quality and performance o..."]
+    N2_1_2_5 --> N2_1_2_5_6["2.1.2.5.6 Conduct financial review"]
+    N2_1_2_5 --> N2_1_2_5_7["2.1.2.5.7 Conduct new product development ..."]
+```
+
+## Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| APQC Code | 11423 |
+| Hierarchy ID | 2.1.2.5 |
+| Level | Activity |
+| Parent | [2.1.2](../) |
+| Sub-Processes | 7 |
+
+
+## GraphDL Semantic Structure
+
+```
+conduct.PostLaunchReview
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `conduct` | Primary action |
+| Object | `post launch review` | Direct object |
+
+
+## Process Flow
+
+```mermaid
+flowchart LR
+    subgraph Inputs["Inputs"]
+        I1["Upstream Process Outputs"]
+        I2["Organizational Data"]
+    end
+
+    subgraph Process["Conduct post launch review"]
+        S1["Carry out post launch analy..."]
+        S2["Review market performance"]
+        S3["Review effectiveness of sup..."]
+        S4["Apply data and analytics to..."]
+        S5["Review quality and performa..."]
+        S6["Conduct financial review"]
+    end
+
+    subgraph Outputs["Outputs"]
+        O1["Process Deliverables"]
+        O2["Updated Records"]
+    end
+
+    Inputs --> Process --> Outputs
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+```
+
+## Sub-Processes
+
+| Process | Hierarchy ID | Description |
+|---------|-------------|-------------|
+| [Carry out post launch analytics to test the acceptability in the market](./CarryOutPostLaunchAnalyticsToTestTheAcceptabilityInTheMarket) | 2.1.2.5.1 | Measuring the performance of marketing once the product/services are launched |
+| [Review market performance](./ReviewMarketPerformance) | 2.1.2.5.2 | Conducting customer and market analysis to review progress and identify opportunities for increasing |
+| [Review effectiveness of supply chain and distribution network](./ReviewEffectivenessOfSupplyChainAndDistributionNetwork) | 2.1.2.5.3 | Determining the performance of supply chain to all departments and logistics from input to shop floo |
+| [Apply data and analytics to review supply chain methodologies](./ApplyDataAndAnalyticsToReviewSupplyChainMethodologies) | 2.1.2.5.4 | Collecting and examining raw data with the purpose of drawing conclusions about that information and |
+| [Review quality and performance of the product/service](./ReviewQualityAndPerformanceOfTheProductservice) | 2.1.2.5.5 | Identifying the quality and performance of the product/service delivered to customers |
+| [Conduct financial review](./ConductFinancialReview) | 2.1.2.5.6 | Evaluating organization's financial reports and financial reporting processes |
+| [Conduct new product development process assessment](./ConductNewProductDevelopmentProcessAssessment) | 2.1.2.5.7 | Analyzing the steps involved in the development of new product, its effect on existing product, reso |
+
+
+## Related Concepts
+
+- [PostLaunchReview](/concepts/PostLaunchReview)
+
+
+---
+
+*Source: APQC PCF 11423 (2.1.2.5) - APQC*
