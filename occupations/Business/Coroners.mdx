@@ -3,24 +3,31 @@ id: Coroners
 name: "Coroners"
 code: "13-1041.06"
 type: Occupation
+category: Business
 status: complete
+certifications: ["ABMDI", "D-ABFE", "FAAFS"]
 ---
 
 # Coroners
 
-> Direct activities such as autopsies, pathological and toxicological analyses, and inquests relating to the investigation of deaths occurring within a legal jurisdiction to determine cause of death or to fix responsibility for accidental, violent, or unexplained deaths.
+> Direct activities such as autopsies, pathological and toxicological analyses, and inquests relating to the investigation of deaths occurring within a legal jurisdiction.
 
 ## Overview
 
-Coroners is classified under Business and Financial Operations (SOC 13). Direct activities such as autopsies, pathological and toxicological analyses, and inquests relating to the investigation of deaths occurring within a legal jurisdiction to determine cause of death or to fix responsibility for accidental, violent, or unexplained deaths.
+Coroners are public officials responsible for investigating deaths that occur under unusual, suspicious, or unexplained circumstances within their jurisdictions. They direct autopsies, coordinate with law enforcement, review medical records, and make official determinations about the cause and manner of death. Unlike medical examiners who are typically appointed physicians, coroners are often elected officials whose qualifications vary by jurisdiction, though the role increasingly demands specialized training in death investigation and medicolegal practices.
+
+The coroner's office serves as a critical intersection of public health, law enforcement, and the legal system. Coroners issue death certificates, authorize the release of bodies to families, testify in court proceedings, and may convene coroner's inquests in cases of public interest. Their determinations have profound legal, insurance, and public health implications, influencing criminal prosecutions, civil litigation, and epidemiological data.
+
+Modern coroner and medical examiner systems face growing challenges including opioid epidemic caseloads, advances in forensic technology, mass casualty incident preparedness, and increasing public scrutiny. The profession is evolving toward higher educational standards, accreditation requirements, and integration of digital tools for case management, forensic imaging, and data analysis.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group131041["13-1041 Compliance Officers"]
-    Group131041 --> Base["13-1041.00 Compliance Officers"]
-    Group131041 --> Current["13-1041.06 Coroners"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G131041["13-1041 Compliance Officers"]
+    G131041 --> Base["13-1041.00 Compliance Officers"]
+    G131041 --> Current["13-1041.06 Coroners"]
     style Current fill:#e1f5fe
 ```
 
@@ -29,8 +36,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-1041.06 |
+| Job Zone | 5 (Extensive Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
-| Task Count | 92 |
+| Median Salary | $69,400 |
+| Employment | ~8,500 |
+| Projected Growth | 4% (As fast as average) |
+| Task Count | 35 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -38,103 +49,165 @@ graph TD
 ```mermaid
 mindmap
     root(("Coroners"))
-        Complete
+        Investigate
+            Death Circumstances
+            Scene Examination
+            Witness Interviews
+        Direct
+            Autopsies
+            Pathological Analyses
+            Toxicological Analyses
+        Determine
+            Cause of Death
+            Manner of Death
+            Identification
+        Coordinate
+            Law Enforcement
+            Medical Professionals
+            Family Notification
+        Document
+            Investigation Findings
             Death Certificates
-            Including Assignment
-            Reports Required
-            Forms Required
-        Perform
-            Medicolegal Examinations Conducting Preliminary Examinations
-            Autopsies Conducting Preliminary Examinations
-        Interview
-            Persons Present
-        Observe
-            Positions
-            Conditions
-            Objects Property Related
-            Personal Property Related
-        Record
-            Positions
-            Conditions
-            Objects Property Related
-            Personal Property Related
-        Provide
-            Information
-        Remove
-            Removal
-        Supervise
-            Removal
+            Legal Reports
+        Testify
+            Court Proceedings
+            Inquests
+            Grand Juries
 ```
 
-### complete.DeathCertificates
+### investigate.DeathCircumstances
 
-Coroners complete death certificates as part of their core responsibilities.
-
-**Actions:**
-- `complete.DeathCertificates.of.Cause.of.Death`
-- `complete.DeathCertificates.of.Manner.of.Death`
-- `complete.IncludingAssignment.of.Cause.of.Death`
-- `complete.IncludingAssignment.of.Manner.of.Death`
-
-### perform.MedicolegalExaminationsConductingPreliminaryExaminations
-
-Coroners perform medicolegal examinations conducting preliminary examinations as part of their core responsibilities.
+Investigate the circumstances surrounding deaths to determine cause and manner.
 
 **Actions:**
-- `perform.MedicolegalExaminationsConductingPreliminaryExaminations.of.Body.to.identify.Victims`
-- `perform.MedicolegalExaminationsConductingPreliminaryExaminations.of.LocateSigns.of.Trauma`
-- `perform.MedicolegalExaminationsConductingPreliminaryExaminations.of.IdentifyFactorsWouldIndicateTime.of.Death`
-- `perform.AutopsiesConductingPreliminaryExaminations.of.Body.to.identify.Victims`
+- `investigate.DeathCircumstances.to.determine.CauseOfDeath` - Establish death cause
+- `investigate.SceneEvidence.to.reconstruct.Events` - Analyze death scene
+- `interview.Witnesses.to.gather.Information` - Collect testimony
+- `review.MedicalRecords.to.establish.MedicalHistory` - Assess health background
 
-### interview.PersonsPresent
+### direct.ForensicAnalyses
 
-Coroners interview persons present as part of their core responsibilities.
+Direct and oversee autopsies, pathological, and toxicological analyses.
 
 **Actions:**
-- `interview.PersonsPresent.at.DeathScenes.to.obtain.InformationUsefulInDeterminingMannerOfDeath`
+- `direct.Autopsies.to.determine.CauseOfDeath` - Oversee post-mortem examinations
+- `direct.PathologicalAnalyses.to.identify.DiseasesOrInjuries` - Coordinate tissue analysis
+- `direct.ToxicologicalAnalyses.to.detect.Substances` - Order substance testing
+- `coordinate.ForensicTeams.for.ComplexInvestigations` - Manage specialist resources
+
+### determine.MannerOfDeath
+
+Make official determinations regarding the manner and cause of death.
+
+**Actions:**
+- `determine.CauseOfDeath.for.DeathCertification` - Certify cause
+- `determine.MannerOfDeath.as.NaturalOrUnnatural` - Classify death manner
+- `issue.DeathCertificates.for.LegalPurposes` - Complete documentation
+- `testify.InCourtProceedings.as.ExpertWitness` - Provide legal testimony
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Death Investigation Procedures** - Expert
+- **Forensic Science Principles** - Expert
+- **Medicolegal Standards** - Advanced
+- **Anatomy & Pathology Knowledge** - Advanced
+- **Toxicology** - Proficient
+- **Legal Procedures & Court Testimony** - Advanced
+- **Public Health Reporting** - Proficient
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Analytical Thinking** - Critical
+- **Attention to Detail** - Critical
+- **Communication (Written/Verbal)** - Essential
+- **Emotional Resilience** - Essential
+- **Ethical Judgment** - Essential
+- **Leadership & Management** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Coroners"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Varies by jurisdiction; increasingly requires bachelor's or higher |
+| Medical Examiner Track | MD/DO with forensic pathology fellowship |
+| Key Certifications | ABMDI (American Board of Medicolegal Death Investigators) |
+| Forensic Certification | D-ABFE (Diplomate, American Board of Forensic Examiners) |
+| Professional Development | NAME (National Association of Medical Examiners) |
+| Elected vs Appointed | Coroners often elected; Medical Examiners appointed |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Death Investigator / Deputy Coroner"] --> Mid["Forensic Investigator / Assistant Coroner"]
+    Mid --> Senior["Coroner / Chief Medical Examiner"]
+    Senior --> Director["Chief Coroner / State Medical Examiner"]
+    Director --> Executive["Regional ME Director / Forensic Science Director"]
+
+    Alt1["Law Enforcement"] --> Entry
+    Alt2["Forensic Pathologist"] --> Senior
+
+    subgraph Tracks["Career Tracks"]
+        CoronerTrack["Coroner (Elected)"]
+        METrack["Medical Examiner (Appointed)"]
+        Investigator["Death Investigation"]
+        Forensic["Forensic Administration"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **County/Municipal Government** | Local jurisdiction | Routine death investigations, death certification |
+| **State Government** | State-level oversight | Standards development, complex cases |
+| **Federal (AFMES)** | Military/federal deaths | Armed forces casualties, federal jurisdiction |
+| **Mass Casualty / Disaster** | DVI operations | Victim identification, multi-agency coordination |
+| **Academia / Research** | Forensic science | Teaching, research, expert consultation |
+| **Private Consulting** | Expert witness | Case review, independent analysis, litigation support |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Case Management** | CME (Case Management Enterprise), MEDEX |
+| **Forensic Imaging** | Autopsy imaging systems, CT/MRI virtual autopsy |
+| **Toxicology** | GC-MS, LC-MS/MS, immunoassay systems |
+| **Digital Forensics** | Digital photography, 3D scanning |
+| **Records & Reporting** | EDRS (Electronic Death Registration Systems) |
+| **Communication** | MDI notification systems |
+| **GIS & Mapping** | Crime scene mapping, death mapping analytics |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    COR["Coroners"]
+
+    subgraph SameCategory["Compliance & Investigation"]
+        CO["Compliance Officers"]
+        ECI["Environmental Compliance Inspectors"]
+        GPI["Government Property Investigators"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        FP["Forensic Pathologists"]
+        LE["Law Enforcement Officers"]
+        EMD["Emergency Management Directors"]
+    end
+
+    COR --- SameCategory
+    COR --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Coroner's Office](/departments/CoronersOffice)
+- [Medical Examiner's Office](/departments/MedicalExaminersOffice)
+- [Forensic Science Services](/departments/ForensicScience)
+- [Public Health](/departments/PublicHealth)
+- [Law Enforcement](/departments/LawEnforcement)
 
 ---
 

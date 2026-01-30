@@ -12,20 +12,28 @@ status: complete
 
 ## Overview
 
-Computer Occupations, All Other is classified under Computer and Mathematical (SOC 15). All computer occupations not listed separately.
+Computer Occupations, All Other is a broad classification that encompasses specialized computing roles not individually categorized elsewhere in the SOC system. This category serves as the parent for several distinct and rapidly growing specializations including web administrators, GIS technologists, document management specialists, penetration testers, information security engineers, digital forensics analysts, blockchain engineers, computer systems engineers, and IT project managers.
+
+Professionals in this category share a foundation in computer science, information technology, and systems administration, but diverge into highly specialized domains based on their specific expertise. The category reflects the continually expanding nature of the technology field, where new roles emerge faster than occupational classification systems can accommodate. Many of the variant occupations listed here were added to O*NET in recent years as their importance became clear.
+
+The roles within this classification span a wide spectrum of responsibilities, from managing web infrastructure and enterprise document systems to conducting cybersecurity assessments and building blockchain networks. What unites them is the application of computer science principles to solve organizational and technical challenges that fall outside the scope of traditional software development, database administration, or network administration roles.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat15["15 - Computer and Mathematical"] --> Group151299["15-1299 Computer Occupations, All Other"]
+    Cat15["15 - Computer and Mathematical Occupations"] --> Group151299["15-1299 Computer Occupations, All Other"]
     Group151299 --> Current["15-1299.00 Computer Occupations, All Other"]
     style Current fill:#e1f5fe
-    Group151299 --> V15129901["15-1299.01 Web Administrators"]
-    Group151299 --> V15129902["15-1299.02 Geographic Information Systems Technologists and Technicians"]
-    Group151299 --> V15129903["15-1299.03 Document Management Specialists"]
-    Group151299 --> V15129904["15-1299.04 Penetration Testers"]
-    Group151299 --> V15129905["15-1299.05 Information Security Engineers"]
+    Group151299 --> V01["15-1299.01 Web Administrators"]
+    Group151299 --> V02["15-1299.02 GIS Technologists and Technicians"]
+    Group151299 --> V03["15-1299.03 Document Management Specialists"]
+    Group151299 --> V04["15-1299.04 Penetration Testers"]
+    Group151299 --> V05["15-1299.05 Information Security Engineers"]
+    Group151299 --> V06["15-1299.06 Digital Forensics Analysts"]
+    Group151299 --> V07["15-1299.07 Blockchain Engineers"]
+    Group151299 --> V08["15-1299.08 Computer Systems Engineers/Architects"]
+    Group151299 --> V09["15-1299.09 IT Project Managers"]
 ```
 
 ## Key Statistics
@@ -33,144 +41,237 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 15-1299.00 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Computer and Mathematical](/occupations/Technology/index) |
 | Task Count | 121 |
+| Median Salary | $99,860 |
+| Employment | ~415,000 (across all variants) |
+| Growth Rate | Faster Than Average |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("ComputerOccupations"))
+    root(("Computer Occupations"))
         Document
             Backup Plans
             Recovery Plans
-            Application Site Changes
             Change Procedures
-            Web Site Changes
-            User Feedback
-            Installation Procedures
-            Configuration Procedures
+            Configurations
         Test
-            Issues
             System Integration
             Performance
-            System Security
-            Backup Plans Regularly
-            Resolve Problems
-            Recovery Plans Regularly
-            New Software Packages
+            Security
+            New Software
         Administer
-            Internet Infrastructure
-            Intranet Infrastructure
-            Including Web
-            File
+            Web Infrastructure
+            Intranet Systems
             Mail Servers
         Monitor
-            Systems
-            Web Developments
-            Reading
-            Participation
-        Identify
-            Backup Plans
-            Recovery Plans
-            Standardize And Communicate Levels
-            Interoperability Requirements
+            Systems Health
+            Security Events
+            Technology Trends
         Implement
-            Updates
-            Upgrades
-            Patches
-            Marketing Plans
+            Updates & Patches
+            New Systems
+            Security Controls
         Analyze
-            Web Site Usage Data
+            Usage Data
+            Log Files
             User Feedback
-            Operating System Log Files Regularly
-            Application Log Files Regularly
         Develop
-            Web Site Performance Metrics
+            Performance Metrics
             Testing Routines
             Marketing Plans
-        Back
-            Modify Applications
-            Related Data
-        Correct
-            Testing Identified Problems
-            Recommend Actions
+        Identify
+            Requirements
+            Interoperability Needs
+            Recovery Strategies
 ```
 
-### document.BackupPlans
+### document.SystemProcedures
 
-Computer Occupations, All Other document backup plans as part of their core responsibilities.
-
-**Actions:**
-- `document.BackupPlans`
-- `document.RecoveryPlans`
-- `document.ApplicationSiteChanges`
-- `document.ChangeProcedures`
-
-### test.Issues
-
-Computer Occupations, All Other test issues as part of their core responsibilities.
+Computer professionals maintain comprehensive documentation of systems, procedures, and changes.
 
 **Actions:**
-- `test.Issues.on.RegularSchedule`
-- `test.Issues.on.AfterMajorProgramModifications`
+- `document.BackupPlans.for.DisasterRecovery`
+- `document.RecoveryPlans.for.BusinessContinuity`
+- `document.ChangeProcedures.for.ConfigurationManagement`
+- `document.SystemConfigurations.for.Audit`
+
+### test.SystemIntegrity
+
+Computer professionals test systems on regular schedules and after modifications.
+
+**Actions:**
 - `test.SystemIntegration.on.RegularSchedule`
-- `test.SystemIntegration.on.AfterMajorProgramModifications`
+- `test.SystemSecurity.after.MajorModifications`
+- `test.Performance.to.ensure.ServiceLevels`
+- `test.BackupRecovery.on.RegularSchedule`
 
-### administer.InternetInfrastructure
+### administer.Infrastructure
 
-Computer Occupations, All Other administer internet infrastructure as part of their core responsibilities.
+Computer professionals manage web, network, and server infrastructure.
 
 **Actions:**
-- `administer.InternetInfrastructure`
-- `administer.IntranetInfrastructure`
-- `administer.IncludingWeb`
-- `administer.File`
+- `administer.InternetInfrastructure.for.Availability`
+- `administer.IntranetInfrastructure.for.InternalOperations`
+- `administer.WebServers.for.ContentDelivery`
+- `administer.MailServers.for.Communication`
 
+## Tech Stack
+
+### Systems Administration
+- **Linux/Unix** - Server operating systems
+- **Windows Server** - Microsoft server environment
+- **Apache/Nginx** - Web servers
+- **IIS** - Microsoft web server
+- **VMware/Hyper-V** - Virtualization
+- **Ansible/Puppet/Chef** - Configuration management
+
+### Cloud Platforms
+- **AWS** - Amazon cloud
+- **Azure** - Microsoft cloud
+- **Google Cloud** - GCP
+- **Docker/Kubernetes** - Containerization
+- **Terraform** - Infrastructure as code
+
+### Monitoring & Security
+- **Nagios/Zabbix** - System monitoring
+- **Splunk** - Log analysis
+- **SIEM Tools** - Security monitoring
+- **Nessus** - Vulnerability scanning
+- **Wireshark** - Network analysis
+
+### Development & Scripting
+- **Python** - Automation scripting
+- **Bash/PowerShell** - Shell scripting
+- **SQL** - Database management
+- **JavaScript** - Web technologies
+- **Git** - Version control
+
+## Certifications
+
+| Certification | Provider | Level |
+|---------------|----------|-------|
+| CompTIA A+ | CompTIA | Foundation |
+| CompTIA Network+ | CompTIA | Intermediate |
+| CompTIA Security+ | CompTIA | Intermediate |
+| AWS Solutions Architect | Amazon | Associate/Professional |
+| Microsoft Azure Administrator | Microsoft | Associate |
+| Certified Information Systems Security Professional (CISSP) | ISC2 | Professional |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Programming** - Advanced
-- **Systems Analysis** - Advanced
+- **Systems Administration** - Advanced
+- **Network Management** - Advanced
+- **Security Practices** - Advanced
+- **Programming/Scripting** - Advanced
 - **Database Management** - Advanced
+- **Cloud Computing** - Advanced
+- **Troubleshooting** - Expert
+- **Documentation** - Advanced
 
 ### Soft Skills
+- **Problem Solving** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
+- **Attention to Detail** - Critical
+- **Adaptability** - Essential
 - **Teamwork** - Important
-- **Adaptability** - Important
+- **Time Management** - Important
+
+## Variant Occupations
+
+| Variant | Code | Description |
+|---------|------|-------------|
+| [Web Administrators](/occupations/Technology/WebAdministrators) | 15-1299.01 | Web environment management |
+| [GIS Technologists](/occupations/Technology/GeographicInformationSystemsTechnologistsAndTechnicians) | 15-1299.02 | Geographic data systems |
+| [Document Management Specialists](/occupations/Technology/DocumentManagementSpecialists) | 15-1299.03 | Enterprise document systems |
+| [Penetration Testers](/occupations/Technology/PenetrationTesters) | 15-1299.04 | Security testing |
+| [Information Security Engineers](/occupations/Technology/InformationSecurityEngineers) | 15-1299.05 | Security systems |
+| [Digital Forensics Analysts](/occupations/Technology/DigitalForensicsAnalysts) | 15-1299.06 | Cyber investigation |
+| [Blockchain Engineers](/occupations/Technology/BlockchainEngineers) | 15-1299.07 | Distributed ledger systems |
+| [Computer Systems Engineers](/occupations/Technology/ComputerSystemsEngineersArchitects) | 15-1299.08 | Systems architecture |
+| [IT Project Managers](/occupations/Technology/InformationTechnologyProjectManagers) | 15-1299.09 | Technology project management |
 
 ## Related Occupations
 
 ```mermaid
 graph LR
-    Current["ComputerOccupations"]
+    Current["Computer Occupations"]
 
     subgraph SameCategory["Computer and Mathematical"]
-        ComputerSystemsAnaly["Computer Systems Analysts"]
-        HealthInformaticsSpe["Health Informatics Specialists"]
-        InformationSecurityA["Information Security Analysts"]
-        ComputerAndInformati["Computer and Information Researc..."]
+        SD["Software Developers"]
+        CSA["Computer Systems Analysts"]
+        DBA["Database Administrators"]
+        NCSA["Network Administrators"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        ISA["Information Security Analysts"]
+        NA["Network Architects"]
+        PM["Project Managers"]
     end
 
     Current --- SameCategory
+    Current --- CrossFunctional
 ```
 
-## Industries
+## Industry Variations
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+### Technology
+- SaaS platform operations
+- DevOps and SRE roles
+- Cloud infrastructure management
+- Security operations centers
+
+### Financial Services
+- Trading systems operations
+- Regulatory technology management
+- Secure infrastructure operations
+- Business continuity planning
+
+### Government & Defense
+- Classified systems administration
+- Cybersecurity operations
+- GIS and intelligence systems
+- Federal IT modernization
+
+### Healthcare
+- EHR system administration
+- HIPAA compliance operations
+- Health information exchange
+- Medical device IT support
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["IT Support Specialist<br/>Junior Administrator"] --> Mid["Systems Administrator<br/>IT Specialist"]
+    Mid --> Senior["Senior Systems Engineer<br/>Security Specialist"]
+    Senior --> Lead["IT Manager<br/>Principal Engineer<br/>Security Architect"]
+    Lead --> Exec["IT Director<br/>VP Technology<br/>CTO/CISO"]
 ```
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's in Computer Science, Information Technology, or related field |
+| Alternative Paths | Associate degree + certifications, self-taught with experience |
+| Work Experience | Varies widely by variant (0-5+ years) |
+| On-the-Job Training | Continuous - technology changes rapidly |
+| Key Certifications | CompTIA, AWS, Azure, CISSP (depending on specialization) |
+
+## Departments
+
+This occupation typically works in:
+- [Information Technology](/departments/IT)
+- [Engineering](/departments/Engineering)
+- [Information Security](/departments/Security)
+- [Operations](/departments/Operations)
 
 ---
 

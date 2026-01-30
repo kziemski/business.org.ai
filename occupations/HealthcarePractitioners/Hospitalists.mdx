@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Hospitalists is a specialized variant within the Healthcare Practitioners and Technical category. Provide inpatient care predominantly in settings such as medical wards, acute care units, intensive care units, rehabilitation centers, or emergency rooms. 
+Hospitalists are physicians who specialize in the care of hospitalized patients. As the primary attending physicians for inpatients, they manage the full spectrum of medical conditions encountered in the hospital setting, from admission through discharge. Hospitalists coordinate care among specialists, nursing staff, and allied health professionals, serving as the central point of communication for complex medical decision-making.
+
+The hospitalist model has transformed inpatient medicine by providing dedicated, on-site physician coverage that improves efficiency, reduces length of stay, and enhances quality metrics. Hospitalists manage patients on medical wards, step-down units, and often in intensive care settings. They are skilled in procedures such as central line placement, lumbar punctures, paracentesis, and thoracentesis, and they lead rapid response and code teams.
+
+Beyond direct patient care, hospitalists play critical roles in hospital operations, quality improvement, patient safety initiatives, and transitions of care. They serve as physician leaders in hospital committees, develop clinical protocols, mentor medical residents, and drive systemic improvements in healthcare delivery. The specialty has grown rapidly since its inception in the mid-1990s and is now one of the largest medical specialties in the United States.
 
 ## Classification Hierarchy
 
@@ -29,8 +33,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1229.02 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 33 |
+| Median Annual Salary | $223,940 |
+| Employment | ~55,000 |
+| Projected Growth | 5% (2022-2032) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 33 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -39,59 +47,173 @@ graph TD
 mindmap
     root(("Hospitalists"))
         Diagnose
-            Continuous Care
+            Acute Medical Conditions
+            Chronic Disease Exacerbations
+            Hospital-Acquired Infections
         Treat
-            Continuous Care
-        Provide
-            Continuous Care
+            Medical Inpatients
+            Complex Multi-System Disease
+            Acute Decompensation
         Prescribe
-            Medications Regimens
-            Treatment Regimens
+            Medication Regimens
+            Treatment Protocols
+            Therapeutic Plans
         Order
-            Results
+            Diagnostic Tests
+            Laboratory Studies
+            Imaging
         Interpret
-            Results
-        Admit
-            Patients
+            Lab Results
+            Imaging Studies
+            Diagnostic Data
+        Coordinate
+            Specialist Consultations
+            Multidisciplinary Rounds
+            Care Transitions
         Conduct
             Discharge Planning
-            Discharge Patients
+            Patient Education
+            Goals-of-Care Discussions
+        Perform
+            Bedside Procedures
+            Central Lines
+            Lumbar Punctures
 ```
 
-### diagnose.ContinuousCare
+### diagnose.AcuteMedicalConditions
 
-Hospitalists diagnose continuous care as part of their core responsibilities.
-
-**Actions:**
-- `diagnose.ContinuousCare.to.HospitalInpatients`
-
-### treat.ContinuousCare
-
-Hospitalists treat continuous care as part of their core responsibilities.
+Hospitalists diagnose and evaluate a wide range of inpatient medical conditions.
 
 **Actions:**
-- `treat.ContinuousCare.to.HospitalInpatients`
+- `diagnose.AcuteMedicalConditions.in.HospitalInpatients` - Admission workups
+- `diagnose.ChronicDiseaseExacerbations.using.ClinicalAssessment` - Flare evaluation
+- `diagnose.HospitalAcquiredInfections.through.Surveillance` - Nosocomial screening
+- `diagnose.UnexplainedSymptoms.using.SystematicWorkup` - Diagnostic reasoning
 
-### provide.ContinuousCare
+### treat.MedicalInpatients
 
-Hospitalists provide continuous care as part of their core responsibilities.
+Hospitalists provide comprehensive treatment for admitted patients.
 
 **Actions:**
-- `provide.ContinuousCare.to.HospitalInpatients`
+- `treat.MedicalInpatients.using.EvidenceBasedProtocols` - Guideline-driven care
+- `treat.ComplexMultiSystemDisease.with.MultidisciplinaryApproach` - Team-based treatment
+- `treat.AcuteDecompensation.through.RapidIntervention` - Urgent stabilization
+- `prescribe.MedicationRegimens.for.InpatientCare` - Pharmacotherapy management
+
+### coordinate.CareTransitions
+
+Hospitalists manage smooth transitions across care settings.
+
+**Actions:**
+- `coordinate.SpecialistConsultations.for.ComplexCases` - Consult management
+- `coordinate.MultidisciplinaryRounds.with.CareTeam` - Team communication
+- `conduct.DischargePlanning.with.PatientsAndFamilies` - Safe discharge
+- `coordinate.PostDischargeFollowUp.with.PrimaryCare` - Continuity planning
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Medical Wards | General inpatient medicine floors |
+| Acute Care Units | Step-down and telemetry units |
+| Intensive Care Units | Medical ICU coverage |
+| Emergency Department | Admission and observation management |
+| Rehabilitation Centers | Post-acute care oversight |
+| Observation Units | Short-stay medical management |
+| Long-Term Acute Care | Complex chronic care hospitals |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Internal Medicine** - Expert
+- **Diagnostic Reasoning** - Expert
+- **Inpatient Pharmacotherapy** - Expert
+- **Bedside Procedures** - Advanced
+- **Critical Care Triage** - Advanced
+- **Quality Improvement Methods** - Advanced
+- **Ultrasound (Point-of-Care)** - Advanced
+- **Palliative Care Principles** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
+- **Communication** - Critical
+- **Care Coordination** - Critical
+- **Efficiency & Time Management** - Essential
+- **Leadership** - Essential
+- **Conflict Resolution** - Essential
+- **Empathy & Patient Rapport** - Essential
 - **Adaptability** - Important
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Undergraduate | 4-year bachelor's degree (pre-med) |
+| Medical School | 4-year MD or DO program |
+| Residency | 3 years Internal Medicine or Family Medicine |
+| Fellowship | Optional (Hospital Medicine not yet ABMS-recognized) |
+| Total Training | 11 years post-high school |
+| Licensure | State medical license required |
+| Board Certification | ABIM Internal Medicine or ABFM Family Medicine |
+| Continuing Education | MOC requirements per certifying board |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| ABIM Internal Medicine | American Board of Internal Medicine certification |
+| ABFM Family Medicine | American Board of Family Medicine (alternative pathway) |
+| Focused Practice in Hospital Medicine | ABIM recognition of hospitalist practice |
+| ACLS | Advanced Cardiovascular Life Support |
+| BLS | Basic Life Support |
+| FCCP | Fellow of the American College of Chest Physicians |
+| FHM | Fellow in Hospital Medicine (SHM) |
+| SFHM | Senior Fellow in Hospital Medicine |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Med["Medical School"] --> Res["Internal Medicine Residency"]
+    Res --> Hosp["Staff Hospitalist"]
+    Hosp --> Lead["Hospitalist Team Lead"]
+    Lead --> AD["Associate Medical Director"]
+    AD --> MD["Medical Director, Hospital Medicine"]
+    MD --> CMO["Chief Medical Officer"]
+
+    Hosp --> Nocturnist["Nocturnist"]
+    Hosp --> Academic["Academic Hospitalist"]
+    Academic --> APD["Associate Program Director"]
+    APD --> PD["Residency Program Director"]
+
+    Lead --> QI["Quality & Safety Officer"]
+    QI --> VPQA["VP Quality & Patient Safety"]
+```
+
+## Specializations
+
+| Focus Area | Description |
+|------------|-------------|
+| Perioperative Medicine | Surgical co-management and preoperative optimization |
+| Neurology Hospitalist | Stroke and neurological inpatient care |
+| Oncology Hospitalist | Cancer-related inpatient management |
+| Observation Medicine | Short-stay and clinical decision unit management |
+| Palliative Care | Goals-of-care and end-of-life inpatient care |
+| Quality & Patient Safety | Hospital-wide quality improvement initiatives |
+| Pediatric Hospital Medicine | Inpatient pediatric care (board-certified subspecialty) |
+| Proceduralist | Advanced bedside procedures focus |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Electronic Health Records (Epic, Cerner) | Documentation and order entry |
+| Clinical Decision Support Systems | Evidence-based alerting |
+| Secure Messaging (TigerConnect) | Team communication |
+| Point-of-Care Ultrasound | Bedside diagnostic imaging |
+| Discharge Planning Software | Care transition management |
+| Quality Dashboards | Performance metrics tracking |
+| Telemedicine Platforms | Remote consultation and follow-up |
+| Handoff Tools (I-PASS) | Standardized care transitions |
 
 ## Related Occupations
 
@@ -99,28 +221,46 @@ Hospitalists provide continuous care as part of their core responsibilities.
 graph LR
     Current["Hospitalists"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph InpatientTeam["Inpatient Care Team"]
+        RN["Registered Nurses"]
+        NP["Nurse Practitioners"]
+        PA["Physician Assistants"]
     end
 
-    Current --- SameCategory
+    subgraph PhysicianColleagues["Physician Colleagues"]
+        Internists["Internal Medicine Physicians"]
+        EmergMed["Emergency Medicine Physicians"]
+        Intensivists["Critical Care Physicians"]
+    end
+
+    subgraph Support["Support Services"]
+        CaseManagers["Case Managers"]
+        SocialWorkers["Social Workers"]
+        Pharmacists["Clinical Pharmacists"]
+    end
+
+    Current --- InpatientTeam
+    Current --- PhysicianColleagues
+    Current --- Support
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Primary Employment
+- [Academic Medical Centers](/industries/Healthcare/Hospitals/Teaching) - Teaching Hospitals
+- [Community Hospitals](/industries/Healthcare/Hospitals/Community) - Community Practice
+- [Veterans Affairs](/industries/Government/Federal) - VA Hospitalist Programs
+- [Long-Term Acute Care](/industries/Healthcare/LongTermCare) - Post-Acute Facilities
+- [Locum Tenens Agencies](/industries/Healthcare/StaffingAgencies) - Temporary Coverage
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Hospital Medicine](/departments/HospitalMedicine)
+- [Internal Medicine](/departments/InternalMedicine)
+- [Quality & Patient Safety](/departments/QualityPatientSafety)
+- [Medical Staff Office](/departments/MedicalStaff)
+- [Utilization Management](/departments/UtilizationManagement)
 
 ---
 

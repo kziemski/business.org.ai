@@ -2,7 +2,7 @@
 id: HealthcareDiagnosingORTreatingPractitioners
 name: "Healthcare Diagnosing or Treating Practitioners, All Other"
 code: "29-1299.00"
-type: Occupation
+type: OccupationCategory
 status: complete
 ---
 
@@ -12,17 +12,19 @@ status: complete
 
 ## Overview
 
-Healthcare Diagnosing or Treating Practitioners, All Other is classified under Healthcare Practitioners and Technical (SOC 29). All healthcare diagnosing or treating practitioners not listed separately.
+Healthcare Diagnosing or Treating Practitioners, All Other is a residual category that encompasses licensed healthcare practitioners who diagnose and/or treat patients but are not separately classified in the Standard Occupational Classification system. This includes practitioners in emerging or niche specialties such as naturopathic physicians, orthoptists, perfusionists, clinical ethicists, integrative medicine practitioners, and other licensed professionals with diagnostic or prescriptive authority.
+
+These practitioners typically hold doctoral or master's-level degrees, maintain professional licensure, and practice within defined scopes that include patient assessment, diagnosis, and treatment planning. They may work independently or collaboratively with other healthcare professionals depending on state licensing laws and institutional credentialing requirements.
+
+The category reflects the growing diversification of healthcare specialties driven by integrative medicine, personalized healthcare, and the recognition of complementary and alternative health disciplines within regulated healthcare frameworks.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
     Cat29["29 - Healthcare Practitioners and Technical"] --> Group291299["29-1299 Healthcare Diagnosing or Treating Practitioners, All Other"]
-    Group291299 --> Current["29-1299.00 Healthcare Diagnosing or Treating Practitioners, All Other"]
+    Group291299 --> Current["29-1299.00 All Other"]
     style Current fill:#e1f5fe
-    Group291299 --> V29129901["29-1299.01 Naturopathic Physicians"]
-    Group291299 --> V29129902["29-1299.02 Orthoptists"]
 ```
 
 ## Key Statistics
@@ -30,159 +32,56 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1299.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 126 |
+| Median Annual Salary | $76,000 |
+| Employment | ~35,000 |
+| Projected Growth | 8% (2022-2032) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
 | Source | O*NET |
 
-## Core Tasks
+## Included Occupations
 
-```mermaid
-mindmap
-    root(("HealthcareDiagnosingORTreatingPractitioners"))
-        Administer
-            Natural Medicines
-            Food
-            Botanical Extracts
-            Herbs
-            Dietary Supplements
-            Vitamins
-            Nutraceuticals
-            Amino Acids
-        Prescribe
-            Natural Medicines
-            Food
-            Botanical Extracts
-            Herbs
-            Dietary Supplements
-            Vitamins
-            Nutraceuticals
-            Amino Acids
-        Perform
-            Venipuncture
-            Skin Pricking
-            Mobilizations Adjustments
-            High Velocity Adjustments
-            Minor Surgical Procedures
-            Removing Warts
-            Moles
-            Cysts
-        Dispense
-            Natural Medicines
-            Food
-            Botanical Extracts
-            Herbs
-            Dietary Supplements
-            Vitamins
-            Nutraceuticals
-            Amino Acids
-        Document
-            Including Identifying Data
-            Chief Complaints
-            Illnesses
-            Previous Medical
-            Family Histories
-            Psychosocial Characteristics
-        Order
-            Diagnostic Imaging Procedures
-            Radiographs XRays
-            Ultrasounds
-            Mammograms
-            Bone Densitometry Tests
-            Refer Patients
-        Conduct
-            Physical Examinations Function Tests
-            Physiological Function Tests
-            Periodic Public Health Maintenance Activities
-            Immunizations
-            Screenings
-        Maintain
-            Professional Development
-            Postgraduate Education
-            Continuing Education
-            Preceptorships
-            Residency Programs
-        Treat
-            Minor Cuts
-            Abrasions
-            Contusions
-        Advise
-            Patients
-            Nutritional Medicine Regimens
-```
-
-### administer.NaturalMedicines
-
-Healthcare Diagnosing or Treating Practitioners, All Other administer natural medicines as part of their core responsibilities.
-
-**Actions:**
-- `administer.NaturalMedicines`
-- `administer.Food`
-- `administer.BotanicalExtracts`
-- `administer.Herbs`
-
-### prescribe.NaturalMedicines
-
-Healthcare Diagnosing or Treating Practitioners, All Other prescribe natural medicines as part of their core responsibilities.
-
-**Actions:**
-- `prescribe.NaturalMedicines`
-- `prescribe.Food`
-- `prescribe.BotanicalExtracts`
-- `prescribe.Herbs`
-
-### perform.Venipuncture
-
-Healthcare Diagnosing or Treating Practitioners, All Other perform venipuncture as part of their core responsibilities.
-
-**Actions:**
-- `perform.Venipuncture.to.BloodSamples`
-- `perform.SkinPricking.to.BloodSamples`
-- `perform.MobilizationsAdjustments.to.JointsTissues`
-- `perform.MobilizationsAdjustments.to.SoftTissues`
-
-
-## Skills & Competencies
-
-### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
-
-### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+| Specialty | SOC Code |
+|-----------|----------|
+| [Naturopathic Physicians](/occupations/HealthcarePractitioners/NaturopathicPhysicians) | 29-1299.01 |
+| [Orthoptists](/occupations/HealthcarePractitioners/Orthoptists) | 29-1299.02 |
+| Perfusionists | 29-1299.XX |
+| Other Diagnosing Practitioners | Various |
 
 ## Related Occupations
 
 ```mermaid
 graph LR
-    Current["HealthcareDiagnosingORTreatingPractitioners"]
+    Current["Diagnosing Practitioners, All Other"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph Practitioners["Related Practitioners"]
+        NDs["Naturopathic Physicians"]
+        Orthoptists["Orthoptists"]
+        Acupuncturists["Acupuncturists"]
     end
 
-    Current --- SameCategory
+    subgraph Conventional["Conventional Medicine"]
+        Physicians["Physicians"]
+        NPs["Nurse Practitioners"]
+        PAs["Physician Assistants"]
+    end
+
+    Current --- Practitioners
+    Current --- Conventional
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Ambulatory Healthcare](/industries/Healthcare/AmbulatoryHealthCare) - Outpatient Practice
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Inpatient Services
+- [Academic](/industries/Education) - Teaching and Research
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation category typically works in:
+- [Various Clinical Departments](/departments/ClinicalServices)
+- [Integrative Medicine](/departments/IntegrativeMedicine)
+- [Specialty Services](/departments/SpecialtyServices)
 
 ---
 

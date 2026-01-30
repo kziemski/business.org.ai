@@ -3,7 +3,10 @@ id: FinancialAndInvestmentAnalysts
 name: "Financial and Investment Analysts"
 code: "13-2051.00"
 type: Occupation
+category: Business
+subcategory: Financial
 status: complete
+certifications: ["CFA", "FRM", "CAIA", "CMT", "CFP"]
 ---
 
 # Financial and Investment Analysts
@@ -12,14 +15,20 @@ status: complete
 
 ## Overview
 
-Financial and Investment Analysts is classified under Business and Financial Operations (SOC 13). Conduct quantitative analyses of information involving investment programs or financial data of public or private institutions, including valuation of businesses.
+Financial and Investment Analysts are the quantitative minds behind investment decisions and corporate financial strategy. They evaluate financial data, create models, and provide recommendations on securities, mergers, acquisitions, and corporate finance decisions. This role spans sell-side research (investment banks advising clients), buy-side analysis (managing investments for institutions), and corporate finance (internal strategic analysis).
+
+The profession demands strong analytical skills, financial modeling expertise, and deep market knowledge. Analysts must synthesize vast amounts of financial data, economic indicators, and industry intelligence to produce actionable investment recommendations. Whether building discounted cash flow models, analyzing comparable company valuations, or forecasting earnings, these professionals provide the analytical foundation upon which billions of dollars in investment decisions are made.
+
+The field continues to evolve with algorithmic trading, alternative data sources, ESG integration, and machine learning approaches to investment analysis. Despite technological advances, the judgment and communication skills of experienced analysts remain essential for interpreting complex situations and advising clients and portfolio managers.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group132051["13-2051 Financial and Investment Analysts"]
-    Group132051 --> Current["13-2051.00 Financial and Investment Analysts"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G132["13-2000 Financial Specialists"]
+    G132 --> Base2051["13-2051 Financial and Investment Analysts"]
+    Base2051 --> Current["13-2051.00 Financial and Investment Analysts"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,103 +37,180 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-2051.00 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
-| Task Count | 82 |
+| Subcategory | Financial Specialists |
+| Median Salary | $95,080 |
+| Employment | ~295,000 |
+| Projected Growth | 9% (Faster than average) |
+| Core Tasks | 12+ |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("FinancialAndInvestmentAnalysts"))
-        Advise
-            Clients
+    root(("Financial Analysts"))
         Analyze
-            Financialperformance
-            Operational Performance
-        Assess
-            Companies As Investments
-        Conduct
-            Financial Analyses Related
-        Create
-            Client Presentations
-        Determine
-            Prices
+            Financial Statements
+            Market Trends
+            Investment Opportunities
+            Economic Data
+        Evaluate
+            Securities
+            Business Valuations
+            Risk Profiles
+        Prepare
+            Research Reports
+            Financial Models
+            Investment Recommendations
+        Present
+            Findings
+            Recommendations
+            Market Outlooks
+        Monitor
+            Portfolio Performance
+            Market Conditions
+            Industry Trends
         Develop
-            Client Relationships
-        Maintain
-            Client Relationships
+            Investment Strategies
+            Financial Models
+            Valuation Frameworks
 ```
 
-### advise.Clients
+### analyze.FinancialData
 
-Financial and Investment Analysts advise clients as part of their core responsibilities.
-
-**Actions:**
-- `advise.Clients.on.Aspects.of.Capitalization`
-- `advise.Clients.on.Amounts`
-- `advise.Clients.on.Sources`
-- `advise.Clients.on.Timing`
-
-### analyze.Financialperformance
-
-Financial and Investment Analysts analyze financialperformance as part of their core responsibilities.
+Conduct quantitative analyses of financial data and investment programs.
 
 **Actions:**
-- `analyze.Financialperformance.of.CompaniesFacingFinancialDifficulties.to.Identify`
-- `analyze.Financialperformance.of.RecommendRemedies`
-- `analyze.OperationalPerformance.of.CompaniesFacingFinancialDifficulties.to.Identify`
-- `analyze.OperationalPerformance.of.RecommendRemedies`
+- `analyze.FinancialStatements.to.evaluate.CompanyPerformance` - Assess financial health
+- `analyze.MarketTrends.to.identify.InvestmentOpportunities` - Spot market opportunities
+- `analyze.EconomicData.to.forecast.MarketConditions` - Predict economic trends
+- `conduct.QuantitativeAnalyses.of.InvestmentPrograms` - Model investment scenarios
 
-### assess.CompaniesAsInvestments
+### evaluate.Securities
 
-Financial and Investment Analysts assess companies as investments as part of their core responsibilities.
+Evaluate securities and provide investment recommendations.
 
 **Actions:**
-- `assess.CompaniesAsInvestments.for.Clients.by.ExaminingCompanyFacilities`
+- `evaluate.Securities.to.determine.Value` - Assess intrinsic value
+- `evaluate.BusinessValuations.for.MergersAndAcquisitions` - Value M&A targets
+- `evaluate.RiskProfiles.of.Investments` - Assess investment risk
+- `determine.IntrinsicValue.of.PublicSecurities` - Calculate fair value
+
+### prepare.Reports
+
+Prepare research reports and investment recommendations.
+
+**Actions:**
+- `prepare.ResearchReports.for.Clients` - Write client research
+- `prepare.FinancialModels.to.project.Performance` - Build projection models
+- `prepare.InvestmentRecommendations.based.on.Analysis` - Formulate recommendations
+- `present.Findings.to.Clients` - Communicate results
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Financial Modeling** - Expert
+- **Valuation Methodologies (DCF, Comps, Precedent)** - Expert
+- **Excel/VBA** - Expert
+- **Bloomberg Terminal** - Advanced
+- **Python/R for Analysis** - Advanced
+- **SQL/Database Queries** - Proficient
+- **Statistical Analysis** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
+- **Analytical Thinking** - Critical
+- **Attention to Detail** - Critical
+- **Communication (Written/Verbal)** - Essential
+- **Presentation Skills** - Essential
+- **Time Management** - Important
 - **Teamwork** - Important
-- **Adaptability** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["FinancialAndInvestmentAnalysts"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's degree in Finance, Economics, or related field |
+| Advanced Degree | MBA or Master's in Finance preferred for advancement |
+| Key Certifications | CFA (Chartered Financial Analyst) - 3 exams + 4 years experience |
+| Additional Certs | FRM (Financial Risk Manager), CAIA, CMT |
+| Work Experience | 2-4 years for CFA charterholder |
+| On-the-Job Training | Extensive - firm-specific models and processes |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Analyst"] --> Mid["Associate / Senior Analyst"]
+    Mid --> Senior["VP / Portfolio Manager"]
+    Senior --> Director["Director / Fund Manager"]
+    Director --> Executive["Managing Director / CIO"]
+
+    Alt1["Research Analyst"] --> Senior
+    Alt2["Quantitative Analyst"] --> Director
+
+    subgraph Tracks["Career Tracks"]
+        SellSide["Sell-Side Research"]
+        BuySide["Buy-Side / PM"]
+        Corporate["Corporate Finance"]
+        Quant["Quantitative"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Investment Banking (Sell-Side)** | M&A, equity research | Valuation, pitch books, research reports |
+| **Asset Management (Buy-Side)** | Portfolio management | Security selection, portfolio construction |
+| **Private Equity** | Deal analysis | LBO modeling, due diligence |
+| **Hedge Funds** | Trading strategies | Quantitative analysis, alpha generation |
+| **Corporate Finance** | Internal strategy | FP&A, capital allocation, M&A |
+| **Credit Analysis** | Debt evaluation | Credit ratings, bond analysis |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Data Terminals** | Bloomberg, FactSet, Refinitiv, Capital IQ |
+| **Modeling** | Excel, VBA, Python, R |
+| **Databases** | SQL, Access, Alteryx |
+| **Visualization** | Tableau, Power BI |
+| **Research** | Morningstar, Preqin, PitchBook |
+| **Portfolio Systems** | Aladdin, Charles River, SimCorp |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    FA["Financial Analysts"]
+
+    subgraph SameCategory["Financial Specialists"]
+        BA["Budget Analysts"]
+        CA["Credit Analysts"]
+        PFA["Personal Financial Advisors"]
+        FRS["Financial Risk Specialists"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        FM["Financial Managers"]
+        IFM["Investment Fund Managers"]
+        MA["Management Analysts"]
+    end
+
+    FA --- SameCategory
+    FA --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Investment Research](/departments/InvestmentResearch)
+- [Portfolio Management](/departments/PortfolioManagement)
+- [Corporate Development](/departments/CorporateDevelopment)
+- [Financial Planning & Analysis](/departments/FPA)
+- [Treasury](/departments/Treasury)
 
 ---
 

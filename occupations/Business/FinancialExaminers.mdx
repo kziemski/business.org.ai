@@ -3,7 +3,9 @@ id: FinancialExaminers
 name: "Financial Examiners"
 code: "13-2061.00"
 type: Occupation
+category: Business
 status: complete
+certifications: ["CPA", "CFE", "CRCM", "CAMS"]
 ---
 
 # Financial Examiners
@@ -12,14 +14,19 @@ status: complete
 
 ## Overview
 
-Financial Examiners is an occupation within the Business and Financial Operations category. Enforce or ensure compliance with laws and regulations governing financial and securities institutions and financial and real estate transactions. 
+Financial Examiners are regulatory professionals who ensure that financial institutions -- including banks, credit unions, insurance companies, and securities firms -- comply with applicable laws and regulations. They conduct on-site examinations, review financial records, assess risk management practices, and evaluate the safety and soundness of regulated entities. Their work protects depositors, policyholders, investors, and the broader financial system from fraud, mismanagement, and systemic risk.
+
+These professionals work primarily for federal and state regulatory agencies including the OCC, FDIC, Federal Reserve, SEC, state banking departments, and state insurance departments. They analyze balance sheets, loan portfolios, capital adequacy, liquidity positions, and compliance programs to identify weaknesses that could threaten institutional stability or consumer protection. The role demands deep expertise in banking law, accounting standards, risk assessment, and the specific regulatory frameworks governing different types of financial institutions.
+
+The profession has expanded significantly since the 2008 financial crisis, with heightened regulatory scrutiny, new compliance requirements (Dodd-Frank, Basel III, BSA/AML), and growing attention to emerging risks including cybersecurity, fintech disruption, climate-related financial risk, and cryptocurrency activities.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group132061["13-2061 Financial Examiners"]
-    Group132061 --> Current["13-2061.00 Financial Examiners"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G132061["13-2061 Financial Examiners"]
+    G132061 --> Current["13-2061.00 Financial Examiners"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,8 +35,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-2061.00 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
-| Task Count | 95 |
+| Median Salary | $84,300 |
+| Employment | ~67,000 |
+| Projected Growth | 21% (Much faster than average) |
+| Task Count | 28 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,102 +48,166 @@ graph TD
 ```mermaid
 mindmap
     root(("Financial Examiners"))
-        Direct
-            Informal Meetings
-        Participate
-            Informal Meetings
-        Recommend
-            Actions
-        Prepare
-            Reports
-            Exhibits
-            Other Supporting Schedules Detail Institutions Safety Compliance
-            Soundness Compliance
-        Resolve
-            Problems
-        Investigate
-            Activities
-        Review
-            Balance Sheets
-            Operating Income
-            Expense Accounts
-            Loan Documentation
-            Audit Reports
-        Plan
-            Supervise Review Work
+        Examine
+            Financial Records
+            Loan Portfolios
+            Capital Adequacy
+        Evaluate
+            Risk Management
+            Compliance Programs
+            Internal Controls
+        Verify
+            Regulatory Compliance
+            Transaction Legitimacy
+            Reporting Accuracy
+        Assess
+            Safety and Soundness
+            Consumer Protection
+            BSA/AML Compliance
+        Report
+            Examination Findings
+            Corrective Actions
+            Risk Ratings
+        Monitor
+            Industry Trends
+            Emerging Risks
+            Regulatory Changes
 ```
 
-### direct.InformalMeetings
+### examine.FinancialRecords
 
-Financial Examiners direct informal meetings as part of their core responsibilities.
-
-**Actions:**
-- `direct.InformalMeetings.with.BankDirectors`
-- `direct.InformalMeetings.with.Trustees`
-- `direct.InformalMeetings.with.Seni`
-- `direct.InformalMeetings.with.Management`
-
-### participate.InformalMeetings
-
-Financial Examiners participate informal meetings as part of their core responsibilities.
+Conduct detailed examinations of financial institution records and operations.
 
 **Actions:**
-- `participate.InformalMeetings.with.BankDirectors`
-- `participate.InformalMeetings.with.Trustees`
-- `participate.InformalMeetings.with.Seni`
-- `participate.InformalMeetings.with.Management`
+- `examine.FinancialRecords.to.assess.InstitutionalHealth` - Evaluate financial condition
+- `examine.LoanPortfolios.to.evaluate.CreditQuality` - Assess lending risk
+- `examine.CapitalAdequacy.to.verify.RegulatoryCompliance` - Test capital ratios
+- `verify.TransactionRecords.to.detect.Irregularities` - Identify suspicious activity
 
-### recommend.Actions
+### evaluate.RiskManagement
 
-Financial Examiners recommend actions as part of their core responsibilities.
+Evaluate the effectiveness of risk management practices and internal controls.
 
 **Actions:**
-- `recommend.Actions.to.ensure.ComplianceWithLaws`
-- `recommend.Actions.to.Regulations`
-- `recommend.Actions.to.ToProtectSolvencyOfInstitutions`
+- `evaluate.RiskManagement.to.assess.InstitutionalResilience` - Rate risk practices
+- `evaluate.CompliancePrograms.for.RegulatoryAdherence` - Review compliance systems
+- `evaluate.InternalControls.to.identify.Weaknesses` - Test control effectiveness
+- `assess.BSAAMLCompliance.to.prevent.MoneyLaundering` - Examine AML programs
+
+### report.ExaminationFindings
+
+Prepare examination reports with findings, recommendations, and corrective actions.
+
+**Actions:**
+- `report.ExaminationFindings.to.RegulatoryAuthorities` - Document results
+- `recommend.CorrectiveActions.for.IdentifiedDeficiencies` - Prescribe remediation
+- `assign.RiskRatings.to.ExaminedInstitutions` - Rate institutional health
+- `monitor.CorrectiveActionProgress.for.SubsequentExaminations` - Track remediation
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Banking Law & Regulations** - Expert
+- **Financial Statement Analysis** - Expert
+- **Risk Assessment & Management** - Expert
+- **BSA/AML Compliance** - Advanced
+- **Accounting Standards (GAAP)** - Advanced
+- **Credit Analysis** - Advanced
+- **Capital Adequacy (Basel III)** - Advanced
+- **Cybersecurity Risk Assessment** - Proficient
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Analytical Thinking** - Critical
+- **Attention to Detail** - Critical
+- **Written Communication** - Essential
+- **Professional Skepticism** - Essential
+- **Interpersonal Skills** - Important
+- **Time Management** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Financial Examiners"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's degree in Finance, Accounting, Economics, or related field |
+| Advanced Degree | Master's or MBA preferred for advancement |
+| Key Certifications | CPA, CFE (Certified Fraud Examiner), CRCM (Certified Regulatory Compliance Manager) |
+| Additional Certs | CAMS (Certified Anti-Money Laundering Specialist) |
+| Federal Training | Extensive agency-specific examination training |
+| Work Experience | 2-5 years in banking, accounting, or financial regulation |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Examiner Trainee / Assistant Examiner"] --> Mid["Financial Examiner / Commissioned Examiner"]
+    Mid --> Senior["Senior Examiner / Examiner-in-Charge"]
+    Senior --> Director["Field Office Manager / Regional Director"]
+    Director --> Executive["Deputy Comptroller / Division Director"]
+
+    Alt1["Bank Auditor"] --> Mid
+    Alt2["Compliance Officer"] --> Mid
+
+    subgraph Tracks["Career Tracks"]
+        Safety["Safety & Soundness"]
+        Compliance["Consumer Compliance"]
+        BSA["BSA/AML"]
+        Specialty["Specialty (IT, Trust, Capital Markets)"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Federal Banking (OCC, FDIC, Fed)** | National banks, state banks | Safety & soundness, capital adequacy, CAMELS ratings |
+| **State Banking** | State-chartered institutions | State law compliance, chartering, branching |
+| **Securities (SEC, FINRA)** | Broker-dealers, advisors | Net capital, customer protection, fiduciary duties |
+| **Insurance** | Insurance companies | Solvency, reserves, market conduct |
+| **Credit Unions (NCUA)** | Credit union safety | CAMEL ratings, share insurance, field of membership |
+| **Consumer Financial Protection (CFPB)** | Consumer protection | Fair lending, UDAAP, disclosure compliance |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Examination** | FFIEC tools, AIRES, MIDAS |
+| **Data Analysis** | Excel (advanced), SAS, Python, ACL/IDEA |
+| **Regulatory Systems** | NED, FOIA portals, FinCEN systems |
+| **Financial Data** | Bloomberg, S&P Global, SNL Financial |
+| **Document Management** | SharePoint, secure examination portals |
+| **Communication** | Microsoft 365, encrypted email |
+| **Risk Modeling** | Moody's Analytics, FIS, custom models |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    FE["Financial Examiners"]
+
+    subgraph SameCategory["Financial Specialists"]
+        FA["Financial Analysts"]
+        AA["Accountants and Auditors"]
+        FRS["Financial Risk Specialists"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        CO["Compliance Officers"]
+        FEI["Fraud Examiners"]
+        BA["Bank Auditors"]
+    end
+
+    FE --- SameCategory
+    FE --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Bank Supervision](/departments/BankSupervision)
+- [Examination Division](/departments/Examination)
+- [Consumer Compliance](/departments/ConsumerCompliance)
+- [BSA/AML Enforcement](/departments/BSA)
+- [Risk Analysis](/departments/RiskAnalysis)
 
 ---
 

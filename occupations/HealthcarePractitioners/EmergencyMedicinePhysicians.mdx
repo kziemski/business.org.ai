@@ -8,11 +8,15 @@ status: complete
 
 # Emergency Medicine Physicians
 
-> Make immediate medical decisions and act to prevent death or further disability. Provide immediate recognition, evaluation, care, stabilization, and disposition of patients. May direct emergency medical staff in an emergency department.
+> Make immediate medical decisions and act to prevent death or further disability. Provide immediate recognition, evaluation, care, stabilization, and disposition of patients.
 
 ## Overview
 
-Emergency Medicine Physicians is an occupation within the Healthcare Practitioners and Technical category. Make immediate medical decisions and act to prevent death or further disability. Provide immediate recognition, evaluation, care, stabilization, and disposition of patients.
+Emergency Medicine Physicians are specialists trained to evaluate, stabilize, and manage patients presenting with acute illness or injury across the full spectrum of medical, surgical, and psychiatric emergencies. They serve as the frontline of acute care, treating undifferentiated patients of all ages and acuity levels in emergency departments, trauma centers, and urgent care settings. Their expertise spans resuscitation, trauma management, toxicology, procedural sedation, and critical care stabilization.
+
+Emergency physicians must make rapid, high-stakes decisions with incomplete information, prioritizing multiple patients simultaneously. They perform a wide range of procedures including intubation, central venous access, chest tube placement, fracture reduction, laceration repair, lumbar puncture, and point-of-care ultrasound. The specialty requires expertise in disaster medicine, mass casualty management, and prehospital medical direction.
+
+The field has evolved to include emergency medical services (EMS) oversight, toxicology consultation, sports medicine, palliative emergency care, and clinical informatics. Advances in point-of-care ultrasound, telemedicine for stroke evaluation, and sepsis protocols have expanded the emergency physician's diagnostic and therapeutic capabilities.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1214.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 78 |
+| Median Annual Salary | $250,404 |
+| Employment | ~42,000 |
+| Projected Growth | 5% (2022-2032) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 65+ |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,88 +45,167 @@ graph TD
 ```mermaid
 mindmap
     root(("Emergency Medicine Physicians"))
-        Select
-            Diagnostic Procedures
-            Laboratory Tests
-            Electrocardiograms
-            Emergency Ultrasounds
-            Radiographs
-        Request
-            Diagnostic Procedures
-            Laboratory Tests
-            Electrocardiograms
-            Emergency Ultrasounds
-            Radiographs
-        Perform
-            Diagnostic Procedures
-            Laboratory Tests
-            Electrocardiograms
-            Emergency Ultrasounds
-            Radiographs
-        Interpret
-            Diagnostic Procedures
-            Electrocardiograms
-            Emergency Ultrasounds
-            Radiographs
         Evaluate
-            Patients Vital Signs Data
-            Laboratory Data
+            Undifferentiated Patients
+            Trauma Victims
+            Acute Medical Emergencies
         Stabilize
-            Patients
-        Analyze
-            Records
-            Examination Information
-            Test Results
-        Consult
-            Other Professionals
-            Social Workers
-            Continued Observation
-            Transition
+            Airway Management
+            Hemorrhage Control
+            Cardiac Arrest
+        Diagnose
+            Acute Conditions
+            Life-Threatening Emergencies
+            Time-Sensitive Diagnoses
+        Perform
+            Intubation
+            Central Lines
+            Chest Tubes
+            Fracture Reduction
+        Coordinate
+            Trauma Team Activation
+            Specialist Consultation
+            Disposition Decisions
+        Direct
+            EMS Medical Direction
+            Disaster Response
+            Mass Casualty Triage
 ```
 
-### select.DiagnosticProcedures
+### evaluate.UndifferentiatedPatients
 
-Emergency Medicine Physicians select diagnostic procedures as part of their core responsibilities.
-
-**Actions:**
-- `select.DiagnosticProcedures`
-- `select.LaboratoryTests`
-- `select.Electrocardiograms`
-- `select.EmergencyUltrasounds`
-
-### request.DiagnosticProcedures
-
-Emergency Medicine Physicians request diagnostic procedures as part of their core responsibilities.
+Emergency physicians assess patients with unknown diagnoses.
 
 **Actions:**
-- `request.DiagnosticProcedures`
-- `request.LaboratoryTests`
-- `request.Electrocardiograms`
-- `request.EmergencyUltrasounds`
+- `evaluate.UndifferentiatedPatients.using.RapidAssessment` - Primary survey
+- `evaluate.TraumaVictims.using.ATLSProtocol` - Trauma evaluation
+- `diagnose.AcuteConditions.using.PointOfCareUltrasound` - Bedside imaging
+- `stabilize.CriticalPatients.using.Resuscitation` - Emergency stabilization
 
-### perform.DiagnosticProcedures
+### perform.EmergencyProcedures
 
-Emergency Medicine Physicians perform diagnostic procedures as part of their core responsibilities.
+Emergency physicians execute life-saving interventions.
 
 **Actions:**
-- `perform.DiagnosticProcedures`
-- `perform.LaboratoryTests`
-- `perform.Electrocardiograms`
-- `perform.EmergencyUltrasounds`
+- `perform.EndotrachealIntubation.for.AirwayManagement` - Airway control
+- `perform.CentralVenousAccess.for.ResuscitationAccess` - Vascular access
+- `perform.ChestTubePlacement.for.Pneumothorax` - Pleural drainage
+- `perform.ProceduralSedation.for.PainfulProcedures` - Sedation management
+
+### coordinate.EmergencyCare
+
+Emergency physicians orchestrate multidisciplinary emergency response.
+
+**Actions:**
+- `coordinate.TraumaTeamActivation.for.MajorTrauma` - Trauma leadership
+- `coordinate.SpecialistConsultation.for.AcuteConditions` - Consult coordination
+- `direct.EMSMedicalDirection.for.PrehospitalCare` - EMS oversight
+- `manage.DisasterResponse.using.IncidentCommandSystem` - Mass casualty management
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Hospital Emergency Departments | Primary practice setting |
+| Level I-IV Trauma Centers | Trauma team leadership |
+| Freestanding Emergency Departments | Community emergency care |
+| Urgent Care Centers | Lower-acuity emergencies |
+| Air Medical Services | Flight physician |
+| Disaster Response Teams | DMAT and field hospitals |
+| Telemedicine | Tele-ED consultation |
+| Military/Tactical Medicine | Combat casualty care |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Resuscitation & ACLS/ATLS** - Expert
+- **Airway Management** - Expert
+- **Point-of-Care Ultrasound** - Expert
+- **Procedural Skills** - Expert
+- **Trauma Management** - Expert
+- **Toxicology** - Advanced
+- **Critical Care Stabilization** - Advanced
+- **Pediatric Emergency Medicine** - Advanced
 
 ### Soft Skills
+- **Rapid Decision Making** - Critical
+- **Multitasking** - Critical
+- **Crisis Leadership** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Stress Tolerance** - Essential
+- **Teamwork** - Essential
+- **Adaptability** - Essential
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Undergraduate | 4-year bachelor's degree (pre-med) |
+| Medical School | 4-year MD or DO program |
+| EM Residency | 3-4 years |
+| Fellowship | 1-2 years for subspecialization |
+| Total Training | 11-14 years post-high school |
+| Licensure | State medical license |
+| Board Certification | ABEM (American Board of Emergency Medicine) |
+| MOC | Continuous certification requirements |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| ABEM Emergency Medicine | Primary board certification |
+| ABEM EMS | Emergency Medical Services subspecialty |
+| ABEM Toxicology | Medical toxicology subspecialty |
+| ABEM Sports Medicine | Sports medicine subspecialty |
+| ATLS | Advanced Trauma Life Support |
+| ACLS | Advanced Cardiovascular Life Support |
+| PALS | Pediatric Advanced Life Support |
+| FACEP | Fellow of ACEP |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Med["Medical School"] --> Res["EM Residency"]
+    Res --> Fellow["Subspecialty Fellowship"]
+    Res --> Attending["Attending EM Physician"]
+    Fellow --> Attending
+    Attending --> MedDir["ED Medical Director"]
+    MedDir --> CMO["Chief Medical Officer"]
+
+    Attending --> Academic["Academic Emergency Physician"]
+    Academic --> ResDir["Residency Program Director"]
+    ResDir --> Chair["Department Chair"]
+
+    Attending --> EMSDir["EMS Medical Director"]
+    Attending --> Admin["Emergency Services Administrator"]
+```
+
+## Specializations
+
+| Subspecialty | Focus Area |
+|-------------|------------|
+| Pediatric Emergency Medicine | Pediatric emergencies |
+| Medical Toxicology | Poisoning and overdose |
+| Emergency Medical Services | Prehospital medicine |
+| Wilderness Medicine | Austere environment care |
+| Sports Medicine | Athletic emergencies |
+| Ultrasound | Advanced bedside imaging |
+| Critical Care | Emergency critical care |
+| Disaster Medicine | Mass casualty and disaster |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Point-of-Care Ultrasound (POCUS) | Bedside diagnostic imaging |
+| Cardiac Monitors & Defibrillators | Rhythm monitoring and intervention |
+| Video Laryngoscopes (GlideScope, C-MAC) | Advanced airway management |
+| CT Scanner (Rapid Protocol) | Emergency diagnostic imaging |
+| Electronic Health Records (with ED modules) | Documentation and tracking |
+| Patient Tracking Boards | ED flow management |
+| Telemedicine Systems (Telestroke) | Remote specialist consultation |
+| Trauma Bay Equipment | Full resuscitation capability |
 
 ## Related Occupations
 
@@ -126,28 +213,46 @@ Emergency Medicine Physicians perform diagnostic procedures as part of their cor
 graph LR
     Current["Emergency Medicine Physicians"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph EDTeam["ED Team"]
+        EmergNurse["Emergency Nurses"]
+        PA["Physician Assistants"]
+        NP["Nurse Practitioners"]
     end
 
-    Current --- SameCategory
+    subgraph Prehospital["Prehospital"]
+        Paramedics["Paramedics"]
+        EMTs["Emergency Medical Technicians"]
+        FlightMedics["Flight Paramedics"]
+    end
+
+    subgraph Specialists["Consulting Specialists"]
+        Surgeons["Trauma Surgeons"]
+        Hospitalists["Hospitalists"]
+        Intensivists["Intensivists"]
+    end
+
+    Current --- EDTeam
+    Current --- Prehospital
+    Current --- Specialists
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Primary Employment
+- [Freestanding EDs](/industries/Healthcare/AmbulatoryHealthCare) - Emergency Centers
+- [Academic Medical Centers](/industries/Healthcare/Hospitals/Teaching) - Teaching & Research
+- [Government](/industries/Government) - Military and VA
+- [Air Medical Services](/industries/Transportation/AirAmbulance) - Flight Medicine
+- [Locum Tenens](/industries/Healthcare/StaffingAgencies) - Temporary Coverage
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Emergency Department](/departments/EmergencyDepartment)
+- [Trauma Services](/departments/TraumaServices)
+- [Emergency Medical Services](/departments/EMS)
+- [Observation Medicine](/departments/ObservationMedicine)
+- [Disaster Preparedness](/departments/DisasterPreparedness)
 
 ---
 

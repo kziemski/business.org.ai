@@ -8,11 +8,15 @@ status: complete
 
 # Physicians, All Other
 
-> All physicians not listed separately.
+> All physicians not listed separately, including specialists in fields such as infectious disease, nephrology, pulmonology, endocrinology, gastroenterology, hematology, rheumatology, and other internal medicine subspecialties.
 
 ## Overview
 
-Physicians, All Other is classified under Healthcare Practitioners and Technical (SOC 29). All physicians not listed separately.
+Physicians, All Other encompasses medical doctors and doctors of osteopathy who practice in specialties and subspecialties not separately classified, including infectious disease specialists, nephrologists, pulmonologists, endocrinologists, gastroenterologists, hematologists, rheumatologists, geriatricians, and other internal medicine and medical subspecialists. These physicians diagnose and treat complex medical conditions within their areas of expertise through clinical evaluation, diagnostic testing, pharmacotherapy, and procedural interventions.
+
+Each subspecialty requires fellowship training following internal medicine or other primary specialty residency. Infectious disease specialists manage complex infections, antimicrobial stewardship, and HIV/AIDS. Nephrologists treat kidney disease and manage dialysis. Pulmonologists manage respiratory diseases and perform bronchoscopy. Endocrinologists treat hormonal disorders including diabetes and thyroid disease. Gastroenterologists diagnose and treat digestive disorders and perform endoscopic procedures.
+
+Modern medical subspecialty practice has advanced with precision medicine, targeted therapies, advanced diagnostics (genomics, proteomics), minimally invasive procedures, telemedicine, and multidisciplinary care models. These physicians serve as consultants to primary care providers and other specialists, managing the most complex cases within their domains.
 
 ## Classification Hierarchy
 
@@ -21,11 +25,6 @@ graph TD
     Cat29["29 - Healthcare Practitioners and Technical"] --> Group291229["29-1229 Physicians, All Other"]
     Group291229 --> Current["29-1229.00 Physicians, All Other"]
     style Current fill:#e1f5fe
-    Group291229 --> V29122901["29-1229.01 Allergists and Immunologists"]
-    Group291229 --> V29122902["29-1229.02 Hospitalists"]
-    Group291229 --> V29122903["29-1229.03 Urologists"]
-    Group291229 --> V29122904["29-1229.04 Physical Medicine and Rehabilitation Physicians"]
-    Group291229 --> V29122905["29-1229.05 Preventive Medicine Physicians"]
 ```
 
 ## Key Statistics
@@ -33,107 +32,149 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1229.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 56 |
+| Median Annual Salary | $229,300 |
+| Employment | ~75,000 |
+| Projected Growth | 3% (2022-2032) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 50+ |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("Physicians"))
-        Perform
-            Diagnostic Tests
-            Skin Pricks
-            Intradermal
-            Patch
-            Delayed Hypersensitivity Tests
-            Allergen Provocation Tests
-            Nasal
-            Conjunctival
-        Prescribe
-            Medication
-            Antihistamines
-            Nasal
-            Oral
-            Topical
-            Inhaled Glucocorticosteroids
-        Provide
-            Therapies
-            Allergen Immunotherapy
-            Immunoglobin Therapy
-            Allergy Consultation Or Education
-            Immunology Consultation Or Education
-        Order
-            Skin Pricks
-            Intradermal
-            Patch
-            Delayed Hypersensitivity Tests
-        Educate
-            Patients
-            Prognoses
-            Treatments
-        Conduct
-            Physical Examinations
-            Laboratory Research
-            Clinical Research
+    root(("Physicians, All Other"))
         Diagnose
-            Allergic Conditions
-            Immunologic Conditions
+            Complex Medical Conditions
+            Subspecialty Diseases
+            Rare Disorders
         Treat
-            Allergic Conditions
-            Immunologic Conditions
-        Assess
-            Risks
-            Benefits
-        Interpret
-            Diagnostic Test Results
+            Pharmacotherapy
+            Procedural Interventions
+            Disease Management
+        Consult
+            Primary Care Referrals
+            Inpatient Consultations
+            Multidisciplinary Teams
+        Perform
+            Endoscopy
+            Bronchoscopy
+            Dialysis Management
+            Biopsies
+        Research
+            Clinical Trials
+            Disease Mechanisms
+            Treatment Outcomes
+        Educate
+            Medical Students
+            Residents
+            Patients
 ```
 
-### perform.DiagnosticTests
+### diagnose.SubspecialtyConditions
 
-Physicians, All Other perform diagnostic tests as part of their core responsibilities.
-
-**Actions:**
-- `perform.DiagnosticTests`
-- `perform.SkinPricks`
-- `perform.Intradermal`
-- `perform.Patch`
-
-### prescribe.Medication
-
-Physicians, All Other prescribe medication as part of their core responsibilities.
+Subspecialist physicians evaluate complex medical problems.
 
 **Actions:**
-- `prescribe.Medication`
-- `prescribe.Antihistamines`
-- `prescribe.Nasal`
-- `prescribe.Oral`
+- `diagnose.ComplexInfections.using.MicrobiologicData` - ID evaluation
+- `diagnose.KidneyDisease.using.RenalFunctionTesting` - Nephrology
+- `diagnose.EndocrineDisorders.using.HormoneAssays` - Endocrinology
+- `diagnose.GastrointestinalDisease.using.Endoscopy` - GI evaluation
 
-### provide.Therapies
+### treat.ChronicAndAcuteConditions
 
-Physicians, All Other provide therapies as part of their core responsibilities.
+Subspecialists manage complex medical therapy.
 
 **Actions:**
-- `provide.Therapies.to.TreatImmuneConditions`
-- `provide.AllergenImmunotherapy.to.TreatImmuneConditions`
-- `provide.ImmunoglobinTherapy.to.TreatImmuneConditions`
-- `provide.AllergyConsultationOrEducation.to.PhysiciansHealthCareProviders`
+- `manage.ChronicKidneyDisease.including.DialysisInitiation` - CKD management
+- `manage.DiabetesMellitus.using.InsulinAndOralAgents` - Diabetes care
+- `manage.AutoimmuneDisease.using.ImmunosuppressiveTherapy` - Rheumatology
+- `perform.AntimicrobialStewardship.for.InfectionManagement` - ID stewardship
 
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Hospital-Based Practice | Inpatient consultation and procedures |
+| Outpatient Subspecialty Clinics | Ambulatory subspecialty care |
+| Academic Medical Centers | Teaching and research |
+| Group Practices | Multi-specialty groups |
+| VA Medical Centers | Veterans specialty care |
+| Telemedicine | Remote subspecialty consultation |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Clinical Diagnosis** - Expert
+- **Subspecialty Procedures** - Expert
+- **Pharmacotherapy** - Expert
+- **Diagnostic Interpretation** - Expert
+- **Research Methods** - Advanced
+- **Evidence-Based Medicine** - Expert
 
 ### Soft Skills
+- **Clinical Reasoning** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Empathy** - Essential
+- **Leadership** - Important
+- **Teaching** - Important
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Medical School | 4-year MD or DO |
+| Residency | 3 years internal medicine (or primary specialty) |
+| Fellowship | 1-3 years subspecialty |
+| Board Certification | ABIM subspecialty boards |
+| Total Training | 11-14 years post-high school |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| ABIM Subspecialty Boards | Various (ID, Nephrology, Pulmonology, etc.) |
+| State Medical License | Required in all states |
+| DEA Registration | Controlled substance authority |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Fellow["Subspecialty Fellow"] --> Attending["Attending Physician"]
+    Attending --> Senior["Senior Physician"]
+    Senior --> Director["Division Director"]
+    Director --> Chair["Department Chair"]
+
+    Attending --> Faculty["Academic Faculty"]
+    Faculty --> Professor["Full Professor"]
+    Attending --> Chief["Chief Medical Officer"]
+```
+
+## Specializations
+
+| Subspecialty | Focus Area |
+|-------------|-------------|
+| Infectious Disease | Complex infections, HIV, antimicrobial stewardship |
+| Nephrology | Kidney disease, dialysis, transplant |
+| Pulmonology | Lung disease, critical care, sleep |
+| Endocrinology | Diabetes, thyroid, hormonal disorders |
+| Gastroenterology | Digestive disorders, endoscopy |
+| Hematology | Blood disorders |
+| Rheumatology | Autoimmune and musculoskeletal disease |
+| Geriatric Medicine | Elderly care |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Endoscopy Systems | GI and pulmonary procedures |
+| Dialysis Equipment | Renal replacement therapy |
+| EHR Systems | Patient documentation |
+| Point-of-Care Ultrasound | Bedside diagnosis |
+| Continuous Glucose Monitors | Diabetes management |
+| Telemedicine Platforms | Remote consultation |
 
 ## Related Occupations
 
@@ -141,28 +182,35 @@ Physicians, All Other provide therapies as part of their core responsibilities.
 graph LR
     Current["Physicians, All Other"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph InternalMed["Internal Medicine"]
+        PrimaryCare["Primary Care Physicians"]
+        Hospitalists["Hospitalists"]
+        Intensivists["Critical Care Physicians"]
     end
 
-    Current --- SameCategory
+    subgraph Specialists["Other Specialists"]
+        Cardiologists["Cardiologists"]
+        Neurologists["Neurologists"]
+        Oncologists["Oncologists"]
+    end
+
+    Current --- InternalMed
+    Current --- Specialists
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Inpatient Subspecialty
+- [Physician Offices](/industries/Healthcare/PhysicianOffices) - Outpatient Practice
+- [Academic](/industries/Education) - Teaching and Research
+- [Government](/industries/Government) - VA and Public Health
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Internal Medicine Subspecialties](/departments/InternalMedicine)
+- [Inpatient Consultation](/departments/InpatientMedicine)
+- [Outpatient Subspecialty Clinics](/departments/SubspecialtyClinics)
 
 ---
 

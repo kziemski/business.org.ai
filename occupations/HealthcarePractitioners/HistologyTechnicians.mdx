@@ -8,18 +8,21 @@ status: complete
 
 # Histology Technicians
 
-> Prepare histological slides from tissue sections for microscopic examination and diagnosis by pathologists. May assist with research studies.
+> Prepare histologic slides from tissue sections for microscopic examination and diagnosis by pathologists. May assist in research studies.
 
 ## Overview
 
-Histology Technicians is a specialized variant within the Healthcare Practitioners and Technical category. Prepare histological slides from tissue sections for microscopic examination and diagnosis by pathologists. 
+Histology Technicians (Histotechnicians) are laboratory professionals who prepare tissue samples for microscopic examination by pathologists. They process tissue specimens through fixation, embedding in paraffin, sectioning on microtomes, and staining with hematoxylin and eosin (H&E) and special stains to reveal cellular structures, enabling pathologists to diagnose diseases including cancer, infections, and autoimmune conditions.
+
+The workflow encompasses receiving and accessioning surgical and biopsy specimens, processing tissue through graded alcohols and clearing agents, embedding specimens in paraffin blocks, cutting thin sections (3-5 microns) using rotary microtomes, mounting sections on glass slides, and performing routine and special staining procedures. Histology technicians also prepare frozen sections for rapid intraoperative diagnosis, perform immunohistochemistry (IHC), and operate automated staining instruments.
+
+Modern histology has evolved with automated tissue processors, immunohistochemistry staining platforms, digital pathology whole-slide imaging, molecular pathology specimen preparation, and quality management systems. Histology technicians play a critical role in the accurate and timely diagnosis of disease, directly impacting patient care through the quality of tissue preparations they produce.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
     Cat29["29 - Healthcare Practitioners and Technical"] --> Group292012["29-2012 Medical and Clinical Laboratory Technicians"]
-    Group292012 --> Base["29-2012.00 Medical and Clinical Laboratory Technicians"]
     Group292012 --> Current["29-2012.01 Histology Technicians"]
     style Current fill:#e1f5fe
 ```
@@ -29,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-2012.01 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 11 |
+| Median Annual Salary | $46,680 |
+| Employment | ~18,000 |
+| Projected Growth | 5% (2022-2032) |
+| Job Zone | 3 (Medium Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 25+ |
 | Source | O*NET |
 
 ## Core Tasks
@@ -38,58 +45,134 @@ graph TD
 ```mermaid
 mindmap
     root(("Histology Technicians"))
-        Mount
-            Tissue Specimens
-        Freeze
-            Tissue Specimens
-        Archive
-            Diagnostic Material
-            Histologic Slides
-            Blocks
+        Process
+            Tissue Fixation
+            Dehydration
+            Paraffin Embedding
+        Section
+            Microtomy
+            Frozen Sections
+            Special Sectioning
+        Stain
+            H&E Staining
+            Special Stains
+            Immunohistochemistry
+        Prepare
+            Specimen Accessioning
+            Block Preparation
+            Slide Mounting
         Maintain
-            Mass Spectrometers
-            Microtomes
-            Immunostainers
-            Tissue Processors
-            Embedding Centers
+            Equipment Calibration
+            Quality Control
+            Reagent Preparation
+        Support
+            Frozen Section Service
+            Research Studies
+            Digital Pathology
 ```
 
-### mount.TissueSpecimens
+### process.TissueSpecimens
 
-Histology Technicians mount tissue specimens as part of their core responsibilities.
-
-**Actions:**
-- `mount.TissueSpecimens.on.GlassSlides`
-
-### freeze.TissueSpecimens
-
-Histology Technicians freeze tissue specimens as part of their core responsibilities.
+Histology Technicians prepare tissue for examination.
 
 **Actions:**
-- `freeze.TissueSpecimens`
+- `process.TissueSpecimens.through.FixationAndDehydration` - Tissue processing
+- `embed.Specimens.in.ParaffinBlocks` - Embedding
+- `section.ParaffinBlocks.using.RotaryMicrotome` - Microtomy
+- `prepare.FrozenSections.for.IntraoperativeDiagnosis` - Frozen sections
 
-### archive.DiagnosticMaterial
+### stain.TissueSections
 
-Histology Technicians archive diagnostic material as part of their core responsibilities.
+Histology Technicians perform staining procedures.
 
 **Actions:**
-- `archive.DiagnosticMaterial`
-- `archive.HistologicSlides`
-- `archive.Blocks`
+- `stain.Sections.using.HematoxylinAndEosin` - H&E staining
+- `perform.SpecialStains.for.TissueCharacterization` - Special stains
+- `perform.Immunohistochemistry.for.AntigenDetection` - IHC
+- `operate.AutomatedStainers.for.StandardizedStaining` - Automated staining
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Hospital Histology Labs | Clinical histology services |
+| Reference Laboratories | High-volume histology processing |
+| Academic Medical Centers | Research and teaching |
+| Dermatopathology Labs | Skin biopsy processing |
+| Veterinary Pathology Labs | Animal tissue processing |
+| Research Institutions | Experimental histology |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Microtomy** - Expert
+- **Tissue Processing** - Expert
+- **H&E Staining** - Expert
+- **Immunohistochemistry** - Advanced
+- **Special Stains** - Advanced
+- **Frozen Sections** - Advanced
+- **Quality Control** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Attention to Detail** - Critical
+- **Manual Dexterity** - Essential
+- **Organization** - Essential
+- **Time Management** - Essential
+- **Teamwork** - Essential
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Education | Associate degree or certificate in histotechnology |
+| Clinical Training | Accredited histotechnology program |
+| Certification | HT(ASCP) through ASCP Board of Certification |
+| Continuing Education | Per certification requirements |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| HT(ASCP) | Histotechnician (ASCP Board of Certification) |
+| HTL(ASCP) | Histotechnologist (advanced certification) |
+| QIHC | Qualification in Immunohistochemistry |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Histology Technician HT(ASCP)"] --> Senior["Senior Histotechnician"]
+    Senior --> Lead["Lead Histotechnician"]
+    Lead --> Supervisor["Histology Supervisor"]
+    Supervisor --> Manager["Histology Lab Manager"]
+
+    Senior --> HTL["Histotechnologist HTL(ASCP)"]
+    HTL --> Specialist["IHC/Special Stain Specialist"]
+    Lead --> Educator["Histology Educator"]
+```
+
+## Specializations
+
+| Focus Area | Description |
+|------------|-------------|
+| Immunohistochemistry | IHC staining specialist |
+| Frozen Sections | Intraoperative histology |
+| Mohs Surgery Histology | Dermatologic surgery support |
+| Research Histology | Experimental tissue preparation |
+| Digital Pathology | Whole-slide imaging |
+| Electron Microscopy | Ultrastructural preparation |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Rotary Microtomes (Leica, Thermo) | Tissue sectioning |
+| Automated Tissue Processors | Tissue processing |
+| Embedding Centers | Paraffin embedding |
+| Automated Stainers (Ventana, Leica) | Staining automation |
+| Cryostats | Frozen section preparation |
+| Digital Slide Scanners | Whole-slide imaging |
+| Laboratory Information Systems | Workflow management |
 
 ## Related Occupations
 
@@ -97,28 +180,36 @@ Histology Technicians archive diagnostic material as part of their core responsi
 graph LR
     Current["Histology Technicians"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph LabTeam["Laboratory Colleagues"]
+        Histotechnologists["Histotechnologists"]
+        Cytotechs["Cytotechnologists"]
+        MedLabTechs["Medical Lab Technicians"]
     end
 
-    Current --- SameCategory
+    subgraph Clinical["Clinical Partners"]
+        Pathologists["Pathologists"]
+        Surgeons["Surgeons"]
+        Dermatologists["Dermatologists"]
+    end
+
+    Current --- LabTeam
+    Current --- Clinical
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Clinical Histology
+- [Reference Laboratories](/industries/Healthcare/MedicalLaboratories) - High-Volume Processing
+- [Academic Medical Centers](/industries/Education) - Research and Teaching
+- [Pharmaceutical](/industries/Manufacturing/ChemicalManufacturing/Pharmaceutical) - Drug Development
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Histology Laboratory](/departments/HistologyLab)
+- [Pathology](/departments/Pathology)
+- [Anatomic Pathology](/departments/AnatomicPathology)
+- [Surgical Pathology](/departments/SurgicalPathology)
 
 ---
 

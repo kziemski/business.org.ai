@@ -3,24 +3,31 @@ id: CustomsBrokers
 name: "Customs Brokers"
 code: "13-1041.08"
 type: Occupation
+category: Business
 status: complete
+certifications: ["LCB", "CCS", "CES", "MCA"]
 ---
 
 # Customs Brokers
 
-> Prepare customs documentation and ensure that shipments meet all applicable laws to facilitate the import and export of goods. Determine and track duties and taxes payable and process payments on behalf of client. Sign documents under a power of attorney. Represent clients in meetings with customs officials and apply for duty refunds and tariff reclassifications. Coordinate transportation and storage of imported goods.
+> Prepare customs documentation and ensure that shipments meet all applicable laws to facilitate the import and export of goods. Determine and track import duties and taxes. Represent clients in meetings with customs officials and apply for duty refunds and tariff reclassifications.
 
 ## Overview
 
-Customs Brokers is a specialized variant within the Business and Financial Operations category. Prepare customs documentation and ensure that shipments meet all applicable laws to facilitate the import and export of goods. Determine and track duties and taxes payable and process payments on behalf of client.
+Customs Brokers are licensed professionals who serve as intermediaries between importers/exporters and government customs authorities, ensuring that international shipments comply with all applicable laws, regulations, and tariff classifications. They prepare and submit customs documentation, calculate duties and taxes, and resolve classification disputes on behalf of their clients. The role requires deep expertise in trade law, the Harmonized Tariff Schedule, customs valuation, and the regulatory requirements of agencies including CBP, FDA, USDA, and EPA.
+
+These professionals play an essential role in global commerce by facilitating the efficient flow of goods across international borders while ensuring compliance with trade agreements, sanctions, anti-dumping duties, and security requirements. They advise clients on duty minimization strategies, free trade agreement eligibility, foreign trade zone benefits, and drawback programs. Errors in customs documentation can result in shipment delays, costly penalties, seizure of goods, or loss of import privileges, making accuracy and attention to detail paramount.
+
+The profession has been transformed by electronic filing systems, automated broker interfaces, and increasing trade complexity driven by tariff disputes, sanctions regimes, and supply chain security requirements. Modern customs brokers must navigate rapidly changing trade policies while leveraging technology to manage high volumes of entries efficiently.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group131041["13-1041 Compliance Officers"]
-    Group131041 --> Base["13-1041.00 Compliance Officers"]
-    Group131041 --> Current["13-1041.08 Customs Brokers"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G131041["13-1041 Compliance Officers"]
+    G131041 --> Base["13-1041.00 Compliance Officers"]
+    G131041 --> Current["13-1041.08 Customs Brokers"]
     style Current fill:#e1f5fe
 ```
 
@@ -29,8 +36,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-1041.08 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
-| Task Count | 74 |
+| Median Salary | $72,500 |
+| Employment | ~22,000 |
+| Projected Growth | 5% (As fast as average) |
+| Task Count | 38 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -38,101 +49,166 @@ graph TD
 ```mermaid
 mindmap
     root(("Customs Brokers"))
-        Prepare
-            Import
-            Export Documentation According
-            Papers
-        Process
-            Import
-            Export Documentation According
-        Clear
-            Goods
-        Pay
-            Arrange
-        Calculate
-            Duty Payments Owed
-            Tariff Payments Owed
-        Request
-            Necessary Import Documentation
-            Customs Invoices
-            Certificates
-        Compile
-            Necessary Import Documentation
-            Customs Invoices
-            Certificates
         Classify
-            Goods According
+            Tariff Codes
+            HTS Classifications
+            Country of Origin
+        Prepare
+            Customs Entries
+            Import Documentation
+            Export Declarations
+        Calculate
+            Duties and Taxes
+            Drawback Claims
+            Antidumping Duties
+        Advise
+            Trade Compliance
+            FTA Eligibility
+            Duty Minimization
+        Represent
+            Client Interests
+            CBP Meetings
+            Protests and Appeals
+        Monitor
+            Regulatory Changes
+            Trade Policy
+            Sanctions Compliance
 ```
 
-### prepare.Import
+### classify.TariffCodes
 
-Customs Brokers prepare import as part of their core responsibilities.
-
-**Actions:**
-- `prepare.Import.to.CustomsRegulations`
-- `prepare.Import.to.Laws`
-- `prepare.Import.to.Procedures`
-- `prepare.ExportDocumentationAccording.to.CustomsRegulations`
-
-### process.Import
-
-Customs Brokers process import as part of their core responsibilities.
+Determine the correct Harmonized Tariff Schedule classification for imported goods.
 
 **Actions:**
-- `process.Import.to.CustomsRegulations`
-- `process.Import.to.Laws`
-- `process.Import.to.Procedures`
-- `process.ExportDocumentationAccording.to.CustomsRegulations`
+- `classify.Goods.under.HarmonizedTariffSchedule` - Assign HTS codes
+- `determine.CountryOfOrigin.for.DutyCalculation` - Establish origin
+- `evaluate.FreeTradeAgreementEligibility.for.DutyReduction` - Assess FTA benefits
+- `apply.for.TariffReclassifications.on.behalf.of.Clients` - Contest classifications
 
-### clear.Goods
+### prepare.CustomsDocumentation
 
-Customs Brokers clear goods as part of their core responsibilities.
+Prepare and submit customs entries and supporting documentation for import/export shipments.
 
 **Actions:**
-- `clear.Goods.through.CustomsToDestinationsForClients`
+- `prepare.CustomsEntries.for.CBPFiling` - File import declarations
+- `prepare.ExportDeclarations.for.ComplianceVerification` - Submit export filings
+- `prepare.BondApplications.for.ImportPrivileges` - Secure customs bonds
+- `submit.Documentation.through.AutomatedBrokerInterface` - File electronically
+
+### calculate.DutiesAndTaxes
+
+Calculate and track import duties, taxes, and applicable trade remedy fees.
+
+**Actions:**
+- `calculate.ImportDuties.based.on.TariffClassification` - Compute duty amounts
+- `calculate.AntidumpingDuties.for.SubjectMerchandise` - Apply AD/CVD rates
+- `track.DutyPayments.for.ClientAccounting` - Monitor payment obligations
+- `apply.for.DutyDrawback.on.ReexportedGoods` - Recover paid duties
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Customs Law & Regulations (19 CFR)** - Expert
+- **Harmonized Tariff Schedule Classification** - Expert
+- **Customs Valuation** - Expert
+- **Trade Compliance** - Advanced
+- **Free Trade Agreement Administration** - Advanced
+- **Import/Export Documentation** - Advanced
+- **Sanctions & Denied Party Screening** - Proficient
+- **Supply Chain Security (C-TPAT)** - Proficient
 
 ### Soft Skills
+- **Attention to Detail** - Critical
+- **Analytical Thinking** - Critical
 - **Communication** - Essential
+- **Client Relationship Management** - Essential
 - **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Adaptability to Regulatory Change** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Customs Brokers"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's degree in International Business, Supply Chain, or related field |
+| Federal License | Licensed Customs Broker (LCB) - CBP exam required |
+| Key Certifications | CCS (Certified Customs Specialist), CES (Certified Export Specialist) |
+| Additional Certs | MCA (Master Customs Advisor), C-TPAT certification |
+| Professional Orgs | NCBFAA (National Customs Brokers & Forwarders Association) |
+| Work Experience | 2-5 years in customs brokerage or trade compliance |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Entry Clerk / Classification Analyst"] --> Mid["Licensed Customs Broker"]
+    Mid --> Senior["Senior Broker / Trade Compliance Manager"]
+    Senior --> Director["Director of Trade Compliance / VP of Customs"]
+    Director --> Executive["Chief Compliance Officer / Global Trade VP"]
+
+    Alt1["Freight Forwarder"] --> Mid
+    Alt2["Trade Attorney"] --> Senior
+
+    subgraph Tracks["Career Tracks"]
+        Brokerage["Customs Brokerage"]
+        Compliance["Trade Compliance"]
+        Consulting["Trade Consulting"]
+        Government["CBP / Government"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Freight Forwarding** | Full logistics | End-to-end import/export, multimodal documentation |
+| **Manufacturing** | Raw material imports | Duty engineering, FTZ management, parts classification |
+| **Retail / E-commerce** | Consumer goods | Section 321, de minimis entries, rapid clearance |
+| **Pharmaceutical** | FDA-regulated goods | Prior notice, drug listing, controlled substance import |
+| **Automotive** | Parts sourcing | USMCA compliance, automotive rules of origin |
+| **Agriculture** | Perishable goods | USDA permits, phytosanitary certificates, rapid release |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Customs Filing** | ACE (Automated Commercial Environment), ABI |
+| **Brokerage Software** | Descartes, CargoWise, QAD Trade Management |
+| **Classification** | HTS Online, Ruling database, CrossBorder solutions |
+| **Compliance Screening** | Descartes Visual Compliance, Amber Road, SAP GTS |
+| **Trade Data** | ImportGenius, Panjiva, USITC DataWeb |
+| **Communication** | Microsoft 365, secure client portals |
+| **Accounting** | Duty tracking systems, drawback management tools |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    CB["Customs Brokers"]
+
+    subgraph SameCategory["Compliance Specialists"]
+        CO["Compliance Officers"]
+        RAS["Regulatory Affairs Specialists"]
+        ECI["Environmental Compliance Inspectors"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        LOG["Logisticians"]
+        FF["Freight Forwarders"]
+        TL["Trade Lawyers"]
+    end
+
+    CB --- SameCategory
+    CB --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Trade Compliance](/departments/TradeCompliance)
+- [Customs Brokerage](/departments/CustomsBrokerage)
+- [Import/Export Operations](/departments/ImportExport)
+- [Supply Chain Management](/departments/SupplyChain)
+- [Legal & Regulatory](/departments/Legal)
 
 ---
 

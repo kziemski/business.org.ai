@@ -2,7 +2,7 @@
 id: HealthTechnologistsAndTechnicians
 name: "Health Technologists and Technicians, All Other"
 code: "29-2099.00"
-type: Occupation
+type: OccupationCategory
 status: complete
 ---
 
@@ -12,18 +12,19 @@ status: complete
 
 ## Overview
 
-Health Technologists and Technicians, All Other is classified under Healthcare Practitioners and Technical (SOC 29). All health technologists and technicians not listed separately.
+Health Technologists and Technicians, All Other encompasses specialized health technology professionals not separately classified in the SOC system. This includes neurodiagnostic technologists, ophthalmic medical technologists, patient representatives, dialysis technicians, sterile processing technicians, surgical neurophysiologists, and other technical healthcare workers who require specialized training and certification to perform diagnostic, therapeutic, or support functions.
+
+These professionals operate specialized equipment, perform technical procedures, collect and analyze clinical data, and support licensed practitioners in delivering healthcare services. They typically hold associate degrees or certificates, maintain professional certifications, and work under the supervision of physicians, advanced practice providers, or other licensed healthcare professionals.
+
+The category continues to grow as medical technology advances create new specialized roles in areas such as telehealth support, remote patient monitoring, point-of-care testing, and clinical informatics support.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
     Cat29["29 - Healthcare Practitioners and Technical"] --> Group292099["29-2099 Health Technologists and Technicians, All Other"]
-    Group292099 --> Current["29-2099.00 Health Technologists and Technicians, All Other"]
+    Group292099 --> Current["29-2099.00 All Other"]
     style Current fill:#e1f5fe
-    Group292099 --> V29209901["29-2099.01 Neurodiagnostic Technologists"]
-    Group292099 --> V29209905["29-2099.05 Ophthalmic Medical Technologists"]
-    Group292099 --> V29209908["29-2099.08 Patient Representatives"]
 ```
 
 ## Key Statistics
@@ -31,137 +32,57 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-2099.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 58 |
+| Median Annual Salary | $48,820 |
+| Employment | ~85,000 |
+| Projected Growth | 8% (2022-2032) |
+| Job Zone | 3 (Medium Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
 | Source | O*NET |
 
-## Core Tasks
+## Included Occupations
 
-```mermaid
-mindmap
-    root(("HealthTechnologistsAndTechnicians"))
-        Conduct
-            Tests
-            Studies
-            Electroencephalography Eeg
-            Polysomnography Psg
-            Nerve Conduction Studies Ncs
-            Electromyography Emg
-            Intraoperative Monitoring Iom
-        Set
-            Program
-            Record Montages Combinations When Testing Peripheral Nerve
-            Electrical Combinations When Testing Peripheral Nerve
-            Spinal Cord
-            Subcortical
-            Cortical Responses
-        Monitor
-            Patients
-            Surgeries
-            Using Electroencephalographs Eeg
-            Evoked Potential Ep
-            Video Recording Equipment
-        Measure
-            Patients Body Parts
-            Mark Locations Where Electrodes Are
-            Visual
-            Auditory
-            Somatosensory Evoked Potentials Eps
-        Calibrate
-            Equipment
-            Correct Malfunctions
-            As Needed
-        Troubleshoot
-            Equipment
-            Correct Malfunctions
-            As Needed
-        Assist
-            Medical Students
-            Residents
-            Other Staff Members
-        Indicate
-            Artifacts Derived
-            Interferences Derived
-        Repair
-            Correct Malfunctions
-            As Needed
-        Collect
-            Patients Medical Information Needed
-```
-
-### conduct.Tests
-
-Health Technologists and Technicians, All Other conduct tests as part of their core responsibilities.
-
-**Actions:**
-- `conduct.Tests`
-- `conduct.Studies`
-- `conduct.ElectroencephalographyEeg`
-- `conduct.PolysomnographyPsg`
-
-### set.Program
-
-Health Technologists and Technicians, All Other set program as part of their core responsibilities.
-
-**Actions:**
-- `set.Program`
-- `set.RecordMontagesCombinationsWhenTestingPeripheralNerve`
-- `set.ElectricalCombinationsWhenTestingPeripheralNerve`
-- `set.SpinalCord`
-
-### monitor.Patients
-
-Health Technologists and Technicians, All Other monitor patients as part of their core responsibilities.
-
-**Actions:**
-- `monitor.Patients.during.Tests`
-- `monitor.Surgeries`
-- `monitor.UsingElectroencephalographsEeg`
-- `monitor.EvokedPotentialEp`
-
-
-## Skills & Competencies
-
-### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
-
-### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+| Specialty | SOC Code |
+|-----------|----------|
+| [Neurodiagnostic Technologists](/occupations/HealthcarePractitioners/NeurodiagnosticTechnologists) | 29-2099.01 |
+| [Ophthalmic Medical Technologists](/occupations/HealthcarePractitioners/OphthalmicMedicalTechnologists) | 29-2099.05 |
+| [Patient Representatives](/occupations/HealthcarePractitioners/PatientRepresentatives) | 29-2099.08 |
+| Dialysis Technicians | 29-2099.XX |
+| Other Health Technicians | Various |
 
 ## Related Occupations
 
 ```mermaid
 graph LR
-    Current["HealthTechnologistsAndTechnicians"]
+    Current["Health Technologists, All Other"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph Diagnostic["Diagnostic Roles"]
+        NDTs["Neurodiagnostic Techs"]
+        OphthTechs["Ophthalmic Technologists"]
+        DialysisTechs["Dialysis Technicians"]
     end
 
-    Current --- SameCategory
+    subgraph Support["Support Roles"]
+        PatientReps["Patient Representatives"]
+        SterileProc["Sterile Processing Techs"]
+        HealthInfoTechs["Health Info Techs"]
+    end
+
+    Current --- Diagnostic
+    Current --- Support
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Various Departments
+- [Ambulatory Healthcare](/industries/Healthcare/AmbulatoryHealthCare) - Outpatient Services
+- [Physician Offices](/industries/Healthcare/PhysicianOffices) - Medical Practice
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation category typically works in:
+- [Various Technical Departments](/departments/ClinicalServices)
+- [Diagnostic Services](/departments/DiagnosticServices)
+- [Patient Support Services](/departments/PatientSupport)
 
 ---
 

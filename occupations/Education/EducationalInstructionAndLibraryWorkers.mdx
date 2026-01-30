@@ -12,13 +12,18 @@ status: complete
 
 ## Overview
 
-Educational Instruction and Library Workers, All Other is classified under Educational Instruction and Library (SOC 25). All educational instruction and library workers not listed separately.
+Educational Instruction and Library Workers, All Other is a residual classification capturing the wide array of professionals who support education and library services but do not fall into specifically defined occupational categories. These workers may include educational technology specialists, learning resource coordinators, literacy coaches, academic success advisors, testing coordinators, and library outreach specialists. They operate in schools, colleges, public libraries, corporate learning centers, and non-profit organizations.
+
+The roles within this category are characterized by their hybrid nature, often blending instructional, technological, and administrative functions. For example, an educational technology specialist might train teachers on digital tools while also managing learning platform configurations. A testing coordinator may oversee standardized assessment administration while analyzing data to improve instructional outcomes. These workers serve as the connective tissue between educators, administrators, and learners.
+
+As educational institutions increasingly adopt technology-driven approaches and data-informed decision making, the demand for workers who bridge instructional practice and operational support continues to grow. These professionals must be comfortable working across departments, translating between technical and pedagogical languages, and adapting to the evolving needs of modern educational environments.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat25["25 - Educational Instruction and Library"] --> Group259099["25-9099 Educational Instruction and Library Workers, All Other"]
+    Cat25["25 - Educational Instruction and Library"] --> Group259["25-9000 Other Education Workers"]
+    Group259 --> Group259099["25-9099 Educational Instruction and Library Workers, All Other"]
     Group259099 --> Current["25-9099.00 Educational Instruction and Library Workers, All Other"]
     style Current fill:#e1f5fe
 ```
@@ -28,56 +33,183 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 25-9099.00 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Educational Instruction and Library](/occupations/Education/index) |
-| Task Count | 0 |
+| Median Salary | $42,000 - $58,000 |
+| Employment | ~65,000 |
+| Projected Growth | 5-8% (Average) |
 | Source | O*NET |
 
 ## Core Tasks
 
-Task data is being compiled for this occupation. See [O*NET 25-9099.00](https://www.onetonline.org/link/summary/25-9099.00) for detailed task information.
+```mermaid
+mindmap
+    root(("Educational Instruction and Library Workers"))
+        Coordinate
+            Learning Programs
+            Testing Administration
+            Resource Allocation
+            Technology Deployment
+        Support
+            Teacher Training
+            Student Services
+            Library Operations
+            Instructional Design
+        Manage
+            Digital Platforms
+            Assessment Data
+            Learning Resources
+            Compliance Records
+        Develop
+            Training Materials
+            Program Guides
+            Technology Plans
+            Outreach Initiatives
+        Analyze
+            Student Data
+            Program Effectiveness
+            Resource Usage
+            Assessment Results
+```
+
+### coordinate.LearningPrograms
+
+Educational Instruction and Library Workers organize and manage educational programs and services.
+
+**Actions:**
+- `coordinate.LearningPrograms.across.Departments` - Ensure alignment of instructional initiatives across the organization
+- `coordinate.TestingAdministration.for.ComplianceRequirements` - Oversee standardized testing logistics
+- `coordinate.TechnologyDeployment.for.InstructionalUse` - Manage rollout of educational technology tools
+
+### support.EducationalOperations
+
+These workers provide support services to teachers, students, and library patrons.
+
+**Actions:**
+- `support.TeacherTraining.on.NewTechnologies` - Assist educators with adopting digital tools
+- `support.StudentServices.through.AcademicGuidance` - Help students access learning resources
+- `support.LibraryOperations.with.CollectionManagement` - Assist with cataloging and resource organization
+
+### manage.DigitalPlatforms
+
+These workers oversee educational technology systems and data management.
+
+**Actions:**
+- `manage.LearningManagementSystems.for.InstitutionalUse` - Administer LMS platforms and user accounts
+- `manage.AssessmentData.for.InstructionalImprovement` - Collect and organize student performance data
+- `manage.DigitalResources.for.LibraryAccess` - Maintain electronic databases and digital collections
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Curriculum Development** - Advanced
-- **Instructional Design** - Advanced
-- **Assessment** - Advanced
+- **Educational Technology** - Advanced (LMS administration, digital tools)
+- **Data Analysis** - Intermediate to Advanced (assessment data, program metrics)
+- **Instructional Support** - Advanced (coaching, training, resource development)
+- **Library Science** - Intermediate (cataloging, reference, collection management)
+- **Project Management** - Intermediate (program coordination, event planning)
+- **Information Systems** - Intermediate (databases, student information systems)
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Communication** - Critical (liaising between stakeholders)
+- **Organization** - Critical (managing multiple programs and systems)
+- **Problem Solving** - Essential (troubleshooting technical and logistical issues)
+- **Collaboration** - Essential (cross-departmental teamwork)
+- **Adaptability** - Essential (evolving technology and educational practices)
+- **Attention to Detail** - Important (data accuracy, compliance)
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["EducationalInstructionAndLibraryWorkers"]
-
-    subgraph SameCategory["Educational Instruction and Library"]
-        BusinessTeachersPost["Business Teachers, Postsecondary"]
-        ComputerScienceTeach["Computer Science Teachers, Posts..."]
-        MathematicalScienceT["Mathematical Science Teachers, P..."]
-        ArchitectureTeachers["Architecture Teachers, Postsecon..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's degree in education, library science, or related field |
+| Preferred Education | Master's degree in educational technology, library science, or instructional design |
+| Work Experience | 1-3 years in educational or library setting |
+| On-the-Job Training | Moderate; institutional systems and procedures |
+| Common Certifications | Google Certified Educator; ISTE Certification; Library Support Staff Certification; state-specific credentials |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Educational Support Specialist"] --> Mid["Program Coordinator"]
+    Mid --> Senior["Director of Educational Technology / Library Services"]
+    Senior --> Executive["Chief Academic Officer / Dean of Libraries"]
+
+    Entry --> Tech["EdTech Specialist"]
+    Tech --> Manager["Technology Integration Manager"]
+    Manager --> Senior
+
+    style Senior fill:#e8f5e9
+    style Executive fill:#fff3e0
 ```
+
+## Setting Variations
+
+### K-12 Schools
+Support instructional technology integration, testing coordination, and media center operations. Work closely with teachers and administrators.
+
+### Higher Education
+Manage learning management systems, coordinate faculty development programs, and support digital library services.
+
+### Public Libraries
+Coordinate outreach programs, manage digital resources, and support community education initiatives.
+
+### Corporate Learning Centers
+Oversee e-learning platforms, coordinate professional development, and manage compliance training records.
+
+### Online Education
+Support virtual learning infrastructure, manage content delivery systems, and coordinate remote student services.
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| Learning Management Systems | Canvas, Blackboard, Moodle, Schoology |
+| Student Information Systems | PowerSchool, Banner, PeopleSoft |
+| Library Systems | Koha, Alma, Sierra, Follett Destiny |
+| Assessment Platforms | NWEA MAP, Renaissance Star, DnA |
+| Data Analytics | Tableau, Power BI, Google Data Studio |
+| Productivity | Microsoft Office, Google Workspace, Slack |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Educational Instruction and Library Workers"]
+
+    subgraph SameCategory["Education Support"]
+        IC["Instructional Coordinators"]
+        Librarians["Librarians"]
+        LibTech["Library Technicians"]
+        TA["Teaching Assistants"]
+    end
+
+    subgraph CrossFunctional["Related Fields"]
+        TrainDev["Training & Development Specialists"]
+        DataAnalyst["Data Analysts"]
+        ITSpec["IT Support Specialists"]
+        AdminAssist["Administrative Assistants"]
+    end
+
+    Current --- SameCategory
+    Current --- CrossFunctional
+```
+
+## Industries
+
+- [Educational Services - Elementary and Secondary Schools](/industries/Education/index) - Primary Employment
+- [Educational Services - Colleges and Universities](/industries/Education/index) - Higher Education Support
+- [Government](/industries/Government) - Public Libraries and Agencies
+- [Professional Services](/industries/ProfessionalServices) - EdTech Companies
+
+## Departments
+
+This occupation typically works in:
+- [Educational Technology](/departments/EdTech)
+- [Library Services](/departments/LibraryServices)
+- [Academic Affairs](/departments/AcademicAffairs)
+- [Assessment and Accountability](/departments/Assessment)
+- [Student Services](/departments/StudentServices)
 
 ---
 

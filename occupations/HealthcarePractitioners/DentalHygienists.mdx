@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Dental Hygienists is an occupation within the Healthcare Practitioners and Technical category. Administer oral hygiene care to patients. Assess patient oral hygiene problems or needs and maintain health records.
+Dental Hygienists are licensed oral health professionals who focus on preventing and treating oral diseases through clinical care, patient education, and community health promotion. They perform dental cleanings (prophylaxis), remove calculus and plaque deposits, apply preventive materials such as sealants and fluoride, take and develop dental radiographs, and assess patients for signs of oral diseases including periodontal disease and oral cancer.
+
+Working in close collaboration with dentists, dental hygienists are often the primary point of contact for patients during routine dental visits. They conduct comprehensive periodontal assessments, document clinical findings, create individualized oral hygiene plans, and educate patients on proper brushing, flossing, and nutritional habits that support oral health. Many states have expanded the scope of practice for dental hygienists to include local anesthesia administration, nitrous oxide sedation, and restorative functions.
+
+The profession plays a critical role in connecting oral health to overall systemic health, as research increasingly links periodontal disease to cardiovascular disease, diabetes, respiratory infections, and adverse pregnancy outcomes. Dental hygienists serve as frontline screeners for these connections and as advocates for comprehensive preventive care.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1292.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 38 |
+| Median Annual Salary | $81,400 |
+| Employment | ~206,000 |
+| Projected Growth | 7% (2022-2032) |
+| Job Zone | 3 (Medium Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 38 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,66 +45,177 @@ graph TD
 ```mermaid
 mindmap
     root(("Dental Hygienists"))
+        Clean
+            Remove Calculus
+            Remove Plaque
+            Remove Stains
+            Scale & Root Plane
+        Examine
+            Gums & Oral Tissues
+            Lymph Nodes
+            Periodontal Pockets
+            Oral Cancer Screening
         Record
             Patient Medical Histories
-        Review
-            Patient Medical Histories
-        Feel
-            Examine Gums
-            Lymph Nodes
-        Visually
-            Examine Gums
-        Examine
-            Gums
-            Using Probes
-        Clean
-            Calcareous Deposits
-            Accretions
-            Stains
-        Provide
-            Clinical Services Education
-            Health Education
+            Clinical Findings
+            Periodontal Charting
+        Apply
+            Fluoride Treatments
+            Sealants
+            Desensitizing Agents
+        Educate
+            Oral Hygiene Techniques
+            Nutritional Counseling
+            Disease Prevention
+        Take
+            Dental Radiographs
+            Impressions
+            Intraoral Photos
+        Administer
+            Local Anesthesia
+            Nitrous Oxide
+            Topical Agents
         Chart
-            Conditions
+            Treatment Plans
+            Patient Conditions
+            Progress Notes
 ```
 
 ### record.PatientMedicalHistories
 
-Dental Hygienists record patient medical histories as part of their core responsibilities.
+Dental Hygienists gather and document comprehensive patient health information.
 
 **Actions:**
-- `record.PatientMedicalHistories`
+- `record.PatientMedicalHistories.for.TreatmentPlanning` - Health history documentation
+- `review.PatientMedicalHistories.to.IdentifyContraindications` - Safety screening
+- `update.PatientRecords.after.EachVisit` - Ongoing documentation
+- `chart.PeriodontalFindings.using.ProbingMeasurements` - Clinical assessment
 
-### review.PatientMedicalHistories
+### examine.OralTissues
 
-Dental Hygienists review patient medical histories as part of their core responsibilities.
-
-**Actions:**
-- `review.PatientMedicalHistories`
-
-### feel.ExamineGums
-
-Dental Hygienists feel examine gums as part of their core responsibilities.
+Dental Hygienists perform thorough oral examinations.
 
 **Actions:**
-- `feel.ExamineGums.for.Sores`
-- `feel.ExamineGums.for.Signs.of.Disease`
-- `feel.LymphNodes.under.PatientsChin.to.detect.SwellingCouldIndicatePresenceOfOralCancer`
-- `feel.LymphNodes.under.PatientsChinToTendernessCouldIndicatePresenceOfOralCancer`
+- `feel.ExamineGums.for.Sores` - Soft tissue assessment
+- `feel.ExamineGums.for.Signs.of.Disease` - Disease screening
+- `feel.LymphNodes.under.PatientsChin.to.detect.OralCancer` - Cancer screening
+- `examine.PeriodontalPockets.using.Probes` - Pocket depth measurement
+
+### clean.TeethAndGums
+
+Dental Hygienists remove deposits and stains from teeth.
+
+**Actions:**
+- `clean.CalcareousDeposits.from.Teeth` - Calculus removal
+- `clean.Plaque.using.UltrasonicScalers` - Ultrasonic debridement
+- `clean.Stains.using.PolishingInstruments` - Stain removal
+- `perform.ScalingAndRootPlaning.for.PeriodontalDisease` - Deep cleaning
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| General Dental Offices | Primary employment setting |
+| Periodontal Practices | Specialized gum disease treatment |
+| Pediatric Dental Offices | Children's oral health care |
+| Community Health Centers | Underserved population care |
+| Public Health Departments | Community oral health programs |
+| Schools | School-based dental programs |
+| Nursing Facilities | Geriatric oral care |
+| Corporate Dental Groups | Multi-location dental chains |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Scaling & Root Planing** - Expert
+- **Periodontal Assessment** - Expert
+- **Dental Radiography** - Expert
+- **Preventive Applications (Fluoride/Sealants)** - Expert
+- **Local Anesthesia Administration** - Advanced
+- **Oral Cancer Screening** - Advanced
+- **Infection Control** - Expert
+- **Instrument Sharpening** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Patient Communication** - Critical
+- **Empathy & Rapport Building** - Essential
+- **Attention to Detail** - Critical
+- **Manual Dexterity** - Critical
+- **Time Management** - Essential
+- **Patient Education** - Essential
+- **Professionalism** - Essential
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Minimum Education | Associate degree in Dental Hygiene (2-3 years) |
+| Preferred Education | Bachelor of Science in Dental Hygiene (4 years) |
+| Advanced Degree | Master's for education or public health roles |
+| Licensure | Must pass NBDHE (National Board) and state/regional clinical exam |
+| State License | Required in all states |
+| Continuing Education | Typically 12-20 hours annually (varies by state) |
+| CPR Certification | Required for licensure |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| NBDHE | National Board Dental Hygiene Examination (required) |
+| State Clinical Exam | Regional or state practical examination |
+| Local Anesthesia Certification | Authorized to administer local anesthesia |
+| Nitrous Oxide Certification | Authorized to administer N2O sedation |
+| Laser Certification | Authorized for laser-assisted procedures |
+| CPR/BLS | Basic Life Support (required) |
+| OSHA Compliance | Occupational safety training |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Grad["Dental Hygiene Graduate"] --> RDH["Registered Dental Hygienist"]
+    RDH --> Senior["Senior Dental Hygienist"]
+    Senior --> Lead["Lead Hygienist / Team Leader"]
+    Lead --> OffMgr["Office Manager"]
+    OffMgr --> PracMgr["Practice Administrator"]
+
+    RDH --> BSComp["BSDH Completion"]
+    BSComp --> MS["Master's Degree"]
+    MS --> Faculty["Dental Hygiene Faculty"]
+    Faculty --> Director["Program Director"]
+
+    MS --> PH["Public Health Hygienist"]
+    PH --> PHDir["Public Health Director"]
+
+    RDH --> Sales["Dental Sales Representative"]
+    Sales --> RegMgr["Regional Sales Manager"]
+```
+
+## Specializations
+
+| Focus Area | Description |
+|------------|-------------|
+| Periodontal Therapy | Advanced scaling, root planing, and maintenance |
+| Pediatric Dental Hygiene | Children's preventive care |
+| Geriatric Dental Hygiene | Elderly and nursing home patient care |
+| Public Health | Community-based oral health programs |
+| Orthodontic Hygiene | Support for braces and alignment treatment |
+| Laser-Assisted Therapy | Laser debridement and bacterial reduction |
+| Research | Clinical research and evidence-based practice |
+| Education | Academic teaching and curriculum development |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Ultrasonic Scalers (Cavitron, Piezo) | Calculus and biofilm removal |
+| Digital Radiography (Sensors, Phosphor Plates) | Low-dose dental imaging |
+| Intraoral Cameras | Patient education and documentation |
+| Diode Lasers | Soft tissue therapy and bacterial reduction |
+| Air Polishing Systems (Airflow) | Biofilm and stain removal |
+| Caries Detection Devices (DIAGNOdent) | Early decay identification |
+| Practice Management Software (Dentrix, Eaglesoft) | Scheduling and charting |
+| Electronic Periodontal Probes | Automated pocket depth recording |
 
 ## Related Occupations
 
@@ -104,28 +223,46 @@ Dental Hygienists feel examine gums as part of their core responsibilities.
 graph LR
     Current["Dental Hygienists"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph DentalTeam["Dental Team"]
+        Dentists["Dentists, General"]
+        DentalAssist["Dental Assistants"]
+        DentalLab["Dental Laboratory Technicians"]
     end
 
-    Current --- SameCategory
+    subgraph DentalSpecialists["Dental Specialists"]
+        Periodontists["Periodontists"]
+        Orthodontists["Orthodontists"]
+        PedDentists["Pediatric Dentists"]
+    end
+
+    subgraph RelatedHealth["Related Health"]
+        SLP["Speech-Language Pathologists"]
+        Nutritionists["Dietitians & Nutritionists"]
+        PublicHealth["Public Health Workers"]
+    end
+
+    Current --- DentalTeam
+    Current --- DentalSpecialists
+    Current --- RelatedHealth
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Dental Offices](/industries/Healthcare/DentalOffices) - Primary Employment (90%+)
+- [Community Health Centers](/industries/Healthcare/CommunityHealthCenters) - Federally Qualified Health Centers
+- [Schools](/industries/Education/ElementarySecondary) - School-Based Programs
+- [Government](/industries/Government) - Public Health Departments
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Hospital Dental Clinics
+- [Dental Product Companies](/industries/Manufacturing/MedicalDevices) - Sales and Education
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Dental Hygiene](/departments/DentalHygiene)
+- [Preventive Dentistry](/departments/PreventiveDentistry)
+- [Periodontics](/departments/Periodontics)
+- [Community Oral Health](/departments/CommunityOralHealth)
+- [Patient Education](/departments/PatientEducation)
 
 ---
 

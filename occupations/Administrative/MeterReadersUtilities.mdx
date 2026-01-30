@@ -8,18 +8,22 @@ status: complete
 
 # Meter Readers, Utilities
 
-> Read meter and record consumption of electricity, gas, water, or steam.
+> Read utility meters and record data. Walk or drive established routes to take readings of electric, gas, water, or steam consumption meters. May also record other service data.
 
 ## Overview
 
-Meter Readers, Utilities is classified under Office and Administrative Support (SOC 43). Read meter and record consumption of electricity, gas, water, or steam.
+Meter Readers travel established routes to read electric, gas, water, and steam consumption meters, recording usage data for billing purposes. They walk or drive through residential and commercial areas, visually inspecting meters, entering readings into handheld devices, and reporting irregularities such as meter damage, tampering, or unusual consumption patterns.
+
+Working primarily outdoors in all weather conditions, meter readers cover assigned territories on foot or by vehicle. They access meter locations that may be in basements, yards, utility rooms, or remote areas, sometimes requiring navigation around obstacles, animals, or difficult terrain. The role demands physical endurance and the ability to work independently throughout the day.
+
+The occupation has declined significantly as utilities deploy automated meter reading (AMR) and advanced metering infrastructure (AMI) smart meter technology. However, positions remain for manual reads of legacy meters, meter audits, disconnect/reconnect services, and field verification of automated readings.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group435041["43-5041 Meter Readers, Utilities"]
-    Group435041 --> Current["43-5041.00 Meter Readers, Utilities"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-5041 Meter Readers, Utilities"]
+    Group --> Current["43-5041.00 Meter Readers, Utilities"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,105 +32,89 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-5041.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 37 |
+| Median Annual Salary | $42,400 |
+| Employment | ~25,000 |
+| Projected Growth | -15% (rapidly declining) |
+| Core Tasks | 20 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("Meter Readers, Utilities"))
-        Read
-            Electric
-            Gas
-            Water
-            Steam Consumption Meters
-            Enter Data
-        Walk
-            Vehicles
-        Drive
-            Vehicles
-        Inspect
-            Meters
-        Verify
-            Readings
-        Report
-            Meter Irregularities
-            Damaged Equipment
-            Impediments
-        Leave
-            Messages
-        Connect
-            Utility Services
-```
-
-### read.Electric
-
-Meter Readers, Utilities read electric as part of their core responsibilities.
-
-**Actions:**
-- `read.Electric.in.RouteBooksComputers`
-- `read.Electric.in.HandHeldComputers`
-- `read.Gas.in.RouteBooksComputers`
-- `read.Gas.in.HandHeldComputers`
-
-### walk.Vehicles
-
-Meter Readers, Utilities walk vehicles as part of their core responsibilities.
-
-**Actions:**
-- `walk.Vehicles.along.EstablishedRoutes.to.take.ReadingsOfMeterDials`
-
-### drive.Vehicles
-
-Meter Readers, Utilities drive vehicles as part of their core responsibilities.
-
-**Actions:**
-- `drive.Vehicles.along.EstablishedRoutes.to.take.ReadingsOfMeterDials`
+Core task data with GraphDL semantic actions for this occupation is maintained in the data pipeline. See [O*NET 43-5041.00](https://www.onetonline.org/link/summary/43-5041.00) for detailed task information.
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Meter Reading Devices** - Advanced
+- **Route Navigation** - Advanced
+- **Meter Identification and Types** - Advanced
+- **Data Recording Systems** - Intermediate
+- **Tamper and Theft Detection** - Intermediate
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Attention to Detail** - Critical
+- **Self-Direction** - Critical
+- **Physical Stamina** - Critical
+- **Reliability** - Critical
+- **Safety Awareness** - Essential
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Meter Readers, Utilities"]
-
-    subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma |
+| Valid Driver's License | Required |
+| Utility-Specific Training | On-the-job; meter types and systems |
+| Safety Training | Confined spaces, hazardous materials awareness |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Meter Reader"] --> Mid["Senior Meter Reader / Lead"]
+    Mid --> Tech["Meter Technician / AMI Specialist"]
+    Tech --> Supervisor["Field Operations Supervisor"]
+    Supervisor --> Manager["Utility Operations Manager"]
 ```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Electric Utilities | kWh consumption | High-voltage awareness; demand readings; time-of-use meters |
+| Gas Utilities | Therms/CCF readings | Gas leak detection; confined space entry; safety protocols |
+| Water Utilities | Gallons/cubic feet | Underground meters; pit access; irrigation meters |
+| Municipal Utilities | Multi-service reading | Combined utility reads; customer contact; code enforcement |
+
+## Technology & Tools
+
+- **Handheld Devices** - Electronic meter reading devices, tablets
+- **AMR/AMI** - Drive-by and smart meter systems
+- **GPS/Routing** - Route optimization software
+- **Vehicles** - Company trucks/vans
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["MeterReadersUtilities"]
+    subgraph SameCategory["Office and Administrative Support"]
+        RPostalCarriers["Postal Mail Carriers"]
+        RDispatchers["Dispatchers"]
+        RWeighers["Weighers and Measurers"]
+    end
+    Current --- SameCategory
+```
+
+## Departments
+
+This occupation typically works in:
+- [Field Operations](/departments/FieldOps) - Meter reading routes
+- [Metering](/departments/Metering) - Meter management
+- [Customer Service](/departments/CustomerService) - Billing support
+- [Revenue Protection](/departments/RevenueProtection) - Theft detection
 
 ---
 

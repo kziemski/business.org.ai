@@ -12,14 +12,19 @@ status: complete
 
 ## Overview
 
-Legal Support Workers, All Other is classified under Legal (SOC 23). All legal support workers not listed separately.
+Legal Support Workers encompasses a broad category of paraprofessional and support roles within the legal field that do not fall neatly into other classified occupations such as paralegals, title examiners, or court reporters. These professionals provide essential operational, administrative, and substantive support to attorneys, judges, and legal organizations. Roles in this category include legal document preparers, law librarians, legal technicians, notaries public, patent agents, compliance assistants, and specialized legal technology professionals.
+
+The diversity of this category reflects the legal profession's increasing complexity and specialization. As law firms, corporate legal departments, and government agencies adopt new technologies and expand their service models, new support roles continue to emerge. Legal technology specialists who manage e-discovery platforms, contract management systems, and legal analytics tools represent a growing segment. Similarly, document review specialists who work on large-scale litigation projects have become indispensable in modern legal practice. Many positions in this category require a combination of legal knowledge and specialized technical or administrative skills.
+
+Entry requirements vary considerably across the roles within this category. Some positions require only a high school diploma with on-the-job training, while others demand paralegal certificates, specialized technology credentials, or advanced degrees in library science or information management. The common thread is direct involvement in the legal process in a support capacity, contributing to the efficient delivery of legal services.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat23["23 - Legal"] --> Group232099["23-2099 Legal Support Workers, All Other"]
-    Group232099 --> Current["23-2099.00 Legal Support Workers, All Other"]
+    Cat23["23 - Legal Occupations"] --> Group232["23-2000 Legal Support Workers"]
+    Group232 --> Base2099["23-2099 Legal Support Workers, All Other"]
+    Base2099 --> Current["23-2099.00 Legal Support Workers, All Other"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,56 +33,180 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 23-2099.00 |
+| Job Zone | 3-4 (Medium to Considerable Preparation) |
 | Category | [Legal](/occupations/Legal/index) |
-| Task Count | 0 |
+| Median Annual Salary | $52,000 |
+| Employment | ~75,000 |
+| Projected Growth | 5% (average) |
+| Core Tasks | Varies by specialty |
 | Source | O*NET |
 
 ## Core Tasks
 
-Task data is being compiled for this occupation. See [O*NET 23-2099.00](https://www.onetonline.org/link/summary/23-2099.00) for detailed task information.
+```mermaid
+mindmap
+    root(("Legal Support Workers"))
+        Prepare
+            Legal Documents
+            Filings
+            Correspondence
+        Research
+            Legal Issues
+            Regulations
+            Case Law
+        Organize
+            Case Files
+            Records
+            Evidence
+        Manage
+            Document Systems
+            Legal Technology
+            Databases
+        Assist
+            Attorneys
+            Judges
+            Court Staff
+        Review
+            Documents
+            Contracts
+            Compliance Materials
+        File
+            Court Documents
+            Government Forms
+            Regulatory Filings
+        Communicate
+            Clients
+            Courts
+            Government Agencies
+```
+
+### prepare.LegalDocuments
+
+Legal Support Workers prepare various documents for legal proceedings and transactions.
+
+**Actions:**
+- `prepare.LegalDocuments.for.Filing` - Draft standardized legal forms and filings
+- `prepare.Filings.for.CourtSubmission` - Prepare court submissions
+- `prepare.Correspondence.for.Clients` - Draft client communications
+
+### research.LegalIssues
+
+Legal Support Workers conduct research to assist attorneys and other legal professionals.
+
+**Actions:**
+- `research.LegalIssues.for.CaseSupport` - Investigate legal questions
+- `research.Regulations.for.ComplianceAnalysis` - Research regulatory requirements
+- `research.CaseLaw.for.LegalArguments` - Identify relevant precedents
+
+### manage.DocumentSystems
+
+Legal Support Workers manage records and technology systems.
+
+**Actions:**
+- `manage.DocumentSystems.for.CaseOrganization` - Maintain filing and retrieval systems
+- `manage.LegalTechnology.for.FirmOperations` - Support legal technology platforms
+- `manage.Databases.for.InformationRetrieval` - Maintain legal research databases
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Legal Research** - Advanced
-- **Legal Writing** - Advanced
-- **Regulatory Knowledge** - Advanced
+- **Legal Document Preparation** - Advanced
+- **Legal Research** - Intermediate to Advanced
+- **Records Management** - Advanced
+- **Legal Technology Platforms** - Intermediate to Advanced
+- **Court Filing Procedures** - Intermediate
+- **Regulatory Compliance** - Intermediate
+- **Database Management** - Intermediate
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
+- **Attention to Detail** - Critical
+- **Organizational Skills** - Critical
+- **Written Communication** - Essential
+- **Confidentiality** - Critical
+- **Time Management** - Essential
+- **Adaptability** - Essential
 - **Teamwork** - Important
-- **Adaptability** - Important
+- **Problem Solving** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["LegalSupportWorkers"]
-
-    subgraph SameCategory["Legal"]
-        Lawyers["Lawyers"]
-        JudicialLawClerks["Judicial Law Clerks"]
-        AdministrativeLawJud["Administrative Law Judges, Adjud..."]
-        ArbitratorsMediators["Arbitrators, Mediators, and Conc..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma to bachelor's degree (varies by role) |
+| Paralegal Certificate | Beneficial for document preparation roles |
+| Notary Public Commission | Required for notarial services |
+| Legal Technology Certifications | Relativity Certified Administrator, CEDS (e-Discovery) |
+| Library Science Degree | Required for law librarian roles (MLS/MLIS) |
+| Patent Agent Registration | Required for patent agent work (USPTO exam) |
+| Continuing Education | Varies by specialty and certification |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Legal Clerk / Document Preparer"] --> Mid["Legal Technician / Specialist"]
+    Mid --> Senior["Senior Legal Support Specialist"]
+    Senior --> Manager["Legal Support Manager"]
+    Manager --> Director["Legal Operations Director"]
+
+    Entry --> Tech["Legal Technology Specialist"]
+    Tech --> TechMgr["Legal Technology Manager"]
+    TechMgr --> CTO["Legal Innovation Director"]
+
+    Entry --> Paralegal["Paralegal Program"]
+    Paralegal --> SrParalegal["Senior Paralegal"]
 ```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Law Firms | Document preparation, filing, research | Billable support; deadline-driven; multiple practice areas |
+| Corporate Legal | Contract management, compliance support | Business integration; vendor management; process optimization |
+| Government | Regulatory filings, public records | Civil service positions; benefits; agency-specific procedures |
+| Legal Technology Companies | Software support, implementation | Technical expertise; vendor-side; product knowledge |
+
+## Technology & Tools
+
+- **Document Management** - iManage, NetDocuments, SharePoint
+- **e-Discovery Platforms** - Relativity, Everlaw, Logikcull
+- **Legal Research** - Westlaw, LexisNexis, Bloomberg Law
+- **Contract Management** - Ironclad, Agiloft, ContractPodAi
+- **Court Filing** - PACER, CM/ECF, state e-filing systems
+- **Office Productivity** - Microsoft Office, Adobe Acrobat Pro
+- **Communication** - Client portals, secure messaging platforms
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Legal Support Workers"]
+
+    subgraph SameCategory["Legal"]
+        Paralegals["Paralegals"]
+        TitleExaminers["Title Examiners"]
+        CourtReporters["Court Reporters"]
+        LegalSecretaries["Legal Secretaries"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        AdminAssistants["Administrative Assistants"]
+        RecordsManagers["Records Managers"]
+        ComplianceAsst["Compliance Assistants"]
+        LibraryTech["Library Technicians"]
+    end
+
+    Current --- SameCategory
+    Current --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Legal Department](/departments/Legal) - Core legal support
+- [Compliance](/departments/Compliance) - Regulatory support
+- [Administration](/departments/Administration) - Operational support
+- [Information Technology](/departments/IT) - Legal technology management
 
 ---
 

@@ -8,11 +8,15 @@ status: complete
 
 # Dermatologists
 
-> Diagnose and treat diseases relating to the skin, hair, and nails. May perform both medical and dermatological surgery functions.
+> Diagnose and treat diseases relating to the skin, hair, and nails. May perform both medical and dermatologic surgery functions.
 
 ## Overview
 
-Dermatologists is an occupation within the Healthcare Practitioners and Technical category. Diagnose and treat diseases relating to the skin, hair, and nails. 
+Dermatologists are physician specialists who diagnose and treat over 3,000 conditions affecting the skin, hair, nails, and mucous membranes. They manage conditions ranging from common disorders such as acne, eczema, psoriasis, and skin infections to complex diseases including melanoma, autoimmune blistering disorders, and cutaneous lymphoma. Dermatologists perform both medical and surgical procedures, making them unique among medical specialties in managing the full spectrum of their organ system.
+
+The specialty encompasses medical dermatology (diagnosis and pharmacological treatment), surgical dermatology (excisions, Mohs micrographic surgery, reconstructive procedures), cosmetic dermatology (laser treatments, injectable fillers, chemical peels), and dermatopathology (microscopic diagnosis of skin diseases). Dermatologists serve as the frontline for skin cancer detection, performing full-body skin examinations and biopsies that can be lifesaving when melanoma or other malignancies are identified early.
+
+Modern dermatology has been transformed by advances in biologic therapies for psoriasis and atopic dermatitis, immunotherapy for melanoma, laser and energy-based devices, and teledermatology platforms. Dermatologists increasingly utilize dermoscopy, confocal microscopy, and artificial intelligence-assisted diagnostic tools to improve diagnostic accuracy and treatment outcomes.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1213.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 100 |
+| Median Annual Salary | $350,620 |
+| Employment | ~13,000 |
+| Projected Growth | 3% (2022-2032) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 50+ |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,84 +45,177 @@ graph TD
 ```mermaid
 mindmap
     root(("Dermatologists"))
-        Conduct
-            Complete Skin Examinations
-            Diagnostic Tests
-            Chest Radiographs X Rays
-            Microbiologic Tests
-            Endocrinologic Tests
         Diagnose
-            Pigmented Lesions
-            Common Acquired Nevi
-            Congenital Nevi
-            Dysplastic Nevi
-            Spitz Nevi
+            Skin Diseases
+            Skin Cancer
+            Autoimmune Conditions
+            Infections
         Treat
-            Pigmented Lesions
-            Common Acquired Nevi
-            Congenital Nevi
-            Dysplastic Nevi
-            Spitz Nevi
-        Perform
-            Incisional Biopsies
-            Skin Surgery
-        Counsel
-            Patients
-        Record
-            Patients Health Histories
-        Recommend
-            Diagnostic Tests Based
+            Medical Dermatology
+            Surgical Excisions
+            Mohs Surgery
+            Laser Therapy
+        Examine
+            Full-Body Skin Exams
+            Dermoscopy
+            Biopsy
         Prescribe
-            Hormonal Agents Treatments
-            Topical Treatments
-            Contraceptives
-            Spironolactone
-            Antiandrogens
+            Topical Medications
+            Systemic Therapies
+            Biologic Agents
+        Perform
+            Skin Surgery
+            Cosmetic Procedures
+            Cryotherapy
+            Phototherapy
+        Counsel
+            Sun Protection
+            Skin Cancer Prevention
+            Chronic Disease Management
+        Interpret
+            Dermatopathology
+            Lab Results
+            Imaging
+        Collaborate
+            Oncologists
+            Rheumatologists
+            Allergists
 ```
 
-### conduct.CompleteSkinExaminations
+### diagnose.SkinConditions
 
-Dermatologists conduct complete skin examinations as part of their core responsibilities.
-
-**Actions:**
-- `conduct.CompleteSkinExaminations`
-- `conduct.DiagnosticTests`
-- `conduct.ChestRadiographsXRays`
-- `conduct.MicrobiologicTests`
-
-### diagnose.PigmentedLesions
-
-Dermatologists diagnose pigmented lesions as part of their core responsibilities.
+Dermatologists identify skin diseases through clinical and histological evaluation.
 
 **Actions:**
-- `diagnose.PigmentedLesions`
-- `diagnose.CommonAcquiredNevi`
-- `diagnose.CongenitalNevi`
-- `diagnose.DysplasticNevi`
+- `diagnose.SkinDiseases.using.ClinicalExamination` - Visual assessment
+- `diagnose.SkinCancer.using.Dermoscopy` - Dermatoscopic analysis
+- `diagnose.AutoimmuneConditions.using.Biopsy` - Histopathologic diagnosis
+- `diagnose.Infections.using.CultureAndSensitivity` - Microbiologic testing
 
-### treat.PigmentedLesions
+### treat.DermatologicConditions
 
-Dermatologists treat pigmented lesions as part of their core responsibilities.
+Dermatologists deliver medical, surgical, and cosmetic treatments.
 
 **Actions:**
-- `treat.PigmentedLesions`
-- `treat.CommonAcquiredNevi`
-- `treat.CongenitalNevi`
-- `treat.DysplasticNevi`
+- `treat.Psoriasis.using.BiologicTherapy` - Targeted immune therapy
+- `treat.SkinCancer.using.MohsSurgery` - Tissue-sparing cancer removal
+- `treat.Acne.using.SystemicMedications` - Oral therapy management
+- `perform.LaserTherapy.for.VascularLesions` - Energy-based treatment
+
+### perform.DermatologicSurgery
+
+Dermatologists execute surgical procedures on skin structures.
+
+**Actions:**
+- `perform.SkinBiopsy.for.DiagnosticEvaluation` - Tissue sampling
+- `perform.Excisions.for.SkinCancerRemoval` - Surgical oncology
+- `perform.CosmeticProcedures.using.Injectables` - Aesthetic treatments
+- `perform.Cryotherapy.for.BenignLesions` - Destructive therapy
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Private Dermatology Practice | Primary practice setting |
+| Academic Medical Centers | Teaching and complex referrals |
+| Hospital Dermatology Clinics | Inpatient consultation services |
+| Dermatologic Surgery Centers | Mohs and surgical dermatology |
+| Cosmetic Dermatology Clinics | Aesthetic procedures |
+| Teledermatology Platforms | Remote consultation services |
+| Dermatopathology Laboratories | Microscopic diagnosis |
+| Clinical Research Centers | Drug and device trials |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Clinical Dermatology Diagnosis** - Expert
+- **Dermoscopy** - Expert
+- **Dermatologic Surgery** - Expert
+- **Mohs Micrographic Surgery** - Advanced (subspecialty)
+- **Laser & Energy-Based Devices** - Advanced
+- **Dermatopathology** - Advanced
+- **Biologic Therapy Management** - Expert
+- **Cosmetic Procedures** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Pattern Recognition** - Critical
+- **Patient Communication** - Essential
+- **Attention to Detail** - Critical
+- **Empathy** - Essential
+- **Business Management** - Important
+- **Aesthetic Judgment** - Important
+- **Interdisciplinary Collaboration** - Essential
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Undergraduate | 4-year bachelor's degree (pre-med) |
+| Medical School | 4-year MD or DO program |
+| Transitional/Preliminary Year | 1 year internship |
+| Dermatology Residency | 3 years |
+| Fellowship | 1-2 years for subspecialty (optional) |
+| Total Training | 12-14 years post-high school |
+| Licensure | State medical license |
+| Board Certification | American Board of Dermatology |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| ABD Diplomate | American Board of Dermatology certification |
+| ABD Dermatopathology | Subspecialty in skin pathology |
+| ABD Pediatric Dermatology | Subspecialty in children's skin |
+| ACMS Fellow | Mohs micrographic surgery fellowship |
+| ASLMS Member | Laser surgery and medicine |
+| FAAD | Fellow of the American Academy of Dermatology |
+| BLS/ACLS | Life support certifications |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Med["Medical School"] --> PGY1["Intern Year"]
+    PGY1 --> Res["Dermatology Residency"]
+    Res --> Fellow["Fellowship (Mohs, Derm-Path, Peds)"]
+    Res --> Attending["Attending Dermatologist"]
+    Fellow --> Attending
+    Attending --> Partner["Practice Partner"]
+    Partner --> Owner["Practice Owner"]
+    Owner --> MultiSite["Multi-Site Practice"]
+
+    Attending --> Academic["Academic Dermatologist"]
+    Academic --> Chief["Division Chief"]
+    Chief --> Chair["Department Chair"]
+
+    Attending --> Industry["Pharma/Device Industry"]
+```
+
+## Specializations
+
+| Subspecialty | Focus Area |
+|-------------|------------|
+| Mohs Micrographic Surgery | Skin cancer removal with margin control |
+| Dermatopathology | Microscopic diagnosis of skin disease |
+| Pediatric Dermatology | Childhood skin conditions |
+| Cosmetic Dermatology | Aesthetic procedures and rejuvenation |
+| Immunodermatology | Autoimmune blistering and connective tissue diseases |
+| Dermato-Oncology | Melanoma and cutaneous malignancies |
+| Contact Dermatitis | Patch testing and occupational skin disease |
+| Photomedicine | Phototherapy and photodermatology |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Dermoscopes (Polarized, Non-polarized) | Skin lesion magnification |
+| Laser Systems (CO2, Pulsed Dye, Nd:YAG) | Energy-based treatments |
+| Mohs Tissue Processing Equipment | Intraoperative histology |
+| Cryotherapy Units | Liquid nitrogen therapy |
+| Phototherapy Devices (UVB, PUVA) | Light-based treatment |
+| Confocal Microscopy | In vivo skin imaging |
+| Teledermatology Platforms | Remote consultation |
+| Electronic Health Records | Documentation and photography |
 
 ## Related Occupations
 
@@ -122,28 +223,45 @@ Dermatologists treat pigmented lesions as part of their core responsibilities.
 graph LR
     Current["Dermatologists"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph SkinCareTeam["Dermatology Team"]
+        MohsSurgeon["Mohs Surgeons"]
+        DermPA["Dermatology PAs"]
+        DermNP["Dermatology NPs"]
     end
 
-    Current --- SameCategory
+    subgraph RelatedSpecialties["Related Specialties"]
+        PlasticSurg["Plastic Surgeons"]
+        Allergists["Allergists"]
+        Rheumatologists["Rheumatologists"]
+    end
+
+    subgraph Pathology["Pathology"]
+        DermPath["Dermatopathologists"]
+        LabTech["Laboratory Technologists"]
+    end
+
+    Current --- SkinCareTeam
+    Current --- RelatedSpecialties
+    Current --- Pathology
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Physician Offices](/industries/Healthcare/PhysicianOffices) - Dermatology Practices
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Hospital Dermatology
+- [Academic Medical Centers](/industries/Healthcare/Hospitals/Teaching) - Teaching & Research
+- [Ambulatory Surgery Centers](/industries/Healthcare/AmbulatoryHealthCare) - Mohs Surgery
+- [Cosmetic Industry](/industries/Healthcare/CosmeticServices) - Aesthetic Medicine
+- [Pharmaceutical](/industries/Manufacturing/ChemicalManufacturing/Pharmaceutical) - Drug Development
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Dermatology](/departments/Dermatology)
+- [Dermatologic Surgery](/departments/DermatologicSurgery)
+- [Dermatopathology](/departments/Dermatopathology)
+- [Cosmetic Dermatology](/departments/CosmeticDermatology)
+- [Phototherapy](/departments/Phototherapy)
 
 ---
 

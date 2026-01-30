@@ -3,7 +3,9 @@ id: FarmLaborContractors
 name: "Farm Labor Contractors"
 code: "13-1074.00"
 type: Occupation
+category: Business
 status: complete
+certifications: ["FLC Registration", "DOL Certification"]
 ---
 
 # Farm Labor Contractors
@@ -12,14 +14,19 @@ status: complete
 
 ## Overview
 
-Farm Labor Contractors is an occupation within the Business and Financial Operations category. Recruit and hire seasonal or temporary agricultural laborers. 
+Farm Labor Contractors (FLCs) recruit, hire, transport, and supervise seasonal and temporary agricultural workers for farms, ranches, and processing operations. They serve as intermediaries between agricultural employers who need labor and workers seeking employment, often coordinating the movement of migrant labor crews across regions as harvest seasons shift. FLCs must navigate complex federal and state labor regulations, including the Migrant and Seasonal Agricultural Worker Protection Act (MSPA), H-2A visa program requirements, and OSHA field sanitation standards.
+
+These professionals manage all aspects of agricultural labor operations, from recruiting workers and negotiating wages to arranging housing, transportation, and field amenities. They maintain payroll records, ensure workers' compensation coverage, and comply with agricultural labor laws that govern working conditions, housing standards, and disclosure requirements. The role demands strong organizational skills, bilingual communication abilities, and thorough knowledge of both agricultural operations and employment law.
+
+The profession operates within one of the most heavily regulated segments of the labor market, reflecting the historically vulnerable position of agricultural workers. Modern farm labor contractors must contend with labor shortages, immigration policy changes, increasing mechanization, heat illness prevention requirements, and growing scrutiny of working conditions from regulators and advocacy organizations.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group131074["13-1074 Farm Labor Contractors"]
-    Group131074 --> Current["13-1074.00 Farm Labor Contractors"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G131074["13-1074 Farm Labor Contractors"]
+    G131074 --> Current["13-1074.00 Farm Labor Contractors"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,7 +35,11 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-1074.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
+| Median Salary | $38,960 |
+| Employment | ~5,500 |
+| Projected Growth | -2% (Declining) |
 | Task Count | 15 |
 | Source | O*NET |
 
@@ -37,89 +48,165 @@ graph TD
 ```mermaid
 mindmap
     root(("Farm Labor Contractors"))
-        Pay
-            Wages
-        Provide
-            Food
-            Drinking Water
-            Field Sanitation Facilities
         Recruit
             Agricultural Workers
+            Seasonal Laborers
+            Migrant Crews
         Hire
-            Agricultural Workers
-        Employ
-            Foremen
+            Field Workers
+            Processing Workers
+            Supervisors
+        Provide
+            Transportation
+            Housing
+            Meals and Water
         Supervise
-            Work
-        Furnish
-            Tools
+            Field Operations
+            Work Quality
+            Safety Compliance
+        Pay
+            Wages
+            Benefits
+            Withholdings
+        Maintain
+            Employment Records
+            Licensing Compliance
+            Safety Standards
 ```
-
-### pay.Wages
-
-Farm Labor Contractors pay wages as part of their core responsibilities.
-
-**Actions:**
-- `pay.Wages.of.ContractedFarmLaborers`
-
-### provide.Food
-
-Farm Labor Contractors provide food as part of their core responsibilities.
-
-**Actions:**
-- `provide.Food.to.contracted.Workers`
-- `provide.DrinkingWater.to.contracted.Workers`
-- `provide.FieldSanitationFacilities.to.contracted.Workers`
 
 ### recruit.AgriculturalWorkers
 
-Farm Labor Contractors recruit agricultural workers as part of their core responsibilities.
+Recruit and hire seasonal or temporary agricultural laborers for farming operations.
 
 **Actions:**
-- `recruit.AgriculturalWorkers`
+- `recruit.AgriculturalWorkers.for.SeasonalHarvest` - Source labor supply
+- `recruit.MigrantCrews.for.RegionalDeployment` - Coordinate mobile labor
+- `hire.FieldWorkers.with.AppropriateDocumentation` - Verify employment eligibility
+- `employ.Foremen.to.supervise.FieldOperations` - Staff crew leadership
+
+### provide.WorkerServices
+
+Provide transportation, housing, meals, and field sanitation for agricultural workers.
+
+**Actions:**
+- `provide.Transportation.to.WorkSites` - Arrange worker transport
+- `provide.Housing.that.meets.FederalStandards` - Maintain worker housing
+- `provide.Food.to.contracted.Workers` - Supply meals and provisions
+- `provide.FieldSanitationFacilities.to.contracted.Workers` - Ensure OSHA compliance
+
+### manage.LaborOperations
+
+Manage payroll, compliance, and daily operations of agricultural labor crews.
+
+**Actions:**
+- `pay.Wages.of.ContractedFarmLaborers` - Process payroll
+- `maintain.EmploymentRecords.for.RegulatoryCompliance` - Document labor activities
+- `supervise.Work.to.ensure.QualityAndSafety` - Oversee field operations
+- `furnish.Tools.for.AgriculturalWork` - Supply equipment
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Agricultural Labor Regulations (MSPA, H-2A)** - Expert
+- **Workforce Recruitment & Management** - Advanced
+- **Payroll & Employment Records** - Advanced
+- **OSHA Field Sanitation Standards** - Advanced
+- **Agricultural Operations Knowledge** - Advanced
+- **Transportation & Logistics** - Proficient
+- **Workers' Compensation Administration** - Proficient
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Leadership & Supervision** - Critical
+- **Bilingual Communication (English/Spanish)** - Critical
+- **Organizational Skills** - Essential
+- **Relationship Building** - Essential
+- **Problem Solving** - Important
+- **Cultural Sensitivity** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Farm Labor Contractors"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent; some college preferred |
+| Federal Registration | Farm Labor Contractor Registration with DOL (required) |
+| Vehicle Licensing | CDL may be required for worker transportation |
+| Insurance | Workers' compensation and vehicle liability insurance required |
+| H-2A Compliance | DOL certification for temporary agricultural workers |
+| Continuing Requirements | Annual registration renewal, insurance maintenance |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Crew Foreman / Labor Recruiter"] --> Mid["Farm Labor Contractor"]
+    Mid --> Senior["Senior FLC / Regional Contractor"]
+    Senior --> Director["FLC Business Owner / Multi-Operation Manager"]
+    Director --> Executive["Agricultural Staffing Company Executive"]
+
+    Alt1["Farm Worker"] --> Entry
+    Alt2["Farm Manager"] --> Mid
+
+    subgraph Tracks["Career Tracks"]
+        FLC["Farm Labor Contracting"]
+        Staffing["Agricultural Staffing"]
+        FarmMgmt["Farm Management"]
+        Compliance["Labor Compliance"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Row Crops** | Seasonal harvest | Planting and harvesting crews, field preparation |
+| **Orchards & Vineyards** | Specialized labor | Pruning, thinning, picking, packing |
+| **Nurseries & Greenhouses** | Year-round labor | Propagation, transplanting, maintenance |
+| **Dairy & Livestock** | Animal husbandry | Milking, feeding, facility maintenance |
+| **Food Processing** | Post-harvest | Sorting, packing, processing line staffing |
+| **Forestry** | Tree services | Planting, thinning, fire prevention |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Payroll** | QuickBooks, ADP, Paylocity agricultural modules |
+| **Compliance** | DOL electronic registration, E-Verify |
+| **Communication** | Mobile phones, WhatsApp, group messaging |
+| **Transportation** | Fleet management, GPS tracking |
+| **Timekeeping** | Time clocks, mobile time tracking apps |
+| **Housing Management** | Inspection checklists, maintenance logs |
+| **Record Keeping** | Spreadsheets, agricultural management software |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    FLC["Farm Labor Contractors"]
+
+    subgraph SameCategory["Business Operations"]
+        FPB["Farm Product Buyers"]
+        HRS["Human Resources Specialists"]
+        PA["Purchasing Agents"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        FM["Farm Managers"]
+        TS["Temporary Staffing Agents"]
+        AG["Agricultural Workers"]
+    end
+
+    FLC --- SameCategory
+    FLC --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Agricultural Labor Operations](/departments/AgriculturalLabor)
+- [Human Resources](/departments/HumanResources)
+- [Farm Operations](/departments/FarmOperations)
+- [Compliance](/departments/Compliance)
+- [Transportation & Logistics](/departments/Transportation)
 
 ---
 

@@ -12,13 +12,17 @@ status: complete
 
 ## Overview
 
-Bioinformatics Technicians is a specialized variant within the Computer and Mathematical category. Apply principles and methods of bioinformatics to assist scientists in areas such as pharmaceuticals, medical technology, biotechnology, computational biology, proteomics, computer information science, biology and medical informatics. Apply bioinformatics tools to visualize, analyze, manipulate or interpret molecular data.
+Bioinformatics Technicians work at the intersection of biology, computer science, and data analysis to support scientific research. They apply computational tools and statistical methods to analyze biological data, including genomic sequences, protein structures, and molecular interactions. Their work is essential to advancing our understanding of genetics, disease mechanisms, and drug development.
+
+These professionals serve as the technical backbone of bioinformatics research labs, managing the databases, pipelines, and software tools that researchers depend on to process vast amounts of biological data. As genomic sequencing costs have plummeted and the volume of biological data has exploded, bioinformatics technicians play an increasingly critical role in translating raw data into actionable scientific knowledge.
+
+The role bridges traditional wet-lab biology with computational science, requiring a unique combination of biological domain knowledge and programming expertise. Bioinformatics technicians may specialize in areas such as genomics, proteomics, structural biology, systems biology, or pharmacogenomics, depending on their organization and research focus.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat15["15 - Computer and Mathematical"] --> Group152099["15-2099 Mathematical Science Occupations, All Other"]
+    Cat15["15 - Computer and Mathematical Occupations"] --> Group152099["15-2099 Mathematical Science Occupations, All Other"]
     Group152099 --> Base["15-2099.00 Mathematical Science Occupations, All Other"]
     Group152099 --> Current["15-2099.01 Bioinformatics Technicians"]
     style Current fill:#e1f5fe
@@ -29,8 +33,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 15-2099.01 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Computer and Mathematical](/occupations/Technology/index) |
 | Task Count | 65 |
+| Median Salary | $60,820 |
+| Employment | ~6,300 |
+| Growth Rate | Faster Than Average |
 | Source | O*NET |
 
 ## Core Tasks
@@ -39,72 +47,134 @@ graph TD
 mindmap
     root(("Bioinformatics Technicians"))
         Analyze
-            Bioinformatics Data Using Software Packages
+            Genomic Data
             Statistical Applications
             Data Mining Techniques
         Manipulate
-            Bioinformatics Data Using Software Packages
-            Statistical Applications
-            Data Mining Techniques
+            Molecular Data
+            Sequence Data
         Extend
-            Existing Software Programs
-            Web Based Interactive Tools
-            Database Queries As Sequence Management Needs Evolve
-            Analysis Needs Evolve
+            Software Programs
+            Web-Based Tools
+            Database Queries
         Maintain
-            Awareness
-            Applications Process Biologically Based Data
+            Bioinformatics Databases
+            Software Applications
         Conduct
             Quality Analyses
-        Enter
-            Information
-        Retrieve
-            Information
+            Data Validation
         Develop
-            Applications Process Biologically Based Data
+            Analysis Pipelines
+            Custom Tools
+        Enter
+            Biological Information
+        Retrieve
+            Sequence Data
+            Research Findings
 ```
 
-### analyze.BioinformaticsDataUsingSoftwarePackages
+### analyze.GenomicData
 
-Bioinformatics Technicians analyze bioinformatics data using software packages as part of their core responsibilities.
-
-**Actions:**
-- `analyze.BioinformaticsDataUsingSoftwarePackages`
-- `analyze.StatisticalApplications`
-- `analyze.DataMiningTechniques`
-
-### manipulate.BioinformaticsDataUsingSoftwarePackages
-
-Bioinformatics Technicians manipulate bioinformatics data using software packages as part of their core responsibilities.
+Bioinformatics Technicians analyze biological data using specialized software and statistical methods.
 
 **Actions:**
-- `manipulate.BioinformaticsDataUsingSoftwarePackages`
-- `manipulate.StatisticalApplications`
-- `manipulate.DataMiningTechniques`
+- `analyze.GenomicData.using.BioinformaticsSoftwarePackages`
+- `analyze.ProteomicData.using.StatisticalApplications`
+- `analyze.SequenceData.using.DataMiningTechniques`
+- `analyze.MolecularData.to.identify.Patterns`
 
-### extend.ExistingSoftwarePrograms
+### manipulate.MolecularData
 
-Bioinformatics Technicians extend existing software programs as part of their core responsibilities.
+Bioinformatics Technicians process and transform molecular data for research use.
 
 **Actions:**
-- `extend.ExistingSoftwarePrograms`
-- `extend.WebBasedInteractiveTools`
-- `extend.DatabaseQueriesAsSequenceManagementNeedsEvolve`
-- `extend.AnalysisNeedsEvolve`
+- `manipulate.SequenceData.using.AlignmentTools`
+- `manipulate.GenomicData.for.DownstreamAnalysis`
+- `manipulate.ProteomicData.using.VisualizationSoftware`
+- `clean.RawData.to.ensure.DataQuality`
+
+### extend.SoftwarePrograms
+
+Bioinformatics Technicians extend and customize tools to meet evolving research needs.
+
+**Actions:**
+- `extend.ExistingSoftwarePrograms.to.support.NewAnalysisMethods`
+- `extend.WebBasedInteractiveTools.for.ResearchCollaboration`
+- `extend.DatabaseQueries.as.SequenceManagementNeedsEvolve`
+- `develop.AnalysisPipelines.for.HighThroughputData`
+
+### maintain.BioinformaticsDatabases
+
+Bioinformatics Technicians build and maintain databases for biological information.
+
+**Actions:**
+- `maintain.GenomicDatabases.for.ResearchTeams`
+- `maintain.SequenceDatabases.to.ensure.DataIntegrity`
+- `build.Databases.for.ProcessingBiologicalInformation`
+- `update.DatabaseSchemas.to.accommodate.NewDataTypes`
+
+## Tech Stack
+
+### Programming Languages
+- **Python** - Primary scripting and analysis
+- **R** - Statistical computing and Bioconductor
+- **Perl** - Legacy bioinformatics scripts
+- **Bash/Shell** - Pipeline automation
+- **SQL** - Database querying
+- **Java** - Enterprise bioinformatics tools
+
+### Bioinformatics Tools
+- **BLAST** - Sequence alignment
+- **Bowtie/BWA** - Short read alignment
+- **GATK** - Variant calling
+- **SAMtools** - Sequence manipulation
+- **Bioconductor** - R genomic analysis
+- **Galaxy** - Web-based analysis platform
+- **UCSC Genome Browser** - Genome visualization
+
+### Data & Infrastructure
+- **AWS/GCP** - Cloud computing for genomics
+- **Docker/Singularity** - Containerized pipelines
+- **Nextflow/Snakemake** - Workflow management
+- **PostgreSQL/MySQL** - Relational databases
+- **MongoDB** - Unstructured data storage
+- **HPC Clusters** - High-performance computing
+
+### Visualization
+- **IGV** - Integrative Genomics Viewer
+- **Cytoscape** - Network visualization
+- **R/ggplot2** - Statistical plotting
+- **Matplotlib** - Python plotting
+- **Jupyter Notebooks** - Interactive analysis
+
+## Certifications
+
+| Certification | Provider | Level |
+|---------------|----------|-------|
+| AWS Certified Cloud Practitioner | Amazon | Foundation |
+| ISCB Bioinformatics Certification | ISCB | Professional |
+| SAS Certified Statistical Business Analyst | SAS | Professional |
+| CompTIA Data+ | CompTIA | Foundation |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Programming** - Advanced
-- **Systems Analysis** - Advanced
+- **Genomic Data Analysis** - Expert
+- **Programming (Python/R/Perl)** - Advanced
+- **Statistical Methods** - Advanced
 - **Database Management** - Advanced
+- **Sequence Alignment & Analysis** - Expert
+- **Pipeline Development** - Advanced
+- **Linux/Unix Systems** - Advanced
+- **Cloud Computing** - Intermediate
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Attention to Detail** - Critical
+- **Scientific Communication** - Essential
+- **Problem Solving** - Critical
+- **Collaboration** - Essential (working with bench scientists)
+- **Documentation** - Important
+- **Continuous Learning** - Essential
 
 ## Related Occupations
 
@@ -113,27 +183,81 @@ graph LR
     Current["Bioinformatics Technicians"]
 
     subgraph SameCategory["Computer and Mathematical"]
-        ComputerSystemsAnaly["Computer Systems Analysts"]
-        HealthInformaticsSpe["Health Informatics Specialists"]
-        InformationSecurityA["Information Security Analysts"]
-        ComputerAndInformati["Computer and Information Researc..."]
+        Biostat["Biostatisticians"]
+        DS["Data Scientists"]
+        MSO["Mathematical Science Occupations"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        Bio["Biologists"]
+        Genetics["Geneticists"]
+        Lab["Lab Technicians"]
     end
 
     Current --- SameCategory
+    Current --- CrossFunctional
 ```
 
-## Industries
+- [Biostatisticians](/occupations/Technology/Biostatisticians)
+- [Data Scientists](/occupations/Technology/DataScientists)
+- [Mathematical Science Occupations](/occupations/Technology/MathematicalScienceOccupations)
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+## Industry Variations
+
+### Pharmaceutical & Biotech
+- Drug target identification
+- Pharmacogenomics analysis
+- Clinical trial data processing
+- ADME/toxicity prediction
+
+### Academic Research
+- Genomic and transcriptomic analysis
+- Publication-quality visualizations
+- Grant-supported research pipelines
+- Open-source tool development
+
+### Healthcare / Clinical
+- Clinical genomics (variant interpretation)
+- Precision medicine support
+- Diagnostic test development
+- Electronic health records integration
+
+### Agriculture
+- Crop genome analysis
+- Trait identification and selection
+- Pathogen genomics
+- Environmental DNA analysis
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Bioinformatics Technician<br/>Research Assistant"] --> Mid["Bioinformatics Analyst<br/>Computational Biologist"]
+    Mid --> Senior["Senior Bioinformatics Scientist<br/>Lead Analyst"]
+    Senior --> Lead["Principal Scientist<br/>Director of Bioinformatics"]
+    Lead --> Exec["VP Research<br/>Chief Scientific Officer"]
+
+    Alt1["Lab Technician"] --> Entry
+    Alt2["Data Analyst"] --> Entry
 ```
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's or Master's in Bioinformatics, Computational Biology, Computer Science, or Biology |
+| Alternative Paths | Biology degree with self-taught programming, CS degree with biology coursework |
+| Work Experience | 0-2 years entry, 3-5 years mid-level |
+| On-the-Job Training | Moderate - domain-specific tools and databases |
+| Key Knowledge Areas | Molecular biology, statistics, algorithms, database design |
+
+## Departments
+
+This occupation typically works in:
+- [Research & Development](/departments/RnD)
+- [Information Technology](/departments/IT)
+- [Clinical Operations](/departments/Clinical)
+- [Data Science & Analytics](/departments/DataScience)
 
 ---
 

@@ -12,14 +12,19 @@ status: complete
 
 ## Overview
 
-Paralegals and Legal Assistants is an occupation within the Legal category. Assist lawyers by investigating facts, preparing legal documents, or researching legal precedent. 
+Paralegals and Legal Assistants are essential members of legal teams who perform substantive legal work under the supervision of attorneys. They conduct legal research, draft documents, organize case files, interview witnesses, and manage the administrative complexities of litigation and transactional practice. While they cannot provide legal advice, represent clients in court, or set legal fees, paralegals handle much of the foundational work that enables attorneys to practice effectively and serve clients efficiently.
+
+The paralegal profession has grown significantly as law firms, corporate legal departments, and government agencies have recognized the cost-effectiveness of delegating substantive legal tasks to qualified paraprofessionals. Modern paralegals often specialize in practice areas such as litigation, corporate law, real estate, intellectual property, family law, immigration, or bankruptcy. In each specialty, they develop deep procedural knowledge and subject-matter expertise that makes them indispensable to their legal teams. Some experienced paralegals manage entire case portfolios, coordinate with expert witnesses, and oversee document production in complex litigation.
+
+The profession offers multiple pathways to entry, including associate's and bachelor's degree programs in paralegal studies, certificate programs approved by the American Bar Association, and on-the-job training. Professional certifications such as the Certified Paralegal (CP) from NALA or the Paralegal CORE Competency Exam from NFPA demonstrate competence and enhance career prospects.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat23["23 - Legal"] --> Group232011["23-2011 Paralegals and Legal Assistants"]
-    Group232011 --> Current["23-2011.00 Paralegals and Legal Assistants"]
+    Cat23["23 - Legal Occupations"] --> Group232["23-2000 Legal Support Workers"]
+    Group232 --> Base2011["23-2011 Paralegals and Legal Assistants"]
+    Base2011 --> Current["23-2011.00 Paralegals and Legal Assistants"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,38 +33,40 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 23-2011.00 |
+| Job Zone | 3 (Medium Preparation) |
 | Category | [Legal](/occupations/Legal/index) |
-| Task Count | 68 |
+| Median Annual Salary | $59,200 |
+| Employment | ~345,000 |
+| Projected Growth | 4% (as fast as average) |
+| Core Tasks | 68 |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("ParalegalsAndLegalAssistants"))
+    root(("Paralegals"))
         Prepare
             Affidavits Documents
-            Other Documents
             Legal Correspondence
-            Organize
-            Maintain Documents
+            Court Filings
+            Discovery Materials
         Edit
             Legal Documents
-            Including Legislation
+            Legislation
             Briefs
             Pleadings
             Appeals
         Review
-            Including Legislation
+            Legislation
             Briefs
             Pleadings
             Appeals
-            Real Estate Closing Statements
+            Closing Statements
         Investigate
             Facts
             Law
-        Meet
-            Other Professionals
+            Witnesses
         Gather
             Research Data
             Statutes
@@ -68,84 +75,169 @@ mindmap
             Codes
         Analyze
             Research Data
-            Statutes
-            Decisions
-            Legal Articles
-            Codes
+            Case Files
+            Evidence
+        Organize
+            Case Files
+            Documents
+            Exhibits
+        Meet
+            Clients
+            Other Professionals
 ```
 
 ### prepare.AffidavitsDocuments
 
-Paralegals and Legal Assistants prepare affidavits documents as part of their core responsibilities.
+Paralegals prepare legal documents for filing and case management.
 
 **Actions:**
-- `prepare.AffidavitsDocuments.in.PaperFilingSystem`
-- `prepare.AffidavitsDocuments.in.ElectronicFilingSystem`
-- `prepare.OtherDocuments.in.PaperFilingSystem`
-- `prepare.OtherDocuments.in.ElectronicFilingSystem`
+- `prepare.AffidavitsDocuments.in.PaperFilingSystem` - Draft affidavits for physical filing
+- `prepare.AffidavitsDocuments.in.ElectronicFilingSystem` - Prepare e-filed documents
+- `prepare.OtherDocuments.in.PaperFilingSystem` - Create supporting legal documents
+- `prepare.OtherDocuments.in.ElectronicFilingSystem` - File documents electronically
+- `prepare.LegalCorrespondence.for.Attorneys` - Draft letters and communications
 
 ### edit.LegalDocuments
 
-Paralegals and Legal Assistants edit legal documents as part of their core responsibilities.
+Paralegals review and edit legal documents for accuracy and compliance.
 
 **Actions:**
-- `edit.LegalDocuments`
-- `edit.IncludingLegislation`
-- `edit.Briefs`
-- `edit.Pleadings`
+- `edit.LegalDocuments` - Review and revise legal filings
+- `edit.IncludingLegislation` - Edit legislative analysis documents
+- `edit.Briefs` - Proofread and edit legal briefs
+- `edit.Pleadings` - Refine pleadings and motions
 
 ### review.IncludingLegislation
 
-Paralegals and Legal Assistants review including legislation as part of their core responsibilities.
+Paralegals review legal materials to support case strategy.
 
 **Actions:**
-- `review.IncludingLegislation`
-- `review.Briefs`
-- `review.Pleadings`
-- `review.Appeals`
+- `review.IncludingLegislation` - Analyze relevant statutory provisions
+- `review.Briefs` - Evaluate opposing and supporting briefs
+- `review.Pleadings` - Assess filed pleadings
+- `review.Appeals` - Review appellate materials
+
+### investigate.Facts
+
+Paralegals conduct factual investigations to support legal proceedings.
+
+**Actions:**
+- `investigate.Facts.for.CasePreparation` - Research background information and evidence
+- `investigate.Law.for.LegalStrategy` - Identify applicable legal authorities
+
+### gather.ResearchData
+
+Paralegals collect legal research materials and organize findings.
+
+**Actions:**
+- `gather.ResearchData.from.LegalDatabases` - Search Westlaw, LexisNexis, and other platforms
+- `gather.Statutes.for.CaseAnalysis` - Compile relevant statutory provisions
+- `gather.Decisions.for.Precedent` - Collect case law supporting legal arguments
+- `gather.LegalArticles.for.Research` - Review secondary sources and commentary
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Legal Research** - Advanced
-- **Legal Writing** - Advanced
-- **Regulatory Knowledge** - Advanced
+- **Legal Research (Westlaw/LexisNexis)** - Expert
+- **Legal Writing and Drafting** - Advanced
+- **Document Management** - Advanced
+- **E-Discovery and Litigation Support** - Advanced
+- **Case Management Software** - Advanced
+- **Court Filing Procedures** - Advanced
+- **Citation and Bluebook Formatting** - Advanced
+- **Deposition Preparation** - Intermediate
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Attention to Detail** - Critical
+- **Organizational Skills** - Critical
+- **Written Communication** - Critical
+- **Time Management** - Essential
+- **Confidentiality** - Critical
+- **Critical Thinking** - Essential
+- **Teamwork** - Essential
+- **Client Communication** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["ParalegalsAndLegalAssistants"]
-
-    subgraph SameCategory["Legal"]
-        Lawyers["Lawyers"]
-        JudicialLawClerks["Judicial Law Clerks"]
-        AdministrativeLawJud["Administrative Law Judges, Adjud..."]
-        ArbitratorsMediators["Arbitrators, Mediators, and Conc..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Associate's or Bachelor's degree in Paralegal Studies |
+| ABA-Approved Programs | Preferred by many employers; ensures curriculum standards |
+| Certified Paralegal (CP) | NALA certification; exam-based credential |
+| PACE Certification | NFPA Paralegal CORE Competency Exam |
+| Advanced Paralegal Certification | NALA specialty certifications (e-Discovery, contracts, etc.) |
+| Continuing Education | CLE credits required for certification maintenance |
+| State-Specific Requirements | Some states have registration or licensing requirements |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Paralegal / Legal Assistant"] --> Mid["Senior Paralegal"]
+    Mid --> Lead["Lead Paralegal / Paralegal Manager"]
+    Lead --> Director["Director of Paralegal Services"]
+    Director --> COO["Legal Operations Director"]
+
+    Entry --> Specialist["Litigation Support Specialist"]
+    Specialist --> eDiscovery["e-Discovery Manager"]
+    eDiscovery --> LegalTech["Legal Technology Director"]
+
+    Entry --> LawSchool["Law School"]
+    LawSchool --> Attorney["Attorney"]
 ```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Law Firms (Large) | Litigation, corporate, IP | High specialization; complex multi-party cases; billable hours |
+| Law Firms (Small) | General practice | Broad responsibilities; client-facing; diverse case types |
+| Corporate Legal Departments | Contracts, compliance, governance | Business integration; regulatory focus; in-house culture |
+| Government Agencies | Administrative law, prosecution | Public sector benefits; regulatory expertise; caseload management |
+| Nonprofit / Legal Aid | Pro bono, public interest | Client advocacy; community engagement; resource constraints |
+
+## Technology & Tools
+
+- **Legal Research** - Westlaw, LexisNexis, Bloomberg Law, Fastcase
+- **Case Management** - Clio, PracticePanther, MyCase, Litify
+- **e-Discovery** - Relativity, Concordance, Logikcull, Everlaw
+- **Document Management** - iManage, NetDocuments, SharePoint
+- **Court Filing** - PACER, CM/ECF, state e-filing systems
+- **Document Drafting** - HotDocs, Contract Express, MS Office Suite
+- **Time and Billing** - TimeSolv, Bill4Time, LEDES billing
+- **Communication** - Secure email, client portals, Teams/Slack
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Paralegals and Legal Assistants"]
+
+    subgraph SameCategory["Legal"]
+        Lawyers["Lawyers"]
+        JLC["Judicial Law Clerks"]
+        TitleExaminers["Title Examiners"]
+        LegalSecretaries["Legal Secretaries"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        CompOfficers["Compliance Officers"]
+        CourtReporters["Court Reporters"]
+        LegalSecAdmin["Legal Administrative Assistants"]
+        ClaimsAdjusters["Claims Adjusters"]
+    end
+
+    Current --- SameCategory
+    Current --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Legal Department](/departments/Legal) - Core legal support function
+- [Compliance](/departments/Compliance) - Regulatory compliance support
+- [Risk Management](/departments/RiskManagement) - Contract and claims analysis
+- [Corporate Governance](/departments/CorporateGovernance) - Board and governance support
 
 ---
 

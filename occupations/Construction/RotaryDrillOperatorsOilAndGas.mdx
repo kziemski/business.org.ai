@@ -8,18 +8,25 @@ status: complete
 
 # Rotary Drill Operators, Oil and Gas
 
-> Set up or operate a variety of drills to remove underground oil and gas, or remove core samples for testing during oil and gas exploration.
+> Set up or operate a variety of drills to remove underground oil and gas, or core samples. Includes top-drive operators.
 
 ## Overview
 
-Rotary Drill Operators, Oil and Gas is classified under Construction and Extraction (SOC 47). Set up or operate a variety of drills to remove underground oil and gas, or remove core samples for testing during oil and gas exploration.
+Rotary Drill Operators (commonly called drillers) are the senior operational position on an oil and gas drilling rig, responsible for controlling the drilling process from the driller's console on the rig floor. They operate the drawworks, rotary table or top drive, mud pumps, and other rig systems to advance the drill bit through rock formations to reach hydrocarbon reservoirs. The driller makes real-time decisions about weight on bit, rotary speed, mud flow rate, and drilling parameters that directly affect well performance, safety, and cost.
+
+The driller's most critical responsibility is well control -- maintaining the balance between formation pressure and wellbore pressure to prevent blowouts. They continuously monitor pit levels, flow rates, standpipe pressure, and other indicators that signal formation pressure changes. When a kick (unexpected influx of formation fluids) is detected, the driller must immediately shut in the well by activating the blowout preventer (BOP), a life-critical procedure that must be executed within seconds.
+
+Modern drilling operations increasingly use automated drilling systems, wired drill pipe for real-time downhole data, and managed pressure drilling techniques. However, the driller remains the human decision-maker responsible for safe operations, crew supervision, and equipment management. Drillers typically advance through the rig crew positions (roustabout, floorhand, derrick operator) before earning the driller's chair.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group475012["47-5012 Rotary Drill Operators, Oil and Gas"]
-    Group475012 --> Current["47-5012.00 Rotary Drill Operators, Oil and Gas"]
+    Cat47["47 - Construction and Extraction"] --> Group475["47-5000 Extraction Workers"]
+    Group475 --> Group4750["47-5010 Drilling Operators"]
+    Group4750 --> Derrick["47-5011.00 Derrick Operators"]
+    Group4750 --> Current["47-5012.00 Rotary Drill Operators"]
+    Group4750 --> Service["47-5013.00 Service Unit Operators"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,107 +35,149 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-5012.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 103 |
+| Task Count | 95 |
+| Median Salary | $57,200 / year |
+| Employment | ~18,000 |
+| Job Outlook | -3% (Decline) |
+| Physical Demands | Heavy |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("RotaryDrillOperatorsOilAndGas"))
-        Train
-            Crews
-            Introduce Procedures
-        Observe
-            Pressure Gauge
-            Move Throttles
-            Levers
-        Count
-            Sections
-        Push
-            Levers Pedals
-            Brake Pedals
-        Connect
-            Sections
+    root(("Rotary Drill Operators"))
+        Operate
+            Drawworks
+            Top Drive
+            Rotary Table
+            Mud Pumps
+        Monitor
+            Well Conditions
+            Pressure
+            Flow Rates
+        Control
+            Weight on Bit
+            Rotary Speed
+            Mud Parameters
+        Supervise
+            Rig Floor Crew
+        Execute
+            Well Control Procedures
+            Tripping Operations
         Maintain
-            Records
-            Machinery
-        Adjust
-            Machinery
-        Start
-            Operation
+            Drilling Records
+            Tour Reports
 ```
 
-### train.Crews
+### operate.DrawworksAndTopDrive
 
-Rotary Drill Operators, Oil and Gas train crews as part of their core responsibilities.
-
-**Actions:**
-- `train.Crews.to.make.DrillWorkSafe`
-- `train.Crews.to.Effective`
-- `train.IntroduceProcedures.to.make.DrillWorkSafe`
-- `train.IntroduceProcedures.to.Effective`
-
-### observe.PressureGauge
-
-Rotary Drill Operators, Oil and Gas observe pressure gauge as part of their core responsibilities.
+Drillers control the primary drilling equipment from the driller's console.
 
 **Actions:**
-- `observe.PressureGauge.to.control.SpeedOfRotaryTables`
-- `observe.PressureGauge.to.ToRegulatePressureOfToolsAtBottomsOfBoreholes`
-- `observe.MoveThrottles.to.control.SpeedOfRotaryTables`
-- `observe.MoveThrottles.to.ToRegulatePressureOfToolsAtBottomsOfBoreholes`
-
-### count.Sections
-
-Rotary Drill Operators, Oil and Gas count sections as part of their core responsibilities.
-
-**Actions:**
-- `count.Sections.of.DrillRod.to.determine.DepthsOfBoreholes`
+- `operate.Drawworks.to.control.DrillString`
+- `operate.TopDrive.to.rotate.DrillPipe`
+- `monitor.WellConditions.for.KickDetection`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
-- **Safety Compliance** - Advanced
+- **Drilling Operations** - Expert
+- **Well Control** - Expert
+- **Rig Equipment** - Expert
+- **Drilling Fluid Management** - Advanced
+- **Directional Drilling Awareness** - Advanced
+- **Crew Supervision** - Advanced
 
 ### Soft Skills
+- **Decision Making Under Pressure** - Critical
+- **Leadership** - Critical
+- **Safety Consciousness** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Concentration** - Critical
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["RotaryDrillOperatorsOilAndGas"]
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent |
+| Experience | 3-5 years rig experience (floor to driller progression) |
+| Well Control Training | Mandatory |
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+### Certifications
+- **IADC WellSharp Driller** - Well control certification
+- **SafeLand/SafeGulf** - Safety orientation
+- **H2S Alive** - Hydrogen sulfide awareness
+- **First Aid/CPR** - Required
+- **Rig Pass** - IADC safety training
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Roust["Roustabout"] --> Floor["Floorhand"]
+    Floor --> Derrick["Derrick Operator"]
+    Derrick --> Driller["Driller"]
+    Driller --> Senior["Senior Driller"]
+    Senior --> ToolPush["Toolpusher"]
+    ToolPush --> RigMgr["Rig Manager"]
+    RigMgr --> OpsMgr["Operations Manager"]
+
+    Driller --> DD["Directional Driller"]
+    Driller --> WellControl["Well Control Specialist"]
 ```
+
+## Specializations
+
+- **Conventional Drilling** - Vertical well drilling
+- **Directional/Horizontal** - Deviated and horizontal wells
+- **Offshore Drilling** - Jack-up, semi-sub, drillship
+- **Managed Pressure Drilling** - Advanced pressure control
+- **Automated Drilling** - Cyber drilling systems
+
+## Tools & Equipment
+
+- Driller's console (automated and manual)
+- Drawworks, top drives, rotary tables
+- Blowout preventers (BOP)
+- Mud logging and monitoring systems
+- Trip tanks and flow meters
+- Communication systems
+
+## Safety Considerations
+
+- **Blowouts** - Well control failure; BOP testing and drills mandatory
+- **H2S Exposure** - Hydrogen sulfide; detection and evacuation systems
+- **Caught-In Hazards** - Rotating equipment; machine guarding
+- **Falls** - Rig floor and equipment heights
+- **Fatigue** - 12-hour shifts; alertness management
+- **Noise** - Rig operations; hearing protection
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Rotary Drill Operators"]
+    subgraph Same["Drilling"]
+        Derrick["Derrick Operators"]
+        Service["Service Unit Operators"]
+        DD["Directional Drillers"]
+    end
+    Current --- Same
+```
+
+## Industries
+
+- [Oil and Gas Drilling](/industries/DrillingServices) - Primary Employment
+- [Oil and Gas Extraction](/industries/OilGasExtraction) - High Employment
+
+## Departments
+
+- [Drilling Operations](/departments/DrillingOps)
+- [Rig Crew](/departments/RigCrew)
+- [Safety](/departments/Safety)
 
 ---
 

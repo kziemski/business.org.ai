@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Surgical Technologists is an occupation within the Healthcare Practitioners and Technical category. Assist in operations, under the supervision of surgeons, registered nurses, or other surgical personnel. 
+Surgical Technologists (also called Scrub Techs or Operating Room Technicians) are integral members of the surgical team who prepare operating rooms, arrange sterile instruments and equipment, maintain the sterile field during surgery, and pass instruments and supplies to surgeons and surgical assistants. They ensure that all equipment and supplies needed for each procedure are available, properly sterilized, and organized for efficient surgical workflow.
+
+The role requires knowledge of surgical procedures, surgical anatomy, sterile technique, instrumentation, and surgical safety protocols. Surgical technologists scrub and gown for the sterile role, prepare the sterile field and back table, anticipate surgeon needs during procedures, manage surgical specimens, count instruments and sponges to prevent retained items, and ensure all surgical safety checklists (WHO Surgical Safety Checklist) are completed. They work across all surgical specialties.
+
+Modern surgical technology has expanded with robotic surgery (da Vinci system), advanced energy devices, minimally invasive and endoscopic procedures, hybrid operating rooms, and sophisticated surgical navigation systems. Surgical technologists must master increasingly complex instrumentation and technology while maintaining the fundamental principles of aseptic technique and patient safety.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-2055.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 87 |
+| Median Annual Salary | $56,350 |
+| Employment | ~115,000 |
+| Projected Growth | 5% (2022-2032) |
+| Job Zone | 3 (Medium Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 30+ |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,82 +45,137 @@ graph TD
 ```mermaid
 mindmap
     root(("Surgical Technologists"))
-        Count
-            Sponges
-            Needles
-            Instruments
-            After Operation
-        Scrub
-            Arms
-            Hands Surgical Team
-            Assist Surgical Team
-        Provide
-            Technical Assistance
         Prepare
-            Patients
-            Care
-            Dressings Apply Assist
-            Bandages Apply Assist
-        Hand
+            Operating Room Setup
+            Sterile Instruments
+            Surgical Supplies
+            Equipment Check
+        Scrub
+            Sterile Technique
+            Gowning and Gloving
+            Sterile Field Maintenance
+        Pass
+            Instruments to Surgeon
+            Sutures and Supplies
+            Implants and Devices
+        Count
             Instruments
-            Supplies
-        Wash
-            Equipment
-            Using Germicides
-            Sterilizers
-        Sterilize
-            Using Germicides
-            Sterilizers
-        Monitor
-            Continually Assess Operating Room Conditions
-            Including Patient
-            Surgical Team Needs
-            Sterilizers
-            Lights
+            Sponges
+            Needles and Sharps
+        Anticipate
+            Surgeon Needs
+            Next Surgical Steps
+            Equipment Changes
+        Manage
+            Surgical Specimens
+            Sterile Processing
+            Room Turnover
 ```
 
-### count.Sponges
+### prepare.OperatingRoom
 
-Surgical Technologists count sponges as part of their core responsibilities.
-
-**Actions:**
-- `count.Sponges`
-- `count.Needles`
-- `count.Instruments.before`
-- `count.AfterOperation`
-
-### scrub.Arms
-
-Surgical Technologists scrub arms as part of their core responsibilities.
+Surgical Technologists set up for procedures.
 
 **Actions:**
-- `scrub.Arms.to.scrub.OnGloves`
-- `scrub.Arms.to.put.OnGloves`
-- `scrub.Arms.to.masks`
-- `scrub.Arms.to.SurgicalClothing`
+- `prepare.SterileField.for.SurgicalProcedure` - Sterile setup
+- `arrange.SurgicalInstruments.per.PreferenceCards` - Instrument organization
+- `verify.EquipmentFunction.before.SurgeryStart` - Equipment check
+- `assist.WithPatientPositioning.for.SurgicalAccess` - Patient prep
 
-### provide.TechnicalAssistance
+### maintain.SterileField
 
-Surgical Technologists provide technical assistance as part of their core responsibilities.
+Surgical Technologists ensure intraoperative sterility and safety.
 
 **Actions:**
-- `provide.TechnicalAssistance.to.Surgeons`
-- `provide.TechnicalAssistance.to.SurgicalNurses`
-- `provide.TechnicalAssistance.to.Anesthesiologists`
+- `pass.InstrumentsToSurgeon.anticipating.ProcedureNeeds` - Instrument passing
+- `count.InstrumentsAndSponges.for.PatientSafety` - Surgical counts
+- `manage.SurgicalSpecimens.for.PathologySubmission` - Specimen handling
+- `maintain.SterileTechnique.throughout.Procedure` - Sterile maintenance
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Hospital Operating Rooms | Inpatient surgical services |
+| Ambulatory Surgery Centers | Outpatient surgery |
+| Trauma Centers | Emergency surgical support |
+| Labor and Delivery | Cesarean section support |
+| Cardiac Surgery Suites | Cardiovascular OR |
+| Sterile Processing | Instrument reprocessing |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Sterile Technique** - Expert
+- **Surgical Instrumentation** - Expert
+- **Surgical Anatomy** - Advanced
+- **Equipment Operation** - Advanced
+- **Specimen Management** - Advanced
+- **Surgical Counting** - Expert
+- **Robotic Surgery Setup** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Anticipation** - Critical
+- **Teamwork** - Essential
+- **Composure Under Pressure** - Essential
+- **Attention to Detail** - Critical
+- **Adaptability** - Essential
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Education | Certificate or associate degree in surgical technology |
+| Clinical Training | CAAHEP-accredited program |
+| Certification | CST through NBSTSA |
+| Continuing Education | Per certification requirements |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| CST | Certified Surgical Technologist (NBSTSA) |
+| TS-C | Tech in Surgery - Certified (NCCT) |
+| CSFA | Certified Surgical First Assistant (advancement) |
+| BLS | Basic Life Support |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Surgical Technologist CST"] --> Senior["Senior Surgical Tech"]
+    Senior --> Lead["Lead Surgical Tech"]
+    Lead --> Supervisor["OR Supervisor"]
+    Supervisor --> Manager["Surgical Services Manager"]
+
+    Senior --> FirstAssist["Surgical First Assistant (CSFA)"]
+    Senior --> Specialty["Specialty Surg Tech (Cardiac, Neuro)"]
+    Lead --> Educator["Surg Tech Educator"]
+    Senior --> SterileProcessing["Sterile Processing Director"]
+```
+
+## Specializations
+
+| Focus Area | Description |
+|------------|-------------|
+| Cardiac Surgery | Open heart and vascular |
+| Neurosurgery | Brain and spine surgery |
+| Orthopedic Surgery | Bone and joint procedures |
+| Robotic Surgery | da Vinci and robotic platforms |
+| Transplant Surgery | Organ transplantation |
+| Ophthalmology | Eye surgery |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Surgical Instruments (General and Specialty) | Procedure-specific tools |
+| Robotic Surgery Systems (da Vinci) | Robotic-assisted surgery |
+| Electrosurgical Units (Bovie) | Cutting and cautery |
+| Laparoscopic/Endoscopic Equipment | Minimally invasive surgery |
+| Surgical Navigation Systems | Computer-guided surgery |
+| Sterilization Equipment (autoclaves) | Instrument processing |
+| Surgical Safety Checklists | Patient safety |
 
 ## Related Occupations
 
@@ -120,28 +183,36 @@ Surgical Technologists provide technical assistance as part of their core respon
 graph LR
     Current["Surgical Technologists"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph ORTeam["OR Team"]
+        Surgeons["Surgeons"]
+        ORNurses["OR Nurses"]
+        SurgAssistants["Surgical Assistants"]
     end
 
-    Current --- SameCategory
+    subgraph Periop["Perioperative"]
+        Anesthesia["Anesthesia Teams"]
+        PACU["PACU Nurses"]
+        SterileProc["Sterile Processing Techs"]
+    end
+
+    Current --- ORTeam
+    Current --- Periop
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Surgical Services
+- [Ambulatory Surgery](/industries/Healthcare/AmbulatoryHealthCare) - Outpatient Surgery
+- [Dental Surgery](/industries/Healthcare/DentalOffices) - Oral Surgery
+- [Academic](/industries/Education) - Teaching Hospitals
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Operating Room](/departments/OperatingRoom)
+- [Surgical Services](/departments/SurgicalServices)
+- [Ambulatory Surgery](/departments/AmbulatorySurgery)
+- [Sterile Processing](/departments/SterileProcessing)
 
 ---
 

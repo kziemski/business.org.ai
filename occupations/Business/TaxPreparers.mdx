@@ -3,23 +3,30 @@ id: TaxPreparers
 name: "Tax Preparers"
 code: "13-2082.00"
 type: Occupation
+category: Business
 status: complete
+certifications: ["EA", "AFSP", "PTIN", "CPA"]
 ---
 
 # Tax Preparers
 
-> Prepare tax returns for individuals or small businesses.
+> Prepare tax returns for individuals or small businesses. May also help plan financial futures.
 
 ## Overview
 
-Tax Preparers is classified under Business and Financial Operations (SOC 13). Prepare tax returns for individuals or small businesses.
+Tax Preparers assist individuals and small businesses in completing and filing federal, state, and local tax returns. They gather financial information from clients, identify applicable deductions and credits, calculate tax liabilities, and ensure returns are filed accurately and on time. While the scope ranges from straightforward individual returns to complex small business filings, all tax preparers must maintain current knowledge of tax law changes and filing requirements.
+
+These professionals serve a vital role in the tax system, helping millions of taxpayers navigate an increasingly complex tax code. They work for tax preparation firms, accounting offices, financial service companies, or as independent practitioners. During tax season (January through April), the workload is intense and demanding, requiring efficiency, accuracy, and strong client communication skills. Many tax preparers also provide year-round tax planning advice and bookkeeping services.
+
+The profession faces ongoing transformation from tax preparation software, AI-assisted return preparation, and IRS modernization efforts. However, the complexity of the tax code, the value of personalized advice, and the potential consequences of errors ensure continued demand for knowledgeable human preparers, particularly for self-employed individuals, small business owners, and taxpayers with complex financial situations.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group132082["13-2082 Tax Preparers"]
-    Group132082 --> Current["13-2082.00 Tax Preparers"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G132082["13-2082 Tax Preparers"]
+    G132082 --> Current["13-2082.00 Tax Preparers"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,8 +35,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-2082.00 |
+| Job Zone | 3 (Medium Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
-| Task Count | 42 |
+| Median Salary | $46,290 |
+| Employment | ~62,000 |
+| Projected Growth | -2% (Declining) |
+| Task Count | 24 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,104 +48,165 @@ graph TD
 ```mermaid
 mindmap
     root(("Tax Preparers"))
-        Compute
-            Taxes Owed
-            Overpaid
-            Using Adding Machines
-            Personal Computers
-            Complete Entries
-        Use
-            Appropriate Adjustments
-            Deductions
-            Credits
-        Furnish
-            Taxpayers
-        Interview
-            Clients
+        Prepare
+            Individual Returns
+            Small Business Returns
+            State and Local Returns
         Review
-            Financial Records
+            Financial Documents
+            Prior Year Returns
             Income Statements
-            Documentation
-        Check
-            Data Input
-            Verify Totals
-        Explain
-            Federal Tax Laws
-            State Tax Laws
-        Answer
-            Questions Future Tax Planning
-            Provide Future Tax Planning
+        Calculate
+            Tax Liability
+            Deductions and Credits
+            Estimated Payments
+        Advise
+            Tax Planning
+            Filing Status
+            Record Keeping
+        File
+            Electronic Filing
+            Extensions
+            Amended Returns
+        Maintain
+            Client Records
+            Tax Law Knowledge
+            PTIN Registration
 ```
 
-### compute.TaxesOwed
+### prepare.TaxReturns
 
-Tax Preparers compute taxes owed as part of their core responsibilities.
-
-**Actions:**
-- `compute.TaxesOwed.on.Forms`
-- `compute.TaxesOwed.on.FollowingTaxFormInstructions`
-- `compute.TaxesOwed.on.TaxTables`
-- `compute.Overpaid.on.Forms`
-
-### use.AppropriateAdjustments
-
-Tax Preparers use appropriate adjustments as part of their core responsibilities.
+Prepare federal, state, and local tax returns for individuals and small businesses.
 
 **Actions:**
-- `use.AppropriateAdjustments.to.keep.ClientsTaxesToMinimum`
-- `use.Deductions.to.keep.ClientsTaxesToMinimum`
-- `use.Credits.to.keep.ClientsTaxesToMinimum`
+- `prepare.IndividualReturns.to.ensure.AccurateFilings` - Complete personal tax
+- `prepare.SmallBusinessReturns.to.optimize.TaxPosition` - Handle business tax
+- `review.FinancialDocuments.to.identify.AllIncomeAndDeductions` - Gather complete data
+- `calculate.TaxLiability.to.determine.AmountOwedOrRefund` - Compute tax
 
-### furnish.Taxpayers
+### advise.Clients
 
-Tax Preparers furnish taxpayers as part of their core responsibilities.
+Provide tax planning advice and guidance on financial record-keeping.
 
 **Actions:**
-- `furnish.Taxpayers.with.SufficientInformation.to.ensure.CorrectTaxFormCompletion`
-- `furnish.Taxpayers.with.Advice.to.ensure.CorrectTaxFormCompletion`
+- `advise.Clients.on.TaxPlanningStrategies` - Recommend tax savings
+- `advise.Clients.on.FilingStatus.and.Deductions` - Optimize elections
+- `advise.Clients.on.EstimatedTaxPayments` - Prevent underpayment penalties
+- `advise.SmallBusinessOwners.on.RecordKeeping` - Improve documentation
+
+### file.ElectronicallyAndMaintainRecords
+
+File returns electronically and maintain accurate client records.
+
+**Actions:**
+- `file.Returns.electronically.through.IRSeSystems` - Submit returns
+- `file.Extensions.when.AdditionalTimeNeeded` - Request filing extensions
+- `maintain.ClientRecords.for.FutureReference` - Archive tax documents
+- `maintain.PTINRegistration.for.ProfessionalCompliance` - Uphold IRS requirements
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Federal & State Tax Law** - Advanced
+- **Tax Preparation Software** - Expert
+- **Individual Income Tax** - Expert
+- **Small Business Tax** - Advanced
+- **Tax Planning** - Proficient
+- **Bookkeeping Basics** - Proficient
+- **E-Filing Systems** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Attention to Detail** - Critical
+- **Communication** - Critical
+- **Client Service** - Essential
+- **Time Management** - Essential
+- **Integrity & Confidentiality** - Essential
+- **Patience** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Tax Preparers"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma minimum; associate's or bachelor's preferred |
+| Federal Requirements | PTIN (Preparer Tax Identification Number) required |
+| Key Certifications | EA (Enrolled Agent), AFSP (Annual Filing Season Program) |
+| State Requirements | Vary - some states require registration, testing, or CE |
+| Advanced | CPA license for accounting and audit services |
+| Continuing Education | Required annually for EA and AFSP participants |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Seasonal Tax Preparer / Intake Specialist"] --> Mid["Tax Preparer / Senior Preparer"]
+    Mid --> Senior["Office Manager / Enrolled Agent"]
+    Senior --> Director["Tax Practice Owner / Managing Partner"]
+    Director --> Executive["Multi-Office Owner / Regional Director"]
+
+    Alt1["Bookkeeper"] --> Entry
+    Alt2["Accounting Student"] --> Entry
+
+    subgraph Tracks["Career Tracks"]
+        Individual["Individual Tax"]
+        SmallBiz["Small Business Tax"]
+        EA["Enrolled Agent Practice"]
+        Firm["Tax Firm Management"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **National Tax Firms** | High-volume individual | Standardized processes, quality review, upselling services |
+| **CPA Firms** | Full-service accounting | Tax and accounting integration, business advisory |
+| **Independent Practice** | Personalized service | Year-round relationships, niche specialization |
+| **Financial Services** | Tax and wealth | Coordination with investment, insurance, estate planning |
+| **Nonprofit** | Free tax preparation | VITA/TCE programs, low-income and elderly returns |
+| **Virtual / Online** | Remote preparation | Digital document collection, video consultations |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Tax Software** | Intuit ProConnect, Drake, Lacerte, UltraTax |
+| **Consumer** | TurboTax, H&R Block, TaxAct (for reference) |
+| **E-Filing** | IRS MeF, state e-file systems |
+| **Client Portals** | SmartVault, Canopy, TaxDome |
+| **Research** | TheTaxBook, CCH AnswerConnect, RIA |
+| **Document Management** | Adobe Scan, Gruntworx, SurePrep |
+| **Communication** | Phone systems, Zoom, secure messaging |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    TP["Tax Preparers"]
+
+    subgraph SameCategory["Financial Specialists"]
+        TE["Tax Examiners & Revenue Agents"]
+        AA["Accountants and Auditors"]
+        BK["Bookkeepers"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        PFA["Personal Financial Advisors"]
+        CC["Credit Counselors"]
+        PL["Paralegals"]
+    end
+
+    TP --- SameCategory
+    TP --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Tax Preparation Services](/departments/TaxPreparation)
+- [Tax Department](/departments/Tax)
+- [Accounting Services](/departments/Accounting)
+- [Client Services](/departments/ClientServices)
+- [Financial Advisory](/departments/FinancialAdvisory)
 
 ---
 

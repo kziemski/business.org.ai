@@ -12,13 +12,17 @@ status: complete
 
 ## Overview
 
-Web Administrators is a specialized variant within the Computer and Mathematical category. Manage web environment design, deployment, development and maintenance activities. 
+Web Administrators manage the infrastructure, deployment, and day-to-day operations of organizational websites and web applications. They oversee web server configuration, monitor site performance and security, implement updates and patches, manage content management systems, and ensure web properties remain available, secure, and performant. The role bridges web development and IT operations, requiring both technical infrastructure skills and web technology knowledge.
+
+Unlike web developers who build applications, web administrators focus on the operational side: keeping sites running, monitoring uptime, managing hosting environments, implementing backup and recovery procedures, and responding to security incidents. They configure web servers (Apache, Nginx, IIS), manage SSL certificates, optimize caching strategies, and ensure compliance with accessibility and security standards. In many organizations, they also manage the CMS platform and coordinate with content creators and developers.
+
+The role has evolved with the shift to cloud hosting, containerized deployments, and DevOps practices. Modern web administrators work with cloud platforms (AWS, Azure, GCP), container orchestration tools, CDN services, and automated deployment pipelines. Organizations increasingly expect web administrators to implement infrastructure as code, manage CI/CD workflows, and apply site reliability engineering (SRE) principles to maintain high availability and performance.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat15["15 - Computer and Mathematical"] --> Group151299["15-1299 Computer Occupations, All Other"]
+    Cat15["15 - Computer and Mathematical Occupations"] --> Group151299["15-1299 Computer Occupations, All Other"]
     Group151299 --> Base["15-1299.00 Computer Occupations, All Other"]
     Group151299 --> Current["15-1299.01 Web Administrators"]
     style Current fill:#e1f5fe
@@ -29,8 +33,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 15-1299.01 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Computer and Mathematical](/occupations/Technology/index) |
 | Task Count | 121 |
+| Median Salary | $82,050 |
+| Employment | ~25,000 |
+| Growth Rate | Average |
 | Source | O*NET |
 
 ## Core Tasks
@@ -39,85 +47,162 @@ graph TD
 mindmap
     root(("Web Administrators"))
         Monitor
-            Systems
-            Web Developments
-            Reading
-            Participation
-        Identify
-            Backup Plans
-            Recovery Plans
-            Standardize Communicate Levels
-            Interoperability Requirements
+            System Health
+            Web Security
+            Performance Metrics
+            Traffic Patterns
+        Manage
+            Web Servers
+            CMS Platforms
+            DNS/SSL
+            Hosting Environments
+        Implement
+            Updates & Patches
+            Security Controls
+            Backup Procedures
         Document
             Backup Plans
             Recovery Plans
-            Application Site Changes
             Change Procedures
-            Web Site Changes
-        Back
-            Modify Applications
-            Related Data
-        Correct
-            Testing Identified Problems
-            Recommend Actions
-        Determine
-            Sources
-        Implement
-            Updates
-            Upgrades
-            Patches
-            Marketing Plans
+            Configurations
         Test
-            Issues
             System Integration
             Performance
-            System Security
-            Backup Plans Regularly
+            Security
+            Disaster Recovery
+        Identify
+            Security Vulnerabilities
+            Interoperability Issues
+            Performance Bottlenecks
+        Analyze
+            Usage Data
+            Log Files
+            User Feedback
+        Develop
+            Performance Metrics
+            Deployment Procedures
+            Automation Scripts
 ```
 
-### monitor.Systems
+### monitor.WebInfrastructure
 
-Web Administrators monitor systems as part of their core responsibilities.
-
-**Actions:**
-- `monitor.Systems.for.Intrusions.of.ServiceAttacks`
-- `monitor.Systems.for.Denial.of.ServiceAttacks`
-- `monitor.Systems.for.ReportSecurityBreaches.to.appropriate.Personnel`
-- `monitor.WebDevelopments.through.ContinuingEducation.in.ProfessionalConferences`
-
-### identify.BackupPlans
-
-Web Administrators identify backup plans as part of their core responsibilities.
+Web Administrators continuously monitor web systems for availability, security, and performance.
 
 **Actions:**
-- `identify.BackupPlans`
-- `identify.RecoveryPlans`
-- `identify.StandardizeCommunicateLevels.of.AccessSecurity`
-- `identify.InteroperabilityRequirements`
+- `monitor.Systems.for.SecurityBreaches`
+- `monitor.Systems.for.DenialOfServiceAttacks`
+- `monitor.PerformanceMetrics.for.UptimeCompliance`
+- `monitor.WebDevelopments.through.ContinuingEducation`
 
-### document.BackupPlans
+### manage.WebServers
 
-Web Administrators document backup plans as part of their core responsibilities.
+Web Administrators configure and maintain web server infrastructure.
 
 **Actions:**
-- `document.BackupPlans`
-- `document.RecoveryPlans`
-- `document.ApplicationSiteChanges`
-- `document.ChangeProcedures`
+- `manage.WebServers.for.OptimalPerformance`
+- `manage.CMSPlatforms.for.ContentDelivery`
+- `manage.SSLCertificates.for.SecureCommunication`
+- `manage.DNSRecords.for.DomainResolution`
+
+### implement.SecurityAndUpdates
+
+Web Administrators keep web infrastructure secure and current.
+
+**Actions:**
+- `implement.SecurityPatches.for.VulnerabilityMitigation`
+- `implement.Updates.for.SystemStability`
+- `implement.BackupProcedures.for.DataRecovery`
+- `implement.AccessControls.for.ContentSecurity`
+
+### document.OperationalProcedures
+
+Web Administrators maintain comprehensive documentation of systems and procedures.
+
+**Actions:**
+- `document.BackupPlans.for.DisasterRecovery`
+- `document.RecoveryPlans.for.BusinessContinuity`
+- `document.ChangeProcedures.for.AuditCompliance`
+- `document.SystemConfigurations.for.KnowledgeTransfer`
+
+## Tech Stack
+
+### Web Servers
+- **Apache** - HTTP server
+- **Nginx** - High-performance web server
+- **IIS** - Microsoft web server
+- **LiteSpeed** - Performance-optimized server
+- **Caddy** - Automatic HTTPS
+
+### Content Management Systems
+- **WordPress** - Web CMS
+- **Drupal** - Enterprise CMS
+- **Sitecore** - .NET CMS
+- **Adobe Experience Manager** - Enterprise CMS
+- **Contentful** - Headless CMS
+
+### Cloud & Hosting
+- **AWS (EC2, S3, CloudFront)** - Cloud hosting
+- **Azure App Service** - Microsoft hosting
+- **Google Cloud** - GCP services
+- **Cloudflare** - CDN and security
+- **Vercel/Netlify** - JAMstack hosting
+- **DigitalOcean** - Cloud VMs
+
+### Monitoring & Analytics
+- **Google Analytics** - Web analytics
+- **Datadog** - Infrastructure monitoring
+- **New Relic** - APM
+- **Uptime Robot** - Availability monitoring
+- **Pingdom** - Performance monitoring
+- **ELK Stack** - Log analysis
+
+### DevOps & Automation
+- **Docker** - Containerization
+- **Kubernetes** - Orchestration
+- **Ansible/Puppet** - Configuration management
+- **Terraform** - Infrastructure as code
+- **GitHub Actions/Jenkins** - CI/CD
+- **Let's Encrypt/Certbot** - SSL automation
+
+### Security
+- **Cloudflare WAF** - Web application firewall
+- **ModSecurity** - Open-source WAF
+- **Fail2Ban** - Brute force protection
+- **Qualys/Nessus** - Vulnerability scanning
+- **OWASP Tools** - Security testing
+
+## Certifications
+
+| Certification | Provider | Level |
+|---------------|----------|-------|
+| AWS Solutions Architect | Amazon | Associate |
+| CompTIA Linux+ | CompTIA | Foundation |
+| Microsoft Azure Administrator | Microsoft | Associate |
+| Red Hat Certified System Administrator | Red Hat | Professional |
+| Certified Kubernetes Administrator (CKA) | CNCF | Professional |
+| CompTIA Security+ | CompTIA | Foundation |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Programming** - Advanced
-- **Systems Analysis** - Advanced
-- **Database Management** - Advanced
+- **Web Server Configuration** - Expert
+- **Linux/Unix Administration** - Expert
+- **Cloud Platforms (AWS/Azure/GCP)** - Advanced
+- **CMS Administration** - Advanced
+- **SSL/TLS Management** - Advanced
+- **DNS Management** - Advanced
+- **Scripting (Bash/Python)** - Advanced
+- **Monitoring & Logging** - Advanced
+- **Backup & Recovery** - Expert
+- **Web Security** - Advanced
 
 ### Soft Skills
+- **Problem Solving** - Critical
+- **Attention to Detail** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Time Management** - Essential (incident response)
+- **Documentation** - Important
+- **Continuous Learning** - Essential
 
 ## Related Occupations
 
@@ -126,27 +211,89 @@ graph LR
     Current["Web Administrators"]
 
     subgraph SameCategory["Computer and Mathematical"]
-        ComputerSystemsAnaly["Computer Systems Analysts"]
-        HealthInformaticsSpe["Health Informatics Specialists"]
-        InformationSecurityA["Information Security Analysts"]
-        ComputerAndInformati["Computer and Information Researc..."]
+        WD["Web Developers"]
+        NCSA["Network Administrators"]
+        ISA["Information Security Analysts"]
+        DBA["Database Administrators"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        SRE["Site Reliability Engineers"]
+        DO["DevOps Engineers"]
+        SA["Systems Administrators"]
     end
 
     Current --- SameCategory
+    Current --- CrossFunctional
 ```
 
-## Industries
+- [Web Developers](/occupations/Technology/WebDevelopers)
+- [Network and Computer Systems Administrators](/occupations/Technology/NetworkAndComputerSystemsAdministrators)
+- [Information Security Analysts](/occupations/Technology/InformationSecurityAnalysts)
+- [Database Administrators](/occupations/Technology/DatabaseAdministrators)
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+## Industry Variations
+
+### Technology / SaaS
+- High-availability web infrastructure
+- Auto-scaling and load balancing
+- Multi-region deployments
+- Infrastructure as code
+
+### E-commerce
+- Payment system security (PCI-DSS)
+- Peak traffic management (Black Friday)
+- CDN optimization for conversions
+- Uptime SLA management
+
+### Media / Publishing
+- High-traffic content delivery
+- CMS administration and customization
+- SEO and performance optimization
+- Multi-site management
+
+### Government
+- Section 508 accessibility compliance
+- FedRAMP hosting requirements
+- Content security and classification
+- Multi-agency web standards
+
+### Education
+- Learning management system (LMS) hosting
+- Student portal administration
+- FERPA compliance
+- Multi-campus web management
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Junior Web Admin<br/>IT Support Specialist"] --> Mid["Web Administrator<br/>Systems Administrator"]
+    Mid --> Senior["Senior Web Admin<br/>DevOps Engineer<br/>SRE"]
+    Senior --> Lead["Web Operations Manager<br/>Infrastructure Lead<br/>Platform Architect"]
+    Lead --> Exec["IT Director<br/>VP Infrastructure<br/>CTO"]
+
+    Alt1["Web Developer"] --> Entry
+    Alt2["Help Desk"] --> Entry
 ```
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's in Computer Science, Information Technology, or related field |
+| Alternative Paths | Associate degree + certifications, self-taught with experience |
+| Work Experience | 1-3 years in IT or web development for entry |
+| Key Knowledge Areas | Web servers, Linux, networking, security, cloud platforms, CMS |
+| Continuing Education | Cloud certifications, security training, web technology updates |
+
+## Departments
+
+This occupation typically works in:
+- [Information Technology](/departments/IT)
+- [Web Operations](/departments/WebOps)
+- [Marketing (Digital)](/departments/Marketing)
+- [Engineering](/departments/Engineering)
 
 ---
 

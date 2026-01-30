@@ -3,7 +3,9 @@ id: ClaimsAdjustersExaminersAndInvestigators
 name: "Claims Adjusters, Examiners, and Investigators"
 code: "13-1031.00"
 type: Occupation
+category: Business
 status: complete
+certifications: ["AIC", "CPCU", "SCLA", "AIC-M"]
 ---
 
 # Claims Adjusters, Examiners, and Investigators
@@ -12,14 +14,19 @@ status: complete
 
 ## Overview
 
-Claims Adjusters, Examiners, and Investigators is an occupation within the Business and Financial Operations category. Review settled claims to determine that payments and settlements are made in accordance with company practices and procedures. Confer with legal counsel on claims requiring litigation.
+Claims Adjusters, Examiners, and Investigators form the backbone of the insurance industry's claims handling process, responsible for investigating, evaluating, and settling insurance claims. Adjusters work directly with claimants to inspect damage, gather evidence, and negotiate settlements, while examiners review claims processed by adjusters to ensure compliance with company policies and regulatory requirements. Investigators focus on detecting fraudulent claims through surveillance, interviews, and forensic analysis.
+
+These professionals must balance the interests of policyholders, who expect fair and timely compensation, with the financial responsibilities of insurance companies to manage claims costs and prevent fraud. They apply technical knowledge of policy coverage, legal liability, damage assessment, and medical terminology to determine the validity and value of claims. The role demands both analytical rigor and strong interpersonal skills, as professionals must interact with claimants who may be in distress while maintaining objectivity in their evaluations.
+
+The profession continues to evolve with advances in claims technology, including AI-powered damage estimation, telematics data analysis, drone-based inspections, and predictive analytics for fraud detection. Despite these technological advances, the judgment and negotiation skills of experienced claims professionals remain essential, particularly for complex liability claims, catastrophe response, and litigation management.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group131031["13-1031 Claims Adjusters, Examiners, and Investigators"]
-    Group131031 --> Current["13-1031.00 Claims Adjusters, Examiners, and Investigators"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G131031["13-1031 Claims Adjusters, Examiners, and Investigators"]
+    G131031 --> Current["13-1031.00 Claims Adjusters, Examiners, and Investigators"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,7 +35,11 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-1031.00 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
+| Median Salary | $71,680 |
+| Employment | ~298,000 |
+| Projected Growth | -3% (Declining) |
 | Task Count | 115 |
 | Source | O*NET |
 
@@ -36,104 +47,169 @@ graph TD
 
 ```mermaid
 mindmap
-    root(("ClaimsAdjustersExaminersAndInvestigators"))
-        Examine
-            Claims Forms Records
-            Other Records
-            Claims Investigated
-        Analyze
-            Information Gathered
-            Data Used
-        Pay
-            Claims
-        Process
-            Claims
+    root(("Claims Adjusters"))
         Investigate
-            Claims
-            Applying Technical Knowledge
-            Human Relations Skills
-            Damage
+            Claims Circumstances
+            Damage Assessment
+            Liability Determination
+            Fraud Detection
         Evaluate
-            Claims
-            Applying Technical Knowledge
-            Human Relations Skills
-        Settle
-            Claims
-            Applying Technical Knowledge
-            Human Relations Skills
-        Verify
-            Data Used
+            Policy Coverage
+            Claim Validity
+            Settlement Value
+        Examine
+            Documentation
+            Medical Records
+            Police Reports
+        Negotiate
+            Settlement Amounts
+            Repair Estimates
+            Subrogation
+        Process
+            Claim Payments
+            Reserves
+            Litigation Referrals
+        Communicate
+            Claimants
+            Legal Counsel
+            Vendors
 ```
 
-### examine.ClaimsFormsRecords
+### investigate.Claims
 
-Claims Adjusters, Examiners, and Investigators examine claims forms records as part of their core responsibilities.
-
-**Actions:**
-- `examine.ClaimsFormsRecords.to.determine.InsuranceCoverage`
-- `examine.OtherRecords.to.determine.InsuranceCoverage`
-- `examine.ClaimsInvestigated.by.InsuranceAdjusters`
-- `examine.ClaimsInvestigated.by.FurtherInvestigatingQuestionableClaims.to.determine.WhetherToAuthorizePayments`
-
-### analyze.InformationGathered
-
-Claims Adjusters, Examiners, and Investigators analyze information gathered as part of their core responsibilities.
+Investigate insurance claims to determine coverage, liability, and the extent of damages.
 
 **Actions:**
-- `analyze.InformationGathered.by.Investigation`
-- `analyze.InformationGathered.by.ReportFindings`
-- `analyze.InformationGathered.by.Recommendations`
-- `analyze.DataUsed.in.SettlingClaims.to.ensure.ClaimsAreValid`
+- `investigate.Claims.to.determine.LiabilityAndCoverage` - Assess claim merits
+- `investigate.DamageAssessment.to.estimate.LossAmount` - Quantify damages
+- `investigate.FraudIndicators.to.detect.SuspiciousClaims` - Identify fraud patterns
+- `interview.Claimants.to.gather.FactualInformation` - Collect testimony
 
-### pay.Claims
+### evaluate.ClaimValidity
 
-Claims Adjusters, Examiners, and Investigators pay claims as part of their core responsibilities.
+Review claims documentation and evidence to determine the validity and value of claims.
 
 **Actions:**
-- `pay.Claims.within.DesignatedAuthorityLevel`
+- `evaluate.PolicyCoverage.to.determine.ClaimEligibility` - Verify coverage
+- `evaluate.ClaimValidity.to.authorize.Payments` - Approve settlements
+- `evaluate.MedicalRecords.to.assess.InjurySeverity` - Review medical evidence
+- `examine.ClaimsFormsRecords.to.determine.InsuranceCoverage` - Verify policy terms
+
+### negotiate.Settlements
+
+Negotiate settlement amounts with claimants, attorneys, and repair vendors.
+
+**Actions:**
+- `negotiate.SettlementAmounts.with.Claimants` - Reach agreement on payments
+- `negotiate.RepairEstimates.with.Contractors` - Approve restoration costs
+- `confer.with.LegalCounsel.on.LitigatedClaims` - Coordinate legal strategy
+- `pay.Claims.within.DesignatedAuthorityLevel` - Process approved payments
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Insurance Policy Interpretation** - Expert
+- **Damage Assessment & Estimation** - Expert
+- **Claims Investigation Techniques** - Advanced
+- **Legal Liability Analysis** - Advanced
+- **Medical Terminology** - Proficient
+- **Fraud Detection Methods** - Advanced
+- **Negotiation & Settlement** - Advanced
+- **Regulatory Compliance** - Proficient
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Analytical Thinking** - Critical
+- **Attention to Detail** - Critical
+- **Communication (Written/Verbal)** - Essential
+- **Negotiation** - Essential
+- **Empathy & Objectivity** - Essential
+- **Time Management** - Important
+- **Decision Making** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["ClaimsAdjustersExaminersAndInvestigators"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's degree in Business, Insurance, or related field |
+| State Licensing | Required in most states for independent adjusters |
+| Key Certifications | AIC (Associate in Claims), CPCU (Chartered Property Casualty Underwriter) |
+| Additional Certs | SCLA (Senior Claims Law Associate), AIC-M (Management) |
+| Professional Development | The Institutes, PLRB, NICB |
+| Work Experience | 1-3 years entry-level; 5+ years for senior/complex claims |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Claims Representative / Inside Adjuster"] --> Mid["Claims Adjuster / Field Adjuster"]
+    Mid --> Senior["Senior Adjuster / Claims Examiner"]
+    Senior --> Director["Claims Manager / Supervisor"]
+    Director --> Executive["VP of Claims / Chief Claims Officer"]
+
+    Alt1["SIU Investigator"] --> Senior
+    Alt2["Catastrophe Adjuster"] --> Senior
+
+    subgraph Tracks["Career Tracks"]
+        Property["Property Claims"]
+        Casualty["Casualty / Liability"]
+        WC["Workers Compensation"]
+        SIU["Special Investigations"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Property & Casualty** | Home, auto, commercial | Damage inspection, repair coordination, liability analysis |
+| **Workers Compensation** | Workplace injury | Medical management, return-to-work programs, disability assessment |
+| **Health Insurance** | Medical claims | Utilization review, provider negotiation, coding review |
+| **Life Insurance** | Death benefits | Beneficiary verification, contestability review, fraud detection |
+| **Catastrophe Response** | Disaster events | Rapid deployment, mass claims processing, emergency assessment |
+| **Reinsurance** | Treaty claims | Coverage analysis, loss aggregation, cedent review |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Claims Management** | Guidewire ClaimCenter, Duck Creek, Majesco |
+| **Estimation** | Xactimate, CCC Intelligent Solutions, Mitchell |
+| **Fraud Detection** | NICB databases, SIU analytics, social media tools |
+| **Inspection** | Drones, satellite imagery, virtual inspection apps |
+| **Medical Review** | ISO ClaimSearch, medical databases |
+| **Communication** | Microsoft 365, Salesforce, mobile claims apps |
+| **Analytics** | Tableau, Power BI, predictive modeling tools |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    CA["Claims Adjusters"]
+
+    subgraph SameCategory["Insurance Specialists"]
+        IU["Insurance Underwriters"]
+        IAD["Insurance Appraisers, Auto Damage"]
+        FE["Fraud Examiners"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        PI["Private Investigators"]
+        PA["Paralegals"]
+        CO["Compliance Officers"]
+    end
+
+    CA --- SameCategory
+    CA --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Claims Operations](/departments/ClaimsOperations)
+- [Special Investigations Unit](/departments/SIU)
+- [Litigation Management](/departments/LitigationManagement)
+- [Subrogation](/departments/Subrogation)
+- [Quality Assurance](/departments/QualityAssurance)
 
 ---
 

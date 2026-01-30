@@ -8,11 +8,15 @@ status: complete
 
 # Neurologists
 
-> Diagnose, manage, and treat disorders and diseases of the brain, spinal cord, and peripheral nerves, with a primarily nonsurgical focus.
+> Diagnose, treat, and help prevent diseases and disorders of the nervous system, including the brain, spinal cord, peripheral nerves, and muscles.
 
 ## Overview
 
-Neurologists is classified under Healthcare Practitioners and Technical (SOC 29). Diagnose, manage, and treat disorders and diseases of the brain, spinal cord, and peripheral nerves, with a primarily nonsurgical focus.
+Neurologists are physician specialists who diagnose and treat disorders of the nervous system, encompassing the brain, spinal cord, peripheral nerves, neuromuscular junction, and muscles. They manage an extraordinarily diverse range of conditions including stroke, epilepsy, multiple sclerosis, Parkinson's disease, Alzheimer's disease, migraine, neuropathies, neuromuscular disorders, brain tumors, and movement disorders. Neurology is fundamentally a diagnostic specialty requiring exceptional clinical reasoning and pattern recognition.
+
+The neurological examination remains the cornerstone of diagnosis, combining detailed history-taking with systematic assessment of mental status, cranial nerves, motor and sensory function, coordination, reflexes, and gait. Neurologists complement clinical findings with advanced diagnostic studies including electroencephalography (EEG), electromyography (EMG), nerve conduction studies, lumbar puncture analysis, and neuroimaging interpretation. They synthesize complex data from multiple sources to localize lesions within the nervous system and establish diagnoses.
+
+Modern neurology has been revolutionized by advances in neuroimaging, molecular diagnostics, immunotherapy, gene therapy, and neuromodulation. The emergence of acute stroke intervention (thrombectomy, thrombolysis), disease-modifying therapies for multiple sclerosis, and targeted treatments for rare neurological diseases has transformed neurology from a predominantly diagnostic specialty to one with increasingly effective therapeutic options.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1217.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 112 |
+| Median Annual Salary | $267,660 |
+| Employment | ~19,000 |
+| Projected Growth | 4% (2022-2032) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 55+ |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,76 +45,174 @@ graph TD
 ```mermaid
 mindmap
     root(("Neurologists"))
-        Interview
-            Patients
-        Examine
-            Patients
-        Perform
-            Outcomes
-        Interpret
-            Outcomes
-            Results
-        Order
-            Results
-            Supportive Care Services
-            Physical Therapy
-            Specialized Nursing Care
-            Social Services
         Diagnose
-            Neurological Conditions Based
-        Prescribe
-            Medications
-            Anti Epileptic Drugs
-            Monitor Patients
-        Administer
-            Medications
-            Anti Epileptic Drugs
-            Monitor Patients
+            Stroke & Cerebrovascular
+            Epilepsy & Seizures
+            Neurodegenerative Disease
+            Neuromuscular Disorders
+        Treat
+            Acute Stroke Intervention
+            Epilepsy Management
+            MS Immunotherapy
+            Movement Disorders
+        Examine
+            Neurological Examination
+            Mental Status Assessment
+            Cranial Nerve Testing
+        Interpret
+            EEG Studies
+            EMG/NCS Results
+            Neuroimaging (MRI/CT)
+            CSF Analysis
+        Perform
+            Lumbar Puncture
+            EMG/NCS
+            Botox Injections
+            Deep Brain Stimulation Programming
+        Counsel
+            Patients & Families
+            Prognosis Discussion
+            Treatment Options
+        Coordinate
+            Neurosurgical Referrals
+            Rehabilitation Teams
+            Multidisciplinary Care
 ```
 
-### interview.Patients
+### diagnose.NeurologicalConditions
 
-Neurologists interview patients as part of their core responsibilities.
-
-**Actions:**
-- `interview.Patients.to.obtain.Information`
-- `interview.Patients.to.Complaints`
-- `interview.Patients.to.Symptoms`
-- `interview.Patients.to.MedicalHistories`
-
-### examine.Patients
-
-Neurologists examine patients as part of their core responsibilities.
+Neurologists identify nervous system disorders through systematic evaluation.
 
 **Actions:**
-- `examine.Patients.to.obtain.InformationAboutFunctionalStatusOfAreas`
-- `examine.Patients.to.Vision`
-- `examine.Patients.to.PhysicalStrength`
-- `examine.Patients.to.coordination`
+- `diagnose.Stroke.using.ClinicalAssessmentAndImaging` - Acute stroke evaluation
+- `diagnose.Epilepsy.using.EEGAndClinicalHistory` - Seizure classification
+- `diagnose.MultiplerSclerosis.using.McDonaldCriteria` - Demyelinating disease
+- `diagnose.NeuromuscularDisorders.using.EMGAndNCS` - Electrodiagnostic evaluation
 
-### perform.Outcomes
+### treat.NeurologicalDisorders
 
-Neurologists perform outcomes as part of their core responsibilities.
+Neurologists manage acute and chronic neurological conditions.
 
 **Actions:**
-- `perform.Outcomes.of.ProceduresTests`
-- `perform.Outcomes.of.DiagnosticTests`
-- `perform.Outcomes.of.LumbarPunctures`
-- `perform.Outcomes.of.Electroencephalography`
+- `treat.AcuteStroke.using.Thrombolysis` - tPA administration
+- `treat.Epilepsy.using.AntiSeizureMedications` - Seizure control
+- `treat.MultipleSclerosis.using.DiseaseModifyingTherapy` - MS management
+- `treat.MovementDisorders.using.DeepBrainStimulation` - Neuromodulation
+
+### interpret.NeurologicStudies
+
+Neurologists analyze diagnostic test results.
+
+**Actions:**
+- `interpret.EEGStudies.for.SeizureLocalization` - EEG reading
+- `interpret.Neuroimaging.for.LesionIdentification` - MRI/CT analysis
+- `interpret.CSFAnalysis.for.InfectiousOrInflammatory.Conditions` - Spinal fluid interpretation
+- `perform.EMGAndNCS.for.NeuromuscularDiagnosis` - Electrodiagnostics
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Hospital Neurology Services | Inpatient and consultation neurology |
+| Outpatient Neurology Clinics | Ambulatory neurological care |
+| Stroke Centers | Acute stroke teams and thrombectomy |
+| Epilepsy Monitoring Units | Video-EEG and presurgical evaluation |
+| Academic Medical Centers | Teaching, research, and subspecialty care |
+| Neurorehabilitation Centers | Post-stroke and TBI recovery |
+| Memory/Cognitive Clinics | Dementia evaluation and management |
+| Teleneurology | Remote neurological consultation |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Neurological Examination** - Expert
+- **EEG Interpretation** - Expert
+- **EMG/NCS** - Expert
+- **Neuroimaging Interpretation** - Expert
+- **Lumbar Puncture** - Advanced
+- **Stroke Management** - Expert
+- **Epilepsy Management** - Expert
+- **Neuropharmacology** - Expert
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Clinical Reasoning** - Critical
+- **Pattern Recognition** - Critical
+- **Patient Communication** - Essential
+- **Empathy** - Essential
+- **Teaching** - Essential
+- **Interdisciplinary Collaboration** - Essential
+- **Research Skills** - Important
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Undergraduate | 4-year bachelor's degree (pre-med) |
+| Medical School | 4-year MD or DO program |
+| Neurology Residency | 4 years (including PGY-1 internship) |
+| Fellowship | 1-2 years for subspecialization |
+| Total Training | 12-14 years post-high school |
+| Licensure | State medical license |
+| Board Certification | ABPN (American Board of Psychiatry & Neurology) |
+| MOC | Continuous certification requirements |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| ABPN Neurology | Primary neurology board certification |
+| ABPN Vascular Neurology | Stroke subspecialty |
+| ABPN Epilepsy | Epilepsy subspecialty |
+| ABPN Neuromuscular Medicine | Neuromuscular subspecialty |
+| ABPN Clinical Neurophysiology | EEG/EMG subspecialty |
+| ABPN Sleep Medicine | Sleep disorders |
+| UCNS Headache Medicine | Headache subspecialty |
+| FAAN | Fellow of the American Academy of Neurology |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Med["Medical School"] --> Res["Neurology Residency"]
+    Res --> Fellow["Subspecialty Fellowship"]
+    Res --> Attending["Attending Neurologist"]
+    Fellow --> Attending
+    Attending --> Partner["Practice Partner"]
+    Partner --> MedDir["Medical Director"]
+
+    Attending --> Academic["Academic Neurologist"]
+    Academic --> DivChief["Division Chief"]
+    DivChief --> Chair["Department Chair"]
+
+    Attending --> StrokeDir["Stroke Center Director"]
+    Attending --> EpilepsyDir["Epilepsy Center Director"]
+```
+
+## Specializations
+
+| Subspecialty | Focus Area |
+|-------------|------------|
+| Vascular Neurology (Stroke) | Acute stroke, cerebrovascular disease |
+| Epilepsy/Clinical Neurophysiology | Seizure disorders, EEG monitoring |
+| Movement Disorders | Parkinson's, tremor, dystonia |
+| Neuromuscular Medicine | ALS, myasthenia, neuropathy |
+| Neuro-Oncology | Brain and spinal cord tumors |
+| Behavioral Neurology/Neuropsychiatry | Dementia, cognitive disorders |
+| Headache Medicine | Migraine and headache disorders |
+| Neuro-Immunology | MS and autoimmune neurology |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| EEG Systems (Routine and Continuous) | Brain electrical activity recording |
+| EMG/NCS Equipment | Neuromuscular diagnostic testing |
+| MRI (3T, Functional) | Brain and spine imaging |
+| CT Angiography | Vascular imaging for stroke |
+| Transcranial Doppler | Cerebral blood flow assessment |
+| Deep Brain Stimulation Programmers | Neuromodulation adjustment |
+| Video-EEG Monitoring Systems | Seizure localization |
+| Teleneurology Platforms | Remote consultation and stroke evaluation |
 
 ## Related Occupations
 
@@ -114,28 +220,45 @@ Neurologists perform outcomes as part of their core responsibilities.
 graph LR
     Current["Neurologists"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph NeuroTeam["Neuroscience Team"]
+        Neurosurg["Neurosurgeons"]
+        Neuropsych["Neuropsychologists"]
+        NeuroRad["Neuroradiologists"]
     end
 
-    Current --- SameCategory
+    subgraph ClinicalPartners["Clinical Partners"]
+        PM_R["Physical Medicine & Rehab"]
+        Psychiatrists["Psychiatrists"]
+        NeuroNurses["Neuroscience Nurses"]
+    end
+
+    subgraph Diagnostics["Diagnostic Support"]
+        EEGTech["EEG Technologists"]
+        MRITech["MRI Technologists"]
+        NeuroSonographers["Neurosonographers"]
+    end
+
+    Current --- NeuroTeam
+    Current --- ClinicalPartners
+    Current --- Diagnostics
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Primary Employment
+- [Physician Offices](/industries/Healthcare/PhysicianOffices) - Neurology Practices
+- [Academic Medical Centers](/industries/Healthcare/Hospitals/Teaching) - Research & Teaching
+- [Rehabilitation Centers](/industries/Healthcare/RehabilitationCenters) - Neurorehab
+- [Pharmaceutical](/industries/Manufacturing/ChemicalManufacturing/Pharmaceutical) - Clinical Trials
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Neurology](/departments/Neurology)
+- [Stroke Center](/departments/StrokeCenter)
+- [Epilepsy Center](/departments/EpilepsyCenter)
+- [Neuroscience ICU](/departments/NeuroICU)
+- [Movement Disorders Clinic](/departments/MovementDisorders)
 
 ---
 

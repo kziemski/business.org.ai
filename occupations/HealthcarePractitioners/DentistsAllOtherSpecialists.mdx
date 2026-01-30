@@ -8,26 +8,23 @@ status: complete
 
 # Dentists, All Other Specialists
 
-> All dentists not listed separately.
+> All dentists not listed separately, including dental public health specialists, endodontists, oral and maxillofacial radiologists, oral pathologists, and pediatric dentists.
 
 ## Overview
 
-This category encompasses dental specialists not separately classified in the SOC system, including endodontists (root canal specialists), periodontists (gum disease specialists), and pediatric dentists. These professionals have completed dental school plus additional specialty training in their specific area of expertise. They provide specialized care that goes beyond general dentistry, often working on referral from general practitioners.
+Dentists, All Other Specialists encompasses dental professionals who have completed advanced specialty training beyond general dentistry in recognized specialties not separately classified. This category includes endodontists (root canal specialists), pediatric dentists, oral pathologists, oral and maxillofacial radiologists, and dental public health specialists. Each specialty requires completion of an accredited residency program following dental school.
+
+These specialists provide focused expertise within their domains. Endodontists perform root canal therapy and treat dental pulp diseases. Pediatric dentists manage the oral health of infants, children, and adolescents including those with special healthcare needs. Oral pathologists diagnose diseases affecting the oral and maxillofacial structures through biopsy examination. Oral and maxillofacial radiologists interpret dental and facial imaging. Dental public health specialists address oral health at the population level through policy, prevention, and community programs.
+
+Advanced dental specialties continue to evolve with cone beam computed tomography (CBCT), regenerative endodontics, biomaterial advances, and evidence-based approaches to pediatric behavior management. Interprofessional collaboration and integration with medical care are increasingly emphasized across all dental specialties.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat29["29 - Healthcare Practitioners and Technical"] --> Group2910["29-1020 Dentists"]
-    Group2910 --> DentGen["29-1021 Dentists, General"]
-    Group2910 --> OralSurg["29-1022 Oral Surgeons"]
-    Group2910 --> Ortho["29-1023 Orthodontists"]
-    Group2910 --> Prosth["29-1024 Prosthodontists"]
-    Group2910 --> Base291029["29-1029 Dentists, All Other"]
-
-    Base291029 --> DentSpec["29-1029.00 Dentists, All Other Specialists"]
-
-    style DentSpec fill:#e1f5fe
+    Cat29["29 - Healthcare Practitioners and Technical"] --> Group291029["29-1029 Dentists, All Other Specialists"]
+    Group291029 --> Current["29-1029.00 Dentists, All Other Specialists"]
+    style Current fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -35,24 +32,13 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1029.00 |
+| Median Annual Salary | $170,910 |
+| Employment | ~37,000 |
+| Projected Growth | 4% (2022-2032) |
 | Job Zone | 5 (Extensive Preparation) |
 | Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
-| Specialties | Endodontics, Periodontics, Pediatric Dentistry |
+| Core Tasks | 40+ |
 | Source | O*NET |
-
-## Included Specialties
-
-### Endodontists
-Specialists in root canal therapy and diseases of dental pulp. They diagnose and treat complex cases of tooth pain and perform surgical procedures to save teeth.
-
-### Periodontists
-Focus on prevention, diagnosis, and treatment of periodontal (gum) disease and the placement of dental implants. They treat conditions ranging from mild gingivitis to severe periodontitis.
-
-### Pediatric Dentists
-Provide comprehensive oral health care for infants, children, and adolescents, including those with special health care needs. They specialize in behavior management and child-friendly treatment approaches.
-
-### Oral Pathologists
-Diagnose diseases of the oral and maxillofacial regions through microscopic, radiographic, and clinical evaluation.
 
 ## Core Tasks
 
@@ -60,97 +46,174 @@ Diagnose diseases of the oral and maxillofacial regions through microscopic, rad
 mindmap
     root(("Dental Specialists"))
         Diagnose
-            Specialized Conditions
-            Complex Cases
-            Pathology
+            Pulpal Disease
+            Oral Pathology
+            Pediatric Conditions
+            Radiographic Findings
         Treat
-            Specialty Procedures
-            Advanced Techniques
-            Surgical Interventions
-        Consult
-            Referring Dentists
-            Healthcare Teams
-            Specialists
-        Plan
-            Treatment Protocols
-            Case Management
-            Patient Care
-        Document
-            Clinical Records
-            Treatment Notes
-            Referral Reports
+            Root Canal Therapy
+            Pediatric Dental Care
+            Oral Disease Management
+        Prevent
+            Community Oral Health
+            Pediatric Prevention
+            Disease Surveillance
+        Interpret
+            Dental Radiographs
+            CBCT Scans
+            Biopsy Specimens
         Educate
-            Patients
+            Patients & Families
             Dental Students
-            Staff Training
+            Community Programs
 ```
+
+### treat.DentalSpecialtyConditions
+
+Dental specialists provide focused treatment.
+
+**Actions:**
+- `perform.RootCanalTherapy.for.PulpalDisease` - Endodontic treatment
+- `treat.PediatricDentalConditions.using.BehaviorManagement` - Pediatric care
+- `diagnose.OralPathology.using.BiopsyExamination` - Oral pathology
+- `interpret.DentalImaging.using.CBCTAndPanoramic` - Oral radiology
+
+### prevent.OralDisease
+
+Dental public health specialists address population oral health.
+
+**Actions:**
+- `develop.CommunityOralHealthPrograms.for.Prevention` - Public health
+- `implement.FluoridationPrograms.for.CariesPrevention` - Preventive programs
+- `conduct.EpidemiologicStudies.for.OralDiseaseAssessment` - Research
+- `advise.PolicyMakers.regarding.OralHealthPolicy` - Policy development
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Specialty Dental Practices | Private specialty offices |
+| Dental Schools | Academic teaching and clinics |
+| Children's Hospitals | Pediatric dental services |
+| Community Health Centers | Public health dentistry |
+| Government Agencies | Public health policy and programs |
+| Hospital Dental Departments | Inpatient and outpatient dental |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Specialty Procedures** - Expert
-- **Diagnostic Imaging** - Advanced
-- **Surgical Techniques** - Expert
-- **Treatment Planning** - Expert
-- **Patient Assessment** - Expert
+- **Specialty Dental Procedures** - Expert
+- **Dental Imaging Interpretation** - Expert
+- **Microscopic Diagnosis (Oral Path)** - Expert
+- **Behavior Management (Pedo)** - Expert
+- **CBCT Interpretation** - Advanced
+- **Sedation Dentistry** - Advanced
+- **Research Methods** - Advanced
 
 ### Soft Skills
 - **Patient Communication** - Critical
-- **Collaboration** - Essential
-- **Attention to Detail** - Critical
-- **Problem Solving** - Essential
-
-## Related Occupations
-
-```mermaid
-graph LR
-    DentSpec["Dental Specialists"]
-
-    subgraph SameCategory["Dental Field"]
-        DentGen["Dentists, General"]
-        OralSurg["Oral Surgeons"]
-        Ortho["Orthodontists"]
-        Prosth["Prosthodontists"]
-    end
-
-    subgraph Support["Support Roles"]
-        DH["Dental Hygienists"]
-        DA["Dental Assistants"]
-        DentalLab["Dental Lab Technicians"]
-    end
-
-    DentSpec --- SameCategory
-    DentSpec --- Support
-```
-
-## Industries
-
-- [Dental Offices](/industries/Healthcare/AmbulatoryHealthCare/DentalOffices/index) - Specialty Practice
-- [Hospitals](/industries/Healthcare/Hospitals/index) - Hospital Dentistry
-- [Academic Institutions](/industries/AcademicInstitutions) - Dental Schools
-- [Community Health Centers](/industries/CommunityHealth) - Public Health Dentistry
-
-## Career Progression
-
-```mermaid
-graph BT
-    DDS["DDS/DMD Degree"] --> Res["Specialty Residency (2-6 years)"]
-    Res --> Assoc["Associate Specialist"]
-    Assoc --> Partner["Practice Partner/Owner"]
-    Partner --> Multi["Multi-Specialty Group Leader"]
-
-    Res --> Academic["Academic Faculty"]
-    Academic --> Chair["Department Chair"]
-```
+- **Manual Dexterity** - Essential
+- **Empathy** - Essential
+- **Leadership** - Important
+- **Teaching** - Important
 
 ## Education & Training
 
 | Requirement | Details |
 |-------------|---------|
-| Typical Education | DDS/DMD plus 2-6 year specialty residency |
-| Work Experience | Residency training varies by specialty |
-| Board Certification | Available through respective specialty boards |
-| Licensure | State dental license with specialty permit |
+| Undergraduate | Bachelor's degree (pre-dental) |
+| Dental School | 4-year DDS or DMD program |
+| Specialty Residency | 2-4 years depending on specialty |
+| Board Certification | Specialty board examination |
+| State Licensure | Required in all states |
+| Continuing Education | Per state and specialty board requirements |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| ABE | American Board of Endodontics |
+| ABPD | American Board of Pediatric Dentistry |
+| ABOP | American Board of Oral Pathology |
+| ABOMR | American Board of Oral and Maxillofacial Radiology |
+| ABDPH | American Board of Dental Public Health |
+| State Dental License | Required for all practice |
+
+## Career Progression
+
+```mermaid
+graph BT
+    DDS["DDS/DMD Graduate"] --> Resident["Specialty Resident"]
+    Resident --> Board["Board-Certified Specialist"]
+    Board --> Partner["Practice Partner"]
+    Partner --> Owner["Practice Owner"]
+
+    Board --> Faculty["Academic Faculty"]
+    Faculty --> Chair["Department Chair"]
+
+    Board --> Director["Program Director"]
+    Board --> PublicHealth["Chief Dental Officer"]
+```
+
+## Specializations
+
+| Specialty | Description |
+|-----------|-------------|
+| Endodontics | Root canal and pulp therapy |
+| Pediatric Dentistry | Children's oral health |
+| Oral Pathology | Diagnosis of oral diseases |
+| Oral & Maxillofacial Radiology | Dental/facial imaging |
+| Dental Public Health | Community oral health |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Cone Beam CT (CBCT) | 3D dental imaging |
+| Operating Microscopes | Endodontic magnification |
+| Rotary Endodontic Systems | Root canal instrumentation |
+| Digital Radiography | Dental imaging |
+| Nitrous Oxide/Sedation Equipment | Pediatric sedation |
+| Histopathology Equipment | Oral pathology diagnosis |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Dental Specialists"]
+
+    subgraph DentalTeam["Dental Colleagues"]
+        GeneralDentists["General Dentists"]
+        OralSurgeons["Oral & Maxillofacial Surgeons"]
+        Orthodontists["Orthodontists"]
+    end
+
+    subgraph Support["Support Team"]
+        DentalHygienists["Dental Hygienists"]
+        DentalAssistants["Dental Assistants"]
+        DentalLabTechs["Dental Lab Technicians"]
+    end
+
+    Current --- DentalTeam
+    Current --- Support
+```
+
+## Industries
+
+- [Dental Offices](/industries/Healthcare/DentalOffices) - Specialty Practice
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Hospital Dentistry
+- [Academic](/industries/Education) - Dental Schools
+- [Government](/industries/Government) - Public Health Agencies
+- [Community Health](/industries/Healthcare/AmbulatoryHealthCare) - FQHCs
+
+## Departments
+
+This occupation typically works in:
+- [Dental Services](/departments/DentalServices)
+- [Endodontics](/departments/Endodontics)
+- [Pediatric Dentistry](/departments/PediatricDentistry)
+- [Oral Pathology](/departments/OralPathology)
+- [Dental Public Health](/departments/DentalPublicHealth)
 
 ---
 

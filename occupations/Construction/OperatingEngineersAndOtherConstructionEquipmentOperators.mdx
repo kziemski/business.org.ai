@@ -12,14 +12,21 @@ status: complete
 
 ## Overview
 
-Operating Engineers and Other Construction Equipment Operators is an occupation within the Construction and Extraction category. Operate one or several types of power construction equipment, such as motor graders, bulldozers, scrapers, compressors, pumps, derricks, shovels, tractors, or front-end loaders to excavate, move, and grade earth, erect structures, or pour concrete or other hard surface pavement. 
+Operating Engineers are highly skilled construction professionals who operate heavy equipment including excavators, bulldozers, cranes, loaders, graders, scrapers, backhoes, and other power-driven machines used to build roads, bridges, buildings, dams, and other infrastructure. This is one of the largest and most versatile construction occupations, as heavy equipment is required on virtually every type of construction project from residential site work to massive civil engineering endeavors.
+
+The trade requires exceptional hand-eye-foot coordination, depth perception, and spatial awareness to safely control machines that can weigh over 100 tons and move thousands of cubic yards of earth per day. Modern equipment features GPS-guided machine control systems, telematics, and automated grading technology, but operator skill remains essential for efficient and safe production. Operators must read grade stakes, understand civil engineering plans, and work within tight tolerances to meet project specifications.
+
+Operating Engineers are represented by the International Union of Operating Engineers (IUOE) and typically complete apprenticeships that cover multiple equipment types. The most skilled operators can transition between different machines as project needs change, though many develop specializations in particular equipment types such as cranes, excavators, or graders.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group472073["47-2073 Operating Engineers and Other Construction Equipment Operators"]
-    Group472073 --> Current["47-2073.00 Operating Engineers and Other Construction Equipment Operators"]
+    Cat47["47 - Construction and Extraction"] --> Group472["47-2000 Construction Trades Workers"]
+    Group472 --> Group4720["47-2070 Construction Equipment Operators"]
+    Group4720 --> Paving["47-2071.00 Paving Equipment Operators"]
+    Group4720 --> PileDriver["47-2072.00 Pile Driver Operators"]
+    Group4720 --> Current["47-2073.00 Operating Engineers"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,108 +35,212 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-2073.00 |
+| Job Zone | 3 (Medium Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 159 |
+| Task Count | 145 |
+| Median Salary | $50,100 / year |
+| Employment | ~430,000 |
+| Job Outlook | 4% (As fast as average) |
+| Physical Demands | Medium |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("OperatingEngineersAndOtherConstructionEquipmentOperators"))
-        Learn
-            Safety Regulations
-        Follow
-            Safety Regulations
-        Take
-            Actions
-        Start
-            Engines
-            Move Throttles
-            Switches
-            Levers
-            Depress Pedals
-        Coordinate
-            Machine Actions
-        Align
-            Machines
-            Cutterheads
-            Depth Gauge Makers
-        Locate
-            Underground Services
-            Pipes
-            Wires
-            Prior
-        Signal
-            Operators
+    root(("Operating Engineers"))
+        Operate
+            Excavators
+            Bulldozers
+            Loaders
+            Graders
+            Cranes
+            Scrapers
+            Backhoes
+        Excavate
+            Earth
+            Rock
+            Trenches
+        Grade
+            Building Pads
+            Roads
+            Slopes
+        Move
+            Earth and Materials
+        Maintain
+            Equipment
+        Read
+            Grade Stakes
+            Plans
+        Compact
+            Soil
+            Aggregate
 ```
 
-### learn.SafetyRegulations
+### operate.Excavators
 
-Operating Engineers and Other Construction Equipment Operators learn safety regulations as part of their core responsibilities.
-
-**Actions:**
-- `learn.SafetyRegulations`
-
-### follow.SafetyRegulations
-
-Operating Engineers and Other Construction Equipment Operators follow safety regulations as part of their core responsibilities.
+Operating Engineers control hydraulic excavators for digging, loading, and grading.
 
 **Actions:**
-- `follow.SafetyRegulations`
+- `operate.Excavators.to.excavate.Earth`
+- `operate.Bulldozers.to.grade.Surfaces`
+- `operate.Loaders.to.move.Materials`
+- `operate.Graders.to.finish.Roads`
+- `operate.Cranes.to.lift.Materials`
 
-### take.Actions
+### grade.Surfaces
 
-Operating Engineers and Other Construction Equipment Operators take actions as part of their core responsibilities.
+Operating Engineers use equipment to achieve specified elevations and slopes.
 
 **Actions:**
-- `take.Actions.to.avoid.PotentialHazards`
-- `take.Actions.to.Obstructions`
-- `take.Actions.to.UtilityLines`
-- `take.Actions.to.OtherEquipment`
+- `grade.BuildingPads.to.DesignElevation`
+- `grade.Roads.to.SpecifiedCrossSections`
+- `grade.Slopes.to.EngineeringSpecifications`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
-- **Safety Compliance** - Advanced
+- **Heavy Equipment Operation (Multiple Types)** - Expert
+- **GPS Machine Control** - Advanced
+- **Grade Reading** - Expert
+- **Blueprint and Plan Reading** - Advanced
+- **Equipment Maintenance** - Advanced
+- **Soil and Material Knowledge** - Intermediate
+- **CDL Driving** - Required
+- **Crane Operation** - Advanced (for crane operators)
+
+### Trade-Specific Skills
+- **Excavation** - Cut/fill calculations, slope stability
+- **Fine Grading** - Laser and GPS-guided finish work
+- **Crane Work** - Load charts, rigging, signal interpretation
+- **Demolition** - Structural demolition with excavators
+- **Utility Excavation** - Working around underground utilities
 
 ### Soft Skills
+- **Hand-Eye-Foot Coordination** - Critical
+- **Spatial Awareness** - Critical
+- **Concentration** - Critical
+- **Safety Consciousness** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["OperatingEngineersAndOtherConstructionEquipmentOperators"]
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent |
+| Apprenticeship | 3-4 year IUOE apprenticeship |
+| On-the-Job Training | 4,000-6,000 hours |
+| CDL | Class A or B required |
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+### Certifications
+- **NCCER Heavy Equipment Operator** - Industry credential
+- **NCCCO Crane Operator** - For crane operation
+- **OSHA 10/30-Hour Construction** - Safety certification
+- **CDL Class A/B** - Commercial vehicle operation
+- **IUOE Journeyman Card** - Union credential
+- **Competent Person (Excavation)** - OSHA requirement
+- **First Aid/CPR** - Required
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Oiler["Oiler / Apprentice"] --> Operator["Equipment Operator"]
+    Operator --> Senior["Senior Operator"]
+    Senior --> Foreman["Equipment Foreman"]
+    Foreman --> Super["Superintendent"]
+    Super --> PM["Project Manager"]
+
+    Operator --> Crane["Crane Operator"]
+    Operator --> Grader["Finish Grade Specialist"]
+    Operator --> Mechanic["Equipment Mechanic"]
+    Operator --> Estimator["Earthwork Estimator"]
+    Operator --> Owner["Excavation Contractor"]
 ```
+
+## Specializations
+
+### Earthwork and Grading
+- Mass excavation and embankment
+- Fine grading (GPS-guided)
+- Site development
+
+### Crane Operation
+- Mobile cranes (hydraulic, lattice boom)
+- Tower cranes
+- Overhead/gantry cranes
+
+### Demolition
+- Structural demolition
+- Selective interior demolition
+- Concrete and asphalt removal
+
+### Utility Installation
+- Trench excavation for utilities
+- Pipe bedding and backfill
+- Directional boring support
+
+## Tools & Equipment
+
+### Primary Equipment
+- Hydraulic excavators (Cat, Deere, Komatsu)
+- Bulldozers (crawler dozers)
+- Wheel loaders
+- Motor graders
+- Scrapers (single and tandem)
+- Backhoe loaders
+- Compaction rollers
+- Cranes (mobile, tower)
+
+### Technology
+- GPS machine control (Trimble, Topcon, Leica)
+- Laser grading systems
+- Telematics and fleet management
+- Load moment indicators (cranes)
+
+## Safety Considerations
+
+- **Struck-By/Run-Over** - Equipment blind spots; spotters and cameras
+- **Excavation Cave-In** - Trench and excavation collapse; OSHA competent person
+- **Overhead Power Lines** - Crane and equipment contact; minimum clearance distances
+- **Rollovers** - Operating on slopes and uneven terrain; ROPS protection
+- **Underground Utilities** - Gas, electric, telecom lines; 811 locating required
+- **Noise and Vibration** - Prolonged equipment operation; PPE required
+- **Pinch Points** - Between machine and structures
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Operating Engineers"]
+    subgraph SameCategory["Equipment Operations"]
+        Paving["Paving Equipment Operators"]
+        PileDriver["Pile Driver Operators"]
+        Mining["Excavating Machine Operators"]
+    end
+    subgraph CrossFunctional["Cross-Functional"]
+        Laborer["Construction Laborers"]
+        Super["Construction Supervisors"]
+        Mechanic["Heavy Equipment Mechanics"]
+    end
+    Current --- SameCategory
+    Current --- CrossFunctional
+```
+
+## Industries
+
+- [Highway and Street Construction](/industries/HeavyCivil) - Primary Employment
+- [Building Construction](/industries/BuildingConstruction) - High Employment
+- [Utility Construction](/industries/UtilityConstruction) - High Employment
+- [Mining](/industries/Mining) - Moderate Employment
+- [Government](/industries/Government) - Moderate Employment
+
+## Departments
+
+- [Field Operations](/departments/FieldOperations)
+- [Equipment Division](/departments/Equipment)
+- [Earthwork Division](/departments/Earthwork)
+- [Crane Division](/departments/Crane)
 
 ---
 

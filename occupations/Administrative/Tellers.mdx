@@ -12,14 +12,18 @@ status: complete
 
 ## Overview
 
-Tellers is an occupation within the Office and Administrative Support category. Receive and pay out money. 
+Tellers conduct routine financial transactions at banks and credit unions, including processing deposits, withdrawals, loan payments, check cashing, money orders, and cashier's checks. They verify customer identity, count currency, balance cash drawers, and maintain accurate transaction records. Tellers serve as the most visible and frequently contacted employees in retail banking.
+
+Working at teller windows in bank branches, these professionals handle hundreds of transactions daily while maintaining accuracy, security, and compliance with banking regulations. They verify endorsements, detect counterfeit currency, identify suspicious activity for Bank Secrecy Act reporting, and cross-sell banking products when appropriate. Cash handling requires meticulous attention to detail since discrepancies must be identified and resolved.
+
+The occupation has declined as ATMs, mobile banking, and digital payments have reduced branch transaction volume. However, tellers remain important for complex transactions, customer relationship building, and serving populations that prefer in-person banking. Many banks have evolved the teller role toward universal banking, combining transactions with advisory and account services.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group433071["43-3071 Tellers"]
-    Group433071 --> Current["43-3071.00 Tellers"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-3071 Tellers"]
+    Group --> Current["43-3071.00 Tellers"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,116 +32,91 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-3071.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 144 |
+| Median Annual Salary | $36,300 |
+| Employment | ~430,000 |
+| Projected Growth | -12% (declining) |
+| Core Tasks | 30 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("Tellers"))
-        Balance
-            Currency
-            Coin
-            Checks
-        Receive
-            Checks
-            Cash
-            Daily Inventories
-            Mortgage
-            Loan
-        Monitor
-            Bank Vaults
-        Cash
-            Checks
-            Pay
-            Written
-            Numerical Amounts Agree
-            Accounts Have Sufficient Funds
-        Count
-            Currency
-            Coins
-            Checks Received
-            Daily Inventories
-        Enter
-            Customers Transactions
-        Examine
-            Checks
-        Resolve
-            Problems
-            Discrepancies
-```
-
-### balance.Currency
-
-Tellers balance currency as part of their core responsibilities.
-
-**Actions:**
-- `balance.Currency.in.CashDrawers.at.EndsOfShifts`
-- `balance.Currency.in.CalculateDailyTransactions`
-- `balance.Currency.in.UsingComputers`
-- `balance.Currency.in.Calculators`
-
-### receive.Checks
-
-Tellers receive checks as part of their core responsibilities.
-
-**Actions:**
-- `receive.Checks.for.Deposit`
-- `receive.Checks.for.VerifyAmounts`
-- `receive.Checks.for.CheckAccuracy.of.DepositSlips`
-- `receive.Cash.for.Deposit`
-
-### monitor.BankVaults
-
-Tellers monitor bank vaults as part of their core responsibilities.
-
-**Actions:**
-- `monitor.BankVaults.to.ensure.CashBalancesAreCorrect`
+Core task data with GraphDL semantic actions for this occupation is maintained in the data pipeline. See [O*NET 43-3071.00](https://www.onetonline.org/link/summary/43-3071.00) for detailed task information.
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Cash Handling** - Expert
+- **Core Banking Systems** - Advanced
+- **Counterfeit Detection** - Advanced
+- **BSA/AML Compliance** - Intermediate
+- **Banking Products Knowledge** - Intermediate
 
 ### Soft Skills
+- **Accuracy** - Critical
+- **Customer Service** - Critical
+- **Trustworthiness** - Critical
+- **Speed** - Essential
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Attention to Detail** - Critical
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma |
+| ABA Teller Training | American Bankers Association |
+| BSA/AML Training | Required annually |
+| Cash Handling Certification | Bank-specific programs |
+| Bonding | Fidelity bond required |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Teller"] --> Mid["Head Teller / Senior Teller"]
+    Mid --> Banker["Personal Banker / New Accounts"]
+    Banker --> Manager["Assistant Branch Manager"]
+    Manager --> BM["Branch Manager"]
+```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Commercial Banks | Full-service transactions | High volume; diverse products; technology integration |
+| Credit Unions | Member services | Member-owned; community focus; personalized service |
+| Savings Institutions | Deposit transactions | Savings focus; CD processing; mortgage payments |
+| Universal Banking | Expanded role | Transactions plus advisory; pod/platform model; consultative |
+
+## Technology & Tools
+
+- **Core Banking** - FIS, Fiserv, Jack Henry teller platforms
+- **Cash Handling** - Currency counters, recyclers, counterfeit detectors
+- **Security** - Surveillance, dye packs, bait money
+- **CRM** - Customer relationship tools for referrals
 
 ## Related Occupations
 
 ```mermaid
 graph LR
     Current["Tellers"]
-
     subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
+        RNewAccountsClerks["New Accounts Clerks"]
+        RCashiers["Cashiers"]
+        RBookkeepingClerks["Bookkeeping Clerks"]
     end
-
     Current --- SameCategory
 ```
 
-## Industries
+## Departments
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
-
-## Career Progression
-
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Branch Operations](/departments/BranchOps) - Teller line
+- [Retail Banking](/departments/RetailBanking) - Customer transactions
+- [Cash Management](/departments/CashMgmt) - Vault and cash operations
+- [Compliance](/departments/Compliance) - BSA/AML monitoring
 
 ---
 

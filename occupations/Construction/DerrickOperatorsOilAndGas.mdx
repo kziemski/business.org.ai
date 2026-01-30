@@ -8,18 +8,25 @@ status: complete
 
 # Derrick Operators, Oil and Gas
 
-> Rig derrick equipment and operate pumps to circulate mud or fluid through drill hole.
+> Rig derrick equipment and operate pumps to circulate mud through drill hole.
 
 ## Overview
 
-Derrick Operators, Oil and Gas is classified under Construction and Extraction (SOC 47). Rig derrick equipment and operate pumps to circulate mud or fluid through drill hole.
+Derrick Operators work on oil and gas drilling rigs, positioned high on the derrick (the tall structure above the rig floor) where they handle the upper end of drill pipe strings during drilling, tripping, and casing operations. They are responsible for racking pipe in the derrick, operating mud pumps, and monitoring the mud system that lubricates the drill bit, removes cuttings, and maintains wellbore pressure. This is one of the most physically demanding and dangerous positions on a drilling rig.
+
+Working at heights of 90 feet or more on the monkeyboard platform, derrick operators guide drill pipe sections into and out of the fingerboard while the drawworks raises and lowers the drill string. They must maintain balance and coordination while handling heavy pipe in all weather conditions, including wind, rain, ice, and extreme heat. Modern rigs are increasingly adopting automated pipe handling systems, but many operations still require manual derrick work.
+
+Derrick operators also serve as the primary operators of the mud system, monitoring mud weight, viscosity, and flow rates. The drilling fluid system is critical to well control: maintaining proper mud weight prevents blowouts, and the derrick operator's vigilance in monitoring returns is essential to early kick detection. This dual responsibility of pipe handling and mud system management makes the derrick operator one of the most skilled positions on the rig floor crew.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group475011["47-5011 Derrick Operators, Oil and Gas"]
-    Group475011 --> Current["47-5011.00 Derrick Operators, Oil and Gas"]
+    Cat47["47 - Construction and Extraction"] --> Group475["47-5000 Extraction Workers"]
+    Group475 --> Group4750["47-5010 Derrick, Rotary Drill, and Service Unit Operators"]
+    Group4750 --> Current["47-5011.00 Derrick Operators, Oil and Gas"]
+    Group4750 --> Rotary["47-5012.00 Rotary Drill Operators"]
+    Group4750 --> Service["47-5013.00 Service Unit Operators"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,110 +35,208 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-5011.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 41 |
+| Task Count | 72 |
+| Median Salary | $46,800 / year |
+| Employment | ~16,000 |
+| Job Outlook | -3% (Decline) |
+| Physical Demands | Very Heavy |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("Derrick Operators, Oil and Gas"))
-        Inspect
-            Derricks
-            Order Inspection
-            Prior
-        Control
+    root(("Derrick Operators"))
+        Operate
+            Mud Pumps
+            Mixing Equipment
+        Monitor
+            Mud Weight
             Viscosity
-            Weight
-        Repair
-            Pumps
-            Mud Tanks
-            Related Equipment
-        Set
-            Crown Blocks
-        Bolt
-            Crown Blocks
-        Listen
-            Check Regularly
-        Start
-            Pumps Circulate Mud
-            Boreholes
+            Flow Rates
+        Handle
+            Drill Pipe
+            Casing
         Position
-            Derrick Elements
-            Using Harnesses
-            Platform Climbing Devices
+            Pipe in Derrick
+            Fingerboard
+        Inspect
+            Derrick Equipment
+            Safety Devices
+        Mix
+            Drilling Mud
+            Chemicals
+        Maintain
+            Mud System
+            Equipment
+        Report
+            Well Conditions
+            Equipment Status
 ```
 
-### inspect.Derricks
+### operate.MudPumps
 
-Derrick Operators, Oil and Gas inspect derricks as part of their core responsibilities.
-
-**Actions:**
-- `inspect.Derricks.to.BeingRaised`
-- `inspect.Derricks.to.lowered`
-- `inspect.OrderInspection.to.BeingRaised`
-- `inspect.OrderInspection.to.lowered`
-
-### control.Viscosity
-
-Derrick Operators, Oil and Gas control viscosity as part of their core responsibilities.
+Derrick Operators manage the drilling fluid circulation system.
 
 **Actions:**
-- `control.Viscosity.of.DrillingFluid`
-- `control.Weight.of.DrillingFluid`
+- `operate.MudPumps.to.circulate.DrillingFluid`
+- `operate.MixingEquipment.to.prepare.DrillingMud`
+- `operate.ShakerScreens.to.remove.Cuttings`
 
-### repair.Pumps
+### handle.DrillPipe
 
-Derrick Operators, Oil and Gas repair pumps as part of their core responsibilities.
+Derrick Operators handle pipe from the monkeyboard platform during tripping operations.
 
 **Actions:**
-- `repair.Pumps`
-- `repair.MudTanks`
-- `repair.RelatedEquipment`
+- `handle.DrillPipe.on.Monkeyboard`
+- `handle.Casing.during.CasingOperations`
+- `position.Pipe.in.Fingerboard`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
-- **Safety Compliance** - Advanced
+- **Drilling Fluid Systems** - Expert
+- **Pipe Handling** - Expert
+- **Well Control Awareness** - Advanced
+- **Pump Operations** - Advanced
+- **Derrick Equipment** - Expert
+- **Mud Chemistry Basics** - Intermediate
+- **Hydraulic Systems** - Intermediate
+
+### Trade-Specific Skills
+- **Monkeyboard Work** - Working at height on derrick platform
+- **Mud Weight Monitoring** - Continuous wellbore pressure management
+- **Kick Detection** - Recognizing early signs of well control events
+- **Pipe Racking** - Efficient and safe pipe handling in the derrick
+- **Cold/Hot Weather Operations** - Rig operations in extreme conditions
 
 ### Soft Skills
+- **Physical Stamina** - Critical
+- **Heights Comfort** - Critical
+- **Situational Awareness** - Critical
+- **Teamwork** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Derrick Operators, Oil and Gas"]
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent |
+| On-the-Job Training | 6-12 months as floorhand first |
+| Well Control Training | Required |
+| Rig-Specific Training | Company-provided |
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+### Certifications
+- **IADC WellSharp** - Well control certification (formerly WellCAP)
+- **SafeLand/SafeGulf** - Orientation safety training
+- **H2S Alive** - Hydrogen sulfide awareness
+- **First Aid/CPR** - Required
+- **OSHA 10-Hour General Industry** - Safety certification
+- **Fall Protection Certification** - Required for derrick work
+- **Rig Pass** - IADC accredited training
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Roust["Roustabout"] --> Floor["Floorhand"]
+    Floor --> Derrick["Derrick Operator"]
+    Derrick --> Driller["Driller"]
+    Driller --> ToolPush["Toolpusher"]
+    ToolPush --> RigMgr["Rig Manager"]
+    RigMgr --> OpsSuper["Operations Superintendent"]
+
+    Derrick --> MudEng["Mud Engineer"]
+    Derrick --> Safety["Rig Safety Officer"]
 ```
+
+## Specializations
+
+### Land Drilling
+- Conventional land rigs
+- Pad drilling operations
+- Remote location operations
+
+### Offshore Drilling
+- Jack-up rigs
+- Semi-submersible platforms
+- Drillships
+
+### Directional and Horizontal
+- Extended-reach drilling support
+- Managed pressure drilling
+- Complex well profiles
+
+## Tools & Equipment
+
+### Derrick Equipment
+- Monkeyboard and safety harness
+- Fingerboard (pipe racking system)
+- Safety climbing devices
+- Wind walls and enclosures
+
+### Mud System Equipment
+- Mud pumps (triplex)
+- Shale shakers
+- Mud mixers and hoppers
+- Mud balance and viscosity cups
+- Degassers and desanders
+
+### Personal Equipment
+- Full body harness and lanyard
+- Hard hat with chin strap
+- Steel-toed boots (slip-resistant)
+- Fire-retardant coveralls (FRC)
+- Safety glasses and hearing protection
+
+## Safety Considerations
+
+- **Falls from Height** - Working 90+ feet up; full fall arrest required at all times
+- **Caught-Between Hazards** - Pipe handling in tight spaces
+- **Well Control Events** - Blowout risk; kick detection vigilance
+- **H2S Exposure** - Hydrogen sulfide gas (immediately dangerous to life)
+- **Extreme Weather** - Wind, ice, heat exposure on exposed platform
+- **Fatigue** - 12-hour shifts, 14-21 day rotations
+- **Noise** - Constant rig noise; hearing protection mandatory
+- **Struck-By Hazards** - Falling objects from derrick; exclusion zones
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Derrick Operators"]
+
+    subgraph SameCategory["Drilling Operations"]
+        Rotary["Rotary Drill Operators"]
+        Service["Service Unit Operators"]
+        Roustabout["Roustabouts"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        MudEng["Mud Engineers"]
+        WellControl["Well Control Specialists"]
+        RigMech["Rig Mechanics"]
+    end
+
+    Current --- SameCategory
+    Current --- CrossFunctional
+```
+
+## Industries
+
+- [Oil and Gas Extraction](/industries/OilGasExtraction) - Primary Employment
+- [Drilling Oil and Gas Wells](/industries/DrillingServices) - Primary Employment
+- [Support Activities for Mining](/industries/MiningSupport) - Moderate Employment
+
+## Departments
+
+This occupation typically works in:
+- [Drilling Operations](/departments/DrillingOps)
+- [Rig Crew](/departments/RigCrew)
+- [Mud Systems](/departments/MudSystems)
+- [Safety](/departments/Safety)
 
 ---
 

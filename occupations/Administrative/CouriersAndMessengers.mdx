@@ -12,14 +12,18 @@ status: complete
 
 ## Overview
 
-Couriers and Messengers is classified under Office and Administrative Support (SOC 43). Pick up and deliver messages, documents, packages, and other items between offices or departments within an establishment or directly to other business concerns, traveling by foot, bicycle, motorcycle, automobile, or public conveyance.
+Couriers and Messengers pick up and deliver documents, packages, and other items between offices, businesses, and individuals, traveling by foot, bicycle, motorcycle, automobile, or public transportation. They serve as the physical link in communication and logistics chains where speed, security, or personal handling is required, transporting legal documents, medical specimens, financial instruments, and time-sensitive materials.
+
+The profession encompasses a range of roles from in-house messengers who circulate within large organizations to independent couriers who serve multiple clients across urban areas. Bicycle messengers are iconic in dense urban environments where traffic congestion makes two-wheeled transport the fastest option. Same-day delivery services, legal document runners, and medical courier services represent specialized segments of this occupation.
+
+While digital communication has reduced demand for routine document delivery, specialized courier services for legal filings, medical specimens, pharmaceuticals, and high-value items continue to thrive. The growth of same-day and on-demand delivery services through platforms like DoorDash, Postmates, and specialized medical courier networks has created new employment models for courier professionals.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group435021["43-5021 Couriers and Messengers"]
-    Group435021 --> Current["43-5021.00 Couriers and Messengers"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-5021 Couriers and Messengers"]
+    Group --> Current["43-5021.00 Couriers and Messengers"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,116 +32,93 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-5021.00 |
+| Job Zone | 1 (Little or No Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 69 |
+| Median Annual Salary | $35,100 |
+| Employment | ~67,000 |
+| Projected Growth | -11% (declining) |
+| Core Tasks | 25 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("Couriers and Messengers"))
-        Deliver
-            Lab Specimens
-            Medications
-            Messages
-            Items
-            Newspapers
-        Pick
-            Lab Specimens
-            Medications
-        Obtain
-            Signatures
-            Payments
-            Arrange
-        Record
-            Information
-            Items Received
-            Delivered
-            Recipients Responses
-        Receive
-            Messages
-            Materials
-        Load
-            Vehicles
-        Walk
-            Ride Bicycles Drive Vehicles Use Public Conveyances
-        Sort
-            Items
-            Items Collected
-```
-
-### deliver.LabSpecimens
-
-Couriers and Messengers deliver lab specimens as part of their core responsibilities.
-
-**Actions:**
-- `deliver.LabSpecimens.to.FromHospitalsMedicalFacilities`
-- `deliver.LabSpecimens.to.OtherMedicalFacilities`
-- `deliver.Medications.to.FromHospitalsMedicalFacilities`
-- `deliver.Medications.to.OtherMedicalFacilities`
-
-### pick.LabSpecimens
-
-Couriers and Messengers pick lab specimens as part of their core responsibilities.
-
-**Actions:**
-- `pick.LabSpecimens.to.FromHospitalsMedicalFacilities`
-- `pick.LabSpecimens.to.OtherMedicalFacilities`
-- `pick.Medications.to.FromHospitalsMedicalFacilities`
-- `pick.Medications.to.OtherMedicalFacilities`
-
-### obtain.Signatures
-
-Couriers and Messengers obtain signatures as part of their core responsibilities.
-
-**Actions:**
-- `obtain.Signatures.for.Recipients.to.make.Payments`
-- `obtain.Payments.for.Recipients.to.make.Payments`
-- `obtain.Arrange.for.Recipients.to.make.Payments`
+Task data and GraphDL actions for this occupation are documented in the [O*NET database](https://www.onetonline.org/link/summary/43-5021.00).
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Route Navigation and GPS** - Advanced
+- **Delivery Tracking Systems** - Intermediate
+- **Chain of Custody Documentation** - Intermediate
+- **Vehicle Operation** - Advanced
+- **Time Management** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Reliability and Punctuality** - Critical
+- **Physical Stamina** - Essential
+- **Navigation Skills** - Critical
+- **Customer Service** - Important
+- **Independence** - Essential
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Couriers and Messengers"]
-
-    subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or less |
+| Driver's License | Required for vehicle-based courier roles |
+| HIPAA Training | Required for medical courier positions |
+| Chain of Custody Training | Required for legal and evidence courier work |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Courier / Messenger"] --> Mid["Senior Courier / Route Driver"]
+    Mid --> Supervisor["Dispatch Supervisor"]
+    Supervisor --> Manager["Delivery Operations Manager"]
+
+    Entry --> Independent["Independent Courier"]
+    Independent --> Owner["Courier Service Owner"]
 ```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Legal Services | Court filings, document delivery | Time-sensitive deadlines; chain of custody; court schedules |
+| Healthcare | Specimen and pharmaceutical delivery | Temperature control; HIPAA; biohazard handling |
+| Financial Services | Document and check delivery | Security protocols; signature requirements; bonded couriers |
+| General Business | Inter-office and B2B delivery | Scheduled routes; package variety; urban navigation |
+
+## Technology & Tools
+
+- **Navigation** - Google Maps, Waze, city maps
+- **Tracking** - GPS tracking, delivery confirmation apps
+- **Communication** - Mobile phone, two-way radio
+- **Delivery Platforms** - On-demand delivery apps
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["CouriersAndMessengers"]
+
+    subgraph SameCategory["Office and Administrative Support"]
+        PostalCarriers["Postal Service Mail Carriers"]
+        ShippingClerks["Shipping Clerks"]
+        Dispatchers["Dispatchers"]
+    end
+
+    Current --- SameCategory
+```
+
+## Departments
+
+This occupation typically works in:
+- [Mail Services](/departments/MailServices) - Internal mail operations
+- [Operations](/departments/Operations) - Delivery logistics
+- [Legal Department](/departments/Legal) - Court filing delivery
+- [Laboratory](/departments/Laboratory) - Specimen transport
 
 ---
 

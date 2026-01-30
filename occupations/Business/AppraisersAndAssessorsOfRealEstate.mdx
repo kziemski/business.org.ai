@@ -3,7 +3,9 @@ id: AppraisersAndAssessorsOfRealEstate
 name: "Appraisers and Assessors of Real Estate"
 code: "13-2023.00"
 type: Occupation
+category: Business
 status: complete
+certifications: ["MAI", "SRA", "AI-RRS", "ASA"]
 ---
 
 # Appraisers and Assessors of Real Estate
@@ -12,14 +14,19 @@ status: complete
 
 ## Overview
 
-Appraisers and Assessors of Real Estate is an occupation within the Business and Financial Operations category. Appraise real estate, exclusively, and estimate its fair value. 
+Appraisers and Assessors of Real Estate provide independent, objective valuations of residential and commercial properties for a wide range of purposes including mortgage lending, property taxation, estate planning, and litigation support. These professionals apply systematic methodologies -- the sales comparison, cost, and income capitalization approaches -- to determine the market value of real property. Their work is fundamental to the functioning of real estate markets, ensuring that buyers, sellers, lenders, and government entities have reliable information on which to base financial decisions.
+
+The profession requires a deep understanding of local real estate markets, construction methods, zoning regulations, and economic trends that influence property values. Appraisers must maintain strict independence and objectivity, adhering to the Uniform Standards of Professional Appraisal Practice (USPAP) and state licensing requirements. The role has evolved significantly with the adoption of geographic information systems, automated valuation models, and digital inspection tools, though professional judgment remains central to the appraisal process.
+
+Real estate assessors, a closely related specialization, focus specifically on determining property values for tax assessment purposes. They work primarily for local government agencies and must balance accuracy with the need to assess large volumes of properties efficiently. Both roles demand strong analytical skills, attention to detail, and the ability to communicate complex valuation conclusions clearly in written reports.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group132023["13-2023 Appraisers and Assessors of Real Estate"]
-    Group132023 --> Current["13-2023.00 Appraisers and Assessors of Real Estate"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G132023["13-2023 Appraisers and Assessors of Real Estate"]
+    G132023 --> Current["13-2023.00 Appraisers and Assessors of Real Estate"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,7 +35,11 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-2023.00 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
+| Median Salary | $61,560 |
+| Employment | ~77,000 |
+| Projected Growth | 5% (As fast as average) |
 | Task Count | 107 |
 | Source | O*NET |
 
@@ -36,104 +47,168 @@ graph TD
 
 ```mermaid
 mindmap
-    root(("AppraisersAndAssessorsOfRealEstate"))
-        Compute
-            Final Estimation
-        Prepare
-            Written Reports Estimate Property Values
-            Outline Methods
-        Photograph
-            Interiors
-            Exteriors
-        Search
-            Public Records
-        Obtain
-            County Land Values Information
-            Sales Information
-        Maintain
-            Familiarity
+    root(("Real Estate Appraisers"))
         Inspect
             Properties
-            Considering Factors
-            Market Value
-            Location
-            Building
-        Collect
-            Relevant Data
+            Interiors and Exteriors
+            Building Condition
+            Location Factors
+        Compute
+            Final Valuations
+            Depreciation Adjustments
+            Replacement Costs
+        Prepare
+            Written Reports
+            Appraisal Documentation
+            Tax Assessments
+        Research
+            Public Records
+            Comparable Sales
+            Market Conditions
+        Photograph
+            Property Interiors
+            Property Exteriors
+            Comparable Properties
+        Analyze
+            Market Data
+            Zoning Regulations
+            Environmental Factors
 ```
 
-### compute.FinalEstimation
+### inspect.Properties
 
-Appraisers and Assessors of Real Estate compute final estimation as part of their core responsibilities.
-
-**Actions:**
-- `compute.FinalEstimation.of.PropertyValues`
-- `compute.FinalEstimation.of.TakingIntoAccountSuchFactorsAsDepreciation`
-- `compute.FinalEstimation.of.ReplacementCosts`
-- `compute.FinalEstimation.of.ValueComparisons.of.SimilarProperties`
-
-### prepare.WrittenReportsEstimatePropertyValues
-
-Appraisers and Assessors of Real Estate prepare written reports estimate property values as part of their core responsibilities.
+Conduct thorough physical inspections of real estate properties to assess condition, features, and value factors.
 
 **Actions:**
-- `prepare.WrittenReportsEstimatePropertyValues.by.WhichEstimationsWereMade`
-- `prepare.WrittenReportsEstimatePropertyValues.by.MeetAppraisalStandards`
-- `prepare.OutlineMethods.by.WhichEstimationsWereMade`
-- `prepare.OutlineMethods.by.MeetAppraisalStandards`
+- `inspect.Properties.to.assess.Condition` - Evaluate physical state of improvements
+- `inspect.Properties.to.evaluate.LocationFactors` - Assess neighborhood and site characteristics
+- `inspect.BuildingCondition.to.determine.FunctionalObsolescence` - Identify depreciation factors
+- `photograph.InteriorsAndExteriors.to.document.PropertyCondition` - Create visual record
 
-### photograph.Interiors
+### compute.FinalValuation
 
-Appraisers and Assessors of Real Estate photograph interiors as part of their core responsibilities.
+Calculate final property value estimates using multiple appraisal methodologies.
 
 **Actions:**
-- `photograph.Interiors.of.Properties.to.assist.InEstimatingPropertyValue`
-- `photograph.Interiors.of.SubstantiateFindings`
-- `photograph.Interiors.of.CompleteAppraisalReports`
-- `photograph.Exteriors.of.Properties.to.assist.InEstimatingPropertyValue`
+- `compute.FinalEstimation.of.PropertyValues` - Determine market value
+- `compute.Depreciation.to.adjust.ReplacementCosts` - Apply depreciation schedules
+- `compute.ValueComparisons.of.SimilarProperties` - Apply sales comparison approach
+- `compute.IncomeCapitalization.for.InvestmentProperties` - Apply income approach
+
+### prepare.AppraisalReports
+
+Prepare comprehensive written appraisal reports documenting methods, data, and conclusions.
+
+**Actions:**
+- `prepare.WrittenReports.to.document.PropertyValues` - Write formal appraisals
+- `prepare.OutlineMethods.by.WhichEstimationsWereMade` - Document methodology
+- `prepare.TaxAssessments.in.accordance.with.PrescribedSchedules` - Complete tax valuations
+- `search.PublicRecords.for.ComparableSalesData` - Research market evidence
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Real Estate Valuation Methodologies** - Expert
+- **USPAP Standards Compliance** - Expert
+- **Market Analysis & Research** - Advanced
+- **Construction Methods & Costs** - Advanced
+- **GIS & Mapping Software** - Advanced
+- **Statistical Analysis** - Proficient
+- **Zoning & Land Use Regulations** - Advanced
+- **Financial Mathematics** - Proficient
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Analytical Thinking** - Critical
+- **Attention to Detail** - Critical
+- **Written Communication** - Essential
+- **Objectivity & Independence** - Essential
+- **Time Management** - Important
+- **Client Relations** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["AppraisersAndAssessorsOfRealEstate"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's degree in Real Estate, Finance, or related field |
+| State Licensing | Required in all states (Trainee, Licensed, Certified Residential, Certified General) |
+| Key Certifications | MAI (Appraisal Institute), SRA (Residential), AI-RRS, ASA |
+| USPAP | Continuing education in USPAP required every 2 years |
+| Work Experience | 1,000-3,000 hours supervised experience depending on license level |
+| Continuing Education | 14-28 hours per renewal cycle depending on state |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Appraiser Trainee"] --> Mid["Licensed / Certified Residential Appraiser"]
+    Mid --> Senior["Certified General Appraiser / MAI"]
+    Senior --> Director["Chief Appraiser / Review Appraiser"]
+    Director --> Executive["Appraisal Firm Owner / Chief Assessment Officer"]
+
+    Alt1["Real Estate Agent"] --> Entry
+    Alt2["Tax Assessor"] --> Senior
+
+    subgraph Tracks["Career Tracks"]
+        Residential["Residential Appraisal"]
+        Commercial["Commercial Appraisal"]
+        Assessment["Government Assessment"]
+        Consulting["Litigation / Consulting"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Mortgage Lending** | Residential valuations | FHA/VA/conventional appraisals, AMC compliance |
+| **Commercial Real Estate** | Income properties | DCF analysis, lease abstraction, highest-and-best-use |
+| **Government Assessment** | Tax valuation | Mass appraisal, CAMA systems, appeals review |
+| **Litigation Support** | Expert witness | Condemnation, divorce, estate valuations |
+| **Insurance** | Replacement cost | Catastrophe assessment, damage estimation |
+| **Corporate Real Estate** | Portfolio valuation | Portfolio analysis, lease vs. buy, site selection |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Appraisal Software** | ACI Sky, TOTAL, ClickFORMS, WinTOTAL |
+| **MLS & Data** | MLS systems, CoreLogic, CoStar, REIS |
+| **GIS & Mapping** | ArcGIS, Google Earth, ParcelQuest |
+| **CAMA Systems** | Tyler Technologies, Patriot Properties, Vision |
+| **Sketching** | Apex Sketch, ANSI-compliant tools |
+| **Document Management** | Adobe Acrobat, Mercury Network |
+| **Market Analytics** | HouseCanary, Zillow Pro, Redfin Data |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    RA["Real Estate Appraisers"]
+
+    subgraph SameCategory["Financial Specialists"]
+        PBP["Appraisers of Personal & Business Property"]
+        CA["Credit Analysts"]
+        LO["Loan Officers"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        RE["Real Estate Brokers"]
+        SU["Surveyors"]
+        CI["Construction Inspectors"]
+    end
+
+    RA --- SameCategory
+    RA --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Appraisal Services](/departments/AppraisalServices)
+- [Property Assessment](/departments/PropertyAssessment)
+- [Loan Underwriting](/departments/LoanUnderwriting)
+- [Risk Management](/departments/RiskManagement)
+- [Tax Assessment](/departments/TaxAssessment)
 
 ---
 

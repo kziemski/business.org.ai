@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Advanced Practice Psychiatric Nurses is a specialized variant within the Healthcare Practitioners and Technical category. Assess, diagnose, and treat individuals and families with mental health or substance use disorders or the potential for such disorders. 
+Advanced Practice Psychiatric Nurses (APPNs) are master's- or doctoral-prepared registered nurses who specialize in the assessment, diagnosis, and treatment of mental health and substance use disorders. They combine advanced nursing expertise with psychiatric-mental health knowledge to provide comprehensive care including psychotherapy, pharmacological management, crisis intervention, and health promotion for individuals, families, and groups across the lifespan.
+
+These advanced practice providers function with considerable autonomy in many states, prescribing psychotropic medications, conducting diagnostic evaluations, developing treatment plans, and providing individual, group, and family therapy. They bridge the gap between traditional psychiatric care and holistic nursing practice, addressing both the mental health and physical health needs of patients. APPNs are particularly valued in underserved and rural areas where psychiatrist access is limited.
+
+The growing mental health crisis and shortage of psychiatric providers has elevated the demand for APPNs significantly. They work across the continuum of care from community mental health centers and outpatient clinics to inpatient psychiatric units, consultation-liaison services, and forensic settings. Their training emphasizes therapeutic relationships, trauma-informed care, recovery-oriented practice, and evidence-based psychotherapeutic modalities.
 
 ## Classification Hierarchy
 
@@ -22,6 +26,9 @@ graph TD
     Group291141 --> Base["29-1141.00 Registered Nurses"]
     Group291141 --> Current["29-1141.02 Advanced Practice Psychiatric Nurses"]
     style Current fill:#e1f5fe
+    Group291141 --> V01["29-1141.01 Acute Care Nurses"]
+    Group291141 --> V03["29-1141.03 Critical Care Nurses"]
+    Group291141 --> V04["29-1141.04 Clinical Nurse Specialists"]
 ```
 
 ## Key Statistics
@@ -29,115 +36,238 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1141.02 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 73 |
+| Median Annual Salary | $128,490 |
+| Employment | ~12,000 |
+| Projected Growth | 9% (2022-2032, faster than average) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 73 |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("AdvancedPracticePsychiatricNurses"))
+    root(("Advanced Practice Psychiatric Nurses"))
         Assess
-            Patients Mental Status Based
-            Physical Status Based
+            Mental Status
+            Physical Status
+            Presenting Symptoms
+            Substance Use
         Diagnose
-            Psychiatric Disorders Health Conditions
+            Psychiatric Disorders
             Mental Health Conditions
+            Co-occurring Conditions
         Document
-            Patients Medical Histories
+            Medical Histories
             Psychological Histories
-            Physical Assessment Results
-            Diagnoses
+            Assessment Results
             Prescriptions
         Educate
-            Patients Members
-            Family Members
-            Preventive Health Measures
+            Patients & Families
+            Preventive Measures
             Medications
             Treatment Plans
         Write
             Prescriptions
+            Treatment Orders
         Monitor
-            Patients Medication Usage
-            Results
+            Medication Usage
+            Treatment Results
+            Patient Safety
         Evaluate
-            Patients Behavior
+            Patient Behavior
+            Treatment Progress
+            Therapeutic Response
         Distinguish
             Psychologically Based Disorders
-            Diagnose Appropriately
+            Physiologically Based Disorders
 ```
 
-### assess.PatientsMentalStatusBased
+### assess.PatientMentalStatus
 
-Advanced Practice Psychiatric Nurses assess patients mental status based as part of their core responsibilities.
-
-**Actions:**
-- `assess.PatientsMentalStatusBased.on.PresentingSymptoms`
-- `assess.PatientsMentalStatusBased.on.Complaints`
-- `assess.PhysicalStatusBased.on.PresentingSymptoms`
-- `assess.PhysicalStatusBased.on.Complaints`
-
-### diagnose.PsychiatricDisordersHealthConditions
-
-Advanced Practice Psychiatric Nurses diagnose psychiatric disorders health conditions as part of their core responsibilities.
+APPNs conduct comprehensive psychiatric evaluations.
 
 **Actions:**
-- `diagnose.PsychiatricDisordersHealthConditions`
-- `diagnose.MentalHealthConditions`
+- `assess.PatientsMentalStatus.based.on.PresentingSymptoms` - Psychiatric assessment
+- `assess.PatientsMentalStatus.based.on.Complaints` - Chief concern evaluation
+- `assess.PhysicalStatus.based.on.PresentingSymptoms` - Physical examination
+- `assess.SubstanceUse.using.ValidatedInstruments` - Addiction screening
 
-### document.PatientsMedicalHistories
+### diagnose.PsychiatricDisorders
 
-Advanced Practice Psychiatric Nurses document patients medical histories as part of their core responsibilities.
+APPNs identify and classify mental health conditions.
 
 **Actions:**
-- `document.PatientsMedicalHistories`
-- `document.PsychologicalHistories`
-- `document.PhysicalAssessmentResults`
-- `document.Diagnoses`
+- `diagnose.PsychiatricDisorders.using.DSMCriteria` - Diagnostic classification
+- `diagnose.MentalHealthConditions.through.ClinicalInterview` - Clinical evaluation
+- `distinguish.PsychologicallyBasedDisorders.from.PhysiologicalCauses` - Differential diagnosis
+- `evaluate.PatientsBehavior.for.SafetyRisk` - Risk assessment
+
+### document.PatientRecords
+
+APPNs maintain comprehensive clinical documentation.
+
+**Actions:**
+- `document.PatientsMedicalHistories.in.ElectronicRecords` - Medical documentation
+- `document.PsychologicalHistories.for.TreatmentPlanning` - Psychiatric history
+- `document.PhysicalAssessmentResults.for.ClinicalReference` - Physical findings
+- `document.Diagnoses.and.TreatmentPlans` - Care documentation
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Community Mental Health Centers | Outpatient psychiatric care |
+| Inpatient Psychiatric Units | Acute psychiatric stabilization |
+| Private Practice | Independent psychiatric NP practice |
+| Consultation-Liaison Services | Hospital-based psychiatric consultation |
+| Substance Use Treatment Centers | Addiction and dual-diagnosis care |
+| Forensic Settings | Correctional and forensic psychiatry |
+| Telehealth/Telepsychiatry | Remote psychiatric services |
+| Veterans Affairs | Military and veteran mental health |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Psychiatric Diagnostic Assessment** - Expert
+- **Psychopharmacology** - Expert
+- **Psychotherapy Techniques (CBT, DBT, EMDR)** - Expert
+- **Risk Assessment** - Expert
+- **Crisis Intervention** - Advanced
+- **Neuropsychiatric Evaluation** - Advanced
+- **Lab & Diagnostic Interpretation** - Advanced
+- **Addiction Medicine** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Therapeutic Communication** - Critical
+- **Empathy & Active Listening** - Critical
+- **Cultural Competency** - Essential
+- **Emotional Resilience** - Essential
+- **Ethical Decision Making** - Essential
+- **Collaboration** - Essential
+- **Boundary Setting** - Essential
 
-## Related Occupations
+## Education & Training
 
-```mermaid
-graph LR
-    Current["AdvancedPracticePsychiatricNurses"]
+| Requirement | Details |
+|-------------|---------|
+| BSN | Bachelor of Science in Nursing (4 years) |
+| MSN or DNP | Master's or Doctoral degree in Psychiatric-Mental Health NP (2-4 years) |
+| Clinical Hours | 500-1,000+ supervised clinical hours in psychiatric settings |
+| RN Experience | Typically 1-2 years nursing experience preferred |
+| Licensure | NCLEX-RN + state APRN licensure |
+| Board Certification | ANCC Psychiatric-Mental Health NP certification |
+| Continuing Education | Per state APRN requirements |
+| DEA Registration | Required for prescribing controlled substances |
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
-    end
+## Certifications
 
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Certification | Description |
+|---------------|-------------|
+| PMHNP-BC | Psychiatric-Mental Health Nurse Practitioner - Board Certified (ANCC) |
+| PMH-CNS | Psychiatric-Mental Health Clinical Nurse Specialist |
+| CARN-AP | Certified Addictions RN - Advanced Practice |
+| MAT Waivered | Medication-Assisted Treatment for opioid use disorder |
+| BLS | Basic Life Support |
+| CPI | Crisis Prevention Institute certification |
+| Trauma-Informed Care | Specialized training certification |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    BSN["BSN / RN"] --> PsychRN["Psychiatric RN"]
+    PsychRN --> MSN["MSN/DNP Program"]
+    MSN --> PMHNP["Psychiatric-Mental Health NP"]
+    PMHNP --> SeniorNP["Senior PMHNP"]
+    SeniorNP --> LeadNP["Lead / Supervising NP"]
+    LeadNP --> Director["Director of Behavioral Health"]
+    Director --> VP["VP of Behavioral Health Services"]
+
+    PMHNP --> Private["Private Practice Owner"]
+    Private --> Group["Group Practice Partner"]
+
+    PMHNP --> Academic["Academic Faculty"]
+    Academic --> Professor["Professor / Program Director"]
+
+    SeniorNP --> Forensic["Forensic PMHNP"]
+    SeniorNP --> Addiction["Addiction Specialist"]
 ```
+
+## Specializations
+
+| Focus Area | Description |
+|------------|-------------|
+| Child & Adolescent Psychiatry | Youth mental health care |
+| Geriatric Psychiatry | Elderly cognitive and mood disorders |
+| Addiction Psychiatry | Substance use and dual diagnosis |
+| Forensic Psychiatry | Legal system and correctional care |
+| Consultation-Liaison | Hospital psychiatric consultation |
+| Trauma & PTSD | Trauma-focused treatment |
+| Eating Disorders | Anorexia, bulimia, BED |
+| Perinatal Mental Health | Peripartum mood and anxiety disorders |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Telepsychiatry Platforms (Zoom, Doxy.me) | Remote psychiatric sessions |
+| Electronic Health Records (Epic, Cerner) | Documentation and e-prescribing |
+| Prescription Drug Monitoring Programs | Controlled substance tracking |
+| Standardized Assessment Tools (PHQ-9, GAD-7) | Validated symptom measurement |
+| Pharmacogenomic Testing | Medication response prediction |
+| E-Prescribing Systems | Electronic prescription management |
+| Outcome Measurement Systems | Treatment progress tracking |
+| Patient Portal Systems | Secure patient communication |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Advanced Practice Psychiatric Nurses"]
+
+    subgraph MentalHealth["Mental Health Providers"]
+        Psychiatrists["Psychiatrists"]
+        Psychologists["Psychologists"]
+        LCSW["Clinical Social Workers"]
+    end
+
+    subgraph NursingColleagues["Nursing Colleagues"]
+        RN["Registered Nurses"]
+        PsychTech["Psychiatric Technicians"]
+        CNS["Clinical Nurse Specialists"]
+    end
+
+    subgraph Support["Support Services"]
+        CaseManagers["Case Managers"]
+        PeerSupport["Peer Support Specialists"]
+        Counselors["Mental Health Counselors"]
+    end
+
+    Current --- MentalHealth
+    Current --- NursingColleagues
+    Current --- Support
+```
+
+## Industries
+
+- [Mental Health Centers](/industries/Healthcare/MentalHealth) - Primary Employment
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Inpatient Psychiatry
+- [Physician Offices](/industries/Healthcare/PhysicianOffices) - Private Practice
+- [Substance Abuse Centers](/industries/Healthcare/SubstanceAbuse) - Addiction Treatment
+- [Government](/industries/Government) - VA and Corrections
+- [Telehealth Companies](/industries/Healthcare/Telehealth) - Virtual Psychiatry
+- [Schools & Universities](/industries/Education) - Student Mental Health
+
+## Departments
+
+This occupation typically works in:
+- [Psychiatry](/departments/Psychiatry)
+- [Behavioral Health](/departments/BehavioralHealth)
+- [Addiction Services](/departments/AddictionServices)
+- [Consultation-Liaison Psychiatry](/departments/CLPsychiatry)
+- [Outpatient Mental Health](/departments/OutpatientMentalHealth)
 
 ---
 

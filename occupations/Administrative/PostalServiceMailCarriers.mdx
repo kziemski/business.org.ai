@@ -8,18 +8,22 @@ status: complete
 
 # Postal Service Mail Carriers
 
-> Sort and deliver mail for the United States Postal Service (USPS). Deliver mail on established route by vehicle or on foot. Includes postal service mail carriers employed by USPS contractors.
+> Sort and deliver mail for the United States Postal Service (USPS). Deliver mail on established route by vehicle or on foot.
 
 ## Overview
 
-Postal Service Mail Carriers is an occupation within the Office and Administrative Support category. Sort and deliver mail for the United States Postal Service (USPS). Deliver mail on established route by vehicle or on foot.
+Postal Service Mail Carriers sort and deliver mail along established routes, bringing letters, packages, and periodicals to residential and business addresses. They work on foot in urban areas, by vehicle in suburban and rural settings, or a combination of both. Carriers also collect outgoing mail from mailboxes, deliver certified and registered mail requiring signatures, and redirect undeliverable items.
+
+This is a physically demanding federal position requiring carriers to walk extensive distances, carry heavy mail bags, navigate stairs, and work outdoors in all weather conditions. They begin shifts by sorting mail for their routes, loading vehicles, and planning efficient delivery sequences. Rural carriers often use their personal vehicles and cover much larger geographic areas.
+
+Mail carriers are essential to the USPS universal service mission, serving every address in the United States six days a week. The role has evolved with growing package volume from e-commerce, increasing the weight and bulk of daily deliveries while letter volume has declined.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group435052["43-5052 Postal Service Mail Carriers"]
-    Group435052 --> Current["43-5052.00 Postal Service Mail Carriers"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-5052 Postal Service Mail Carriers"]
+    Group --> Current["43-5052.00 Postal Service Mail Carriers"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,101 +32,90 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-5052.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 37 |
+| Median Annual Salary | $54,500 |
+| Employment | ~330,000 |
+| Projected Growth | -4% (declining) |
+| Core Tasks | 25 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("Postal Service Mail Carriers"))
-        Scan
-            Labels
-        Obtain
-            Signed Receipts
-        Sort
-            Mail
-        Deliver
-            Mail
-        Meet
-            Schedules
-        Sign
-            Registered Mail
-        Hold
-            Mail
-        Turn
-            Receipts Collected
-```
-
-### scan.Labels
-
-Postal Service Mail Carriers scan labels as part of their core responsibilities.
-
-**Actions:**
-- `scan.Labels.on.Letters.to.confirm.Receipt`
-- `scan.Labels.on.Parcels.to.confirm.Receipt`
-
-### obtain.SignedReceipts
-
-Postal Service Mail Carriers obtain signed receipts as part of their core responsibilities.
-
-**Actions:**
-- `obtain.SignedReceipts.for.Registered`
-- `obtain.SignedReceipts.for.Certified`
-- `obtain.SignedReceipts.for.InsuredMail`
-- `obtain.SignedReceipts.for.CollectAssociatedCharges`
-
-### sort.Mail
-
-Postal Service Mail Carriers sort mail as part of their core responsibilities.
-
-**Actions:**
-- `sort.Mail.for.Delivery`
-- `sort.Mail.for.ArrangingIt.in.DeliverySequence`
+Core task data with GraphDL semantic actions for this occupation is maintained in the data pipeline. See [O*NET 43-5052.00](https://www.onetonline.org/link/summary/43-5052.00) for detailed task information.
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Route Navigation** - Expert
+- **Mail Sorting and Sequencing** - Advanced
+- **Package Handling** - Advanced
+- **Postal Regulations** - Advanced
+- **Delivery Vehicle Operation** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Physical Stamina** - Critical
+- **Reliability** - Critical
+- **Self-Direction** - Critical
+- **Weather Resilience** - Essential
+- **Customer Relations** - Essential
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Postal Service Mail Carriers"]
-
-    subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma |
+| Postal Exam (474) | Required for employment |
+| Valid Driver's License | Required for vehicle routes |
+| Safe Driving Record | 2-year clean record |
+| Background Check | Federal employment requirement |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["City Carrier Assistant (CCA)"] --> Mid["Regular City Carrier"]
+    Mid --> T6["T-6 Carrier (Route Relief)"]
+    T6 --> Supervisor["Supervisor of Delivery"]
+    Supervisor --> Manager["Station Manager / Postmaster"]
 ```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| City Delivery | Walking routes | Heavy foot travel; apartment buildings; dense delivery points |
+| Suburban Delivery | Mounted (vehicle) routes | Curbside delivery; longer distances; mixed walking/driving |
+| Rural Delivery | Rural carrier routes | Personal vehicle; large area; fewer stops; RCA career path |
+| Parcel Post | Package-focused | Amazon Sundays; heavy lifting; e-commerce volume |
+
+## Technology & Tools
+
+- **Scanning** - Handheld delivery scanners, GPS tracking
+- **Vehicles** - LLV, Metris, ProMaster (NGDV coming)
+- **Sorting** - Delivery point sequencing (DPS), flat sorting
+- **Communication** - Mobile devices, route maps
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["PostalServiceMailCarriers"]
+    subgraph SameCategory["Office and Administrative Support"]
+        RPostalClerks["Postal Service Clerks"]
+        RPostalSorters["Postal Mail Sorters"]
+        RCouriers["Couriers and Messengers"]
+    end
+    Current --- SameCategory
+```
+
+## Departments
+
+This occupation typically works in:
+- [Delivery Operations](/departments/DeliveryOps) - Route delivery
+- [Station Operations](/departments/StationOps) - Mail sorting and dispatch
+- [Transportation](/departments/Transportation) - Vehicle operations
+- [Customer Service](/departments/CustomerService) - Signature services
 
 ---
 

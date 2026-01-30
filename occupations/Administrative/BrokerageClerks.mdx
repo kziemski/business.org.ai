@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Brokerage Clerks is an occupation within the Office and Administrative Support category. Perform duties related to the purchase, sale, or holding of securities. 
+Brokerage Clerks provide essential administrative and operational support in securities firms, investment banks, and financial services companies. They process securities transactions, maintain client account records, verify trade executions, compute transfer taxes and equity positions, distribute dividends, and ensure accurate recordkeeping of daily trading activities. Their work underpins the efficient operation of financial markets by ensuring that trades are properly documented, settled, and reported.
+
+Working in fast-paced trading environments, these clerks must be accurate, detail-oriented, and capable of handling high volumes of time-sensitive transactions. They interface with brokers, traders, clients, and clearinghouse personnel to resolve discrepancies, process transfers, and maintain compliance with securities regulations. The role requires understanding of financial instruments, market operations, and regulatory requirements governing securities transactions.
+
+As financial markets have become increasingly electronic and automated, the brokerage clerk role has evolved to focus more on exception processing, compliance documentation, and client service rather than manual transaction recording. However, the need for human oversight in complex settlements, corporate actions, and regulatory reporting continues to sustain demand for skilled professionals.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-4011.00 |
+| Job Zone | 3 (Medium Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 51 |
+| Median Annual Salary | $56,400 |
+| Employment | ~56,000 |
+| Projected Growth | -10% (declining) |
+| Core Tasks | 45 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,69 +45,114 @@ graph TD
 ```mermaid
 mindmap
     root(("Brokerage Clerks"))
-        Correspond
-            Confer
-        Document
-            Security Transactions
-            Purchases
-            Sales
-            Conversions
-            Redemptions
-        File
-            Standard Office Machines
-        Type
-            Standard Office Machines
-        Operate
-            Standard Office Machines
-        Perform
-            Distributing Mail
-        Prepare
-            Forms
-            Receipts
-            Withdrawal Orders
-            Transmittal Papers
-            Transfer Confirmations
+        Write
+            Stock Purchase Orders
+            Sale Orders
+        Compute
+            Transfer Taxes
+            Equity Positions
+        Verify
+            Stock Transactions
+            Trade Executions
+        Accept
+            Securities Deliveries
+        Track
+            Price Fluctuations
+            Market Data
+        Distribute
+            Dividends
+            Interest Payments
+        Keep
+            Transaction Records
+            Daily Holdings
+        Process
+            Account Transfers
+            Corporate Actions
 ```
 
-### correspond.Confer
+### write.StockOrders
 
-Brokerage Clerks correspond confer as part of their core responsibilities.
-
-**Actions:**
-- `correspond.Confer.with.Coworkers.to.answer.Inquiries`
-- `correspond.Confer.with.DiscussMarketFluctuations`
-- `correspond.Confer.with.ResolveAccountProblems`
-
-### document.SecurityTransactions
-
-Brokerage Clerks document security transactions as part of their core responsibilities.
+Brokerage Clerks process securities purchase and sale orders.
 
 **Actions:**
-- `document.SecurityTransactions`
-- `document.Purchases`
-- `document.Sales`
-- `document.Conversions`
+- `write.StockPurchaseOrders.for.ClientAccounts` - Document buy orders
+- `write.SaleOrders.for.ClientAccounts` - Process sell orders
 
-### file.StandardOfficeMachines
+### compute.TransferTaxes
 
-Brokerage Clerks file standard office machines as part of their core responsibilities.
+Brokerage Clerks calculate taxes and equity positions.
 
 **Actions:**
-- `file.StandardOfficeMachines`
+- `compute.TransferTaxes.for.SecuritiesTransactions` - Calculate applicable transfer fees
+- `compute.EquityPositions.for.ClientPortfolios` - Determine account equity values
+
+### verify.StockTransactions
+
+Brokerage Clerks confirm trade accuracy and settlement.
+
+**Actions:**
+- `verify.StockTransactions.for.Accuracy` - Match trade confirmations to orders
+- `verify.TradeExecutions.for.Settlement` - Ensure proper trade settlement
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Securities Operations** - Advanced
+- **Trade Processing and Settlement** - Advanced
+- **Financial Recordkeeping** - Advanced
+- **Regulatory Compliance (SEC/FINRA)** - Intermediate
+- **Trading Platforms and Systems** - Advanced
+- **Corporate Actions Processing** - Intermediate
+- **Tax Reporting (1099s)** - Intermediate
 
 ### Soft Skills
+- **Attention to Detail** - Critical
+- **Accuracy Under Pressure** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Organizational Skills** - Essential
+- **Problem Solving** - Important
+- **Integrity** - Critical
+- **Time Management** - Essential
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's degree in Finance or Business preferred |
+| Series 7 or SIE | May be required depending on role |
+| FINRA Registration | Background check and fingerprinting required |
+| Trading Platform Training | Company-specific systems training |
+| Continuing Education | Securities regulatory updates |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Brokerage Clerk / Operations Associate"] --> Mid["Senior Operations Specialist"]
+    Mid --> Supervisor["Operations Supervisor"]
+    Supervisor --> Manager["Operations Manager"]
+    Manager --> Director["Director of Operations"]
+
+    Mid --> Compliance["Compliance Associate"]
+    Compliance --> CompMgr["Compliance Manager"]
+```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Full-Service Brokerage | Client account management | High-touch service; complex transactions; advisor support |
+| Discount Brokerage | High-volume trade processing | Automated systems; exception-based work; efficiency focus |
+| Investment Banking | Institutional settlements | Large block trades; complex instruments; international settlement |
+| Clearinghouse | Trade clearing and settlement | DTCC interface; margin management; risk processing |
+
+## Technology & Tools
+
+- **Trading Systems** - Bloomberg Terminal, Charles River, Broadridge
+- **Settlement** - DTCC platforms, Omgeo
+- **Account Management** - CRM systems, portfolio accounting
+- **Reporting** - Regulatory reporting tools, Excel
+- **Communication** - Secure messaging, Bloomberg chat
 
 ## Related Occupations
 
@@ -108,27 +161,28 @@ graph LR
     Current["Brokerage Clerks"]
 
     subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
+        FinClerks["Financial Clerks"]
+        Bookkeeping["Bookkeeping Clerks"]
+        NewAccounts["New Accounts Clerks"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        SecuritiesSales["Securities Sales Agents"]
+        FinAnalysts["Financial Analysts"]
+        CompOfficers["Compliance Officers"]
     end
 
     Current --- SameCategory
+    Current --- CrossFunctional
 ```
 
-## Industries
+## Departments
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
-
-## Career Progression
-
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Operations](/departments/Operations) - Trade processing and settlement
+- [Compliance](/departments/Compliance) - Regulatory recordkeeping
+- [Client Services](/departments/ClientServices) - Account administration
+- [Finance](/departments/Finance) - Financial reporting
 
 ---
 

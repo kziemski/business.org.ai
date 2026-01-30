@@ -12,14 +12,18 @@ status: complete
 
 ## Overview
 
-Receptionists and Information Clerks is classified under Office and Administrative Support (SOC 43). Answer inquiries and provide information to the general public, customers, visitors, and other interested parties regarding activities conducted at establishment and location of departments, offices, and employees within the organization.
+Receptionists and Information Clerks serve as the first point of contact for organizations, greeting visitors, answering phone calls, directing inquiries, maintaining visitor logs, and providing general information about the organization's services, departments, and personnel. They create the initial impression that shapes how customers, clients, and visitors perceive an organization.
+
+Employed across virtually every industry, receptionists work in corporate lobbies, medical offices, law firms, government buildings, hotels, salons, and any organization that receives visitors or phone calls. Their duties include operating multi-line phone systems, scheduling appointments, sorting and distributing mail, maintaining office supplies, and performing light clerical tasks to support overall office operations.
+
+The role requires a professional demeanor, strong communication skills, and the ability to manage multiple interactions simultaneously while maintaining a welcoming atmosphere. While some receptionist functions have been automated with virtual assistants and self-check-in kiosks, the human element remains valued for personalized service and complex visitor management.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group434171["43-4171 Receptionists and Information Clerks"]
-    Group434171 --> Current["43-4171.00 Receptionists and Information Clerks"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-4171 Receptionists and Information Clerks"]
+    Group --> Current["43-4171.00 Receptionists and Information Clerks"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,109 +32,88 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-4171.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 104 |
+| Median Annual Salary | $33,800 |
+| Employment | ~1,000,000 |
+| Projected Growth | 2% (slower than average) |
+| Core Tasks | 30 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("ReceptionistsAndInformationClerks"))
-        Operate
-            Telephone Switchboard
-        Greet
-            Persons Entering Establishment
-            Determine Nature
-            Purpose
-        Receive
-            Payment
-            Record Receipts
-        Schedule
-            Appointments
-            Maintain Appointment Calendars
-            Update Appointment Calendars
-        Transmit
-            Information
-            Documents
-        Hear
-            Complaints
-        Resolve
-            Complaints
-        File
-            Records
-```
-
-### operate.TelephoneSwitchboard
-
-Receptionists and Information Clerks operate telephone switchboard as part of their core responsibilities.
-
-**Actions:**
-- `operate.TelephoneSwitchboard.to.answer`
-- `operate.TelephoneSwitchboard.to.screen`
-- `operate.TelephoneSwitchboard.to.forward.Calls`
-- `operate.TelephoneSwitchboard.to.ProvidingInformation`
-
-### greet.PersonsEnteringEstablishment
-
-Receptionists and Information Clerks greet persons entering establishment as part of their core responsibilities.
-
-**Actions:**
-- `greet.PersonsEnteringEstablishment.of.Visit`
-- `greet.PersonsEnteringEstablishment.of.Direct`
-- `greet.PersonsEnteringEstablishment.of.EscortThemToSpecificDestinations`
-- `greet.DetermineNature.of.Visit`
-
-### receive.Payment
-
-Receptionists and Information Clerks receive payment as part of their core responsibilities.
-
-**Actions:**
-- `receive.Payment.for.Services`
-- `receive.RecordReceipts.for.Services`
+Core task data with GraphDL semantic actions for this occupation is maintained in the data pipeline. See [O*NET 43-4171.00](https://www.onetonline.org/link/summary/43-4171.00) for detailed task information.
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Multi-Line Phone Systems** - Advanced
+- **Visitor Management Systems** - Advanced
+- **Scheduling Software** - Advanced
+- **Office Software** - Advanced
+- **Data Entry** - Intermediate
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Communication** - Critical
+- **Professional Demeanor** - Critical
+- **Customer Service** - Critical
+- **Multitasking** - Essential
+- **Patience** - Essential
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma |
+| Office Technology Training | Vocational programs |
+| Industry-Specific Training | Medical, legal, or corporate protocols |
+| First Aid/CPR | Required in some settings |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Receptionist"] --> Mid["Senior Receptionist / Front Desk Lead"]
+    Mid --> Admin["Administrative Assistant"]
+    Admin --> Manager["Office Manager / Front Office Manager"]
+```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Medical Offices | Patient check-in | HIPAA; insurance verification; appointment scheduling |
+| Corporate | Visitor management | Security badges; conference room booking; executive support |
+| Legal | Client reception | Confidentiality; attorney calendars; court filings |
+| Hospitality | Guest services | Concierge duties; reservations; loyalty programs |
+
+## Technology & Tools
+
+- **Phone Systems** - Cisco, Avaya, RingCentral
+- **Visitor Management** - Envoy, Proxyclick, SwipedOn
+- **Scheduling** - Outlook, Google Calendar, practice management
+- **Communication** - Email, intercom, messaging
 
 ## Related Occupations
 
 ```mermaid
 graph LR
     Current["ReceptionistsAndInformationClerks"]
-
     subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
+        RCustomerServiceReps["Customer Service Reps"]
+        RInformationClerks["Information Clerks"]
+        RSecretaries["Secretaries"]
     end
-
     Current --- SameCategory
 ```
 
-## Industries
+## Departments
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
-
-## Career Progression
-
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Front Office](/departments/FrontOffice) - Visitor reception
+- [Administration](/departments/Administration) - Office support
+- [Customer Service](/departments/CustomerService) - Information services
+- [Security](/departments/Security) - Visitor management
 
 ---
 

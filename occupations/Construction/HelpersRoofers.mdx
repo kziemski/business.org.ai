@@ -8,18 +8,22 @@ status: complete
 
 # Helpers--Roofers
 
-> Help roofers by performing duties requiring less skill. Duties include using, supplying, or holding materials or tools, and cleaning work area and equipment.
+> Help roofers by performing duties requiring less skill.
 
 ## Overview
 
-Helpers--Roofers is an occupation within the Construction and Extraction category. Help roofers by performing duties requiring less skill. 
+Roofer helpers support skilled roofers by performing the labor-intensive tasks essential to roofing operations. They carry roofing materials (shingles, rolls, membranes) up ladders and onto roofs, operate material hoists, clean roof surfaces before installation, spread hot asphalt or adhesives, and maintain work areas. This entry-level position provides direct exposure to the roofing trade, which encompasses a wide variety of systems from residential shingles to commercial membrane and metal roofing.
+
+Roofing is among the most physically demanding and hazardous construction trades, and helpers share these conditions. They work at heights on sloped and flat roofs, often in extreme heat (rooftop temperatures can exceed 150 degrees F in summer), and handle heavy materials while maintaining balance on elevated surfaces. Despite these challenges, roofing offers rapid skill development and strong advancement opportunities for workers who demonstrate capability and endurance.
+
+Helpers learn the fundamentals of roof systems, weather protection, flashing, and drainage while supporting experienced roofers. Those who show aptitude can advance to skilled roofer positions relatively quickly compared to trades that require lengthy formal apprenticeships, though apprenticeship programs do exist for those seeking comprehensive training.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group473016["47-3016 Helpers--Roofers"]
-    Group473016 --> Current["47-3016.00 Helpers--Roofers"]
+    Cat47["47 - Construction and Extraction"] --> Group473["47-3000 Helpers, Construction Trades"]
+    Group473 --> Current["47-3016.00 Helpers--Roofers"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,73 +32,115 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-3016.00 |
+| Job Zone | 1 (Little or No Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 46 |
+| Task Count | 65 |
+| Median Salary | $35,200 / year |
+| Employment | ~12,000 |
+| Job Outlook | 3% (Slower than average) |
+| Physical Demands | Very Heavy |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("Helpers--Roofers"))
-        Sweep
-            Roofs
+    root(("Roofer Helpers"))
+        Carry
+            Roofing Materials
+            Shingles
+            Membrane Rolls
+        Hoist
+            Materials to Roof
         Clean
-            Roofs
-        Locate
-            Worn Areas
-            Torn Areas
-        Cover
-            Roofs
-        Remove
-            Old Roofing Materials
-        Unload
-            Materials
-            Tools
-        Set
+            Roof Surfaces
+            Debris
+        Spread
+            Adhesives
+            Hot Asphalt
+        Set Up
             Ladders
-            Scaffolds
-            Hoists
-        Place
-            Tiles
-            Nail Them
+            Safety Equipment
+        Assist
+            Roofers
+            With Installation
+        Tear Off
+            Old Roofing
+        Operate
+            Material Hoists
+            Kettles
 ```
 
-### sweep.Roofs
+### carry.RoofingMaterials
 
-Helpers--Roofers sweep roofs as part of their core responsibilities.
-
-**Actions:**
-- `sweep.Roofs.to.prepare.ThemForApplicationOfNewRoofingMaterials`
-
-### clean.Roofs
-
-Helpers--Roofers clean roofs as part of their core responsibilities.
+Helpers transport heavy roofing materials to the work area.
 
 **Actions:**
-- `clean.Roofs.to.prepare.ThemForApplicationOfNewRoofingMaterials`
+- `carry.RoofingMaterials.to.RoofLevel`
+- `carry.Shingles.up.Ladders`
+- `hoist.Materials.using.MaterialHoist`
 
-### locate.WornAreas
+### assist.Roofers
 
-Helpers--Roofers locate worn areas as part of their core responsibilities.
+Helpers support skilled roofers during installation operations.
 
 **Actions:**
-- `locate.WornAreas.in.Roofs`
-- `locate.TornAreas.in.Roofs`
+- `assist.Roofers.with.MembraneInstallation`
+- `assist.Roofers.with.ShingleApplication`
+- `assist.Roofers.by.spreading.Adhesives`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
-- **Safety Compliance** - Advanced
+- **Material Handling** - Advanced
+- **Basic Roofing Knowledge** - Developing
+- **Hoist and Ladder Operation** - Developing
+- **Safety Procedures** - Developing
+- **Basic Tool Use** - Developing
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Physical Stamina** - Critical
+- **Heights Comfort** - Critical
+- **Heat Tolerance** - Critical
+- **Reliability** - Critical
+- **Teamwork** - Essential
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | No formal requirements |
+| On-the-Job Training | Ongoing |
+| Physical Requirements | Ability to work at heights in heat |
+
+### Certifications
+- **OSHA 10-Hour Construction** - Safety certification
+- **Fall Protection Training** - Required for elevated work
+- **First Aid/CPR** - Recommended
+
+## Career Progression
+
+```mermaid
+graph BT
+    Helper["Roofer Helper"] --> Roofer["Roofer"]
+    Roofer --> Lead["Lead Roofer"]
+    Lead --> Foreman["Roofing Foreman"]
+    Foreman --> Super["Superintendent"]
+
+    Roofer --> ShingleSpec["Shingle Specialist"]
+    Roofer --> MembraneSpec["Membrane Specialist"]
+    Roofer --> MetalSpec["Metal Roof Specialist"]
+    Roofer --> Owner["Roofing Contractor"]
+```
+
+## Safety Considerations
+
+- **Falls from Heights** - Leading cause of roofing fatalities; 100% fall protection
+- **Heat Illness** - Extreme rooftop temperatures; mandatory hydration and rest
+- **Burns** - Hot asphalt and torch-applied membranes
+- **Heavy Lifting** - Carrying bundles up ladders (60-80 lbs each)
+- **Slippery Surfaces** - Wet or coated roof surfaces
+- **Falling Objects** - Materials sliding off sloped roofs
 
 ## Related Occupations
 
@@ -102,28 +148,25 @@ Helpers--Roofers locate worn areas as part of their core responsibilities.
 graph LR
     Current["Helpers--Roofers"]
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
+    subgraph Advancement["Advancement Path"]
+        Roofer["Roofers"]
+        SheetMetal["Sheet Metal Workers"]
     end
 
-    Current --- SameCategory
+    Current --> Advancement
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Roofing Contractors](/industries/SpecialtyTrade) - Primary Employment
+- [Building Construction](/industries/BuildingConstruction) - High Employment
+- [Building Maintenance](/industries/BuildingMaintenance) - Moderate Employment
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Field Operations](/departments/FieldOperations)
+- [Roofing Division](/departments/Roofing)
 
 ---
 

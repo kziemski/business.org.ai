@@ -8,18 +8,22 @@ status: complete
 
 # Production, Planning, and Expediting Clerks
 
-> Coordinate and expedite the flow of work and materials within or between departments of an establishment according to production schedule. Duties include reviewing and distributing production, work, and shipment schedules; conferring with department supervisors to determine progress of work and completion dates; and compiling reports on progress of work, inventory levels, costs, and production problems.
+> Coordinate and expedite the flow of work and materials within or between departments of an establishment according to production schedule. Duties include reviewing and distributing production, work, and shipment schedules; conferring with department supervisors to determine progress of work and completion dates.
 
 ## Overview
 
-Production, Planning, and Expediting Clerks is an occupation within the Office and Administrative Support category. Coordinate and expedite the flow of work and materials within or between departments of an establishment according to production schedule. 
+Production, Planning, and Expediting Clerks coordinate the flow of materials, work orders, and production schedules within organizations. They track order progress, monitor inventory levels, communicate schedule changes to production teams, expedite delayed orders, and ensure that materials arrive when needed for manufacturing or assembly operations.
+
+Working in manufacturing plants, distribution centers, and project-based organizations, these clerks serve as the information hub connecting procurement, production, shipping, and customer service. They review production schedules, check material availability, distribute work orders, track completion progress, identify bottlenecks, and escalate delays to supervisors for resolution.
+
+The role requires understanding of production processes, inventory management, and supply chain logistics. Effective expediting depends on strong communication skills, the ability to prioritize competing demands, and knowledge of the organization's products, vendors, and production capabilities.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group435061["43-5061 Production, Planning, and Expediting Clerks"]
-    Group435061 --> Current["43-5061.00 Production, Planning, and Expediting Clerks"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-5061 Production, Planning, and Expediting Clerks"]
+    Group --> Current["43-5061.00 Production, Planning, and Expediting Clerks"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,111 +32,89 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-5061.00 |
+| Job Zone | 3 (Medium Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 134 |
+| Median Annual Salary | $50,500 |
+| Employment | ~370,000 |
+| Projected Growth | 2% (slower than average) |
+| Core Tasks | 35 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("ProductionPlanningAndExpeditingClerks"))
-        Distribute
-            Production Schedules
-            Work Orders
-        Revise
-            Production Schedules When Required Due
-        Review
-            Documents
-            Production Schedules
-            Work Orders
-            Staffing Tables
-        Arrange
-            Assembly
-            Distribution
-        Confer
-            Vendors
-            Customers
-            Other Personnel
-        Requisition
-            Inventories
-        Maintain
-            Inventories
-        Plan
-            Production Commitments
-            Timetables
-```
-
-### distribute.ProductionSchedules
-
-Production, Planning, and Expediting Clerks distribute production schedules as part of their core responsibilities.
-
-**Actions:**
-- `distribute.ProductionSchedules.to.Departments`
-- `distribute.WorkOrders.to.Departments`
-
-### revise.ProductionSchedulesWhenRequiredDue
-
-Production, Planning, and Expediting Clerks revise production schedules when required due as part of their core responsibilities.
-
-**Actions:**
-- `revise.ProductionSchedulesWhenRequiredDue.to.design.Changes`
-- `revise.ProductionSchedulesWhenRequiredDue.to.Lab`
-- `revise.ProductionSchedulesWhenRequiredDue.to.MaterialShortages`
-- `revise.ProductionSchedulesWhenRequiredDue.to.Backlogs`
-
-### review.Documents
-
-Production, Planning, and Expediting Clerks review documents as part of their core responsibilities.
-
-**Actions:**
-- `review.Documents.to.determine.PersonnelRequirementsMaterialPriorities`
-- `review.Documents.to.MaterialsRequirementsMaterialPriorities`
-- `review.ProductionSchedules.to.determine.PersonnelRequirementsMaterialPriorities`
-- `review.ProductionSchedules.to.MaterialsRequirementsMaterialPriorities`
+Core task data with GraphDL semantic actions for this occupation is maintained in the data pipeline. See [O*NET 43-5061.00](https://www.onetonline.org/link/summary/43-5061.00) for detailed task information.
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Production Scheduling Systems** - Advanced
+- **ERP/MRP Systems (SAP, Oracle)** - Advanced
+- **Inventory Management** - Advanced
+- **Supply Chain Coordination** - Advanced
+- **Material Requirements Planning** - Intermediate
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Communication** - Critical
+- **Problem Solving** - Critical
+- **Organizational Skills** - Critical
+- **Urgency Management** - Essential
+- **Collaboration** - Essential
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma; associate's or bachelor's preferred |
+| CPIM (Certified in Planning and Inventory Management) | ASCM/APICS credential |
+| CSCP (Certified Supply Chain Professional) | ASCM/APICS credential |
+| Lean/Six Sigma Yellow Belt | Process improvement awareness |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Production Clerk / Expeditor"] --> Mid["Senior Planner / Scheduler"]
+    Mid --> Lead["Production Planning Lead"]
+    Lead --> Manager["Planning Manager / Supply Chain Manager"]
+    Manager --> Director["Director of Operations"]
+```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Manufacturing | Production scheduling | BOM management; work orders; machine scheduling; MRP |
+| Aerospace/Defense | Program scheduling | Long lead times; government contracts; configuration control |
+| Construction | Project expediting | Material deliveries; subcontractor coordination; permits |
+| Distribution | Order fulfillment | Pick/pack/ship; inventory replenishment; delivery windows |
+
+## Technology & Tools
+
+- **ERP** - SAP PP, Oracle Manufacturing, Epicor
+- **Planning** - Advanced Planning Systems, Gantt charts
+- **Communication** - Email, production boards, Kanban
+- **Tracking** - Shipment tracking, WMS integration
 
 ## Related Occupations
 
 ```mermaid
 graph LR
     Current["ProductionPlanningAndExpeditingClerks"]
-
     subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
+        RShippingClerks["Shipping/Receiving Clerks"]
+        RProcurementClerks["Procurement Clerks"]
+        ROrderClerks["Order Clerks"]
     end
-
     Current --- SameCategory
 ```
 
-## Industries
+## Departments
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
-
-## Career Progression
-
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Production Planning](/departments/ProductionPlanning) - Schedule management
+- [Supply Chain](/departments/SupplyChain) - Material coordination
+- [Manufacturing](/departments/Manufacturing) - Shop floor support
+- [Operations](/departments/Operations) - Operational efficiency
 
 ---
 

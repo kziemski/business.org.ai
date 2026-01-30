@@ -8,18 +8,22 @@ status: complete
 
 # Helpers--Extraction Workers
 
-> Help extraction craft workers, such as earth drillers, blasters and explosives workers, derrick operators, and mining machine operators, by performing duties requiring less skill. Duties include supplying equipment or cleaning work area.
+> Help extraction craft workers, such as earth drillers, blasters and explosives workers, derrick operators, and mining machine operators, by performing duties requiring less skill.
 
 ## Overview
 
-Helpers--Extraction Workers is an occupation within the Construction and Extraction category. Help extraction craft workers, such as earth drillers, blasters and explosives workers, derrick operators, and mining machine operators, by performing duties requiring less skill. 
+Extraction worker helpers support skilled operators in mining, drilling, and quarrying operations by performing labor-intensive tasks that keep production equipment and processes running. They load and unload materials, clean and maintain equipment, carry tools and supplies, set up work areas, and assist operators with equipment changes and maintenance. The work takes place in challenging environments including underground mines, open-pit operations, oil and gas well sites, and quarries.
+
+These entry-level positions provide essential workforce support in extraction industries where production efficiency depends on skilled operators staying focused on their primary equipment. Helpers perform the surrounding tasks: setting up drill steel, mixing drilling fluids, operating auxiliary equipment, hauling waste materials, and maintaining the work area. Through daily exposure to extraction operations, helpers develop the knowledge and skills needed to advance into operator positions.
+
+The work is physically demanding and often hazardous, with helpers exposed to the same environmental conditions as the operators they support: underground confinement, dust, noise, heavy equipment, and extreme weather on surface operations. Proper safety training is mandatory before helpers can enter mining or drilling environments, with MSHA requirements applying to all mining operations.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group475081["47-5081 Helpers--Extraction Workers"]
-    Group475081 --> Current["47-5081.00 Helpers--Extraction Workers"]
+    Cat47["47 - Construction and Extraction"] --> Group475["47-5000 Extraction Workers"]
+    Group475 --> Current["47-5081.00 Helpers--Extraction Workers"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,74 +32,101 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-5081.00 |
+| Job Zone | 1 (Little or No Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 43 |
+| Task Count | 85 |
+| Median Salary | $39,200 / year |
+| Employment | ~10,000 |
+| Job Outlook | -2% (Decline) |
+| Physical Demands | Very Heavy |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("Helpers--Extraction Workers"))
-        Observe
-            Equipment Operation
+    root(("Extraction Helpers"))
+        Load
+            Materials
+            Equipment
+        Clean
+            Equipment
+            Work Areas
+        Carry
+            Tools
+            Supplies
+        Set Up
+            Drill Equipment
+            Work Areas
+        Assist
+            Operators
+            With Maintenance
         Monitor
             Equipment Operation
-        Drive
-            Moving Equipment
-        Unload
-            Materials
-            Devices
-            Machine Parts
-            Using H
-            Tools
-        Set
-            Adjust Equipment Used
-        Organize
-            Materials
-        Repair
-            Automotive
-            Drilling Equipment
-        Maintain
-            Automotive
-            Drilling Equipment
+            Safety Conditions
+        Operate
+            Auxiliary Equipment
 ```
 
-### observe.EquipmentOperation
+### assist.Operators
 
-Helpers--Extraction Workers observe equipment operation as part of their core responsibilities.
-
-**Actions:**
-- `observe.EquipmentOperation.during.ExtractionProcess.to.detect.Problems`
-
-### monitor.EquipmentOperation
-
-Helpers--Extraction Workers monitor equipment operation as part of their core responsibilities.
+Helpers support extraction equipment operators with production tasks.
 
 **Actions:**
-- `monitor.EquipmentOperation.during.ExtractionProcess.to.detect.Problems`
-
-### drive.MovingEquipment
-
-Helpers--Extraction Workers drive moving equipment as part of their core responsibilities.
-
-**Actions:**
-- `drive.MovingEquipment.to.transport.MaterialsToExcavationSites`
-- `drive.MovingEquipment.to.PartsToExcavationSites`
+- `assist.Operators.with.EquipmentChanges`
+- `assist.Operators.with.Maintenance`
+- `assist.Operators.by.setting.UpEquipment`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
-- **Safety Compliance** - Advanced
+- **Basic Equipment Knowledge** - Developing
+- **Material Handling** - Advanced
+- **Safety Procedures (MSHA)** - Developing
+- **Basic Maintenance** - Developing
+- **Tool Identification** - Developing
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Physical Stamina** - Critical
+- **Reliability** - Critical
+- **Safety Consciousness** - Critical
+- **Teamwork** - Essential
+- **Adaptability** - Essential
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent |
+| MSHA Training | Required before entering mine site |
+| On-the-Job Training | Ongoing |
+
+### Certifications
+- **MSHA New Miner Training** - Part 46 or 48 (mandatory)
+- **MSHA Annual Refresher** - 8-hour annual requirement
+- **First Aid/CPR** - Required
+- **H2S Alive** - For oil and gas operations
+
+## Career Progression
+
+```mermaid
+graph BT
+    Helper["Extraction Helper"] --> Operator["Equipment Operator"]
+    Operator --> SeniorOp["Senior Operator"]
+    SeniorOp --> Lead["Lead Operator"]
+    Lead --> Supervisor["Shift Supervisor"]
+
+    Helper --> Mechanic["Equipment Mechanic"]
+    Helper --> Driller["Driller Assistant"]
+```
+
+## Safety Considerations
+
+- **Underground Hazards** - Roof falls, gas accumulation, confined spaces
+- **Heavy Equipment** - Working near massive machinery; exclusion zones
+- **Noise and Dust** - Hearing and respiratory protection required
+- **Physical Demands** - Heavy lifting in challenging conditions
+- **Chemical Exposure** - Drilling fluids and mining chemicals
 
 ## Related Occupations
 
@@ -103,28 +134,27 @@ Helpers--Extraction Workers drive moving equipment as part of their core respons
 graph LR
     Current["Helpers--Extraction Workers"]
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
+    subgraph Advancement["Advancement Path"]
+        Mining["Mining Machine Operators"]
+        Driller["Earth Drillers"]
+        Derrick["Derrick Operators"]
     end
 
-    Current --- SameCategory
+    Current --> Advancement
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Mining](/industries/Mining) - Primary Employment
+- [Oil and Gas Extraction](/industries/OilGasExtraction) - Moderate Employment
+- [Support Activities for Mining](/industries/MiningSupport) - High Employment
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Mining Operations](/departments/MiningOps)
+- [Drilling Operations](/departments/DrillingOps)
+- [Maintenance](/departments/Maintenance)
 
 ---
 

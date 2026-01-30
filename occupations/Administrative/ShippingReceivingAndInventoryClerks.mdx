@@ -12,14 +12,18 @@ status: complete
 
 ## Overview
 
-Shipping, Receiving, and Inventory Clerks is an occupation within the Office and Administrative Support category. Verify and maintain records on incoming and outgoing shipments involving inventory. Duties include verifying and recording incoming merchandise or material and arranging for the transportation of products.
+Shipping, Receiving, and Inventory Clerks manage the flow of goods into and out of organizations, verifying shipments against purchase orders and packing lists, inspecting items for damage, recording inventory transactions, preparing outgoing shipments, and maintaining accurate stock records. They serve as the gatekeepers of physical inventory, ensuring accountability from dock to stock.
+
+Working in warehouses, distribution centers, manufacturing plants, and retail stockrooms, these clerks unload deliveries, check quantities and conditions, route items to appropriate storage locations, pick and pack outgoing orders, prepare shipping documentation including bills of lading and customs forms, and coordinate with carriers for pickup and delivery scheduling.
+
+The role requires physical capability for lifting and moving goods, attention to detail for accurate counting and documentation, and familiarity with warehouse management systems and barcode/RFID scanning technology. While automation has transformed large-scale distribution, clerks remain essential for quality verification, exception handling, and inventory accuracy.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group435071["43-5071 Shipping, Receiving, and Inventory Clerks"]
-    Group435071 --> Current["43-5071.00 Shipping, Receiving, and Inventory Clerks"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-5071 Shipping, Receiving, and Inventory Clerks"]
+    Group --> Current["43-5071.00 Shipping, Receiving, and Inventory Clerks"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,106 +32,88 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-5071.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 80 |
+| Median Annual Salary | $38,200 |
+| Employment | ~620,000 |
+| Projected Growth | -3% (declining) |
+| Core Tasks | 35 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("ShippingReceivingAndInventoryClerks"))
-        Examine
-            Shipment Contents
-            Compare
-        Requisition
-            Shipping Materials
-            Supplies
-        Store
-            Shipping Materials
-            Supplies
-        Prepare
-            Documents
-            Work Orders
-            Bills
-        Pack
-            Postage
-        Seal
-            Postage
-        Label
-            Postage
-        Affix
-            Postage
-```
-
-### examine.ShipmentContents
-
-Shipping, Receiving, and Inventory Clerks examine shipment contents as part of their core responsibilities.
-
-**Actions:**
-- `examine.ShipmentContents.with.Records`
-- `examine.ShipmentContents.with.Manifests`
-- `examine.ShipmentContents.with.Invoices`
-- `examine.ShipmentContents.with.Orders`
-
-### requisition.ShippingMaterials
-
-Shipping, Receiving, and Inventory Clerks requisition shipping materials as part of their core responsibilities.
-
-**Actions:**
-- `requisition.ShippingMaterials.to.maintain.InventoryOfStock`
-- `requisition.Supplies.to.maintain.InventoryOfStock`
-
-### store.ShippingMaterials
-
-Shipping, Receiving, and Inventory Clerks store shipping materials as part of their core responsibilities.
-
-**Actions:**
-- `store.ShippingMaterials.to.maintain.InventoryOfStock`
-- `store.Supplies.to.maintain.InventoryOfStock`
+Core task data with GraphDL semantic actions for this occupation is maintained in the data pipeline. See [O*NET 43-5071.00](https://www.onetonline.org/link/summary/43-5071.00) for detailed task information.
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Warehouse Management Systems (WMS)** - Advanced
+- **Barcode/RFID Scanning** - Advanced
+- **Shipping Documentation** - Advanced
+- **Inventory Control** - Advanced
+- **Forklift Operation** - Intermediate
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Attention to Detail** - Critical
+- **Physical Stamina** - Critical
+- **Organizational Skills** - Critical
+- **Accuracy** - Critical
+- **Time Management** - Essential
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma |
+| Forklift Certification | OSHA compliance |
+| Hazmat Handling | DOT/IATA for hazardous materials |
+| APICS/ASCM Basics | Inventory management fundamentals |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Shipping/Receiving Clerk"] --> Mid["Senior Clerk / Inventory Specialist"]
+    Mid --> Lead["Warehouse Lead / Shipping Supervisor"]
+    Lead --> Manager["Warehouse Manager / Logistics Manager"]
+```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Manufacturing | Raw materials and finished goods | BOM verification; production feeding; quality holds |
+| E-Commerce/Distribution | Order fulfillment | High volume; pick/pack/ship; returns processing |
+| Retail | Store replenishment | Planogram compliance; backroom management; transfers |
+| Healthcare | Medical supplies | Temperature control; lot tracking; expiration management |
+
+## Technology & Tools
+
+- **WMS** - SAP EWM, Manhattan, Blue Yonder
+- **Scanning** - Barcode guns, RFID readers, mobile devices
+- **Shipping** - FedEx/UPS/USPS software, TMS
+- **Equipment** - Forklifts, pallet jacks, conveyor systems
 
 ## Related Occupations
 
 ```mermaid
 graph LR
     Current["ShippingReceivingAndInventoryClerks"]
-
     subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
+        ROrderClerks["Order Clerks"]
+        RProductionClerks["Production/Expediting Clerks"]
+        RWeighers["Weighers and Measurers"]
     end
-
     Current --- SameCategory
 ```
 
-## Industries
+## Departments
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
-
-## Career Progression
-
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Warehouse](/departments/Warehouse) - Receiving and shipping
+- [Inventory Control](/departments/InventoryControl) - Stock management
+- [Supply Chain](/departments/SupplyChain) - Logistics coordination
+- [Operations](/departments/Operations) - Fulfillment support
 
 ---
 

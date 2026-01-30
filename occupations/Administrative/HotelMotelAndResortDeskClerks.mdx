@@ -12,14 +12,18 @@ status: complete
 
 ## Overview
 
-Hotel, Motel, and Resort Desk Clerks is classified under Office and Administrative Support (SOC 43). Accommodate hotel, motel, and resort patrons by registering and assigning rooms to guests, issuing room keys or cards, transmitting and receiving messages, keeping records of occupied rooms and guests' accounts, making and confirming reservations, and presenting statements to and collecting payments from departing guests.
+Hotel, Motel, and Resort Desk Clerks are the primary guest-facing representatives of lodging establishments, managing the check-in and check-out processes, assigning rooms, making reservations, and addressing guest needs throughout their stay. They serve as the first and last point of contact for guests, setting the tone for the entire hospitality experience.
+
+These clerks handle a wide range of responsibilities beyond basic registration: they process payments, manage room inventory, coordinate with housekeeping and maintenance, respond to guest complaints and requests, provide local information and recommendations, and handle special accommodations. In smaller properties, they may be the only staff member on duty, handling all guest services, security monitoring, and emergency response.
+
+The hospitality industry has undergone significant technological transformation with online booking platforms, mobile check-in, and keyless entry systems. However, the personal interaction provided by desk clerks remains a differentiating factor in guest satisfaction, particularly in full-service hotels and resorts where concierge-level service is expected.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group434081["43-4081 Hotel, Motel, and Resort Desk Clerks"]
-    Group434081 --> Current["43-4081.00 Hotel, Motel, and Resort Desk Clerks"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-4081 Hotel, Motel, and Resort Desk Clerks"]
+    Group --> Current["43-4081.00 Hotel, Motel, and Resort Desk Clerks"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,102 +32,94 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-4081.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 67 |
+| Median Annual Salary | $29,600 |
+| Employment | ~260,000 |
+| Projected Growth | 9% (faster than average) |
+| Core Tasks | 48 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("HotelMotelAndResortDeskClerks"))
-        Greet
-            Rooms
-        Register
-            Rooms
-        Assign
-            Rooms
-        Contact
-            Housekeeping Staff When Guests Report Problems
-            Maintenance Staff When Guests Report Problems
-        Issue
-            Room Keys
-            Escort Instructions
-        Make
-            Reservations
-        Confirm
-            Reservations
-        Verify
-            Customers Credit
-            Establish How Customer Will Pay
-```
-
-### greet.Rooms
-
-Hotel, Motel, and Resort Desk Clerks greet rooms as part of their core responsibilities.
-
-**Actions:**
-- `greet.Rooms.to.GuestsOfHotels`
-- `greet.Rooms.to.Motels`
-
-### register.Rooms
-
-Hotel, Motel, and Resort Desk Clerks register rooms as part of their core responsibilities.
-
-**Actions:**
-- `register.Rooms.to.GuestsOfHotels`
-- `register.Rooms.to.Motels`
-
-### assign.Rooms
-
-Hotel, Motel, and Resort Desk Clerks assign rooms as part of their core responsibilities.
-
-**Actions:**
-- `assign.Rooms.to.GuestsOfHotels`
-- `assign.Rooms.to.Motels`
+Core task data with GraphDL semantic actions for this occupation is maintained in the data pipeline. See [O*NET 43-4081.00](https://www.onetonline.org/link/summary/43-4081.00) for detailed task information.
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Property Management Systems (PMS)** - Advanced
+- **Reservation Systems** - Advanced
+- **Payment Processing** - Advanced
+- **Guest Relations** - Advanced
+- **Room Revenue Management** - Intermediate
+- **Multi-Language Skills** - Beneficial
 
 ### Soft Skills
-- **Communication** - Essential
+- **Customer Service Excellence** - Critical
+- **Communication** - Critical
 - **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Composure Under Pressure** - Essential
+- **Multitasking** - Essential
+- **Professionalism** - Critical
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma; hospitality degree preferred |
+| Hotel Management Training | Brand-specific training programs |
+| CPR/First Aid | Often required |
+| Language Skills | Second language highly valued |
+| Customer Service Certification | AH&LA credentials |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Front Desk Clerk"] --> Mid["Senior Desk Clerk / Night Auditor"]
+    Mid --> Supervisor["Front Desk Supervisor"]
+    Supervisor --> Manager["Front Office Manager"]
+    Manager --> AGM["Assistant General Manager"]
+    AGM --> GM["General Manager"]
+```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Luxury Hotels | High-end guest services | Concierge services; VIP protocols; premium amenities |
+| Business Hotels | Corporate traveler focus | Express check-in; loyalty programs; meeting coordination |
+| Resorts | Leisure and recreation | Activity booking; spa scheduling; extended stay services |
+| Budget/Economy | Efficient operations | Self-service kiosks; minimal staff; value-focused |
+
+## Technology & Tools
+
+- **PMS** - Opera, Maestro, RoomKey
+- **Reservations** - booking.com, Expedia, GDS
+- **Payment** - Credit card terminals, POS systems
+- **Communication** - Phone, radio, messaging apps
+- **Key Systems** - Electronic key card encoders
 
 ## Related Occupations
 
 ```mermaid
 graph LR
     Current["HotelMotelAndResortDeskClerks"]
-
     subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
+        RReceptionists["Receptionists"]
+        RReservationAgents["Reservation Agents"]
+        RCustomerServiceReps["Customer Service Reps"]
     end
-
     Current --- SameCategory
 ```
 
-## Industries
+## Departments
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
-
-## Career Progression
-
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Front Office](/departments/FrontOffice) - Guest services and registration
+- [Reservations](/departments/Reservations) - Booking management
+- [Guest Services](/departments/GuestServices) - Concierge and guest support
+- [Revenue Management](/departments/RevenueManagement) - Rate and inventory optimization
 
 ---
 

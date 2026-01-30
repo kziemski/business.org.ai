@@ -12,14 +12,18 @@ status: complete
 
 ## Overview
 
-Roustabouts, Oil and Gas is an occupation within the Construction and Extraction category. Assemble or repair oil field equipment using hand and power tools. 
+Roustabouts are entry-level workers on oil and gas drilling rigs and production facilities who perform a wide range of manual labor and maintenance tasks. They are the general laborers of the oilfield, responsible for cleaning and maintaining equipment, loading and unloading supplies, digging ditches, painting, performing basic repairs, and assisting higher-skilled workers with their duties. The roustabout position serves as the starting point for careers in drilling, production, and oilfield services.
+
+The work is physically demanding and often performed in harsh environments including remote land locations, offshore platforms, and extreme weather conditions. Roustabouts work 12-hour shifts on rotational schedules (typically 14 days on, 14 days off for offshore or 7/7 for land operations). Despite the entry-level nature of the position, the work carries significant hazards common to oil and gas operations including heavy equipment, high-pressure systems, and hazardous chemicals.
+
+Motivated roustabouts who demonstrate reliability, mechanical aptitude, and safety consciousness advance relatively quickly into higher positions. The oil and gas industry values experienced field workers, and the roustabout position builds fundamental knowledge of rig operations, equipment, and safety protocols that support career advancement through the drilling crew or into production, maintenance, or specialty service roles.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group475071["47-5071 Roustabouts, Oil and Gas"]
-    Group475071 --> Current["47-5071.00 Roustabouts, Oil and Gas"]
+    Cat47["47 - Construction and Extraction"] --> Group475["47-5000 Extraction Workers"]
+    Group475 --> Current["47-5071.00 Roustabouts, Oil and Gas"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,120 +32,130 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-5071.00 |
+| Job Zone | 1 (Little or No Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 53 |
+| Task Count | 68 |
+| Median Salary | $40,700 / year |
+| Employment | ~60,000 |
+| Job Outlook | -2% (Decline) |
+| Physical Demands | Very Heavy |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("Roustabouts, Oil and Gas"))
-        Unscrew
-            Pipes
-            Casing
-            Tubing
-            Pump Rods
-            Using H
-        Tighten
-            Pipes
-            Casing
-            Tubing
-            Pump Rods
-            Using H
-        Dismantle
-            Oil Field Machinery
-            Boilers
-            Steam Engine Parts
-            Using H
-            Tools Tools
+    root(("Roustabouts"))
+        Assemble
+            Equipment
         Repair
-            Oil Field Machinery
-            Boilers
-            Steam Engine Parts
-        Guide
-            Cranes
-        Walk
-            Flow Lines
-        Lay
-            Gas
-            Oil Pipelines
-        Move
-            Pipes
+            Oil Field Equipment
+        Clean
+            Equipment
+            Work Areas
+        Load
+            Supplies
+            Materials
+        Dig
+            Ditches
+            Trenches
+        Paint
+            Equipment
+            Structures
+        Assist
+            Skilled Workers
+        Maintain
+            Grounds
+            Facilities
 ```
 
-### unscrew.Pipes
+### assemble.Equipment
 
-Roustabouts, Oil and Gas unscrew pipes as part of their core responsibilities.
-
-**Actions:**
-- `unscrew.Pipes`
-- `unscrew.Casing`
-- `unscrew.Tubing`
-- `unscrew.PumpRods`
-
-### tighten.Pipes
-
-Roustabouts, Oil and Gas tighten pipes as part of their core responsibilities.
+Roustabouts assemble and disassemble oilfield equipment.
 
 **Actions:**
-- `tighten.Pipes`
-- `tighten.Casing`
-- `tighten.Tubing`
-- `tighten.PumpRods`
-
-### dismantle.OilFieldMachinery
-
-Roustabouts, Oil and Gas dismantle oil field machinery as part of their core responsibilities.
-
-**Actions:**
-- `dismantle.OilFieldMachinery`
-- `dismantle.Boilers`
-- `dismantle.SteamEngineParts`
-- `dismantle.UsingH`
+- `assemble.Equipment.using.HandTools`
+- `repair.OilFieldEquipment.using.PowerTools`
+- `clean.Equipment.and.WorkAreas`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
-- **Safety Compliance** - Advanced
+- **Basic Equipment Knowledge** - Developing
+- **Hand and Power Tool Use** - Developing
+- **Material Handling** - Advanced
+- **Basic Maintenance** - Developing
+- **Safety Procedures** - Developing
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Physical Stamina** - Critical
+- **Reliability** - Critical
+- **Willingness to Learn** - Critical
+- **Teamwork** - Essential
+- **Adaptability** - Essential
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Roustabouts, Oil and Gas"]
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | No formal requirements |
+| Safety Training | SafeLand/SafeGulf orientation |
+| On-the-Job Training | Ongoing |
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+### Certifications
+- **SafeLand/SafeGulf** - Safety orientation (required)
+- **H2S Alive** - Hydrogen sulfide awareness
+- **First Aid/CPR** - Required
+- **OSHA 10-Hour General Industry** - Safety certification
+- **CDL (beneficial)** - For vehicle operation
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Roust["Roustabout"] --> Floor["Floorhand"]
+    Floor --> Derrick["Derrick Operator"]
+    Derrick --> Driller["Driller"]
+
+    Roust --> ProdOp["Production Operator"]
+    Roust --> Mechanic["Oilfield Mechanic"]
+    Roust --> ServiceTech["Service Technician"]
 ```
+
+## Safety Considerations
+
+- **Heavy Lifting** - Frequent manual material handling
+- **Struck-By Hazards** - Equipment and overhead loads
+- **H2S Exposure** - Hydrogen sulfide gas
+- **Chemical Exposure** - Drilling fluids and production chemicals
+- **Slips, Trips, Falls** - Wet and uneven surfaces
+- **Fatigue** - 12-hour shifts in demanding conditions
+- **Weather Exposure** - Extreme heat, cold, wind
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Roustabouts"]
+    subgraph Advancement["Advancement"]
+        Floor["Floorhands"]
+        Derrick["Derrick Operators"]
+        ProdOp["Production Operators"]
+    end
+    Current --> Advancement
+```
+
+## Industries
+
+- [Oil and Gas Extraction](/industries/OilGasExtraction) - Primary Employment
+- [Drilling Services](/industries/DrillingServices) - High Employment
+- [Support Activities for O&G](/industries/OilGasSupport) - High Employment
+
+## Departments
+
+- [Rig Crew](/departments/RigCrew)
+- [Production Operations](/departments/Production)
+- [Maintenance](/departments/Maintenance)
 
 ---
 

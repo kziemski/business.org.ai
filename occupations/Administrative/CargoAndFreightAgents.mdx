@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Cargo and Freight Agents is an occupation within the Office and Administrative Support category. Expedite and route movement of incoming and outgoing cargo and freight shipments in airline, train, and trucking terminals and shipping docks. Take orders from customers and arrange pickup of freight and cargo for delivery to loading platform.
+Cargo and Freight Agents coordinate the logistics of moving goods through transportation networks, working at airline terminals, rail yards, trucking depots, and shipping docks. They process shipping documents, calculate freight charges, route shipments, track cargo, and resolve delivery issues. Their coordination ensures that goods move efficiently from origin to destination across complex multimodal transportation systems.
+
+These professionals serve as the operational backbone of supply chain logistics, interfacing between shippers, carriers, customs brokers, and receivers. They prepare bills of lading, determine optimal routing and carrier selection, negotiate rates, arrange pickup and delivery, and maintain records of all shipments. In international trade, they ensure compliance with customs regulations and trade documentation requirements.
+
+The logistics industry's growth, driven by e-commerce and global trade, has sustained demand for freight agents who can navigate increasingly complex supply chains. While technology has automated many routine functions, the ability to solve problems, manage exceptions, and coordinate across multiple parties remains a distinctly human capability.
 
 ## Classification Hierarchy
 
@@ -21,7 +25,6 @@ graph TD
     Cat43["43 - Office and Administrative Support"] --> Group435011["43-5011 Cargo and Freight Agents"]
     Group435011 --> Current["43-5011.00 Cargo and Freight Agents"]
     style Current fill:#e1f5fe
-    Group435011 --> V43501101["43-5011.01 Freight Forwarders"]
 ```
 
 ## Key Statistics
@@ -29,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-5011.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 93 |
+| Median Annual Salary | $46,900 |
+| Employment | ~86,000 |
+| Projected Growth | 6% (faster than average) |
+| Core Tasks | 55 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -38,68 +45,104 @@ graph TD
 ```mermaid
 mindmap
     root(("Cargo and Freight Agents"))
-        Negotiate
-            Transport
-        Arrange
-            Transport
+        Expedite
+            Shipments
+            Routing
+        Prepare
+            Bills of Lading
+            Shipping Documents
         Determine
-            Method
+            Shipping Charges
+            Tariffs
         Track
-            Delivery Progress
-        Advise
-            Clients
-        Estimate
-            Freight Rates
-            Record Shipment Costs
-            Weights
-            Postal Rates
-        Keep
-            Records
-        Notify
-            Consignees
-            Passengers
-            Customers
+            Cargo Movement
+            Delivery Status
+        Coordinate
+            Pickup
+            Delivery
+        Resolve
+            Shipping Issues
+            Claims
+        Maintain
+            Shipping Records
+            Documentation
 ```
 
-### negotiate.Transport
+### expedite.Shipments
 
-Cargo and Freight Agents negotiate transport as part of their core responsibilities.
-
-**Actions:**
-- `negotiate.Transport.of.Goods.with.ShippingCompanies`
-- `negotiate.Transport.of.FreightCompanies`
-
-### arrange.Transport
-
-Cargo and Freight Agents arrange transport as part of their core responsibilities.
+Cargo and Freight Agents route and expedite cargo movement.
 
 **Actions:**
-- `arrange.Transport.of.Goods.with.ShippingCompanies`
-- `arrange.Transport.of.FreightCompanies`
+- `expedite.Shipments.through.TransportationNetworks` - Coordinate multimodal freight routing
+- `expedite.Routing.for.OptimalDelivery` - Select best carriers and routes
 
-### determine.Method
+### prepare.BillsOfLading
 
-Cargo and Freight Agents determine method as part of their core responsibilities.
+Cargo and Freight Agents create and verify shipping documentation.
 
 **Actions:**
-- `determine.Method.of.Shipment`
-- `determine.Method.of.PrepareBills.of.Lading`
-- `determine.Method.of.Invoices`
-- `determine.Method.of.OtherShippingDocuments`
+- `prepare.BillsOfLading.for.FreightShipments` - Generate legal shipping documents
+- `prepare.ShippingDocuments.for.CustomsClearance` - Compile international trade paperwork
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Freight Documentation and Bills of Lading** - Advanced
+- **Transportation Management Systems (TMS)** - Advanced
+- **Tariff and Rate Calculation** - Advanced
+- **Customs Regulations** - Intermediate
+- **Supply Chain Logistics** - Advanced
+- **Hazardous Materials Shipping** - Intermediate
 
 ### Soft Skills
+- **Problem Solving** - Critical
+- **Organizational Skills** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Attention to Detail** - Essential
+- **Multitasking** - Essential
+- **Customer Service** - Important
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma; associate's degree preferred |
+| Certified Logistics Associate (CLA) | MSSC logistics credential |
+| Certified Customs Specialist | International trade certification |
+| HAZMAT Certification | Required for hazardous materials handling |
+| Transportation Broker License | Required for independent operation |
+| On-the-Job Training | Moderate; company-specific systems |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Freight Clerk / Cargo Agent"] --> Mid["Senior Freight Agent"]
+    Mid --> Supervisor["Logistics Supervisor"]
+    Supervisor --> Manager["Freight / Logistics Manager"]
+    Manager --> Director["Director of Logistics"]
+
+    Mid --> Customs["Customs Broker"]
+    Customs --> TradeMgr["Trade Compliance Manager"]
+```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Airlines | Air cargo operations | Time-sensitive; weight restrictions; airport security protocols |
+| Trucking | Ground freight | Route optimization; driver coordination; LTL/FTL management |
+| Maritime | Ocean freight | Container management; port operations; international documentation |
+| Rail | Rail freight | Intermodal coordination; bulk commodities; long-haul efficiency |
+
+## Technology & Tools
+
+- **TMS** - SAP TM, Oracle Transportation, MercuryGate
+- **Tracking** - GPS tracking, shipment visibility platforms
+- **Documentation** - Electronic bills of lading, customs portals
+- **Communication** - Radio, phone, email, EDI
+- **Rate Management** - Freight rate databases, quoting tools
+- **Compliance** - AES filing, customs documentation systems
 
 ## Related Occupations
 
@@ -108,27 +151,28 @@ graph LR
     Current["Cargo and Freight Agents"]
 
     subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
+        Dispatchers["Dispatchers"]
+        ShippingClerks["Shipping Clerks"]
+        FreightFwd["Freight Forwarders"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        Logisticians["Logisticians"]
+        CustomsBrokers["Customs Brokers"]
+        WarehouseMgrs["Warehouse Managers"]
     end
 
     Current --- SameCategory
+    Current --- CrossFunctional
 ```
 
-## Industries
+## Departments
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
-
-## Career Progression
-
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Logistics Department](/departments/Logistics) - Freight coordination
+- [Operations](/departments/Operations) - Terminal and dock operations
+- [Supply Chain](/departments/SupplyChain) - End-to-end cargo management
+- [Customer Service](/departments/CustomerService) - Shipment tracking and inquiries
 
 ---
 

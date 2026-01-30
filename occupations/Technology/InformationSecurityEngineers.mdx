@@ -12,13 +12,17 @@ status: complete
 
 ## Overview
 
-Information Security Engineers is a specialized variant within the Computer and Mathematical category. Develop and oversee the implementation of information security procedures and policies. Build, maintain and upgrade security technology, such as firewalls, for the safe use of computer networks and the transmission and retrieval of information.
+Information Security Engineers design, build, and maintain the technical security infrastructure that protects an organization's digital assets, networks, and data from cyber threats. They implement firewalls, intrusion detection systems, encryption, identity and access management solutions, and other security controls to create layered defenses against attacks. Unlike security analysts who primarily monitor and respond, security engineers build the systems and tools that make monitoring and defense possible.
+
+The role requires deep technical expertise across networking, operating systems, application security, cloud platforms, and cryptography. Information security engineers work proactively to design security architectures, automate security processes, and integrate security into the software development lifecycle (DevSecOps). They evaluate emerging threats, research new attack vectors, and continuously evolve their organization's security posture to stay ahead of sophisticated adversaries.
+
+With the explosion of cloud computing, remote work, and interconnected systems, the attack surface for most organizations has expanded dramatically. Security engineers must now secure hybrid cloud environments, zero-trust network architectures, containerized applications, APIs, and an increasingly complex web of third-party integrations, making the role more critical and technically demanding than ever.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat15["15 - Computer and Mathematical"] --> Group151299["15-1299 Computer Occupations, All Other"]
+    Cat15["15 - Computer and Mathematical Occupations"] --> Group151299["15-1299 Computer Occupations, All Other"]
     Group151299 --> Base["15-1299.00 Computer Occupations, All Other"]
     Group151299 --> Current["15-1299.05 Information Security Engineers"]
     style Current fill:#e1f5fe
@@ -29,8 +33,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 15-1299.05 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Computer and Mathematical](/occupations/Technology/index) |
 | Task Count | 53 |
+| Median Salary | $120,360 |
+| Employment | ~32,000 |
+| Growth Rate | Much Faster Than Average (35%) |
 | Source | O*NET |
 
 ## Core Tasks
@@ -38,80 +46,158 @@ graph TD
 ```mermaid
 mindmap
     root(("Information Security Engineers"))
+        Design
+            Security Architectures
+            Network Defenses
+            Access Controls
+        Build
+            Firewalls
+            IDS/IPS Systems
+            Encryption Systems
+            SIEM Integrations
+        Monitor
+            Networks
+            Systems
+            Threat Intelligence
         Coordinate
-            Monitoring
             Vulnerability Assessments
-            Analysis
-            Documentation
-        Assess
-            Quality
+            Security Audits
+            Incident Response
+        Develop
+            Security Policies
+            Response Strategies
+            Automation Tools
         Train
             Staff
-            Oversee Use
-            Information Security Standards
-            Policies
-            Best Practices
+            Security Awareness
         Scan
             Networks
-            Using Vulnerability Assessment Tools
-        Develop
-            Response Strategies
-            Recovery Strategies
-            Software
-            Firewalls
-            Data Encryption Programs
-        Conduct
-            Investigations
-        Install
-            Software
-            Firewalls
-            Data Encryption Programs
+            Applications
+            Cloud Infrastructure
         Oversee
-            Development
-            Performance
+            Security Operations
+            Compliance
 ```
 
-### coordinate.Monitoring
+### design.SecurityArchitectures
 
-Information Security Engineers coordinate monitoring as part of their core responsibilities.
-
-**Actions:**
-- `coordinate.Monitoring.of.Networks.for.SecurityBreachesIntrusions`
-- `coordinate.Monitoring.of.Systems.for.SecurityBreachesIntrusions`
-- `coordinate.VulnerabilityAssessments.of.InformationSecuritySystems`
-- `coordinate.Analysis.of.InformationSecuritySystems`
-
-### assess.Quality
-
-Information Security Engineers assess quality as part of their core responsibilities.
+Information Security Engineers design comprehensive security solutions for organizations.
 
 **Actions:**
+- `design.SecurityArchitectures.for.DefenseInDepth`
+- `design.NetworkDefenses.using.ZeroTrustPrinciples`
+- `design.AccessControls.for.LeastPrivilegeAccess`
+- `design.EncryptionSchemes.for.DataProtection`
+
+### build.SecurityInfrastructure
+
+Information Security Engineers implement and maintain security technology.
+
+**Actions:**
+- `build.Firewalls.for.NetworkProtection`
+- `build.IntrusionDetectionSystems.for.ThreatDetection`
+- `build.SIEMIntegrations.for.SecurityMonitoring`
+- `develop.SecurityAutomation.for.IncidentResponse`
+
+### coordinate.SecurityOperations
+
+Information Security Engineers oversee vulnerability management and security assessments.
+
+**Actions:**
+- `coordinate.Monitoring.of.Networks.for.SecurityBreaches`
+- `coordinate.VulnerabilityAssessments.of.InformationSystems`
+- `coordinate.IncidentResponse.for.SecurityEvents`
 - `assess.Quality.of.SecurityControls`
-- `assess.Quality.of.UsingPerformanceIndicators`
 
-### train.Staff
+### train.SecurityAwareness
 
-Information Security Engineers train staff as part of their core responsibilities.
+Information Security Engineers build security culture across the organization.
 
 **Actions:**
-- `train.Staff.on`
-- `train.OverseeUse.of`
-- `train.InformationSecurityStandards`
-- `train.Policies`
+- `train.Staff.on.SecurityBestPractices`
+- `develop.SecurityPolicies.for.OrganizationalCompliance`
+- `oversee.SecurityAwarenessPrograms.for.AllEmployees`
+- `enforce.SecurityStandards.across.AllSystems`
+
+## Tech Stack
+
+### Network Security
+- **Palo Alto Networks** - Next-gen firewalls
+- **Fortinet** - Network security
+- **Cisco ASA/Firepower** - Firewalls and IPS
+- **Snort/Suricata** - Open-source IDS
+- **Cloudflare** - WAF and DDoS protection
+- **Zscaler** - Cloud security
+
+### Identity & Access Management
+- **Okta** - Identity platform
+- **Azure AD/Entra ID** - Microsoft identity
+- **CyberArk** - Privileged access
+- **Ping Identity** - SSO and MFA
+- **HashiCorp Vault** - Secrets management
+
+### SIEM & Monitoring
+- **Splunk** - SIEM platform
+- **Microsoft Sentinel** - Cloud SIEM
+- **Elastic Security** - Open-source SIEM
+- **QRadar** - IBM SIEM
+- **CrowdStrike/SentinelOne** - EDR
+- **Datadog Security** - Cloud security monitoring
+
+### Vulnerability Management
+- **Nessus/Tenable** - Vulnerability scanning
+- **Qualys** - Cloud vulnerability management
+- **Rapid7 InsightVM** - Vulnerability management
+- **Snyk** - Application security
+- **Wiz/Orca** - Cloud security posture
+
+### Cloud Security
+- **AWS Security Hub** - AWS security
+- **Azure Defender** - Azure security
+- **Google Security Command Center** - GCP security
+- **Prisma Cloud** - Multi-cloud security
+- **Terraform/OPA** - Policy as code
+
+### Scripting & Automation
+- **Python** - Security automation
+- **PowerShell** - Windows security scripting
+- **Bash** - Linux security scripting
+- **SOAR Platforms** - Security orchestration
+
+## Certifications
+
+| Certification | Provider | Level |
+|---------------|----------|-------|
+| CISSP | ISC2 | Professional |
+| CCSP (Cloud Security) | ISC2 | Professional |
+| GIAC Security Essentials (GSEC) | SANS/GIAC | Professional |
+| GIAC Certified Enterprise Defender (GCED) | SANS/GIAC | Professional |
+| Certified Ethical Hacker (CEH) | EC-Council | Intermediate |
+| AWS Security Specialty | Amazon | Professional |
+| CompTIA Security+ | CompTIA | Foundation |
+| OSCP | Offensive Security | Professional |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Programming** - Advanced
-- **Systems Analysis** - Advanced
-- **Database Management** - Advanced
+- **Network Security** - Expert
+- **Cloud Security (AWS/Azure/GCP)** - Expert
+- **Firewalls & IDS/IPS** - Expert
+- **SIEM & Log Analysis** - Expert
+- **Identity & Access Management** - Advanced
+- **Encryption & PKI** - Advanced
+- **Vulnerability Management** - Expert
+- **Security Automation** - Advanced
+- **Incident Response** - Advanced
+- **Application Security** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Security Mindset** - Critical
+- **Analytical Thinking** - Critical
+- **Communication** - Essential (security policy, executive briefings)
+- **Problem Solving** - Critical
+- **Continuous Learning** - Essential (threat landscape evolves constantly)
+- **Leadership** - Important
 
 ## Related Occupations
 
@@ -120,27 +206,91 @@ graph LR
     Current["Information Security Engineers"]
 
     subgraph SameCategory["Computer and Mathematical"]
-        ComputerSystemsAnaly["Computer Systems Analysts"]
-        HealthInformaticsSpe["Health Informatics Specialists"]
-        InformationSecurityA["Information Security Analysts"]
-        ComputerAndInformati["Computer and Information Researc..."]
+        ISA["Information Security Analysts"]
+        PT["Penetration Testers"]
+        DFA["Digital Forensics Analysts"]
+        CSE["Computer Systems Engineers"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        NCA["Network Architects"]
+        SA["Solutions Architects"]
+        CO["Compliance Officers"]
     end
 
     Current --- SameCategory
+    Current --- CrossFunctional
 ```
 
-## Industries
+- [Information Security Analysts](/occupations/Technology/InformationSecurityAnalysts)
+- [Penetration Testers](/occupations/Technology/PenetrationTesters)
+- [Digital Forensics Analysts](/occupations/Technology/DigitalForensicsAnalysts)
+- [Computer Systems Engineers/Architects](/occupations/Technology/ComputerSystemsEngineersArchitects)
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+## Industry Variations
+
+### Technology / SaaS
+- Application security engineering
+- DevSecOps pipeline integration
+- Cloud-native security
+- Product security teams
+
+### Financial Services
+- Trading system security
+- PCI-DSS compliance
+- Fraud prevention infrastructure
+- Regulatory security requirements
+
+### Healthcare
+- HIPAA security controls
+- Medical device security
+- EHR protection
+- Patient data encryption
+
+### Government / Defense
+- Classified network security (SIPR/JWICS)
+- FedRAMP implementation
+- NIST framework compliance
+- Zero-trust architecture
+
+### Critical Infrastructure
+- SCADA/ICS security
+- OT/IT convergence
+- Physical-cyber security integration
+- NERC CIP compliance
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Junior Security Engineer<br/>SOC Analyst"] --> Mid["Security Engineer<br/>Cloud Security Engineer"]
+    Mid --> Senior["Senior Security Engineer<br/>Staff Security Engineer"]
+    Senior --> Lead["Principal Security Engineer<br/>Security Architect<br/>Director of Security Engineering"]
+    Lead --> Exec["CISO<br/>VP Security<br/>CTO"]
+
+    Alt1["Systems Administrator"] --> Entry
+    Alt2["Network Engineer"] --> Entry
+    Alt3["Software Developer"] --> Entry
 ```
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's in Computer Science, Cybersecurity, Information Technology, or related field |
+| Alternative Paths | IT experience + security certifications (CISSP, OSCP) |
+| Work Experience | 3-5 years in IT/security for entry-level security engineering |
+| Key Knowledge Areas | Networking, cryptography, operating systems, cloud platforms, application security |
+| Continuing Education | SANS training, security conferences (DEF CON, Black Hat, RSA) |
+
+## Departments
+
+This occupation typically works in:
+- [Information Security](/departments/Security)
+- [Engineering](/departments/Engineering)
+- [Infrastructure](/departments/Infrastructure)
+- [Cloud Operations](/departments/CloudOps)
+- [Compliance](/departments/Compliance)
 
 ---
 

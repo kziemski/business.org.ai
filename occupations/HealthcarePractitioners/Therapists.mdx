@@ -2,7 +2,7 @@
 id: Therapists
 name: "Therapists, All Other"
 code: "29-1129.00"
-type: Occupation
+type: OccupationCategory
 status: complete
 ---
 
@@ -12,17 +12,19 @@ status: complete
 
 ## Overview
 
-Therapists, All Other is classified under Healthcare Practitioners and Technical (SOC 29). All therapists not listed separately.
+Therapists, All Other is a residual category encompassing licensed therapeutic professionals not separately classified in the SOC system. This includes art therapists, music therapists, dance/movement therapists, drama therapists, horticultural therapists, animal-assisted therapists, play therapists, and other creative arts and specialized therapy practitioners who use evidence-based therapeutic interventions to address physical, cognitive, emotional, and social needs.
+
+These therapists typically hold master's degrees in their specific discipline, maintain board certification, and practice within defined scopes of treatment. They assess patient functioning, develop individualized treatment plans, implement therapeutic interventions using their specialized modality, and evaluate treatment outcomes. Creative arts therapists are increasingly integrated into medical, psychiatric, rehabilitative, and educational settings.
+
+The field continues to evolve with neuroscience-informed practice, telehealth delivery of therapeutic services, integration into palliative care and oncology programs, and growing evidence bases for specific therapeutic modalities in treating trauma, dementia, autism, and chronic conditions.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
     Cat29["29 - Healthcare Practitioners and Technical"] --> Group291129["29-1129 Therapists, All Other"]
-    Group291129 --> Current["29-1129.00 Therapists, All Other"]
+    Group291129 --> Current["29-1129.00 All Other"]
     style Current fill:#e1f5fe
-    Group291129 --> V29112901["29-1129.01 Art Therapists"]
-    Group291129 --> V29112902["29-1129.02 Music Therapists"]
 ```
 
 ## Key Statistics
@@ -30,102 +32,22 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1129.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 115 |
+| Median Annual Salary | $55,300 |
+| Employment | ~25,000 |
+| Projected Growth | 12% (2022-2032) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
 | Source | O*NET |
 
-## Core Tasks
+## Included Occupations
 
-```mermaid
-mindmap
-    root(("Therapists"))
-        Assess
-            Client Needs
-            Disorders
-            Using Drawing
-            Painting
-            Sculpting
-            Other Artistic Processes
-        Write
-            Treatment Plans
-            Case Summaries
-            Progress Reports Related
-            Other Reports Related
-        Observe
-            Client Reactions
-            Progress
-            Other Outcomes Related
-        Document
-            Client Reactions
-            Progress
-            Other Outcomes Related
-        Conduct
-            Art Therapy Sessions
-            Providing Guided Self Expression Experiences
-            Information Sharing Sessions
-        Develop
-            Individualized Treatment Plans Incorporate Studio Art Therapy
-            Counseling
-            Psychotherapy Techniques
-        Select
-            Artistic Media
-            Related Equipment
-            Devices
-        Prepare
-            Artistic Media
-            Related Equipment
-            Devices
-        Design
-            Art Therapy Sessions
-            Programs
-        Analyze
-            Client Data
-            Data
-```
-
-### assess.ClientNeeds
-
-Therapists, All Other assess client needs as part of their core responsibilities.
-
-**Actions:**
-- `assess.ClientNeeds`
-- `assess.Disorders`
-- `assess.UsingDrawing`
-- `assess.Painting`
-
-### write.TreatmentPlans
-
-Therapists, All Other write treatment plans as part of their core responsibilities.
-
-**Actions:**
-- `write.TreatmentPlans.to.IndividualClientsGroups`
-- `write.TreatmentPlans.to.ClientGroups`
-- `write.CaseSummaries.to.IndividualClientsGroups`
-- `write.CaseSummaries.to.ClientGroups`
-
-### observe.ClientReactions
-
-Therapists, All Other observe client reactions as part of their core responsibilities.
-
-**Actions:**
-- `observe.ClientReactions.to.ArtTherapy`
-- `observe.Progress.to.ArtTherapy`
-- `observe.OtherOutcomesRelated.to.ArtTherapy`
-
-
-## Skills & Competencies
-
-### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
-
-### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+| Specialty | SOC Code |
+|-----------|----------|
+| [Art Therapists](/occupations/HealthcarePractitioners/ArtTherapists) | 29-1129.01 |
+| [Music Therapists](/occupations/HealthcarePractitioners/MusicTherapists) | 29-1129.02 |
+| Dance/Movement Therapists | 29-1129.XX |
+| Drama Therapists | 29-1129.XX |
+| Other Therapists | Various |
 
 ## Related Occupations
 
@@ -133,28 +55,35 @@ Therapists, All Other observe client reactions as part of their core responsibil
 graph LR
     Current["Therapists, All Other"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph CreativeArts["Creative Arts Therapists"]
+        ArtTh["Art Therapists"]
+        MusicTh["Music Therapists"]
+        DanceTh["Dance Therapists"]
     end
 
-    Current --- SameCategory
+    subgraph Rehab["Rehab Therapists"]
+        OTs["Occupational Therapists"]
+        RecTh["Recreational Therapists"]
+        SLPs["Speech-Language Pathologists"]
+    end
+
+    Current --- CreativeArts
+    Current --- Rehab
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Medical and Psychiatric
+- [Nursing Facilities](/industries/Healthcare/NursingCare) - Geriatric Therapy
+- [Schools](/industries/Education/ElementarySecondary) - Educational Therapy
+- [Mental Health](/industries/Healthcare/AmbulatoryHealthCare) - Behavioral Health
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation category typically works in:
+- [Creative Arts Therapies](/departments/CreativeArtsTherapies)
+- [Rehabilitation Services](/departments/RehabilitationServices)
+- [Behavioral Health](/departments/BehavioralHealth)
 
 ---
 

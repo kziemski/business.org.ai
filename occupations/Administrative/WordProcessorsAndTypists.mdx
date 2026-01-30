@@ -12,14 +12,18 @@ status: complete
 
 ## Overview
 
-Word Processors and Typists is an occupation within the Office and Administrative Support category. Use word processor, computer, or typewriter to type letters, reports, forms, or other material from rough draft, corrected copy, or voice recording. 
+Word Processors and Typists produce documents from rough drafts, dictation, handwritten notes, and voice recordings using word processing software and, in some legacy settings, typewriters. They format documents according to organizational standards, proofread their work for accuracy, and may create templates, merge data for mass mailings, and maintain document libraries.
+
+Working in corporate offices, legal firms, medical facilities, government agencies, and transcription services, these professionals produce correspondence, reports, contracts, forms, manuscripts, and other written materials. Legal and medical settings particularly rely on skilled typists for specialized document production requiring knowledge of technical terminology and formatting conventions.
+
+The occupation has declined dramatically as word processing has become a universal office skill rather than a specialized function. Remaining positions tend to involve high-volume production typing, specialized formatting requirements, or transcription from audio recordings. Voice recognition technology has further reduced demand, though human typists remain necessary for accuracy-critical and highly formatted documents.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat43["43 - Office and Administrative Support"] --> Group439022["43-9022 Word Processors and Typists"]
-    Group439022 --> Current["43-9022.00 Word Processors and Typists"]
+    Cat43["43 - Office and Administrative Support"] --> Group["43-9022 Word Processors and Typists"]
+    Group --> Current["43-9022.00 Word Processors and Typists"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,109 +32,88 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 43-9022.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Office and Administrative Support](/occupations/Administrative/index) |
-| Task Count | 114 |
+| Median Annual Salary | $39,200 |
+| Employment | ~30,000 |
+| Projected Growth | -25% (rapidly declining) |
+| Core Tasks | 20 |
 | Source | O*NET |
 
 ## Core Tasks
 
-```mermaid
-mindmap
-    root(("Word Processors and Typists"))
-        Perform
-            Other Clerical Duties
-            Sorting
-            Sending Faxes
-        Check
-            Completed Work
-        File
-            Completed Documents
-        Store
-            Completed Documents
-        Print
-            Copies
-        Make
-            Copies
-        Transmit
-            Work Electronically
-        Address
-            Envelopes
-            Prepare Envelope Labels
-            Using Typewriter
-            Computer
-```
-
-### perform.OtherClericalDuties
-
-Word Processors and Typists perform other clerical duties as part of their core responsibilities.
-
-**Actions:**
-- `perform.OtherClericalDuties`
-- `perform.Sorting`
-- `perform.SendingFaxes`
-
-### check.CompletedWork
-
-Word Processors and Typists check completed work as part of their core responsibilities.
-
-**Actions:**
-- `check.CompletedWork.for.Spelling`
-- `check.CompletedWork.for.Grammar`
-- `check.CompletedWork.for.Punctuation`
-- `check.CompletedWork.for.Format`
-
-### file.CompletedDocuments
-
-Word Processors and Typists file completed documents as part of their core responsibilities.
-
-**Actions:**
-- `file.CompletedDocuments.on.ComputerHardDrive`
-- `file.CompletedDocuments.on.Disk`
-- `file.CompletedDocuments.on.MaintainComputerFilingSystem.to.Store`
-- `file.CompletedDocuments.on.Retrieve`
+Core task data with GraphDL semantic actions for this occupation is maintained in the data pipeline. See [O*NET 43-9022.00](https://www.onetonline.org/link/summary/43-9022.00) for detailed task information.
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Office Management** - Advanced
-- **Data Entry** - Advanced
-- **Records Management** - Advanced
+- **Word Processing (Microsoft Word)** - Expert
+- **Typing Speed and Accuracy** - Expert (65+ WPM)
+- **Document Formatting** - Expert
+- **Transcription** - Advanced
+- **Template Creation** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Accuracy** - Critical
+- **Attention to Detail** - Critical
+- **Speed** - Critical
+- **Concentration** - Essential
+- **Discretion** - Essential
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Word Processors and Typists"]
-
-    subgraph SameCategory["Office and Administrative Support"]
-        FirstLineSupervisors["First-Line Supervisors of Office..."]
-        SwitchboardOperators["Switchboard Operators, Including..."]
-        TelephoneOperators["Telephone Operators"]
-        CommunicationsEquipm["Communications Equipment Operato..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma |
+| Typing Proficiency | 65+ WPM with high accuracy |
+| MOS Word Certification | Microsoft Office Specialist |
+| Transcription Training | Audio transcription skills |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Word Processor / Typist"] --> Mid["Senior Word Processor / Document Specialist"]
+    Mid --> Lead["Document Production Lead"]
+    Lead --> Manager["Office Services Manager"]
 ```
+
+## Industry Variations
+
+| Setting | Focus | Unique Aspects |
+|---------|-------|----------------|
+| Legal | Legal documents, briefs | Table of authorities; legal formatting; court rules |
+| Medical | Medical reports, transcription | Medical terminology; HIPAA; clinical documentation |
+| Government | Official correspondence, regulations | Style manuals; classified documents; Federal Register |
+| Corporate | Reports, presentations | Brand templates; executive correspondence; mass mailings |
+
+## Technology & Tools
+
+- **Word Processing** - Microsoft Word, Google Docs
+- **Transcription** - Express Scribe, foot pedals, Dragon
+- **Formatting** - Adobe Acrobat, desktop publishing
+- **Dictation** - Digital recording, speech recognition
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["WordProcessorsAndTypists"]
+    subgraph SameCategory["Office and Administrative Support"]
+        RDataEntryKeyers["Data Entry Keyers"]
+        RSecretaries["Secretaries"]
+        RProofreaders["Proofreaders"]
+    end
+    Current --- SameCategory
+```
+
+## Departments
+
+This occupation typically works in:
+- [Document Production](/departments/DocProduction) - Typing and formatting
+- [Legal](/departments/Legal) - Legal document preparation
+- [Administration](/departments/Administration) - Office support
+- [Medical Records](/departments/MedicalRecords) - Clinical transcription
 
 ---
 

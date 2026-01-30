@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Anesthesiologists is classified under Healthcare Practitioners and Technical (SOC 29). Administer anesthetics and analgesics for pain management prior to, during, or after surgery.
+Anesthesiologists are physician specialists who administer anesthesia and manage pain before, during, and after surgical procedures. They are responsible for maintaining patient vital functions throughout surgery, including breathing, heart rate, blood pressure, and body temperature. Their expertise extends beyond the operating room to include preoperative assessment, postoperative pain management, critical care medicine, and chronic pain treatment.
+
+As perioperative medicine specialists, anesthesiologists evaluate patients before surgery to assess anesthetic risk, develop individualized anesthesia plans, and ensure patient safety during procedures ranging from minor outpatient surgeries to complex multi-organ transplants. They are experts in pharmacology, physiology, and resuscitation, making them essential members of any surgical team and leaders in emergency medical response.
+
+The field of anesthesiology has evolved significantly with advances in monitoring technology, pharmacological agents, and regional anesthesia techniques. Modern anesthesiologists employ ultrasound-guided nerve blocks, advanced hemodynamic monitoring, and point-of-care testing to deliver precise, patient-tailored anesthetic care while minimizing risks and improving recovery outcomes.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1211.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 86 |
+| Median Annual Salary | $302,970 |
+| Employment | ~33,000 |
+| Projected Growth | 4% (2022-2032) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 86 |
 | Source | O*NET |
 
 ## Core Tasks
@@ -38,79 +46,186 @@ graph TD
 mindmap
     root(("Anesthesiologists"))
         Monitor
-            Patient
-            After Anesthesia Adverse Reactions Complications
-            Counteract Adverse Reactions Complications
+            Patient Vital Signs
+            Anesthesia Depth
+            Adverse Reactions
+            Hemodynamic Status
         Record
-            Type
-            Amount
+            Anesthesia Type & Amount
+            Patient Condition
+            Procedure Documentation
         Provide
-            Life Support Management Help Prepare Patients
-            Airway Management Help Prepare Patients
-            Medical Care
-            Consultation
-        Maintain
-            Life Support Management Help Prepare Patients
-            Airway Management Help Prepare Patients
+            Life Support Management
+            Airway Management
+            Critical Care Consultation
+            Pain Management
         Administer
-            Anesthetic
+            General Anesthesia
+            Regional Anesthesia
             Sedation
-            Using Local
-            Spinal
-            Caudal Methods
+            Local Anesthetics
         Examine
-            Patient
-            Obtain Medical History
-            Use Diagnostic Tests
-        Position
-            Patient
+            Preoperative Assessment
+            Medical History Review
+            Diagnostic Test Interpretation
         Coordinate
-            Administration
-            Work
+            Surgical Team Communication
+            Care Transitions
+            Emergency Response
+        Position
+            Patient for Procedure
+            Airway Access
+        Manage
+            Fluid Resuscitation
+            Blood Products
+            Ventilator Settings
 ```
 
 ### monitor.Patient
 
-Anesthesiologists monitor patient as part of their core responsibilities.
+Anesthesiologists continuously monitor patient status throughout procedures.
 
 **Actions:**
-- `monitor.Patient.before`
-- `monitor.AfterAnesthesiaAdverseReactionsComplications`
-- `monitor.CounteractAdverseReactionsComplications`
+- `monitor.Patient.before.AnesthesiaInduction` - Preanesthetic assessment
+- `monitor.Patient.during.SurgicalProcedure` - Intraoperative vigilance
+- `monitor.AdverseReactions.to.AnestheticAgents` - Detect complications
+- `monitor.HemodynamicStatus.using.InvasiveMonitoring` - Track vital parameters
 
-### record.Type
+### record.AnesthesiaDetails
 
-Anesthesiologists record type as part of their core responsibilities.
-
-**Actions:**
-- `record.Type.of.AnesthesiaConditionThroughoutProcedure`
-- `record.Type.of.PatientConditionThroughoutProcedure`
-- `record.Amount.of.AnesthesiaConditionThroughoutProcedure`
-- `record.Amount.of.PatientConditionThroughoutProcedure`
-
-### provide.LifeSupportManagementHelpPreparePatients
-
-Anesthesiologists provide life support management help prepare patients as part of their core responsibilities.
+Anesthesiologists maintain detailed procedural records.
 
 **Actions:**
-- `provide.LifeSupportManagementHelpPreparePatients.for.EmergencySurgery`
-- `provide.AirwayManagementHelpPreparePatients.for.EmergencySurgery`
-- `provide.MedicalCare.in.Settings`
-- `provide.MedicalCare.in.PrescribingMedication`
+- `record.Type.of.AnesthesiaAdministered` - Document anesthetic technique
+- `record.Amount.of.AnestheticAgents` - Track drug dosages
+- `record.PatientCondition.throughout.Procedure` - Continuous documentation
+- `record.Complications.during.AnesthesiaCare` - Document adverse events
+
+### provide.LifeSupportManagement
+
+Anesthesiologists provide advanced life support and airway management.
+
+**Actions:**
+- `provide.LifeSupport.for.EmergencySurgery` - Emergency resuscitation
+- `provide.AirwayManagement.for.DifficultAirways` - Advanced techniques
+- `provide.MedicalCare.in.CriticalCareSettings` - ICU consultation
+- `provide.PainManagement.using.MultimodalApproaches` - Comprehensive pain control
+
+### administer.Anesthesia
+
+Anesthesiologists select and deliver appropriate anesthetic techniques.
+
+**Actions:**
+- `administer.GeneralAnesthesia.using.IntravenousAgents` - IV induction
+- `administer.RegionalAnesthesia.using.SpinalTechnique` - Neuraxial blockade
+- `administer.Sedation.for.MinimallyInvasiveProcedures` - Conscious sedation
+- `administer.NerveBlocks.using.UltrasoundGuidance` - Regional techniques
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Hospital Operating Rooms | Primary surgical anesthesia delivery |
+| Ambulatory Surgery Centers | Outpatient anesthesia services |
+| Labor and Delivery | Obstetric anesthesia and analgesia |
+| Cardiac Catheterization Labs | Sedation for cardiac procedures |
+| Endoscopy Suites | Procedural sedation |
+| Pain Management Clinics | Chronic pain treatment |
+| Intensive Care Units | Critical care medicine |
+| Trauma Centers | Emergency anesthesia and resuscitation |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Pharmacology** - Expert
+- **Airway Management** - Expert
+- **Hemodynamic Monitoring** - Expert
+- **Regional Anesthesia Techniques** - Expert
+- **Critical Care Medicine** - Advanced
+- **Ultrasound-Guided Procedures** - Advanced
+- **Ventilator Management** - Advanced
+- **Point-of-Care Testing** - Advanced
 
 ### Soft Skills
+- **Decision Making Under Pressure** - Critical
+- **Vigilance & Attention to Detail** - Critical
+- **Crisis Management** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Teamwork** - Essential
+- **Adaptability** - Essential
+- **Leadership** - Important
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Undergraduate | 4-year bachelor's degree (pre-med) |
+| Medical School | 4-year MD or DO program |
+| Residency | 4 years in Anesthesiology (after PGY-1 year) |
+| Fellowship | 1 year for subspecialization (optional) |
+| Total Training | 12-13 years post-high school |
+| Licensure | State medical license required |
+| Board Certification | American Board of Anesthesiology |
+| Continuing Education | 250 CME credits per 10-year cycle (ABA MOCA) |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| ABA Diplomate | American Board of Anesthesiology primary certification |
+| ABA Critical Care | Subspecialty in critical care medicine |
+| ABA Pain Medicine | Subspecialty in pain management |
+| ABA Cardiac Anesthesia | Subspecialty in adult cardiothoracic anesthesia |
+| ABA Pediatric Anesthesia | Subspecialty in pediatric anesthesiology |
+| ABA Neurocritical Care | Subspecialty in neurocritical care |
+| ACLS | Advanced Cardiovascular Life Support |
+| PALS | Pediatric Advanced Life Support |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Med["Medical School"] --> PGY1["Intern (PGY-1)"]
+    PGY1 --> CA1["CA-1 Resident"]
+    CA1 --> CA2["CA-2 Resident"]
+    CA2 --> CA3["CA-3 Chief Resident"]
+    CA3 --> Fellow["Fellowship (Optional)"]
+    CA3 --> Attending["Attending Anesthesiologist"]
+    Fellow --> Attending
+    Attending --> Director["Division Director"]
+    Director --> Chair["Department Chair"]
+    Chair --> CMO["Chief Medical Officer"]
+
+    Attending --> Private["Private Practice / Group"]
+    Attending --> Academic["Academic Faculty"]
+    Academic --> Professor["Professor / Researcher"]
+```
+
+## Specializations
+
+| Subspecialty | Focus Area |
+|-------------|------------|
+| Cardiac Anesthesiology | Open heart, ECMO, transplant cases |
+| Pediatric Anesthesiology | Neonatal and pediatric surgical patients |
+| Neuroanesthesiology | Neurosurgical and neurointerventional cases |
+| Obstetric Anesthesiology | Labor analgesia and cesarean anesthesia |
+| Regional & Acute Pain | Nerve blocks and acute pain protocols |
+| Critical Care Medicine | Surgical and medical ICU management |
+| Pain Medicine | Chronic pain interventional procedures |
+| Transplant Anesthesiology | Multi-organ transplant cases |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Anesthesia Workstations (Drager, GE) | Gas delivery and ventilation |
+| Physiologic Monitors | Vital sign surveillance |
+| Ultrasound (Point-of-Care) | Nerve blocks, vascular access, cardiac assessment |
+| Arterial Line Transducers | Invasive blood pressure monitoring |
+| Bispectral Index (BIS) Monitor | Anesthesia depth monitoring |
+| Transesophageal Echocardiography | Intraoperative cardiac imaging |
+| Infusion Pumps (TCI) | Target-controlled drug delivery |
+| Electronic Anesthesia Records (AIMS) | Automated documentation |
 
 ## Related Occupations
 
@@ -118,28 +233,47 @@ Anesthesiologists provide life support management help prepare patients as part 
 graph LR
     Current["Anesthesiologists"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph AnesthesiaTeam["Anesthesia Team"]
+        CRNA["Nurse Anesthetists"]
+        AA["Anesthesiologist Assistants"]
+        AnesthTech["Anesthesia Technicians"]
     end
 
-    Current --- SameCategory
+    subgraph SurgicalTeam["Surgical Colleagues"]
+        Surgeons["Surgeons"]
+        OrthoSurg["Orthopedic Surgeons"]
+        CardSurg["Cardiac Surgeons"]
+    end
+
+    subgraph RelatedSpecialties["Related Specialties"]
+        CritCare["Critical Care Physicians"]
+        PainMed["Pain Medicine Specialists"]
+        EmergMed["Emergency Medicine Physicians"]
+    end
+
+    Current --- AnesthesiaTeam
+    Current --- SurgicalTeam
+    Current --- RelatedSpecialties
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Primary Employment
+- [Ambulatory Surgery Centers](/industries/Healthcare/AmbulatoryHealthCare) - Outpatient Surgery
+- [Physician Offices](/industries/Healthcare/PhysicianOffices) - Pain Clinics
+- [Academic Medical Centers](/industries/Healthcare/Hospitals/Teaching) - Teaching & Research
+- [Veterans Affairs](/industries/Government/Federal) - VA Healthcare System
+- [Military](/industries/Government/Military) - Combat & Field Anesthesia
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Anesthesiology](/departments/Anesthesiology)
+- [Perioperative Services](/departments/PerioperativeServices)
+- [Surgical Services](/departments/SurgicalServices)
+- [Critical Care](/departments/CriticalCare)
+- [Pain Management](/departments/PainManagement)
+- [Obstetric Anesthesia](/departments/ObstetricAnesthesia)
 
 ---
 

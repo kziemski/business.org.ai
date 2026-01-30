@@ -12,14 +12,19 @@ status: complete
 
 ## Overview
 
-Roof Bolters, Mining is classified under Construction and Extraction (SOC 47). Operate machinery to install roof support bolts in underground mine.
+Roof Bolters operate specialized drilling machines in underground mines to install roof support bolts that prevent roof collapses in mine entries and intersections. Roof falls are the second-leading cause of fatalities in underground mining, making the roof bolter operator one of the most safety-critical positions in any mine. These operators drill holes into the mine roof, then insert and tension steel bolts with bearing plates to bind weak roof strata to stronger layers above, creating a stable rock beam.
+
+The work is performed in the immediate vicinity of freshly exposed, unsupported roof, making it inherently dangerous. Operators must assess roof conditions continuously, identifying geological anomalies, water seepage, and structural weaknesses that could indicate imminent collapse. They work from the roof bolting machine's canopy, which provides temporary overhead protection, but must extend beyond this protection to install bolts at the face.
+
+Modern roof bolting machines are equipped with automated drilling and bolting capabilities, dust suppression systems, and temporary roof support (ATRS) that extends protection toward the face. Despite these advances, operator judgment remains critical for selecting bolt patterns, identifying hazardous conditions, and making real-time safety decisions in an environment where conditions can change rapidly.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group475043["47-5043 Roof Bolters, Mining"]
-    Group475043 --> Current["47-5043.00 Roof Bolters, Mining"]
+    Cat47["47 - Construction and Extraction"] --> Group475["47-5000 Extraction Workers"]
+    Group475 --> Group4750["47-5040 Mining Machine Operators"]
+    Group4750 --> Current["47-5043.00 Roof Bolters, Mining"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,113 +33,132 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-5043.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 28 |
+| Task Count | 72 |
+| Median Salary | $55,200 / year |
+| Employment | ~5,000 |
+| Job Outlook | -10% (Decline) |
+| Physical Demands | Heavy |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("Roof Bolters, Mining"))
+    root(("Roof Bolters"))
         Drill
             Bolt Holes
-            Test Holes
-            Test Bolts
-        Position
-            Bolting Machines
-            Insert Drill Bits
-            Safety Jacks
-        Perform
-            Safety Checks
-            Tests
-            Ventilation Tasks
-            Hanging Ventilation Curtains
-            Tubes
-        Force
-            Bolts
-            Using Hydraulic Mechanisms
-        Dust
-            Rocks After Bolting
+            Into Mine Roof
         Install
-            Various Types
-        Rotate
-            Chucks
-        Remove
+            Roof Bolts
+            Bearing Plates
+            Resin Cartridges
+        Tension
+            Bolts to Specification
+        Assess
+            Roof Conditions
+            Geological Hazards
+        Operate
+            Bolting Machine
+            ATRS Systems
+        Maintain
+            Equipment
             Drill Bits
+        Monitor
+            Roof Stability
+            Methane Levels
 ```
 
-### drill.BoltHoles
+### install.RoofBolts
 
-Roof Bolters, Mining drill bolt holes as part of their core responsibilities.
-
-**Actions:**
-- `drill.BoltHoles.into.Roofs.at.SpecifiedDistancesFromRibsBolts`
-- `drill.BoltHoles.into.Roofs.at.AdjacentBolts`
-- `drill.TestHoles.for.SpecifiedTension`
-- `drill.TestHoles.for.UsingTorqueWrenches`
-
-### position.BoltingMachines
-
-Roof Bolters, Mining position bolting machines as part of their core responsibilities.
+Roof bolters drill and install support bolts per the mine's roof control plan.
 
 **Actions:**
-- `position.BoltingMachines`
-- `position.InsertDrillBits.into.Chucks`
-- `position.SafetyJacks.to.support.UndergroundMineRoofsUntilBoltsCanBeInstalled`
-
-### perform.SafetyChecks
-
-Roof Bolters, Mining perform safety checks as part of their core responsibilities.
-
-**Actions:**
-- `perform.SafetyChecks.on.EquipmentBeforeOperating`
-- `perform.Tests.to.determine.IfMethaneGasIsPresent`
-- `perform.VentilationTasks`
-- `perform.HangingVentilationCurtains`
+- `install.RoofBolts.per.RoofControlPlan`
+- `drill.BoltHoles.into.MineRoof`
+- `tension.Bolts.to.RequiredTorque`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
-- **Safety Compliance** - Advanced
+- **Roof Bolting Machine Operation** - Expert
+- **Roof Condition Assessment** - Expert
+- **Geological Reading** - Advanced
+- **Equipment Maintenance** - Advanced
+- **Roof Control Plan Knowledge** - Expert
+- **Methane Monitoring** - Advanced
 
 ### Soft Skills
+- **Safety Consciousness** - Critical
+- **Situational Awareness** - Critical
+- **Quick Decision Making** - Critical
+- **Physical Stamina** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Roof Bolters, Mining"]
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent |
+| MSHA Training | 40-hour new miner + annual refresher |
+| On-the-Job Training | 3-6 months |
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+### Certifications
+- **MSHA New Miner Training (Part 48)** - Mandatory
+- **MSHA Annual Refresher** - 8-hour requirement
+- **State Mining License** - Where required
+- **Electrical Certification** - For underground electrical work
+- **First Aid/CPR** - Required
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    RedHat["Red Hat / New Miner"] --> Bolter["Roof Bolter Operator"]
+    Bolter --> Lead["Lead Operator"]
+    Lead --> Section["Section Foreman"]
+    Section --> Shift["Shift Foreman"]
+    Shift --> Super["Mine Superintendent"]
+
+    Bolter --> Safety["Mine Safety Inspector"]
+    Bolter --> RoofControl["Roof Control Specialist"]
 ```
+
+## Safety Considerations
+
+- **Roof Falls** - Working under unsupported roof; the primary hazard
+- **Equipment Entanglement** - Rotating drill steel; lockout procedures
+- **Methane Accumulation** - Near-face gas monitoring; ventilation
+- **Dust Exposure** - Drilling generates respirable dust; suppression systems
+- **Noise** - Drilling noise; hearing protection
+- **Electrical Hazards** - High-voltage equipment underground
+- **Confined Space** - Low ceiling underground entries
+
+## Related Occupations
+
+```mermaid
+graph LR
+    Current["Roof Bolters"]
+    subgraph Same["Underground Mining"]
+        Continuous["Continuous Mining Operators"]
+        Loading["Loading Machine Operators"]
+        Underground["Underground Mining Operators"]
+    end
+    Current --- Same
+```
+
+## Industries
+
+- [Coal Mining](/industries/CoalMining) - Primary Employment
+- [Metal Ore Mining](/industries/MetalMining) - Moderate Employment
+- [Nonmetallic Mineral Mining](/industries/MineralMining) - Moderate Employment
+
+## Departments
+
+- [Underground Operations](/departments/UndergroundOps)
+- [Production](/departments/Production)
+- [Safety](/departments/Safety)
 
 ---
 

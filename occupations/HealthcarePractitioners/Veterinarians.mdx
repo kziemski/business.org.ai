@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Veterinarians is an occupation within the Healthcare Practitioners and Technical category. Diagnose, treat, or research diseases and injuries of animals. 
+Veterinarians are doctoral-level healthcare professionals who prevent, diagnose, and treat diseases, disorders, and injuries in animals. They provide medical care for companion animals (dogs, cats, exotic pets), livestock (cattle, horses, swine, poultry), wildlife, zoo animals, and laboratory animals. Veterinarians perform surgery, prescribe medications, administer vaccinations, and counsel animal owners on care, nutrition, and disease prevention.
+
+The veterinary profession extends far beyond clinical animal care. Veterinarians serve critical roles in public health (zoonotic disease surveillance, food safety inspection), biomedical research, pharmaceutical development, wildlife conservation, and emergency disaster response. The One Health concept recognizes the interconnection between animal, human, and environmental health, positioning veterinarians as essential contributors to global health security.
+
+Modern veterinary practice has advanced dramatically with diagnostic imaging (digital radiography, CT, MRI for animals), minimally invasive surgery, advanced anesthesia protocols, oncology, cardiology, and rehabilitative medicine. Telemedicine, wearable health monitors for animals, and AI-assisted diagnostics are increasingly integrated into veterinary practice.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1131.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 88 |
+| Median Annual Salary | $103,260 |
+| Employment | ~86,000 |
+| Projected Growth | 20% (2022-2032, much faster than average) |
+| Job Zone | 5 (Extensive Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 50+ |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,78 +45,175 @@ graph TD
 ```mermaid
 mindmap
     root(("Veterinarians"))
+        Diagnose
+            Animal Diseases
+            Injuries
+            Zoonotic Conditions
         Treat
-            Sick Animals
-            Injured Animals
-        Inoculate
-            Animals
-            Rabies
-            Distemper
-        Examine
-            Animals
-        Collect
-            Body Tissue
-            Feces
-            Blood
-            Urine
-            Other Body Fluids
-        Operate
-            Diagnostic Equipment
-            Radiographic
-            Ultrasound Equipment
-            Interpret Resulting Images
-        Educate
-            Public
+            Surgery
+            Medications
+            Wound Care
+            Emergency Care
+        Prevent
+            Vaccinations
+            Parasite Control
+            Nutritional Guidance
+        Perform
+            Surgery
+            Dental Procedures
+            Diagnostic Imaging
+            Laboratory Tests
         Counsel
-            Clients
-        Advise
-            Animal Owners
-            Feeding
-            General Care
-            Medical Conditions
-            Treatment Options
+            Pet Owners
+            Livestock Managers
+            End-of-Life Decisions
+        Inspect
+            Food Safety
+            Livestock Health
+            Public Health
+        Research
+            Drug Development
+            Disease Prevention
+            Animal Welfare
 ```
 
-### treat.SickAnimals
+### diagnose.AnimalConditions
 
-Veterinarians treat sick animals as part of their core responsibilities.
-
-**Actions:**
-- `treat.SickAnimals.by.PrescribingMedication`
-- `treat.SickAnimals.by.SettingBones`
-- `treat.SickAnimals.by.DressingWounds`
-- `treat.SickAnimals.by.PerformingSurgery`
-
-### inoculate.Animals
-
-Veterinarians inoculate animals as part of their core responsibilities.
+Veterinarians evaluate animals through clinical examination.
 
 **Actions:**
-- `inoculate.Animals.against.VariousDiseases`
-- `inoculate.Rabies`
-- `inoculate.Distemper`
+- `diagnose.AnimalDiseases.using.PhysicalExamination` - Clinical assessment
+- `diagnose.Injuries.using.DiagnosticImaging` - Radiographic evaluation
+- `diagnose.InfectiousDisease.using.LaboratoryTesting` - Lab diagnostics
+- `diagnose.ZoonoticConditions.for.PublicHealthProtection` - Zoonotic screening
 
-### examine.Animals
+### treat.AnimalPatients
 
-Veterinarians examine animals as part of their core responsibilities.
+Veterinarians deliver medical and surgical care.
 
 **Actions:**
-- `examine.Animals.to.detect.NatureOfDiseasesInjuries`
-- `examine.Animals.to.determine.NatureOfDiseasesInjuries`
+- `perform.Surgery.for.InjuryAndDisease` - Surgical intervention
+- `prescribe.Medications.for.AnimalConditions` - Pharmacotherapy
+- `administer.Vaccinations.per.SpeciesProtocols` - Preventive immunization
+- `provide.EmergencyCare.for.TraumatizedAnimals` - Emergency medicine
+
+### counsel.AnimalOwners
+
+Veterinarians educate owners on animal health.
+
+**Actions:**
+- `counsel.PetOwners.regarding.PreventiveCare` - Wellness education
+- `counsel.LivestockManagers.regarding.HerdHealth` - Production animal health
+- `counsel.Owners.regarding.EndOfLifeDecisions` - Euthanasia counseling
+- `counsel.Owners.regarding.NutritionAndExercise` - Lifestyle guidance
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Small Animal Practice | Companion animal care |
+| Mixed Animal Practice | Small and large animal combined |
+| Emergency/Specialty Hospitals | 24/7 emergency and specialty care |
+| Large Animal/Equine Practice | Livestock and horse medicine |
+| Zoo/Wildlife Medicine | Exotic and wildlife care |
+| Academic Veterinary Medicine | Teaching and research |
+| Government/Military | USDA, CDC, military veterinary |
+| Industry | Pharmaceutical and food safety |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Clinical Diagnosis** - Expert
+- **Veterinary Surgery** - Expert
+- **Diagnostic Imaging** - Advanced
+- **Anesthesiology** - Advanced
+- **Pharmacology** - Expert
+- **Dentistry** - Advanced
+- **Emergency Medicine** - Advanced
+- **Laboratory Diagnostics** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
+- **Animal Handling** - Expert
+- **Client Communication** - Critical
+- **Empathy** - Essential
+- **Business Management** - Important
 - **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Teamwork** - Essential
+- **Emotional Resilience** - Essential
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Undergraduate | 4-year bachelor's degree (pre-veterinary) |
+| Veterinary School | 4-year DVM or VMD program |
+| Internship | 1 year rotating internship (optional) |
+| Residency | 3-4 years for board specialization |
+| Total Training | 8-12 years post-high school |
+| Licensure | Must pass NAVLE (North American Veterinary Licensing Exam) |
+| State License | Required in all states |
+| Continuing Education | Per state requirements |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| NAVLE | National licensing exam (required) |
+| ACVIM | Internal Medicine board certification |
+| ACVS | Surgery board certification |
+| ACVECC | Emergency & Critical Care |
+| ABVP | Practice board certification (various species) |
+| DACVR | Radiology board certification |
+| DACVO | Ophthalmology board certification |
+| USDA Accreditation | Federal animal health inspection |
+
+## Career Progression
+
+```mermaid
+graph BT
+    DVM["DVM Graduate"] --> Associate["Associate Veterinarian"]
+    Associate --> Partner["Practice Partner"]
+    Partner --> Owner["Practice Owner"]
+    Owner --> MultiPractice["Multi-Practice Owner"]
+
+    DVM --> Intern["Rotating Internship"]
+    Intern --> Resident["Specialty Residency"]
+    Resident --> Specialist["Board-Certified Specialist"]
+    Specialist --> Chief["Chief of Service"]
+
+    DVM --> Academic["Academic Faculty"]
+    Academic --> Professor["Professor/Researcher"]
+
+    DVM --> Government["Government Veterinarian"]
+    Government --> Official["Chief Veterinary Officer"]
+```
+
+## Specializations
+
+| Subspecialty | Focus Area |
+|-------------|------------|
+| Internal Medicine | Complex medical cases |
+| Surgery (Soft Tissue, Orthopedic) | Advanced surgical procedures |
+| Emergency & Critical Care | Animal ER and ICU |
+| Oncology | Animal cancer treatment |
+| Cardiology | Heart disease in animals |
+| Dermatology | Skin conditions |
+| Neurology | Nervous system disorders |
+| Ophthalmology | Eye conditions |
+| Exotic/Zoo Medicine | Non-domestic species |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Digital Radiography/DR | Diagnostic imaging |
+| Veterinary Ultrasound | Abdominal and cardiac imaging |
+| Veterinary CT/MRI | Advanced cross-sectional imaging |
+| In-House Lab Analyzers (IDEXX) | Point-of-care diagnostics |
+| Anesthesia Monitoring Systems | Surgical patient monitoring |
+| Veterinary Practice Management Software | Scheduling and records |
+| Laser Therapy Equipment | Pain management and healing |
+| Dental Radiography & Equipment | Veterinary dental care |
 
 ## Related Occupations
 
@@ -116,28 +221,46 @@ Veterinarians examine animals as part of their core responsibilities.
 graph LR
     Current["Veterinarians"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph VetTeam["Veterinary Team"]
+        VetTech["Veterinary Technologists"]
+        VetAssist["Veterinary Assistants"]
+        VetReceptionist["Veterinary Receptionists"]
     end
 
-    Current --- SameCategory
+    subgraph Specialists["Veterinary Specialists"]
+        VetSurgeon["Veterinary Surgeons"]
+        VetInternist["Veterinary Internists"]
+        VetEmergency["Veterinary Emergency Doctors"]
+    end
+
+    subgraph Related["Related Fields"]
+        PublicHealth["Public Health Officials"]
+        AnimalScientists["Animal Scientists"]
+        ZooKeepers["Zookeepers"]
+    end
+
+    Current --- VetTeam
+    Current --- Specialists
+    Current --- Related
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Veterinary Services](/industries/Healthcare/VeterinaryServices) - Private Practice
+- [Government](/industries/Government) - USDA, CDC, Military
+- [Academic](/industries/Education) - Veterinary Schools
+- [Pharmaceutical](/industries/Manufacturing/ChemicalManufacturing/Pharmaceutical) - Drug Development
+- [Zoos & Aquariums](/industries/ArtsEntertainment) - Wildlife Care
+- [Research](/industries/ProfessionalServices/Research) - Biomedical Research
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Veterinary Medicine](/departments/VeterinaryMedicine)
+- [Veterinary Surgery](/departments/VeterinarySurgery)
+- [Animal Emergency](/departments/AnimalEmergency)
+- [Public Health](/departments/PublicHealth)
+- [Food Safety](/departments/FoodSafety)
 
 ---
 

@@ -3,23 +3,30 @@ id: CostEstimators
 name: "Cost Estimators"
 code: "13-1051.00"
 type: Occupation
+category: Business
 status: complete
+certifications: ["CCC", "CPE", "CCE", "EVP"]
 ---
 
 # Cost Estimators
 
-> Prepare cost estimates for product manufacturing, construction projects, or services to aid management in bidding on or determining price of product or service. May specialize according to particular service performed or type of product manufactured.
+> Prepare cost estimates for product manufacturing, construction projects, or services to aid management in bidding on or determining price of product or service.
 
 ## Overview
 
-Cost Estimators is an occupation within the Business and Financial Operations category. Prepare cost estimates for product manufacturing, construction projects, or services to aid management in bidding on or determining price of product or service. 
+Cost Estimators are analytical professionals who develop accurate projections of the time, money, materials, and labor required to complete projects or manufacture products. They are essential to the profitability and competitiveness of construction firms, manufacturers, engineering companies, and government agencies, as their estimates directly influence bidding strategies, project budgets, and pricing decisions.
+
+These professionals analyze blueprints, specifications, proposals, and other documentation to prepare comprehensive cost breakdowns. They consult with engineers, architects, subcontractors, and suppliers to gather pricing data and understand project requirements. The work requires strong mathematical skills, knowledge of construction methods or manufacturing processes, and the ability to anticipate potential cost variables including material price fluctuations, labor availability, and regulatory requirements.
+
+The profession has evolved with the adoption of building information modeling (BIM), cloud-based estimating software, and data analytics that enable more accurate and efficient cost projections. Despite technological advances, experienced estimators remain essential for their judgment in assessing risk, interpreting ambiguous specifications, and applying lessons learned from past projects.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group131051["13-1051 Cost Estimators"]
-    Group131051 --> Current["13-1051.00 Cost Estimators"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G131051["13-1051 Cost Estimators"]
+    G131051 --> Current["13-1051.00 Cost Estimators"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,7 +35,11 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 13-1051.00 |
+| Job Zone | 4 (Considerable Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
+| Median Salary | $71,200 |
+| Employment | ~210,000 |
+| Projected Growth | 3% (Slower than average) |
 | Task Count | 61 |
 | Source | O*NET |
 
@@ -38,105 +49,163 @@ graph TD
 mindmap
     root(("Cost Estimators"))
         Analyze
-            Blueprints Documentation
-            Other Documentation
+            Blueprints
+            Specifications
+            Proposals
+        Prepare
+            Cost Estimates
+            Bid Documents
+            Budget Reports
         Confer
             Architects
-            Owners
+            Engineers
             Contractors
-            Subcontractors
         Collect
             Historical Cost Data
+            Vendor Pricing
+            Labor Rates
         Assess
             Cost Effectiveness
-        Consult
-            Vendors
-            Personnel
-        Establish
-            Tendering Process
-            Conduct Negotiations
+            Risk Factors
+            Value Engineering
         Maintain
-            Tendering Process
-            Conduct Negotiations
-            Directory
-        Prepare
-            Estimates
-            Estimates Used
-            Cost Statements Other Necessary Documentation
-            Expenditure Statements Other Necessary Documentation
-            Directory
+            Cost Databases
+            Pricing Libraries
 ```
 
-### analyze.BlueprintsDocumentation
+### analyze.ProjectDocumentation
 
-Cost Estimators analyze blueprints documentation as part of their core responsibilities.
-
-**Actions:**
-- `analyze.BlueprintsDocumentation.to.prepare.Time`
-- `analyze.BlueprintsDocumentation.to.Cost`
-- `analyze.BlueprintsDocumentation.to.Materials`
-- `analyze.BlueprintsDocumentation.to.LaborEstimates`
-
-### confer.Architects
-
-Cost Estimators confer architects as part of their core responsibilities.
+Analyze blueprints, specifications, and proposals to identify all cost elements.
 
 **Actions:**
-- `confer.Architects.on.ChangesToCostEstimates`
-- `confer.Architects.on.AdjustmentsToCostEstimates`
-- `confer.Owners.on.ChangesToCostEstimates`
-- `confer.Owners.on.AdjustmentsToCostEstimates`
+- `analyze.BlueprintsDocumentation.to.prepare.CostEstimates` - Extract quantity takeoffs
+- `analyze.Specifications.to.determine.MaterialRequirements` - Identify material needs
+- `analyze.RiskFactors.to.apply.ContingencyAllowances` - Account for uncertainty
+- `analyze.Proposals.to.evaluate.ProjectScope` - Define work boundaries
 
-### collect.HistoricalCostData
+### prepare.CostEstimates
 
-Cost Estimators collect historical cost data as part of their core responsibilities.
+Develop comprehensive cost estimates including materials, labor, equipment, and overhead.
 
 **Actions:**
-- `collect.HistoricalCostData.to.estimate.CostsForCurrentProducts`
-- `collect.HistoricalCostData.to.FutureProducts`
+- `prepare.CostEstimates.for.BidSubmission` - Support competitive bidding
+- `prepare.BudgetReports.for.ProjectPlanning` - Guide financial planning
+- `prepare.ValueEngineeringAnalyses.to.reduce.ProjectCosts` - Identify savings
+- `prepare.ChangeOrderEstimates.for.ScopeModifications` - Price scope changes
+
+### confer.WithStakeholders
+
+Consult with architects, engineers, contractors, and clients on cost-related matters.
+
+**Actions:**
+- `confer.Architects.on.ChangesToCostEstimates` - Discuss design impacts
+- `confer.Contractors.on.SubcontractorPricing` - Validate trade costs
+- `collect.HistoricalCostData.to.estimate.CostsForCurrentProducts` - Leverage past data
+- `confer.Clients.on.BudgetConstraints` - Align expectations
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Cost Estimation Methodologies** - Expert
+- **Quantity Takeoff** - Expert
+- **Blueprint & Specification Reading** - Expert
+- **BIM (Building Information Modeling)** - Advanced
+- **Construction Methods / Manufacturing Processes** - Advanced
+- **Statistical Analysis & Forecasting** - Advanced
+- **Financial Analysis** - Proficient
 
 ### Soft Skills
+- **Analytical Thinking** - Critical
+- **Attention to Detail** - Critical
+- **Mathematical Aptitude** - Essential
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Time Management** - Important
+- **Negotiation** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["Cost Estimators"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Bachelor's degree in Construction Management, Engineering, or related field |
+| Key Certifications | CCC (Certified Cost Consultant - AACE), CPE (Certified Professional Estimator - ASPE) |
+| Additional Certs | CCE (Certified Cost Engineer), EVP (Earned Value Professional) |
+| Professional Orgs | AACE International, ASPE, RSMeans |
+| Work Experience | 2-5 years in construction, engineering, or manufacturing |
+| Continuing Education | Required for certification maintenance |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Junior Estimator / Estimating Coordinator"] --> Mid["Cost Estimator"]
+    Mid --> Senior["Senior Estimator / Chief Estimator"]
+    Senior --> Director["Director of Estimating / Preconstruction Manager"]
+    Director --> Executive["VP of Preconstruction / VP of Operations"]
+
+    Alt1["Project Engineer"] --> Mid
+    Alt2["Quantity Surveyor"] --> Senior
+
+    subgraph Tracks["Career Tracks"]
+        Construction["Construction Estimating"]
+        Manufacturing["Manufacturing Costing"]
+        Government["Government Contracts"]
+        Consulting["Cost Consulting"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Construction** | Building projects | Quantity takeoff, subcontractor bidding, change order pricing |
+| **Manufacturing** | Product costing | Bill of materials, labor standards, overhead allocation |
+| **Defense / Aerospace** | Government contracts | EVMS, CAS compliance, parametric estimating |
+| **Oil & Gas** | Capital projects | Factored estimating, modular construction |
+| **Software / IT** | Project estimation | Function point analysis, agile estimation |
+| **Infrastructure** | Civil works | Earthwork calculations, unit pricing, equipment rates |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Estimating Software** | RSMeans, ProEst, HCSS HeavyBid, WinEst |
+| **BIM Tools** | Revit, Navisworks, Bluebeam Revu |
+| **Takeoff** | PlanSwift, On-Screen Takeoff, Bluebeam |
+| **Spreadsheets** | Excel (advanced), Google Sheets |
+| **Project Management** | Primavera P6, Microsoft Project, Procore |
+| **Cost Databases** | RSMeans, Richardson, Compass International |
+| **ERP Systems** | SAP, Oracle, Viewpoint Vista |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    CE["Cost Estimators"]
+
+    subgraph SameCategory["Business Operations"]
+        BA["Budget Analysts"]
+        MA["Management Analysts"]
+        PA["Purchasing Agents"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        CM["Construction Managers"]
+        IE["Industrial Engineers"]
+        QS["Quantity Surveyors"]
+    end
+
+    CE --- SameCategory
+    CE --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Preconstruction](/departments/Preconstruction)
+- [Estimating](/departments/Estimating)
+- [Project Controls](/departments/ProjectControls)
+- [Finance & Budgeting](/departments/Finance)
+- [Procurement](/departments/Procurement)
 
 ---
 

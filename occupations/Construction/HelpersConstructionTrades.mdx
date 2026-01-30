@@ -12,14 +12,24 @@ status: complete
 
 ## Overview
 
-Helpers, Construction Trades, All Other is classified under Construction and Extraction (SOC 47). All construction trades helpers not listed separately.
+Helpers in Construction Trades, All Other, encompasses entry-level support workers who assist skilled trade workers across various construction disciplines not covered by specific helper classifications. These workers provide essential labor support on construction sites, performing tasks that include carrying materials, holding tools and equipment, cleaning work areas, mixing materials, and assisting journeyman-level workers with their daily tasks. This classification captures helpers working with trades such as glaziers, insulation workers, sheet metal workers, and other specialties.
+
+Helper positions serve as the primary entry point into the construction industry for workers who lack prior trade experience. Through on-the-job exposure, helpers learn trade fundamentals, safety practices, tool identification, and construction terminology. Many helpers use these positions as stepping stones to formal apprenticeships or advancement within a specific trade. The work is physically demanding and forms the foundation of the construction workforce pipeline.
+
+The role requires willingness to perform a wide variety of tasks, adaptability to different trade environments, and the physical capability to handle demanding manual labor. Helpers who demonstrate reliability, initiative, and aptitude for a particular trade are typically offered advancement opportunities, making this an important career launch point for construction workers.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group473019["47-3019 Helpers, Construction Trades, All Other"]
-    Group473019 --> Current["47-3019.00 Helpers, Construction Trades, All Other"]
+    Cat47["47 - Construction and Extraction"] --> Group473["47-3000 Helpers, Construction Trades"]
+    Group473 --> Brick["47-3011.00 Helpers--Masons"]
+    Group473 --> Carp["47-3012.00 Helpers--Carpenters"]
+    Group473 --> Elec["47-3013.00 Helpers--Electricians"]
+    Group473 --> Paint["47-3014.00 Helpers--Painters"]
+    Group473 --> Pipe["47-3015.00 Helpers--Plumbers"]
+    Group473 --> Roof["47-3016.00 Helpers--Roofers"]
+    Group473 --> Current["47-3019.00 Helpers, All Other"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,39 +38,148 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-3019.00 |
+| Job Zone | 1 (Little or No Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 0 |
+| Task Count | Variable |
+| Median Salary | $36,200 / year |
+| Employment | ~25,000 |
+| Job Outlook | 3% (Slower than average) |
+| Physical Demands | Heavy |
 | Source | O*NET |
 
 ## Core Tasks
 
-Task data is being compiled for this occupation. See [O*NET 47-3019.00](https://www.onetonline.org/link/summary/47-3019.00) for detailed task information.
+```mermaid
+mindmap
+    root(("Construction Helpers"))
+        Carry
+            Materials
+            Tools
+            Equipment
+        Clean
+            Work Areas
+            Tools
+            Equipment
+        Mix
+            Concrete
+            Mortar
+            Compounds
+        Hold
+            Materials in Place
+            Tools for Journeymen
+        Load
+            Materials
+            Equipment
+        Unload
+            Deliveries
+            Trucks
+        Set Up
+            Work Areas
+            Equipment
+        Assist
+            Skilled Workers
+            With Trade Tasks
+```
+
+### carry.Materials
+
+Helpers transport materials and supplies to work areas.
+
+**Actions:**
+- `carry.Materials.to.WorkAreas`
+- `carry.Tools.to.Tradespeople`
+- `carry.Equipment.to.JobSites`
+
+### assist.SkilledWorkers
+
+Helpers support journeyman-level trade workers with their tasks.
+
+**Actions:**
+- `assist.SkilledWorkers.with.TradeTasks`
+- `assist.SkilledWorkers.by.holding.MaterialsInPlace`
+- `assist.SkilledWorkers.by.operating.SimpleEquipment`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
-- **Safety Compliance** - Advanced
+- **Basic Construction Knowledge** - Entry Level
+- **Tool Identification** - Entry Level
+- **Material Handling** - Developing
+- **Safety Awareness** - Developing
+- **Basic Measurement** - Entry Level
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Physical Stamina** - Critical
+- **Willingness to Learn** - Critical
+- **Reliability** - Critical
+- **Teamwork** - Essential
+- **Following Instructions** - Essential
+- **Adaptability** - Essential
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | No formal requirements (high school preferred) |
+| On-the-Job Training | Ongoing |
+| Pre-Employment | Basic physical fitness |
+
+### Certifications
+- **OSHA 10-Hour Construction** - Often required or provided
+- **First Aid/CPR** - Recommended
+- **Forklift Certification** - If operating material handling equipment
+
+## Career Progression
+
+```mermaid
+graph BT
+    Helper["Construction Helper"] --> Laborer["Construction Laborer"]
+    Helper --> Apprentice["Trade Apprentice"]
+    Apprentice --> Journey["Journeyman Tradesperson"]
+    Journey --> Foreman["Foreman"]
+
+    Laborer --> OpEng["Equipment Operator"]
+    Laborer --> Specialist["Specialty Worker"]
+```
+
+## Specializations
+
+Helpers typically support various trades including:
+- Glazing
+- Insulation
+- Sheet metal
+- Ironwork
+- Flooring
+- General construction support
+
+## Tools & Equipment
+
+### Basic Tools
+- Shovels, brooms, and rakes
+- Wheelbarrows and hand trucks
+- Buckets and mixing tools
+- Basic hand tools
+- Safety equipment (hard hat, vest, glasses, boots, gloves)
+
+## Safety Considerations
+
+- **Heavy Lifting** - Frequent manual material handling
+- **Struck-By Hazards** - Working near active construction
+- **Fall Hazards** - Working near edges and openings
+- **Tool and Equipment Injuries** - Learning to use unfamiliar tools
+- **Environmental Exposure** - Heat, cold, rain, dust
 
 ## Related Occupations
 
 ```mermaid
 graph LR
-    Current["HelpersConstructionTrades"]
+    Current["Helpers, Construction Trades"]
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
+    subgraph SameCategory["Entry Level"]
+        Laborer["Construction Laborers"]
+        MasonHelp["Helpers, Masons"]
+        CarpHelp["Helpers, Carpenters"]
+        ElecHelp["Helpers, Electricians"]
     end
 
     Current --- SameCategory
@@ -68,16 +187,15 @@ graph LR
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Specialty Trade Contractors](/industries/SpecialtyTrade) - Primary Employment
+- [Building Construction](/industries/BuildingConstruction) - High Employment
+- [Heavy and Civil Engineering](/industries/HeavyCivil) - Moderate Employment
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Field Operations](/departments/FieldOperations)
+- [Various Trade Divisions](/departments/Trades)
 
 ---
 

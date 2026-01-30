@@ -12,14 +12,19 @@ status: complete
 
 ## Overview
 
-Extraction Workers, All Other is classified under Construction and Extraction (SOC 47). All extraction workers not listed separately.
+Extraction Workers, All Other is a residual classification encompassing workers in the mining and extraction industry whose specific duties do not align with other defined extraction occupations. This includes specialty roles such as well tenders, mining sampling technicians, brine well operators, solution mining workers, and other niche positions within the broader extraction sector. These workers support the extraction of minerals, petroleum, natural gas, and other subsurface resources through specialized tasks.
+
+Many workers in this category perform support functions critical to extraction operations but that span multiple equipment types or operational phases. They may tend wells between service visits, operate specialized processing equipment at mine sites, perform geological sampling and logging, or manage fluid handling systems. The work environments range from surface mining operations and oil fields to underground mines and processing facilities.
+
+As extraction technologies evolve, this category captures emerging roles related to rare earth mineral extraction, lithium mining for battery production, carbon capture and sequestration, and other new resource recovery methods. Workers in these roles often develop highly specialized skills specific to their particular extraction process.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat47["47 - Construction and Extraction"] --> Group475099["47-5099 Extraction Workers, All Other"]
-    Group475099 --> Current["47-5099.00 Extraction Workers, All Other"]
+    Cat47["47 - Construction and Extraction"] --> Group475["47-5000 Extraction Workers"]
+    Group475 --> Group4750["47-5099 Extraction Workers, All Other"]
+    Group4750 --> Current["47-5099.00 Extraction Workers, All Other"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,27 +33,134 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 47-5099.00 |
+| Job Zone | 2 (Some Preparation) |
 | Category | [Construction and Extraction](/occupations/Construction/index) |
-| Task Count | 0 |
+| Task Count | Variable |
+| Median Salary | $45,200 / year |
+| Employment | ~8,000 |
+| Job Outlook | -2% (Decline) |
+| Physical Demands | Medium to Heavy |
 | Source | O*NET |
 
 ## Core Tasks
 
-Task data is being compiled for this occupation. See [O*NET 47-5099.00](https://www.onetonline.org/link/summary/47-5099.00) for detailed task information.
+```mermaid
+mindmap
+    root(("Extraction Workers"))
+        Operate
+            Specialty Extraction Equipment
+            Processing Equipment
+        Monitor
+            Well Conditions
+            Extraction Processes
+        Maintain
+            Equipment
+            Work Areas
+        Collect
+            Samples
+            Data
+        Record
+            Production Data
+            Equipment Logs
+        Perform
+            Specialty Extraction Tasks
+```
+
+### operate.SpecialtyExtractionEquipment
+
+Workers operate specialized equipment for resource extraction.
+
+**Actions:**
+- `operate.SpecialtyExtractionEquipment.at.MiningSites`
+- `operate.ProcessingEquipment.for.MineralRecovery`
+- `monitor.WellConditions.for.ProductionOptimization`
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Construction Methods** - Advanced
-- **Blueprint Reading** - Advanced
+- **Extraction Equipment Operation** - Advanced
+- **Process Monitoring** - Advanced
+- **Equipment Maintenance** - Advanced
 - **Safety Compliance** - Advanced
+- **Sampling and Testing** - Intermediate
+- **Record Keeping** - Intermediate
+
+### Trade-Specific Skills
+- **Solution Mining** - In-situ extraction techniques
+- **Well Tending** - Monitoring and maintaining extraction wells
+- **Mineral Sampling** - Collection and documentation procedures
+- **Fluid Handling** - Brine, slurry, and chemical management
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Reliability** - Critical
+- **Attention to Detail** - Essential
+- **Physical Stamina** - Essential
+- **Communication** - Important
+- **Adaptability** - Essential
+
+## Education & Certifications
+
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | High school diploma or equivalent |
+| On-the-Job Training | 3-12 months |
+| MSHA Training | Required for mining operations |
+
+### Certifications
+- **MSHA New Miner Training** - Part 46 (surface) or Part 48 (underground)
+- **MSHA Annual Refresher** - 8-hour annual requirement
+- **OSHA 10-Hour General Industry** - Safety certification
+- **First Aid/CPR** - Required
+- **Hazmat Awareness** - For chemical handling roles
+
+## Career Progression
+
+```mermaid
+graph BT
+    Entry["Entry-Level Worker"] --> Operator["Equipment Operator"]
+    Operator --> Senior["Senior Operator"]
+    Senior --> Lead["Lead Worker"]
+    Lead --> Supervisor["Shift Supervisor"]
+    Supervisor --> Manager["Operations Manager"]
+
+    Operator --> Specialist["Process Specialist"]
+    Operator --> Safety["Safety Technician"]
+    Operator --> Maintenance["Maintenance Technician"]
+```
+
+## Specializations
+
+### Well Tending
+- Production well monitoring
+- Wellhead maintenance
+- Flow rate management
+
+### Solution Mining
+- In-situ leaching operations
+- Brine well operations
+- Evaporation pond management
+
+### Sampling and Testing
+- Geological sampling
+- Ore grade testing
+- Environmental monitoring
+
+## Tools & Equipment
+
+### Equipment
+- Specialty extraction equipment (role-dependent)
+- Pumps and compressors
+- Monitoring instruments
+- Sampling tools and containers
+- PPE (hard hat, safety glasses, hearing protection, boots)
+
+## Safety Considerations
+
+- **Chemical Exposure** - Extraction chemicals and process fluids
+- **Confined Spaces** - Equipment and process vessel entry
+- **Heavy Equipment** - Working near mobile mining equipment
+- **Environmental Hazards** - Dust, noise, weather exposure
+- **Fall Hazards** - Elevated equipment and platforms
 
 ## Related Occupations
 
@@ -56,28 +168,35 @@ Task data is being compiled for this occupation. See [O*NET 47-5099.00](https://
 graph LR
     Current["Extraction Workers, All Other"]
 
-    subgraph SameCategory["Construction and Extraction"]
-        FirstLineSupervisors["First-Line Supervisors of Constr..."]
-        SolarEnergyInstallat["Solar Energy Installation Managers"]
-        Boilermakers["Boilermakers"]
-        BrickmasonsAndBlockm["Brickmasons and Blockmasons"]
+    subgraph SameCategory["Extraction"]
+        Roustabout["Roustabouts"]
+        Mining["Mining Machine Operators"]
+        Helpers["Helpers, Extraction Workers"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        OpEng["Operating Engineers"]
+        Laborer["Construction Laborers"]
+        ChemTech["Chemical Technicians"]
     end
 
     Current --- SameCategory
+    Current --- CrossFunctional
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Mining (Coal, Metal, Nonmetal)](/industries/Mining) - Primary Employment
+- [Oil and Gas Extraction](/industries/OilGasExtraction) - Moderate Employment
+- [Support Activities for Mining](/industries/MiningSupport) - High Employment
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Mining Operations](/departments/MiningOps)
+- [Production](/departments/Production)
+- [Maintenance](/departments/Maintenance)
+- [Safety](/departments/Safety)
 
 ---
 

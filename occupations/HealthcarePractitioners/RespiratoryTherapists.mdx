@@ -12,7 +12,11 @@ status: complete
 
 ## Overview
 
-Respiratory Therapists is an occupation within the Healthcare Practitioners and Technical category. Assess, treat, and care for patients with breathing disorders. Assume primary responsibility for all respiratory care modalities, including the supervision of respiratory therapy technicians.
+Respiratory Therapists (RTs) are specialized healthcare professionals who evaluate, treat, and care for patients with cardiopulmonary disorders. They manage patients across the acuity spectrum from stable outpatients with asthma and COPD to critically ill patients on mechanical ventilation, ECMO, and inhaled nitric oxide. RTs are integral members of critical care, emergency, and surgical teams, providing expert assessment and intervention for all aspects of respiratory care.
+
+The scope of respiratory therapy encompasses diagnostic testing (arterial blood gases, pulmonary function tests, sleep studies), therapeutic interventions (oxygen therapy, aerosol medications, chest physiotherapy, mechanical ventilation), patient education (inhaler technique, disease management, smoking cessation), and emergency response (airway management, CPR, rapid response teams). RTs initiate and modify respiratory care protocols based on patient assessment and evidence-based guidelines.
+
+Modern respiratory therapy has expanded with advances in ventilator technology, non-invasive ventilation, high-flow nasal cannula therapy, ECMO, and pulmonary rehabilitation. The COVID-19 pandemic highlighted the critical importance of respiratory therapists, who managed ventilators and prone positioning for the sickest patients. RTs increasingly serve in expanded roles including disease management, transport teams, and pulmonary rehabilitation programs.
 
 ## Classification Hierarchy
 
@@ -28,8 +32,12 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | SOC Code | 29-1126.00 |
-| Category | [Healthcare Practitioners and Technical](/occupations/HealthcarePractitioners) |
-| Task Count | 85 |
+| Median Annual Salary | $62,810 |
+| Employment | ~133,000 |
+| Projected Growth | 13% (2022-2032, much faster than average) |
+| Job Zone | 3 (Medium Preparation) |
+| Category | [Healthcare Practitioners](/occupations/HealthcarePractitioners) |
+| Core Tasks | 50+ |
 | Source | O*NET |
 
 ## Core Tasks
@@ -37,78 +45,167 @@ graph TD
 ```mermaid
 mindmap
     root(("Respiratory Therapists"))
-        Provide
-            Emergency Care
-            Artificial Respiration
-            External Cardiac Massage
-            Assistance
-        Monitor
-            Patients Physiological Responses
-        Set
-            Operate Devices
-            Mechanical Ventilators
-            Therapeutic Gas Administration Apparatus
-            Environmental Control Systems
-            Aerosol Generators
-        Work
-            As Part
-        Maintain
-            Charts Contain Patients Pertinent Identification Information
-            Therapy Information
-            Respiratory Therapy Equipment
-        Read
-            Prescription
-            Measure Arterial Blood Gases
-            Review Patient Information
-        Relay
-            Blood Analysis Results
-        Inspect
-            Respiratory Therapy Equipment
+        Assess
+            Respiratory Status
+            Arterial Blood Gases
+            Pulmonary Function
+            Ventilator Readiness
+        Treat
+            Oxygen Therapy
+            Aerosol Medications
+            Mechanical Ventilation
+            Airway Management
+        Perform
+            ABG Analysis
+            Pulmonary Function Tests
+            Sleep Studies
+            Intubation Assistance
+        Manage
+            Ventilator Settings
+            Weaning Protocols
+            ECMO
+            Non-Invasive Ventilation
+        Educate
+            Inhaler Technique
+            Disease Management
+            Smoking Cessation
+        Respond
+            Code Teams
+            Rapid Response
+            Transport Teams
 ```
 
-### provide.EmergencyCare
+### assess.RespiratoryStatus
 
-Respiratory Therapists provide emergency care as part of their core responsibilities.
-
-**Actions:**
-- `provide.EmergencyCare.with.CardiopulmonaryResuscitation`
-- `provide.ArtificialRespiration.with.CardiopulmonaryResuscitation`
-- `provide.ExternalCardiacMassage.with.CardiopulmonaryResuscitation`
-- `provide.Assistance.with.CardiopulmonaryResuscitation`
-
-### monitor.PatientsPhysiologicalResponses
-
-Respiratory Therapists monitor patients physiological responses as part of their core responsibilities.
+RTs evaluate cardiopulmonary function.
 
 **Actions:**
-- `monitor.PatientsPhysiologicalResponses.to.Therapy`
-- `monitor.PatientsPhysiologicalResponses.to.VitalSigns`
-- `monitor.PatientsPhysiologicalResponses.to.ArterialBloodGases`
-- `monitor.PatientsPhysiologicalResponses.to.BloodChemistryChanges`
+- `assess.RespiratoryStatus.using.Auscultation` - Physical assessment
+- `perform.ArterialBloodGas.analysis.for.Oxygenation` - ABG analysis
+- `perform.PulmonaryFunctionTests.for.DiagnosticEvaluation` - PFT testing
+- `assess.VentilatorReadiness.using.WeaningParameters` - Weaning assessment
 
-### set.OperateDevices
+### manage.MechanicalVentilation
 
-Respiratory Therapists set operate devices as part of their core responsibilities.
+RTs manage complex respiratory support.
 
 **Actions:**
-- `set.OperateDevices.of.Treatment`
-- `set.MechanicalVentilators.of.Treatment`
-- `set.TherapeuticGasAdministrationApparatus.of.Treatment`
-- `set.EnvironmentalControlSystems.of.Treatment`
+- `manage.VentilatorSettings.per.LungProtectiveProtocols` - Ventilator management
+- `manage.WeaningProtocols.for.VentilatorLiberation` - Ventilator weaning
+- `manage.NonInvasiveVentilation.for.RespiratoryFailure` - NIPPV management
+- `manage.HighFlowNasalCannula.for.OxygenSupport` - HFNC therapy
+
+### educate.PatientsOnRespiratoryCare
+
+RTs provide patient and family education.
+
+**Actions:**
+- `educate.Patients.regarding.InhalerTechnique` - Device training
+- `educate.Patients.regarding.DiseaseManagement` - Self-management
+- `counsel.Patients.regarding.SmokingCessation` - Tobacco cessation
+- `educate.Families.regarding.HomeOxygenUse` - Home care preparation
+
+## Practice Settings
+
+| Setting | Description |
+|---------|-------------|
+| Hospital ICUs | Critical care respiratory management |
+| Emergency Departments | Acute respiratory intervention |
+| Medical/Surgical Floors | General respiratory care |
+| Neonatal ICUs | Neonatal respiratory support |
+| Pulmonary Function Labs | Diagnostic testing |
+| Sleep Disorder Centers | Sleep study management |
+| Pulmonary Rehabilitation | COPD and chronic lung disease |
+| Home Health | Home ventilator and oxygen services |
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Clinical Skills** - Advanced
-- **Diagnostic Procedures** - Advanced
-- **Patient Care** - Advanced
+- **Mechanical Ventilation** - Expert
+- **Arterial Blood Gas Analysis** - Expert
+- **Airway Management** - Expert
+- **Pulmonary Function Testing** - Expert
+- **Oxygen Therapy** - Expert
+- **Aerosol Medication Delivery** - Expert
+- **ECMO Management** - Advanced
+- **Non-Invasive Ventilation** - Expert
 
 ### Soft Skills
+- **Critical Thinking** - Critical
 - **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Teamwork** - Essential
+- **Adaptability** - Essential
+- **Patient Education** - Essential
+- **Stress Management** - Essential
+
+## Education & Training
+
+| Requirement | Details |
+|-------------|---------|
+| Education | Associate degree (minimum); bachelor's preferred |
+| Clinical Rotations | Supervised clinical hours in multiple settings |
+| Licensure | Must pass NBRC TMC exam |
+| Advanced Credential | RRT (Registered Respiratory Therapist) |
+| State License | Required in most states |
+| Continuing Education | Per NBRC and state requirements |
+
+## Certifications
+
+| Certification | Description |
+|---------------|-------------|
+| CRT | Certified Respiratory Therapist (NBRC) |
+| RRT | Registered Respiratory Therapist (NBRC) |
+| RRT-ACCS | Adult Critical Care Specialist |
+| RRT-NPS | Neonatal/Pediatric Specialist |
+| RPFT | Registered Pulmonary Function Technologist |
+| RPSGT | Registered Polysomnographic Technologist |
+| ACLS/PALS/NRP | Life support certifications |
+
+## Career Progression
+
+```mermaid
+graph BT
+    Grad["RT Graduate"] --> CRT["Certified RT"]
+    CRT --> RRT["Registered RT"]
+    RRT --> Senior["Senior RT"]
+    Senior --> Lead["Lead/Charge RT"]
+    Lead --> Supervisor["RT Supervisor"]
+    Supervisor --> Manager["RT Manager"]
+    Manager --> Director["Director of Respiratory Services"]
+
+    RRT --> Specialist["Specialty RT (ECMO, Transport)"]
+    RRT --> Educator["RT Educator"]
+    Educator --> Faculty["Program Director"]
+
+    Senior --> BSRT["Bachelor's Completion"]
+    BSRT --> MSRT["Master's Degree"]
+```
+
+## Specializations
+
+| Focus Area | Description |
+|------------|-------------|
+| Critical Care | ICU ventilator management |
+| Neonatal/Pediatric | NICU and PICU respiratory care |
+| Pulmonary Function | Diagnostic PFT lab |
+| Sleep Medicine | Polysomnography and CPAP |
+| ECMO Specialist | Extracorporeal membrane oxygenation |
+| Transport | Critical care transport team |
+| Pulmonary Rehabilitation | Chronic disease exercise program |
+| Home Care | Home ventilator and oxygen |
+
+## Technology & Tools
+
+| Technology | Purpose |
+|------------|---------|
+| Mechanical Ventilators (Hamilton, Drager, PB) | Life support |
+| ABG Analyzers | Blood gas analysis |
+| Pulmonary Function Systems | Spirometry and lung volumes |
+| CPAP/BiPAP Devices | Non-invasive ventilation |
+| High-Flow Nasal Cannula Systems | Heated humidified oxygen |
+| Bronchoscopy Equipment | Airway visualization |
+| Polysomnography Systems | Sleep study monitoring |
+| Nitric Oxide Delivery Systems | Inhaled NO therapy |
 
 ## Related Occupations
 
@@ -116,28 +213,38 @@ Respiratory Therapists set operate devices as part of their core responsibilitie
 graph LR
     Current["Respiratory Therapists"]
 
-    subgraph SameCategory["Healthcare Practitioners and Technical"]
-        Chiropractors["Chiropractors"]
-        DentistsGeneral["Dentists, General"]
-        OralAndMaxillofacial["Oral and Maxillofacial Surgeons"]
-        Orthodontists["Orthodontists"]
+    subgraph CriticalCare["Critical Care Team"]
+        Intensivists["Intensivists"]
+        ICUNurses["ICU Nurses"]
+        Pharmacists["Pharmacists"]
     end
 
-    Current --- SameCategory
+    subgraph Pulmonary["Pulmonary Team"]
+        Pulmonologists["Pulmonologists"]
+        PFTTech["PFT Technicians"]
+        SleepTech["Sleep Technologists"]
+    end
+
+    Current --- CriticalCare
+    Current --- Pulmonary
 ```
 
 ## Industries
 
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+- [Hospitals](/industries/Healthcare/Hospitals/index) - Primary Employment
+- [Home Health](/industries/Healthcare/HomeHealth) - Home Respiratory
+- [Sleep Centers](/industries/Healthcare/SleepCenters) - Sleep Medicine
+- [Rehabilitation](/industries/Healthcare/RehabilitationCenters) - Pulmonary Rehab
+- [DME Companies](/industries/Healthcare/MedicalEquipment) - Equipment Services
 
-## Career Progression
+## Departments
 
-```mermaid
-graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
-```
+This occupation typically works in:
+- [Respiratory Therapy](/departments/RespiratoryTherapy)
+- [Intensive Care Unit](/departments/IntensiveCareUnit)
+- [Pulmonary Function Lab](/departments/PulmonaryFunctionLab)
+- [Sleep Medicine Center](/departments/SleepMedicine)
+- [Emergency Department](/departments/EmergencyDepartment)
 
 ---
 

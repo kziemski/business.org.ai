@@ -1,26 +1,32 @@
 ---
 id: FinancialQuantitativeAnalysts
 name: "Financial Quantitative Analysts"
-code: "13-2099.01"
+code: "13-2098.00"
 type: Occupation
+category: Business
 status: complete
+certifications: ["CFA", "FRM", "CQF", "PRM"]
 ---
 
 # Financial Quantitative Analysts
 
-> Develop quantitative techniques to inform securities investing, equities investing, pricing, or valuation of financial instruments. Develop mathematical or statistical models for risk management, asset optimization, pricing, or relative value analysis.
+> Develop quantitative financial products used to inform individuals or financial institutions engaged in saving, lending, investing, borrowing, or managing risk. Investigate methods for financial analysis to create mathematical models used to develop improved analytical tools or advanced financial investment instruments.
 
 ## Overview
 
-Financial Quantitative Analysts is a specialized variant within the Business and Financial Operations category. Develop quantitative techniques to inform securities investing, equities investing, pricing, or valuation of financial instruments. 
+Financial Quantitative Analysts, commonly known as "quants," develop the mathematical models and computational tools that drive modern financial markets. They create pricing models for derivatives, design algorithmic trading strategies, build risk measurement frameworks, and develop portfolio optimization techniques. Their work sits at the intersection of mathematics, statistics, computer science, and finance, requiring both deep theoretical knowledge and practical implementation skills.
+
+These professionals are employed by investment banks, hedge funds, asset managers, insurance companies, and financial technology firms. Their models underpin trillions of dollars in daily financial transactions, from options pricing and credit risk assessment to high-frequency trading and portfolio construction. The role demands proficiency in stochastic calculus, probability theory, numerical methods, and programming, combined with an understanding of financial markets and instruments.
+
+The field continues to evolve rapidly with advances in machine learning, alternative data analytics, natural language processing, and distributed computing. Quants are increasingly applying deep learning to market prediction, reinforcement learning to portfolio management, and graph neural networks to systemic risk analysis. The growing importance of ESG quantification, climate risk modeling, and cryptocurrency derivatives has opened new frontiers for quantitative finance.
 
 ## Classification Hierarchy
 
 ```mermaid
 graph TD
-    Cat13["13 - Business and Financial Operations"] --> Group132099["13-2099 Financial Specialists, All Other"]
-    Group132099 --> Base["13-2099.00 Financial Specialists, All Other"]
-    Group132099 --> Current["13-2099.01 Financial Quantitative Analysts"]
+    SOC["SOC Major Groups"] --> Cat13["13 - Business and Financial Operations"]
+    Cat13 --> G132098["13-2098 Financial and Investment Analysts, All Other"]
+    G132098 --> Current["13-2098.00 Financial Quantitative Analysts"]
     style Current fill:#e1f5fe
 ```
 
@@ -28,118 +34,182 @@ graph TD
 
 | Metric | Value |
 |--------|-------|
-| SOC Code | 13-2099.01 |
+| SOC Code | 13-2098.00 |
+| Job Zone | 5 (Extensive Preparation) |
 | Category | [Business and Financial Operations](/occupations/Business/index) |
-| Task Count | 83 |
+| Median Salary | $108,790 |
+| Employment | ~42,000 |
+| Projected Growth | 9% (Faster than average) |
+| Task Count | 45 |
 | Source | O*NET |
 
 ## Core Tasks
 
 ```mermaid
 mindmap
-    root(("FinancialQuantitativeAnalysts"))
-        Apply
-            Mathematical Techniques
-            Statistical Techniques
-            Independent Models
-            Tools
-        Research
-            Analytical Tools
-            New Financial Products
-            Analytics
+    root(("Quantitative Analysts"))
+        Model
+            Derivatives Pricing
+            Risk Measurement
+            Portfolio Optimization
+            Credit Risk
         Develop
+            Trading Algorithms
             Analytical Tools
-            Core Analytical Capabilities
-            Model Libraries
-            Using Advanced Statistical
-            Quantitative
-        Interpret
-            Results
-        Define
-            Model Specifications Collection Methods
-            Data Collection Methods
-        Recommend
-            Model Specifications Collection Methods
-            Data Collection Methods
-        Produce
-            Written Summary Reports
-        Maintain
-            Financial Analytic Models
+            Backtesting Frameworks
+        Research
+            Mathematical Methods
+            Statistical Techniques
+            Machine Learning
+        Implement
+            Production Models
+            Real-Time Systems
+            Data Pipelines
+        Validate
+            Model Accuracy
+            Risk Parameters
+            Stress Tests
+        Analyze
+            Market Data
+            Alternative Data
+            Historical Patterns
 ```
 
-### apply.MathematicalTechniques
+### model.FinancialInstruments
 
-Financial Quantitative Analysts apply mathematical techniques as part of their core responsibilities.
-
-**Actions:**
-- `apply.MathematicalTechniques.to.address.PracticalIssuesInFinance`
-- `apply.MathematicalTechniques.to.DerivativeValuation`
-- `apply.MathematicalTechniques.to.SecuritiesTrading`
-- `apply.MathematicalTechniques.to.Riskmanagement`
-
-### research.AnalyticalTools
-
-Financial Quantitative Analysts research analytical tools as part of their core responsibilities.
+Develop mathematical models for pricing, hedging, and risk management of financial instruments.
 
 **Actions:**
-- `research.AnalyticalTools.to.address.Issues`
-- `research.AnalyticalTools.to.PortfolioConstruction`
-- `research.AnalyticalTools.to.Optimization`
-- `research.AnalyticalTools.to.PerformanceMeasurement`
+- `model.DerivativesPricing.using.StochasticCalculus` - Price options and structured products
+- `model.RiskMeasurement.using.VaRAndCVaR` - Quantify portfolio risk
+- `model.CreditRisk.using.DefaultProbabilities` - Assess credit exposure
+- `model.PortfolioOptimization.using.MeanVarianceFrameworks` - Construct optimal portfolios
 
-### develop.AnalyticalTools
+### develop.TradingAlgorithms
 
-Financial Quantitative Analysts develop analytical tools as part of their core responsibilities.
+Design and implement algorithmic trading strategies and execution systems.
 
 **Actions:**
-- `develop.AnalyticalTools.to.address.Issues`
-- `develop.AnalyticalTools.to.PortfolioConstruction`
-- `develop.AnalyticalTools.to.Optimization`
-- `develop.AnalyticalTools.to.PerformanceMeasurement`
+- `develop.TradingAlgorithms.for.MarketMaking` - Build automated trading
+- `develop.BacktestingFrameworks.to.validate.Strategies` - Test historical performance
+- `develop.ExecutionAlgorithms.to.minimize.MarketImpact` - Optimize trade execution
+- `develop.SignalGeneration.from.AlternativeData` - Extract alpha signals
+
+### research.QuantitativeMethods
+
+Investigate and implement new mathematical and computational methods for financial analysis.
+
+**Actions:**
+- `research.MachineLearningMethods.for.FinancialPrediction` - Apply ML to markets
+- `research.StatisticalTechniques.for.TimeSeriesAnalysis` - Model temporal patterns
+- `research.NumericalMethods.for.ModelCalibration` - Improve model accuracy
+- `validate.ModelAccuracy.through.StressTesting` - Verify model robustness
 
 ## Skills & Competencies
 
 ### Technical Skills
-- **Financial Analysis** - Advanced
-- **Data Analysis** - Advanced
-- **Regulatory Compliance** - Advanced
+- **Stochastic Calculus & Probability Theory** - Expert
+- **Python / C++ / R Programming** - Expert
+- **Machine Learning & Deep Learning** - Advanced
+- **Financial Mathematics** - Expert
+- **Statistical Modeling** - Expert
+- **Derivatives Pricing Theory** - Expert
+- **High-Performance Computing** - Advanced
+- **SQL & Data Engineering** - Advanced
 
 ### Soft Skills
-- **Communication** - Essential
-- **Problem Solving** - Essential
-- **Critical Thinking** - Important
-- **Teamwork** - Important
-- **Adaptability** - Important
+- **Analytical Thinking** - Critical
+- **Problem Solving** - Critical
+- **Attention to Detail** - Essential
+- **Communication (Technical/Non-Technical)** - Essential
+- **Intellectual Curiosity** - Important
+- **Collaboration** - Important
 
-## Related Occupations
+## Education & Certifications
 
-```mermaid
-graph LR
-    Current["FinancialQuantitativeAnalysts"]
-
-    subgraph SameCategory["Business and Financial Operations"]
-        AgentsAndBusinessMan["Agents and Business Managers of ..."]
-        BuyersAndPurchasingA["Buyers and Purchasing Agents, Fa..."]
-        WholesaleAndRetailBu["Wholesale and Retail Buyers, Exc..."]
-        PurchasingAgentsExce["Purchasing Agents, Except Wholes..."]
-    end
-
-    Current --- SameCategory
-```
-
-## Industries
-
-This occupation is found across multiple industries. See [Industries](/industries) for sector-specific employment data.
+| Requirement | Details |
+|-------------|---------|
+| Typical Education | Master's or PhD in Mathematics, Physics, Computer Science, Financial Engineering, or Statistics |
+| Key Certifications | CQF (Certificate in Quantitative Finance), FRM (Financial Risk Manager) |
+| Additional Certs | CFA, PRM (Professional Risk Manager) |
+| Programming | Python, C++, R, MATLAB, Julia required |
+| Academic Research | Published research preferred for top-tier positions |
+| Work Experience | 2-5 years; PhD often substitutes for experience |
 
 ## Career Progression
 
 ```mermaid
 graph BT
-    Entry["Entry Level"] --> Mid["Mid-Level"]
-    Mid --> Senior["Senior Level"]
-    Senior --> Executive["Executive / Director"]
+    Entry["Junior Quant / Quant Researcher"] --> Mid["Quantitative Analyst / Quant Developer"]
+    Mid --> Senior["Senior Quant / VP Quant Strategies"]
+    Senior --> Director["Director of Quant Research / Head of Quant Trading"]
+    Director --> Executive["CTO / CIO / Head of Systematic Strategies"]
+
+    Alt1["Data Scientist"] --> Mid
+    Alt2["Academic Researcher"] --> Mid
+
+    subgraph Tracks["Career Tracks"]
+        Pricing["Derivatives Pricing"]
+        Trading["Quantitative Trading"]
+        Risk["Quantitative Risk"]
+        Research["Quant Research"]
+    end
 ```
+
+## Industry Variations
+
+| Industry | Focus | Typical Tasks |
+|----------|-------|---------------|
+| **Investment Banks** | Derivatives pricing | Exotic options, structured products, XVA |
+| **Hedge Funds** | Alpha generation | Signal research, portfolio construction, execution |
+| **Asset Management** | Portfolio optimization | Factor models, smart beta, ESG quantification |
+| **Insurance** | Actuarial/risk models | Catastrophe modeling, reserve estimation |
+| **Fintech** | Product innovation | Robo-advisory, credit scoring, crypto derivatives |
+| **Risk Management** | Regulatory compliance | VaR, stress testing, FRTB, model validation |
+
+## Technology & Tools
+
+| Category | Tools |
+|----------|-------|
+| **Programming** | Python, C++, R, Julia, MATLAB |
+| **ML Frameworks** | TensorFlow, PyTorch, scikit-learn, XGBoost |
+| **Data** | Bloomberg, Refinitiv, Quandl, Alternative data APIs |
+| **Computing** | AWS, GCP, GPU clusters, Spark |
+| **Databases** | SQL, kdb+/q, MongoDB, Arctic |
+| **Version Control** | Git, GitHub, CI/CD pipelines |
+| **Visualization** | Matplotlib, Plotly, Dash, Jupyter |
+
+## Related Occupations
+
+```mermaid
+graph LR
+    QA["Quantitative Analysts"]
+
+    subgraph SameCategory["Financial Specialists"]
+        FA["Financial Analysts"]
+        FRS["Financial Risk Specialists"]
+        ACT["Actuaries"]
+    end
+
+    subgraph CrossFunctional["Cross-Functional"]
+        DS["Data Scientists"]
+        SWE["Software Engineers"]
+        STAT["Statisticians"]
+    end
+
+    QA --- SameCategory
+    QA --- CrossFunctional
+```
+
+## Departments
+
+This occupation typically works in:
+- [Quantitative Research](/departments/QuantResearch)
+- [Quantitative Trading](/departments/QuantTrading)
+- [Model Risk Management](/departments/ModelRisk)
+- [Derivatives](/departments/Derivatives)
+- [Technology](/departments/Technology)
 
 ---
 
-*Source: O*NET 13-2099.01 - ONETOccupation*
+*Source: O*NET 13-2098.00 - ONETOccupation*
