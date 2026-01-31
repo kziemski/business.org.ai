@@ -1,19 +1,35 @@
 ---
 id: PouredConcreteFoundation
-name: "Poured Concrete Foundation"
-code: "23811"
+name: "Poured Concrete Foundation and Structure Contractors"
+code: "238110"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Poured Concrete Foundation
+# Poured Concrete Foundation and Structure Contractors
 
-> See industry description for 238110.
+> This industry comprises establishments primarily engaged in pouring and finishing concrete foundations, retaining walls, and other concrete structures, including slabs, footings, and flatwork.
 
 ## Overview
 
-Poured Concrete Foundation represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in poured concrete foundation.
+Poured Concrete Foundation and Structure Contractors (NAICS 238110) encompasses establishments that construct foundations, structural concrete, and flatwork using cast-in-place concrete. This includes residential foundations, commercial footings, slabs on grade, elevated slabs, retaining walls, and decorative concrete work.
+
+Concrete foundation work is essential to virtually all construction, providing the structural base upon which buildings are constructed. The industry requires expertise in formwork, reinforcement placement, concrete placement, and finishing. Work is highly weather-dependent in cold climates, creating seasonal patterns in northern regions.
+
+## Market Context
+
+The U.S. poured concrete contractor market represents approximately $70 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Commercial Foundations | $25 billion | Office, retail, industrial construction |
+| Residential Foundations | $20 billion | Single-family, multi-family housing |
+| Flatwork/Slabs | $12 billion | Warehouse, parking, driveways |
+| Structural Concrete | $8 billion | Multi-story buildings, parking garages |
+| Specialty Concrete | $5 billion | Decorative, stamped, polished |
+
+The market is driven by construction activity, infrastructure needs, and the continued demand for durable, fire-resistant concrete structures.
 
 ## Industry Hierarchy
 
@@ -21,84 +37,128 @@ Poured Concrete Foundation represents an important category within the Construct
 graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
-    N238 --> N2381["2381: Building Exterior Contractors"]
-    N2381 --> N23811["23811: Poured Concrete Foundation"]
-    style N23811 fill:#f96,stroke:#333,stroke-width:2px
+    N238 --> N2381["2381: Foundation/Exterior Contractors"]
+    N2381 --> N238110["238110: Poured Concrete"]
+    style N238110 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23811 |
-| Level | Industry |
-| Parent | [Building Exterior Contractors](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 238110 |
+| Level | National Industry |
+| Parent | [Building Exterior Contractors](./) |
+| U.S. Establishments | ~25,000 |
+| Annual Revenue | ~$70 billion |
+| Employment | ~350,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Cement Masons](/occupations/Construction/CementMasons) - Place and finish concrete
+- [Concrete Finishers](/occupations/Construction/ConcreteFinishers) - Apply surface finishes
+- [Form Carpenters](/occupations/Construction/FormCarpenters) - Build concrete forms
+- [Reinforcing Iron Workers](/occupations/Construction/ReinforcingIronWorkers) - Install rebar
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Assist concrete crews
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee concrete projects
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Planning["Planning"]
+        P1["Takeoff/Estimating"]
+        P2["Shop Drawings"]
+        P3["Material Ordering"]
+        P4["Crew Planning"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Preparation["Preparation"]
+        E1["Excavation Support"]
+        E2["Formwork"]
+        E3["Reinforcement"]
+        E4["Pre-Pour Inspection"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Placement["Placement"]
+        C1["Concrete Delivery"]
+        C2["Placement"]
+        C3["Finishing"]
+        C4["Curing"]
+    end
+
+    P1 --> P2 --> P3 --> P4
+    P4 --> E1 --> E2 --> E3 --> E4
+    E4 --> C1 --> C2 --> C3 --> C4
 ```
+
+### Estimating and Planning
+
+Accurate planning ensures profitable execution.
+
+**Key Activities:**
+- Perform concrete quantity takeoffs
+- Calculate formwork requirements
+- Estimate labor and equipment needs
+- Plan concrete placement sequence
+- Coordinate with ready-mix suppliers
+- Review structural drawings and specifications
+
+### Formwork and Reinforcement
+
+Proper preparation ensures quality concrete.
+
+**Key Activities:**
+- Excavate and prepare subgrade
+- Install formwork to design dimensions
+- Place reinforcing steel per drawings
+- Install embeds and sleeves
+- Verify all elements before pour
+- Complete pre-pour inspection
+
+### Concrete Placement and Finishing
+
+Quality placement creates durable structures.
+
+**Key Activities:**
+- Coordinate concrete delivery schedule
+- Place concrete in forms
+- Consolidate with vibrators
+- Screed and level surfaces
+- Apply finish as specified
+- Implement proper curing procedures
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Ready-Mix Concrete"]
+        I2["Rebar"]
+        I3["Formwork"]
+        I4["Equipment"]
+        I5["Skilled Workers"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Forming"]
+        A2["Reinforcement"]
+        A3["Placement"]
+        A4["Finishing"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Foundations"]
+        O2["Slabs"]
+        O3["Structural Concrete"]
+        O4["Flatwork"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Home Builders"]
         C3["Developers"]
-        C4["Businesses"]
+        C4["Property Owners"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -106,22 +166,101 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Building Codes
+- **ACI 318** - Building Code Requirements for Structural Concrete
+- **International Building Code (IBC)** - Structural requirements
+- **International Residential Code (IRC)** - Residential foundation standards
+- **Local Building Codes** - Jurisdiction-specific requirements
+
+### Material Standards
+- **ASTM C94** - Ready-mixed concrete specifications
+- **ASTM A615** - Deformed reinforcing steel
+- **ACI 301** - Specifications for structural concrete
+- **ACI 117** - Concrete tolerances
+
+### Safety Standards
+- **OSHA Excavation Standards** - Trench and excavation safety
+- **OSHA Fall Protection** - Working at heights
+- **Concrete Truck Safety** - Safe delivery procedures
+- **Silica Exposure Rule** - Respirable silica limits
+
+### Quality Standards
+- **Testing Requirements** - Slump, strength, air content
+- **Placement Temperatures** - Cold and hot weather concreting
+- **Curing Requirements** - Moisture retention procedures
+- **Surface Tolerances** - Flatness and levelness requirements
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Concrete Technology
+- **Self-Consolidating Concrete** - Flowable, self-leveling mixes
+- **High-Performance Concrete** - Enhanced strength and durability
+- **Fiber-Reinforced Concrete** - Secondary reinforcement
+- **Rapid-Setting Concrete** - Accelerated strength gain
 
-## Industry Outlook
+### Formwork Systems
+- **Aluminum Forms** - Lightweight, reusable systems
+- **Insulated Concrete Forms (ICF)** - Stay-in-place insulating forms
+- **Modular Formwork** - Gang forms for efficiency
+- **Self-Climbing Forms** - High-rise construction
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Finishing Technology
+- **Power Trowels** - Mechanized finishing
+- **Laser Screeds** - Precision flatness
+- **Polished Concrete** - Decorative floor systems
+- **Stamped Concrete** - Decorative patterning
+
+### Equipment
+- **Concrete Pumps** - Boom and line pumps for placement
+- **GPS Machine Control** - Automated grading equipment
+- **Mobile Batch Plants** - On-site concrete production
+- **Heating Systems** - Cold weather concreting
+
+## Project Types
+
+### Foundation Work
+- Residential foundations
+- Commercial footings and walls
+- Deep foundations and caissons
+- Retaining walls
+- Basement construction
+
+### Slab Construction
+- Slabs on grade
+- Elevated slabs
+- Post-tensioned slabs
+- Industrial floors
+- Parking structures
+
+### Structural Concrete
+- Concrete frame buildings
+- Tilt-up construction
+- Precast integration
+- Bridge and infrastructure
+- Tanks and containment
+
+### Decorative Concrete
+- Stamped patios and driveways
+- Exposed aggregate
+- Polished concrete floors
+- Colored concrete
+- Architectural finishes
+
+## Industry Trends and Outlook
+
+Key trends shaping poured concrete contractors:
+
+- **Labor Shortage** - Critical need for skilled concrete workers
+- **Prefabrication** - Precast and tilt-up growth
+- **Technology Adoption** - GPS, laser screeds, automation
+- **Sustainability** - Low-carbon cement, recycled aggregates
+- **High-Performance Mixes** - Self-consolidating, fiber-reinforced
+- **Formwork Innovation** - Aluminum, modular, reusable systems
+- **Quality Focus** - Third-party inspection and testing
+- **Weather Challenges** - Climate adaptation strategies
+
+The outlook is tied to construction activity, with commercial and residential construction driving demand. The industry faces workforce challenges, particularly for skilled cement masons and form carpenters, driving interest in prefabrication and automation.
 
 ---
 
-*Source: NAICS 23811 - Poured Concrete Foundation*
+*Source: NAICS 238110 - Poured Concrete Foundation and Structure Contractors*

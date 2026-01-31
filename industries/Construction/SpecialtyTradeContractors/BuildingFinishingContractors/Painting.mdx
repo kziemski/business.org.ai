@@ -1,19 +1,35 @@
 ---
-id: Painting
-name: "Painting"
-code: "23832"
+id: PaintingContractors
+name: "Painting and Wall Covering Contractors"
+code: "238320"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Painting
+# Painting and Wall Covering Contractors
 
-> See industry description for 238320.
+> This industry comprises establishments primarily engaged in interior and exterior painting, wall covering installation, and specialty coating applications for buildings and structures.
 
 ## Overview
 
-Painting represents an important category within the Construction sector (NAICS 23).
+Painting and Wall Covering Contractors (NAICS 238320) encompasses establishments that apply paint, stain, varnish, lacquer, and other coatings to interior and exterior building surfaces, as well as install wallpaper and other wall coverings. The industry serves commercial, industrial, and residential markets with both new construction and maintenance/repaint work.
+
+Painting is one of the most visible aspects of construction quality and significantly impacts building aesthetics and protection. The industry includes general painting contractors, specialty industrial coating applicators, decorative painters, and wallcovering installers. Proper surface preparation is critical to coating performance and longevity.
+
+## Market Context
+
+The U.S. painting and wall covering contractor market represents approximately $45 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Commercial Interior/Exterior | $18 billion | New construction, tenant improvements |
+| Residential Repaint | $12 billion | Home maintenance, renovations |
+| Residential New Construction | $8 billion | Single-family, multi-family housing |
+| Industrial/Specialty Coatings | $5 billion | Protective coatings, tanks, structures |
+| Wall Coverings | $2 billion | Commercial, hospitality, high-end residential |
+
+The market is driven by construction activity, property maintenance cycles, and the hospitality and commercial sectors that require periodic refreshing.
 
 ## Industry Hierarchy
 
@@ -22,82 +38,127 @@ graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
     N238 --> N2383["2383: Building Finishing Contractors"]
-    N2383 --> N23832["23832: Painting"]
-    style N23832 fill:#f96,stroke:#333,stroke-width:2px
+    N2383 --> N238320["238320: Painting/Wallcovering"]
+    style N238320 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23832 |
-| Level | Industry |
-| Parent | [Building Finishing Contractors](../) |
-| Child Industries | 0 |
+| NAICS Code | 238320 |
+| Level | National Industry |
+| Parent | [Building Finishing Contractors](./) |
+| U.S. Establishments | ~45,000 |
+| Annual Revenue | ~$45 billion |
+| Employment | ~300,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Painters](/occupations/Construction/Painters) - Apply paint and coatings
+- [Paperhangers](/occupations/Construction/Paperhangers) - Install wallcoverings
+- [Painting Helpers](/occupations/Construction/PaintingHelpers) - Assist painters with preparation
+- [Industrial Painters](/occupations/Production/IndustrialPainters) - Apply specialty coatings
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Support painting crews
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee painting projects
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Estimating["Estimating"]
+        E1["Site Visit"]
+        E2["Specifications Review"]
+        E3["Material Selection"]
+        E4["Proposal"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Preparation["Preparation"]
+        P1["Protection"]
+        P2["Surface Prep"]
+        P3["Repairs"]
+        P4["Priming"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Application["Application"]
+        A1["Coating Application"]
+        A2["Multiple Coats"]
+        A3["Detail Work"]
+        A4["Final Inspection"]
+    end
+
+    E1 --> E2 --> E3 --> E4
+    E4 --> P1 --> P2 --> P3 --> P4
+    P4 --> A1 --> A2 --> A3 --> A4
 ```
+
+### Estimating and Planning
+
+Accurate estimating ensures profitable projects.
+
+**Key Activities:**
+- Conduct site visit and condition assessment
+- Review specifications and color selections
+- Calculate square footage and material needs
+- Determine production rates and labor hours
+- Select appropriate products and application methods
+- Prepare detailed proposals
+
+### Surface Preparation
+
+Proper preparation is essential for coating adhesion and longevity.
+
+**Key Activities:**
+- Protect floors, furniture, and adjacent surfaces
+- Clean and degrease surfaces
+- Remove loose paint, scale, and debris
+- Repair cracks, holes, and surface defects
+- Sand and smooth surfaces
+- Apply appropriate primers
+
+### Coating Application
+
+Skilled application achieves quality finishes.
+
+**Key Activities:**
+- Apply coatings per manufacturer specifications
+- Use appropriate tools (brush, roll, spray)
+- Achieve specified film thickness
+- Complete multiple coats as required
+- Execute detail work and cutting-in
+- Perform quality inspection and touch-up
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Paints/Coatings"]
+        I2["Primers/Sealers"]
+        I3["Wallcoverings"]
+        I4["Equipment"]
+        I5["Skilled Painters"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Estimating"]
+        A2["Preparation"]
+        A3["Application"]
+        A4["Quality Control"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Interior Painting"]
+        O2["Exterior Painting"]
+        O3["Wallcoverings"]
+        O4["Specialty Coatings"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Building Owners"]
+        C3["Property Managers"]
+        C4["Homeowners"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -105,22 +166,101 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Environmental Regulations
+- **EPA Lead RRP Rule** - Renovation, Repair, and Painting Rule
+- **VOC Regulations** - Volatile organic compound limits
+- **SCAQMD Standards** - Strictest VOC limits (California)
+- **OSHA Lead Standards** - Lead exposure protection
+
+### Safety Standards
+- **OSHA Fall Protection** - Elevated work requirements
+- **OSHA Scaffold Standards** - Working platforms
+- **Respiratory Protection** - Spray painting and coatings
+- **Hazard Communication** - Material safety data sheets
+
+### Industry Standards
+- **PDCA Standards** - Painting and Decorating Contractors Association
+- **SSPC Standards** - Steel structures painting
+- **MPI Standards** - Master Painters Institute specifications
+- **ASTM Standards** - Material and performance specifications
+
+### Quality Standards
+- **Surface Preparation Levels** - SP-1 through SP-10 for steel
+- **Film Thickness** - Dry and wet mil specifications
+- **Finish Levels** - Gloss, sheen, and appearance
+- **Color Matching** - Delta E color tolerance
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Coating Technology
+- **Low-VOC Paints** - Environmentally compliant products
+- **Self-Priming Paints** - Combined primer and topcoat
+- **Antimicrobial Coatings** - Healthcare and food service
+- **Long-Life Exterior Coatings** - Extended durability products
 
-## Industry Outlook
+### Application Technology
+- **Airless Sprayers** - High-volume application
+- **HVLP Sprayers** - Reduced overspray
+- **Electrostatic Spray** - Metal and specialty applications
+- **Automated Robotic Spraying** - Large-scale industrial
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Color Technology
+- **Digital Color Matching** - Spectrophotometer analysis
+- **Color Visualization** - Virtual room painting software
+- **Custom Tinting** - Point-of-sale color matching
+- **Color Memory Systems** - Digital color records
+
+### Business Technology
+- **Estimating Software** - Automated takeoff and pricing
+- **Project Management** - Job scheduling and tracking
+- **Mobile Documentation** - Digital punch lists
+- **CRM Systems** - Customer management for repaint
+
+## Project Types
+
+### Commercial Painting
+- Office buildings and tenant spaces
+- Retail and restaurants
+- Hotels and hospitality
+- Healthcare facilities
+- Educational institutions
+
+### Residential Painting
+- Interior repaint
+- Exterior repaint
+- New construction
+- Cabinet refinishing
+- Deck and fence staining
+
+### Industrial Coatings
+- Structural steel
+- Tanks and vessels
+- Bridges and infrastructure
+- Industrial facilities
+- Marine and offshore
+
+### Specialty Work
+- Decorative painting and faux finishes
+- Commercial wallcovering
+- Epoxy floor coatings
+- Fireproofing
+- Graffiti removal and prevention
+
+## Industry Trends and Outlook
+
+Key trends shaping painting and wall covering contractors:
+
+- **Labor Shortage** - Difficulty finding skilled painters
+- **VOC Compliance** - Stricter environmental regulations
+- **Low-VOC Products** - Water-based and zero-VOC growth
+- **Commercial Maintenance** - Recurring contract opportunities
+- **Color Trends** - Shifting preferences and custom colors
+- **Surface Texturing** - Decorative finishes and applications
+- **Technology Adoption** - Estimating and project management
+- **Health Focus** - Antimicrobial and hygienic coatings
+
+The outlook is positive with construction activity and maintenance demand driving growth. The repaint market provides stable recurring revenue. Labor availability and environmental compliance are ongoing challenges.
 
 ---
 
-*Source: NAICS 23832 - Painting*
+*Source: NAICS 238320 - Painting and Wall Covering Contractors*

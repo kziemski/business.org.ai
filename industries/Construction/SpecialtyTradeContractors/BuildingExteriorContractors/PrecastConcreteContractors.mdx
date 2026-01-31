@@ -1,19 +1,35 @@
 ---
 id: PrecastConcreteContractors
-name: "Precast Concrete Contractors"
-code: "23812"
+name: "Structural Steel and Precast Concrete Contractors"
+code: "238120"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Precast Concrete Contractors
+# Structural Steel and Precast Concrete Contractors
 
-> See industry description for 238120.
+> This industry comprises establishments primarily engaged in erecting structural steel and precast concrete elements for buildings and other structures, including steel framing, precast panels, and heavy rigging.
 
 ## Overview
 
-Precast Concrete Contractors represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in precast concrete contractors.
+Structural Steel and Precast Concrete Contractors (NAICS 238120) encompasses establishments that erect structural steel frameworks, precast concrete elements, and other prefabricated structural components. This includes structural steel framing for buildings, precast concrete panels and structural elements, ornamental metal work, and specialized rigging and crane operations.
+
+The industry is essential to commercial, industrial, and institutional construction, providing the primary structural systems for most non-residential buildings. Work requires specialized equipment, skilled ironworkers, and careful coordination of heavy lifting operations. The industry benefits from prefabrication trends as more structural work shifts to factory fabrication with field erection.
+
+## Market Context
+
+The U.S. structural steel and precast contractor market represents approximately $45 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Structural Steel Erection | $25 billion | Commercial, industrial, multi-family |
+| Precast Concrete | $12 billion | Parking structures, tilt-up, architectural |
+| Reinforcing Steel | $5 billion | Cast-in-place concrete structures |
+| Ornamental Iron | $2 billion | Railings, stairs, specialty metal |
+| Heavy Rigging | $1 billion | Equipment setting, specialty lifts |
+
+The market is driven by commercial and industrial construction, infrastructure needs, and the growing adoption of prefabricated construction methods.
 
 ## Industry Hierarchy
 
@@ -21,84 +37,128 @@ Precast Concrete Contractors represents an important category within the Constru
 graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
-    N238 --> N2381["2381: Building Exterior Contractors"]
-    N2381 --> N23812["23812: Precast Concrete Contractors"]
-    style N23812 fill:#f96,stroke:#333,stroke-width:2px
+    N238 --> N2381["2381: Foundation/Exterior Contractors"]
+    N2381 --> N238120["238120: Steel/Precast"]
+    style N238120 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23812 |
-| Level | Industry |
-| Parent | [Building Exterior Contractors](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 238120 |
+| Level | National Industry |
+| Parent | [Building Exterior Contractors](./) |
+| U.S. Establishments | ~8,000 |
+| Annual Revenue | ~$45 billion |
+| Employment | ~150,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Structural Ironworkers](/occupations/Construction/StructuralIronworkers) - Erect structural steel
+- [Reinforcing Ironworkers](/occupations/Construction/ReinforcingIronworkers) - Place reinforcing steel
+- [Crane Operators](/occupations/Construction/CraneOperators) - Operate lifting equipment
+- [Riggers](/occupations/Construction/Riggers) - Prepare and control loads
+- [Welders](/occupations/Production/Welders) - Complete structural welding
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee steel/precast projects
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Detailing["Detailing"]
+        D1["Shop Drawings"]
+        D2["Connection Design"]
+        D3["Erection Drawings"]
+        D4["Approval"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Fabrication["Fabrication"]
+        F1["Material Procurement"]
+        F2["Cutting/Fitting"]
+        F3["Welding"]
+        F4["Coatings"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Erection["Erection"]
+        E1["Anchor Setting"]
+        E2["Steel Erection"]
+        E3["Bolting/Welding"]
+        E4["Plumbing/Leveling"]
+    end
+
+    D1 --> D2 --> D3 --> D4
+    D4 --> F1 --> F2 --> F3 --> F4
+    F4 --> E1 --> E2 --> E3 --> E4
 ```
+
+### Detailing and Engineering
+
+Accurate detailing ensures proper fit and efficient erection.
+
+**Key Activities:**
+- Develop shop drawings from structural documents
+- Design connections per engineer specifications
+- Create erection drawings and sequences
+- Coordinate with other trades for embeds and openings
+- Submit for engineer approval
+- Plan lifting and erection sequence
+
+### Fabrication
+
+Quality fabrication ensures accurate field assembly.
+
+**Key Activities:**
+- Procure steel per project specifications
+- Cut, drill, and fit structural members
+- Complete shop welding
+- Apply primer and protective coatings
+- Mark and organize for shipping
+- Coordinate delivery schedule
+
+### Field Erection
+
+Skilled erection creates safe, stable structures.
+
+**Key Activities:**
+- Set anchor bolts and embeds in concrete
+- Erect columns and beams per sequence
+- Make bolted and welded connections
+- Plumb, level, and align structure
+- Install temporary bracing as required
+- Complete inspections and final adjustments
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Steel/Precast"]
+        I2["Bolts/Fasteners"]
+        I3["Cranes/Equipment"]
+        I4["Welding Supplies"]
+        I5["Skilled Ironworkers"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Detailing"]
+        A2["Fabrication"]
+        A3["Erection"]
+        A4["Inspections"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Steel Frames"]
+        O2["Precast Structures"]
+        O3["Metal Decking"]
+        O4["Specialty Metal"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Developers"]
+        C3["Building Owners"]
+        C4["Industrial Clients"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -106,22 +166,101 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Design Standards
+- **AISC 360** - Specification for Structural Steel Buildings
+- **AISC 341** - Seismic Provisions for Structural Steel
+- **PCI Standards** - Precast concrete design and connections
+- **AWS D1.1** - Structural Welding Code
+
+### Erection Standards
+- **AISC Code of Standard Practice** - Steel erection requirements
+- **OSHA Steel Erection Standards** - 29 CFR 1926 Subpart R
+- **Crane Standards** - ASME B30 and OSHA requirements
+- **Rigging Standards** - Load handling and safety
+
+### Quality Standards
+- **AISC Certification** - Fabricator and erector certification
+- **Weld Quality** - AWS and AISC requirements
+- **Bolt Tensioning** - Turn-of-nut and tension-control methods
+- **Inspection Requirements** - Third-party and special inspections
+
+### Safety Standards
+- **OSHA Fall Protection** - Connector fall protection requirements
+- **OSHA Steel Erection** - Column stability and safety cables
+- **Crane Safety** - Lift planning and critical lifts
+- **Welding Safety** - Fire prevention and protection
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Fabrication Technology
+- **CNC Equipment** - Automated cutting and drilling
+- **Robotic Welding** - Automated weld processes
+- **3D Modeling** - Tekla and similar steel detailing
+- **Automated Material Handling** - Robotic sorting and stacking
 
-## Industry Outlook
+### Erection Technology
+- **Tower Cranes** - High-rise construction
+- **GPS Positioning** - Real-time member location
+- **Automated Surveying** - Robotic total stations
+- **BIM Coordination** - Model-based erection planning
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Connection Technology
+- **Tension-Control Bolts** - Reliable bolt tensioning
+- **Moment Connections** - Seismic-resistant connections
+- **Friction-Grip Bolting** - Slip-critical connections
+- **Advanced Welding** - High-strength, low-hydrogen processes
+
+### Precast Technology
+- **Architectural Precast** - Complex shapes and finishes
+- **Insulated Panels** - Precast with integral insulation
+- **Ultra-High Performance Concrete** - High-strength thin panels
+- **Prefabricated Connections** - Cast-in hardware systems
+
+## Project Types
+
+### Commercial Construction
+- High-rise office buildings
+- Multi-story parking structures
+- Retail and shopping centers
+- Hotels and hospitality
+- Healthcare facilities
+
+### Industrial Construction
+- Manufacturing plants
+- Warehouse and distribution
+- Food processing facilities
+- Energy and power plants
+- Data centers
+
+### Infrastructure
+- Bridges and overpasses
+- Transit stations
+- Sports stadiums
+- Convention centers
+- Airport terminals
+
+### Specialty Work
+- Architectural steel
+- Ornamental metals
+- Heavy industrial equipment
+- Tank and vessel erection
+- Retrofit and renovation
+
+## Industry Trends and Outlook
+
+Key trends shaping structural steel and precast contractors:
+
+- **Prefabrication Growth** - More shop work, less field labor
+- **BIM Integration** - Model-based detailing and coordination
+- **Labor Challenges** - Ironworker shortage in many markets
+- **Steel Pricing** - Volatility in material costs
+- **Modular Construction** - Complete structural modules
+- **Seismic Design** - Advanced connection systems
+- **Sustainability** - Recycled steel and efficient structures
+- **Automation** - Robotic fabrication advances
+
+The outlook is positive with commercial and industrial construction driving demand. The industry benefits from prefabrication trends while facing workforce challenges. Steel's speed of construction and recyclability support continued strong market position.
 
 ---
 
-*Source: NAICS 23812 - Precast Concrete Contractors*
+*Source: NAICS 238120 - Structural Steel and Precast Concrete Contractors*

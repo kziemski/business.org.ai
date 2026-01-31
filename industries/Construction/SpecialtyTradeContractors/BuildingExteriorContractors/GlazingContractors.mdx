@@ -1,19 +1,35 @@
 ---
 id: GlazingContractors
-name: "Glazing Contractors"
-code: "23815"
+name: "Glass and Glazing Contractors"
+code: "238150"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Glazing Contractors
+# Glass and Glazing Contractors
 
-> See industry description for 238150.
+> This industry comprises establishments primarily engaged in installing glass, mirrors, windows, curtain walls, storefronts, and other glass products in buildings.
 
 ## Overview
 
-Glazing Contractors represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in glazing contractors.
+Glass and Glazing Contractors (NAICS 238150) encompasses establishments that install glass and glazing systems in buildings. This includes windows, curtain walls, storefronts, skylights, mirrors, shower enclosures, and specialty glass applications. The industry spans from residential window installation to complex high-rise curtain wall systems.
+
+The glazing industry has grown in importance as buildings increasingly feature expansive glass facades for daylighting, views, and architectural expression. Modern glazing systems must balance transparency with thermal performance, requiring sophisticated engineering and installation expertise. The industry serves both new construction and the significant replacement and retrofit market.
+
+## Market Context
+
+The U.S. glass and glazing contractor market represents approximately $20 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Commercial Curtain Wall | $8 billion | Office, mixed-use, high-rise construction |
+| Storefronts/Entrances | $4 billion | Retail, hospitality, commercial buildings |
+| Residential Windows | $4 billion | Replacement windows, new construction |
+| Specialty Glazing | $2 billion | Skylights, mirrors, fire-rated glass |
+| Industrial/Institutional | $2 billion | Healthcare, education, manufacturing |
+
+The market is driven by commercial construction, energy efficiency mandates, architectural trends favoring transparency, and the residential replacement window market.
 
 ## Industry Hierarchy
 
@@ -21,84 +37,128 @@ Glazing Contractors represents an important category within the Construction sec
 graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
-    N238 --> N2381["2381: Building Exterior Contractors"]
-    N2381 --> N23815["23815: Glazing Contractors"]
-    style N23815 fill:#f96,stroke:#333,stroke-width:2px
+    N238 --> N2381["2381: Foundation/Exterior Contractors"]
+    N2381 --> N238150["238150: Glass/Glazing"]
+    style N238150 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23815 |
-| Level | Industry |
-| Parent | [Building Exterior Contractors](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 238150 |
+| Level | National Industry |
+| Parent | [Building Exterior Contractors](./) |
+| U.S. Establishments | ~8,000 |
+| Annual Revenue | ~$20 billion |
+| Employment | ~75,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Glaziers](/occupations/Construction/Glaziers) - Install glass and window systems
+- [Glazing Helpers](/occupations/Construction/GlazingHelpers) - Assist glaziers with installations
+- [Ironworkers](/occupations/Construction/Ironworkers) - Erect curtain wall structural supports
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee glazing projects
+- [Estimators](/occupations/Business/CostEstimators) - Prepare glazing bids
+- [CAD Technicians](/occupations/Architecture/CADTechnicians) - Prepare shop drawings
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Engineering["Engineering"]
+        E1["Shop Drawings"]
+        E2["Structural Analysis"]
+        E3["Thermal Analysis"]
+        E4["Approval"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Fabrication["Fabrication"]
+        F1["Frame Fabrication"]
+        F2["Glass Cutting"]
+        F3["Unit Assembly"]
+        F4["Quality Control"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Installation["Installation"]
+        I1["Anchoring"]
+        I2["Frame Setting"]
+        I3["Glazing"]
+        I4["Sealing"]
+    end
+
+    E1 --> E2 --> E3 --> E4
+    E4 --> F1 --> F2 --> F3 --> F4
+    F4 --> I1 --> I2 --> I3 --> I4
 ```
+
+### Engineering and Shop Drawings
+
+Proper engineering ensures performance and fit.
+
+**Key Activities:**
+- Develop shop drawings from architectural documents
+- Perform structural analysis for wind and seismic loads
+- Calculate thermal performance and condensation resistance
+- Coordinate with other building systems
+- Submit for architect/engineer approval
+- Finalize fabrication drawings
+
+### Fabrication and Assembly
+
+Quality fabrication ensures proper fit and performance.
+
+**Key Activities:**
+- Fabricate aluminum or steel frames
+- Cut and process glass to specifications
+- Assemble insulated glass units
+- Apply coatings and treatments
+- Install hardware and operators
+- Package for shipping and protection
+
+### Field Installation
+
+Skilled installation ensures weathertight performance.
+
+**Key Activities:**
+- Install anchors and structural attachments
+- Set and level frames and mullions
+- Install glass and gaskets
+- Apply sealants and weatherstripping
+- Test for water infiltration
+- Complete punch list and final adjustments
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Glass"]
+        I2["Aluminum/Steel"]
+        I3["Sealants"]
+        I4["Hardware"]
+        I5["Skilled Glaziers"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Engineering"]
+        A2["Fabrication"]
+        A3["Installation"]
+        A4["Service"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Curtain Walls"]
+        O2["Storefronts"]
+        O3["Windows"]
+        O4["Specialty Glass"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Building Owners"]
+        C3["Architects"]
+        C4["Developers"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -106,22 +166,101 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Building Codes
+- **International Building Code (IBC)** - Fenestration requirements
+- **ASCE 7** - Wind load and seismic requirements
+- **International Energy Conservation Code (IECC)** - Thermal performance
+- **NFPA 80** - Fire-rated glazing requirements
+
+### Safety Standards
+- **OSHA Fall Protection** - Working at heights
+- **Glass Handling Safety** - Proper lifting and handling
+- **Crane and Rigging** - Large glass panel installation
+- **Power Tool Safety** - Cutting and drilling operations
+
+### Industry Standards
+- **AAMA Standards** - Window and curtain wall performance
+- **ASTM Standards** - Glass and glazing specifications
+- **NFRC** - National Fenestration Rating Council certifications
+- **IGCC** - Insulated Glass Certification Council
+
+### Performance Standards
+- **Air Infiltration** - Maximum leakage rates
+- **Water Resistance** - Water penetration testing
+- **Structural Performance** - Wind load resistance
+- **Thermal Performance** - U-factor and SHGC requirements
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Glass Technology
+- **Low-E Coatings** - Spectrally selective coatings
+- **Triple Glazing** - High-performance insulated units
+- **Dynamic Glass** - Electrochromic and thermochromic
+- **Vacuum Insulated Glass (VIG)** - Ultra-thin high-performance
 
-## Industry Outlook
+### Framing Systems
+- **Unitized Curtain Wall** - Factory-assembled units
+- **Structural Glazing** - Silicone-attached glass
+- **Point-Supported Glass** - Spider fittings and cables
+- **Thermal Break Frames** - Improved thermal performance
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Installation Technology
+- **Robotic Setting** - Automated glass handling
+- **3D Scanning** - Field verification and coordination
+- **BIM Integration** - Model-based fabrication
+- **Modular Lifts** - Specialized glazing equipment
+
+### Smart Glass
+- **Electrochromic Glass** - Switchable tinting
+- **PDLC Glass** - Privacy glass
+- **SPD Glass** - Suspended particle devices
+- **Integrated Photovoltaics** - BIPV glass systems
+
+## Project Types
+
+### Commercial Glazing
+- High-rise curtain walls
+- Office building facades
+- Storefronts and entrances
+- Retail and hospitality
+- Healthcare and education
+
+### Residential Glazing
+- Replacement windows
+- New construction windows
+- Patio and sliding doors
+- Skylights and roof windows
+- Shower enclosures
+
+### Specialty Glazing
+- Point-supported systems
+- Cable-net walls
+- Fire-rated assemblies
+- Blast-resistant glazing
+- Hurricane-impact systems
+
+### Interior Glazing
+- Partitions and office fronts
+- Mirrors and decorative glass
+- Railings and balustrades
+- Display cases
+- Glass floors and stairs
+
+## Industry Trends and Outlook
+
+Key trends shaping glass and glazing contractors:
+
+- **Energy Performance** - Stricter thermal requirements
+- **Dynamic Glass** - Electrochromic and smart glass growth
+- **Unitized Systems** - Prefabrication for quality and speed
+- **Larger Glass** - Jumbo-size glass for expansive views
+- **Labor Challenges** - Skilled glazier shortage
+- **BIM Integration** - Digital fabrication and coordination
+- **Safety Glazing** - Impact-resistant and security applications
+- **BIPV Integration** - Building-integrated photovoltaics
+
+The outlook is positive with commercial construction and energy retrofit driving demand. The industry is becoming more specialized as glass systems become more complex and performance requirements increase.
 
 ---
 
-*Source: NAICS 23815 - Glazing Contractors*
+*Source: NAICS 238150 - Glass and Glazing Contractors*

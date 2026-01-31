@@ -1,7 +1,7 @@
 ---
 id: RoofingContractors
 name: "Roofing Contractors"
-code: "23816"
+code: "238160"
 type: Industry
 level: Industry
 status: complete
@@ -9,11 +9,27 @@ status: complete
 
 # Roofing Contractors
 
-> See industry description for 238160.
+> This industry comprises establishments primarily engaged in roofing, including installation, repair, and replacement of roofing materials such as shingles, tile, metal, and single-ply membranes.
 
 ## Overview
 
-Roofing Contractors represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in roofing contractors.
+Roofing Contractors (NAICS 238160) encompasses establishments that install, repair, and replace roof systems on residential, commercial, and industrial buildings. This includes steep-slope roofing (shingles, tile, metal) for residential and light commercial buildings, and low-slope roofing (built-up, modified bitumen, single-ply membranes) for commercial and industrial structures.
+
+The roofing industry is driven by both new construction and the substantial re-roofing market, as roofs have finite lifespans and require periodic replacement. Weather events, particularly hail and wind storms, create significant demand for repair and replacement work. Roofing is one of the most hazardous construction trades due to fall risks and weather exposure.
+
+## Market Context
+
+The U.S. roofing contractor market represents approximately $55 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Residential Re-Roofing | $22 billion | Aging roofs, storm damage, home sales |
+| Commercial Roofing | $15 billion | New construction, re-roofing, maintenance |
+| Residential New Construction | $10 billion | Single-family and multi-family housing |
+| Industrial Roofing | $5 billion | Manufacturing, warehousing, distribution |
+| Specialty/Metal Roofing | $3 billion | Architectural, energy-efficient systems |
+
+The market is driven by storm activity, aging building stock, new construction, and growing demand for energy-efficient and sustainable roofing systems.
 
 ## Industry Hierarchy
 
@@ -21,84 +37,128 @@ Roofing Contractors represents an important category within the Construction sec
 graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
-    N238 --> N2381["2381: Building Exterior Contractors"]
-    N2381 --> N23816["23816: Roofing Contractors"]
-    style N23816 fill:#f96,stroke:#333,stroke-width:2px
+    N238 --> N2381["2381: Foundation/Exterior Contractors"]
+    N2381 --> N238160["238160: Roofing Contractors"]
+    style N238160 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23816 |
-| Level | Industry |
-| Parent | [Building Exterior Contractors](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 238160 |
+| Level | National Industry |
+| Parent | [Building Exterior Contractors](./) |
+| U.S. Establishments | ~35,000 |
+| Annual Revenue | ~$55 billion |
+| Employment | ~175,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Roofers](/occupations/Construction/Roofers) - Install and repair roofing systems
+- [Roofing Helpers](/occupations/Construction/RoofingHelpers) - Assist roofers with materials and cleanup
+- [Sheet Metal Workers](/occupations/Construction/SheetMetalWorkers) - Fabricate and install metal roofing and flashings
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Support roofing crews with material handling
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee roofing projects
+- [Estimators](/occupations/Business/CostEstimators) - Prepare roofing bids and proposals
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Assessment["Assessment"]
+        A1["Roof Inspection"]
+        A2["Damage Evaluation"]
+        A3["Measurement"]
+        A4["Proposal/Bid"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Preparation["Preparation"]
+        P1["Material Ordering"]
+        P2["Crew Scheduling"]
+        P3["Tear-Off"]
+        P4["Deck Repair"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Installation["Installation"]
+        I1["Underlayment"]
+        I2["Roofing Material"]
+        I3["Flashings"]
+        I4["Final Inspection"]
+    end
+
+    A1 --> A2 --> A3 --> A4
+    A4 --> P1 --> P2 --> P3 --> P4
+    P4 --> I1 --> I2 --> I3 --> I4
 ```
+
+### Roof Assessment and Estimating
+
+Accurate assessment is critical for proper scope and profitable bidding.
+
+**Key Activities:**
+- Inspect existing roof condition
+- Document damage for insurance claims
+- Measure roof area and features
+- Identify access and safety requirements
+- Calculate material quantities
+- Prepare proposals and negotiate contracts
+
+### Tear-Off and Preparation
+
+Proper preparation ensures quality installation and long roof life.
+
+**Key Activities:**
+- Set up safety systems and fall protection
+- Remove existing roofing materials
+- Inspect and repair roof deck
+- Address structural issues
+- Install vapor barriers as required
+- Dispose of debris properly
+
+### Roofing Installation
+
+Installation requires skill to ensure weathertight performance.
+
+**Key Activities:**
+- Install underlayment and ice/water shield
+- Apply roofing materials per manufacturer specs
+- Install flashings at penetrations and edges
+- Complete ridge, hip, and valley details
+- Install ventilation components
+- Perform quality inspection and cleanup
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Roofing Materials"]
+        I2["Underlayments"]
+        I3["Flashings/Metals"]
+        I4["Skilled Roofers"]
+        I5["Equipment/Trucks"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Assessment/Estimating"]
+        A2["Tear-Off/Prep"]
+        A3["Installation"]
+        A4["Quality Assurance"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Steep-Slope Roofs"]
+        O2["Low-Slope Roofs"]
+        O3["Metal Roofing"]
+        O4["Specialty Systems"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["Homeowners"]
+        C2["Property Managers"]
+        C3["General Contractors"]
+        C4["Building Owners"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -106,22 +166,94 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Building Codes
+- **International Building Code (IBC)** - Commercial roofing requirements
+- **International Residential Code (IRC)** - Residential roofing standards
+- **ASCE 7** - Wind and snow load requirements
+- **Local Amendments** - Jurisdiction-specific requirements
+
+### Safety Standards
+- **OSHA Fall Protection** - 29 CFR 1926.501-503
+- **OSHA Scaffolding** - Requirements for roof access
+- **Heat Illness Prevention** - Protection for outdoor workers
+- **Ladder Safety** - Proper access requirements
+
+### Industry Standards
+- **NRCA Standards** - Roofing construction best practices
+- **FM Approvals** - Fire and wind resistance ratings
+- **UL Listings** - Fire classification testing
+- **ASTM Standards** - Material specifications
+
+### Licensing and Insurance
+- **Contractor Licensing** - State requirements vary
+- **General Liability Insurance** - Coverage for property damage
+- **Workers Compensation** - Required coverage for employees
+- **Manufacturer Certification** - Warranty eligibility requirements
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Roofing Materials
+- **Cool Roofing** - Reflective materials reducing heat gain
+- **Solar-Ready Roofing** - Integrated solar mounting systems
+- **Impact-Resistant Shingles** - Hail-resistant products
+- **Self-Adhered Membranes** - Torch-free installation
 
-## Industry Outlook
+### Installation Technology
+- **Drone Inspection** - Aerial roof assessment and measurement
+- **Satellite Measurement** - Remote area calculation
+- **Roofing Software** - Estimating and project management
+- **Equipment Advances** - Powered material hoists and conveyors
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Safety Equipment
+- **Fall Protection Systems** - Horizontal lifelines and anchors
+- **Personal Fall Limiters** - Self-retracting devices
+- **Warning Line Systems** - Low-slope roof safety zones
+- **Guardrail Systems** - Perimeter protection
+
+### Sustainable Roofing
+- **Green Roofs** - Vegetated roofing systems
+- **Solar Integration** - BIPV roofing products
+- **Recycled Materials** - Sustainable roofing products
+- **Energy Star Rated** - Reflective and insulated systems
+
+## Project Types
+
+### Residential Roofing
+- Shingle replacement and repair
+- Tile and slate roofing
+- Metal roofing systems
+- Storm damage restoration
+- Gutter and flashing work
+
+### Commercial Roofing
+- Single-ply membrane systems (TPO, EPDM, PVC)
+- Modified bitumen roofing
+- Built-up roofing (BUR)
+- Metal roof systems
+- Roof maintenance programs
+
+### Specialty Roofing
+- Green/vegetated roofs
+- Solar-integrated systems
+- Historical restoration
+- Steep-slope commercial
+- Industrial process areas
+
+## Industry Trends and Outlook
+
+Key trends shaping roofing contractors:
+
+- **Storm Activity** - Increasing severe weather driving demand
+- **Cool Roofing** - Energy efficiency requirements and incentives
+- **Solar Integration** - Rooftop solar and BIPV systems
+- **Labor Shortage** - Difficulty attracting workers to demanding trade
+- **Safety Focus** - Emphasis on fall protection and training
+- **Technology Adoption** - Drones, satellite measurement, software
+- **Material Innovation** - Longer-lasting, more durable products
+- **Insurance Dynamics** - Changing claims processes and requirements
+
+The outlook is positive with aging building stock, storm activity, and new construction driving demand. The industry faces persistent workforce challenges, with roofing's physical demands and seasonal nature making recruitment difficult.
 
 ---
 
-*Source: NAICS 23816 - Roofing Contractors*
+*Source: NAICS 238160 - Roofing Contractors*

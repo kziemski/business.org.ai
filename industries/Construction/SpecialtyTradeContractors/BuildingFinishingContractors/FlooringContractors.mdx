@@ -1,7 +1,7 @@
 ---
 id: FlooringContractors
 name: "Flooring Contractors"
-code: "23833"
+code: "238330"
 type: Industry
 level: Industry
 status: complete
@@ -9,11 +9,27 @@ status: complete
 
 # Flooring Contractors
 
-> See industry description for 238330.
+> This industry comprises establishments primarily engaged in installing and finishing flooring materials, including carpet, resilient flooring, wood flooring, and specialty floor coverings.
 
 ## Overview
 
-Flooring Contractors represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in flooring contractors.
+Flooring Contractors (NAICS 238330) encompasses establishments that install carpet, resilient flooring (vinyl, linoleum, rubber), wood flooring (hardwood, laminate, engineered), and specialty floor coverings. This includes both commercial and residential installations, as well as floor refinishing and resurfacing services.
+
+The flooring industry serves as the final finish for interior floors, with material selection driven by durability requirements, aesthetics, maintenance considerations, and budget. The industry has evolved significantly with the growth of luxury vinyl tile (LVT) and engineered products that offer improved performance and easier installation.
+
+## Market Context
+
+The U.S. flooring contractor market represents approximately $25 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Commercial Flooring | $10 billion | Office, retail, healthcare, hospitality |
+| Residential Carpet | $6 billion | New homes, renovation, replacement |
+| Residential Hard Surface | $5 billion | LVT, hardwood, laminate installations |
+| Industrial Flooring | $2 billion | Warehouse, manufacturing, food processing |
+| Specialty Flooring | $2 billion | Sports, healthcare, clean room |
+
+The market is driven by construction activity, renovation projects, and the ongoing replacement of worn flooring in existing buildings.
 
 ## Industry Hierarchy
 
@@ -22,83 +38,127 @@ graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
     N238 --> N2383["2383: Building Finishing Contractors"]
-    N2383 --> N23833["23833: Flooring Contractors"]
-    style N23833 fill:#f96,stroke:#333,stroke-width:2px
+    N2383 --> N238330["238330: Flooring"]
+    style N238330 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23833 |
-| Level | Industry |
-| Parent | [Building Finishing Contractors](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 238330 |
+| Level | National Industry |
+| Parent | [Building Finishing Contractors](./) |
+| U.S. Establishments | ~18,000 |
+| Annual Revenue | ~$25 billion |
+| Employment | ~100,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Floor Layers](/occupations/Construction/FloorLayers) - Install carpet and resilient flooring
+- [Floor Sanders](/occupations/Construction/FloorSanders) - Sand and finish wood floors
+- [Carpet Installers](/occupations/Construction/CarpetInstallers) - Install carpet and padding
+- [Wood Floor Installers](/occupations/Construction/WoodFloorInstallers) - Install hardwood flooring
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Support flooring crews
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee flooring projects
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Measurement["Measurement"]
+        M1["Site Survey"]
+        M2["Takeoff"]
+        M3["Material Selection"]
+        M4["Proposal"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Preparation["Preparation"]
+        P1["Substrate Prep"]
+        P2["Moisture Testing"]
+        P3["Leveling/Patching"]
+        P4["Acclimation"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Installation["Installation"]
+        I1["Layout"]
+        I2["Installation"]
+        I3["Seaming/Transitions"]
+        I4["Final Inspection"]
+    end
+
+    M1 --> M2 --> M3 --> M4
+    M4 --> P1 --> P2 --> P3 --> P4
+    P4 --> I1 --> I2 --> I3 --> I4
 ```
+
+### Measurement and Estimating
+
+Accurate measurement ensures proper material quantities.
+
+**Key Activities:**
+- Conduct site survey and measurements
+- Identify substrate conditions and challenges
+- Perform takeoff with seam and waste calculations
+- Recommend appropriate flooring materials
+- Calculate installation labor requirements
+- Prepare detailed proposals
+
+### Substrate Preparation
+
+Proper preparation ensures flooring performance.
+
+**Key Activities:**
+- Remove existing flooring materials
+- Test concrete moisture levels
+- Apply moisture barriers as needed
+- Patch and level substrates
+- Acclimate wood flooring materials
+- Verify conditions meet manufacturer requirements
+
+### Flooring Installation
+
+Skilled installation creates quality, lasting floors.
+
+**Key Activities:**
+- Lay out flooring pattern and seam locations
+- Install underlayment and padding
+- Apply adhesives per manufacturer specs
+- Install flooring materials
+- Complete seaming and transitions
+- Perform final inspection and cleanup
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Flooring Materials"]
+        I2["Adhesives"]
+        I3["Underlayments"]
+        I4["Tools/Equipment"]
+        I5["Skilled Installers"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Measurement"]
+        A2["Preparation"]
+        A3["Installation"]
+        A4["Quality Control"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Carpet"]
+        O2["Resilient Flooring"]
+        O3["Wood Flooring"]
+        O4["Specialty Flooring"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Building Owners"]
+        C3["Homeowners"]
+        C4["Property Managers"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -106,22 +166,101 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Building Codes
+- **International Building Code (IBC)** - Flooring fire ratings
+- **ADA Standards** - Slip resistance and transitions
+- **Fire Codes** - Flame spread and smoke development
+- **Health Codes** - Food service and healthcare
+
+### Industry Standards
+- **ASTM Standards** - Material and installation specifications
+- **CRI-104/105** - Carpet and Rug Institute standards
+- **NWFA Guidelines** - National Wood Flooring Association
+- **RFCI Guidelines** - Resilient Floor Covering Institute
+
+### Environmental Standards
+- **FloorScore Certification** - Indoor air quality
+- **LEED Requirements** - Low-VOC adhesives and materials
+- **California 01350** - Emissions testing standard
+- **Red List Free** - Material health requirements
+
+### Safety Standards
+- **OSHA Ergonomics** - Knee protection and posture
+- **Adhesive Safety** - Ventilation and respiratory
+- **Tool Safety** - Power stretcher and cutting tools
+- **Dust Control** - Wood floor sanding requirements
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Flooring Products
+- **Luxury Vinyl Tile (LVT)** - Rigid core and flexible products
+- **WPC/SPC Flooring** - Waterproof rigid core vinyl
+- **Engineered Hardwood** - Dimensionally stable wood products
+- **Modular Carpet** - Easy replacement and maintenance
 
-## Industry Outlook
+### Installation Systems
+- **Click-Lock Installation** - Floating floor systems
+- **Pressure-Sensitive Adhesives** - Repositionable installation
+- **Spray Adhesives** - Efficient large-area application
+- **Magnetic Flooring** - Removable and recyclable systems
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Substrate Systems
+- **Self-Leveling Compounds** - Efficient floor preparation
+- **Moisture Mitigation** - Epoxy and topical treatments
+- **Crack Isolation** - Membrane systems for problem substrates
+- **Radiant Heat Integration** - Flooring over heated subfloors
+
+### Business Technology
+- **Measurement Software** - Digital floor planning
+- **Estimating Systems** - Automated takeoff and pricing
+- **Project Management** - Scheduling and tracking
+- **Customer Visualization** - Virtual room design
+
+## Project Types
+
+### Commercial Flooring
+- Office buildings
+- Retail and restaurants
+- Healthcare facilities
+- Educational institutions
+- Hotels and hospitality
+
+### Residential Flooring
+- New home construction
+- Renovation and remodel
+- Flooring replacement
+- Wood floor refinishing
+- Multi-family projects
+
+### Industrial Flooring
+- Warehouse and distribution
+- Manufacturing facilities
+- Food processing plants
+- Clean rooms
+- Laboratory and medical
+
+### Specialty Flooring
+- Sports and athletic facilities
+- Dance and performance studios
+- Access flooring
+- Anti-static and ESD
+- Seamless resinous floors
+
+## Industry Trends and Outlook
+
+Key trends shaping flooring contractors:
+
+- **LVT/SPC Dominance** - Rigid core vinyl market growth
+- **Click Installation** - Floating floors reducing labor
+- **Labor Challenges** - Skilled installer shortage
+- **Commercial Modular** - Carpet tile and LVT expansion
+- **Sustainability Focus** - Recycled content and recyclability
+- **Design Trends** - Wood looks, patterns, large formats
+- **Moisture Challenges** - Concrete slab moisture issues
+- **Technology Adoption** - Digital measurement and estimating
+
+The outlook is positive with construction and renovation driving demand. The shift to LVT and click-lock products is changing installation methods while commercial modular products expand maintenance contract opportunities.
 
 ---
 
-*Source: NAICS 23833 - Flooring Contractors*
+*Source: NAICS 238330 - Flooring Contractors*

@@ -1,7 +1,7 @@
 ---
 id: FinishCarpentryContractors
 name: "Finish Carpentry Contractors"
-code: "23835"
+code: "238350"
 type: Industry
 level: Industry
 status: complete
@@ -9,11 +9,27 @@ status: complete
 
 # Finish Carpentry Contractors
 
-> See industry description for 238350.
+> This industry comprises establishments primarily engaged in finish carpentry work, including installing trim, moldings, cabinets, doors, windows, stairs, and other architectural woodwork.
 
 ## Overview
 
-Finish Carpentry Contractors represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in finish carpentry contractors.
+Finish Carpentry Contractors (NAICS 238350) encompasses establishments that install interior trim, moldings, doors, windows, cabinets, countertops, stairs, and other architectural millwork. This work represents the final visible carpentry in a building, requiring precision craftsmanship to achieve quality aesthetic results.
+
+The industry serves commercial, institutional, and residential construction with both new construction and renovation work. Finish carpentry is one of the most skill-intensive construction trades, requiring expertise in layout, fitting, and installation of wood and composite materials. Quality finish work significantly impacts the perceived quality and value of buildings.
+
+## Market Context
+
+The U.S. finish carpentry contractor market represents approximately $20 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Residential New Construction | $8 billion | Single-family, multi-family housing |
+| Commercial/Institutional | $5 billion | Office, retail, healthcare, hospitality |
+| Residential Renovation | $4 billion | Kitchen/bath remodels, renovations |
+| Custom Millwork | $2 billion | High-end residential, commercial specialty |
+| Door/Window Installation | $1 billion | Replacement and new construction |
+
+The market is driven by construction activity, home renovation, and demand for quality interiors in commercial and residential buildings.
 
 ## Industry Hierarchy
 
@@ -22,83 +38,127 @@ graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
     N238 --> N2383["2383: Building Finishing Contractors"]
-    N2383 --> N23835["23835: Finish Carpentry Contractors"]
-    style N23835 fill:#f96,stroke:#333,stroke-width:2px
+    N2383 --> N238350["238350: Finish Carpentry"]
+    style N238350 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23835 |
-| Level | Industry |
-| Parent | [Building Finishing Contractors](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 238350 |
+| Level | National Industry |
+| Parent | [Building Finishing Contractors](./) |
+| U.S. Establishments | ~20,000 |
+| Annual Revenue | ~$20 billion |
+| Employment | ~120,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Finish Carpenters](/occupations/Construction/FinishCarpenters) - Install trim and millwork
+- [Cabinetmakers](/occupations/Production/Cabinetmakers) - Build and install cabinets
+- [Door Installers](/occupations/Construction/DoorInstallers) - Install interior and exterior doors
+- [Stair Builders](/occupations/Construction/StairBuilders) - Construct and install stairs
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Support finish crews
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee finish projects
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Measurement["Measurement"]
+        M1["Field Measure"]
+        M2["Material Takeoff"]
+        M3["Shop Drawing"]
+        M4["Ordering"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Installation["Installation"]
+        I1["Doors/Windows"]
+        I2["Base/Crown"]
+        I3["Casework"]
+        I4["Stairs/Rails"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Completion["Completion"]
+        C1["Touch-Up"]
+        C2["Hardware"]
+        C3["Final Adjust"]
+        C4["Punch List"]
+    end
+
+    M1 --> M2 --> M3 --> M4
+    M4 --> I1 --> I2 --> I3 --> I4
+    I4 --> C1 --> C2 --> C3 --> C4
 ```
+
+### Field Measurement and Planning
+
+Accurate measurement ensures proper fit.
+
+**Key Activities:**
+- Conduct field measurements and verification
+- Prepare material takeoffs with waste factors
+- Create shop drawings for custom items
+- Coordinate with millwork manufacturers
+- Plan installation sequence
+- Order materials with proper lead time
+
+### Installation
+
+Skilled installation achieves quality results.
+
+**Key Activities:**
+- Install interior doors and hardware
+- Set windows and trim
+- Install base, crown, and casing
+- Install cabinets and countertops
+- Build and install stairs and railings
+- Complete specialty millwork
+
+### Completion and Punch List
+
+Attention to detail completes the work.
+
+**Key Activities:**
+- Fill nail holes and sand smooth
+- Touch up finishes and paint
+- Install final hardware
+- Adjust doors and drawers
+- Complete punch list items
+- Protect finished work
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Millwork/Trim"]
+        I2["Doors/Windows"]
+        I3["Cabinets"]
+        I4["Hardware"]
+        I5["Skilled Carpenters"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Measurement"]
+        A2["Installation"]
+        A3["Finishing"]
+        A4["Quality Control"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Trim/Moldings"]
+        O2["Doors/Windows"]
+        O3["Casework"]
+        O4["Custom Millwork"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Home Builders"]
+        C3["Homeowners"]
+        C4["Designers"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -106,22 +166,101 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Building Codes
+- **International Building Code (IBC)** - Door and egress requirements
+- **International Residential Code (IRC)** - Residential finish requirements
+- **ADA Standards** - Accessible door and hardware requirements
+- **Fire Codes** - Fire-rated door and frame requirements
+
+### Industry Standards
+- **AWI Standards** - Architectural Woodwork Institute quality grades
+- **WI Standards** - Woodwork Institute specifications
+- **WDMA Standards** - Window and Door Manufacturers Association
+- **BHMA Standards** - Builders Hardware Manufacturers Association
+
+### Safety Standards
+- **OSHA Power Tool Safety** - Saw and nailer requirements
+- **OSHA Fall Protection** - Stair and elevated work
+- **Dust Collection** - Wood dust exposure controls
+- **Ergonomic Standards** - Material handling requirements
+
+### Quality Standards
+- **AWI Quality Grades** - Economy, Custom, Premium levels
+- **Finish Tolerances** - Gap and alignment specifications
+- **Hardware Function** - Door and drawer operation standards
+- **Material Specifications** - Wood species and finish requirements
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Materials
+- **Engineered Wood Products** - MDF, plywood, composites
+- **PVC and Composite Trim** - Low-maintenance exteriors
+- **Pre-Finished Products** - Factory-applied finishes
+- **Sustainable Materials** - FSC-certified and reclaimed wood
 
-## Industry Outlook
+### Installation Systems
+- **Pneumatic Nailers** - Finish and brad nailers
+- **Cordless Tools** - Battery-powered saws and drills
+- **Laser Levels** - Precision layout and alignment
+- **Pocket Screw Systems** - Concealed fastening
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Manufacturing
+- **CNC Machining** - Computer-controlled millwork production
+- **CAD/CAM Integration** - Design to fabrication workflow
+- **Prefabricated Components** - Pre-hung doors, assembled cabinets
+- **Digital Templating** - Laser measurement for custom fits
+
+### Business Technology
+- **Estimating Software** - Material and labor takeoff
+- **Project Management** - Scheduling and tracking
+- **3D Visualization** - Design and customer approval
+- **Mobile Documentation** - Digital punch lists
+
+## Project Types
+
+### Residential New Construction
+- Production home trim packages
+- Custom home millwork
+- Multi-family common areas
+- Kitchen and bath installation
+- Stair and railing systems
+
+### Commercial/Institutional
+- Office tenant improvements
+- Retail fixtures and millwork
+- Healthcare casework
+- Educational facilities
+- Hospitality projects
+
+### Renovation
+- Kitchen and bath remodels
+- Whole-house renovations
+- Historic restoration
+- Addition trim packages
+- Accessibility modifications
+
+### Custom Millwork
+- Architectural paneling
+- Custom cabinetry
+- Built-in furniture
+- Reception desks
+- Library and study interiors
+
+## Industry Trends and Outlook
+
+Key trends shaping finish carpentry contractors:
+
+- **Labor Shortage** - Critical need for skilled finish carpenters
+- **Prefabrication** - Pre-hung doors, assembled cabinets
+- **Material Innovation** - Composites and engineered products
+- **Design Complexity** - Detailed custom millwork demand
+- **Quality Expectations** - Premium grade specifications
+- **Technology Adoption** - CNC, laser, digital tools
+- **Sustainability** - Certified and reclaimed materials
+- **Aging in Place** - Accessibility modifications
+
+The outlook is positive with construction and renovation driving demand. The craft nature of finish carpentry makes skilled labor the primary constraint. Prefabrication helps address labor challenges while maintaining quality.
 
 ---
 
-*Source: NAICS 23835 - Finish Carpentry Contractors*
+*Source: NAICS 238350 - Finish Carpentry Contractors*

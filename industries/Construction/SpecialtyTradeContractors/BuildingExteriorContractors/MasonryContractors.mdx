@@ -1,7 +1,7 @@
 ---
 id: MasonryContractors
 name: "Masonry Contractors"
-code: "23814"
+code: "238140"
 type: Industry
 level: Industry
 status: complete
@@ -9,11 +9,27 @@ status: complete
 
 # Masonry Contractors
 
-> See industry description for 238140.
+> This industry comprises establishments primarily engaged in masonry work, including brick, block, stone, and concrete masonry unit installation for structural and decorative applications.
 
 ## Overview
 
-Masonry Contractors represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in masonry contractors.
+Masonry Contractors (NAICS 238140) encompasses establishments that install brick, block, stone, and concrete masonry units for building construction. This includes structural masonry walls, veneer systems, stone facades, pavers, fireplaces, and decorative masonry. Masonry is one of the oldest construction trades, combining structural capability with aesthetic appeal.
+
+The industry serves commercial, institutional, and residential construction markets. Masonry construction offers durability, fire resistance, and thermal mass benefits that make it preferred for schools, hospitals, retail, and multi-family residential. The craft nature of masonry work requires skilled tradespeople, making labor availability a significant industry factor.
+
+## Market Context
+
+The U.S. masonry contractor market represents approximately $30 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Commercial Masonry | $12 billion | Retail, office, industrial, multi-family |
+| Institutional | $8 billion | Schools, healthcare, government buildings |
+| Residential | $6 billion | Custom homes, fireplaces, hardscape |
+| Infrastructure | $2 billion | Retaining walls, bridges, tunnels |
+| Restoration | $2 billion | Historic preservation, repairs |
+
+The market is driven by commercial construction, institutional building programs, and the continued demand for masonry's durability and aesthetic qualities.
 
 ## Industry Hierarchy
 
@@ -21,84 +37,128 @@ Masonry Contractors represents an important category within the Construction sec
 graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
-    N238 --> N2381["2381: Building Exterior Contractors"]
-    N2381 --> N23814["23814: Masonry Contractors"]
-    style N23814 fill:#f96,stroke:#333,stroke-width:2px
+    N238 --> N2381["2381: Foundation/Exterior Contractors"]
+    N2381 --> N238140["238140: Masonry Contractors"]
+    style N238140 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23814 |
-| Level | Industry |
-| Parent | [Building Exterior Contractors](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 238140 |
+| Level | National Industry |
+| Parent | [Building Exterior Contractors](./) |
+| U.S. Establishments | ~15,000 |
+| Annual Revenue | ~$30 billion |
+| Employment | ~150,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Brickmasons](/occupations/Construction/Brickmasons) - Lay brick, block, and stone
+- [Stonemasons](/occupations/Construction/Stonemasons) - Work with natural and cut stone
+- [Mason Tenders](/occupations/Construction/MasonTenders) - Support masons with materials
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Assist with scaffold and cleanup
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee masonry projects
+- [Estimators](/occupations/Business/CostEstimators) - Prepare masonry bids
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Planning["Planning"]
+        P1["Takeoff/Estimating"]
+        P2["Shop Drawings"]
+        P3["Material Ordering"]
+        P4["Scaffold Planning"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Construction["Construction"]
+        C1["Layout"]
+        C2["Foundation/Base"]
+        C3["Wall Construction"]
+        C4["Details/Openings"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Completion["Completion"]
+        F1["Pointing/Cleaning"]
+        F2["Sealants"]
+        F3["Protection"]
+        F4["Punch List"]
+    end
+
+    P1 --> P2 --> P3 --> P4
+    P4 --> C1 --> C2 --> C3 --> C4
+    C4 --> F1 --> F2 --> F3 --> F4
 ```
+
+### Estimating and Planning
+
+Accurate planning ensures profitable projects.
+
+**Key Activities:**
+- Perform quantity takeoffs from drawings
+- Calculate labor production rates
+- Plan scaffold and material handling
+- Review structural and architectural details
+- Coordinate with steel and concrete trades
+- Prepare proposals and schedule
+
+### Masonry Construction
+
+Skilled craftsmanship creates quality structures.
+
+**Key Activities:**
+- Layout wall lines and control joints
+- Install base course with proper alignment
+- Build walls with level, plumb, and true coursing
+- Install reinforcement and grout as required
+- Complete lintels, sills, and opening details
+- Install flashing and weep holes
+
+### Finishing and Protection
+
+Proper finishing ensures long-term performance.
+
+**Key Activities:**
+- Point mortar joints to specification
+- Clean masonry surfaces
+- Apply water repellents if required
+- Install sealants at interfaces
+- Protect completed work from damage
+- Complete punch list items
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Brick/Block/Stone"]
+        I2["Mortar/Grout"]
+        I3["Reinforcement"]
+        I4["Skilled Masons"]
+        I5["Scaffolding"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Planning/Layout"]
+        A2["Wall Construction"]
+        A3["Detail Work"]
+        A4["Finishing"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Structural Walls"]
+        O2["Veneer Systems"]
+        O3["Decorative Masonry"]
+        O4["Hardscape"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Developers"]
+        C3["Building Owners"]
+        C4["Homeowners"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -106,22 +166,101 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Building Codes
+- **TMS 402/602** - Building Code Requirements for Masonry Structures
+- **International Building Code (IBC)** - Structural and fire requirements
+- **ACI 530** - Specifications for masonry structures
+- **Local Building Codes** - Jurisdiction-specific requirements
+
+### Safety Standards
+- **OSHA Scaffold Standards** - 29 CFR 1926.450-454
+- **OSHA Fall Protection** - Requirements for elevated work
+- **Silica Exposure Rule** - Respirable silica limits
+- **Bracing Requirements** - Temporary wall bracing standards
+
+### Industry Standards
+- **ASTM Standards** - Material specifications for masonry units, mortar, grout
+- **BIA Technical Notes** - Brick Industry Association best practices
+- **NCMA TEK Notes** - Concrete masonry guidance
+- **Natural Stone Institute** - Stone installation standards
+
+### Quality Standards
+- **Masonry Joint Finishes** - Concave, V, raked, flush specifications
+- **Movement Joints** - Control and expansion joint requirements
+- **Mortar Types** - Type S, N, M specifications
+- **Structural Requirements** - Reinforcement and grouting specifications
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Materials
+- **Architectural Concrete Masonry** - Colored, split-face, polished units
+- **Thin Brick** - Adhered veneer systems
+- **Large Format Units** - Bigger blocks for faster construction
+- **Lightweight Block** - Easier handling, improved insulation
 
-## Industry Outlook
+### Installation Methods
+- **Modular Scaffolding** - Efficient, safe work platforms
+- **Mortar Delivery Systems** - Pumped and conveyed mortar
+- **Laser Leveling** - Precision layout tools
+- **Prefabricated Panels** - Factory-built masonry sections
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Insulation Systems
+- **Insulated Concrete Masonry** - Foam-filled cores
+- **Continuous Insulation** - Exterior insulation systems
+- **Cavity Wall Insulation** - Foam board and spray foam
+- **Air Barrier Integration** - Weather-resistive systems
+
+### Design Tools
+- **BIM for Masonry** - 3D modeling and coordination
+- **Estimating Software** - Automated takeoff and pricing
+- **Production Tracking** - Labor productivity monitoring
+- **Project Management** - Digital documentation
+
+## Project Types
+
+### Commercial Masonry
+- Retail and office buildings
+- Industrial and warehouse
+- Multi-family residential
+- Hotels and hospitality
+- Retail and restaurant
+
+### Institutional Masonry
+- K-12 schools and universities
+- Healthcare facilities
+- Government buildings
+- Religious structures
+- Museums and cultural centers
+
+### Residential Masonry
+- Custom home construction
+- Fireplaces and chimneys
+- Outdoor living spaces
+- Retaining walls
+- Driveways and patios
+
+### Specialty Work
+- Historic restoration
+- Ornamental masonry
+- Stone veneer
+- Glass block
+- Precast installation
+
+## Industry Trends and Outlook
+
+Key trends shaping masonry contractors:
+
+- **Labor Shortage** - Critical need for skilled masons
+- **Prefabrication** - Factory-built masonry panels
+- **Thin Brick** - Adhered systems gaining share
+- **Energy Efficiency** - Continuous insulation requirements
+- **Productivity Focus** - Larger units and mechanization
+- **Safety Emphasis** - Scaffold and silica compliance
+- **Design Aesthetics** - Specialty finishes and patterns
+- **Restoration Market** - Aging building stock repairs
+
+The outlook is positive with institutional and commercial construction driving demand. Labor availability is the primary constraint, as the craft nature of masonry makes training intensive and recruits limited. Prefabrication and larger-format units help address labor challenges.
 
 ---
 
-*Source: NAICS 23814 - Masonry Contractors*
+*Source: NAICS 238140 - Masonry Contractors*

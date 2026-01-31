@@ -1,21 +1,35 @@
 ---
 id: BuildingExteriorContractors
-name: "Building Exterior Contractors"
+name: "Foundation, Structure, and Building Exterior Contractors"
 code: "2381"
 type: Industry
 level: Industry Group
 status: complete
 ---
 
-# Building Exterior Contractors
+# Foundation, Structure, and Building Exterior Contractors
 
-> This industry group comprises establishments primarily engaged in the specialty trades needed to complete the basic structure (i.
+> This industry group comprises establishments primarily engaged in activities associated with building foundations, structures, and exteriors, including masonry, concrete, roofing, siding, and framing.
 
 ## Overview
 
-Building Exterior Contractors represents an important category within the Construction sector (NAICS 23). This industry group encompasses establishments primarily engaged in building exterior contractors.
+Foundation, Structure, and Building Exterior Contractors represents a major category within the Specialty Trade Contractors subsector (NAICS 238), encompassing establishments that construct the structural elements and exterior envelope of buildings. This includes foundation work, concrete construction, structural steel erection, framing, roofing, siding, and masonry work.
 
-This industry group comprises establishments primarily engaged in the specialty trades needed to complete the basic structure (i.e., foundation, frame, and shell) of buildings. The work performed may include new work, additions, alterations, maintenance, and repairs.
+These contractors build the structural skeleton and weatherproof shell that protect building occupants and contents. Work ranges from residential foundation and framing to complex commercial structural steel and curtain wall systems. The quality of this work directly impacts building safety, durability, and energy efficiency.
+
+## Market Context
+
+The U.S. foundation, structure, and exterior contractors market represents approximately $200 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Concrete/Foundation | $60 billion | Commercial, infrastructure, residential |
+| Framing/Structural | $50 billion | Residential, commercial construction |
+| Roofing | $45 billion | New construction, re-roofing, storm damage |
+| Masonry | $25 billion | Commercial, institutional, residential |
+| Siding/Exterior | $20 billion | Residential new, remodel, re-siding |
+
+The market is driven by new construction activity, building renovation, storm damage repairs, and energy efficiency upgrades requiring improved building envelopes.
 
 ## Industry Hierarchy
 
@@ -23,14 +37,16 @@ This industry group comprises establishments primarily engaged in the specialty 
 graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
-    N238 --> N2381["2381: Building Exterior Contractors"]
+    N238 --> N2381["2381: Foundation/Exterior Contractors"]
     style N2381 fill:#f96,stroke:#333,stroke-width:2px
-    N2381 --> N23811["23811: Poured Concrete Foundation"]
-    N2381 --> N23812["23812: Precast Concrete Contractors"]
-    N2381 --> N23813["23813: Framing Contractors"]
-    N2381 --> N23814["23814: Masonry Contractors"]
-    N2381 --> N23815["23815: Glazing Contractors"]
-    N2381 --> more["... +2 more"]
+    N2381 --> N23811["238110: Poured Concrete Foundation"]
+    N2381 --> N23812["238120: Structural Steel/Precast"]
+    N2381 --> N23813["238130: Framing Contractors"]
+    N2381 --> N23814["238140: Masonry Contractors"]
+    N2381 --> N23815["238150: Glass/Glazing"]
+    N2381 --> N23816["238160: Roofing Contractors"]
+    N2381 --> N23817["238170: Siding Contractors"]
+    N2381 --> N23819["238190: Other Foundation/Exterior"]
 ```
 
 ## Key Statistics
@@ -40,81 +56,186 @@ graph TD
 | NAICS Code | 2381 |
 | Level | Industry Group |
 | Parent | [Specialty Trade Contractors](../) |
-| Child Industries | 7 |
+| Child Industries | 8 |
+| U.S. Establishments | ~150,000 |
+| Annual Revenue | ~$200 billion |
+| Employment | ~1.2 million |
 
 ## Sub-Industries
 
 | Industry | Code | Description |
 |----------|------|-------------|
-| [Poured Concrete Foundation](./PouredConcreteFoundation/) | 23811 | See industry description for 238110 |
-| [Precast Concrete Contractors](./PrecastConcreteContractors/) | 23812 | See industry description for 238120 |
-| [Framing Contractors](./FramingContractors/) | 23813 | See industry description for 238130 |
-| [Masonry Contractors](./MasonryContractors/) | 23814 | See industry description for 238140 |
-| [Glazing Contractors](./GlazingContractors/) | 23815 | See industry description for 238150 |
-| [Roofing Contractors](./RoofingContractors/) | 23816 | See industry description for 238160 |
-| [Siding Contractors](./SidingContractors/) | 23817 | See industry description for 238170 |
+| [Poured Concrete Foundation](./PouredConcreteFoundation/) | 238110 | Foundation walls, slabs, and flatwork |
+| [Structural Steel/Precast](./PrecastConcreteContractors/) | 238120 | Steel erection and precast concrete |
+| [Framing Contractors](./FramingContractors/) | 238130 | Wood and metal framing |
+| [Masonry Contractors](./MasonryContractors/) | 238140 | Brick, block, and stone masonry |
+| [Glass/Glazing](./GlazingContractors/) | 238150 | Windows, curtain wall, and glazing |
+| [Roofing Contractors](./RoofingContractors/) | 238160 | Roof installation and repair |
+| [Siding Contractors](./SidingContractors/) | 238170 | Exterior siding and trim |
+| [Other Exterior](./index/) | 238190 | Waterproofing, caulking, specialty |
+
+## Related Occupations
+
+- [Cement Masons](/occupations/Construction/CementMasons) - Pour and finish concrete flatwork
+- [Structural Ironworkers](/occupations/Construction/Ironworkers) - Erect structural steel frameworks
+- [Carpenters](/occupations/Construction/Carpenters) - Frame buildings with wood and metal
+- [Bricklayers](/occupations/Construction/Bricklayers) - Lay brick, block, and stone masonry
+- [Roofers](/occupations/Construction/Roofers) - Install and repair roofing systems
+- [Glaziers](/occupations/Construction/Glaziers) - Install glass and window systems
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Support skilled trades
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Preparation["Preparation"]
+        P1["Layout/Survey"]
+        P2["Forming/Setup"]
+        P3["Material Staging"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Construction["Construction"]
+        C1["Foundation"]
+        C2["Structure"]
+        C3["Envelope"]
+        C4["Openings"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Completion["Completion"]
+        Q1["Inspection"]
+        Q2["Weatherproofing"]
+        Q3["Protection"]
+    end
+
+    P1 --> P2 --> P3
+    P3 --> C1 --> C2 --> C3 --> C4
+    C4 --> Q1 --> Q2 --> Q3
 ```
+
+### Foundation Work
+
+Foundation work establishes the base upon which buildings are constructed.
+
+**Key Activities:**
+- Excavate and prepare subgrade
+- Install formwork for foundations
+- Place reinforcing steel
+- Pour and finish concrete
+- Strip forms and waterproof
+- Backfill and compact
+
+### Structural Framework
+
+The structural frame provides the load-bearing skeleton of the building.
+
+**Key Activities:**
+- Erect structural steel or precast elements
+- Frame walls, floors, and roofs
+- Install sheathing and decking
+- Complete structural connections
+- Coordinate with MEP trades for penetrations
+
+### Building Envelope
+
+The envelope separates interior and exterior environments.
+
+**Key Activities:**
+- Install roofing systems
+- Apply exterior cladding and siding
+- Install windows and curtain wall
+- Complete flashings and sealants
+- Apply waterproofing and coatings
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Concrete/Steel"]
+        I2["Lumber/Framing"]
+        I3["Roofing Materials"]
+        I4["Skilled Labor"]
+        I5["Heavy Equipment"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Foundation Work"]
+        A2["Structural Framing"]
+        A3["Exterior Finishing"]
+        A4["Weatherproofing"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Foundations"]
+        O2["Structures"]
+        O3["Roof Systems"]
+        O4["Building Envelopes"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Developers"]
+        C3["Building Owners"]
+        C4["Homeowners"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
 ```
 
+## Regulatory Environment
+
+### Building Codes
+- **International Building Code (IBC)** - Structural and fire requirements
+- **International Residential Code (IRC)** - Residential construction standards
+- **ACI Standards** - Concrete construction requirements
+- **AISC Standards** - Structural steel construction
+
+### Safety Requirements
+- **OSHA Fall Protection** - Requirements for elevated work
+- **OSHA Scaffolding Standards** - Scaffold construction and use
+- **OSHA Steel Erection Standards** - Structural steel safety
+- **OSHA Excavation Standards** - Foundation excavation safety
+
+### Industry Standards
+- **NRCA Standards** - Roofing installation best practices
+- **ASHRAE 90.1** - Building envelope energy efficiency
+- **ASTM Standards** - Material and testing specifications
+- **AAMA Standards** - Window and door installation
+
+## Technology & Innovation
+
+### Materials Technology
+- **Mass Timber** - Cross-laminated timber (CLT) construction
+- **High-Performance Concrete** - Self-consolidating, fiber-reinforced
+- **Advanced Insulation** - Continuous insulation systems
+- **Cool Roofing** - Reflective roofing materials
+
+### Construction Methods
+- **Prefabrication** - Panelized wall and roof systems
+- **Tilt-Up Construction** - Site-cast concrete panels
+- **Modular Construction** - Factory-built structural modules
+- **3D Printing** - Additive manufacturing of structures
+
+### Design Technology
+- **Building Information Modeling (BIM)** - 3D coordination and clash detection
+- **Structural Analysis Software** - Computer-aided engineering
+- **Thermal Modeling** - Building envelope performance analysis
+- **Drone Surveying** - Roof and facade inspection
+
+## Industry Trends and Outlook
+
+Key trends shaping foundation, structure, and exterior contractors:
+
+- **Labor Shortages** - Difficulty finding skilled structural trades
+- **Prefabrication Growth** - Off-site manufacturing of components
+- **Energy Efficiency** - Higher-performance building envelopes
+- **Mass Timber** - Cross-laminated timber gaining acceptance
+- **Storm Resilience** - Impact-resistant materials and systems
+- **Material Costs** - Volatility in lumber, steel, and concrete
+- **Technology Adoption** - BIM, prefab, and automation
+
+The outlook is positive with construction activity driving demand. The industry faces workforce challenges driving adoption of prefabrication and more efficient construction methods. Energy code requirements are increasing focus on building envelope performance.
+
 ---
 
-*Source: NAICS 2381 - Building Exterior Contractors*
+*Source: NAICS 2381 - Foundation, Structure, and Building Exterior Contractors*

@@ -1,7 +1,7 @@
 ---
 id: SitePreparationContractors
 name: "Site Preparation Contractors"
-code: "23891"
+code: "238910"
 type: Industry
 level: Industry
 status: complete
@@ -9,11 +9,26 @@ status: complete
 
 # Site Preparation Contractors
 
-> See industry description for 238910.
+> This industry comprises establishments primarily engaged in site preparation activities, such as excavating and grading, demolition of buildings, and land clearing.
 
 ## Overview
 
-Site Preparation Contractors represents an important category within the Construction sector (NAICS 23).
+Site Preparation Contractors (NAICS 238910) encompasses establishments that perform the foundational earthwork and demolition necessary before vertical construction can begin. This includes land clearing, grading, excavation, demolition, wrecking, and environmental remediation. These contractors transform raw land or existing sites into construction-ready conditions.
+
+The industry serves as the essential first step in most construction projects, preparing sites for foundations, utilities, and building construction. Work may be performed as subcontractors to general contractors or directly for property owners and developers.
+
+## Market Context
+
+The U.S. site preparation contractors market represents approximately $50 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Excavation and Grading | $25 billion | New construction, site development |
+| Demolition | $12 billion | Urban redevelopment, facility replacement |
+| Land Clearing | $8 billion | Residential development, infrastructure |
+| Environmental Remediation | $5 billion | Brownfield development, regulatory compliance |
+
+The market is driven by construction activity, urban redevelopment requiring demolition, infrastructure projects, and the continuing shift from greenfield to infill development.
 
 ## Industry Hierarchy
 
@@ -21,81 +36,127 @@ Site Preparation Contractors represents an important category within the Constru
 graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
-    N238 --> N23891["23891: Site Preparation Contractors"]
-    style N23891 fill:#f96,stroke:#333,stroke-width:2px
+    N238 --> N2389["2389: Other Specialty Trade"]
+    N2389 --> N238910["238910: Site Preparation"]
+    style N238910 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23891 |
-| Level | Industry |
-| Child Industries | 0 |
+| NAICS Code | 238910 |
+| Level | National Industry |
+| Parent | [Other Specialty Trade Contractors](../) |
+| U.S. Establishments | ~45,000 |
+| Annual Revenue | ~$50 billion |
+| Employment | ~250,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform site clearing and preparation work
+- [Operating Engineers](/occupations/Construction/OperatingEngineers) - Operate excavators, bulldozers, and graders
+- [Demolition Workers](/occupations/Construction/DemolitionWorkers) - Safely dismantle structures
+- [Hazmat Workers](/occupations/Construction/HazmatWorkers) - Handle hazardous materials removal
+- [Surveyors](/occupations/Architecture/Surveyors) - Establish grades and property lines
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee site preparation projects
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Planning["Project Planning"]
+        P1["Site Assessment"]
+        P2["Permits"]
+        P3["Utility Coordination"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Execution["Site Work"]
+        E1["Clearing"]
+        E2["Demolition"]
+        E3["Excavation"]
+        E4["Grading"]
+        E5["Erosion Control"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Completion["Completion"]
+        C1["Final Grades"]
+        C2["Inspections"]
+        C3["Site Release"]
+    end
+
+    P1 --> P2 --> P3
+    P3 --> E1 --> E2 --> E3 --> E4 --> E5
+    E5 --> C1 --> C2 --> C3
 ```
+
+### Site Assessment and Planning
+
+Proper planning prevents problems during construction.
+
+**Key Activities:**
+- Review geotechnical and environmental reports
+- Identify underground utilities and obstructions
+- Plan erosion and sediment control measures
+- Obtain demolition and grading permits
+- Coordinate utility disconnections and relocations
+- Develop traffic control plans
+
+### Demolition and Clearing
+
+Removing existing structures and vegetation to prepare for new construction.
+
+**Key Activities:**
+- Disconnect and cap utilities
+- Remove hazardous materials (asbestos, lead)
+- Demolish structures systematically
+- Separate materials for recycling
+- Clear trees, stumps, and vegetation
+- Remove debris from site
+
+### Excavation and Grading
+
+Earth moving to establish proper grades for construction.
+
+**Key Activities:**
+- Strip and stockpile topsoil
+- Excavate to design grades
+- Install temporary drainage
+- Compact fill materials
+- Establish subgrade for foundations and paving
+- Install erosion and sediment controls
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Heavy Equipment"]
+        I2["Fuel"]
+        I3["Skilled Operators"]
+        I4["Permits"]
+        I5["Disposal Sites"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Clearing"]
+        A2["Demolition"]
+        A3["Excavation"]
+        A4["Grading"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Cleared Sites"]
+        O2["Graded Pads"]
+        O3["Building Sites"]
+        O4["Recycled Materials"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["General Contractors"]
+        C2["Developers"]
+        C3["Government"]
+        C4["Property Owners"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -103,22 +164,86 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Environmental Regulations
+- **NPDES Stormwater Permits** - Erosion and sediment control requirements
+- **EPA Asbestos NESHAP** - Asbestos handling during demolition
+- **RCRA** - Hazardous waste management
+- **Clean Air Act** - Dust and emission control
+
+### Demolition Permits
+- **Demolition Permits** - Local requirements before demolition
+- **Utility Disconnection** - Verification of service termination
+- **Historic Review** - Section 106 for federally-funded projects
+- **Neighbor Notification** - Required notices before demolition
+
+### Safety Standards
+- **OSHA Excavation Standards** - Trench safety requirements
+- **OSHA Demolition Standards** - Systematic demolition requirements
+- **OSHA Hazmat Standards** - Lead and asbestos removal
+- **Traffic Control** - MUTCD requirements for public roads
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Equipment Technology
+- **GPS Machine Control** - Automated grading systems
+- **Telematics** - Fleet tracking and equipment monitoring
+- **Electric Equipment** - Zero-emission excavators and loaders
+- **Remote Operation** - Teleoperated demolition equipment
 
-## Industry Outlook
+### Planning Technology
+- **3D Modeling** - Digital terrain models for grading
+- **Drone Surveying** - Aerial mapping and progress monitoring
+- **Volumetric Calculations** - Accurate cut/fill quantity estimates
+- **Utility Mapping** - Subsurface utility detection
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Environmental Technology
+- **Dust Suppression** - Water trucks and misting systems
+- **Sediment Control** - Engineered best management practices
+- **Recycling Systems** - On-site crushing and processing
+- **Soil Remediation** - In-situ treatment technologies
+
+## Project Types
+
+### Excavation and Grading
+- Building pad preparation
+- Basement and foundation excavation
+- Utility trenching
+- Retention/detention pond construction
+- Road subgrade preparation
+
+### Demolition
+- Building demolition
+- Interior selective demolition
+- Bridge and structure removal
+- Industrial facility dismantling
+- Implosion (specialized)
+
+### Land Clearing
+- Residential lot clearing
+- Right-of-way clearing
+- Agricultural land conversion
+- Forestry operations
+
+### Environmental
+- Brownfield remediation
+- Tank removal and closure
+- Asbestos and lead abatement
+- Contaminated soil removal
+
+## Industry Trends and Outlook
+
+Key trends shaping site preparation contractors:
+
+- **Urban Redevelopment** - More demolition and infill work
+- **Equipment Automation** - GPS-guided grading and excavation
+- **Recycling Focus** - Higher diversion rates for demolition debris
+- **Environmental Requirements** - Stricter erosion and sediment control
+- **Electric Equipment** - Zero-emission equipment adoption
+- **Operator Shortage** - Difficulty finding skilled equipment operators
+- **Material Recovery** - Value in salvaged and recycled materials
+
+The outlook is positive with construction activity and urban redevelopment driving demand. The industry faces workforce challenges as experienced operators retire, driving adoption of automation and improved training programs.
 
 ---
 
-*Source: NAICS 23891 - Site Preparation Contractors*
+*Source: NAICS 238910 - Site Preparation Contractors*

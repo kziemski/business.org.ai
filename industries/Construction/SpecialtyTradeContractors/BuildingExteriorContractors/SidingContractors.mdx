@@ -1,7 +1,7 @@
 ---
 id: SidingContractors
 name: "Siding Contractors"
-code: "23817"
+code: "238170"
 type: Industry
 level: Industry
 status: complete
@@ -9,11 +9,27 @@ status: complete
 
 # Siding Contractors
 
-> See industry description for 238170.
+> This industry comprises establishments primarily engaged in installing siding of all types, including vinyl, aluminum, wood, fiber cement, and specialty cladding materials on residential and commercial buildings.
 
 ## Overview
 
-Siding Contractors represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in siding contractors.
+Siding Contractors (NAICS 238170) encompasses establishments that install exterior cladding and siding materials on buildings. This includes vinyl siding, fiber cement siding, aluminum and metal siding, wood siding, stucco, and specialty cladding systems. Siding provides weather protection, insulation, and aesthetic appeal to building exteriors.
+
+The industry serves primarily the residential market, with re-siding representing a major portion of work as homeowners update aging exteriors. The industry has evolved with new materials like fiber cement and engineered wood, offering improved durability and aesthetics. Proper installation is critical for weather protection and moisture management.
+
+## Market Context
+
+The U.S. siding contractor market represents approximately $20 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Residential Re-Siding | $10 billion | Aging homes, curb appeal, maintenance |
+| Residential New Construction | $5 billion | Single-family, townhome construction |
+| Commercial/Multi-Family | $3 billion | Apartment, retail, office exteriors |
+| Storm Damage | $1.5 billion | Wind, hail, and storm restoration |
+| Specialty Cladding | $0.5 billion | Architectural panels, rainscreen |
+
+The market is driven by the aging housing stock, new construction, storm damage, and homeowner preferences for low-maintenance materials.
 
 ## Industry Hierarchy
 
@@ -21,84 +37,128 @@ Siding Contractors represents an important category within the Construction sect
 graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
-    N238 --> N2381["2381: Building Exterior Contractors"]
-    N2381 --> N23817["23817: Siding Contractors"]
-    style N23817 fill:#f96,stroke:#333,stroke-width:2px
+    N238 --> N2381["2381: Foundation/Exterior Contractors"]
+    N2381 --> N238170["238170: Siding Contractors"]
+    style N238170 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23817 |
-| Level | Industry |
-| Parent | [Building Exterior Contractors](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 238170 |
+| Level | National Industry |
+| Parent | [Building Exterior Contractors](./) |
+| U.S. Establishments | ~12,000 |
+| Annual Revenue | ~$20 billion |
+| Employment | ~80,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Siding Installers](/occupations/Construction/SidingInstallers) - Install siding and cladding materials
+- [Carpenters](/occupations/Construction/Carpenters) - Install wood siding and trim
+- [Stucco Masons](/occupations/Construction/StuccoMasons) - Apply stucco finishes
+- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Support siding crews
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee siding projects
+- [Estimators](/occupations/Business/CostEstimators) - Prepare siding bids
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Assessment["Assessment"]
+        A1["Inspection"]
+        A2["Measurement"]
+        A3["Proposal"]
+        A4["Material Selection"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Preparation["Preparation"]
+        P1["Old Siding Removal"]
+        P2["Sheathing Repair"]
+        P3["Weather Barrier"]
+        P4["Trim/Flashing"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Installation["Installation"]
+        I1["Starter/Base"]
+        I2["Field Siding"]
+        I3["Corners/Trim"]
+        I4["Final Details"]
+    end
+
+    A1 --> A2 --> A3 --> A4
+    A4 --> P1 --> P2 --> P3 --> P4
+    P4 --> I1 --> I2 --> I3 --> I4
 ```
+
+### Assessment and Estimating
+
+Accurate assessment ensures proper scope and pricing.
+
+**Key Activities:**
+- Inspect existing siding condition
+- Measure all wall areas and openings
+- Assess sheathing and structural conditions
+- Recommend appropriate siding materials
+- Calculate material quantities
+- Prepare detailed proposals
+
+### Surface Preparation
+
+Proper preparation ensures long-lasting installation.
+
+**Key Activities:**
+- Remove existing siding materials
+- Inspect and repair sheathing
+- Install or repair weather-resistive barrier
+- Install starter strips and flashings
+- Prepare window and door trim
+- Ensure proper drainage and ventilation
+
+### Siding Installation
+
+Quality installation ensures weather protection.
+
+**Key Activities:**
+- Install starter course and J-channel
+- Apply field siding per manufacturer specs
+- Install corners, soffits, and trim
+- Complete window and door surrounds
+- Seal penetrations and transitions
+- Perform final inspection and cleanup
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Siding Materials"]
+        I2["Trim/Accessories"]
+        I3["Fasteners"]
+        I4["Weather Barrier"]
+        I5["Skilled Installers"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Assessment"]
+        A2["Preparation"]
+        A3["Installation"]
+        A4["Quality Check"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Vinyl Siding"]
+        O2["Fiber Cement"]
+        O3["Wood Siding"]
+        O4["Stucco/EIFS"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["Homeowners"]
+        C2["Home Builders"]
+        C3["General Contractors"]
+        C4["Property Managers"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -106,22 +166,101 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Building Codes
+- **International Residential Code (IRC)** - Residential siding requirements
+- **International Building Code (IBC)** - Commercial cladding standards
+- **Fire Rating Requirements** - Combustibility and fire spread
+- **Wind Resistance Codes** - High-wind zone requirements
+
+### Moisture Management
+- **IRC Water-Resistive Barriers** - WRB requirements
+- **Flashing Requirements** - Window and door integration
+- **Ventilation Standards** - Rainscreen and drainage
+- **Energy Codes** - Continuous insulation integration
+
+### Industry Standards
+- **ASTM Standards** - Material specifications
+- **Vinyl Siding Institute (VSI)** - Installation guidelines
+- **Fiber Cement Manufacturers** - Product-specific requirements
+- **EIFS Industry Members Association (EIMA)** - EIFS standards
+
+### Manufacturer Requirements
+- **Product Warranties** - Installation requirements for warranty
+- **Certification Programs** - Installer training and certification
+- **Testing Standards** - Impact, wind, and fire testing
+- **Approved Fasteners** - Specified fastening systems
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Siding Materials
+- **Fiber Cement** - Durable, low-maintenance, fire-resistant
+- **Engineered Wood** - LP SmartSide, composite products
+- **Insulated Vinyl** - Foam-backed for thermal performance
+- **Metal Panels** - Steel and aluminum architectural panels
 
-## Industry Outlook
+### Installation Systems
+- **Rainscreen Systems** - Drained and ventilated cavities
+- **Continuous Insulation** - Integrated insulation products
+- **Clip Systems** - Concealed fastening for clean looks
+- **Pre-Finished Materials** - Factory-applied coatings
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Weather Protection
+- **House Wraps** - Advanced water-resistive barriers
+- **Fluid-Applied WRB** - Spray or roll-on barriers
+- **Peel-and-Stick Flashings** - Self-adhered membrane flashings
+- **Integrated Systems** - Complete weather barrier assemblies
+
+### Design Tools
+- **Visualization Software** - Virtual siding selection
+- **Estimating Software** - Automated takeoff and pricing
+- **Measurement Apps** - Photo-based measurement
+- **Project Management** - Digital documentation
+
+## Project Types
+
+### Residential Re-Siding
+- Vinyl siding replacement
+- Fiber cement upgrades
+- Wood siding restoration
+- Trim and accent work
+- Storm damage repair
+
+### New Construction
+- Single-family homes
+- Townhomes and duplexes
+- Custom home exteriors
+- Accessory dwelling units
+- Mixed materials
+
+### Commercial Siding
+- Multi-family buildings
+- Retail and office exteriors
+- Industrial facilities
+- Hotels and hospitality
+- Healthcare and education
+
+### Specialty Cladding
+- Metal wall panels
+- EIFS and stucco
+- Natural wood siding
+- Composite materials
+- Rainscreen systems
+
+## Industry Trends and Outlook
+
+Key trends shaping siding contractors:
+
+- **Fiber Cement Growth** - Premium material gaining market share
+- **Low Maintenance** - Homeowner preference driving material selection
+- **Energy Integration** - Continuous insulation requirements
+- **Sustainability** - Recycled and sustainable materials
+- **Labor Challenges** - Skilled installer shortage
+- **Storm Hardening** - Impact-resistant siding in storm zones
+- **Design Trends** - Mixed materials and bold colors
+- **Technology Adoption** - Digital estimating and visualization
+
+The outlook is positive with aging housing stock and new construction driving demand. The market is shifting toward premium materials like fiber cement and engineered wood, requiring additional installer training and skills.
 
 ---
 
-*Source: NAICS 23817 - Siding Contractors*
+*Source: NAICS 238170 - Siding Contractors*

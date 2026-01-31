@@ -1,19 +1,35 @@
 ---
-id: Heating
-name: "Heating"
-code: "23822"
+id: HeatingContractors
+name: "Heating Contractors"
+code: "238220"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Heating
+# Heating Contractors
 
-> See industry description for 238220.
+> This industry comprises establishments primarily engaged in installing, maintaining, and repairing heating systems including furnaces, boilers, heat pumps, radiant systems, and related equipment.
 
 ## Overview
 
-Heating represents an important category within the Construction sector (NAICS 23).
+Heating Contractors are a specialized segment within the broader HVAC industry (NAICS 238220), focusing on the installation and service of heating systems for residential, commercial, and industrial buildings. This includes forced-air furnaces, boilers, heat pumps, radiant heating systems, and specialized industrial heating equipment.
+
+The heating segment is particularly strong in northern climates where space heating represents the largest building energy use. The industry is undergoing significant transformation as electrification policies and heat pump technology drive a shift from gas and oil heating to electric systems. Service and replacement work provides steady revenue, as heating equipment typically requires replacement every 15-25 years.
+
+## Market Context
+
+The U.S. heating contractor market represents approximately $45 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Residential Furnace/Boiler | $18 billion | Replacement, new construction |
+| Commercial Heating | $12 billion | Building construction, retrofits |
+| Heat Pump Installation | $8 billion | Electrification, efficiency incentives |
+| Service and Maintenance | $5 billion | Annual maintenance, emergency repairs |
+| Industrial Heating | $2 billion | Process heating, facility heating |
+
+The market is driven by equipment replacement cycles, new construction, energy efficiency incentives, and the growing transition to heat pump technology.
 
 ## Industry Hierarchy
 
@@ -22,82 +38,128 @@ graph TD
     S23["23: Construction"]
     S23 --> N238["238: Specialty Trade Contractors"]
     N238 --> N2382["2382: Building Equipment Contractors"]
-    N2382 --> N23822["23822: Heating"]
-    style N23822 fill:#f96,stroke:#333,stroke-width:2px
+    N2382 --> N238220["238220: Plumbing/HVAC"]
+    N238220 --> Heat["Heating Contractors"]
+    style Heat fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23822 |
-| Level | Industry |
-| Parent | [Building Equipment Contractors](../) |
-| Child Industries | 0 |
+| NAICS Code | 238220 |
+| Specialty Focus | Heating Systems |
+| Parent | [Building Equipment Contractors](./) |
+| U.S. Establishments | ~40,000 |
+| Annual Revenue | ~$45 billion |
+| Employment | ~200,000 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [HVAC Technicians](/occupations/Installation/HVACTechnicians) - Install and service heating systems
+- [Sheet Metal Workers](/occupations/Construction/SheetMetalWorkers) - Fabricate and install ductwork
+- [Boiler Operators](/occupations/Production/BoilerOperators) - Operate and maintain boiler systems
+- [Pipefitters](/occupations/Construction/Pipefitters) - Install hydronic piping systems
+- [Plumbers](/occupations/Construction/Plumbers) - Install gas piping and hydronic systems
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee heating projects
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Assessment["Assessment"]
+        A1["Load Calculation"]
+        A2["System Evaluation"]
+        A3["Equipment Selection"]
+        A4["Proposal"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Installation["Installation"]
+        I1["Equipment Delivery"]
+        I2["Old Equipment Removal"]
+        I3["System Installation"]
+        I4["Ductwork/Piping"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Startup["Startup"]
+        S1["Connections"]
+        S2["Testing"]
+        S3["Commissioning"]
+        S4["Owner Training"]
+    end
+
+    A1 --> A2 --> A3 --> A4
+    A4 --> I1 --> I2 --> I3 --> I4
+    I4 --> S1 --> S2 --> S3 --> S4
 ```
+
+### Load Calculation and System Design
+
+Proper sizing ensures comfort and efficiency.
+
+**Key Activities:**
+- Perform Manual J heat loss calculations
+- Evaluate existing system performance
+- Recommend equipment size and type
+- Select high-efficiency equipment
+- Design duct or piping layouts
+- Prepare installation proposals
+
+### Equipment Installation
+
+Quality installation ensures performance and longevity.
+
+**Key Activities:**
+- Remove existing heating equipment
+- Install new furnace, boiler, or heat pump
+- Connect ductwork or hydronic piping
+- Install gas, oil, or electrical connections
+- Install thermostats and controls
+- Ensure proper combustion air supply
+
+### Testing and Commissioning
+
+Proper startup ensures safe, efficient operation.
+
+**Key Activities:**
+- Test combustion and adjust burners
+- Check refrigerant charge (heat pumps)
+- Verify airflow and temperature rise
+- Test safety controls and limits
+- Configure programmable thermostats
+- Provide owner operation training
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Heating Equipment"]
+        I2["Ductwork/Piping"]
+        I3["Controls"]
+        I4["Fuel/Power"]
+        I5["Trained Technicians"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["System Design"]
+        A2["Installation"]
+        A3["Commissioning"]
+        A4["Service/Maintenance"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Deliverables"]
+        O1["Forced Air Systems"]
+        O2["Hydronic Systems"]
+        O3["Heat Pump Systems"]
+        O4["Radiant Systems"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["Homeowners"]
+        C2["Property Managers"]
+        C3["Building Owners"]
+        C4["General Contractors"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -105,22 +167,94 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Equipment Standards
+- **DOE Efficiency Standards** - Minimum AFUE and HSPF requirements
+- **Energy Star** - High-efficiency certification program
+- **AHRI Certification** - Equipment performance verification
+- **UL/CSA Listings** - Safety certifications
+
+### Installation Codes
+- **International Fuel Gas Code** - Gas appliance installation
+- **National Fuel Gas Code (NFPA 54)** - Gas piping and venting
+- **International Mechanical Code** - Mechanical system requirements
+- **Local Building Codes** - Permit and inspection requirements
+
+### Safety Standards
+- **Carbon Monoxide Requirements** - Detector installation mandates
+- **Combustion Air** - Minimum requirements for fuel-burning equipment
+- **Venting Requirements** - Proper exhaust of combustion products
+- **Gas Leak Detection** - Testing and safety procedures
+
+### Licensing Requirements
+- **HVAC Contractor License** - State licensing requirements
+- **Gas Fitter License** - Required for gas appliance work
+- **EPA Section 608** - Certification for refrigerants (heat pumps)
+- **Continuing Education** - Code update and safety training
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Heat Pump Technology
+- **Air-Source Heat Pumps** - Efficient electric heating
+- **Cold-Climate Heat Pumps** - Operation to -15F or below
+- **Ground-Source Heat Pumps** - Geothermal systems
+- **Hybrid Systems** - Heat pump with gas backup
 
-## Industry Outlook
+### High-Efficiency Equipment
+- **Condensing Furnaces** - 95-98% AFUE efficiency
+- **Modulating Burners** - Variable-capacity operation
+- **ECM Motors** - Efficient variable-speed blowers
+- **Condensing Boilers** - High-efficiency hydronic heat
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Smart Controls
+- **WiFi Thermostats** - Remote monitoring and control
+- **Zoning Systems** - Room-by-room temperature control
+- **Learning Thermostats** - AI-optimized scheduling
+- **Utility Integration** - Demand response programs
+
+### Radiant Systems
+- **Radiant Floor Heating** - Hydronic and electric systems
+- **Radiant Panels** - Wall and ceiling heating
+- **Snow Melt Systems** - Driveway and walkway heating
+- **Infrared Heating** - Industrial and outdoor applications
+
+## Project Types
+
+### Residential Heating
+- Furnace replacement
+- Boiler installation
+- Heat pump systems
+- Ductless mini-splits
+- Radiant floor heating
+
+### Commercial Heating
+- Rooftop unit installation
+- Boiler systems
+- Make-up air units
+- Warehouse heating
+- Retail and office HVAC
+
+### Specialty Applications
+- Industrial process heating
+- Snow melt systems
+- Pool and spa heating
+- Greenhouse heating
+- Temporary construction heat
+
+## Industry Trends and Outlook
+
+Key trends shaping heating contractors:
+
+- **Electrification** - Building decarbonization driving heat pump adoption
+- **Heat Pump Growth** - Cold-climate technology enabling northern adoption
+- **Efficiency Incentives** - Federal and utility rebate programs
+- **Workforce Shortage** - Need for trained heat pump technicians
+- **Gas Restrictions** - Municipal natural gas bans in new construction
+- **Smart Integration** - Connected thermostats and home automation
+- **Hybrid Systems** - Combined heat pump and gas backup
+- **Indoor Air Quality** - Integration with ventilation and filtration
+
+The outlook is transforming rapidly with electrification policies and incentives driving adoption of heat pump technology. Traditional gas furnace and boiler work remains strong in replacement markets, but contractors are increasingly adding heat pump capabilities to serve the growing market.
 
 ---
 
-*Source: NAICS 23822 - Heating*
+*Source: NAICS 238220 - Plumbing, Heating, and Air-Conditioning Contractors (Heating Specialty)*
