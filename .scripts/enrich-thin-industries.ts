@@ -492,10 +492,7 @@ function findThinFiles(dir: string): string[] {
     for (const entry of entries) {
       const fullPath = path.join(currentDir, entry.name)
       if (entry.isDirectory()) {
-        // Skip SIC directories for now
-        if (entry.name !== 'SIC') {
-          walk(fullPath)
-        }
+        walk(fullPath)
       } else if (entry.name.endsWith('.mdx') && !entry.name.startsWith('[')) {
         const stats = fs.statSync(fullPath)
         if (stats.size < MIN_SIZE) {
