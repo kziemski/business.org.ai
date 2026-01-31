@@ -9,11 +9,25 @@ status: complete
 
 # Corn Farming
 
-> See industry description for 111150.
+> Establishments primarily engaged in growing corn (except sweet corn) for grain or seed, including field corn, popcorn, and Indian corn.
 
 ## Overview
 
-Corn Farming represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11). This industry encompasses establishments primarily engaged in corn farming.
+Corn farming is the largest and most economically significant crop sector in U.S. agriculture, with production exceeding 14 billion bushels annually across approximately 90 million acres. The United States produces roughly 35% of the world's corn, making it the dominant global producer and exporter. Modern corn production is highly mechanized and capital-intensive, with average yields exceeding 175 bushels per acre through advances in genetics, precision agriculture, and crop management practices.
+
+The "Corn Belt" spanning Iowa, Illinois, Nebraska, Minnesota, and Indiana accounts for the majority of production, with these states benefiting from ideal soil conditions, growing degree days, and established infrastructure. Corn serves multiple end markets including animal feed (approximately 40% of production), ethanol production (35%), exports (15%), and food/industrial uses (10%).
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Corn Production | 14+ billion bushels |
+| Planted Acres | ~90 million |
+| Average Yield | 175+ bushels/acre |
+| Cash Receipts | $65+ billion |
+| Export Volume | 2+ billion bushels |
+
+Corn prices are heavily influenced by ethanol mandates, export demand (particularly from China and Mexico), and weather conditions during the growing season. The crop insurance and federal commodity programs provide significant risk management support to producers.
 
 ## Industry Hierarchy
 
@@ -21,7 +35,7 @@ Corn Farming represents an important category within the Agriculture, Forestry, 
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
     S11 --> N111["111: Crop Production"]
-    N111 --> N1111["1111: Grain Farming"]
+    N111 --> N1111["1111: Oilseed and Grain Farming"]
     N1111 --> N11115["11115: Corn Farming"]
     style N11115 fill:#f96,stroke:#333,stroke-width:2px
 ```
@@ -32,95 +46,166 @@ graph TD
 |--------|-------|
 | NAICS Code | 11115 |
 | Level | Industry |
-| Parent | [Grain Farming](../) |
-| Child Industries | 0 |
-
+| Parent | [Oilseed and Grain Farming](../) |
+| Child Industries | 111150 (Corn Farming) |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan and manage crop production operations
+- [Agricultural Equipment Operators](/occupations/FarmingFishingAndForestry/AgriculturalEquipmentOperators) - Operate tractors, planters, combines, and sprayers
+- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Assist with soil testing, scouting, and precision ag
+- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Design equipment and production systems
+- [Agricultural Inspectors](/occupations/FarmingFishingAndForestry/AgriculturalInspectors) - Grade and inspect grain quality
+- [Farm Equipment Mechanics](/occupations/InstallationMaintenanceAndRepair/FarmEquipmentMechanics) - Maintain and repair machinery
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Soil Preparation"]
+        O2["Planting"]
+        O3["Crop Management"]
+        O4["Harvest"]
+        O5["Storage/Marketing"]
     end
 
     subgraph Support["Support Processes"]
         S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S2["Crop Scouting"]
+        S3["Input Procurement"]
+        S4["Financial Management"]
     end
 
     O1 --> O2
     O2 --> O3
     O3 --> O4
     O4 --> O5
-    S1 -.-> O2
     S2 -.-> O3
+    S1 -.-> O4
 ```
+
+### Soil Preparation and Planning
+Pre-season activities including tillage, soil testing, seed selection, and input planning.
+
+**Key Activities:**
+- Soil sampling and nutrient analysis
+- Hybrid selection based on maturity and traits
+- Tillage or no-till field preparation
+- Fertilizer application (nitrogen, phosphorus, potassium)
+- Crop rotation planning (corn-soybean rotation common)
+
+### Planting
+Precision seed placement during the critical spring planting window.
+
+**Key Activities:**
+- Planter calibration and setup
+- Variable-rate seeding based on yield maps
+- Starter fertilizer application
+- Depth and spacing optimization
+- Replanting decisions for stand issues
+
+### Crop Management
+In-season management of the growing crop through harvest.
+
+**Key Activities:**
+- Herbicide application (pre and post-emergence)
+- Nitrogen sidedress application
+- Pest and disease scouting
+- Irrigation management (where applicable)
+- Crop insurance documentation
+
+### Harvest and Marketing
+Grain removal, storage, and sale decisions.
+
+**Key Activities:**
+- Combine operation and optimization
+- Grain cart logistics and field transport
+- Drying and storage management
+- Basis monitoring and forward contracting
+- Delivery and settlement
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Seed"]
+        I2["Fertilizer"]
+        I3["Crop Protection"]
+        I4["Equipment"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Field Preparation"]
+        A2["Planting"]
+        A3["Growing"]
+        A4["Harvesting"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+    subgraph Outputs["Products"]
+        O1["Grain Corn"]
+        O2["Seed Corn"]
+        O3["Silage"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+    subgraph Markets["End Markets"]
+        C1["Feed Mills"]
+        C2["Ethanol Plants"]
+        C3["Grain Exporters"]
+        C4["Food Processors"]
     end
 
-    Inputs --> Primary --> Outputs --> Customers
+    Inputs --> Primary --> Outputs --> Markets
 ```
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Farm Service Agency (FSA)** - Administers commodity programs, crop insurance, and conservation compliance
+- **USDA Risk Management Agency (RMA)** - Oversees federal crop insurance program
+- **EPA** - Regulates pesticide registration and use, water quality standards
+- **State Departments of Agriculture** - Seed certification, weights and measures, grain licensing
+- **FDA** - Food safety standards for corn entering food supply
+
+### Key Programs and Regulations
+- Agricultural Risk Coverage (ARC) and Price Loss Coverage (PLC)
+- Federal Crop Insurance Program (Revenue Protection policies)
+- Conservation Compliance requirements
+- Renewable Fuel Standard (RFS) mandating ethanol blending
+- Waters of the United States (WOTUS) regulations
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Precision Agriculture** - GPS guidance, variable-rate application, yield mapping
+- **Seed Technology** - Bt traits for insect resistance, herbicide tolerance (Roundup Ready, LibertyLink)
+- **Sensor Technology** - Drone imagery, satellite monitoring, in-field sensors
+- **Data Analytics** - Predictive modeling, farm management software, yield prediction
+- **Equipment Technology** - Automated section control, combine yield monitors, grain carts with scales
+- **Biological Products** - Microbial seed treatments, nitrogen-fixing biologicals
+
+## Production Practices
+
+### Conventional Production
+Standard practices using GMO hybrids with herbicide tolerance and insect resistance traits, synthetic fertilizers, and chemical pest control.
+
+### Non-GMO Production
+Identity-preserved production for premium markets avoiding genetically modified traits, often commanding $0.50-1.00/bushel premiums.
+
+### Organic Corn
+USDA certified organic production without synthetic inputs, requiring 3-year transition, with premiums of $2-4/bushel above conventional.
+
+## Industry Challenges
+
+- **Input Cost Inflation** - Rising costs for fertilizer, seed, and fuel
+- **Weather Volatility** - Drought, flooding, and late planting affecting yields
+- **Trade Uncertainty** - Export demand fluctuations due to trade policy
+- **Ethanol Policy** - RFS changes impacting domestic demand
+- **Environmental Pressure** - Nutrient runoff concerns, sustainability requirements
+- **Land Costs** - High cash rent and land prices affecting profitability
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+Corn farming remains foundational to U.S. agriculture with stable long-term demand from feed, fuel, and export markets. Growth in ethanol demand has plateaued with the RFS, shifting focus to export growth and industrial uses. Climate variability drives increasing adoption of drought-tolerant genetics and conservation practices. Precision agriculture continues advancing yield potential while optimizing input use efficiency. Sustainability initiatives from food companies create both challenges (documentation requirements) and opportunities (premium markets). The industry's capital intensity and scale requirements continue driving farm consolidation, though family farming remains predominant. Long-term prospects depend on export competitiveness, biofuel policy evolution, and continued technology adoption.
 
 ---
 

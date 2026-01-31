@@ -9,11 +9,25 @@ status: complete
 
 # Residential Building Construction
 
-> Establishments primarily engaged in residential building construction.
+> This industry group comprises establishments primarily responsible for the construction of residential buildings, including single-family homes, multifamily buildings, and residential remodeling.
 
 ## Overview
 
-Residential Building Construction represents an important category within the Construction sector (NAICS 23). This industry group encompasses establishments primarily engaged in residential building construction.
+Residential Building Construction encompasses establishments engaged in constructing buildings designed primarily for residential occupancy. This includes single-family detached homes, townhouses, condominiums, apartment buildings, and manufactured housing. The industry also includes residential remodelers who perform major renovation work on existing homes.
+
+Establishments operate as general contractors, custom home builders, production (tract) builders, multifamily developers, or residential remodelers. The industry is characterized by diverse firm sizes, from sole proprietors building a few custom homes annually to large national homebuilders producing thousands of units across multiple markets.
+
+## Market Context
+
+The U.S. residential construction market represents approximately $400 billion in annual spending, divided among:
+
+| Segment | Annual Spending | Key Characteristics |
+|---------|----------------|---------------------|
+| Single-Family New Construction | $200 billion | Largest segment, tied to housing starts |
+| Multifamily New Construction | $75 billion | Driven by rental demand, urban development |
+| Residential Remodeling | $125 billion | Less cyclical, driven by home equity |
+
+The market is highly sensitive to interest rates, mortgage availability, household formation rates, and regional economic conditions. Housing starts serve as a leading economic indicator, typically ranging from 1.0 to 1.5 million units annually in normal market conditions.
 
 ## Industry Hierarchy
 
@@ -23,6 +37,10 @@ graph TD
     S23 --> N236["236: Construction of Buildings"]
     N236 --> N2361["2361: Residential Building Construction"]
     style N2361 fill:#f96,stroke:#333,stroke-width:2px
+    N2361 --> N236115["236115: Single-Family Housing"]
+    N2361 --> N236116["236116: Multifamily Housing"]
+    N2361 --> N236117["236117: For-Sale Builders"]
+    N2361 --> N236118["236118: Residential Remodelers"]
 ```
 
 ## Key Statistics
@@ -32,72 +50,136 @@ graph TD
 | NAICS Code | 2361 |
 | Level | Industry Group |
 | Parent | [Construction of Buildings](../) |
-| Child Industries | 0 |
+| Child Industries | 4 |
+| U.S. Establishments | ~185,000 |
+| Annual Revenue | ~$400 billion |
+| Housing Starts (2024) | ~1.4 million units |
+| Employment | ~900,000 |
 
+## Industry Segments
+
+| Segment | Code | Description |
+|---------|------|-------------|
+| New Single-Family General Contractors | 236115 | Custom and contract single-family home construction |
+| New Multifamily General Contractors | 236116 | Apartment buildings, condominiums, townhouse projects |
+| New Housing For-Sale Builders | 236117 | Production homebuilders constructing on owned land |
+| Residential Remodelers | 236118 | Major renovation, addition, and reconstruction |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee residential construction projects and subcontractors
+- [Carpenters](/occupations/Construction/Carpenters) - Frame structures and install finish carpentry
+- [Electricians](/occupations/Construction/Electricians) - Install residential electrical systems
+- [Plumbers](/occupations/Construction/Plumbers) - Install plumbing and water systems
+- [HVAC Technicians](/occupations/Installation/HVACTechnicians) - Install heating and cooling systems
+- [Roofers](/occupations/Construction/Roofers) - Install and repair residential roofing
+- [Painters](/occupations/Construction/Painters) - Apply paint and finishes
+- [Concrete Finishers](/occupations/Construction/ConcreteFinishers) - Pour and finish foundations and flatwork
+- [Home Inspectors](/occupations/Construction/HomeInspectors) - Inspect homes for code compliance and defects
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph PreDevelopment["Pre-Development"]
+        D1["Land Acquisition"]
+        D2["Entitlements"]
+        D3["Design/Engineering"]
+        D4["Permitting"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Construction["Construction"]
+        C1["Site Work"]
+        C2["Foundation"]
+        C3["Framing"]
+        C4["MEP Rough-In"]
+        C5["Insulation/Drywall"]
+        C6["Finishes"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Closeout["Closeout"]
+        O1["Final Inspection"]
+        O2["Punch List"]
+        O3["Certificate of Occupancy"]
+        O4["Warranty"]
+    end
+
+    D1 --> D2 --> D3 --> D4
+    D4 --> C1 --> C2 --> C3 --> C4 --> C5 --> C6
+    C6 --> O1 --> O2 --> O3 --> O4
 ```
+
+### Land Development and Entitlement
+
+For-sale builders and developers must secure land and necessary approvals before construction.
+
+**Key Activities:**
+- Evaluate land acquisition opportunities and pricing
+- Conduct due diligence on zoning and site constraints
+- Navigate entitlement process with local jurisdictions
+- Design subdivisions and obtain plat approval
+- Install site infrastructure (roads, utilities)
+- Secure building permits for individual lots
+
+### Home Construction
+
+The construction process follows a predictable sequence of trade activities.
+
+**Key Activities:**
+- Prepare site and install foundation systems
+- Erect structural framing and roof system
+- Install windows, exterior doors, and roofing
+- Rough-in electrical, plumbing, and HVAC systems
+- Insulate and install drywall
+- Complete interior finishes and trim
+- Install flooring, cabinets, and fixtures
+- Final grading and landscaping
+
+### Sales and Customer Service
+
+Homebuilders must effectively market and sell homes while managing customer relationships.
+
+**Key Activities:**
+- Operate model homes and sales centers
+- Qualify buyers and manage contracts
+- Coordinate buyer selections and upgrades
+- Conduct pre-settlement walkthroughs
+- Process closing and title transfer
+- Manage warranty claims and service requests
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Building Materials"]
+        I2["Developed Lots"]
+        I3["Skilled Labor"]
+        I4["Plans/Designs"]
+        I5["Financing"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Land Development"]
+        A2["Home Construction"]
+        A3["Sales/Marketing"]
+        A4["Customer Service"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Products"]
+        O1["Single-Family Homes"]
+        O2["Townhouses"]
+        O3["Condominiums"]
+        O4["Apartments"]
+        O5["Renovated Homes"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["First-Time Buyers"]
+        C2["Move-Up Buyers"]
+        C3["Luxury Buyers"]
+        C4["Active Adults"]
+        C5["Rental Investors"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -105,21 +187,85 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+Residential construction operates under specific regulatory frameworks:
+
+### Building Codes
+- **International Residential Code (IRC)** - Primary code for one- and two-family dwellings
+- **International Building Code (IBC)** - Applies to multifamily buildings over three stories
+- **National Electrical Code (NEC)** - Residential electrical requirements
+- **Uniform Plumbing Code** - Plumbing system requirements
+
+### Energy Standards
+- **International Energy Conservation Code (IECC)** - Energy efficiency requirements
+- **ENERGY STAR Certification** - Voluntary program for energy-efficient homes
+- **Title 24 (California)** - Stringent state energy standards
+- **Net-Zero Ready Standards** - Emerging requirements for zero-energy homes
+
+### Safety and Consumer Protection
+- **OSHA Construction Standards** - Workplace safety requirements
+- **Lead-Safe Work Practices** - Requirements for renovation of pre-1978 homes
+- **State Contractor Licensing** - Licensing requirements vary by state
+- **Home Warranty Laws** - State-mandated warranty requirements
+
+### Land Use and Environmental
+- **Zoning Ordinances** - Local land use regulations
+- **Subdivision Regulations** - Requirements for land development
+- **Stormwater Management** - Erosion control and drainage requirements
+- **Wetlands and Environmental Review** - Permits for sensitive areas
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Design and Sales Technology
+- **Virtual Home Tours** - 3D visualization and virtual reality for home sales
+- **Online Design Centers** - Digital selection of finishes and options
+- **BIM for Residential** - Building information modeling for production builders
+- **Generative Design** - AI-assisted floor plan optimization
 
-## Industry Outlook
+### Construction Technology
+- **Prefabricated Components** - Factory-built wall panels, trusses, and modules
+- **Modular Construction** - Complete home modules manufactured off-site
+- **3D Printed Homes** - Emerging technology for affordable housing
+- **Drone Surveying** - Aerial photography for site documentation
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Building Performance
+- **Smart Home Systems** - Integrated home automation and energy management
+- **High-Performance Building Envelopes** - Advanced insulation and air sealing
+- **Solar-Ready Construction** - Prewiring and structural preparation for solar
+- **Heat Pump HVAC** - Efficient heating and cooling systems
+
+### Business Operations
+- **Construction Management Software** - Scheduling, purchasing, and project tracking
+- **Customer Relationship Management** - Sales tracking and buyer communication
+- **Warranty Management Systems** - Service request tracking and resolution
+- **Trade Partner Portals** - Subcontractor communication and scheduling
+
+## Major Industry Players
+
+The residential construction industry includes several large national builders:
+
+| Builder | Annual Closings | Markets |
+|---------|----------------|---------|
+| D.R. Horton | ~90,000 homes | Nationwide |
+| Lennar | ~70,000 homes | Nationwide |
+| PulteGroup | ~30,000 homes | Nationwide |
+| NVR Inc. | ~25,000 homes | East Coast |
+| Toll Brothers | ~10,000 homes | Luxury segment |
+
+The market also includes thousands of regional and local builders, custom home builders, and residential remodelers.
+
+## Industry Trends and Outlook
+
+Key trends shaping residential construction:
+
+- **Affordability Crisis** - Rising costs and land scarcity limiting first-time buyer access
+- **Build-to-Rent** - Institutional investors building single-family rentals
+- **Aging in Place** - Design features for multigenerational and accessible housing
+- **Sustainability** - Growing demand for energy-efficient and green homes
+- **Labor Shortage** - Skilled trades shortage driving offsite construction adoption
+- **Supply Chain** - Material availability and cost volatility affecting operations
+- **Technology Adoption** - Increasing use of prefab, automation, and digital tools
+
+The outlook depends heavily on interest rate environment and housing affordability. Demographic demand remains strong with millennials and Gen Z entering peak homebuying years, but supply constraints and affordability challenges may limit production growth.
 
 ---
 

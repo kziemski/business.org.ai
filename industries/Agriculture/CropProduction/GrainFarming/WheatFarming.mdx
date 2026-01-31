@@ -9,11 +9,25 @@ status: complete
 
 # Wheat Farming
 
-> See industry description for 111140.
+> Establishments primarily engaged in growing wheat for food, feed, seed, and industrial applications.
 
 ## Overview
 
-Wheat Farming represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11). This industry encompasses establishments primarily engaged in wheat farming.
+Wheat farming is one of America's oldest and most geographically diverse crop production sectors, with annual production typically ranging from 1.7 to 2.0 billion bushels across 45-50 million planted acres. The United States ranks as the world's fourth-largest wheat producer and a major exporter to global markets. Unlike corn and soybeans concentrated in the Midwest, wheat production spans distinct geographic regions with different classes of wheat adapted to local climates and markets.
+
+The primary wheat classes include Hard Red Winter (Kansas, Oklahoma, Texas Panhandle), Hard Red Spring (Northern Great Plains), Soft Red Winter (Eastern U.S.), White Wheat (Pacific Northwest), and Durum (North Dakota, Montana). Each class serves different end-use markets from bread flour to pasta, creating a diverse market structure. Wheat's role as a global food staple and its drought tolerance make it essential for U.S. food security and export earnings.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Wheat Production | 1.8-2.0 billion bushels |
+| Planted Acres | 45-50 million |
+| Average Yield | 45-50 bushels/acre |
+| Cash Receipts | $9-11 billion |
+| Export Volume | 800+ million bushels |
+
+The U.S. exports approximately 50% of wheat production, making prices sensitive to global supply/demand dynamics. Major export destinations include Mexico, Japan, Philippines, Nigeria, and various Asian markets. Domestic food use remains stable while feed use varies with relative corn prices.
 
 ## Industry Hierarchy
 
@@ -21,7 +35,7 @@ Wheat Farming represents an important category within the Agriculture, Forestry,
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
     S11 --> N111["111: Crop Production"]
-    N111 --> N1111["1111: Grain Farming"]
+    N111 --> N1111["1111: Oilseed and Grain Farming"]
     N1111 --> N11114["11114: Wheat Farming"]
     style N11114 fill:#f96,stroke:#333,stroke-width:2px
 ```
@@ -32,34 +46,35 @@ graph TD
 |--------|-------|
 | NAICS Code | 11114 |
 | Level | Industry |
-| Parent | [Grain Farming](../) |
-| Child Industries | 0 |
-
+| Parent | [Oilseed and Grain Farming](../) |
+| Child Industries | 111140 (Wheat Farming) |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage wheat production operations
+- [Agricultural Equipment Operators](/occupations/FarmingFishingAndForestry/AgriculturalEquipmentOperators) - Operate drills, sprayers, and combines
+- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Conduct soil testing and crop scouting
+- [Agricultural Inspectors](/occupations/FarmingFishingAndForestry/AgriculturalInspectors) - Grade wheat for protein and quality
+- [Grain Elevator Operators](/occupations/TransportationAndMaterialMoving/IndustrialTruckAndTractorOperators) - Handle and store wheat
+- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Design equipment and irrigation systems
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Seedbed Preparation"]
+        O2["Planting/Drilling"]
+        O3["Growing Management"]
+        O4["Harvest"]
+        O5["Storage/Marketing"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Variety Selection"]
+        S2["Crop Scouting"]
+        S3["Equipment Maintenance"]
+        S4["Marketing Strategy"]
     end
 
     O1 --> O2
@@ -70,57 +85,138 @@ flowchart LR
     S2 -.-> O3
 ```
 
+### Planting Operations
+Seeding wheat during optimal planting windows varies by wheat class.
+
+**Key Activities:**
+- Winter wheat: September-November planting for June-July harvest
+- Spring wheat: April-May planting for August-September harvest
+- Drill calibration for desired seeding rate (60-120 lbs/acre)
+- Seed depth management (1-2 inches)
+- Starter fertilizer application
+
+### Growing Season Management
+Crop protection and nutrition management through maturity.
+
+**Key Activities:**
+- Fall/spring nitrogen application
+- Herbicide applications for weed control
+- Fungicide for disease management (stripe rust, Fusarium head blight)
+- Insect monitoring (aphids, Hessian fly)
+- Growth regulator applications where appropriate
+
+### Harvest Operations
+Combining mature wheat and managing grain quality.
+
+**Key Activities:**
+- Monitoring grain moisture (13.5% optimal)
+- Combine settings for minimal damage and dockage
+- Test weight and protein assessment
+- Blending strategies for quality optimization
+- Timely harvest to avoid weather damage
+
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Certified Seed"]
+        I2["Fertilizer"]
+        I3["Crop Protection"]
+        I4["Equipment"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Planting"]
+        A2["Growing"]
+        A3["Harvest"]
+        A4["Storage"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+    subgraph Outputs["Products"]
+        O1["Hard Red Winter"]
+        O2["Hard Red Spring"]
+        O3["Soft Red Winter"]
+        O4["White/Durum"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+    subgraph Markets["End Markets"]
+        C1["Flour Mills"]
+        C2["Export Elevators"]
+        C3["Feed Mills"]
+        C4["Seed Companies"]
     end
 
-    Inputs --> Primary --> Outputs --> Customers
+    Inputs --> Primary --> Outputs --> Markets
 ```
+
+## Wheat Classes and Uses
+
+### Hard Red Winter (HRW)
+Grown primarily in the Southern Great Plains; used for bread flour due to high protein content (10-14%).
+
+### Hard Red Spring (HRS)
+Grown in Northern Great Plains; highest protein content (12-15%) for specialty breads and blending.
+
+### Soft Red Winter (SRW)
+Grown in Eastern U.S.; lower protein (8-11%) for cookies, crackers, pastries, and Asian noodles.
+
+### White Wheat
+Grown in Pacific Northwest and Michigan; used for noodles, flat breads, and breakfast cereals.
+
+### Durum
+Grown in North Dakota and Montana; used exclusively for pasta and couscous production.
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Farm Service Agency** - Administers commodity programs and crop insurance
+- **USDA Grain Inspection, Packers and Stockyards (GIPSA)** - Official grain standards and inspection
+- **EPA** - Pesticide registration and residue tolerances
+- **State Wheat Commissions** - Research funding and market development
+- **Federal Grain Inspection Service (FGIS)** - Export certification
+
+### Key Programs and Regulations
+- Price Loss Coverage (PLC) wheat program
+- Federal Crop Insurance (APH, Revenue Protection)
+- Official grain grading standards (test weight, protein, dockage)
+- Maximum residue limits (MRLs) for export markets
+- Organic certification standards
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Precision Agriculture** - GPS-guided planters, variable-rate fertilization
+- **Disease-Resistant Varieties** - Genetic resistance to rust, Fusarium, and other diseases
+- **Hybrid Wheat Development** - Emerging technology for yield improvement
+- **Satellite Monitoring** - NDVI imaging for crop health assessment
+- **NIR Protein Testing** - Rapid quality analysis at harvest
+- **Reduced Tillage Systems** - No-till and minimum-till for moisture conservation
+
+## Regional Characteristics
+
+### Southern Plains (Texas, Oklahoma, Kansas)
+Hard red winter wheat in dryland production; significant double-crop with soybeans or grain sorghum; challenged by drought and heat stress.
+
+### Northern Plains (Montana, North Dakota, South Dakota)
+Spring wheat and durum production; short growing season; high protein potential; frost and early snow risks.
+
+### Pacific Northwest (Washington, Idaho, Oregon)
+White wheat production; mix of dryland and irrigated; export-oriented through Pacific ports.
+
+### Eastern Soft Wheat Region
+Soft red winter wheat; rotation with corn and soybeans; disease pressure from humid conditions.
+
+## Industry Challenges
+
+- **Acreage Competition** - Corn and soybeans more profitable in many regions
+- **Export Market Access** - Trade barriers and currency fluctuations
+- **Quality Variability** - Weather impacts on protein and test weight
+- **Disease Pressure** - Fusarium head blight (scab) and rust diseases
+- **Climate Variability** - Drought in Plains, excessive moisture in East
+- **Input Cost Management** - Fertilizer and fuel cost volatility
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+Wheat farming faces structural challenges from competition with more profitable crops in traditional growing regions, leading to acreage decline. However, wheat remains essential for domestic food security and export earnings. Global population growth and dietary changes in developing countries support long-term demand. Climate adaptation through drought-tolerant varieties and improved agronomics is critical for the drought-prone Great Plains. Quality premiums for high-protein spring wheat and specialty varieties create opportunities for producers meeting market specifications. The industry's future depends on improving per-acre profitability through yield gains, quality premiums, and cost management while maintaining competitiveness in global markets against low-cost producers.
 
 ---
 

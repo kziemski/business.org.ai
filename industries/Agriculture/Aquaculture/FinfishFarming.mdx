@@ -1,29 +1,43 @@
 ---
 id: FinfishFarming
-name: "Finfish Farming"
+name: "Finfish Farming and Fish Hatcheries"
 code: "112511"
 type: Industry
 level: National Industry
 status: complete
 ---
 
-# Finfish Farming
+# Finfish Farming and Fish Hatcheries
 
-> This U.
+> Establishments primarily engaged in farm raising finfish such as catfish, trout, tilapia, salmon, and ornamental fish, as well as operating fish hatcheries.
 
 ## Overview
 
-Finfish Farming represents a specialized segment within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11).
+Finfish farming (aquaculture) is a growing segment of U.S. agriculture that produces fish through controlled cultivation rather than wild capture. The industry encompasses both food fish production and hatchery operations supporting recreational fishing and aquaculture. The United States produces approximately 600 million pounds of farmed finfish annually, though this represents only a small fraction of domestic seafood consumption, which is predominantly met through imports.
 
-This U.S. industry comprises establishments primarily engaged in (1) farm raising finfish (e.g., catfish, trout, goldfish, tropical fish, minnows) and/or (2) hatching fish of any kind. Cross-References.
+Channel catfish farming in the Mississippi Delta region (Mississippi, Alabama, Arkansas) historically dominated U.S. production, though the industry has faced significant import competition. Trout farming is concentrated in Idaho's Magic Valley, while salmon farming exists on a limited scale in Washington and Maine. The ornamental fish segment (goldfish, koi, tropical fish) serves the aquarium trade. State and federal hatcheries produce billions of fish annually to stock recreational waters.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Farmed Finfish Production | ~600 million lbs |
+| Industry Value | $1.5+ billion |
+| Catfish Production | ~300 million lbs |
+| Trout Production | ~55 million lbs |
+| Import Competition | 90%+ of seafood consumed is imported |
+
+The U.S. aquaculture industry faces significant competitive pressure from imported farmed fish, particularly catfish (Vietnam), tilapia (China, Latin America), and salmon (Chile, Norway). Domestic production focuses on freshwater species and niche markets.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
-    S11 --> N112["112: Animal Production"]
-    N112 --> N112511["112511: Finfish Farming"]
+    S11 --> N112["112: Animal Production and Aquaculture"]
+    N112 --> N1125["1125: Aquaculture"]
+    N1125 --> N11251["11251: Aquaculture"]
+    N11251 --> N112511["112511: Finfish Farming and Fish Hatcheries"]
     style N112511 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
@@ -33,94 +47,178 @@ graph TD
 |--------|-------|
 | NAICS Code | 112511 |
 | Level | National Industry |
+| Parent | [Aquaculture](../) |
 | Child Industries | 0 |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Aquacultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage fish farming operations
+- [Fish Hatchery Workers](/occupations/FarmingFishingAndForestry/AgriculturalWorkers) - Feed, monitor, and care for fish
+- [Aquatic Biologists](/occupations/Science/BiologicalScientists) - Research fish health and production
+- [Veterinarians](/occupations/Healthcare/Veterinarians) - Diagnose and treat fish diseases
+- [Water Quality Specialists](/occupations/Science/EnvironmentalScientists) - Monitor and manage water conditions
+- [Food Scientists](/occupations/Science/FoodScientistsAndTechnologists) - Develop processing and quality protocols
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Broodstock Management"]
+        O2["Spawning/Hatching"]
+        O3["Fingerling Production"]
+        O4["Grow-Out"]
+        O5["Harvest/Processing"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Water Quality Mgmt"]
+        S2["Feed Management"]
+        S3["Health Monitoring"]
+        S4["Facility Maintenance"]
     end
 
     O1 --> O2
     O2 --> O3
     O3 --> O4
     O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    S1 -.-> O4
+    S2 -.-> O4
 ```
+
+### Broodstock and Spawning
+Managing breeding fish and producing eggs/fry for production.
+
+**Key Activities:**
+- Broodstock selection for growth and disease resistance
+- Spawning induction (temperature, photoperiod, hormones)
+- Egg collection and incubation
+- Hatching and early fry care
+- Genetic record keeping
+
+### Fingerling Production
+Growing fry to fingerling size for stocking or sale.
+
+**Key Activities:**
+- Pond or tank culture for fry
+- Initial feeding with starter diets
+- Grading by size
+- Disease prevention protocols
+- Sales to grow-out operations
+
+### Grow-Out Operations
+Raising fish to market size in ponds, raceways, or cages.
+
+**Key Activities:**
+- Stocking density management
+- Feed program optimization
+- Water quality maintenance
+- Health monitoring and treatment
+- Growth tracking and harvest planning
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Fingerlings/Fry"]
+        I2["Feed"]
+        I3["Water/Land"]
+        I4["Equipment"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Hatching"]
+        A2["Nursery"]
+        A3["Grow-Out"]
+        A4["Harvest"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+    subgraph Outputs["Products"]
+        O1["Food Fish"]
+        O2["Fingerlings"]
+        O3["Ornamental Fish"]
+        O4["Stocking Fish"]
     end
 
-    subgraph Customers["Markets"]
+    subgraph Markets["End Markets"]
         C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+        C2["Live Markets"]
+        C3["Pet Trade"]
+        C4["State Agencies"]
     end
 
-    Inputs --> Primary --> Outputs --> Customers
+    Inputs --> Primary --> Outputs --> Markets
 ```
+
+## Species Overview
+
+### Channel Catfish
+Dominant U.S. farmed species; raised in earthen ponds; marketed through processors for fillets; concentrated in Mississippi Delta.
+
+### Rainbow Trout
+Cold-water species raised in raceways; Idaho produces 70%+ of U.S. farm-raised trout; sold fresh, frozen, and smoked.
+
+### Tilapia
+Warm-water species with limited U.S. production; most domestic consumption from imports; recirculating aquaculture systems (RAS) growing.
+
+### Ornamental Fish
+Goldfish, koi, and tropical fish for aquarium trade; significant industry in Florida.
+
+### Salmon
+Limited U.S. production in net pens (Washington, Maine); Atlantic salmon dominant species; significant import competition.
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA APHIS** - Aquatic animal health and disease regulations
+- **FDA** - Drug approvals for aquaculture, food safety standards
+- **EPA** - Discharge permits (NPDES) for aquaculture facilities
+- **U.S. Fish and Wildlife Service** - Permits for certain species and locations
+- **State Agencies** - Licensing, water rights, and environmental compliance
+
+### Key Regulations
+- Aquaculture drug approvals (limited options available)
+- Effluent discharge limits for aquaculture operations
+- Seafood HACCP requirements for processors
+- Country of Origin Labeling (COOL) for fish
+- Invasive species regulations for certain fish
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Recirculating Aquaculture Systems (RAS)** - Indoor, water-reuse systems enabling production anywhere
+- **Selective Breeding** - Genetic improvement for growth, disease resistance, and fillet yield
+- **Automated Feeding** - Demand feeders and computer-controlled systems
+- **Water Quality Monitoring** - Real-time sensors for dissolved oxygen, temperature, ammonia
+- **Disease Diagnostics** - PCR testing and rapid disease identification
+- **Alternative Feeds** - Plant-based proteins reducing fishmeal dependence
+
+## Production Systems
+
+### Earthen Ponds
+Traditional catfish production; lower capital costs; larger land requirements; weather-dependent.
+
+### Raceways
+Flowing water systems for trout; continuous water exchange; high density production.
+
+### Recirculating Systems (RAS)
+Closed-loop systems with water treatment; location flexibility; high capital and energy costs.
+
+### Net Pens/Cages
+Open-water systems for salmon and some marine species; environmental scrutiny; limited U.S. application.
+
+## Industry Challenges
+
+- **Import Competition** - Lower-cost imports dominating U.S. market
+- **Feed Costs** - Fishmeal and fish oil price volatility
+- **Regulatory Burden** - Complex permitting for new facilities
+- **Disease Management** - Limited FDA-approved therapeutics
+- **Capital Requirements** - High investment for modern RAS systems
+- **Market Development** - Consumer awareness of domestic farmed fish
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+U.S. finfish aquaculture faces structural challenges from import competition but maintains niches in specialty markets, live fish, and regionally-branded products. Investment in recirculating aquaculture systems (RAS) is increasing, enabling production near consumption centers regardless of climate. Atlantic salmon RAS projects represent significant capital commitments targeting the premium fresh salmon market. The catfish industry continues consolidating as processors seek efficiency. Genetic improvement programs are enhancing growth rates and disease resistance. Long-term growth depends on technology advances reducing production costs, regulatory modernization enabling new facilities and therapeutics, and consumer demand for locally-produced, sustainable seafood. The industry's future may shift from commodity production toward premium, differentiated products competing on freshness, sustainability, and traceability rather than price.
 
 ---
 
-*Source: NAICS 112511 - Finfish Farming*
+*Source: NAICS 112511 - Finfish Farming and Fish Hatcheries*

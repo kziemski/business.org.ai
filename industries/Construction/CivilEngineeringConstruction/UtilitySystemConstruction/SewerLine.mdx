@@ -1,126 +1,200 @@
 ---
 id: SewerLine
-name: "Sewer Line"
-code: "23711"
+name: "Sewer Line and Related Structures Construction"
+code: "237110"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Sewer Line
+# Sewer Line and Related Structures Construction
 
-> See industry description for 237110.
+> This industry comprises establishments primarily engaged in the construction of sewer mains, storm drains, and related structures including lift stations, pump stations, and wastewater treatment facilities.
 
 ## Overview
 
-Sewer Line represents an important category within the Construction sector (NAICS 23).
+Sewer Line and Related Structures Construction represents a critical component of water and sewer construction (NAICS 237110), focusing specifically on wastewater collection infrastructure. This includes gravity sewer mains, force mains, storm drains, manholes, lift stations, and connections to wastewater treatment facilities.
+
+The industry addresses one of the most essential public health needs: safely collecting and conveying wastewater away from homes and businesses for treatment. Much of America's sewer infrastructure was built 50-100 years ago and requires significant investment in replacement and rehabilitation to prevent failures, overflows, and environmental contamination.
+
+## Market Context
+
+The U.S. sewer construction market represents approximately $20 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Gravity Sewer Construction | $8 billion | New development, system expansion |
+| Sewer Rehabilitation | $5 billion | Inflow/infiltration, structural repair |
+| Pump/Lift Stations | $3 billion | Force main systems, low-lying areas |
+| Stormwater Systems | $4 billion | Flood control, CSO separation, green infrastructure |
+
+The market is driven by aging infrastructure, EPA consent decrees for combined sewer overflow (CSO) reduction, new development in growing communities, and climate adaptation for increased storm intensity.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S23["23: Construction"]
-    S23 --> N237["237: Heavy"]
+    S23 --> N237["237: Heavy and Civil Engineering"]
     N237 --> N2371["2371: Utility System Construction"]
-    N2371 --> N23711["23711: Sewer Line"]
-    style N23711 fill:#f96,stroke:#333,stroke-width:2px
+    N2371 --> N237110["237110: Water and Sewer Line"]
+    N237110 --> Sewer["Sewer Line Construction"]
+    style Sewer fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23711 |
-| Level | Industry |
-| Parent | [Utility System Construction](../) |
-| Child Industries | 0 |
+| NAICS Code | 237110 |
+| Level | National Industry (Segment) |
+| Parent | [Water and Sewer Line Construction](./Water/) |
+| U.S. Sewer Systems | 16,000+ |
+| U.S. Sewer Miles | 800,000+ |
+| CSO Communities | 860 |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee sewer construction projects
+- [Civil Engineers](/occupations/Architecture/CivilEngineers) - Design collection systems and treatment facilities
+- [Pipelayers](/occupations/Construction/Pipelayers) - Install sewer mains and laterals
+- [Operating Engineers](/occupations/Construction/OperatingEngineers) - Operate excavators and trenching equipment
+- [Concrete Workers](/occupations/Construction/ConcreteWorkers) - Construct manholes and structures
+- [CCTV Technicians](/occupations/Installation/CCTVTechnicians) - Inspect sewer lines with video equipment
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Design["Planning/Design"]
+        D1["System Analysis"]
+        D2["Alignment Design"]
+        D3["Permitting"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Construction["Construction"]
+        C1["Bypass Pumping"]
+        C2["Excavation"]
+        C3["Pipe Installation"]
+        C4["Manhole Construction"]
+        C5["Connections"]
+        C6["Testing"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Closeout["Acceptance"]
+        O1["CCTV Inspection"]
+        O2["Mandrel Testing"]
+        O3["Documentation"]
+    end
+
+    D1 --> D2 --> D3
+    D3 --> C1 --> C2 --> C3 --> C4 --> C5 --> C6
+    C6 --> O1 --> O2 --> O3
 ```
 
-## Industry Value Chain
+### Gravity Sewer Construction
 
-```mermaid
-graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
-    end
+Gravity sewers rely on proper grade to convey wastewater, requiring precise installation.
 
-    subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
-    end
+**Key Activities:**
+- Establish line and grade using laser guidance
+- Excavate trenches to specified depths
+- Install bedding material and pipe sections
+- Construct manholes at changes in direction and grade
+- Make lateral connections for services
+- Backfill and compact per specifications
+- Restore surface improvements
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
-    end
+### Force Main Construction
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
-    end
+Force mains use pumping to move wastewater in areas without adequate gravity flow.
 
-    Inputs --> Primary --> Outputs --> Customers
-```
+**Key Activities:**
+- Install pressure-rated pipe (ductile iron, HDPE)
+- Construct pump/lift stations with wet wells
+- Install pumps, valves, and controls
+- Complete electrical and SCADA connections
+- Test system under pressure
+- Commission pumping equipment
+
+### Sewer Rehabilitation
+
+Rehabilitation extends the life of existing sewers without full replacement.
+
+**Key Activities:**
+- Assess condition using CCTV inspection
+- Clean and prepare existing pipe
+- Install cured-in-place pipe (CIPP) liners
+- Apply spray-applied linings
+- Perform point repairs at localized defects
+- Rehabilitate or replace manholes
+- Test rehabilitated sections
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Federal Regulations
+- **Clean Water Act** - NPDES permits for wastewater discharge
+- **EPA Consent Decrees** - Court-ordered CSO remediation
+- **OSHA Trenching Standards** - Excavation safety requirements
+- **OSHA Confined Space** - Manhole entry requirements
+
+### State and Local Requirements
+- **State Environmental Permits** - Sewer construction approvals
+- **Local Sewer Codes** - Material and installation standards
+- **Traffic Control Permits** - Right-of-way work requirements
+- **Industrial Pretreatment** - Requirements for industrial connections
+
+### Industry Standards
+- **ASTM Standards** - Pipe material and testing specifications
+- **WEF/ASCE Standards** - Gravity sewer design criteria
+- **NASSCO PACP** - Pipeline Assessment Certification Program
+- **OSHA Permit-Required Confined Space** - Entry procedures
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Assessment Technology
+- **CCTV Inspection** - Video documentation of pipe condition
+- **Side-Scanning Sonar** - Detailed pipe wall imaging
+- **Laser Profiling** - Measurement of pipe deformation
+- **Smoke/Dye Testing** - Inflow and infiltration detection
 
-## Industry Outlook
+### Trenchless Methods
+- **Cured-in-Place Pipe (CIPP)** - Structural rehabilitation without excavation
+- **Pipe Bursting** - Replacement through existing alignment
+- **Slip Lining** - Insertion of new pipe in existing pipe
+- **Horizontal Directional Drilling** - New installations avoiding surface disruption
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Construction Technology
+- **Laser Guidance** - Precision grade control for gravity sewers
+- **GPS Machine Control** - Automated excavation systems
+- **Digital As-Builts** - Electronic documentation of installations
+- **Real-Time Monitoring** - Flow monitoring during construction
+
+## Project Types
+
+- Gravity sewer main installation
+- Force main construction
+- Lift/pump station construction
+- Manhole rehabilitation
+- CIPP rehabilitation
+- CSO separation projects
+- Stormwater system construction
+- Green infrastructure installations
+
+## Industry Trends and Outlook
+
+Key trends shaping sewer construction:
+
+- **Aging Infrastructure** - Massive reinvestment in deteriorating systems
+- **I/I Reduction** - Programs to reduce inflow and infiltration
+- **CSO Elimination** - EPA consent decree compliance
+- **Green Infrastructure** - Natural stormwater management
+- **Trenchless Adoption** - Minimizing surface disruption
+- **Smart Sewers** - Real-time monitoring and optimization
+- **Climate Adaptation** - Systems sized for increased storm intensity
+
+The outlook is strong with significant federal investment, regulatory mandates, and critical need to address aging infrastructure. Combined sewer overflow programs in major cities provide substantial multi-year backlogs.
 
 ---
 
-*Source: NAICS 23711 - Sewer Line*
+*Source: NAICS 237110 - Water and Sewer Line and Related Structures Construction (Sewer Segment)*

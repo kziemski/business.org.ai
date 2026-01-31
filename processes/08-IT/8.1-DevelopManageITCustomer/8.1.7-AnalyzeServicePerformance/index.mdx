@@ -16,22 +16,31 @@ children: ["8.1.7.1", "8.1.7.2", "8.1.7.3", "8.1.7.4"]
 
 ## Overview
 
-Process 8.1.7 is a core process that defines the specific procedures for analyze service performance. 
+Process 8.1.7 is a core process that defines the specific procedures for analyzing service performance. This process provides continuous visibility into IT service delivery effectiveness and customer satisfaction.
 
-Proactively manage IT service levels against IT customer requirements.
+Proactively manage IT service levels against IT customer requirements. This includes monitoring SLA compliance, identifying performance issues, collecting customer feedback, and synthesizing insights for stakeholders and continuous improvement.
+
+Service performance analysis is essential for maintaining customer trust, demonstrating IT value, and driving service improvements. By systematically measuring and analyzing performance data, IT organizations can identify trends, address issues proactively, and continuously enhance service delivery quality.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C8["8.0 Manage Information Technology"]
-    C8 --> N8_1["8.1 Develop and manage IT customer relati..."]
+    C8 --> N8_1["8.1 Develop and manage IT customer relationships"]
     N8_1 --> N8_1_7["8.1.7 Analyze service performance"]
     style N8_1_7 fill:#e1f5fe
     N8_1_7 --> N8_1_7_1["8.1.7.1 Assess SLA compliance"]
     N8_1_7 --> N8_1_7_2["8.1.7.2 Triage SLA compliance issues"]
-    N8_1_7 --> N8_1_7_3["8.1.7.3 Collect feedback about IT produc..."]
-    N8_1_7 --> N8_1_7_4["8.1.7.4 Synthesize and distribute IT per..."]
+    N8_1_7 --> N8_1_7_3["8.1.7.3 Collect feedback"]
+    N8_1_7 --> N8_1_7_4["8.1.7.4 Synthesize and distribute"]
+
+    N8_1_7_1 --> A1["Monitor service metrics"]
+    N8_1_7_1 --> A2["Compare to SLA targets"]
+    N8_1_7_2 --> A3["Prioritize issues"]
+    N8_1_7_2 --> A4["Plan remediation"]
+    N8_1_7_3 --> A5["Conduct surveys"]
+    N8_1_7_4 --> A6["Create dashboards"]
 ```
 
 ## Key Statistics
@@ -43,61 +52,181 @@ graph TD
 | Level | Process |
 | Parent | [8.1](../) |
 | Sub-Processes | 4 |
-
+| Industry Variants | 19 |
 
 ## GraphDL Semantic Structure
 
 ```graphdl
 analyze.ServicePerformance
+assess.SLACompliance
+synthesize.PerformanceInformation
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `analyze` | Primary action |
-| Object | `service performance` | Direct object |
-
+| Verb | `analyze` | Primary action of examining performance data |
+| Object | `service performance` | IT service delivery metrics and outcomes |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Service Level Agreements"]
+        I2["Performance Metrics"]
+        I3["Customer Feedback"]
+        I4["Incident Data"]
+        I5["Capacity Data"]
     end
 
     subgraph Process["Analyze service performance"]
-        S1["Assess SLA compliance"]
-        S2["Triage SLA compliance issues"]
-        S3["Collect feedback about IT p..."]
-        S4["Synthesize and distribute I..."]
+        S1["Collect performance data"]
+        S2["Assess SLA compliance"]
+        S3["Identify performance gaps"]
+        S4["Triage issues"]
+        S5["Collect customer feedback"]
+        S6["Analyze trends"]
+        S7["Synthesize insights"]
+        S8["Distribute reports"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["SLA Compliance Reports"]
+        O2["Performance Dashboards"]
+        O3["Improvement Recommendations"]
+        O4["Executive Summaries"]
+        O5["Trend Analysis"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
 ```
 
-## Sub-Processes
+## Child Process Listings
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Assess SLA compliance](./AssessSLACompliance) | 8.1.7.1 | Gather data from each service target defined in an SLA for a time segment or review period to evalua |
-| [Triage SLA compliance issues](./TriageSLAComplianceIssues) | 8.1.7.2 | Prioritizing SLA compliance issues and plan for remediation |
-| [Collect feedback about IT products and services](./CollectFeedbackAboutITProductsAndServices) | 8.1.7.3 | Collecting customer feedback about IT products and services effectiveness based on overall satisfact |
-| [Synthesize and distribute IT performance information](./SynthesizeAndDistributeITPerformanceInformation) | 8.1.7.4 | Providing stakeholders with collected IT performance measures for further development based on evalu |
+### 8.1.7.1 - Assess SLA compliance
 
+Gather data from each service target defined in an SLA for a time segment or review period to evaluate compliance and identify potential issues.
+
+**Key Activities:**
+- Collect service metrics from monitoring systems
+- Compare actual performance to SLA targets
+- Calculate SLA attainment percentages
+- Identify trending issues
+- Document compliance status
+- Prepare compliance reports
+
+[View Process Details](./AssessSLACompliance)
+
+### 8.1.7.2 - Triage SLA compliance issues
+
+Prioritizing SLA compliance issues and plan for remediation. This sub-process ensures resources focus on highest-impact issues.
+
+**Key Activities:**
+- Categorize compliance issues by severity
+- Assess business impact of each issue
+- Prioritize remediation efforts
+- Assign ownership for resolution
+- Track remediation progress
+- Escalate critical issues
+
+[View Process Details](./TriageSLAComplianceIssues)
+
+### 8.1.7.3 - Collect feedback about IT products and services
+
+Collecting customer feedback about IT products and services effectiveness based on overall satisfaction. This sub-process captures the voice of the customer.
+
+**Key Activities:**
+- Design and deploy satisfaction surveys
+- Conduct customer interviews
+- Monitor feedback channels
+- Analyze feedback patterns
+- Correlate feedback with service metrics
+- Report feedback insights
+
+[View Process Details](./CollectFeedbackAboutITProductsAndServices)
+
+### 8.1.7.4 - Synthesize and distribute IT performance information
+
+Providing stakeholders with collected IT performance measures for further development based on evaluation of IT services and solutions.
+
+**Key Activities:**
+- Aggregate performance data
+- Create executive dashboards
+- Develop trend analysis
+- Prepare stakeholder reports
+- Conduct performance reviews
+- Communicate improvement initiatives
+
+[View Process Details](./SynthesizeAndDistributeITPerformanceInformation)
+
+## RACI Matrix
+
+| Activity | Service Performance Manager | IT Service Manager | Business Relationship Manager | Operations Manager | CIO | Business Stakeholders |
+|----------|----------------------------|-------------------|------------------------------|-------------------|-----|----------------------|
+| Collect performance data | R | C | I | R | I | I |
+| Assess SLA compliance | R | A | C | C | I | I |
+| Identify performance gaps | R | A | C | C | I | I |
+| Triage issues | R | A | C | R | I | I |
+| Collect customer feedback | R | C | A | I | I | R |
+| Analyze trends | R | C | C | C | I | I |
+| Synthesize insights | R | A | C | C | C | I |
+| Distribute reports | R | C | A | I | C | R |
+
+**Legend:** R = Responsible, A = Accountable, C = Consulted, I = Informed
+
+## Metrics and KPIs
+
+| Metric | Description | Target | Frequency |
+|--------|-------------|--------|-----------|
+| SLA Compliance Rate | Percentage of SLA targets met | >95% | Monthly |
+| Customer Satisfaction Score | Average IT customer satisfaction rating | >4.0/5.0 | Quarterly |
+| Net Promoter Score | Customer likelihood to recommend IT services | >30 | Quarterly |
+| Mean Time to Resolution | Average time to resolve issues | <SLA target | Weekly |
+| Service Availability | System uptime percentage | >99.5% | Monthly |
+| Report Delivery Timeliness | Percentage of reports delivered on schedule | 100% | Monthly |
+| Issue Resolution Rate | Percentage of identified issues resolved | >90% | Monthly |
+| Feedback Response Rate | Percentage of surveys completed | >40% | Per survey |
+| Performance Trend Direction | Improvement trend over time | Positive | Quarterly |
+| Stakeholder Engagement | Attendance at performance reviews | >80% | Per review |
+
+## Related Departments
+
+- [IT Service Management](/departments/IT/ServiceManagement) - Service delivery oversight
+- [Business Relationship Management](/departments/IT/BRM) - Customer engagement
+- [IT Operations](/departments/IT/Operations) - Operational metrics
+- [Quality Assurance](/departments/IT/QA) - Quality measurement
+- [Business Analytics](/departments/Analytics) - Reporting and analysis
+- [Executive Leadership](/departments/Executive) - Strategic performance review
+
+## Related Occupations
+
+- [Computer and Information Systems Managers](/occupations/Technology/Management/ComputerInformationSystemsManagers) - IT performance oversight
+- [Management Analysts](/occupations/Business/Operations/ManagementAnalysts) - Performance analysis
+- [Market Research Analysts](/occupations/Business/Marketing/MarketResearchAnalysts) - Customer feedback analysis
+- [Operations Research Analysts](/occupations/Math/OperationsResearchAnalysts) - Performance optimization
+- [Computer Systems Analysts](/occupations/Technology/Analysis/ComputerSystemsAnalysts) - Systems performance analysis
+- [Statisticians](/occupations/Math/Statisticians) - Statistical trend analysis
 
 ## Related Concepts
 
 - ServicePerformance
+- SLACompliance
+- CustomerSatisfaction
+- PerformanceAnalytics
+- ServiceLevelManagement
+- ContinuousImprovement
 
+## Related Processes
+
+```mermaid
+graph LR
+    P8_1_5["8.1.5 Develop IT service levels"] --> P8_1_7["8.1.7 Analyze service performance"]
+    P8_1_6["8.1.6 Manage customer relationships"] --> P8_1_7
+    P8_1_7 --> P8_7_8["8.7.8 User support"]
+    P8_1_7 --> P8_1_1["8.1.1 Understand customer needs"]
+    P8_1_7 --> P8_2_6["8.2.6 Manage IT value"]
+```
 
 ---
 

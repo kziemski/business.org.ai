@@ -1,19 +1,33 @@
 ---
 id: Fishing
-name: "Fishing"
+name: "Commercial Fishing"
 code: "1141"
-type: Industry
+type: Industry Group
 level: Industry Group
 status: complete
 ---
 
-# Fishing
+# Commercial Fishing
 
-> Establishments primarily engaged in fishing.
+> Establishments primarily engaged in the commercial catching or taking of finfish, shellfish, and other marine animals from their natural habitats for sale.
 
 ## Overview
 
-Fishing represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11). This industry group encompasses establishments primarily engaged in fishing.
+Commercial fishing encompasses the harvest of wild fish, shellfish, and other aquatic organisms from oceans, estuaries, and freshwater bodies for commercial sale. The United States maintains one of the world's largest Exclusive Economic Zones (EEZ), providing access to diverse fisheries across the Atlantic, Pacific, Gulf of Mexico, and Alaskan waters. U.S. commercial fisheries land approximately 9-10 billion pounds of seafood annually, valued at over $6 billion at the dock level, supporting coastal communities and seafood supply chains nationwide.
+
+The industry operates across diverse fisheries and vessel types, from small day-boats fishing nearshore waters to large factory trawlers processing catches at sea in remote Alaskan fisheries. Major fisheries include Alaska pollock (the largest U.S. fishery by volume), Gulf shrimp, Atlantic sea scallops, Pacific salmon, lobster, crab, and tuna. The industry is highly regulated through science-based fishery management plans designed to maintain sustainable harvest levels while supporting fishing communities.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Commercial Landings | 9-10 billion lbs annually |
+| Dockside Value | $6+ billion |
+| Number of Fishing Vessels | ~75,000 |
+| Top Ports by Value | New Bedford, Dutch Harbor, Kodiak |
+| Import Dependency | ~90% of U.S. seafood consumed is imported |
+
+Despite significant domestic production, the U.S. imports approximately 90% of seafood consumed due to consumer preference for species not abundant domestically (shrimp, salmon) and lower processing costs abroad.
 
 ## Industry Hierarchy
 
@@ -22,6 +36,7 @@ graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
     S11 --> N114["114: Fishing, Hunting and Trapping"]
     N114 --> N1141["1141: Fishing"]
+    N1141 --> N11411["11411: Fishing"]
     style N1141 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
@@ -32,33 +47,34 @@ graph TD
 | NAICS Code | 1141 |
 | Level | Industry Group |
 | Parent | [Fishing, Hunting and Trapping](../) |
-| Child Industries | 0 |
-
+| Child Industries | 114111 (Finfish), 114112 (Shellfish) |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Fishing Boat Captains](/occupations/TransportationAndMaterialMoving/CaptainsAndMates) - Navigate vessels and direct fishing operations
+- [Fishers and Related Fishing Workers](/occupations/FarmingFishingAndForestry/FishersAndRelatedFishingWorkers) - Operate fishing gear and handle catch
+- [Fish Cutters and Trimmers](/occupations/Production/ButchersAndMeatCutters) - Process catch on vessels and shore
+- [Marine Engineers](/occupations/Architecture/MarineEngineersAndNavalArchitects) - Maintain vessel propulsion systems
+- [Fish and Game Wardens](/occupations/ProtectiveService/FishAndGameWardens) - Enforce fishing regulations
+- [Environmental Scientists](/occupations/Science/EnvironmentalScientists) - Conduct fishery assessments
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Trip Planning"]
+        O2["Vessel Operations"]
+        O3["Fishing Operations"]
+        O4["Catch Handling"]
+        O5["Landing/Sales"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Vessel Maintenance"]
+        S2["Crew Management"]
+        S3["Regulatory Compliance"]
+        S4["Market Intelligence"]
     end
 
     O1 --> O2
@@ -66,60 +82,143 @@ flowchart LR
     O3 --> O4
     O4 --> O5
     S1 -.-> O2
-    S2 -.-> O3
+    S3 -.-> O3
 ```
+
+### Trip Planning
+Preparing for fishing trips including quota allocation, crew, and supplies.
+
+**Key Activities:**
+- Quota/permit verification
+- Crew assembly and safety briefings
+- Fuel, ice, and provision loading
+- Weather assessment
+- Target species and location selection
+
+### Fishing Operations
+Deploying gear and harvesting target species.
+
+**Key Activities:**
+- Navigation to fishing grounds
+- Gear deployment (nets, lines, traps, dredges)
+- Gear retrieval and catch sorting
+- Bycatch handling and release
+- Observer protocol compliance
+
+### Catch Handling and Sales
+Preserving quality and marketing harvested seafood.
+
+**Key Activities:**
+- On-board icing, refrigeration, or processing
+- Species identification and grading
+- Landing reporting and documentation
+- Auction or direct sales
+- Settlement with crew (share system)
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Vessels"]
+        I2["Permits/Quota"]
+        I3["Gear/Equipment"]
+        I4["Fuel/Supplies"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Harvesting"]
+        A2["Handling"]
+        A3["Landing"]
+        A4["First Sale"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+    subgraph Outputs["Products"]
+        O1["Finfish"]
+        O2["Shellfish"]
+        O3["Other Species"]
     end
 
-    subgraph Customers["Markets"]
+    subgraph Markets["End Markets"]
         C1["Processors"]
         C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+        C3["Auctions"]
+        C4["Direct to Restaurant"]
     end
 
-    Inputs --> Primary --> Outputs --> Customers
+    Inputs --> Primary --> Outputs --> Markets
 ```
+
+## Major Fisheries
+
+### Alaska Pollock
+Largest U.S. fishery by volume (~3 billion lbs); midwater trawling; processed into surimi, fillets, and fish meal; highly managed with 100% observer coverage.
+
+### Gulf of Mexico Shrimp
+Major fishery by value; trawling for brown, white, and pink shrimp; facing import competition; supporting fleet of ~3,000 vessels.
+
+### Atlantic Sea Scallops
+Most valuable U.S. fishery; dredge harvesting; managed with days-at-sea and rotational closures; New Bedford primary port.
+
+### Alaska Salmon
+Gillnet, seine, and troll fisheries; five species (sockeye, pink, chum, Chinook, coho); wild-caught premium positioning.
+
+### American Lobster
+Trap fishery in Maine and New England; premium live market; gear conflicts with whale protection.
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **NOAA Fisheries** - Manages fisheries in federal waters through regional councils
+- **Regional Fishery Management Councils** - Develop fishery management plans
+- **U.S. Coast Guard** - Vessel safety and enforcement
+- **State Agencies** - Manage fisheries in state waters (0-3 miles)
+- **Marine Mammal Protection Act** - Requires measures to protect marine mammals
+
+### Key Regulations
+- Magnuson-Stevens Fishery Conservation Act
+- Individual Fishing Quotas (IFQs) and catch shares
+- Vessel monitoring systems (VMS) requirements
+- Observer program requirements
+- Endangered Species Act protections
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Vessel Monitoring Systems (VMS)** - Satellite tracking of vessel positions
+- **Electronic Monitoring** - Cameras replacing or supplementing human observers
+- **Electronic Reporting** - Real-time catch reporting via tablets
+- **Gear Technology** - Bycatch reduction devices, LED lights, escapement panels
+- **Fish Finding Technology** - Advanced sonar and fish finders
+- **Refrigeration Systems** - Improved on-board preservation
+
+## Fishing Methods
+
+### Trawling
+Dragging nets through water or along bottom; high volume for groundfish and shrimp.
+
+### Longlining
+Deploying miles of line with baited hooks; used for tuna, swordfish, halibut.
+
+### Gillnetting
+Stationary nets that entangle fish; used for salmon and coastal species.
+
+### Pot/Trap
+Baited enclosures on bottom; used for crab, lobster, and some fish.
+
+### Dredging
+Dragging metal frames along bottom; used for scallops and clams.
+
+## Industry Challenges
+
+- **Fishery Sustainability** - Balancing harvest with stock conservation
+- **Regulatory Burden** - Complex, costly compliance requirements
+- **Fuel Costs** - Volatile fuel prices affecting profitability
+- **Labor Shortages** - Difficulty attracting workers to demanding occupation
+- **Import Competition** - Lower-cost foreign products
+- **Climate Impacts** - Shifting species distributions and productivity
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+Commercial fishing faces fundamental challenges from climate-driven changes in fish distribution and abundance, requiring adaptive management approaches. Catch share management has improved sustainability in many fisheries while creating economic challenges for smaller operations. Technology adoption, particularly electronic monitoring, promises to reduce compliance costs while improving data collection. Market opportunities exist in traceability and sustainability certification meeting consumer demand for responsibly-sourced seafood. The industry's future depends on maintaining sustainable fish populations through science-based management, adapting to climate impacts, and connecting domestic fishermen with consumers seeking local, traceable seafood. Efforts to streamline regulations while maintaining conservation goals could improve viability for fishing businesses and coastal communities dependent on the industry.
 
 ---
 

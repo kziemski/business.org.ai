@@ -9,19 +9,34 @@ status: complete
 
 # Apiculture
 
-> See industry description for 112910.
+> Establishments primarily engaged in raising bees for honey production, beeswax, pollination services, and the production of other bee-related products.
 
 ## Overview
 
-Apiculture represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11).
+Apiculture, also known as beekeeping, is a specialized agricultural industry that encompasses the maintenance of honey bee colonies in hives for the production of honey, beeswax, propolis, royal jelly, and bee pollen. Beyond direct product sales, commercial apiculturists provide essential pollination services to agricultural operations, making this industry critical to the broader food production ecosystem. The U.S. beekeeping industry manages approximately 2.7 million honey-producing colonies, with commercial operations (those with 500+ colonies) accounting for the majority of honey production and pollination services.
+
+The industry operates at multiple scales, from hobbyist beekeepers with a few hives to large commercial operations managing thousands of colonies that migrate seasonally to pollinate crops across the country. California's almond orchards alone require approximately 2 million colonies for pollination each spring, representing the single largest pollination event in the United States.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Honey Production | 126 million pounds annually |
+| Number of U.S. Beekeepers | ~125,000 |
+| Pollination Services Value | $15-20 billion annually |
+| Average Honey Price | $2.00-2.50 per pound (wholesale) |
+| Import Competition | ~75% of U.S. honey consumption is imported |
+
+The pollination services segment has grown significantly, with fees for almond pollination reaching $200-250 per colony. This revenue stream often exceeds honey sales for commercial operations.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
-    S11 --> N112["112: Animal Production"]
-    N112 --> N11291["11291: Apiculture"]
+    S11 --> N112["112: Animal Production and Aquaculture"]
+    N112 --> N1129["1129: Other Animal Production"]
+    N1129 --> N11291["11291: Apiculture"]
     style N11291 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
@@ -31,71 +46,104 @@ graph TD
 |--------|-------|
 | NAICS Code | 11291 |
 | Level | Industry |
+| Parent | [Other Animal Production](../) |
 | Child Industries | 0 |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage beekeeping operations and coordinate seasonal migrations
+- [Agricultural Workers](/occupations/FarmingFishingAndForestry/AgriculturalWorkers) - Assist with hive inspection, honey extraction, and colony management
+- [Veterinarians](/occupations/Healthcare/Veterinarians) - Diagnose and treat bee diseases and parasites
+- [Agricultural Inspectors](/occupations/FarmingFishingAndForestry/AgriculturalInspectors) - Inspect apiaries for disease and compliance
+- [Biological Scientists](/occupations/Science/BiologicalScientists) - Research bee health, genetics, and colony management
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Colony Management"]
+        O2["Seasonal Migration"]
+        O3["Pollination Services"]
+        O4["Honey Harvesting"]
+        O5["Product Processing"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Queen Rearing"]
+        S2["Disease Management"]
+        S3["Equipment Maintenance"]
+        S4["Marketing & Sales"]
     end
 
     O1 --> O2
     O2 --> O3
     O3 --> O4
     O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    S1 -.-> O1
+    S2 -.-> O1
 ```
+
+### Colony Management
+Year-round care of bee colonies including feeding, inspection for diseases and pests, monitoring queen health, and managing colony strength through splitting or combining hives.
+
+**Key Activities:**
+- Regular hive inspections (every 7-14 days during active season)
+- Varroa mite monitoring and treatment
+- Supplemental feeding during nectar dearths
+- Queen assessment and replacement
+- Swarm prevention and management
+
+### Pollination Services
+Contracting with agricultural operations to provide bee colonies for crop pollination, requiring transportation of hives and coordination with farmers.
+
+**Key Activities:**
+- Contract negotiation with growers
+- Colony preparation and strength assessment
+- Transportation logistics planning
+- Placement and retrieval of hives
+- Colony recovery and health monitoring post-pollination
+
+### Honey Production
+Harvesting, extracting, and processing honey from hives for commercial sale.
+
+**Key Activities:**
+- Timing harvest based on nectar flow completion
+- Frame removal and uncapping
+- Centrifugal extraction
+- Filtering and settling
+- Bottling and labeling
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Bee Packages/Queens"]
+        I2["Hive Equipment"]
+        I3["Feed/Supplements"]
+        I4["Medications/Treatments"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Colony Building"]
+        A2["Pollination Services"]
+        A3["Honey Harvesting"]
+        A4["Product Processing"]
     end
 
     subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+        O1["Honey"]
+        O2["Beeswax"]
+        O3["Pollination Services"]
+        O4["Queens/Packages"]
     end
 
     subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
+        C1["Food Manufacturers"]
+        C2["Agricultural Growers"]
         C3["Retailers"]
-        C4["Export Markets"]
+        C4["Other Beekeepers"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -103,21 +151,39 @@ graph LR
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Animal and Plant Health Inspection Service (APHIS)** - Regulates interstate movement of bees, establishes import requirements, and monitors for exotic pests
+- **EPA** - Regulates pesticide use affecting bee health, including neonicotinoid restrictions
+- **FDA** - Oversees honey as a food product, including labeling requirements and adulteration standards
+- **State Departments of Agriculture** - Require apiary registration, conduct inspections, and enforce quarantine regulations
+- **Honey Packers and Dealers Association** - Industry standards for honey grading and quality
+
+### Key Regulations
+- Honey labeling requirements (country of origin, pure honey standards)
+- Interstate bee movement permits
+- Africanized honeybee quarantine zones
+- Organic certification standards for honey
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Hive Monitoring Systems** - IoT sensors tracking temperature, humidity, weight, and acoustics to detect problems remotely
+- **Precision Apiculture** - GPS tracking of hives, data analytics for colony management decisions
+- **Genetic Selection Programs** - Breeding for Varroa resistance, hygienic behavior, and gentleness
+- **Automated Extraction Equipment** - Mechanized uncapping and extraction systems for large operations
+- **Disease Detection Technologies** - PCR testing, digital imaging for disease identification
+- **Alternative Treatments** - Organic acids, essential oils, and biological controls for Varroa management
+
+## Industry Challenges
+
+- **Colony Collapse Disorder (CCD)** - Ongoing colony losses averaging 30-40% annually
+- **Varroa Destructor Mites** - Primary pest requiring constant management
+- **Pesticide Exposure** - Agricultural chemicals impacting bee health
+- **Import Competition** - Low-cost honey imports affecting domestic prices
+- **Climate Variability** - Shifting bloom times and nectar availability
+- **Labor Shortages** - Difficulty finding skilled workers for seasonal operations
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+The apiculture industry faces significant challenges from colony health issues and import competition, but demand for pollination services continues to grow as agriculture expands. The increasing consumer interest in local, pure honey and concerns about honey adulteration in imports create opportunities for domestic producers. Technology adoption, particularly remote monitoring systems, is improving efficiency and early problem detection. Research into Varroa-resistant bee genetics and alternative treatments offers hope for reducing colony losses. The industry's essential role in food production through pollination services ensures its continued importance despite market pressures.
 
 ---
 

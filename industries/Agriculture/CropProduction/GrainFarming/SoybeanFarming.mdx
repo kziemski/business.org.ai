@@ -9,11 +9,25 @@ status: complete
 
 # Soybean Farming
 
-> See industry description for 111110.
+> Establishments primarily engaged in growing soybeans for oil, meal, food products, and industrial applications.
 
 ## Overview
 
-Soybean Farming represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11). This industry encompasses establishments primarily engaged in soybean farming.
+Soybean farming represents the second-largest crop sector in U.S. agriculture, with production typically exceeding 4 billion bushels annually across approximately 87 million planted acres. The United States ranks as the world's second-largest soybean producer behind Brazil and is a leading exporter to global markets. Soybeans serve as a cornerstone crop due to their nitrogen-fixing properties (reducing fertilizer needs), role in crop rotation, and diverse end-market applications spanning animal feed, vegetable oil, biodiesel, and food products.
+
+The primary production region overlaps significantly with the Corn Belt, with Illinois, Iowa, Minnesota, Indiana, and Nebraska leading production. The crop's flexibility in planting windows and lower input costs compared to corn make it an attractive rotation option. Approximately 70% of U.S. soybeans are crushed domestically to produce soybean meal (high-protein animal feed) and soybean oil, while the remainder is exported as whole beans.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Soybean Production | 4.3 billion bushels |
+| Planted Acres | ~87 million |
+| Average Yield | 50+ bushels/acre |
+| Cash Receipts | $40+ billion |
+| Export Volume | 2+ billion bushels |
+
+China historically has been the dominant export market, purchasing 60%+ of U.S. exports, making soybean prices particularly sensitive to U.S.-China trade relations. Domestic crushing and biodiesel production provide alternative demand channels.
 
 ## Industry Hierarchy
 
@@ -21,7 +35,7 @@ Soybean Farming represents an important category within the Agriculture, Forestr
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
     S11 --> N111["111: Crop Production"]
-    N111 --> N1111["1111: Grain Farming"]
+    N111 --> N1111["1111: Oilseed and Grain Farming"]
     N1111 --> N11111["11111: Soybean Farming"]
     style N11111 fill:#f96,stroke:#333,stroke-width:2px
 ```
@@ -32,34 +46,35 @@ graph TD
 |--------|-------|
 | NAICS Code | 11111 |
 | Level | Industry |
-| Parent | [Grain Farming](../) |
-| Child Industries | 0 |
-
+| Parent | [Oilseed and Grain Farming](../) |
+| Child Industries | 111110 (Soybean Farming) |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage crop production and marketing decisions
+- [Agricultural Equipment Operators](/occupations/FarmingFishingAndForestry/AgriculturalEquipmentOperators) - Operate planting and harvesting equipment
+- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Conduct soil testing and crop scouting
+- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Design and optimize production systems
+- [Agricultural Inspectors](/occupations/FarmingFishingAndForestry/AgriculturalInspectors) - Grade soybeans for quality factors
+- [Purchasing Agents](/occupations/Business/PurchasingAgents) - Manage grain merchandising and procurement
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Pre-Plant Planning"]
+        O2["Planting"]
+        O3["Growing Season Mgmt"]
+        O4["Harvest"]
+        O5["Marketing"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Seed/Input Selection"]
+        S2["Crop Scouting"]
+        S3["Equipment Operations"]
+        S4["Risk Management"]
     end
 
     O1 --> O2
@@ -70,57 +85,130 @@ flowchart LR
     S2 -.-> O3
 ```
 
+### Pre-Plant Planning
+Decision-making on varieties, field allocation, and agronomic practices.
+
+**Key Activities:**
+- Variety selection (maturity group, traits, yield potential)
+- Field assignment for rotation planning
+- Inoculant decisions for nitrogen fixation
+- Seed treatment options
+- Budget development and input purchasing
+
+### Planting Operations
+Seed placement during optimal planting windows (late April through early June).
+
+**Key Activities:**
+- Planter setup and calibration
+- Row spacing decisions (15", 20", or 30")
+- Population rate management (100,000-140,000 seeds/acre)
+- Depth adjustment for soil conditions
+- Burndown herbicide timing
+
+### Growing Season Management
+Crop protection and health management through harvest maturity.
+
+**Key Activities:**
+- Post-emergence herbicide application
+- Fungicide decisions based on disease pressure
+- Insect scouting (soybean aphid, bean leaf beetle)
+- Irrigation scheduling (where applicable)
+- Yield estimations and marketing decisions
+
+### Harvest and Marketing
+Combining, storage, and sale of harvested grain.
+
+**Key Activities:**
+- Combine operation (header, speed, settings optimization)
+- Moisture monitoring (13% optimal storage moisture)
+- Quality segregation (damage, foreign material)
+- Basis evaluation and contract execution
+- Storage versus immediate sale decisions
+
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Certified Seed"]
+        I2["Inoculants"]
+        I3["Herbicides"]
+        I4["Equipment"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Planting"]
+        A2["Growing"]
+        A3["Protecting"]
+        A4["Harvesting"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+    subgraph Outputs["Products"]
+        O1["Commodity Soybeans"]
+        O2["Food-Grade Soybeans"]
+        O3["Seed Soybeans"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+    subgraph Markets["End Markets"]
+        C1["Crushers"]
+        C2["Export Elevators"]
+        C3["Food Processors"]
+        C4["Biodiesel Plants"]
     end
 
-    Inputs --> Primary --> Outputs --> Customers
+    Inputs --> Primary --> Outputs --> Markets
 ```
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Farm Service Agency** - Commodity programs (ARC/PLC), conservation compliance
+- **USDA Risk Management Agency** - Crop insurance administration
+- **EPA** - Pesticide registration and use regulations
+- **State Grain Inspection Services** - Grade and quality standards
+- **FDA** - Food safety for soybeans entering food supply
+
+### Key Programs and Regulations
+- Agricultural Risk Coverage (ARC) / Price Loss Coverage (PLC)
+- Federal Crop Insurance (Revenue Protection, Yield Protection)
+- Conservation Reserve Program (CRP) and EQIP
+- Clean Water Act compliance
+- Dicamba herbicide application requirements and cutoff dates
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Herbicide-Tolerant Varieties** - Roundup Ready, Xtend (dicamba), Enlist (2,4-D) systems
+- **Precision Planting** - Variable-rate seeding, automated section control
+- **Sensor Technology** - Aerial imagery, NDVI monitoring, yield mapping
+- **Genetic Improvement** - High-oleic varieties, disease resistance packages
+- **Digital Agriculture** - Farm management platforms, satellite-based field monitoring
+- **Biologicals** - Advanced inoculants, biological seed treatments
+
+## Production Systems
+
+### Conventional (GMO)
+Standard production using herbicide-tolerant and trait-stacked varieties with synthetic inputs.
+
+### Non-GMO/Identity Preserved
+Segregated production for food markets, often commanding $1-2/bushel premiums over commodity prices.
+
+### Organic
+Certified organic production without synthetic pesticides or GMO seed, with premiums of $4-8/bushel.
+
+### Food-Grade
+Production of specific varieties for tofu, edamame, natto, and other human food applications.
+
+## Industry Challenges
+
+- **Trade Volatility** - Heavy dependence on Chinese export demand
+- **Herbicide Resistance** - Palmer amaranth and waterhemp resistance spreading
+- **Disease Pressure** - Sudden death syndrome, white mold, soybean cyst nematode
+- **Input Cost Management** - Seed technology costs and trait packages
+- **Weather Risk** - Drought sensitivity during reproductive stages
+- **Basis Volatility** - Transportation and logistics affecting local prices
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+Soybean farming maintains strong fundamentals driven by global protein demand for animal agriculture and expanding biofuel applications. Renewable diesel production growth creates new domestic demand offsetting traditional biodiesel. Export diversification beyond China reduces trade vulnerability, though that market remains significant. Continued yield improvement through genetics and management practices supports production growth. Sustainability documentation demands from food companies require more on-farm data capture. The industry benefits from soybeans' role in sustainable rotations as a nitrogen-fixing crop. Long-term growth depends on maintaining export competitiveness with South American producers, expanding domestic processing capacity, and developing new high-value markets including high-oleic oil for industrial applications.
 
 ---
 

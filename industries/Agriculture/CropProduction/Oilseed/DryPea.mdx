@@ -1,19 +1,33 @@
 ---
 id: DryPea
-name: "Dry Pea"
-code: "11113"
+name: "Dry Pea and Lentil Farming"
+code: "111130"
 type: Industry
-level: Industry
+level: National Industry
 status: complete
 ---
 
-# Dry Pea
+# Dry Pea and Lentil Farming
 
-> See industry description for 111130.
+> Establishments primarily engaged in growing dry peas, lentils, and related pulse crops for food, feed, protein extraction, and seed markets.
 
 ## Overview
 
-Dry Pea represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11).
+Dry pea and lentil farming has emerged as one of the fastest-growing segments of U.S. crop production, driven by expanding demand for plant-based proteins and the agronomic benefits of pulse crops in sustainable farming rotations. The United States has become the world's third-largest dry pea producer and a significant lentil producer, with combined production exceeding 70 million hundredweight annually. These nitrogen-fixing legumes provide soil health benefits while producing high-protein crops for human food and animal feed markets.
+
+Production is concentrated in the Northern Great Plains and Pacific Northwest, where short growing seasons and limited precipitation favor these drought-tolerant crops. North Dakota leads national production, followed by Montana, Washington, and Idaho. The industry has grown substantially since 2010 as processors invested in pea protein extraction facilities and export markets expanded to South Asia and the Middle East.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Dry Pea Production | 50+ million cwt |
+| U.S. Lentil Production | 10-15 million cwt |
+| Planted Acres | 3+ million combined |
+| Cash Receipts | $800+ million |
+| Pea Protein Market Value | $500+ million |
+
+The pea protein industry has transformed market dynamics, with processors extracting protein isolates for meat alternatives, protein supplements, and food ingredients. This creates premium pricing opportunities for food-grade peas beyond traditional split pea and export markets.
 
 ## Industry Hierarchy
 
@@ -21,44 +35,47 @@ Dry Pea represents an important category within the Agriculture, Forestry, Fishi
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
     S11 --> N111["111: Crop Production"]
-    N111 --> N1111["1111: Oilseed"]
-    N1111 --> N11113["11113: Dry Pea"]
-    style N11113 fill:#f96,stroke:#333,stroke-width:2px
+    N111 --> N1111["1111: Oilseed and Grain Farming"]
+    N1111 --> N11113["11113: Dry Pea and Bean Farming"]
+    N11113 --> N111130["111130: Dry Pea and Bean Farming"]
+    style N111130 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 11113 |
-| Level | Industry |
-| Parent | [Oilseed](../) |
+| NAICS Code | 111130 |
+| Level | National Industry |
+| Parent | [Dry Pea and Bean Farming](../) |
 | Child Industries | 0 |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage pulse crop production operations
+- [Agricultural Equipment Operators](/occupations/FarmingFishingAndForestry/AgriculturalEquipmentOperators) - Operate planting and harvesting equipment
+- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Conduct soil testing and crop scouting
+- [Food Scientists](/occupations/Science/FoodScientistsAndTechnologists) - Develop pea protein applications
+- [Agricultural Inspectors](/occupations/FarmingFishingAndForestry/AgriculturalInspectors) - Grade pulses for quality
+- [Plant Scientists](/occupations/Science/AgriculturalAndFoodScientists) - Develop improved varieties
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Seedbed Preparation"]
+        O2["Inoculation/Planting"]
+        O3["Crop Protection"]
+        O4["Harvest"]
+        O5["Cleaning/Marketing"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Variety Selection"]
+        S2["Contract Development"]
+        S3["Quality Assurance"]
+        S4["Storage Management"]
     end
 
     O1 --> O2
@@ -66,61 +83,139 @@ flowchart LR
     O3 --> O4
     O4 --> O5
     S1 -.-> O2
-    S2 -.-> O3
+    S3 -.-> O5
 ```
+
+### Planting and Establishment
+Seeding dry peas and lentils during early spring for fall harvest.
+
+**Key Activities:**
+- Seed inoculation with Rhizobium leguminosarum
+- Air drill seeding at 1.5-2.5 inch depth
+- Seeding rates (150-350 lbs/acre depending on crop and market)
+- Row spacing optimization (6-12 inch rows)
+- Pre-emergence herbicide application
+
+### Growing Season Management
+Crop protection during the relatively short growing season.
+
+**Key Activities:**
+- Post-emergence weed control (limited herbicide options)
+- Disease monitoring (Ascochyta blight, root rots)
+- Aphid and weevil scouting
+- Fungicide applications if needed
+- Crop staging assessment for harvest timing
+
+### Harvest Operations
+Combining mature crops while preserving quality.
+
+**Key Activities:**
+- Swathing vs. direct combining decisions
+- Desiccation timing for direct harvest
+- Combine adjustments to minimize splits and damage
+- Moisture management (14% target)
+- Segregation by variety and quality
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Certified Seed"]
+        I2["Inoculants"]
+        I3["Crop Protection"]
+        I4["Equipment"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Growing"]
+        A2["Harvesting"]
+        A3["Cleaning"]
+        A4["Marketing"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+    subgraph Outputs["Products"]
+        O1["Yellow Peas"]
+        O2["Green Peas"]
+        O3["Red Lentils"]
+        O4["Green Lentils"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+    subgraph Markets["End Markets"]
+        C1["Protein Extractors"]
+        C2["Split Pea Processors"]
+        C3["Export Markets"]
+        C4["Feed Markets"]
     end
 
-    Inputs --> Primary --> Outputs --> Customers
+    Inputs --> Primary --> Outputs --> Markets
 ```
+
+## Crop Types
+
+### Yellow Peas
+Dominant variety for protein extraction; neutral flavor profile; used in split peas, protein isolates, and animal feed.
+
+### Green Peas
+Premium pricing for human food markets; split peas for soup; whole peas for canning and dry pack.
+
+### Red Lentils
+Dehulled and split for quick cooking; major export to South Asia; used in dals and soups.
+
+### Green Lentils
+French-style and Laird varieties; hold shape when cooked; premium pricing for salads and prepared foods.
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Farm Service Agency** - Commodity programs and loan rates
+- **USDA Risk Management Agency** - Crop insurance for pulse crops
+- **EPA** - Pesticide registration and use regulations
+- **FDA** - Food safety standards for human consumption
+- **Export Certification Services** - Phytosanitary requirements for export
+
+### Key Programs and Regulations
+- Agricultural Marketing Service grade standards
+- Crop insurance (Yield Protection, Revenue Protection)
+- Conservation program eligibility for rotation benefits
+- Food safety compliance for protein ingredients
+- Organic certification requirements
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Pea Protein Extraction** - Wet and dry fractionation for protein isolates (80%+ protein)
+- **Variety Development** - High-protein, disease-resistant, and specialty varieties
+- **Precision Agriculture** - GPS-guided seeding and variable-rate application
+- **Direct Harvest Technology** - Desiccation and combine modifications for direct cutting
+- **Air Classification** - Separation of protein, starch, and fiber fractions
+- **Nitrogen Fixation Enhancement** - Improved inoculant technologies
+
+## Market Segments
+
+### Pea Protein Industry
+Rapidly growing segment extracting protein concentrates and isolates for meat alternatives, sports nutrition, and food fortification.
+
+### Human Food (Traditional)
+Split peas for soup, whole peas for canning, lentils for direct consumption and prepared foods.
+
+### Export Markets
+Significant shipments to India (yellow peas), Bangladesh, Turkey, and Middle Eastern markets for traditional cuisines.
+
+### Animal Feed
+Lower grades and splits used in swine and poultry rations as protein source.
+
+## Industry Challenges
+
+- **Disease Pressure** - Ascochyta blight, Aphanomyces root rot limiting consistent yields
+- **Limited Herbicide Options** - Difficulty controlling weeds in-season
+- **Price Volatility** - Smaller market with significant price swings
+- **Infrastructure** - Processing capacity constraints for protein extraction
+- **Export Competition** - Canada as dominant competitor in global markets
+- **Quality Variability** - Weather impacts on protein content and splits
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+The dry pea and lentil industry is positioned for continued growth driven by the plant-based protein revolution. Investment in pea protein extraction capacity has created new premium markets beyond traditional food uses. The crops' nitrogen-fixing ability aligns with sustainability goals and reduces input costs in rotation systems. Challenges include developing disease-resistant varieties, particularly for Aphanomyces root rot, and expanding herbicide-tolerant options for better weed management. Export competitiveness with Canada depends on logistics and quality consistency. The industry benefits from growing consumer demand for plant-based proteins and recognition of pulses' environmental benefits. Long-term success requires continued investment in processing infrastructure, variety improvement, and market development for pea protein applications.
 
 ---
 
-*Source: NAICS 11113 - Dry Pea*
+*Source: NAICS 111130 - Dry Pea and Bean Farming*

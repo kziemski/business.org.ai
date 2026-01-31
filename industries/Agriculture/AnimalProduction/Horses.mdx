@@ -1,27 +1,42 @@
 ---
 id: Horses
-name: "Horses"
+name: "Horse and Other Equine Production"
 code: "11292"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Horses
+# Horse and Other Equine Production
 
-> See industry description for 112920.
+> Establishments primarily engaged in raising horses, mules, donkeys, and other equines for sale, breeding, racing, recreation, or working purposes.
 
 ## Overview
 
-Horses represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11).
+The horse and equine production industry encompasses breeding, raising, and training horses and other equines for diverse markets including racing, show competition, recreational riding, working ranch operations, and therapeutic programs. The U.S. horse industry supports approximately 7.2 million horses and generates significant economic activity through direct sales, breeding services, training, boarding, and related activities. Unlike most livestock sectors, the equine industry is predominantly driven by recreational and sporting demand rather than food production.
+
+The industry operates across a wide spectrum, from large-scale breeding operations producing Thoroughbreds for racing to small family farms raising horses for local riding schools. Major breeds include Quarter Horses (the most populous American breed), Thoroughbreds, Arabians, Paints, and Warmbloods, each serving distinct market segments with different value profiles.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Horse Population | ~7.2 million horses |
+| Industry Economic Impact | $122 billion annually |
+| Number of Horse Owners | ~2 million |
+| Average Cost per Horse | $3,000-5,000/year (maintenance) |
+| Racing Industry Value | $11 billion annually |
+
+The market segments vary dramatically in value, with elite Thoroughbred yearlings selling for millions at auction while recreational horses may trade for a few thousand dollars. The breeding segment for performance horses commands premium prices based on bloodlines and proven performance.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
-    S11 --> N112["112: Animal Production"]
-    N112 --> N11292["11292: Horses"]
+    S11 --> N112["112: Animal Production and Aquaculture"]
+    N112 --> N1129["1129: Other Animal Production"]
+    N1129 --> N11292["11292: Horse and Other Equine Production"]
     style N11292 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
@@ -31,71 +46,104 @@ graph TD
 |--------|-------|
 | NAICS Code | 11292 |
 | Level | Industry |
+| Parent | [Other Animal Production](../) |
 | Child Industries | 0 |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage breeding operations and farm business
+- [Animal Trainers](/occupations/PersonalCareAndService/AnimalTrainers) - Train horses for racing, show, and recreational use
+- [Veterinarians](/occupations/Healthcare/Veterinarians) - Provide equine medical care, reproduction services, and preventive health
+- [Veterinary Technologists and Technicians](/occupations/Healthcare/VeterinaryTechnologistsAndTechnicians) - Assist with equine medical procedures
+- [Farmworkers and Laborers](/occupations/FarmingFishingAndForestry/FarmworkersAndLaborers) - Daily care, feeding, and stable management
+- [Animal Breeders](/occupations/FarmingFishingAndForestry/AnimalBreeders) - Manage breeding programs and genetic selection
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Breeding Management"]
+        O2["Foal Raising"]
+        O3["Training & Development"]
+        O4["Sales & Marketing"]
+        O5["Boarding Services"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Veterinary Care"]
+        S2["Nutrition Management"]
+        S3["Facility Maintenance"]
+        S4["Record Keeping"]
     end
 
     O1 --> O2
     O2 --> O3
     O3 --> O4
-    O4 --> O5
     S1 -.-> O2
     S2 -.-> O3
 ```
+
+### Breeding Management
+Selection of breeding stock, mare management through gestation, foaling assistance, and maintenance of breeding records for registration purposes.
+
+**Key Activities:**
+- Stallion selection and breeding contracts
+- Mare reproductive health management
+- Live cover or artificial insemination coordination
+- Pregnancy monitoring and foaling preparation
+- Registration with breed associations
+
+### Training and Development
+Preparing young horses for their intended use through groundwork, breaking, and specialized training programs.
+
+**Key Activities:**
+- Halter breaking and basic handling
+- Ground training and desensitization
+- Under-saddle training progression
+- Discipline-specific training (racing, dressage, western, etc.)
+- Competition preparation
+
+### Sales and Marketing
+Marketing horses through various channels including auctions, private sales, and breeding services.
+
+**Key Activities:**
+- Photography and videography for marketing
+- Auction consignment and preparation
+- Online listing management
+- Client relationship development
+- Transportation coordination
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Breeding Stock"]
+        I2["Feed & Supplements"]
+        I3["Veterinary Services"]
+        I4["Facilities/Land"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Breeding"]
+        A2["Foal Development"]
+        A3["Training"]
+        A4["Sales/Services"]
     end
 
     subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+        O1["Trained Horses"]
+        O2["Breeding Services"]
+        O3["Boarding"]
+        O4["Lessons/Clinics"]
     end
 
     subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+        C1["Racing Industry"]
+        C2["Show Competitors"]
+        C3["Recreational Riders"]
+        C4["Ranchers/Working Use"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -103,22 +151,46 @@ graph LR
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Animal and Plant Health Inspection Service (APHIS)** - Regulates interstate movement, import/export, and disease surveillance
+- **State Racing Commissions** - Regulate Thoroughbred and harness racing, including drug testing and licensing
+- **Bureau of Land Management (BLM)** - Manages wild horse and burro populations on federal lands
+- **State Veterinarians** - Require health certificates and Coggins tests for interstate transport
+- **Breed Registries** - Maintain studbooks and set breeding standards (Jockey Club, AQHA, etc.)
+
+### Key Regulations
+- Coggins test requirements for Equine Infectious Anemia (EIA)
+- Interstate health certificate requirements
+- Racing medication rules and drug testing
+- Import quarantine requirements
+- Breed registration standards
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Reproductive Technologies** - Artificial insemination, embryo transfer, and cooled/frozen semen shipping
+- **Genetic Testing** - DNA parentage verification, disease marker screening, and performance gene analysis
+- **Performance Monitoring** - GPS tracking, heart rate monitors, and gait analysis systems
+- **Veterinary Diagnostics** - Digital radiography, ultrasound, and MRI for lameness diagnosis
+- **Nutrition Science** - Specialized feeds, supplements, and feeding management systems
+- **Facility Technology** - Automated waterers, climate-controlled barns, and exercise equipment
+
+## Market Segments
+
+### Racing Industry
+Thoroughbred, Quarter Horse, and Standardbred racing operations focused on producing competitive racehorses through selective breeding and professional training.
+
+### Show and Competition
+Breeding and training horses for disciplines including dressage, show jumping, western pleasure, reining, and cutting competitions.
+
+### Recreational
+Production of horses suitable for trail riding, pleasure riding, and family use, often emphasizing temperament and versatility.
+
+### Working Horses
+Ranch horses, polo ponies, and horses for mounted patrol or therapeutic riding programs.
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+The equine industry continues to evolve with changing demographics and economic conditions. While the racing segment faces challenges from competition with other entertainment options and regulatory pressures, recreational horse ownership remains strong. The therapeutic riding sector shows growth potential as equine-assisted therapy gains recognition. Technology adoption, particularly in reproductive techniques and performance monitoring, enables more efficient breeding programs. The industry's connection to lifestyle and recreation rather than necessity creates both vulnerability to economic downturns and resilience through dedicated enthusiast communities. Export markets for American breeding stock, particularly Quarter Horses, provide additional growth opportunities.
 
 ---
 
-*Source: NAICS 11292 - Horses*
+*Source: NAICS 11292 - Horse and Other Equine Production*

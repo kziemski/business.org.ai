@@ -16,22 +16,29 @@ children: ["8.3.2.1", "8.3.2.2", "8.3.2.3", "8.3.2.4"]
 
 ## Overview
 
-Process 8.3.2 is a core process that defines the specific procedures for develop it resilience strategy. 
+Process 8.3.2 is a core process that defines the specific procedures for developing IT resilience strategy. This process establishes the strategic framework for ensuring IT systems can withstand, adapt to, and recover from disruptions.
 
-Developing resilience strategies of IT across the organization so that prospective risks can be avoided.
+Developing resilience strategies of IT across the organization so that prospective risks can be avoided. This includes identifying critical IT risks, prioritizing risk responses, and establishing mitigation approaches that align with business objectives and risk tolerance.
+
+IT resilience strategy goes beyond traditional disaster recovery to encompass proactive risk identification, redundancy design, graceful degradation capabilities, and continuous adaptation to emerging threats. A comprehensive resilience strategy ensures that IT can continue to support business operations even under adverse conditions.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C8["8.0 Manage Information Technology"]
-    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    C8 --> N8_3["8.3 Develop and manage IT resilience"]
     N8_3 --> N8_3_2["8.3.2 Develop IT resilience strategy"]
     style N8_3_2 fill:#e1f5fe
     N8_3_2 --> N8_3_2_1["8.3.2.1 Determine IT delivery resiliency"]
     N8_3_2 --> N8_3_2_2["8.3.2.2 Determine critical IT risks"]
     N8_3_2 --> N8_3_2_3["8.3.2.3 Prioritize IT risks"]
-    N8_3_2 --> N8_3_2_4["8.3.2.4 Establish mitigation approaches ..."]
+    N8_3_2 --> N8_3_2_4["8.3.2.4 Establish mitigation approaches"]
+
+    N8_3_2_1 --> A1["Define resiliency requirements"]
+    N8_3_2_2 --> A2["Identify threat landscape"]
+    N8_3_2_3 --> A3["Assess impact and likelihood"]
+    N8_3_2_4 --> A4["Design mitigation controls"]
 ```
 
 ## Key Statistics
@@ -43,61 +50,178 @@ graph TD
 | Level | Process |
 | Parent | [8.3](../) |
 | Sub-Processes | 4 |
-
+| Industry Variants | 19 |
 
 ## GraphDL Semantic Structure
 
 ```graphdl
 develop.ITResilienceStrategy
+determine.ITDeliveryResiliency
+establish.RiskMitigation
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `develop` | Primary action |
-| Object | `IT resilience strategy` | Direct object |
-
+| Verb | `develop` | Primary action of creating strategy |
+| Object | `IT resilience strategy` | Strategic framework for IT resilience |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Business Strategy"]
+        I2["Risk Appetite Statement"]
+        I3["Threat Intelligence"]
+        I4["IT Asset Inventory"]
+        I5["Compliance Requirements"]
     end
 
     subgraph Process["Develop IT resilience strategy"]
-        S1["Determine IT delivery resil..."]
-        S2["Determine critical IT risks"]
-        S3["Prioritize IT risks"]
-        S4["Establish mitigation approa..."]
+        S1["Assess business requirements"]
+        S2["Define resiliency objectives"]
+        S3["Identify IT risks"]
+        S4["Analyze risk impact"]
+        S5["Prioritize risks"]
+        S6["Design mitigation approaches"]
+        S7["Develop implementation roadmap"]
+        S8["Obtain executive approval"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["IT Resilience Strategy"]
+        O2["Risk Register"]
+        O3["Mitigation Plans"]
+        O4["Investment Roadmap"]
+        O5["Governance Framework"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
 ```
 
-## Sub-Processes
+## Child Process Listings
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Determine IT delivery resiliency](./DetermineITDeliveryResiliency) | 8.3.2.1 | Determining resilience strategies to ensure that IT effectively manages it's delivery process to mit |
-| [Determine critical IT risks](./DetermineCriticalITRisks) | 8.3.2.2 | Determining risks that could disrupt objectives of IT |
-| [Prioritize IT risks](./PrioritizeITRisks) | 8.3.2.3 | Prioritize potential IT risks based on business need to ensure overall IT stability |
-| [Establish mitigation approaches for IT risks](./EstablishMitigationApproachesForITRisks) | 8.3.2.4 | Establishing activities to improve opportunities and lessen threats for IT |
+### 8.3.2.1 - Determine IT delivery resiliency
 
+Determining resilience strategies to ensure that IT effectively manages its delivery process to mitigate risks and maintain service levels. This sub-process establishes resiliency requirements.
+
+**Key Activities:**
+- Define service level resiliency targets
+- Assess current resiliency capabilities
+- Identify critical service dependencies
+- Establish resiliency architecture principles
+- Design failover and redundancy requirements
+
+[View Process Details](./DetermineITDeliveryResiliency)
+
+### 8.3.2.2 - Determine critical IT risks
+
+Determining risks that could disrupt objectives of IT. This sub-process systematically identifies and catalogs risks across the IT landscape.
+
+**Key Activities:**
+- Conduct threat landscape analysis
+- Identify internal and external risks
+- Assess vulnerability exposure
+- Document risk scenarios
+- Maintain risk inventory
+
+[View Process Details](./DetermineCriticalITRisks)
+
+### 8.3.2.3 - Prioritize IT risks
+
+Prioritize potential IT risks based on business need to ensure overall IT stability. This sub-process enables resource allocation to highest-priority risks.
+
+**Key Activities:**
+- Assess risk likelihood and impact
+- Apply risk scoring methodology
+- Align with business priorities
+- Create risk heat map
+- Document prioritization rationale
+
+[View Process Details](./PrioritizeITRisks)
+
+### 8.3.2.4 - Establish mitigation approaches for IT risks
+
+Establishing activities to improve opportunities and lessen threats for IT. This sub-process defines specific risk treatment strategies.
+
+**Key Activities:**
+- Design risk mitigation controls
+- Evaluate risk transfer options
+- Define risk acceptance criteria
+- Develop implementation plans
+- Establish monitoring mechanisms
+
+[View Process Details](./EstablishMitigationApproachesForITRisks)
+
+## RACI Matrix
+
+| Activity | IT Risk Manager | CIO | Enterprise Risk Manager | Security Manager | Architecture Lead | Business Unit Heads |
+|----------|----------------|-----|------------------------|------------------|-------------------|---------------------|
+| Assess business requirements | C | I | C | I | C | A |
+| Define resiliency objectives | R | A | C | C | C | C |
+| Identify IT risks | R | I | C | R | C | I |
+| Analyze risk impact | R | I | A | C | C | C |
+| Prioritize risks | R | A | C | C | I | C |
+| Design mitigation approaches | R | A | C | R | R | I |
+| Develop implementation roadmap | R | A | C | C | C | C |
+| Obtain executive approval | C | R | C | I | I | A |
+
+**Legend:** R = Responsible, A = Accountable, C = Consulted, I = Informed
+
+## Metrics and KPIs
+
+| Metric | Description | Target | Frequency |
+|--------|-------------|--------|-----------|
+| Risk Coverage | Percentage of IT assets with risk assessment | 100% | Quarterly |
+| Mitigation Implementation Rate | Percentage of planned mitigations implemented | >85% | Quarterly |
+| Risk Reduction | Percentage reduction in risk exposure | >20% | Annual |
+| Strategy Currency | Time since last strategy update | <12 months | Annual |
+| Stakeholder Alignment | Business acceptance of resilience strategy | >90% | Annual |
+| Investment Efficiency | Risk reduction per dollar invested | Benchmark | Annual |
+| Emerging Risk Identification | Time to identify new risks | <30 days | Per occurrence |
+| Control Effectiveness | Percentage of controls meeting objectives | >90% | Quarterly |
+| Risk Appetite Compliance | Risks within defined appetite | >95% | Monthly |
+| Strategy Execution Progress | Percentage of roadmap milestones achieved | >80% | Quarterly |
+
+## Related Departments
+
+- [IT Risk Management](/departments/IT/Risk) - Risk strategy development
+- [Information Security](/departments/IT/Security) - Security resilience
+- [Enterprise Architecture](/departments/IT/Architecture) - Resilience architecture
+- [Enterprise Risk Management](/departments/Risk) - Enterprise alignment
+- [Compliance](/departments/Compliance) - Regulatory requirements
+- [Executive Leadership](/departments/Executive) - Strategic direction
+
+## Related Occupations
+
+- [Information Security Analysts](/occupations/Technology/Security/InformationSecurityAnalysts) - Security risk analysis
+- [Computer and Information Systems Managers](/occupations/Technology/Management/ComputerInformationSystemsManagers) - IT resilience oversight
+- [Management Analysts](/occupations/Business/Operations/ManagementAnalysts) - Strategy development
+- [Computer Systems Analysts](/occupations/Technology/Analysis/ComputerSystemsAnalysts) - Systems risk assessment
+- [Financial Risk Specialists](/occupations/Business/Finance/FinancialRiskSpecialists) - Risk quantification
+- [Compliance Officers](/occupations/Business/Compliance/ComplianceOfficers) - Regulatory alignment
 
 ## Related Concepts
 
 - ITResilienceStrategy
+- RiskManagement
+- ThreatAnalysis
+- ResilienceArchitecture
+- RiskMitigation
+- BusinessContinuity
 
+## Related Processes
+
+```mermaid
+graph LR
+    P8_3_1["8.3.1 Develop IT compliance/risk"] --> P8_3_2["8.3.2 Develop resilience strategy"]
+    P8_2["8.2 Develop IT business strategy"] --> P8_3_2
+    P8_3_2 --> P8_3_3["8.3.3 Control IT risk"]
+    P8_3_2 --> P8_3_4["8.3.4 Plan IT continuity"]
+    P8_3_2 --> P8_3_5["8.3.5 IT Security"]
+    P11["11.0 Enterprise Risk"] --> P8_3_2
+```
 
 ---
 

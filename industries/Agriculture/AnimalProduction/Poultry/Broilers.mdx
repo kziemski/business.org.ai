@@ -1,126 +1,210 @@
 ---
 id: Broilers
-name: "Broilers"
-code: "11232"
+name: "Broilers and Other Meat Type Chicken Production"
+code: "112320"
 type: Industry
-level: Industry
+level: National Industry
 status: complete
 ---
 
-# Broilers
+# Broilers and Other Meat Type Chicken Production
 
-> See industry description for 112320.
+> Establishments primarily engaged in raising broilers, fryers, roasters, and other meat-type chickens for commercial processing.
 
 ## Overview
 
-Broilers represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11).
+Broiler production is the largest segment of U.S. animal agriculture by volume, producing over 9 billion chickens annually for meat consumption. The industry operates through a highly integrated contract farming model where large integrators own the birds, provide feed and veterinary services, while contract growers provide housing and labor. This vertical integration has enabled remarkable efficiency gains, with modern broilers reaching market weight in approximately 6-7 weeks compared to 12+ weeks in the 1950s.
+
+The industry is geographically concentrated in the Southeast (Georgia, Arkansas, Alabama, North Carolina) due to favorable climate, proximity to feed supplies, and established processing infrastructure. Five major integrators (Tyson Foods, Pilgrim's Pride, Sanderson Farms, Perdue, and Koch Foods) control approximately 60% of U.S. production. The contract grower model means most "farms" are capital-intensive operations focused on housing and bird care rather than traditional independent farming.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Broiler Production | 45+ billion pounds annually |
+| Number of Broilers Produced | 9.2 billion birds |
+| U.S. Per Capita Consumption | 98+ pounds/year |
+| Export Volume | 7+ billion pounds |
+| Industry Revenue | $65+ billion |
+
+Chicken has become America's most consumed meat, surpassing beef. Growth is driven by health perceptions, lower relative prices, and product innovation. Export markets, particularly Mexico, China, and Canada, absorb significant production.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
-    S11 --> N112["112: Animal Production"]
-    N112 --> N1123["1123: Poultry"]
-    N1123 --> N11232["11232: Broilers"]
-    style N11232 fill:#f96,stroke:#333,stroke-width:2px
+    S11 --> N112["112: Animal Production and Aquaculture"]
+    N112 --> N1123["1123: Poultry and Egg Production"]
+    N1123 --> N11232["11232: Broilers and Other Meat Type Chicken Production"]
+    N11232 --> N112320["112320: Broilers and Other Meat Type Chicken Production"]
+    style N112320 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 11232 |
-| Level | Industry |
-| Parent | [Poultry](../) |
+| NAICS Code | 112320 |
+| Level | National Industry |
+| Parent | [Poultry and Egg Production](../) |
 | Child Industries | 0 |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage broiler house operations and contract relationships
+- [Agricultural Workers](/occupations/FarmingFishingAndForestry/AgriculturalWorkers) - Daily bird care, house management, and catch crews
+- [Veterinarians](/occupations/Healthcare/Veterinarians) - Flock health, disease prevention, and treatment protocols
+- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Design housing systems and environmental controls
+- [Food Scientists](/occupations/Science/FoodScientistsAndTechnologists) - Develop feed formulations and processing methods
+- [Industrial Production Managers](/occupations/Management/IndustrialProductionManagers) - Oversee integrator operations
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
+        O1["Chick Placement"]
+        O2["Brooding"]
+        O3["Grow-Out"]
+        O4["Catching/Loading"]
         O5["Processing"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Feed Delivery"]
+        S2["Health Monitoring"]
+        S3["Environment Control"]
+        S4["Litter Management"]
     end
 
     O1 --> O2
     O2 --> O3
     O3 --> O4
     O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    S1 -.-> O3
+    S3 -.-> O2
 ```
+
+### Brooding Phase (Days 1-14)
+Initial care of day-old chicks with elevated temperatures and intensive monitoring.
+
+**Key Activities:**
+- House preparation and pre-heating
+- Chick placement and initial feeding
+- Temperature management (90-95F reducing gradually)
+- Monitoring chick behavior and distribution
+- Early mortality assessment
+
+### Grow-Out Phase (Days 15-42+)
+Growth period where birds achieve market weight through optimized nutrition and environment.
+
+**Key Activities:**
+- Feed program management (starter, grower, finisher)
+- Ventilation and temperature control
+- Water quality monitoring
+- Litter condition management
+- Daily mortality removal
+
+### Harvesting
+Catching and transporting market-weight birds to processing facilities.
+
+**Key Activities:**
+- Feed withdrawal timing
+- Catch crew coordination
+- Loading for transport
+- Live shrink management
+- House cleanout preparation
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+    subgraph Inputs["Inputs (Integrator Provided)"]
+        I1["Day-Old Chicks"]
+        I2["Feed"]
+        I3["Veterinary Services"]
+        I4["Technical Support"]
     end
 
-    subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+    subgraph Primary["Grower Activities"]
+        A1["Housing"]
+        A2["Bird Care"]
+        A3["Environment Mgmt"]
+        A4["Harvest Support"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+    subgraph Outputs["Products"]
+        O1["Live Broilers"]
+        O2["Litter/Manure"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+    subgraph Markets["End Markets"]
+        C1["Processing Plants"]
+        C2["Retail"]
+        C3["Foodservice"]
+        C4["Export"]
     end
 
-    Inputs --> Primary --> Outputs --> Customers
+    Inputs --> Primary --> Outputs --> Markets
 ```
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Food Safety and Inspection Service (FSIS)** - Mandatory inspection of processing facilities and products
+- **FDA** - Regulates feed additives, medications, and withdrawal periods
+- **EPA** - Regulates air emissions, water discharge, and waste management
+- **OSHA** - Workplace safety in contract growing operations
+- **State Departments of Agriculture** - Environmental permits and animal health regulations
+
+### Key Regulations
+- HACCP requirements for processing
+- Antibiotic use restrictions (no growth promotion antibiotics)
+- National Poultry Improvement Plan (NPIP) for disease surveillance
+- Concentrated Animal Feeding Operation (CAFO) permits
+- Process verification for Salmonella and Campylobacter
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Precision Environment Control** - Computer-controlled ventilation, heating, and cooling systems
+- **Automated Feeding Systems** - Pan and tube feeders with computerized delivery
+- **Health Monitoring** - Sensors for temperature, humidity, ammonia, and bird activity
+- **LED Lighting** - Programmable lighting for growth optimization
+- **Data Analytics** - Flock performance tracking and benchmarking
+- **Genetic Improvement** - Breeding for growth rate, feed efficiency, and meat yield
+
+## Contract Growing Model
+
+### Integrator Responsibilities
+- Supply day-old chicks from company hatcheries
+- Provide feed, medications, and veterinary oversight
+- Offer technical service and management guidance
+- Coordinate catching and transportation
+- Process and market the finished product
+
+### Grower Responsibilities
+- Construct and maintain broiler houses (capital investment $150,000-300,000 per house)
+- Provide daily care and house management
+- Maintain environmental control systems
+- Dispose of mortality and manage litter
+- Meet company standards for performance
+
+### Payment Structure
+Growers are paid based on performance metrics including feed conversion, livability, and average weight, typically receiving $0.05-0.08 per pound of live weight produced.
+
+## Industry Challenges
+
+- **Animal Welfare Pressure** - Growing consumer and regulatory focus on housing conditions
+- **Disease Risk** - Avian influenza outbreaks can devastate flocks
+- **Environmental Compliance** - Increasing scrutiny of ammonia emissions and nutrient runoff
+- **Labor Availability** - Difficulty staffing processing plants and catch crews
+- **Market Concentration** - Grower concerns about integrator market power
+- **Input Costs** - Feed cost volatility affecting industry economics
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+The broiler industry continues to grow driven by consumer preference for chicken as an affordable, versatile protein. Innovation focuses on meeting evolving consumer demands including antibiotic-free production, improved animal welfare standards, and product diversification. Automation in processing addresses labor challenges while improving food safety. Environmental sustainability initiatives address water use, emissions, and waste management. Export growth depends on trade policy and disease status. The industry's efficiency and adaptability position it for continued growth, though contract growers face ongoing challenges related to market concentration and capital requirements for house upgrades to meet evolving standards.
 
 ---
 
-*Source: NAICS 11232 - Broilers*
+*Source: NAICS 112320 - Broilers and Other Meat Type Chicken Production*

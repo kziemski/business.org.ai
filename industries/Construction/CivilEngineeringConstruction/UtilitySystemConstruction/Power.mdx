@@ -1,103 +1,170 @@
 ---
 id: Power
-name: "Power"
-code: "23713"
+name: "Power and Communication Line Construction"
+code: "237130"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Power
+# Power and Communication Line Construction
 
-> See industry description for 237130.
+> This industry comprises establishments primarily engaged in the construction of power lines and towers, power plants, and radio, television, and telecommunications transmitting/receiving towers.
 
 ## Overview
 
-Power represents an important category within the Construction sector (NAICS 23).
+Power and Communication Line Construction (NAICS 237130) encompasses establishments engaged in constructing the electrical and telecommunications infrastructure that powers modern society and enables global connectivity. This includes high-voltage transmission lines, distribution systems, substations, power plants, cell towers, fiber optic networks, and broadcasting infrastructure.
+
+The industry is experiencing transformative growth driven by renewable energy deployment, grid modernization, 5G network buildout, and broadband expansion. Projects range from local distribution upgrades to massive multi-billion dollar transmission lines spanning hundreds of miles.
+
+## Market Context
+
+The U.S. power and communication line construction market represents approximately $75 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Power Transmission | $25 billion | Renewable interconnection, grid reliability |
+| Power Distribution | $20 billion | Grid modernization, undergrounding, resilience |
+| Fiber Optic/Broadband | $15 billion | BEAD program, rural broadband, 5G backhaul |
+| Wireless Infrastructure | $10 billion | 5G deployment, tower construction, small cells |
+| Power Generation | $5 billion | Renewable energy, battery storage, peaker plants |
+
+The market is driven by the clean energy transition requiring massive transmission expansion, grid modernization for reliability and resilience, and federal broadband funding closing the digital divide.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S23["23: Construction"]
-    S23 --> N237["237: Heavy"]
+    S23 --> N237["237: Heavy and Civil Engineering"]
     N237 --> N2371["2371: Utility System Construction"]
-    N2371 --> N23713["23713: Power"]
-    style N23713 fill:#f96,stroke:#333,stroke-width:2px
+    N2371 --> N237130["237130: Power and Communication"]
+    style N237130 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23713 |
-| Level | Industry |
+| NAICS Code | 237130 |
+| Level | National Industry |
 | Parent | [Utility System Construction](../) |
-| Child Industries | 0 |
+| U.S. Establishments | ~10,000 |
+| Annual Revenue | ~$75 billion |
+| Employment | ~180,000 |
+| U.S. Transmission Miles | 160,000 |
+| U.S. Distribution Miles | 5.5 million |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee power and communication line projects
+- [Electrical Engineers](/occupations/Architecture/ElectricalEngineers) - Design transmission and distribution systems
+- [Lineworkers](/occupations/Construction/Lineworkers) - Install and maintain overhead power lines
+- [Operating Engineers](/occupations/Construction/OperatingEngineers) - Operate cranes, digger-derricks, and bucket trucks
+- [Electricians](/occupations/Construction/Electricians) - Install electrical systems in substations and facilities
+- [Telecommunications Technicians](/occupations/Installation/TelecomTechnicians) - Install fiber optic and wireless systems
+- [Tower Climbers](/occupations/Construction/TowerClimbers) - Erect and maintain communication towers
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Development["Project Development"]
+        D1["Route Selection"]
+        D2["Permitting"]
+        D3["Right-of-Way"]
+        D4["Engineering"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Construction["Construction"]
+        C1["Clearing/Access"]
+        C2["Foundation/Anchor"]
+        C3["Structure Erection"]
+        C4["Wire Stringing"]
+        C5["Equipment Installation"]
+        C6["Testing"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Commissioning["Commissioning"]
+        O1["Energization"]
+        O2["Protection Testing"]
+        O3["System Integration"]
+    end
+
+    D1 --> D2 --> D3 --> D4
+    D4 --> C1 --> C2 --> C3 --> C4 --> C5 --> C6
+    C6 --> O1 --> O2 --> O3
 ```
+
+### Transmission Line Development
+
+Major transmission projects require years of planning, permitting, and right-of-way acquisition.
+
+**Key Activities:**
+- Conduct routing studies and alternatives analysis
+- Prepare environmental impact statements
+- Obtain certificates of public convenience and necessity
+- Negotiate easements with landowners
+- Coordinate with regulatory agencies (FERC, state commissions)
+- Complete engineering design and procurement
+
+### Line Construction
+
+Transmission and distribution line construction requires specialized equipment and crews.
+
+**Key Activities:**
+- Clear rights-of-way and construct access roads
+- Install foundations for towers and poles
+- Erect transmission towers or distribution poles
+- String conductors using tensioners and pullers
+- Install insulators, hardware, and ground wires
+- Complete grounding and bonding systems
+
+### Substation Construction
+
+Substations require civil, structural, and electrical construction expertise.
+
+**Key Activities:**
+- Prepare site and construct foundations
+- Erect steel structures and bus work
+- Install transformers and switchgear
+- Complete control building and equipment
+- Install protection and control systems
+- Perform commissioning and testing
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
+    subgraph Inputs["Inputs & Resources"]
+        I1["Conductors/Cable"]
+        I2["Towers/Poles"]
+        I3["Transformers"]
+        I4["Heavy Equipment"]
+        I5["Lineworkers"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Site Preparation"]
+        A2["Structure Erection"]
+        A3["Wire Stringing"]
+        A4["Equipment Install"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
+    subgraph Outputs["Infrastructure"]
+        O1["Transmission Lines"]
+        O2["Distribution Lines"]
+        O3["Substations"]
+        O4["Fiber Networks"]
+        O5["Cell Towers"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
+    subgraph Customers["Customer Segments"]
+        C1["Investor-Owned Utilities"]
+        C2["Cooperatives"]
+        C3["Municipal Utilities"]
+        C4["Telecom Companies"]
+        C5["Data Center Operators"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -105,22 +172,94 @@ graph LR
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+Power and communication construction operates under extensive federal and state oversight:
+
+### Federal Regulations
+- **FERC** - Interstate transmission line approval and rates
+- **FCC** - Telecommunications tower licensing and spectrum
+- **NEPA** - Environmental review for federal lands and permits
+- **FAA** - Tower height and lighting requirements
+- **OSHA** - Electrical safety standards (29 CFR 1926 Subpart V)
+
+### State Requirements
+- **Public Utility Commissions** - State transmission approval
+- **Environmental Agencies** - State-level NEPA equivalents
+- **Construction Permits** - Local building and electrical permits
+- **Right-of-Way Permits** - Highway and railroad crossings
+
+### Industry Standards
+- **NESC** - National Electrical Safety Code
+- **IEEE Standards** - Electrical engineering specifications
+- **RUS Standards** - Rural Utilities Service design standards
+- **TIA Standards** - Telecommunications tower standards
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Design Technology
+- **Power Systems Modeling** - Transmission planning and analysis
+- **Lidar Surveying** - Corridor mapping and clearance analysis
+- **PLS-CADD** - Transmission line design software
+- **GIS Mapping** - Network documentation and analysis
 
-## Industry Outlook
+### Construction Technology
+- **Drone Line Stringing** - Pilot line installation in difficult terrain
+- **Helicopter Construction** - Tower erection in remote areas
+- **GPS Machine Control** - Foundation and road construction
+- **Robotic Welding** - Automated tower fabrication
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Grid Technology
+- **Advanced Conductors** - High-capacity composite conductors
+- **HVDC Transmission** - Long-distance, high-efficiency power transfer
+- **Grid-Enhancing Technology** - Dynamic line rating, power flow control
+- **Battery Energy Storage** - Grid-scale storage systems
+
+### Communication Technology
+- **5G Small Cells** - Dense urban wireless networks
+- **Fiber Optic Cable** - High-capacity data transmission
+- **OTDR Testing** - Fiber optic testing and commissioning
+- **Wireless Backhaul** - Point-to-point microwave systems
+
+## Project Types
+
+### Electric Transmission
+- High-voltage transmission lines (115kV-765kV)
+- HVDC converter stations
+- Renewable interconnection projects
+- Grid reliability upgrades
+
+### Electric Distribution
+- Distribution line construction and upgrade
+- Underground conversion (undergrounding)
+- Smart grid and AMI deployment
+- Storm hardening and resilience
+
+### Substations
+- Transmission substations
+- Distribution substations
+- Switching stations
+- Renewable energy collector substations
+
+### Telecommunications
+- Fiber optic network construction
+- Cell tower construction
+- 5G small cell deployment
+- Rural broadband expansion
+
+## Industry Trends and Outlook
+
+Key trends shaping power and communication construction:
+
+- **Transmission Expansion** - Massive investment needed for renewable energy
+- **Grid Modernization** - Smart grid, automation, and resilience upgrades
+- **Renewable Interconnection** - Solar, wind, and storage connections
+- **Undergrounding** - Converting overhead lines in high-risk areas
+- **5G Deployment** - Continued buildout of 5G networks
+- **Broadband Expansion** - BEAD funding for rural connectivity
+- **Workforce Development** - Critical shortage of skilled lineworkers
+- **Supply Chain** - Transformer and equipment lead times
+
+The outlook is exceptionally strong with the clean energy transition requiring unprecedented transmission investment. The Department of Energy estimates $2 trillion in transmission investment needed by 2050. Broadband funding from BEAD and 5G expansion support sustained communication infrastructure demand.
 
 ---
 
-*Source: NAICS 23713 - Power*
+*Source: NAICS 237130 - Power and Communication Line and Related Structures Construction*

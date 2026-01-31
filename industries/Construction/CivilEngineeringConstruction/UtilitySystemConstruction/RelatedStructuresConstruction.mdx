@@ -1,127 +1,213 @@
 ---
 id: RelatedStructuresConstruction
-name: "Related Structures Construction"
-code: "23711"
+name: "Utility Related Structures Construction"
+code: "237110"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Related Structures Construction
+# Utility Related Structures Construction
 
-> See industry description for 237110.
+> This industry comprises establishments primarily engaged in the construction of related structures that are integral parts of utility systems, including pumping stations, water treatment plants, storage tanks, and similar facilities.
 
 ## Overview
 
-Related Structures Construction represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in related structures construction.
+Utility Related Structures Construction encompasses the specialized building construction required for utility system operations. While utility line contractors focus on distribution infrastructure, related structures contractors build the facilities that produce, treat, store, and control utility services. This includes water treatment plants, wastewater treatment facilities, pumping stations, storage tanks, power plants, and control buildings.
+
+These projects combine heavy civil construction with process mechanical and electrical systems, requiring integration of structural, architectural, mechanical, and instrumentation disciplines. Projects are typically more complex than standard line work and involve longer construction durations.
+
+## Market Context
+
+The U.S. utility-related structures market represents approximately $50 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Water/Wastewater Treatment | $22 billion | Regulatory compliance, capacity expansion, replacement |
+| Power Generation | $15 billion | Renewable energy, grid reliability, peaking capacity |
+| Pump/Compressor Stations | $8 billion | System expansion, redundancy, efficiency |
+| Storage Facilities | $5 billion | Water towers, reservoirs, fuel storage |
+
+The market is driven by aging treatment facilities requiring replacement, new regulatory requirements for water quality and emissions, renewable energy construction, and system capacity needs in growing regions.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S23["23: Construction"]
-    S23 --> N237["237: Civil Engineering Construction"]
+    S23 --> N237["237: Heavy and Civil Engineering"]
     N237 --> N2371["2371: Utility System Construction"]
-    N2371 --> N23711["23711: Related Structures Construction"]
-    style N23711 fill:#f96,stroke:#333,stroke-width:2px
+    N2371 --> N237110["237110: Related Structures"]
+    style N237110 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23711 |
-| Level | Industry |
+| NAICS Code | 237110 |
+| Level | National Industry |
 | Parent | [Utility System Construction](../) |
-| Child Industries | 0 |
-
+| U.S. Water Treatment Plants | 50,000+ |
+| U.S. Wastewater Plants | 16,000+ |
+| Average Project Size | $10-200 million |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee complex facility construction
+- [Civil Engineers](/occupations/Architecture/CivilEngineers) - Design structures and site improvements
+- [Mechanical Engineers](/occupations/Architecture/MechanicalEngineers) - Design process mechanical systems
+- [Electrical Engineers](/occupations/Architecture/ElectricalEngineers) - Design power and control systems
+- [Ironworkers](/occupations/Construction/Ironworkers) - Erect structural steel
+- [Pipefitters](/occupations/Construction/Pipefitters) - Install process piping systems
+- [Instrumentation Technicians](/occupations/Installation/InstrumentTechnicians) - Install and calibrate controls
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Development["Project Development"]
+        D1["Design Engineering"]
+        D2["Permitting"]
+        D3["Procurement"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Construction["Construction"]
+        C1["Site Work"]
+        C2["Structural"]
+        C3["Mechanical"]
+        C4["Electrical"]
+        C5["I&C"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Startup["Startup"]
+        S1["Testing"]
+        S2["Commissioning"]
+        S3["Training"]
+    end
+
+    D1 --> D2 --> D3
+    D3 --> C1 --> C2 --> C3 --> C4 --> C5
+    C5 --> S1 --> S2 --> S3
 ```
 
-## Industry Value Chain
+### Water and Wastewater Treatment Plants
 
-```mermaid
-graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
-    end
+Treatment facilities require specialized process knowledge and construction expertise.
 
-    subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
-    end
+**Key Activities:**
+- Construct concrete basins and structures
+- Install process equipment (pumps, blowers, clarifiers)
+- Complete process piping systems
+- Install chemical feed systems
+- Complete electrical power distribution
+- Install instrumentation and control systems
+- Commission treatment processes
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
-    end
+### Pumping and Compressor Stations
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
-    end
+Stations require integration of mechanical equipment with control systems.
 
-    Inputs --> Primary --> Outputs --> Customers
-```
+**Key Activities:**
+- Construct equipment buildings and structures
+- Install pump or compressor units
+- Complete suction and discharge piping
+- Install electrical motor control centers
+- Integrate SCADA and remote monitoring
+- Commission and test equipment
+
+### Storage Facilities
+
+Storage construction includes tanks, reservoirs, and containment structures.
+
+**Key Activities:**
+- Construct concrete or steel storage tanks
+- Install liners and coatings
+- Complete inlet/outlet piping
+- Install level monitoring and controls
+- Construct secondary containment
+- Test for integrity and capacity
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Federal Regulations
+- **Safe Drinking Water Act** - Water treatment requirements
+- **Clean Water Act** - Wastewater treatment standards
+- **EPA Regulations** - Treatment technology requirements
+- **OSHA** - Construction safety requirements
+
+### State Requirements
+- **State Environmental Agencies** - Construction permits and inspections
+- **Public Health Departments** - Water system approvals
+- **Dam Safety** - Reservoir and impoundment requirements
+- **Fire Codes** - Fuel storage facility requirements
+
+### Industry Standards
+- **AWWA Standards** - Water treatment design and construction
+- **WEF Standards** - Wastewater treatment practices
+- **ASME Codes** - Pressure vessel and piping
+- **NFPA** - Fire protection for facilities
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Treatment Technology
+- **Membrane Filtration** - Advanced treatment processes
+- **UV Disinfection** - Chemical-free disinfection
+- **Ozone Treatment** - Oxidation for contaminant removal
+- **Biological Nutrient Removal** - Nitrogen and phosphorus control
 
-## Industry Outlook
+### Construction Methods
+- **Precast Concrete** - Factory-built tank and basin components
+- **Modular Treatment Units** - Packaged treatment systems
+- **Self-Performing Concrete** - In-house structural work
+- **BIM Coordination** - 3D modeling for complex systems
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Automation and Control
+- **SCADA Systems** - Remote monitoring and control
+- **Process Automation** - Optimized treatment operations
+- **Digital Twin** - Virtual facility modeling
+- **Predictive Maintenance** - IoT-enabled equipment monitoring
+
+## Project Types
+
+### Water Treatment
+- Conventional treatment plants
+- Membrane filtration facilities
+- Disinfection upgrades
+- Chemical feed systems
+
+### Wastewater Treatment
+- Secondary treatment plants
+- Nutrient removal upgrades
+- Biosolids handling facilities
+- Odor control systems
+
+### Pumping Facilities
+- Water booster stations
+- Wastewater lift stations
+- Stormwater pump stations
+- Raw water intake structures
+
+### Storage and Distribution
+- Ground storage tanks
+- Elevated water towers
+- Clear well construction
+- Reservoir improvements
+
+## Industry Trends and Outlook
+
+Key trends shaping utility structures construction:
+
+- **Aging Infrastructure** - Replacement of facilities built 40-60 years ago
+- **Regulatory Compliance** - Meeting stricter water quality standards
+- **Energy Efficiency** - Reducing treatment facility energy use
+- **Nutrient Removal** - Upgrading for nitrogen and phosphorus
+- **PFAS Treatment** - Emerging contaminant treatment systems
+- **Resilience** - Hardening facilities against climate impacts
+- **Workforce Development** - Addressing skilled labor shortages
+
+The outlook is strong with significant federal investment, regulatory mandates, and aging facilities requiring replacement. Water and wastewater utilities face substantial capital needs for the next 20+ years.
 
 ---
 
-*Source: NAICS 23711 - Related Structures Construction*
+*Source: NAICS 237110 - Water and Sewer Line and Related Structures Construction*

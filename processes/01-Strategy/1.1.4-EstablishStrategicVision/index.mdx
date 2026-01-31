@@ -16,20 +16,28 @@ children: ["1.1.4.1", "1.1.4.2", "1.1.4.3"]
 
 ## Overview
 
-Process 1.1.4 is a core process that defines the specific procedures for establish strategic vision. 
+Process 1.1.4 - Establish Strategic Vision is a pivotal process within the business concept development group. This process transforms insights from environmental analysis and market research into a compelling, actionable vision that guides organizational direction for 3-10 years.
 
-Establishing the organization's long-term vision as a strategic positioning and engagement of stakeholders. Institute the vision by creating strategic orientations of all stakeholders. Understand the strategy development frameworks in this context.
+The strategic vision serves as the North Star for all organizational activities, providing clarity on where the organization aspires to be and what it aims to achieve. This process involves not just articulating the vision but ensuring it resonates with and is embraced by all stakeholders, from the board and executives to front-line employees.
+
+Effective vision establishment requires a balance between aspiration and achievability, innovation and pragmatism. The resulting vision statement should be memorable, inspiring, and specific enough to guide strategic decision-making while remaining flexible enough to accommodate market changes.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C1["1.0 Develop Vision and Strategy"]
-    C1 --> N1_1_4["1.1.4 Establish strategic vision"]
+    C1 --> G11["1.1 Define the business concept<br/>and long-term vision"]
+    G11 --> N1_1_1["1.1.1 Assess external environment"]
+    G11 --> N1_1_2["1.1.2 Survey market needs"]
+    G11 --> N1_1_3["1.1.3 Assess internal environment"]
+    G11 --> N1_1_4["1.1.4 Establish strategic vision"]
+    G11 --> N1_1_5["1.1.5 Restructuring opportunities"]
+
     style N1_1_4 fill:#e1f5fe
     N1_1_4 --> N1_1_4_1["1.1.4.1 Define the strategic vision"]
-    N1_1_4 --> N1_1_4_2["1.1.4.2 Align stakeholders around strate..."]
-    N1_1_4 --> N1_1_4_3["1.1.4.3 Communicate strategic vision to ..."]
+    N1_1_4 --> N1_1_4_2["1.1.4.2 Align stakeholders around<br/>strategic vision"]
+    N1_1_4 --> N1_1_4_3["1.1.4.3 Communicate strategic<br/>vision to stakeholders"]
 ```
 
 ## Key Statistics
@@ -39,9 +47,10 @@ graph TD
 | APQC Code | 10020 |
 | Hierarchy ID | 1.1.4 |
 | Level | Process |
-| Parent | [1.1](../) |
-| Sub-Processes | 3 |
-
+| Parent | [1.1 Define Business Concept](../) |
+| Child Activities | 3 |
+| Typical Duration | 4-8 weeks |
+| Revision Frequency | Every 3-5 years |
 
 ## GraphDL Semantic Structure
 
@@ -51,49 +60,217 @@ establish.StrategicVision
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `establish` | Primary action |
-| Object | `strategic vision` | Direct object |
-
+| Verb | `establish` | Creating and institutionalizing |
+| Object | `StrategicVision` | Long-term organizational direction |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
 
 ## Process Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["External Environment Analysis"]
+        I2["Market Research Findings"]
+        I3["Internal Capability Assessment"]
+        I4["Competitive Intelligence"]
+        I5["Stakeholder Expectations"]
+        I6["Industry Trends"]
     end
 
-    subgraph Process["Establish strategic vision"]
-        S1["Define the strategic vision"]
-        S2["Align stakeholders around s..."]
-        S3["Communicate strategic visio..."]
+    subgraph Define["1.1.4.1 Define Strategic Vision"]
+        D1["Synthesize Analysis Insights"]
+        D2["Identify Strategic Themes"]
+        D3["Draft Vision Statements"]
+        D4["Validate with Leadership"]
+        D5["Refine Vision Language"]
+    end
+
+    subgraph Align["1.1.4.2 Align Stakeholders"]
+        A1["Identify Key Stakeholders"]
+        A2["Conduct Alignment Sessions"]
+        A3["Address Concerns"]
+        A4["Build Consensus"]
+        A5["Secure Commitment"]
+    end
+
+    subgraph Communicate["1.1.4.3 Communicate Vision"]
+        C1["Develop Communication Strategy"]
+        C2["Create Communication Materials"]
+        C3["Execute Launch Plan"]
+        C4["Reinforce Through Channels"]
+        C5["Measure Understanding"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Strategic Vision Statement"]
+        O2["Vision Documentation"]
+        O3["Stakeholder Alignment Report"]
+        O4["Communication Plan"]
+        O5["Vision Cascade Materials"]
     end
 
-    Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
+    Inputs --> Define
+    Define --> Align
+    Align --> Communicate
+    Communicate --> Outputs
+
+    D1 --> D2 --> D3 --> D4 --> D5
+    A1 --> A2 --> A3 --> A4 --> A5
+    C1 --> C2 --> C3 --> C4 --> C5
 ```
 
 ## Sub-Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Define the strategic vision](./DefineTheStrategicVision) | 1.1.4.1 | Developing goals to define organizations vision |
-| [Align stakeholders around strategic vision](./AlignStakeholdersAroundStrategicVision) | 1.1.4.2 | Orienting those entities, associated with the organization that have a direct bearing on its operati |
-| [Communicate strategic vision to stakeholders](./CommunicateStrategicVisionToStakeholders) | 1.1.4.3 | Developing and executing communication strategies to convey an alignment plan of all organizational  |
+### [1.1.4.1 Define the strategic vision](./DefineTheStrategicVision/)
 
+Developing goals to define the organization's vision. Synthesize insights from environmental scanning, market research, and internal assessments to articulate a clear, compelling vision that describes the organization's desired future state.
+
+**Key Activities:**
+- Synthesize strategic analysis outputs
+- Identify core strategic themes and priorities
+- Draft and iterate vision statement language
+- Validate vision with executive leadership
+- Ensure vision aligns with organizational values
+
+**APQC Code:** 10024 | **Typical Duration:** 2-3 weeks
+
+### [1.1.4.2 Align stakeholders around strategic vision](./AlignStakeholdersAroundStrategicVision/)
+
+Orienting entities associated with the organization that have a direct bearing on its operation. Engage board members, executives, management, employees, investors, and key partners to ensure understanding and commitment to the strategic vision.
+
+**Key Activities:**
+- Map stakeholder groups and their interests
+- Design alignment workshops and sessions
+- Facilitate vision alignment discussions
+- Address objections and concerns
+- Document stakeholder commitments
+
+**APQC Code:** 10025 | **Typical Duration:** 2-4 weeks
+
+### [1.1.4.3 Communicate strategic vision to stakeholders](./CommunicateStrategicVisionToStakeholders/)
+
+Developing and executing communication strategies to convey an alignment plan of all organizational stakeholders. Create a comprehensive communication plan that ensures the vision is understood, embraced, and actionable across all levels.
+
+**Key Activities:**
+- Develop multi-channel communication strategy
+- Create tailored messaging for different audiences
+- Execute coordinated launch campaign
+- Establish ongoing reinforcement mechanisms
+- Monitor and measure communication effectiveness
+
+**APQC Code:** 10026 | **Typical Duration:** 2-4 weeks (initial), ongoing
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define strategic vision | Strategy Team | CEO | Board, Executives | All Managers |
+| Draft vision statement | CSO/Strategy Lead | CEO | CMO, CHRO | Senior Leadership |
+| Validate with leadership | CEO | Board Chair | Executive Committee | Investors |
+| Align stakeholders | Executive Team | CEO | All Leaders | All Employees |
+| Facilitate alignment sessions | HR/Strategy | COO | Department Heads | Teams |
+| Develop communication plan | Corporate Communications | CMO | HR, Strategy | All |
+| Execute vision launch | Communications Team | CMO | All Departments | All Stakeholders |
+| Measure understanding | HR/Communications | CHRO | Managers | Leadership |
+
+## Metrics & KPIs
+
+| Metric | Description | Target | Frequency |
+|--------|-------------|--------|-----------|
+| Vision Awareness | Percentage of employees who can articulate the vision | >90% | Quarterly |
+| Vision Alignment Score | Stakeholder agreement with vision direction | >85% | Annual |
+| Vision Comprehension | Understanding of vision implications for role | >80% | Bi-annual |
+| Leadership Alignment | Executive team alignment on vision | 100% | Quarterly |
+| Vision Consistency | Consistency of vision messaging across channels | >95% | Monthly |
+| Time to Alignment | Duration from vision draft to stakeholder alignment | <6 weeks | Per cycle |
+| Communication Reach | Percentage of stakeholders receiving vision communication | 100% | Per launch |
+
+## Related Departments
+
+| Department | Role in Strategic Vision |
+|------------|-------------------------|
+| Executive Office | Vision ownership and accountability |
+| Strategy & Planning | Vision development and facilitation |
+| Corporate Communications | Vision communication and messaging |
+| Human Resources | Stakeholder engagement and culture alignment |
+| Marketing | External vision communication |
+| All Business Units | Vision adoption and cascade |
+
+## Related Occupations
+
+- [Chief Executive Officers](/occupations/Management/ChiefExecutives) - Vision accountability and sponsorship
+- [Chief Strategy Officers](/occupations/Management/StrategyOfficers) - Vision development leadership
+- [Chief Human Resources Officers](/occupations/Management/HRManagers) - Stakeholder alignment
+- [Corporate Communications Directors](/occupations/Management/PRManagers) - Vision communication
+- [Strategic Planners](/occupations/Business/StrategicPlanners) - Vision process facilitation
+- [Change Management Specialists](/occupations/Business/ManagementAnalysts) - Adoption and alignment
+
+## Industry Variations
+
+### Technology Companies
+Vision focused on innovation, disruption, and market creation. Shorter revision cycles (2-3 years) due to rapid market changes. Emphasis on technical differentiation and platform ecosystem.
+
+### Healthcare Providers
+Patient-centered vision emphasizing quality, access, and outcomes. Vision must address regulatory requirements and community health needs. Extended stakeholder group includes medical staff and community.
+
+### Financial Services
+Vision addressing trust, security, and digital transformation. Heavy emphasis on regulatory compliance and risk management. Stakeholder alignment includes regulators and rating agencies.
+
+### Manufacturing
+Vision centered on operational excellence, quality, and sustainability. Long planning horizons aligned with capital investment cycles. Supply chain and partner alignment critical.
+
+### Non-Profit Organizations
+Mission-driven vision with emphasis on social impact. Donor and volunteer stakeholder alignment essential. Board governance plays elevated role in vision definition.
+
+## Best Practices
+
+### Vision Statement Characteristics
+- **Aspirational**: Inspires and motivates stakeholders
+- **Clear**: Easily understood by all audiences
+- **Concise**: Typically 1-2 sentences, memorable
+- **Future-oriented**: Describes desired future state
+- **Aligned**: Consistent with values and culture
+- **Differentiated**: Distinguishes from competitors
+
+### Stakeholder Alignment Approaches
+- Executive workshops with structured dialogue
+- Town halls and all-hands meetings
+- Cascade sessions through management layers
+- One-on-one conversations for key stakeholders
+- Feedback mechanisms and listening sessions
+
+### Communication Excellence
+- Multi-channel approach (digital, print, in-person)
+- Consistent messaging with tailored delivery
+- Leadership role-modeling and reinforcement
+- Regular touchpoints and reminders
+- Success stories and examples
+
+## Related Processes
+
+```mermaid
+graph LR
+    EA["1.1.1 External<br/>Analysis"] --> ESV["1.1.4 Establish<br/>Strategic Vision"]
+    MS["1.1.2 Market<br/>Survey"] --> ESV
+    IA["1.1.3 Internal<br/>Assessment"] --> ESV
+
+    ESV --> DMS["1.2.1 Develop<br/>Mission Statement"]
+    ESV --> DSO["1.2.2 Define<br/>Strategic Options"]
+    ESV --> DSI["1.3.1 Develop<br/>Strategic Initiatives"]
+
+    style ESV fill:#e1f5fe
+```
 
 ## Related Concepts
 
-- StrategicVision
-
+- Strategic Vision
+- Organizational Direction
+- Stakeholder Alignment
+- Vision Communication
+- Strategic Positioning
+- Long-term Planning
 
 ---
 
-*Source: APQC PCF 10020 (1.1.4) - APQC*
+*Source: APQC PCF 10020 (1.1.4) - Cross-Industry*

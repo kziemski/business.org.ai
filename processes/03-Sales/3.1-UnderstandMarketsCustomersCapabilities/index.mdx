@@ -16,19 +16,40 @@ children: ["3.1.1", "3.1.2"]
 
 ## Overview
 
-Group 3.1 is a process group within APQC Category 3.0 (Market and Sell Products and Services). 
+Process Group 3.1 - Understand Markets, Customers, and Capabilities is the foundational process group within the Market and Sell Products and Services category. This group provides the intelligence and insights that inform all downstream marketing and sales activities.
 
-Making sense of the market and customers to identify the right opportunities to be capitalized, given the organization's competencies. Discern trends and shift in the market and customers. Identify the right market opportunities that fit closely with the organization's capabilities and strategy by gathering intelligence on various attributes of different market/customer segments.
+Organizations that excel in this process group develop deep understanding of their markets, customers, and competitive landscape. They systematically gather, analyze, and act on market intelligence to identify opportunities that align with their capabilities and strategic direction. This understanding drives effective marketing strategy, sales execution, and product development.
+
+The processes in this group combine both primary research (direct customer interaction) and secondary research (industry data, competitive intelligence) to build a comprehensive view of market dynamics. The outputs feed directly into marketing strategy development (3.2), marketing plan execution (3.3), and sales strategy (3.4).
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C3["3.0 Market and Sell Products and Services"]
-    C3 --> N3_1["3.1 Understand markets, customers, and ca..."]
-    style N3_1 fill:#e1f5fe
-    N3_1 --> N3_1_1["3.1.1 Perform customer and market inte..."]
-    N3_1 --> N3_1_2["3.1.2 Evaluate and prioritize market o..."]
+    C3 --> G31["3.1 Understand markets, customers,<br/>and capabilities"]
+    C3 --> G32["3.2 Develop marketing strategy"]
+    C3 --> G33["3.3 Develop and manage marketing plans"]
+    C3 --> G34["3.4 Develop sales strategy"]
+    C3 --> G35["3.5 Develop and manage sales plans"]
+
+    style G31 fill:#e1f5fe
+    G31 --> P311["3.1.1 Perform customer and market<br/>intelligence analysis"]
+    G31 --> P312["3.1.2 Evaluate and prioritize<br/>market opportunities"]
+
+    P311 --> A3111["3.1.1.1 Conduct customer and market research"]
+    P311 --> A3112["3.1.1.2 Develop consumer market insight"]
+    P311 --> A3113["3.1.1.3 Study consumer insights and trends"]
+    P311 --> A3114["3.1.1.4 Identify market segments"]
+    P311 --> A3115["3.1.1.5 Analyze market and industry trends"]
+    P311 --> A3116["3.1.1.6 Analyze competing organizations"]
+    P311 --> A3117["3.1.1.7 Evaluate existing products/services"]
+    P311 --> A3118["3.1.1.8 Assess business environment"]
+
+    P312 --> A3121["3.1.2.1 Quantify market opportunities"]
+    P312 --> A3122["3.1.2.2 Determine target segments"]
+    P312 --> A3123["3.1.2.3 Prioritize opportunities"]
+    P312 --> A3124["3.1.2.4 Validate opportunities"]
 ```
 
 ## Key Statistics
@@ -37,10 +58,11 @@ graph TD
 |--------|-------|
 | APQC Code | 10101 |
 | Hierarchy ID | 3.1 |
-| Level | Group |
-| Parent | [3](../) |
-| Sub-Processes | 2 |
-
+| Level | Process Group |
+| Parent | [3.0 Market and Sell Products and Services](../) |
+| Child Processes | 2 |
+| Total Activities | 12 |
+| Integration Points | Strategy, Product, Sales |
 
 ## GraphDL Semantic Structure
 
@@ -50,48 +72,270 @@ understand.MarketsCustomersAndCapabilities
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `understand` | Primary action |
-| Object | `markets, customers, and capabilities` | Direct object |
-
+| Verb | `understand` | Comprehending and analyzing |
+| Object | `MarketsCustomersAndCapabilities` | Market landscape, customer needs, organizational strengths |
+| Preposition | - | Not applicable |
+| PrepObject | - | Not applicable |
 
 ## Process Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Strategic Vision"]
+        I2["Industry Data"]
+        I3["Customer Data"]
+        I4["Competitive Intelligence"]
+        I5["Internal Capabilities"]
+        I6["Sales Feedback"]
+        I7["Product Performance"]
     end
 
-    subgraph Process["Understand markets, customers, and capabilities"]
-        S1["Perform customer and market..."]
-        S2["Evaluate and prioritize mar..."]
+    subgraph Intelligence["3.1.1 Market Intelligence"]
+        M1["Customer Research"]
+        M2["Consumer Insights"]
+        M3["Market Segmentation"]
+        M4["Competitive Analysis"]
+        M5["Trend Analysis"]
+        M6["Environment Scanning"]
+    end
+
+    subgraph Evaluation["3.1.2 Opportunity Evaluation"]
+        E1["Quantify Opportunities"]
+        E2["Define Target Segments"]
+        E3["Prioritize by Value"]
+        E4["Validate Opportunities"]
+        E5["Capability Matching"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Market Intelligence Reports"]
+        O2["Customer Segment Profiles"]
+        O3["Competitive Analysis"]
+        O4["Opportunity Rankings"]
+        O5["Target Market Definitions"]
+        O6["Strategic Recommendations"]
     end
 
-    Inputs --> Process --> Outputs
-    S1 --> S2
+    Inputs --> Intelligence
+    Intelligence --> Evaluation
+    Evaluation --> Outputs
+
+    M1 --> M2 --> M3
+    M4 --> M5 --> M6
+    E1 --> E2 --> E3 --> E4 --> E5
 ```
 
-## Sub-Processes
+## Child Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Perform customer and market intelligence analysis](./3.1.1-PerformCustomerMarketIntelligence/) | 3.1.1 | Gathering intelligence on the market and customers |
-| [Evaluate and prioritize market opportunities](./3.1.2-EvaluatePrioritizeMarketOpportunities/) | 3.1.2 | Appraising market opportunities by quantifying and subjecting them to prioritization, as well as val |
+### [3.1.1 Perform customer and market intelligence analysis](./3.1.1-PerformCustomerMarketIntelligence/)
 
+Gathering intelligence on the market and customers. Closely examine the inherent attributes and collective behavior of the various market and customer segments. Track trends in the market. Determine what drives customers to make purchasing decisions in order to identify opportunities.
+
+**Key Activities:**
+- Conduct customer and market research (primary and secondary)
+- Develop consumer/shopper market insights
+- Study consumer insights and emerging trends
+- Identify and profile market segments
+- Analyze market and industry trends
+- Analyze competing organizations
+- Evaluate existing products and services
+- Assess internal and external business environment
+
+**APQC Code:** 10102 | **Typical Duration:** Ongoing, with quarterly deep-dives
+
+### [3.1.2 Evaluate and prioritize market opportunities](./3.1.2-EvaluatePrioritizeMarketOpportunities/)
+
+Appraising market opportunities by quantifying and subjecting them to prioritization, as well as validation tests. Closely examine the market opportunities that have been identified by market intelligence analysis. Triangulate those opportunities to capitalize by finding a fit between identified opportunities and the composite of organizational capabilities and business strategy.
+
+**Key Activities:**
+- Quantify market opportunities (TAM, SAM, SOM)
+- Determine target segments and personas
+- Prioritize opportunities consistent with capabilities
+- Validate opportunities through market testing
+- Assess capability requirements and gaps
+
+**APQC Code:** 10103 | **Typical Duration:** Quarterly cycles
+
+## Market Intelligence Framework
+
+| Dimension | Focus Areas | Key Questions |
+|-----------|-------------|---------------|
+| Market Size | TAM, SAM, SOM, growth rates | How big is the opportunity? |
+| Customer Needs | Pain points, jobs-to-be-done, unmet needs | What do customers need? |
+| Competition | Direct, indirect, substitutes | Who are we competing with? |
+| Trends | Technology, demographic, regulatory | What is changing? |
+| Capabilities | Core competencies, gaps, investments | What can we do well? |
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Market research design | Market Research Team | CMO | Sales, Product | Strategy |
+| Customer research execution | Market Research | VP Marketing | Customer Success | Leadership |
+| Competitive intelligence | Competitive Intel Team | VP Strategy | Sales, Product | All |
+| Segment analysis | Marketing Analytics | CMO | Sales, Finance | Product |
+| Opportunity quantification | Business Development | CFO | Finance, Strategy | Board |
+| Capability assessment | Strategy Team | COO | All Functions | Leadership |
+| Opportunity prioritization | Executive Team | CEO | All Leaders | All |
+
+## Metrics & KPIs
+
+| Metric | Description | Target | Frequency |
+|--------|-------------|--------|-----------|
+| Market Coverage | Percentage of addressable market analyzed | >80% | Quarterly |
+| Insight Accuracy | Predictions validated by actual outcomes | >75% | Annually |
+| Time to Insight | Days from research initiation to delivery | <30 days | Per project |
+| Competitive Coverage | Competitors monitored vs. relevant | >90% | Monthly |
+| Opportunity Conversion | Prioritized opportunities that succeed | >40% | Annually |
+| Research Utilization | Insights informing actual decisions | >70% | Quarterly |
+| Customer Understanding | NPS/satisfaction correlation accuracy | >80% | Quarterly |
+| Segment Accuracy | Segment behavior matching predictions | >75% | Annually |
+
+## Related Departments
+
+| Department | Role in Market Understanding |
+|------------|------------------------------|
+| Marketing | Primary ownership of market research |
+| Sales | Customer insights and market feedback |
+| Strategy | Capability assessment and prioritization |
+| Business Development | Opportunity identification and quantification |
+| Product Management | Product-market fit analysis |
+| Customer Success | Voice of customer and satisfaction data |
+| Finance | Market sizing and opportunity valuation |
+
+## Related Occupations
+
+- [Market Research Analysts](/occupations/Business/MarketResearchAnalysts) - Primary research execution
+- [Marketing Managers](/occupations/Management/MarketingManagers) - Research oversight and strategy
+- [Business Intelligence Analysts](/occupations/Technology/BusinessIntelligenceAnalysts) - Data analysis
+- [Competitive Intelligence Analysts](/occupations/Business/CompetitiveIntelligenceAnalysts) - Competitor monitoring
+- [Strategic Planners](/occupations/Business/StrategicPlanners) - Opportunity prioritization
+- [Product Managers](/occupations/Business/ProductManagers) - Product-market insights
+- [Sales Managers](/occupations/Management/SalesManagers) - Field intelligence
+
+## Industry Variations
+
+### Consumer Products
+Emphasis on shopper insights, category management, and retail channel intelligence. Heavy use of point-of-sale data, consumer panels, and ethnographic research. Brand tracking and equity measurement prominent.
+
+**Industry-Specific Focus:**
+- Shopper behavior and path-to-purchase analysis
+- Category performance and share tracking
+- Retailer relationship and shelf intelligence
+- Consumer trend forecasting and lifestyle analysis
+
+### Banking & Financial Services
+Focus on customer financial behavior, regulatory landscape analysis, and digital banking adoption patterns. Credit risk and lifetime value modeling integrated.
+
+**Industry-Specific Focus:**
+- Customer financial lifecycle analysis
+- Regulatory impact assessment and compliance
+- Digital adoption and channel preference tracking
+- Risk-adjusted opportunity evaluation
+
+### Healthcare Provider
+Focus on patient demographics, clinical needs assessment, and healthcare market dynamics within regulatory constraints. Physician and payer insights essential.
+
+**Industry-Specific Focus:**
+- Patient population and community health analysis
+- Service line demand forecasting
+- Referral pattern and physician relationship analysis
+- Payer mix and reimbursement landscape
+
+### Technology/SaaS
+Emphasis on user behavior analytics, product-market fit, and competitive feature analysis. Rapid research cycles aligned with agile development. Usage data supplements traditional research.
+
+**Industry-Specific Focus:**
+- Product usage and engagement analytics
+- Feature competitive analysis
+- Developer and IT buyer insights
+- Technology adoption and platform dynamics
+
+### Retail
+Emphasis on omnichannel customer behavior, store-level performance, and location-based market analysis. Real-time competitive price monitoring.
+
+**Industry-Specific Focus:**
+- Store catchment and trade area analysis
+- E-commerce behavior and journey tracking
+- Competitive store and price monitoring
+- Seasonal and promotional effectiveness
+
+## Research Methodologies
+
+| Method | Type | Best Used For |
+|--------|------|---------------|
+| Surveys | Quantitative | Market sizing, satisfaction, preferences |
+| Focus Groups | Qualitative | Deep exploration, concept testing |
+| Interviews | Qualitative | B2B insights, executive perspectives |
+| Observation | Qualitative | Behavior understanding, ethnography |
+| Analytics | Quantitative | Behavioral patterns, usage data |
+| Social Listening | Mixed | Sentiment, trends, unstructured feedback |
+| Panel Data | Quantitative | Purchase behavior, market share |
+| Competitive Intel | Mixed | Competitor strategy, positioning |
+
+## RACI Matrix (Detailed by Activity)
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define research objectives | Marketing Strategy | CMO | Sales, Product | Strategy |
+| Design research methodology | Market Research | VP Research | External Agency | Finance |
+| Conduct primary research | Research Team | VP Research | Customer Success | Marketing |
+| Analyze secondary data | Analytics Team | VP Analytics | Strategy | All |
+| Synthesize insights | Marketing Strategy | CMO | All Stakeholders | Leadership |
+| Present findings | Marketing | CMO | Executive Team | All |
+| Quantify opportunities | Business Development | CFO | Strategy, Finance | Board |
+| Prioritize opportunities | Executive Team | CEO | Board | All |
+
+## Related Processes
+
+```mermaid
+graph LR
+    DVS["1.0 Develop<br/>Vision and Strategy"] --> UMC["3.1 Understand<br/>Markets"]
+    UMC --> DMS["3.2 Develop<br/>Marketing Strategy"]
+    UMC --> DSS["3.4 Develop<br/>Sales Strategy"]
+    UMC --> DPS["2.0 Develop<br/>Products and Services"]
+
+    DMS --> UMC
+    DSS --> UMC
+    CRM["6.0 Customer<br/>Service"] --> UMC
+
+    style UMC fill:#e1f5fe
+```
+
+## Best Practices
+
+### Research Excellence
+- Balance primary and secondary research
+- Integrate quantitative and qualitative methods
+- Maintain ongoing competitive monitoring
+- Use multiple data sources for triangulation
+- Invest in research technology and tools
+
+### Insight Activation
+- Translate data into actionable insights
+- Present findings with clear implications
+- Connect insights to business decisions
+- Track insight utilization and impact
+- Build institutional knowledge repository
+
+### Opportunity Evaluation
+- Use consistent evaluation framework
+- Apply financial rigor to sizing
+- Consider capability requirements
+- Validate before major investment
+- Revisit priorities as market evolves
 
 ## Related Concepts
 
-- Markets
-- Customers
-- Capabilities
-
+- Market Intelligence
+- Customer Insights
+- Competitive Analysis
+- Market Segmentation
+- Opportunity Assessment
+- Market Research
+- Voice of Customer
 
 ---
 
-*Source: APQC PCF 10101 (3.1) - APQC*
+*Source: APQC PCF 10101 (3.1) - Cross-Industry*

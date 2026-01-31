@@ -1,62 +1,80 @@
 ---
 id: FurBearingAnimal
-name: "Fur-Bearing Animal"
-code: "11293"
+name: "Fur-Bearing Animal Production"
+code: "112930"
 type: Industry
-level: Industry
+level: National Industry
 status: complete
 ---
 
-# Fur-Bearing Animal
+# Fur-Bearing Animal Production
 
-> See industry description for 112930.
+> Establishments primarily engaged in raising fur-bearing animals such as mink, chinchilla, fox, and other species for pelt production.
 
 ## Overview
 
-Fur-Bearing Animal represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11).
+Fur-bearing animal production encompasses the farming of animals raised primarily for their pelts, which are processed into fur garments, accessories, and trim. The industry is dominated by mink farming, which accounts for approximately 85% of farmed fur production globally. Other farmed fur-bearing species include chinchillas, foxes (silver and blue), sable, and fitch. The United States was historically a major producer, but the industry has declined significantly due to changing consumer attitudes, animal welfare concerns, and regulatory pressures.
+
+U.S. fur farming peaked in the 1980s with over 1,000 mink farms; today fewer than 100 remain operational. The industry has consolidated geographically, with Wisconsin and Utah maintaining the largest concentrations of remaining operations. Global production centers have shifted to Denmark, Poland, and China, though recent disease outbreaks and regulatory changes have disrupted international markets.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Mink Pelt Production | ~2-3 million pelts annually |
+| Global Mink Production | ~60 million pelts (pre-2020) |
+| Average Mink Pelt Price | $30-60 (varies significantly by quality/color) |
+| U.S. Fur Farm Employment | ~1,500 workers |
+| Industry Trend | Declining domestically |
+
+The global fur market has experienced significant disruption from COVID-19 (mink-to-human transmission concerns led to mass cullings in Denmark) and growing bans on fur farming in European countries. U.S. production continues primarily serving the international auction market.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
-    S11 --> N112["112: Animal Production"]
-    N112 --> N11293["11293: Fur-Bearing Animal"]
-    style N11293 fill:#f96,stroke:#333,stroke-width:2px
+    S11 --> N112["112: Animal Production and Aquaculture"]
+    N112 --> N1129["1129: Other Animal Production"]
+    N1129 --> N11293["11293: Fur-Bearing Animal and Rabbit Production"]
+    N11293 --> N112930["112930: Fur-Bearing Animal and Rabbit Production"]
+    style N112930 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 11293 |
-| Level | Industry |
+| NAICS Code | 112930 |
+| Level | National Industry |
+| Parent | [Other Animal Production](../) |
 | Child Industries | 0 |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage fur farm operations and business planning
+- [Animal Breeders](/occupations/FarmingFishingAndForestry/AnimalBreeders) - Develop breeding programs for pelt quality and color
+- [Farmworkers and Laborers](/occupations/FarmingFishingAndForestry/FarmworkersAndLaborers) - Daily animal care, feeding, and facility maintenance
+- [Veterinarians](/occupations/Healthcare/Veterinarians) - Provide health care and disease prevention
+- [Skinners and Pelt Processors](/occupations/Production/ButchersAndMeatCutters) - Harvest and prepare pelts
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
+        O1["Breeding Program"]
+        O2["Kit Raising"]
+        O3["Pelt Development"]
         O4["Harvesting"]
-        O5["Processing"]
+        O5["Pelt Processing"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Health Management"]
+        S2["Nutrition Program"]
+        S3["Facility Maintenance"]
+        S4["Genetics/Selection"]
     end
 
     O1 --> O2
@@ -64,38 +82,68 @@ flowchart LR
     O3 --> O4
     O4 --> O5
     S1 -.-> O2
-    S2 -.-> O3
+    S4 -.-> O1
 ```
+
+### Breeding Program
+Genetic selection and breeding management focused on producing pelts with desired qualities including color, density, and size.
+
+**Key Activities:**
+- Selection of breeding stock based on pelt characteristics
+- Color mutation development and maintenance
+- Breeding timing for optimal kit production
+- Genetic record keeping
+- Culling and replacement decisions
+
+### Pelt Development
+Managing animal growth and coat development to produce premium quality pelts.
+
+**Key Activities:**
+- Nutrition optimization for coat quality
+- Environmental management for prime coat development
+- Timing pelting to coincide with prime fur condition
+- Health monitoring to prevent pelt damage
+
+### Harvesting and Processing
+Humane euthanasia, pelt removal, and preparation for market.
+
+**Key Activities:**
+- Humane euthanasia methods (carbon monoxide/dioxide)
+- Skinning and fleshing
+- Pelt stretching and drying
+- Grading by size, quality, and color
+- Auction preparation and consignment
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Breeding Stock"]
+        I2["Feed"]
+        I3["Housing/Cages"]
+        I4["Veterinary Care"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Breeding"]
+        A2["Raising"]
+        A3["Pelting"]
+        A4["Marketing"]
     end
 
     subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+        O1["Raw Pelts"]
+        O2["Breeding Stock"]
+        O3["Mink Oil"]
+        O4["Carcass Byproducts"]
     end
 
     subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+        C1["Fur Auctions"]
+        C2["Garment Manufacturers"]
+        C3["Other Farms"]
+        C4["Rendering/Pet Food"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -103,22 +151,55 @@ graph LR
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Animal and Plant Health Inspection Service (APHIS)** - Disease surveillance and import/export regulations
+- **EPA** - Waste management and environmental compliance for farm operations
+- **State Departments of Agriculture** - Licensing, inspection, and animal welfare standards
+- **Fur Commission USA** - Industry standards and certification programs
+- **State/Local Regulations** - Some jurisdictions have banned or restricted fur farming
+
+### Key Regulations
+- Aleutian disease testing requirements
+- Waste management and nutrient management plans
+- Humane euthanasia standards
+- Biosecurity protocols
+- State-specific fur farming permits
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Genetic Selection** - Color mutation development and quality trait breeding
+- **Automated Feeding Systems** - Computer-controlled feeding for nutritional optimization
+- **Climate Control** - Shed ventilation and lighting management for coat quality
+- **Health Monitoring** - Disease testing protocols and biosecurity systems
+- **Pelt Processing Equipment** - Mechanical fleshing and stretching technology
+- **Waste Management** - Composting and nutrient recovery systems
+
+## Species Overview
+
+### Mink
+The dominant farmed fur species, raised in various color mutations including standard ranch (dark brown), black, white, pastel, and sapphire.
+
+### Chinchilla
+Raised for their extremely dense, soft fur; primarily smaller operations due to slower reproduction and longer production cycles.
+
+### Fox
+Silver fox and blue fox farmed in limited numbers; larger pelts used for trim and accessories.
+
+### Other Species
+Fitch (European polecat), sable, and other species farmed in very limited numbers in the U.S.
+
+## Industry Challenges
+
+- **Consumer Sentiment** - Growing opposition to fur products affecting demand
+- **Regulatory Pressure** - Bans on fur farming in several states and countries
+- **Disease Risk** - COVID-19 demonstrated zoonotic disease transmission potential
+- **Market Volatility** - Pelt prices highly variable based on fashion trends and supply
+- **Labor Availability** - Difficulty attracting workers to declining industry
+- **Environmental Compliance** - Increasing costs for waste management
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+The fur-bearing animal production industry faces an uncertain future in the United States and globally. Consumer attitudes have shifted significantly against fur products, major fashion brands have eliminated fur from collections, and several U.S. states and European countries have enacted fur farming bans. The COVID-19 pandemic accelerated industry decline, with Denmark culling its entire mink population and several countries implementing new restrictions. Remaining U.S. producers focus on premium quality pelts and alternative markets such as China. The industry's future depends on evolving consumer acceptance, regulatory developments, and potential diversification into alternative products. Some farms are exploring transitions to other animal production or non-agricultural uses of their facilities.
 
 ---
 
-*Source: NAICS 11293 - Fur-Bearing Animal*
+*Source: NAICS 112930 - Fur-Bearing Animal and Rabbit Production*

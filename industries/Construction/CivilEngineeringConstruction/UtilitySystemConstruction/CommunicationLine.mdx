@@ -1,127 +1,207 @@
 ---
 id: CommunicationLine
-name: "Communication Line"
-code: "23713"
+name: "Communication Line and Infrastructure Construction"
+code: "237130"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Communication Line
+# Communication Line and Infrastructure Construction
 
-> See industry description for 237130.
+> This industry comprises establishments primarily engaged in the construction of telecommunications lines, towers, and related infrastructure including fiber optic networks, wireless facilities, and broadcasting structures.
 
 ## Overview
 
-Communication Line represents an important category within the Construction sector (NAICS 23). This industry encompasses establishments primarily engaged in communication line.
+Communication Line and Infrastructure Construction represents a rapidly growing segment of utility construction (NAICS 237130), focused on building the telecommunications networks that enable modern connectivity. This includes fiber optic cables, wireless cell towers, 5G small cells, microwave towers, and broadcasting facilities.
+
+The industry is experiencing transformational growth driven by 5G deployment, federal broadband funding through the Broadband Equity, Access, and Deployment (BEAD) program, and the ever-increasing demand for data capacity. Projects range from local last-mile fiber installations to major backbone networks spanning continents.
+
+## Market Context
+
+The U.S. communication infrastructure construction market represents approximately $25 billion in annual spending:
+
+| Segment | Market Size | Key Drivers |
+|---------|-------------|-------------|
+| Fiber Optic Networks | $12 billion | BEAD funding, FTTP deployment, 5G backhaul |
+| Wireless Infrastructure | $8 billion | 5G deployment, tower construction, small cells |
+| Cable/Hybrid Networks | $3 billion | Network upgrades, DOCSIS 4.0 |
+| Broadcasting | $2 billion | Tower maintenance, ATSC 3.0 transition |
+
+The market is driven by unprecedented federal broadband investment ($42.5 billion in BEAD alone), the 5G buildout requiring dense small cell networks, and growing data demands from streaming, cloud computing, and IoT applications.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S23["23: Construction"]
-    S23 --> N237["237: Civil Engineering Construction"]
+    S23 --> N237["237: Heavy and Civil Engineering"]
     N237 --> N2371["2371: Utility System Construction"]
-    N2371 --> N23713["23713: Communication Line"]
-    style N23713 fill:#f96,stroke:#333,stroke-width:2px
+    N2371 --> N237130["237130: Power and Communication"]
+    N237130 --> Comm["Communication Line Construction"]
+    style Comm fill:#f96,stroke:#333,stroke-width:2px
 ```
 
 ## Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| NAICS Code | 23713 |
-| Level | Industry |
-| Parent | [Utility System Construction](../) |
-| Child Industries | 0 |
-
+| NAICS Code | 237130 |
+| Level | National Industry (Segment) |
+| Parent | [Power and Communication Line Construction](./Power/) |
+| U.S. Fiber Miles | 55+ million |
+| U.S. Cell Towers | 100,000+ |
+| BEAD Funding | $42.5 billion |
 
 ## Related Occupations
 
-- [Construction Managers](/occupations/Management/ConstructionManagers) - Plan and coordinate construction projects
-- [Carpenters](/occupations/Construction/Carpenters) - Construct and repair building frameworks
-- [Electricians](/occupations/Construction/Electricians) - Install and maintain electrical systems
-- [Construction Laborers](/occupations/Construction/ConstructionLaborers) - Perform physical labor at construction sites
+- [Telecommunications Line Installers](/occupations/Installation/TelecomTechnicians) - Install fiber optic and copper cables
+- [Tower Climbers](/occupations/Construction/TowerClimbers) - Erect and maintain communication towers
+- [Fiber Optic Splicers](/occupations/Installation/FiberSplicers) - Splice and terminate fiber optic cables
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Oversee network construction projects
+- [RF Engineers](/occupations/Architecture/RFEngineers) - Design wireless network coverage
+- [Heavy Equipment Operators](/occupations/Construction/OperatingEngineers) - Operate directional drills and trenchers
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Design/Planning"]
-        O2["Site Preparation"]
-        O3["Construction"]
-        O4["Inspection"]
-        O5["Completion"]
+    subgraph Design["Network Design"]
+        D1["Coverage Analysis"]
+        D2["Route Design"]
+        D3["Permitting"]
+        D4["Make-Ready"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Project Management"]
-        S2["Safety Systems"]
-        S3["Procurement"]
-        S4["Quality Assurance"]
+    subgraph Construction["Construction"]
+        C1["Conduit/Duct"]
+        C2["Cable Placement"]
+        C3["Splicing"]
+        C4["Equipment Install"]
+        C5["Testing"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Activation["Activation"]
+        A1["Turn-Up"]
+        A2["Acceptance Testing"]
+        A3["Documentation"]
+    end
+
+    D1 --> D2 --> D3 --> D4
+    D4 --> C1 --> C2 --> C3 --> C4 --> C5
+    C5 --> A1 --> A2 --> A3
 ```
 
-## Industry Value Chain
+### Fiber Optic Network Construction
 
-```mermaid
-graph LR
-    subgraph Inputs["Inputs"]
-        I1["Materials"]
-        I2["Equipment"]
-        I3["Labor"]
-        I4["Plans"]
-    end
+Fiber networks require specialized installation and splicing expertise.
 
-    subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
-    end
+**Key Activities:**
+- Design network routes and node locations
+- Obtain permits and pole attachment agreements
+- Complete make-ready work on existing poles
+- Install conduit through underground boring or trenching
+- Place fiber optic cables using pulling or blowing techniques
+- Splice fiber at handholes, pedestals, and splice cases
+- Install network electronics at hubs and customer premises
+- Test and document network performance
 
-    subgraph Outputs["Products/Services"]
-        O1["Buildings"]
-        O2["Infrastructure"]
-        O3["Renovations"]
-    end
+### Wireless Tower Construction
 
-    subgraph Customers["Markets"]
-        C1["Property Owners"]
-        C2["Government"]
-        C3["Developers"]
-        C4["Businesses"]
-    end
+Tower construction requires specialized structural and safety expertise.
 
-    Inputs --> Primary --> Outputs --> Customers
-```
+**Key Activities:**
+- Conduct site acquisition and zoning approvals
+- Complete tower foundation design and construction
+- Erect tower structures (monopole, lattice, guyed)
+- Install transmission lines and antennas
+- Complete shelter and equipment installations
+- Connect power and backhaul communications
+- Commission and optimize RF systems
+
+### Small Cell and Distributed Antenna Systems
+
+5G deployment relies heavily on small cell infrastructure.
+
+**Key Activities:**
+- Identify and secure attachment locations
+- Coordinate with municipalities and utilities
+- Install small cell equipment on poles and structures
+- Connect fiber backhaul to each node
+- Provide power connections
+- Commission and integrate with network
 
 ## Regulatory Environment
 
-- **OSHA** (Occupational Safety and Health Administration) - Enforces workplace safety standards
-- **EPA** (Environmental Protection Agency) - Regulates construction environmental impact
-- **State and Local Building Codes** - Govern construction standards and permitting
-- **Department of Labor** - Enforces prevailing wage and labor requirements
+### Federal Regulations
+- **FCC** - Telecommunications and spectrum licensing
+- **FAA** - Tower height and lighting requirements
+- **NEPA** - Environmental review for federal lands
+- **Section 106** - Historic preservation review
+
+### State and Local Requirements
+- **Right-of-Way Permits** - Access to public ways for construction
+- **Pole Attachment Agreements** - Use of utility and telephone poles
+- **Small Cell Ordinances** - Local regulations for 5G equipment
+- **OTMR** - One Touch Make Ready rules for pole work
+
+### Industry Standards
+- **TIA Standards** - Tower and antenna standards
+- **NESC** - Clearance and installation requirements
+- **FOA Standards** - Fiber optic installation practices
+- **ANSI/TIA-568** - Telecommunications cabling standards
 
 ## Technology & Innovation
 
-- **Building Information Modeling (BIM)** - 3D digital representations for design and construction planning
-- **Prefabrication and Modular Construction** - Off-site manufacturing of building components
-- **Construction Robotics** - Automated bricklaying, 3D-printed structures, and drone site surveys
-- **Green Building** - Sustainable materials, energy-efficient designs, and LEED certification
+### Fiber Technology
+- **Bend-Insensitive Fiber** - Improved installation flexibility
+- **High-Count Cables** - 864+ fiber cables for capacity
+- **Ribbon Fiber** - Faster mass splicing capabilities
+- **Air-Blown Fiber** - Rapid deployment in microduct
 
-## Industry Outlook
+### Installation Methods
+- **Microtrenching** - Shallow, narrow trenches for fiber
+- **Directional Boring** - Subsurface installation without excavation
+- **Aerial Lashing** - Rapid deployment on existing strand
+- **Plowing** - Direct burial in rural areas
 
-The construction industry benefits from sustained infrastructure investment, housing demand, and commercial development. Labor shortages continue to drive adoption of modular construction, prefabrication, and automation. Green building practices and energy-efficient design are becoming standard requirements, while technology adoption in project management and building information modeling improves productivity.
+### Testing and Documentation
+- **OTDR Testing** - Optical time-domain reflectometer testing
+- **GIS Asset Management** - Geographic documentation of networks
+- **AI Route Optimization** - Automated network design
+- **Drone Inspection** - Aerial assessment of tower and aerial plant
+
+### 5G and Small Cells
+- **mmWave Technology** - High-frequency, high-capacity wireless
+- **O-RAN** - Open radio access network architecture
+- **Integrated Small Cells** - Combined antenna and radio units
+- **Private 5G** - Enterprise and industrial wireless networks
+
+## Project Types
+
+- Fiber-to-the-Premises (FTTP) deployment
+- Long-haul fiber backbone construction
+- Middle-mile network extension
+- 5G small cell deployment
+- Macro tower construction
+- Distributed antenna systems (DAS)
+- Cable network upgrades (HFC to fiber)
+- Rural broadband expansion
+
+## Industry Trends and Outlook
+
+Key trends shaping communication construction:
+
+- **BEAD Deployment** - $42.5 billion federal broadband funding
+- **5G Densification** - Small cell networks requiring fiber backhaul
+- **Fiber Deep** - Cable operators extending fiber closer to homes
+- **Private Networks** - Enterprise 5G and industrial IoT
+- **Open Access** - Shared infrastructure models
+- **Workforce Development** - Critical shortage of fiber technicians
+- **Speed to Market** - Pressure to deploy networks quickly
+
+The outlook is exceptionally strong with historic federal broadband investment creating unprecedented demand. The BEAD program alone will fund construction through 2030 or beyond. Ongoing 5G deployment and enterprise connectivity needs provide additional growth drivers. The primary constraint is workforce availability rather than market demand.
 
 ---
 
-*Source: NAICS 23713 - Communication Line*
+*Source: NAICS 237130 - Power and Communication Line and Related Structures Construction (Communication Segment)*

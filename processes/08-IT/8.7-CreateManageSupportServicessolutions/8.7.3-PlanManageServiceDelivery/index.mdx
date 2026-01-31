@@ -16,19 +16,26 @@ children: ["8.7.3.1"]
 
 ## Overview
 
-Process 8.7.3 is a core process that defines the specific procedures for plan and manage service delivery control. 
+Process 8.7.3 is a core process that defines the specific procedures for plan and manage service delivery control. This process establishes the operational framework for coordinating IT service delivery across the organization.
 
 Determine and manage service delivery flow across different business functions. Understand the level of services needed by different stakeholders. Identify major service delivery touch points and criticality associated. Ensure timely communication with users.
+
+Effective service delivery control requires a comprehensive understanding of service dependencies, business priorities, and operational constraints. This process ensures that IT services are delivered consistently, efficiently, and in alignment with business requirements. It serves as the bridge between service strategy and operational execution.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C8["8.0 Manage Information Technology"]
-    C8 --> N8_7["8.7 Create and manage support services/so..."]
+    C8 --> N8_7["8.7 Create and manage support services/solutions"]
     N8_7 --> N8_7_3["8.7.3 Plan and manage service delivery control"]
     style N8_7_3 fill:#e1f5fe
-    N8_7_3 --> N8_7_3_1["8.7.3.1 Plan operational activities for ..."]
+    N8_7_3 --> N8_7_3_1["8.7.3.1 Plan operational activities for IT"]
+
+    N8_7_3_1 --> A1["Define service schedules"]
+    N8_7_3_1 --> A2["Coordinate delivery resources"]
+    N8_7_3_1 --> A3["Monitor service flow"]
+    N8_7_3_1 --> A4["Manage service handoffs"]
 ```
 
 ## Key Statistics
@@ -40,53 +47,138 @@ graph TD
 | Level | Process |
 | Parent | [8.7](../) |
 | Sub-Processes | 1 |
-
+| Industry Variants | 19 |
 
 ## GraphDL Semantic Structure
 
 ```graphdl
-plan.AndManageServiceDeliveryControl
+plan.ServiceDeliveryControl
+manage.ServiceDeliveryControl
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `plan` | Primary action |
-| Object | `and manage service delivery control` | Direct object |
-
+| Verb | `plan`, `manage` | Dual action of planning and ongoing management |
+| Object | `service delivery control` | Mechanisms for controlling IT service delivery |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Service Catalog"]
+        I2["SLA Requirements"]
+        I3["Business Priorities"]
+        I4["Resource Availability"]
+        I5["Service Dependencies"]
     end
 
     subgraph Process["Plan and manage service delivery control"]
-        S1["Plan operational activities..."]
+        S1["Analyze service requirements"]
+        S2["Define delivery schedules"]
+        S3["Establish control points"]
+        S4["Coordinate with stakeholders"]
+        S5["Monitor delivery flow"]
+        S6["Manage exceptions"]
+        S7["Communicate status"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Delivery Schedules"]
+        O2["Service Flow Maps"]
+        O3["Control Procedures"]
+        O4["Communication Plans"]
+        O5["Performance Reports"]
     end
 
     Inputs --> Process --> Outputs
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
 ```
 
-## Sub-Processes
+## Child Process Listings
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Plan operational activities for IT service delivery](./8.7.3.1-PlanOperationalActivitiesIT/) | 8.7.3.1 | Planning different delivery services for operational activities within the IT function |
+### 8.7.3.1 - Plan operational activities for IT service delivery
 
+Planning different delivery services for operational activities within the IT function. This sub-process translates service requirements into actionable operational plans.
+
+**Key Activities:**
+- Define service delivery schedules and timelines
+- Allocate resources to delivery activities
+- Establish checkpoints and milestones
+- Coordinate cross-functional dependencies
+- Plan communication touchpoints
+- Document operational procedures
+
+[View Process Details](./8.7.3.1-PlanOperationalActivitiesIT/)
+
+## RACI Matrix
+
+| Activity | IT Service Delivery Manager | IT Operations Manager | Service Desk Manager | Business Relationship Manager | Change Manager | CIO |
+|----------|----------------------------|----------------------|---------------------|------------------------------|----------------|-----|
+| Analyze service requirements | R | C | C | A | I | I |
+| Define delivery schedules | R | R | C | C | C | I |
+| Establish control points | R | A | C | I | C | I |
+| Coordinate with stakeholders | R | C | C | A | C | I |
+| Monitor delivery flow | C | R | R | I | I | I |
+| Manage exceptions | R | A | R | C | C | I |
+| Communicate status | R | C | R | A | I | I |
+| Review delivery performance | R | R | C | A | I | C |
+| Update delivery procedures | R | A | C | C | R | I |
+
+**Legend:** R = Responsible, A = Accountable, C = Consulted, I = Informed
+
+## Metrics and KPIs
+
+| Metric | Description | Target | Frequency |
+|--------|-------------|--------|-----------|
+| Service Delivery Adherence | Percentage of services delivered per schedule | >95% | Weekly |
+| Control Point Completion | Percentage of control checkpoints passed | >98% | Per delivery |
+| Stakeholder Communication Rate | Percentage of scheduled communications sent | 100% | Daily |
+| Exception Resolution Time | Average time to resolve delivery exceptions | <4 hours | Per occurrence |
+| Service Handoff Success Rate | Percentage of successful service transitions | >99% | Per handoff |
+| Delivery Cycle Time | Average time from request to delivery | Benchmark | Monthly |
+| Schedule Variance | Deviation from planned delivery schedule | <5% | Weekly |
+| Resource Utilization | Percentage of delivery resources utilized | 75-85% | Weekly |
+| Stakeholder Satisfaction | Satisfaction with delivery control process | >4.0/5.0 | Quarterly |
+| Process Compliance Rate | Adherence to delivery control procedures | >95% | Monthly |
+
+## Related Departments
+
+- [IT Operations](/departments/IT/Operations) - Operational service delivery execution
+- [IT Service Management](/departments/IT/ServiceManagement) - ITSM process coordination
+- [Business Relationship Management](/departments/IT/BRM) - Stakeholder coordination
+- [Change Management](/departments/IT/ChangeManagement) - Delivery change coordination
+- [Service Desk](/departments/IT/ServiceDesk) - User communication and support
+- [Project Management Office](/departments/PMO) - Delivery planning alignment
+
+## Related Occupations
+
+- [Computer and Information Systems Managers](/occupations/Technology/Management/ComputerInformationSystemsManagers) - IT service oversight
+- [Computer Systems Analysts](/occupations/Technology/Analysis/ComputerSystemsAnalysts) - Service requirements analysis
+- [Network and Computer Systems Administrators](/occupations/Technology/Infrastructure/NetworkAdministrators) - Service delivery execution
+- [Computer User Support Specialists](/occupations/Technology/Support/ComputerUserSupportSpecialists) - User communication
+- [Project Management Specialists](/occupations/Business/ProjectManagement/ProjectManagementSpecialists) - Delivery coordination
+- [Management Analysts](/occupations/Business/Operations/ManagementAnalysts) - Process improvement
 
 ## Related Concepts
 
 - ServiceDeliveryControl
-- ServiceDeliveryControl
+- ITServiceManagement
+- OperationalPlanning
+- ServiceCoordination
+- StakeholderCommunication
+- DeliveryScheduling
 
+## Related Processes
+
+```mermaid
+graph LR
+    P8_7_2["8.7.2 Define service support"] --> P8_7_3["8.7.3 Plan delivery control"]
+    P8_7_3 --> P8_7_4["8.7.4 Manage infrastructure"]
+    P8_7_3 --> P8_7_6["8.7.6 Manage service delivery"]
+    P8_2_4["8.2.4 Define service management"] --> P8_7_3
+    P8_7_3 --> P8_7_8["8.7.8 Operate user support"]
+```
 
 ---
 

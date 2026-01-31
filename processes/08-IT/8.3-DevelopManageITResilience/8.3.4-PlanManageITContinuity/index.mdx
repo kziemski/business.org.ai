@@ -16,21 +16,30 @@ children: ["8.3.4.1", "8.3.4.2", "8.3.4.3"]
 
 ## Overview
 
-Process 8.3.4 is a core process that defines the specific procedures for plan and manage it continuity. 
+Process 8.3.4 is a core process that defines the specific procedures for planning and managing IT continuity. This process ensures organizational resilience by establishing comprehensive plans for IT service recovery and business continuity.
 
-Planning and managing IT's ability to recover from exposure to internal and external threats.
+Planning and managing IT's ability to recover from exposure to internal and external threats. This encompasses disaster recovery planning, business continuity management, crisis response procedures, and regular testing of recovery capabilities.
+
+IT continuity planning is essential for minimizing business impact during disruptions, whether from natural disasters, cyber attacks, hardware failures, or human error. A robust continuity program ensures that critical business functions can continue with minimal interruption and that full operations can be restored within acceptable timeframes.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C8["8.0 Manage Information Technology"]
-    C8 --> N8_3["8.3 Develop and manage IT resilience and ..."]
+    C8 --> N8_3["8.3 Develop and manage IT resilience"]
     N8_3 --> N8_3_4["8.3.4 Plan and manage IT continuity"]
     style N8_3_4 fill:#e1f5fe
     N8_3_4 --> N8_3_4_1["8.3.4.1 Evaluate IT continuity"]
     N8_3_4 --> N8_3_4_2["8.3.4.2 Identify IT continuity gaps"]
     N8_3_4 --> N8_3_4_3["8.3.4.3 Manage IT business continuity"]
+
+    N8_3_4_1 --> A1["Assess business impact"]
+    N8_3_4_1 --> A2["Define RTO/RPO"]
+    N8_3_4_2 --> A3["Gap analysis"]
+    N8_3_4_2 --> A4["Risk assessment"]
+    N8_3_4_3 --> A5["Develop DR plans"]
+    N8_3_4_3 --> A6["Test and validate"]
 ```
 
 ## Key Statistics
@@ -42,59 +51,167 @@ graph TD
 | Level | Process |
 | Parent | [8.3](../) |
 | Sub-Processes | 3 |
-
+| Industry Variants | 19 |
 
 ## GraphDL Semantic Structure
 
 ```graphdl
-plan.AndManageITContinuity
+plan.ITContinuity
+manage.ITContinuity
+ensure.BusinessRecovery
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `plan` | Primary action |
-| Object | `and manage IT continuity` | Direct object |
-
+| Verb | `plan`, `manage` | Planning and ongoing management actions |
+| Object | `IT continuity` | IT disaster recovery and business continuity |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Business Impact Analysis"]
+        I2["Risk Assessments"]
+        I3["Compliance Requirements"]
+        I4["IT Asset Inventory"]
+        I5["Vendor Agreements"]
     end
 
     subgraph Process["Plan and manage IT continuity"]
-        S1["Evaluate IT continuity"]
-        S2["Identify IT continuity gaps"]
-        S3["Manage IT business continuity"]
+        S1["Conduct business impact analysis"]
+        S2["Define recovery objectives"]
+        S3["Assess current capabilities"]
+        S4["Identify continuity gaps"]
+        S5["Develop recovery plans"]
+        S6["Establish recovery procedures"]
+        S7["Test and validate plans"]
+        S8["Maintain and update documentation"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Business Continuity Plans"]
+        O2["Disaster Recovery Plans"]
+        O3["Recovery Procedures"]
+        O4["Test Results"]
+        O5["Gap Remediation Plans"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
 ```
 
-## Sub-Processes
+## Child Process Listings
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Evaluate IT continuity](./EvaluateITContinuity) | 8.3.4.1 | Evaluating IT business needs and IT's ability to recover from internal or external threat exposure |
-| [Identify IT continuity gaps](./IdentifyITContinuityGaps) | 8.3.4.2 | Identifying the limitations of the IT organization's ability to remediate disruptions in IT services |
-| [Manage IT business continuity](./ManageITBusinessContinuity) | 8.3.4.3 | Integrating the disciplines of Emergency Response, Crisis Management, Disaster Recovery (technology  |
+### 8.3.4.1 - Evaluate IT continuity
 
+Evaluating IT business needs and IT's ability to recover from internal or external threat exposure. This sub-process assesses current recovery capabilities against business requirements.
+
+**Key Activities:**
+- Conduct business impact analysis (BIA)
+- Define Recovery Time Objectives (RTO)
+- Define Recovery Point Objectives (RPO)
+- Assess critical system dependencies
+- Evaluate current recovery capabilities
+- Document business continuity requirements
+
+[View Process Details](./EvaluateITContinuity)
+
+### 8.3.4.2 - Identify IT continuity gaps
+
+Identifying the limitations of the IT organization's ability to remediate disruptions in IT services. This sub-process performs gap analysis to prioritize improvement efforts.
+
+**Key Activities:**
+- Compare current state to requirements
+- Identify recovery capability gaps
+- Assess infrastructure redundancy
+- Evaluate backup and replication
+- Document gap findings and priorities
+- Develop remediation roadmap
+
+[View Process Details](./IdentifyITContinuityGaps)
+
+### 8.3.4.3 - Manage IT business continuity
+
+Integrating the disciplines of Emergency Response, Crisis Management, Disaster Recovery (technology focus), and Business Resumption Planning. This sub-process operationalizes continuity planning.
+
+**Key Activities:**
+- Develop disaster recovery plans
+- Establish crisis communication procedures
+- Define failover and failback procedures
+- Conduct tabletop exercises
+- Execute full recovery tests
+- Maintain plan documentation
+
+[View Process Details](./ManageITBusinessContinuity)
+
+## RACI Matrix
+
+| Activity | IT Continuity Manager | CIO | Risk Manager | Infrastructure Manager | Security Manager | Business Unit Heads |
+|----------|----------------------|-----|--------------|----------------------|------------------|---------------------|
+| Conduct BIA | R | I | C | C | C | A |
+| Define RTO/RPO | R | A | C | C | C | R |
+| Assess current capabilities | R | I | C | R | C | I |
+| Identify continuity gaps | R | C | A | C | C | I |
+| Develop recovery plans | R | A | C | R | C | C |
+| Establish procedures | R | I | C | R | C | I |
+| Test and validate plans | R | A | C | R | C | C |
+| Maintain documentation | R | I | C | C | C | I |
+
+**Legend:** R = Responsible, A = Accountable, C = Consulted, I = Informed
+
+## Metrics and KPIs
+
+| Metric | Description | Target | Frequency |
+|--------|-------------|--------|-----------|
+| RTO Achievement | Percentage of systems meeting RTO targets | 100% | Per test |
+| RPO Achievement | Percentage of systems meeting RPO targets | 100% | Per test |
+| Plan Coverage | Percentage of critical systems with DR plans | 100% | Quarterly |
+| Test Completion Rate | Percentage of scheduled tests completed | 100% | Annual |
+| Test Success Rate | Percentage of tests meeting objectives | >95% | Per test |
+| Time Since Last Test | Days since last DR test by system | <365 days | Monthly |
+| Plan Currency | Percentage of plans updated within 12 months | 100% | Quarterly |
+| Gap Remediation Rate | Percentage of identified gaps addressed | >80% | Quarterly |
+| Recovery Declaration Time | Time to declare and initiate recovery | <30 min | Per incident |
+| Mean Time to Recovery | Average time to restore critical services | <RTO | Per incident |
+
+## Related Departments
+
+- [IT Risk Management](/departments/IT/Risk) - Risk assessment and management
+- [IT Infrastructure](/departments/IT/Infrastructure) - Recovery infrastructure
+- [Information Security](/departments/IT/Security) - Security continuity
+- [Enterprise Risk Management](/departments/Risk) - Enterprise continuity alignment
+- [Facilities Management](/departments/Facilities) - Physical infrastructure
+- [Business Operations](/departments/Operations) - Business process recovery
+
+## Related Occupations
+
+- [Information Security Analysts](/occupations/Technology/Security/InformationSecurityAnalysts) - Security continuity
+- [Computer and Information Systems Managers](/occupations/Technology/Management/ComputerInformationSystemsManagers) - IT continuity oversight
+- [Network and Computer Systems Administrators](/occupations/Technology/Infrastructure/NetworkAdministrators) - Infrastructure recovery
+- [Database Administrators](/occupations/Technology/Database/DatabaseAdministrators) - Data recovery
+- [Emergency Management Directors](/occupations/Management/EmergencyManagementDirectors) - Crisis coordination
+- [Management Analysts](/occupations/Business/Operations/ManagementAnalysts) - BIA and planning
 
 ## Related Concepts
 
 - ITContinuity
-- ITContinuity
+- DisasterRecovery
+- BusinessContinuity
+- RecoveryTimeObjective
+- RecoveryPointObjective
+- CrisisManagement
 
+## Related Processes
+
+```mermaid
+graph LR
+    P8_3_2["8.3.2 Develop resilience strategy"] --> P8_3_4["8.3.4 Plan IT continuity"]
+    P8_3_3["8.3.3 Control IT risk"] --> P8_3_4
+    P8_3_4 --> P8_3_5["8.3.5 IT Security"]
+    P8_3_4 --> P8_3_7["8.3.7 Execute resilience"]
+    P11["11.0 Manage Risk"] --> P8_3_4
+```
 
 ---
 

@@ -16,9 +16,11 @@ children: ["5.2.1", "5.2.2", "5.2.3"]
 
 ## Overview
 
-Group 5.2 is a process group within APQC Category 5.0 (Deliver Services). 
+Group 5.2 is a process group within APQC Category 5.0 (Deliver Services). This critical process group ensures that organizations have the right resources, in the right quantities, with the right capabilities, at the right time to deliver services effectively.
 
-Understanding the demands on resources and creating a plan to enable the delivery of services via those resources.
+Understanding the demands on resources and creating a plan to enable the delivery of services via those resources. This encompasses demand forecasting, capacity planning, resource allocation, skills development, and workforce enablement. Effective resource management directly impacts service quality, customer satisfaction, and operational efficiency.
+
+Resource management in service delivery differs from manufacturing in its emphasis on human capital, knowledge workers, and the perishable nature of service capacity. Unlike physical inventory, service capacity that goes unused cannot be stored for future use, making accurate demand forecasting and resource planning essential.
 
 ## Process Hierarchy
 
@@ -27,9 +29,21 @@ graph TD
     C5["5.0 Deliver Services"]
     C5 --> N5_2["5.2 Manage service delivery resources"]
     style N5_2 fill:#e1f5fe
-    N5_2 --> N5_2_1["5.2.1 Manage service delivery resource..."]
+    N5_2 --> N5_2_1["5.2.1 Manage service delivery resource demand"]
     N5_2 --> N5_2_2["5.2.2 Create and manage resource plan"]
     N5_2 --> N5_2_3["5.2.3 Enable service delivery resources"]
+
+    N5_2_1 --> A5_2_1_1["5.2.1.1 Monitor pipeline"]
+    N5_2_1 --> A5_2_1_2["5.2.1.2 Develop forecasts"]
+    N5_2_1 --> A5_2_1_3["5.2.1.3 Collaborate with stakeholders"]
+
+    N5_2_2 --> A5_2_2_1["5.2.2.1 Define resource requirements"]
+    N5_2_2 --> A5_2_2_2["5.2.2.2 Allocate resources"]
+    N5_2_2 --> A5_2_2_3["5.2.2.3 Balance workload"]
+
+    N5_2_3 --> A5_2_3_1["5.2.3.1 Train service staff"]
+    N5_2_3 --> A5_2_3_2["5.2.3.2 Certify competencies"]
+    N5_2_3 --> A5_2_3_3["5.2.3.3 Enable tools and systems"]
 ```
 
 ## Key Statistics
@@ -41,7 +55,8 @@ graph TD
 | Level | Group |
 | Parent | [5](../) |
 | Sub-Processes | 3 |
-
+| Activities | 9+ |
+| Industry Variants | 19 |
 
 ## GraphDL Semantic Structure
 
@@ -51,48 +66,151 @@ manage.ServiceDeliveryResources
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `service delivery resources` | Direct object |
-
+| Verb | `manage` | Primary action of overseeing and controlling |
+| Object | `service delivery resources` | Human, technical, and material resources for service delivery |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Service Demand Forecasts"]
+        I2["Service Contracts"]
+        I3["Skill Inventory"]
+        I4["Budget Allocations"]
+        I5["Technology Capabilities"]
     end
 
     subgraph Process["Manage service delivery resources"]
-        S1["Manage service delivery res..."]
-        S2["Create and manage resource ..."]
-        S3["Enable service delivery res..."]
+        S1["Analyze demand patterns"]
+        S2["Forecast resource needs"]
+        S3["Develop resource plan"]
+        S4["Allocate and schedule"]
+        S5["Train and enable staff"]
+        S6["Monitor utilization"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Resource Plans"]
+        O2["Staffing Schedules"]
+        O3["Training Programs"]
+        O4["Capacity Reports"]
+        O5["Utilization Metrics"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6
 ```
 
-## Sub-Processes
+## Child Process Listings
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Manage service delivery resource demand](./5.2.1-ManageServiceDeliveryResource/) | 5.2.1 | Ensuring necessary resources are maintained through monitoring pipeline, developing forecasts, and c |
-| [Create and manage resource plan](./5.2.2-CreateManageResourcePlan/) | 5.2.2 | Identifying the need for and creating a resource plan |
-| [Enable service delivery resources](./5.2.3-EnableServiceDeliveryResources/) | 5.2.3 | Instituting training to enable resources to provide service delivery to the customer |
+### 5.2.1 - Manage service delivery resource demand
 
+Ensuring necessary resources are maintained through monitoring pipeline, developing forecasts, and collaborating with stakeholders. This process provides visibility into future resource requirements and enables proactive planning.
+
+**Key Activities:**
+- Monitor service pipeline and demand signals
+- Develop short-term and long-term resource forecasts
+- Collaborate with sales and operations for demand alignment
+- Analyze historical patterns and trends
+- Identify seasonal and cyclical demand variations
+
+[View Process Details](./5.2.1-ManageServiceDeliveryResource/)
+
+### 5.2.2 - Create and manage resource plan
+
+Identifying the need for and creating a resource plan that aligns capacity with demand. This process translates demand forecasts into actionable resource allocation decisions.
+
+**Key Activities:**
+- Define resource requirements by skill and capability
+- Create staffing models and schedules
+- Allocate resources to projects and engagements
+- Balance workload across teams
+- Manage resource conflicts and priorities
+
+[View Process Details](./5.2.2-CreateManageResourcePlan/)
+
+### 5.2.3 - Enable service delivery resources
+
+Instituting training to enable resources to provide service delivery to the customer. This process ensures staff have the skills, tools, and knowledge to deliver services effectively.
+
+**Key Activities:**
+- Develop and deliver training programs
+- Certify staff competencies and skills
+- Provide access to tools and systems
+- Enable knowledge sharing and collaboration
+- Support continuous learning and development
+
+[View Process Details](./5.2.3-EnableServiceDeliveryResources/)
+
+## RACI Matrix
+
+| Activity | Resource Manager | Service Delivery Manager | HR Director | Project Manager | Training Manager | Finance Director |
+|----------|------------------|-------------------------|-------------|-----------------|------------------|------------------|
+| Monitor demand pipeline | R | C | I | C | I | I |
+| Develop resource forecasts | R | A | C | C | I | C |
+| Create resource plan | R | A | C | C | I | C |
+| Allocate resources | R | A | I | C | I | I |
+| Balance workload | R | C | I | R | I | I |
+| Develop training programs | C | I | C | I | R | A |
+| Certify competencies | I | C | C | I | R | I |
+| Enable tools and systems | C | C | I | I | R | A |
+| Monitor utilization | R | A | I | C | I | R |
+
+**Legend:** R = Responsible, A = Accountable, C = Consulted, I = Informed
+
+## Metrics and KPIs
+
+| Metric | Description | Target | Frequency |
+|--------|-------------|--------|-----------|
+| Resource Utilization Rate | Percentage of available capacity utilized | 75-85% | Weekly |
+| Forecast Accuracy | Variance between forecasted and actual demand | <10% | Monthly |
+| Time to Fill Positions | Average days to staff open resource requests | <14 days | Per occurrence |
+| Training Completion Rate | Percentage of required training completed | >95% | Monthly |
+| Skill Coverage Index | Percentage of required skills available | >90% | Quarterly |
+| Bench Strength | Percentage of critical roles with backup | >80% | Quarterly |
+| Resource Allocation Efficiency | Percentage of optimal resource matches | >85% | Monthly |
+| Employee Readiness Score | Percentage of staff certified for service delivery | >90% | Quarterly |
+| Cost per FTE | Total resource cost divided by full-time equivalents | Benchmark | Monthly |
+| Overtime Rate | Percentage of hours worked as overtime | <10% | Monthly |
+
+## Related Departments
+
+- [Human Resources](/departments/HR) - Workforce planning and talent management
+- [Operations](/departments/Operations) - Service delivery execution
+- [Finance](/departments/Finance) - Resource budgeting and cost management
+- [Training & Development](/departments/Training) - Skill development programs
+- [Project Management Office](/departments/PMO) - Resource allocation and scheduling
+- [Quality Assurance](/departments/Quality) - Competency standards and certification
+
+## Related Occupations
+
+- [Human Resources Managers](/occupations/Management/HumanResourcesManagers) - Workforce planning and HR strategy
+- [Training and Development Managers](/occupations/Management/TrainingDevelopmentManagers) - Learning program design
+- [Project Management Specialists](/occupations/Business/ProjectManagement/ProjectManagementSpecialists) - Resource scheduling
+- [Compensation and Benefits Managers](/occupations/Management/CompensationBenefitsManagers) - Resource cost management
+- [Operations Research Analysts](/occupations/Math/OperationsResearchAnalysts) - Capacity optimization
+- [Management Analysts](/occupations/Business/Operations/ManagementAnalysts) - Resource process improvement
 
 ## Related Concepts
 
 - ServiceDeliveryResources
+- CapacityPlanning
+- WorkforceManagement
+- DemandForecasting
+- SkillsDevelopment
+- ResourceOptimization
 
+## Related Processes
+
+```mermaid
+graph LR
+    P5_1["5.1 Establish Governance"] --> P5_2["5.2 Manage Resources"]
+    P7["7.0 Develop Human Capital"] --> P5_2
+    P5_2 --> P5_3["5.3 Deliver Service"]
+    P5_2 --> P9["9.0 Manage Financial Resources"]
+    P3["3.0 Market and Sell"] --> P5_2
+```
 
 ---
 

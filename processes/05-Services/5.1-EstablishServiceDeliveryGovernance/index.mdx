@@ -16,9 +16,11 @@ children: ["5.1.1", "5.1.2"]
 
 ## Overview
 
-Group 5.1 is a process group within APQC Category 5.0 (Deliver Services). 
+Group 5.1 is a process group within APQC Category 5.0 (Deliver Services). This foundational process group establishes the governance frameworks and strategic direction required for effective service delivery across the organization.
 
 Creating rules and regulations for service delivery to the customer. Establish a system to manage performance, delivery, and direction of service delivery. Engage with the customer for satisfaction feedback. Define goals, policies, processes, and workplace layout and infrastructure as a part of the service delivery strategy.
+
+Effective service delivery governance ensures alignment between organizational objectives and customer expectations while providing the control mechanisms necessary for consistent, high-quality service outcomes. Strategic planning within this process group enables organizations to anticipate market changes, optimize resource allocation, and maintain competitive advantage through superior service capabilities.
 
 ## Process Hierarchy
 
@@ -27,8 +29,18 @@ graph TD
     C5["5.0 Deliver Services"]
     C5 --> N5_1["5.1 Establish service delivery governance..."]
     style N5_1 fill:#e1f5fe
-    N5_1 --> N5_1_1["5.1.1 Establish service delivery gover..."]
+    N5_1 --> N5_1_1["5.1.1 Establish service delivery governance"]
     N5_1 --> N5_1_2["5.1.2 Develop service delivery strategies"]
+
+    N5_1_1 --> A5_1_1_1["5.1.1.1 Set up governance system"]
+    N5_1_1 --> A5_1_1_2["5.1.1.2 Manage performance"]
+    N5_1_1 --> A5_1_1_3["5.1.1.3 Manage development"]
+    N5_1_1 --> A5_1_1_4["5.1.1.4 Solicit customer feedback"]
+
+    N5_1_2 --> A5_1_2_1["5.1.2.1 Define goals"]
+    N5_1_2 --> A5_1_2_2["5.1.2.2 Define labor policies"]
+    N5_1_2 --> A5_1_2_3["5.1.2.3 Evaluate resources"]
+    N5_1_2 --> A5_1_2_4["5.1.2.4 Define network constraints"]
 ```
 
 ## Key Statistics
@@ -40,7 +52,8 @@ graph TD
 | Level | Group |
 | Parent | [5](../) |
 | Sub-Processes | 2 |
-
+| Activities | 11 |
+| Industry Variants | 19 |
 
 ## GraphDL Semantic Structure
 
@@ -50,46 +63,136 @@ establish.ServiceDeliveryGovernanceAndStrategies
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `establish` | Primary action |
-| Object | `service delivery governance and strategies` | Direct object |
-
+| Verb | `establish` | Primary action of creating and implementing |
+| Object | `service delivery governance and strategies` | Framework and plans for service delivery |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Business Strategy"]
+        I2["Customer Requirements"]
+        I3["Regulatory Requirements"]
+        I4["Performance Data"]
+        I5["Industry Standards"]
     end
 
     subgraph Process["Establish service delivery governance and strategies"]
-        S1["Establish service delivery ..."]
-        S2["Develop service delivery st..."]
+        S1["Establish governance framework"]
+        S2["Define performance metrics"]
+        S3["Develop strategic plans"]
+        S4["Set policies and procedures"]
+        S5["Design service infrastructure"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Governance Framework"]
+        O2["Service Delivery Strategy"]
+        O3["Performance Standards"]
+        O4["Labor Policies"]
+        O5["Infrastructure Plans"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
+    S1 --> S2 --> S3 --> S4 --> S5
 ```
 
-## Sub-Processes
+## Child Process Listings
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Establish service delivery governance](./5.1.1-EstablishServiceDeliveryGovernance/) | 5.1.1 | Establishing service delivery governance through a system that manages performance, development, and |
-| [Develop service delivery strategies](./5.1.2-DevelopServiceDeliveryStrategies/) | 5.1.2 | Constructing strategies that identify goals, policies, processes, and procedures in relation to serv |
+### 5.1.1 - Establish service delivery governance
 
+Establishing service delivery governance through a system that manages performance, development, and direction. This process creates the management infrastructure required to oversee service operations, ensure quality standards, and drive continuous improvement.
+
+**Key Activities:**
+- Set up and maintain service delivery governance and management system (5.1.1.1)
+- Manage service delivery performance (5.1.1.2)
+- Manage service delivery development and direction (5.1.1.3)
+- Solicit feedback from customer on service delivery satisfaction (5.1.1.4)
+
+[View Process Details](./5.1.1-EstablishServiceDeliveryGovernance/)
+
+### 5.1.2 - Develop service delivery strategies
+
+Constructing strategies that identify goals, policies, processes, and procedures in relation to service delivery. This process translates organizational objectives into actionable service delivery plans.
+
+**Key Activities:**
+- Define service delivery goals (5.1.2.1)
+- Define labor policies (5.1.2.2)
+- Evaluate resource availability (5.1.2.3)
+- Define service delivery network and supply constraints (5.1.2.4)
+- Define service delivery process (5.1.2.5)
+- Review and validate service delivery procedures (5.1.2.6)
+- Define service delivery workplace layout and infrastructure (5.1.2.7)
+
+[View Process Details](./5.1.2-DevelopServiceDeliveryStrategies/)
+
+## RACI Matrix
+
+| Activity | Service Delivery Manager | COO | Operations Director | Quality Manager | HR Director | Finance Director |
+|----------|-------------------------|-----|---------------------|-----------------|-------------|------------------|
+| Set up governance system | R | A | C | C | I | I |
+| Manage service performance | R | A | R | C | I | C |
+| Define service goals | R | A | C | C | I | C |
+| Define labor policies | C | A | C | I | R | C |
+| Evaluate resource availability | R | I | C | I | C | A |
+| Define network constraints | R | A | R | I | I | C |
+| Review procedures | R | A | C | R | I | I |
+| Design infrastructure | C | A | R | C | I | R |
+
+**Legend:** R = Responsible, A = Accountable, C = Consulted, I = Informed
+
+## Metrics and KPIs
+
+| Metric | Description | Target | Frequency |
+|--------|-------------|--------|-----------|
+| Governance Compliance Rate | Percentage of service operations adhering to governance standards | >95% | Monthly |
+| Strategy Implementation Rate | Percentage of strategic initiatives successfully implemented | >85% | Quarterly |
+| Policy Adherence Score | Compliance with established service delivery policies | >90% | Monthly |
+| Customer Satisfaction Index | Average satisfaction rating from customer feedback | >4.2/5.0 | Monthly |
+| Service Delivery Goal Achievement | Percentage of service delivery goals met | >90% | Quarterly |
+| Time to Policy Update | Average time to update policies after identified need | <30 days | Per occurrence |
+| Governance Review Completion | Percentage of scheduled governance reviews completed | 100% | Quarterly |
+| Strategic Alignment Score | Alignment between service strategy and business objectives | >85% | Annual |
+
+## Related Departments
+
+- [Operations](/departments/Operations) - Primary execution of service delivery operations
+- [Quality Assurance](/departments/Quality) - Service quality standards and compliance
+- [Human Resources](/departments/HR) - Labor policy development and workforce planning
+- [Finance](/departments/Finance) - Budget allocation and financial governance
+- [Legal & Compliance](/departments/Legal) - Regulatory compliance and contract governance
+- [Customer Success](/departments/CustomerSuccess) - Customer feedback and satisfaction management
+
+## Related Occupations
+
+- [General and Operations Managers](/occupations/Management/GeneralOperationsManagers) - Overall governance oversight
+- [Management Analysts](/occupations/Business/Operations/ManagementAnalysts) - Strategy development and process improvement
+- [Training and Development Managers](/occupations/Management/TrainingDevelopmentManagers) - Service capability development
+- [Quality Control Managers](/occupations/Management/QualityControlManagers) - Service quality governance
+- [Administrative Services Managers](/occupations/Management/AdministrativeServicesManagers) - Infrastructure and facilities planning
+- [Compliance Officers](/occupations/Business/Compliance/ComplianceOfficers) - Regulatory governance
 
 ## Related Concepts
 
 - ServiceDeliveryGovernance
 - Strategies
+- PerformanceManagement
+- QualityStandards
+- PolicyDevelopment
+- ResourcePlanning
 
+## Related Processes
+
+```mermaid
+graph LR
+    P1["1.0 Develop Vision & Strategy"] --> P5_1["5.1 Establish Governance"]
+    P3["3.0 Market and Sell"] --> P5_1
+    P5_1 --> P5_2["5.2 Manage Resources"]
+    P5_1 --> P5_3["5.3 Deliver Service"]
+    P5_1 --> P6["6.0 Manage Customer Service"]
+    P5_1 --> P7["7.0 Develop Human Capital"]
+```
 
 ---
 
