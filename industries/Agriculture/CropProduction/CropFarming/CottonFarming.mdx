@@ -9,11 +9,25 @@ status: complete
 
 # Cotton Farming
 
-> See industry description for 111920.
+> Establishments primarily engaged in growing upland cotton, pima cotton, and other cotton varieties for fiber, seed, and cottonseed products.
 
 ## Overview
 
-Cotton Farming represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11). This industry encompasses establishments primarily engaged in cotton farming.
+Cotton farming is one of America's most historic and economically significant agricultural industries, with U.S. production typically ranging from 15-20 million bales (480-lb bales) across 10-12 million planted acres. The United States ranks as the world's third-largest cotton producer and the leading exporter, with approximately 80% of the crop shipped to international markets. Cotton Belt production spans from the Carolinas through the Deep South and Texas, extending into the irrigated Southwest including Arizona and California.
+
+The industry underwent dramatic transformation through mechanization in the mid-20th century and biotech adoption since the 1990s, with Bt cotton (insect-resistant) and herbicide-tolerant varieties now representing over 90% of planted acres. Cotton is unique among crops in producing both fiber and seed products, with cottonseed oil, meal, and hulls creating additional revenue streams. The industry is heavily influenced by global supply and demand dynamics, particularly production in China, India, Brazil, and Pakistan.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Cotton Production | 15-18 million bales |
+| Planted Acres | 10-12 million |
+| Average Yield | 800-900 lbs lint/acre |
+| Production Value | $5-7 billion |
+| Export Share | 75-85% of production |
+
+Cotton prices are determined by the ICE Futures U.S. exchange (CT), with basis adjustments for quality and location. Extra-long staple (Pima) cotton commands significant premiums over upland cotton. Major export destinations include Vietnam, China, Pakistan, Turkey, Bangladesh, and Indonesia. Domestic mill consumption continues declining but specialty textile manufacturing persists.
 
 ## Industry Hierarchy
 
@@ -32,34 +46,35 @@ graph TD
 |--------|-------|
 | NAICS Code | 11192 |
 | Level | Industry |
-| Parent | [Crop Farming](../) |
-| Child Industries | 0 |
-
+| Parent | [Crop Farming](./) |
+| National Industry | 111920 (Cotton Farming) |
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage cotton production operations
+- [Agricultural Equipment Operators](/occupations/FarmingFishingAndForestry/AgriculturalEquipmentOperators) - Operate planters, sprayers, and cotton pickers
+- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Scout for pests and monitor crop development
+- [Agricultural Inspectors](/occupations/FarmingFishingAndForestry/AgriculturalInspectors) - Class cotton for quality attributes
+- [Cotton Gin Operators](/occupations/Production/TextileMachineSettersOperatorsAndTenders) - Process seed cotton into lint
+- [Farm Equipment Mechanics](/occupations/Installation/FarmEquipmentMechanics) - Maintain harvesters and equipment
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Field Preparation"]
+        O2["Planting"]
+        O3["Crop Management"]
+        O4["Defoliation"]
+        O5["Harvest/Ginning"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Variety Selection"]
+        S2["IPM Scouting"]
+        S3["Irrigation Management"]
+        S4["Marketing/Hedging"]
     end
 
     O1 --> O2
@@ -70,57 +85,138 @@ flowchart LR
     S2 -.-> O3
 ```
 
+### Planting Operations
+Establishing cotton stands in spring when soil temperatures reach 65F minimum.
+
+**Key Activities:**
+- Seedbed preparation and pre-plant herbicide application
+- Variety selection (Bt, herbicide-tolerant, stacked traits)
+- Planter calibration for proper seed spacing (3-4 seeds/ft row)
+- Starter fertilizer and in-furrow treatments
+- Seed treatment selection for early-season pest management
+
+### Crop Management
+Managing cotton through the 140-180 day growing season.
+
+**Key Activities:**
+- Herbicide applications (glyphosate/dicamba/glufosinate programs)
+- Nitrogen sidedress applications (80-120 lbs N/acre)
+- Plant growth regulator (PGR) applications for canopy management
+- Insect monitoring (bollworm, stink bugs, aphids, spider mites)
+- Irrigation scheduling (peak water demand at bloom)
+- Boll opening monitoring for harvest timing
+
+### Harvest Operations
+Defoliating, picking, and module building for gin delivery.
+
+**Key Activities:**
+- Defoliant application timing (60%+ open bolls)
+- Harvest-aid materials (ethephon, tribufos, thidiazuron)
+- Cotton picker operation and adjustment
+- Module building (round bales or traditional modules)
+- Gin scheduling and delivery logistics
+- Classing and marketing of lint bales
+
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Seed/Technology"]
+        I2["Fertilizer"]
+        I3["Crop Protection"]
+        I4["Equipment"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Growing"]
+        A2["Harvesting"]
+        A3["Ginning"]
+        A4["Marketing"]
     end
 
-    subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+    subgraph Outputs["Products"]
+        O1["Lint Cotton"]
+        O2["Cottonseed"]
+        O3["Cotton Linters"]
+        O4["Seed Products"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+    subgraph Markets["End Markets"]
+        C1["Textile Mills"]
+        C2["Oil Mills"]
+        C3["Feed Industry"]
+        C4["Export"]
     end
 
-    Inputs --> Primary --> Outputs --> Customers
+    Inputs --> Primary --> Outputs --> Markets
 ```
+
+## Cotton Types and Uses
+
+### Upland Cotton
+Comprises 97% of U.S. production; staple lengths 1-1.25 inches; versatile fiber for apparel, home textiles, and industrial applications.
+
+### Pima (Extra-Long Staple)
+Premium cotton grown primarily in Arizona and California; 1.5+ inch staple length; used for fine shirting, luxury linens, and high-end apparel.
+
+### Cottonseed Products
+Ginning produces 400-500 lbs seed per bale of lint. Cottonseed is crushed for oil (cooking oil, snack foods), meal (dairy cattle protein), and hulls (roughage feed).
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Farm Service Agency** - Cotton program administration, LDPs, and MAL
+- **USDA AMS Cotton and Tobacco Program** - Official cotton classing
+- **EPA** - Pesticide registration, including dicamba volatility restrictions
+- **State Departments of Agriculture** - Boll weevil eradication programs
+- **Texas Boll Weevil Eradication Foundation** - Regional pest management
+
+### Key Programs and Regulations
+- Seed Cotton PLC and ARC programs
+- Marketing Assistance Loans (loan rate basis)
+- Cotton Ginning Cost-Share Program
+- STAX crop insurance (Stacked Income Protection)
+- Dicamba application restrictions (cutoff dates, wind speed limits)
+- EPA Worker Protection Standards
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Biotech Traits** - Bt cotton, herbicide tolerance (Xtend, Enlist, XtendFlex)
+- **Precision Agriculture** - Variable-rate planting, yield monitors, prescription mapping
+- **On-Board Module Builders** - Round module pickers for improved harvest efficiency
+- **RFID Tracking** - Module identification and gin throughput management
+- **Automated Classing** - HVI (High Volume Instrument) cotton classification
+- **Precision Irrigation** - LEPA, pivot systems, and subsurface drip irrigation
+
+## Regional Characteristics
+
+### Texas (Southern High Plains, Rolling Plains, Coastal Bend)
+Largest cotton-producing state with 5+ million acres; mix of dryland and irrigated; Ogallala Aquifer irrigation declining.
+
+### Mid-South (Mississippi, Arkansas, Louisiana, Tennessee)
+Irrigated production in Delta regions; competing with corn, soybeans, rice; high yield potential on alluvial soils.
+
+### Southeast (Georgia, Alabama, North Carolina)
+Expanding acreage as boll weevil eradication succeeded; rainfed production; rotation with peanuts.
+
+### Southwest (Arizona, California)
+Irrigated Pima and upland production; premium quality focus; water availability challenges.
+
+### West Texas
+Largest contiguous cotton region; highly variable rainfall; center pivot irrigation from Ogallala; wind erosion risk.
+
+## Industry Challenges
+
+- **Trade Policy** - Export dependence creates sensitivity to trade disputes
+- **Input Costs** - Biotech seed costs, fertilizer, and fuel expenses rising
+- **Water Availability** - Ogallala Aquifer depletion; irrigation cost increases
+- **Herbicide Resistance** - Palmer amaranth resistance to multiple herbicide modes
+- **Price Volatility** - Global supply-demand imbalances create income uncertainty
+- **Labor/Equipment** - Harvester availability; mechanic shortages for complex equipment
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+U.S. cotton farming's future depends on maintaining competitiveness in global fiber markets while managing rising production costs and resource constraints. The industry's heavy export orientation means trade policy and currency relationships significantly impact profitability. Water availability in the Texas High Plains and Arizona presents long-term sustainability challenges, driving interest in drought-tolerant varieties and water-efficient irrigation. Herbicide-resistant weeds, particularly Palmer amaranth, require increasingly complex and costly weed management programs. Consolidation continues as cotton's capital intensity favors larger operations. Premiums for sustainable and traceable cotton (BCI, organic, U.S. Cotton Trust Protocol) offer differentiation opportunities. Domestic textile manufacturing continues declining, but reshoring trends and specialty applications may stabilize some domestic demand. The industry's success hinges on technology adoption, cost management, and capturing quality premiums in export markets.
 
 ---
 

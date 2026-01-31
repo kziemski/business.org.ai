@@ -13,9 +13,11 @@ status: complete
 
 ## Overview
 
-Machinery represents an important category within the Wholesale Trade sector (NAICS 42). This industry group encompasses establishments primarily engaged in machinery.
+Machinery Merchant Wholesalers form a critical component of the capital equipment supply chain, connecting manufacturers of heavy equipment, industrial machinery, and specialized tools with end users across agriculture, construction, manufacturing, and service industries. These distributors typically offer comprehensive solutions including equipment sales, parts distribution, rental programs, and aftermarket services.
 
-This industry group comprises establishments primarily engaged in the merchant wholesale distribution of construction, mining, farm, garden, industrial, service establishment, and transportation machinery, equipment, and supplies.
+The machinery wholesale sector is characterized by high-value transactions, long sales cycles, and the importance of technical expertise and customer relationships. Distributors often maintain significant parts inventories and service capabilities to support installed equipment bases. Many operate as authorized dealers for major manufacturers, providing warranty service and factory-trained technicians.
+
+Cyclical demand patterns tied to construction activity, agricultural commodity prices, and industrial capital spending create both opportunities and challenges for inventory management and capacity planning. The industry is increasingly leveraging telematics, predictive maintenance, and e-commerce to enhance customer value and operational efficiency.
 
 ## Industry Hierarchy
 
@@ -27,7 +29,7 @@ graph TD
     style N4238 fill:#f96,stroke:#333,stroke-width:2px
     N4238 --> N42382["42382: Garden Machinery"]
     N4238 --> N42383["42383: Industrial Machinery"]
-    N4238 --> N42384["42384: Industrial Supplies Merchant Who..."]
+    N4238 --> N42384["42384: Industrial Supplies Merchant Wholesalers"]
     N4238 --> N42385["42385: Service Establishment Equipment"]
     N4238 --> N42386["42386: Transportation Equipment"]
 ```
@@ -45,71 +47,160 @@ graph TD
 
 | Industry | Code | Description |
 |----------|------|-------------|
-| [Garden Machinery](./GardenMachinery/) | 42382 | See industry description for 423820 |
-| [Industrial Machinery](./IndustrialMachinery/) | 42383 | See industry description for 423830 |
-| [Industrial Supplies Merchant Wholesalers](./IndustrialSuppliesMerchantWholesalers/) | 42384 | See industry description for 423840 |
-| [Service Establishment Equipment](./ServiceEstablishmentEquipment/) | 42385 | See industry description for 423850 |
-| [Transportation Equipment](./TransportationEquipment/) | 42386 | See industry description for 423860 |
+| [Garden Machinery](./GardenMachinery/) | 42382 | Lawn and garden equipment, outdoor power equipment |
+| [Industrial Machinery](./IndustrialMachinery/) | 42383 | Manufacturing equipment, machine tools, and industrial systems |
+| [Industrial Supplies Merchant Wholesalers](./IndustrialSuppliesMerchantWholesalers/) | 42384 | MRO supplies, cutting tools, and industrial consumables |
+| [Service Establishment Equipment](./ServiceEstablishmentEquipment/) | 42385 | Restaurant, beauty salon, and service industry equipment |
+| [Transportation Equipment](./TransportationEquipment/) | 42386 | Marine, aircraft, and railroad equipment and supplies |
+
+## Related Occupations
+
+- [Purchasing Managers](/occupations/Management/PurchasingManagers) - Manage vendor relationships and equipment procurement
+- [Sales Representatives, Wholesale](/occupations/Sales/SalesRepresentativesWholesaleAndManufacturingTechnicalAndScientificProducts) - Technical sales for capital equipment
+- [First-Line Supervisors of Mechanics](/occupations/Installation/FirstLineSupervisorsOfMechanicsInstallersAndRepairers) - Oversee equipment service operations
+- [Industrial Machinery Mechanics](/occupations/Installation/IndustrialMachineryMechanics) - Install, maintain, and repair equipment
+- [Logisticians](/occupations/Business/Logisticians) - Coordinate heavy equipment logistics
+- [Parts Salespersons](/occupations/Sales/PartsSalespersons) - Sell replacement parts and accessories
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Procurement"]
-        O2["Warehousing"]
-        O3["Merchandising"]
-        O4["Sales"]
-        O5["Distribution"]
+    subgraph Sales["Equipment Sales"]
+        S1["Lead Generation"]
+        S2["Needs Assessment"]
+        S3["Proposal/Quote"]
+        S4["Financing"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Inventory Mgmt"]
-        S2["Marketing"]
-        S3["Customer Service"]
-        S4["IT Systems"]
+    subgraph Fulfillment["Order Fulfillment"]
+        F1["Factory Orders"]
+        F2["Transportation"]
+        F3["Delivery/Setup"]
+        F4["Training"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Parts["Parts & Service"]
+        P1["Parts Inventory"]
+        P2["Service Dispatch"]
+        P3["Repairs"]
+        P4["Warranty Admin"]
+    end
+
+    subgraph Support["Customer Support"]
+        C1["Technical Support"]
+        C2["Rentals"]
+        C3["Trade-ins"]
+        C4["Financing"]
+    end
+
+    S1 --> S2 --> S3 --> S4
+    S4 --> F1 --> F2 --> F3 --> F4
+    F4 --> P1 --> P2 --> P3 --> P4
+    P4 --> C1 --> C2 --> C3 --> C4
 ```
+
+### Equipment Sales
+
+Managing the complete sales cycle for capital equipment from lead generation through delivery and commissioning.
+
+**Key Activities:**
+- Qualify leads and conduct site assessments for equipment requirements
+- Prepare equipment specifications and competitive proposals
+- Coordinate equipment financing, leasing, and payment programs
+- Manage trade-in evaluations and used equipment sales
+- Facilitate factory orders and allocation for high-demand equipment
+
+### Parts Distribution
+
+Maintaining comprehensive parts inventories to support the installed equipment base and minimize customer downtime.
+
+**Key Activities:**
+- Stock critical and fast-moving parts based on demand analysis
+- Process emergency parts orders with expedited shipping
+- Manage obsolete parts and supersession programs
+- Coordinate parts returns and warranty claims with manufacturers
+- Implement e-commerce parts ordering platforms
+
+### Service and Support
+
+Providing factory-authorized service, preventive maintenance, and repair capabilities for distributed equipment.
+
+**Key Activities:**
+- Deploy field service technicians for on-site repairs
+- Operate service shops for major overhauls and rebuilds
+- Implement telematics monitoring for predictive maintenance
+- Manage warranty administration and claim processing
+- Conduct operator training and safety programs
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Products"]
-        I2["Inventory"]
-        I3["Store/Warehouse"]
+        I1["New Equipment"]
+        I2["Parts & Components"]
+        I3["Used/Trade Equipment"]
+        I4["Service Tools"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Sales & Marketing"]
+        A2["Logistics & Delivery"]
+        A3["Parts Distribution"]
+        A4["Service Operations"]
     end
 
     subgraph Outputs["Products/Services"]
-        O1["Goods for Sale"]
-        O2["Services"]
-        O3["Delivery"]
+        O1["Equipment Sales"]
+        O2["Parts Supply"]
+        O3["Service/Repair"]
+        O4["Rentals/Leasing"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Businesses"]
-        C2["Consumers"]
-        C3["Institutions"]
-        C4["Government"]
+    subgraph Customers["Customer Segments"]
+        C1["Contractors"]
+        C2["Manufacturers"]
+        C3["Agriculture"]
+        C4["Municipalities"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
 ```
+
+## Regulatory Environment
+
+- **OSHA** (Occupational Safety and Health Administration) - Workplace safety requirements for equipment operation and maintenance
+- **EPA** (Environmental Protection Agency) - Emissions standards, fuel requirements, and hazardous materials handling
+- **DOT** (Department of Transportation) - Oversize/overweight permits and transportation regulations
+- **CPSC** (Consumer Product Safety Commission) - Safety standards for consumer equipment
+- **State Dealer Licensing** - Dealer licensing and franchise law compliance
+- **Emissions Regulations** - Tier 4 and emerging emissions standards for off-road equipment
+- **USDA** (Department of Agriculture) - Agricultural equipment safety and subsidy programs
+
+## Technology & Innovation
+
+- **Telematics Platforms** - Remote equipment monitoring for location, utilization, and diagnostic data
+- **Dealer Management Systems (DMS)** - Integrated ERP for sales, parts, service, and rental operations
+- **E-Commerce Parts Portals** - Online parts ordering with VIN/serial lookup and parts diagrams
+- **Electronic Data Interchange (EDI)** - Automated ordering and inventory replenishment with manufacturers
+- **CRM Systems** - Customer relationship management for complex B2B sales cycles
+- **Predictive Maintenance** - AI-driven analytics using telematics data to anticipate service needs
+- **Mobile Service Applications** - Field technician apps for work orders, parts lookup, and time tracking
+- **3D Printing** - Emerging use for obsolete parts and rapid prototyping
+
+## Market Trends
+
+The machinery wholesale sector is experiencing significant transformation:
+
+- **Electrification** - Growing demand for electric and hybrid equipment across all categories
+- **Autonomous Equipment** - Emerging adoption of autonomous tractors, construction equipment, and drones
+- **Rental Growth** - Increasing customer preference for rental and equipment-as-a-service models
+- **Consolidation** - Continued dealer consolidation creating larger, multi-location dealer groups
+- **Precision Technology** - GPS, machine control, and precision agriculture driving technology adoption
+- **Sustainability** - Customer focus on fuel efficiency, emissions reduction, and sustainable practices
+- **Skills Gap** - Ongoing challenge recruiting and training qualified service technicians
+- **Digital Commerce** - Accelerating adoption of online channels for parts and equipment sales
 
 ---
 

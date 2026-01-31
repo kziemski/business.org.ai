@@ -9,18 +9,26 @@ status: complete
 
 # Breweries
 
-> See industry description for 312120.
+> Establishments primarily engaged in brewing beer, ale, lager, malt beverages, and nonalcoholic beer.
 
 ## Overview
 
-Breweries represents an important category within the U.S. Manufacturing sector (NAICS 31-33). This industry encompasses establishments primarily engaged in breweries.
+The Breweries industry (NAICS 31212) encompasses establishments primarily engaged in brewing beer, ale, malt liquors, and nonalcoholic beer. This industry has experienced remarkable transformation over the past two decades, evolving from a market dominated by a few large producers to one characterized by thousands of craft breweries, microbreweries, and brewpubs operating alongside major brewing companies.
+
+The U.S. brewing industry generates over $100 billion in annual economic impact, with craft breweries accounting for approximately 24% of the beer market by volume and over 40% by revenue. The industry supports over 500,000 jobs directly and indirectly, including brewing, packaging, distribution, and retail operations.
+
+Key industry characteristics include:
+- **Production Diversity**: Range from nano-breweries producing under 500 barrels annually to major brewers producing millions of barrels
+- **Regional Focus**: Strong emphasis on local and regional distribution, particularly among craft brewers
+- **Innovation-Driven**: Constant product innovation with new styles, flavors, and brewing techniques
+- **Vertical Integration**: Many breweries operate taprooms, restaurants, and direct-to-consumer sales
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S31["31-33: Manufacturing"]
-    S31 --> N312["312: Beverage"]
+    S31 --> N312["312: Beverage and Tobacco Product Manufacturing"]
     N312 --> N3121["3121: Beverage Manufacturing"]
     N3121 --> N31212["31212: Breweries"]
     style N31212 fill:#f96,stroke:#333,stroke-width:2px
@@ -34,68 +42,88 @@ graph TD
 | Level | Industry |
 | Parent | [Beverage Manufacturing](../) |
 | Child Industries | 0 |
+| U.S. Establishments | ~9,500 |
+| Annual Revenue | ~$120 billion |
+| Employment | ~75,000 direct |
 
 ## Related Occupations
 
-- [Industrial Production Managers](/occupations/Management/IndustrialProductionManagers) - Plan and coordinate production activities
-- [First-Line Supervisors of Production Workers](/occupations/Production/FirstLineSupervisorsOfProductionAndOperatingWorkers) - Supervise production floor operations
-- [Quality Control Inspectors](/occupations/QualityControlInspectors) - Inspect products for defects and compliance
+- [Industrial Production Managers](/occupations/Management/IndustrialProductionManagers) - Oversee brewing operations and production schedules
+- [First-Line Supervisors of Production Workers](/occupations/Production/FirstLineSupervisorsOfProductionAndOperatingWorkers) - Supervise brewhouse and packaging operations
+- [Food Scientists and Technologists](/occupations/Science/FoodScientistsAndTechnologists) - Develop new recipes and ensure product consistency
+- [Quality Control Analysts](/occupations/Science/QualityControlAnalysts) - Monitor fermentation and final product quality
+- [Food Batchmakers](/occupations/Production/FoodBatchmakers) - Operate brewing equipment and manage fermentation
+- [Packaging and Filling Machine Operators](/occupations/Production/PackagingAndFillingMachineOperatorsAndTenders) - Run canning, bottling, and kegging lines
+- [Industrial Machinery Mechanics](/occupations/InstallationMaintenanceRepair/IndustrialMachineryMechanics) - Maintain brewing and packaging equipment
+- [Sales Representatives](/occupations/Sales/SalesRepresentativesWholesaleAndManufacturing) - Manage distributor and retail accounts
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Raw Material Prep"]
-        O2["Production"]
-        O3["Assembly"]
-        O4["Quality Control"]
-        O5["Packaging"]
+    subgraph Operating["Brewing Operations"]
+        O1["Milling & Mashing"]
+        O2["Lautering"]
+        O3["Boiling & Hopping"]
+        O4["Fermentation"]
+        O5["Conditioning"]
+        O6["Filtration"]
+        O7["Packaging"]
+    end
+
+    subgraph QualityControl["Quality Control"]
+        Q1["Raw Material Testing"]
+        Q2["In-Process Monitoring"]
+        Q3["Microbiological Testing"]
+        Q4["Sensory Analysis"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Inventory Mgmt"]
-        S3["Safety Systems"]
-        S4["Logistics"]
+        S1["CIP Systems"]
+        S2["Yeast Management"]
+        S3["Cold Chain Logistics"]
+        S4["Inventory Control"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    O1 --> O2 --> O3 --> O4 --> O5 --> O6 --> O7
+    Q1 -.-> O1
+    Q2 -.-> O4
+    Q3 -.-> O5
+    Q4 -.-> O7
 ```
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
-    subgraph Inputs["Inputs"]
-        I1["Raw Materials"]
-        I2["Components"]
-        I3["Equipment"]
+    subgraph Inputs["Raw Materials"]
+        I1["Malted Barley"]
+        I2["Hops"]
+        I3["Yeast"]
+        I4["Water"]
+        I5["Adjuncts"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Manufacturing Operations"]
+        A1["Ingredient Sourcing"]
+        A2["Brewing Operations"]
         A3["Quality Assurance"]
-        A4["Outbound Logistics"]
+        A4["Packaging"]
+        A5["Distribution"]
     end
 
     subgraph Outputs["Products"]
-        O1["Finished Products"]
-        O2["Components"]
-        O3["Assemblies"]
+        O1["Draft Beer"]
+        O2["Packaged Beer"]
+        O3["Specialty/Seasonal"]
+        O4["Non-Alcoholic"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Industrial Buyers"]
+    subgraph Customers["Distribution Channels"]
+        C1["Wholesalers/Distributors"]
         C2["Retailers"]
-        C3["Distributors"]
-        C4["End Users"]
+        C3["On-Premise (Bars/Restaurants)"]
+        C4["Direct-to-Consumer"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -103,21 +131,76 @@ graph LR
 
 ## Regulatory Environment
 
-Manufacturing operations in this industry are subject to various federal, state, and local regulations:
+The brewing industry operates under extensive federal, state, and local regulations:
 
-- **OSHA Regulations**: Workplace safety standards, machine guarding, hazard communication
-- **EPA Requirements**: Air emissions, water discharge, hazardous waste management
-- **State/Local Requirements**: Zoning, permits, and local environmental regulations
+### Federal Regulations
+- **TTB (Alcohol and Tobacco Tax and Trade Bureau)**: Brewery permits, formula approval, labeling requirements, and excise tax compliance
+- **FDA (Food and Drug Administration)**: Food safety standards, ingredient labeling, allergen disclosure
+- **OSHA (Occupational Safety and Health Administration)**: Workplace safety including confined space entry, lockout/tagout, and chemical handling
+- **EPA (Environmental Protection Agency)**: Wastewater discharge permits, air emissions, and waste management
 
-## Technology & Innovation
+### State and Local Requirements
+- **State Alcohol Control Boards**: Production licenses, distribution permits, and sales regulations
+- **Three-Tier System Compliance**: Separation of production, distribution, and retail (varies by state)
+- **Local Permits**: Zoning, building codes, and health department inspections
+- **Self-Distribution Laws**: Regulations governing direct brewery-to-retailer sales
 
-The breweries industry is experiencing significant technological advancement:
+### Industry Standards
+- **HACCP (Hazard Analysis Critical Control Points)**: Food safety management systems
+- **SQF (Safe Quality Food) Certification**: Third-party food safety certification
+- **Organic Certification**: USDA organic standards for organic beer production
 
-- **Industry 4.0**: Connected manufacturing, IoT sensors, and real-time monitoring
-- **Automation & Robotics**: Automated production lines and robotic assembly
-- **Data Analytics**: Predictive maintenance, quality analytics, and process optimization
-- **Sustainability**: Carbon reduction, circular economy, and green manufacturing
-- **Digital Twin**: Virtual replicas for simulation and optimization
+## Technology & Tools
+
+### Brewing Systems
+- **Brewhouse Automation**: Programmable Logic Controllers (PLCs), SCADA systems, and recipe management software
+- **Fermentation Control**: Temperature-controlled fermenters with automated glycol cooling
+- **CIP (Clean-in-Place) Systems**: Automated sanitation systems for tanks and lines
+- **Yeast Propagation Systems**: Controlled yeast growth and harvesting equipment
+
+### Quality & Laboratory
+- **Spectrophotometers**: Color and clarity measurement
+- **Gas Chromatography**: Flavor compound analysis
+- **Dissolved Oxygen Meters**: Oxygen level monitoring throughout production
+- **Microbiological Testing Equipment**: Rapid detection of contaminants
+
+### Business Operations
+- **ERP Systems**: SAP, Oracle, or brewing-specific systems like Ekos, Orchestrated Beer
+- **Inventory Management**: Grain, hops, and finished goods tracking
+- **Production Scheduling**: Batch planning and tank allocation software
+- **Compliance Software**: TTB reporting and excise tax calculation
+
+### Packaging Technology
+- **High-Speed Canning Lines**: Modern rotary fillers processing 1,000+ cans per minute
+- **Mobile Canning Services**: Contract canning for smaller breweries
+- **Kegging Systems**: Automated keg washing, filling, and tracking
+- **Date Coding and Traceability**: Lot tracking and freshness dating systems
+
+## Market Trends
+
+### Consumer Preferences
+- **Premiumization**: Consumers trading up to craft and premium brands
+- **Health and Wellness**: Growth in low-alcohol, low-calorie, and functional beverages
+- **Local and Authentic**: Preference for locally-produced craft beers with authentic stories
+- **Flavor Innovation**: Demand for unique styles, fruit additions, and barrel-aged products
+
+### Industry Dynamics
+- **Consolidation**: Major brewers acquiring successful craft brands
+- **Taproom Model**: Breweries deriving significant revenue from on-site sales
+- **Contract Brewing**: Growth in alternating proprietorships and contract arrangements
+- **Hard Seltzer and RTD**: Breweries diversifying into adjacent categories
+
+### Sustainability Initiatives
+- **Water Conservation**: Reducing water-to-beer ratios from 7:1 to under 4:1
+- **Renewable Energy**: Solar installations, biogas from wastewater, and green power purchases
+- **Spent Grain Utilization**: Partnerships with farmers and food producers
+- **Packaging Innovation**: Lightweight cans, recycled content, and plastic-free multipacks
+
+### Technology Adoption
+- **Smart Brewing**: IoT sensors for real-time process monitoring and optimization
+- **Predictive Analytics**: Machine learning for quality prediction and demand forecasting
+- **Direct-to-Consumer**: E-commerce platforms and subscription services
+- **Blockchain**: Supply chain traceability for ingredients and finished products
 
 ---
 

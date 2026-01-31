@@ -13,9 +13,11 @@ status: complete
 
 ## Overview
 
-Electronic Goods Merchant Wholesalers represents an important category within the Wholesale Trade sector (NAICS 42). This industry group encompasses establishments primarily engaged in electronic goods merchant wholesalers.
+Electronic Goods Merchant Wholesalers serve as the critical link between electronics manufacturers and the diverse downstream markets including retailers, contractors, industrial users, and commercial establishments. This industry group encompasses the distribution of a vast range of products from semiconductors and electronic components to consumer electronics and household appliances.
 
-This industry group comprises establishments primarily engaged in the merchant wholesale distribution of electrical apparatus and equipment, wiring supplies, and related equipment; household appliances, electric housewares, and consumer electronics; and other electronic parts and equipment.
+The electronic goods wholesale sector has evolved significantly with the rapid pace of technological innovation, shorter product life cycles, and the growing complexity of supply chains. Wholesalers in this segment must manage inventory carefully to avoid obsolescence while ensuring product availability for time-sensitive customer demands. The industry serves both B2B customers (contractors, OEMs, industrial users) and B2C channels (retailers, e-commerce platforms).
+
+Global supply chain dynamics play a particularly important role in this sector, with significant product sourcing from Asia and increasing emphasis on supply chain resilience, alternative sourcing, and inventory buffering strategies.
 
 ## Industry Hierarchy
 
@@ -25,8 +27,8 @@ graph TD
     S42 --> N423["423: Merchant Wholesalers, Durable Goods"]
     N423 --> N4236["4236: Electronic Goods Merchant Wholesalers"]
     style N4236 fill:#f96,stroke:#333,stroke-width:2px
-    N4236 --> N42361["42361: Related Equipment Merchant Whole..."]
-    N4236 --> N42362["42362: Consumer Electronics Merchant Wh..."]
+    N4236 --> N42361["42361: Related Equipment Merchant Wholesalers"]
+    N4236 --> N42362["42362: Consumer Electronics Merchant Wholesalers"]
     N4236 --> N42369["42369: Equipment Merchant Wholesalers"]
 ```
 
@@ -43,69 +45,156 @@ graph TD
 
 | Industry | Code | Description |
 |----------|------|-------------|
-| [Related Equipment Merchant Wholesalers](./RelatedEquipmentMerchantWholesalers/) | 42361 | See industry description for 423610 |
-| [Consumer Electronics Merchant Wholesalers](./ConsumerElectronicsMerchantWholesalers/) | 42362 | See industry description for 423620 |
-| [Equipment Merchant Wholesalers](./EquipmentMerchantWholesalers/) | 42369 | See industry description for 423690 |
+| [Related Equipment Merchant Wholesalers](./RelatedEquipmentMerchantWholesalers/) | 42361 | Electrical apparatus, wiring supplies, and construction materials |
+| [Consumer Electronics Merchant Wholesalers](./ConsumerElectronicsMerchantWholesalers/) | 42362 | Household appliances, TVs, audio equipment, and consumer devices |
+| [Equipment Merchant Wholesalers](./EquipmentMerchantWholesalers/) | 42369 | Electronic parts, components, and specialized equipment |
+
+## Related Occupations
+
+- [Purchasing Managers](/occupations/Management/PurchasingManagers) - Plan and coordinate purchasing activities and vendor relationships
+- [Wholesale and Retail Buyers](/occupations/Business/WholesaleAndRetailBuyersExceptFarmProducts) - Buy merchandise for resale and manage inventory
+- [Sales Representatives, Wholesale](/occupations/Sales/SalesRepresentativesWholesaleAndManufacturingTechnicalAndScientificProducts) - Sell technical products to business customers
+- [Logisticians](/occupations/Business/Logisticians) - Coordinate supply chain operations
+- [Electrical and Electronics Engineering Technicians](/occupations/Architecture/ElectricalAndElectronicsEngineeringTechnicians) - Provide technical support and product expertise
+- [Computer and Information Systems Managers](/occupations/Management/ComputerAndInformationSystemsManagers) - Manage IT systems and e-commerce platforms
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Procurement"]
-        O2["Warehousing"]
-        O3["Merchandising"]
-        O4["Sales"]
-        O5["Distribution"]
+    subgraph Sourcing["Sourcing & Procurement"]
+        S1["Vendor Management"]
+        S2["Purchase Orders"]
+        S3["Import/Receiving"]
+        S4["Quality Inspection"]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Inventory Mgmt"]
-        S2["Marketing"]
-        S3["Customer Service"]
-        S4["IT Systems"]
+    subgraph Operations["Warehouse Operations"]
+        O1["Inventory Control"]
+        O2["Storage & Handling"]
+        O3["Order Picking"]
+        O4["Kitting/Assembly"]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Distribution["Distribution"]
+        D1["Order Processing"]
+        D2["Shipping"]
+        D3["Delivery Tracking"]
+        D4["Returns Processing"]
+    end
+
+    subgraph Sales["Sales & Support"]
+        M1["Technical Sales"]
+        M2["Account Management"]
+        M3["Customer Support"]
+        M4["Product Training"]
+    end
+
+    S1 --> S2 --> S3 --> S4
+    S4 --> O1 --> O2 --> O3 --> O4
+    O4 --> D1 --> D2 --> D3 --> D4
+    M1 --> M2 --> M3 --> M4
 ```
+
+### Sourcing and Procurement
+
+Managing relationships with electronics manufacturers, component suppliers, and importers to ensure product availability and competitive pricing.
+
+**Key Activities:**
+- Negotiate pricing and terms with manufacturers and authorized distributors
+- Manage import logistics and customs clearance for international shipments
+- Monitor supplier performance and lead times
+- Develop alternative sourcing strategies for supply chain resilience
+- Coordinate with manufacturers on product launches and allocations
+
+### Inventory Management
+
+Balancing stock levels across fast-moving consumer electronics and slow-moving specialty components while minimizing obsolescence risk.
+
+**Key Activities:**
+- Implement demand forecasting for volatile technology markets
+- Manage product lifecycle and phase-out planning
+- Coordinate bin locations and warehouse optimization
+- Track serial numbers and lot codes for warranty and recall management
+- Execute price protection and stock rotation programs
+
+### Technical Sales and Support
+
+Providing product expertise and application support to help customers select appropriate electronic products and solutions.
+
+**Key Activities:**
+- Conduct product demonstrations and training sessions
+- Provide technical specifications and compatibility guidance
+- Support system design and integration projects
+- Manage RFQ (Request for Quote) processes for large orders
+- Deliver after-sales technical support and troubleshooting
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Products"]
-        I2["Inventory"]
-        I3["Store/Warehouse"]
+        I1["Consumer Electronics"]
+        I2["Components & Parts"]
+        I3["Appliances"]
+        I4["Wiring & Electrical"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Procurement & Import"]
+        A2["Warehousing"]
+        A3["Order Fulfillment"]
+        A4["Technical Support"]
     end
 
     subgraph Outputs["Products/Services"]
-        O1["Goods for Sale"]
-        O2["Services"]
-        O3["Delivery"]
+        O1["Product Distribution"]
+        O2["Logistics Services"]
+        O3["Technical Expertise"]
+        O4["Inventory Programs"]
     end
 
-    subgraph Customers["Markets"]
-        C1["Businesses"]
-        C2["Consumers"]
-        C3["Institutions"]
-        C4["Government"]
+    subgraph Customers["Customer Segments"]
+        C1["Retailers"]
+        C2["Contractors"]
+        C3["OEM/Industrial"]
+        C4["E-commerce"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
 ```
+
+## Regulatory Environment
+
+- **FCC** (Federal Communications Commission) - Regulates radio frequency devices, electronic emissions, and telecommunications equipment
+- **EPA** (Environmental Protection Agency) - Governs electronic waste (e-waste) disposal and hazardous materials handling
+- **CPSC** (Consumer Product Safety Commission) - Oversees safety standards for consumer electronics and appliances
+- **Customs and Border Protection** - Manages import compliance, tariffs, and country of origin requirements
+- **UL/ETL Certification** - Product safety certification requirements for electrical equipment
+- **DOE** (Department of Energy) - Energy efficiency standards for appliances and electronics
+- **State E-Waste Laws** - Varying state requirements for electronics recycling and disposal
+
+## Technology & Innovation
+
+- **Warehouse Management Systems (WMS)** - Real-time inventory visibility, bin location management, and pick optimization
+- **Electronic Data Interchange (EDI)** - Automated ordering, invoicing, and shipping notifications with trading partners
+- **E-Commerce Platforms** - B2B online ordering, product configurators, and customer portals
+- **Product Information Management (PIM)** - Centralized product data, specifications, and digital assets
+- **Barcode/RFID Tracking** - Serial number tracking, lot control, and real-time inventory accuracy
+- **Integration APIs** - Real-time inventory feeds and order status to e-commerce platforms and marketplaces
+- **Predictive Analytics** - Demand forecasting, pricing optimization, and obsolescence risk modeling
+
+## Market Trends
+
+The electronic goods wholesale sector continues to evolve with several key trends:
+
+- **Supply Chain Diversification** - Shifting from single-source to multi-source strategies and nearshoring initiatives
+- **E-Commerce Growth** - Accelerating shift to online B2B purchasing and marketplace integration
+- **Product Lifecycle Compression** - Faster innovation cycles requiring agile inventory management
+- **Sustainability Focus** - Growing emphasis on e-waste programs, refurbishment, and circular economy initiatives
+- **Value-Added Services** - Expanding into kitting, configuration, and integration services
+- **Smart Home/IoT Growth** - Increasing demand for connected devices and smart home products
+- **Technical Specialization** - Deepening expertise in specific product categories and vertical markets
 
 ---
 

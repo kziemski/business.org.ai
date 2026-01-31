@@ -1,30 +1,43 @@
 ---
-id: LineHaulRailroads
-name: "Line-Haul Railroads"
-code: "482111"
-type: Industry
-level: National Industry
-status: complete
+title: Line-Haul Railroads
+naicsCode: "482111"
+naicsLevel: nationalIndustry
+parentCode: "482"
+$type: Industry
+$id: https://industries.org.ai/LinehaulRailroads
+sameAs: https://naics.org.ai/NationalIndustry/482111
+regulatoryAgencies:
+  - FRA
+  - STB
+  - DOT
+  - PHMSA
 ---
 
 # Line-Haul Railroads
 
-> This U.
+> This U.S. industry comprises establishments known as line-haul railroads primarily engaged in operating railroads for the transport of passengers and/or cargo over a long distance within a rail network.
 
 ## Overview
 
-Line-Haul Railroads represents a specialized segment within the Transportation and Warehousing sector (NAICS 48-49).
+Line-Haul Railroads (NAICS 482111) represent the backbone of North American freight transportation, operating extensive rail networks for intercity movement of goods and passengers. These establishments provide long-distance rail transportation between terminals and stations on main and branch lines of a line-haul rail network.
 
-This U.S. industry comprises establishments known as line-haul railroads primarily engaged in operating railroads for the transport of passengers and/or cargo over a long distance within a rail network. These establishments provide for the intercity movement of trains between the terminals and stations on main and branch lines of a line-haul rail network (except for local switching services). Cross-References. Establishments primarily engaged in--
+The U.S. freight rail network spans approximately 140,000 miles, with Class I railroads accounting for about 70% of industry revenue. Line-haul railroads are characterized by:
 
-## Industry Hierarchy
+- **Class I Railroads** - Operating revenues exceeding $900 million annually (BNSF, Union Pacific, CSX, Norfolk Southern, Kansas City Southern, Canadian National, Canadian Pacific)
+- **Class II Regional Railroads** - Operating revenues between $40 million and $900 million
+- **Amtrak** - National passenger rail service operating over freight railroad tracks
+- **Intermodal Operations** - Container and trailer-on-flatcar services
+
+## NAICS Hierarchy
 
 ```mermaid
 graph TD
-    S4849["48-49: Transportation and Warehousing"]
-    S4849 --> N482["482: Rail Transportation"]
-    N482 --> N482111["482111: Line-Haul Railroads"]
-    style N482111 fill:#f96,stroke:#333,stroke-width:2px
+    S["48-49: Transportation and Warehousing"]
+    S --> R482["482: Rail Transportation"]
+    R482 --> R482111["482111: Line-Haul Railroads"]
+    R482 --> R482112["482112: Short Line Railroads"]
+
+    style R482111 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ## Key Statistics
@@ -32,94 +45,196 @@ graph TD
 | Metric | Value |
 |--------|-------|
 | NAICS Code | 482111 |
-| Level | National Industry |
-| Child Industries | 0 |
+| Level | National Industry (6-digit) |
+| Parent | [482: Rail Transportation](./) |
+| US Employment | ~135,000 |
+| Annual Revenue | ~$80 billion |
+| Track Miles | ~140,000 |
+| Ton-Miles Annually | ~1.7 trillion |
 
-## Related Occupations
+## Industry Segments
 
-- [Transportation, Storage, and Distribution Managers](/occupations/Management/TransportationStorageAndDistributionManagers) - Plan and direct transportation operations
-- [Logisticians](/occupations/Business/Logisticians) - Analyze and coordinate supply chain
-- [Transportation Engineers](/occupations/Architecture/TransportationEngineers) - Design transportation infrastructure
-- [Logistics Analysts](/occupations/Business/LogisticsAnalysts) - Analyze logistics data to optimize operations
+### Class I Freight Railroads
 
-## Core Business Processes
+| Railroad | Headquarters | Route Miles | Annual Revenue |
+|----------|--------------|-------------|----------------|
+| BNSF Railway | Fort Worth, TX | 32,500 | $23B+ |
+| Union Pacific | Omaha, NE | 32,300 | $24B+ |
+| CSX Transportation | Jacksonville, FL | 21,000 | $14B+ |
+| Norfolk Southern | Atlanta, GA | 19,500 | $12B+ |
+| Canadian National | Montreal, QC | 20,000 (US/CA) | $15B+ |
+| Canadian Pacific Kansas City | Calgary, AB | 20,000 (US/CA/MX) | $14B+ |
+
+### Freight Traffic by Commodity
+
+```mermaid
+pie title Rail Freight by Carloads
+    "Coal" : 25
+    "Chemicals" : 17
+    "Agricultural Products" : 14
+    "Intermodal" : 22
+    "Motor Vehicles" : 8
+    "Forest Products" : 6
+    "Metals/Minerals" : 8
+```
+
+## Regulatory Framework
+
+### FRA Safety Requirements
+
+```mermaid
+flowchart TD
+    subgraph Safety["Safety Programs"]
+        S1[Track Inspection]
+        S2[Equipment Standards]
+        S3[Operating Practices]
+        S4[Hazmat Handling]
+    end
+
+    subgraph Compliance["Compliance Systems"]
+        C1[Hours of Service]
+        C2[Drug/Alcohol Testing]
+        C3[Locomotive Standards]
+        C4[Positive Train Control]
+    end
+
+    subgraph Oversight["FRA Oversight"]
+        O1[Inspections]
+        O2[Audits]
+        O3[Accident Investigation]
+        O4[Enforcement]
+    end
+
+    Safety --> Compliance --> Oversight
+```
+
+### Key Regulations
+
+| Regulation | Description |
+|------------|-------------|
+| 49 CFR Part 213 | Track Safety Standards |
+| 49 CFR Part 229 | Locomotive Safety Standards |
+| 49 CFR Part 232 | Brake System Safety |
+| 49 CFR Part 236 | Positive Train Control (PTC) |
+| 49 CFR Part 228 | Hours of Service |
+| 49 CFR Part 172 | Hazardous Materials |
+
+### Surface Transportation Board (STB)
+
+| Function | Description |
+|----------|-------------|
+| Rate Regulation | Adjudicates rate disputes for captive shippers |
+| Mergers & Acquisitions | Reviews and approves rail consolidations |
+| Service Standards | Addresses service complaints |
+| Line Abandonments | Approves track discontinuance |
+
+## Operations Model
+
+### Train Operations Process
 
 ```mermaid
 flowchart LR
-    subgraph Operating["Operating Processes"]
-        O1["Receiving"]
-        O2["Routing/Planning"]
-        O3["Transport/Storage"]
-        O4["Delivery"]
-        O5["Tracking"]
+    subgraph Origination["Origin"]
+        O1[Car Ordering]
+        O2[Loading]
+        O3[Switching]
+        O4[Train Assembly]
     end
 
-    subgraph Support["Support Processes"]
-        S1["Fleet Management"]
-        S2["Safety Systems"]
-        S3["Compliance"]
-        S4["IT Systems"]
+    subgraph LineHaul["Line-Haul"]
+        L1[Departure]
+        L2[En Route]
+        L3[Crew Changes]
+        L4[Classification]
     end
 
-    O1 --> O2
-    O2 --> O3
-    O3 --> O4
-    O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    subgraph Destination["Destination"]
+        D1[Arrival]
+        D2[Switching]
+        D3[Spotting]
+        D4[Unloading]
+    end
+
+    Origination --> LineHaul --> Destination
 ```
 
-## Industry Value Chain
+### Classification Yard Operations
 
-```mermaid
-graph LR
-    subgraph Inputs["Inputs"]
-        I1["Resources"]
-        I2["Expertise"]
-        I3["Technology"]
-    end
+| Process | Description |
+|---------|-------------|
+| Receiving | Inbound trains arrive at receiving yard |
+| Humping | Cars pushed over hump for gravity classification |
+| Classification | Cars sorted into tracks by destination |
+| Departure | Outbound trains assembled and inspected |
 
-    subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
-    end
+## Technology
 
-    subgraph Outputs["Products/Services"]
-        O1["Products"]
-        O2["Services"]
-        O3["Solutions"]
-    end
+### Operational Systems
 
-    subgraph Customers["Markets"]
-        C1["Businesses"]
-        C2["Consumers"]
-        C3["Government"]
-        C4["Institutions"]
-    end
+| System | Function |
+|--------|----------|
+| Positive Train Control (PTC) | Collision avoidance, speed enforcement |
+| Centralized Traffic Control (CTC) | Remote signal and switch control |
+| RFID/AEI | Automatic equipment identification |
+| Wayside Detectors | Hot bearing, dragging equipment detection |
+| Trip Optimizer | Fuel-efficient train handling |
 
-    Inputs --> Primary --> Outputs --> Customers
-```
+### Fleet Management
 
-## Regulatory Environment
+| Technology | Application |
+|------------|-------------|
+| Locomotive Health Monitoring | Predictive maintenance analytics |
+| Car Management Systems | Fleet utilization optimization |
+| Train Scheduling Systems | Capacity planning and dispatching |
+| Customer Portals | Shipment visibility and booking |
 
-- **DOT** (Department of Transportation) - Regulates transportation safety and operations
-- **FMCSA** (Federal Motor Carrier Safety Administration) - Oversees commercial vehicle operations
-- **FAA** (Federal Aviation Administration) - Regulates air transportation
-- **FRA** (Federal Railroad Administration) - Governs railroad safety and operations
+## Competitive Dynamics
 
-## Technology & Innovation
+### Business Models
 
-- **Autonomous Vehicles** - Self-driving trucks, delivery drones, and autonomous ships
-- **Fleet Telematics** - Real-time GPS tracking, fuel optimization, and predictive maintenance
-- **Electric Transportation** - EV fleet adoption, charging infrastructure, and battery technology
-- **Digital Freight Platforms** - Online marketplaces matching shippers with carriers
+| Segment | Characteristics |
+|---------|-----------------|
+| Bulk Commodities | Unit trains, high volume, origin-destination |
+| Manifest/Carload | Mixed freight, classification required |
+| Intermodal | Containers, trailers, high service standards |
+| Automotive | Specialized equipment, just-in-time delivery |
 
-## Industry Outlook
+### Key Success Factors
 
-The transportation and warehousing sector is investing heavily in electrification, automation, and digital logistics platforms. E-commerce growth continues to drive demand for last-mile delivery and warehouse capacity. Autonomous vehicle technology, drone delivery, and sustainable fleet management are key areas of innovation, while labor market tightness drives investment in driver retention and automated operations.
+1. **Network reach and connectivity**
+2. **Operating ratio efficiency**
+3. **Service reliability and transit times**
+4. **Intermodal terminal capacity**
+5. **Labor productivity**
+6. **Capital investment discipline**
+
+## Related Industries
+
+- [Short Line Railroads](./ShortLineRailroads.mdx) - First/last mile service
+- [Rail Transportation Support](/industries/TransportationAndWarehousing/SupportActivitiesForTransportation/) - Terminal operations
+- [Intermodal Transport](/industries/TransportationAndWarehousing/TruckTransportation/) - Truck drayage
+- [Warehousing](/industries/TransportationAndWarehousing/Warehousing/) - Distribution services
+
+## Related Occupations
+
+| Occupation | Role | Typical Employer |
+|------------|------|------------------|
+| Locomotive Engineer | Operates locomotives | Class I/II railroad |
+| Conductor | Train crew supervisor | Class I/II railroad |
+| Signal Maintainer | Signal system maintenance | Class I/II railroad |
+| Track Worker | Track maintenance and repair | Class I/II railroad |
+| Dispatcher | Train movement coordination | Class I/II railroad |
+| Yardmaster | Classification yard operations | Class I/II railroad |
+
+## Industry Trends
+
+- **Precision Scheduled Railroading (PSR)** - Operating model focused on efficiency
+- **Intermodal Growth** - E-commerce driving container volumes
+- **Alternative Fuels** - Battery and hydrogen locomotive development
+- **Automation** - Autonomous train operations testing
+- **Capacity Investment** - Siding extensions, double-tracking
+- **Labor Relations** - Ongoing negotiations on crew size, scheduling
 
 ---
 
-*Source: NAICS 482111 - Line-Haul Railroads*
+*Source: NAICS 482111, FRA, STB, Association of American Railroads (AAR)*

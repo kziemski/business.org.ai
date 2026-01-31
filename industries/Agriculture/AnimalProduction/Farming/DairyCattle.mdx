@@ -1,28 +1,43 @@
 ---
 id: DairyCattle
-name: "Dairy Cattle"
+name: "Dairy Cattle and Milk Production"
 code: "11212"
 type: Industry
 level: Industry
 status: complete
 ---
 
-# Dairy Cattle
+# Dairy Cattle and Milk Production
 
-> See industry description for 112120.
+> Establishments primarily engaged in milking dairy cattle and producing raw milk for sale to dairy processors or direct consumption markets.
 
 ## Overview
 
-Dairy Cattle represents an important category within the Agriculture, Forestry, Fishing and Hunting sector (NAICS 11).
+Dairy cattle farming is a specialized segment of animal agriculture focused on raising and managing dairy cows primarily for milk production. The U.S. dairy industry is a major agricultural sector, with approximately 9.4 million dairy cows producing over 226 billion pounds of milk annually. While the total number of dairy farms has declined significantly over the past decades due to consolidation, average herd sizes have increased dramatically, with operations ranging from small family farms with 50-100 cows to large confined animal feeding operations (CAFOs) with thousands of animals.
+
+The industry operates year-round, as dairy cows require daily milking (typically twice or three times per day) and produce milk continuously when properly managed. Modern dairy operations integrate advanced genetics, nutrition science, and technology to maximize milk production per cow while maintaining animal health and welfare. The Holstein breed dominates U.S. dairy production, though Jersey, Brown Swiss, Guernsey, and Ayrshire breeds contribute to specialty milk markets.
+
+## Market Context
+
+| Metric | Value |
+|--------|-------|
+| U.S. Milk Production | 226 billion pounds annually |
+| Number of Dairy Farms | ~24,000 licensed operations |
+| Number of Dairy Cows | 9.4 million head |
+| Average Production | 24,000 lbs milk/cow/year |
+| Farm Gate Milk Price | $18-22 per hundredweight |
+| Industry Revenue | $42 billion annually |
+
+California, Wisconsin, Idaho, Texas, and New York are the top milk-producing states, collectively accounting for over 50% of national production. The industry has seen significant geographic shifts, with growth in western states where large-scale operations benefit from favorable climates and access to feed supplies.
 
 ## Industry Hierarchy
 
 ```mermaid
 graph TD
     S11["11: Agriculture, Forestry, Fishing and Hunting"]
-    S11 --> N112["112: Animal Production"]
-    N112 --> N1121["1121: Cattle Ranching"]
-    N1121 --> N11212["11212: Dairy Cattle"]
+    S11 --> N112["112: Animal Production and Aquaculture"]
+    N112 --> N1121["1121: Cattle Ranching and Farming"]
+    N1121 --> N11212["11212: Dairy Cattle and Milk Production"]
     style N11212 fill:#f96,stroke:#333,stroke-width:2px
 ```
 
@@ -37,67 +52,100 @@ graph TD
 
 ## Related Occupations
 
-- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Plan, direct, or coordinate farm operations
-- [Agricultural Engineers](/occupations/Architecture/AgriculturalEngineers) - Apply engineering principles to agriculture
-- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Food and fiber production and management
-- [Farm Equipment Mechanics](/occupations/FarmEquipmentMechanics) - Maintain and repair agricultural equipment
+- [Farmers, Ranchers, and Other Agricultural Managers](/occupations/Management/FarmersRanchersAndOtherAgriculturalManagers) - Manage dairy operations, make breeding and culling decisions, oversee staff
+- [Animal Scientists](/occupations/Science/AnimalScientists) - Research nutrition, genetics, and production optimization
+- [Veterinarians](/occupations/Healthcare/Veterinarians) - Provide herd health services, reproductive management, and disease treatment
+- [Agricultural Technicians](/occupations/Science/AgriculturalTechnicians) - Assist with breeding programs, milk testing, and feed analysis
+- [Farmworkers and Laborers, Crop, Nursery, and Greenhouse](/occupations/FarmingFishingAndForestry/FarmworkersAndLaborers) - Perform daily milking, feeding, and animal care
+- [Farm Equipment Mechanics](/occupations/Installation/FarmEquipmentMechanics) - Maintain milking systems, cooling equipment, and tractors
 
 ## Core Business Processes
 
 ```mermaid
 flowchart LR
     subgraph Operating["Operating Processes"]
-        O1["Planning"]
-        O2["Planting/Stocking"]
-        O3["Growing/Raising"]
-        O4["Harvesting"]
-        O5["Processing"]
+        O1["Herd Management"]
+        O2["Breeding Program"]
+        O3["Milking Operations"]
+        O4["Milk Handling"]
+        O5["Marketing/Sales"]
     end
 
     subgraph Support["Support Processes"]
-        S1["Equipment Maintenance"]
-        S2["Supply Management"]
-        S3["Quality Control"]
-        S4["Logistics"]
+        S1["Nutrition Management"]
+        S2["Health Protocols"]
+        S3["Equipment Maintenance"]
+        S4["Record Keeping"]
     end
 
     O1 --> O2
     O2 --> O3
     O3 --> O4
     O4 --> O5
-    S1 -.-> O2
-    S2 -.-> O3
+    S1 -.-> O1
+    S2 -.-> O1
 ```
+
+### Milking Operations
+The core daily activity of dairy farming, performed 2-3 times daily using automated milking parlors or robotic milking systems.
+
+**Key Activities:**
+- Cow preparation and udder sanitation
+- Milking unit attachment and monitoring
+- Post-milking teat dipping for mastitis prevention
+- Milk flow monitoring and automatic detachment
+- Parlor cleaning and sanitization
+
+### Herd Management
+Continuous oversight of animal health, reproduction, and productivity to maintain a profitable milking herd.
+
+**Key Activities:**
+- Daily health observation and treatment protocols
+- Reproductive management and heat detection
+- Dry cow management and calving assistance
+- Calf rearing and heifer development
+- Culling decisions based on production and health data
+
+### Nutrition Management
+Formulating and delivering balanced rations to maximize milk production while maintaining cow health.
+
+**Key Activities:**
+- Total Mixed Ration (TMR) formulation
+- Forage quality testing and inventory management
+- Feed delivery and bunk management
+- Body condition scoring
+- Transition cow nutrition programs
 
 ## Industry Value Chain
 
 ```mermaid
 graph LR
     subgraph Inputs["Inputs"]
-        I1["Seeds/Stock"]
-        I2["Equipment"]
-        I3["Fertilizers"]
-        I4["Labor"]
+        I1["Breeding Stock/Genetics"]
+        I2["Feed/Forage"]
+        I3["Veterinary Services"]
+        I4["Equipment/Facilities"]
     end
 
     subgraph Primary["Primary Activities"]
-        A1["Inbound Logistics"]
-        A2["Core Operations"]
-        A3["Quality Assurance"]
-        A4["Outbound/Delivery"]
+        A1["Herd Development"]
+        A2["Daily Milking"]
+        A3["Milk Cooling/Storage"]
+        A4["Quality Testing"]
     end
 
     subgraph Outputs["Products/Services"]
-        O1["Crops"]
-        O2["Livestock"]
-        O3["Raw Materials"]
+        O1["Raw Milk"]
+        O2["Cull Cows/Bulls"]
+        O3["Heifer Calves"]
+        O4["Manure/Compost"]
     end
 
     subgraph Customers["Markets"]
-        C1["Processors"]
-        C2["Distributors"]
-        C3["Retailers"]
-        C4["Export Markets"]
+        C1["Dairy Cooperatives"]
+        C2["Milk Processors"]
+        C3["Livestock Markets"]
+        C4["Direct Sales"]
     end
 
     Inputs --> Primary --> Outputs --> Customers
@@ -105,22 +153,42 @@ graph LR
 
 ## Regulatory Environment
 
-- **USDA** (United States Department of Agriculture) - Oversees agricultural practices, food safety, and farm subsidies
-- **EPA** (Environmental Protection Agency) - Regulates pesticide use, water quality, and environmental impact
-- **FDA** (Food and Drug Administration) - Ensures safety of agricultural food products
-- **State Departments of Agriculture** - Enforce local farming regulations and licensing
+- **USDA Agricultural Marketing Service (AMS)** - Administers Federal Milk Marketing Orders setting minimum prices
+- **FDA/CFSAN** - Regulates milk as a food product under the Pasteurized Milk Ordinance (PMO)
+- **EPA** - Regulates waste management, water quality, and air emissions from dairy operations
+- **State Milk Control Boards** - License dairy farms, conduct inspections, and enforce quality standards
+- **USDA APHIS** - Monitors animal health and disease control programs
+
+### Key Regulations
+- Grade A Pasteurized Milk Ordinance (PMO) requirements
+- Somatic Cell Count (SCC) limits for Grade A milk
+- Antibiotic residue testing and withholding periods
+- Nutrient Management Plans for manure handling
+- Concentrated Animal Feeding Operation (CAFO) permits
+- Animal identification and traceability requirements
 
 ## Technology & Innovation
 
-- **Precision Agriculture** - GPS-guided equipment, drone monitoring, and variable-rate application technologies
-- **Agricultural Biotechnology** - Genetically modified crops, CRISPR gene editing, and disease-resistant varieties
-- **IoT and Smart Farming** - Sensor networks for soil moisture, weather monitoring, and automated irrigation
-- **Autonomous Equipment** - Self-driving tractors, robotic harvesters, and AI-powered crop management
+- **Robotic Milking Systems** - Automated milking allowing cows to self-select milking times, reducing labor needs
+- **Herd Management Software** - Computer systems tracking individual cow production, health, and reproduction
+- **Precision Feeding** - Automated feed delivery systems with individual cow ration adjustments
+- **Activity Monitoring** - Collar and leg sensors detecting heat, health issues, and rumination patterns
+- **Genetic Genomics** - DNA testing for breeding decisions and disease resistance traits
+- **Methane Digesters** - Converting manure to biogas for energy generation and carbon reduction
+
+## Industry Challenges
+
+- **Milk Price Volatility** - Commodity pricing creates income uncertainty for producers
+- **Labor Availability** - Difficulty finding skilled workers for demanding 365-day operations
+- **Environmental Regulations** - Increasing scrutiny of manure management and greenhouse gas emissions
+- **Animal Welfare Concerns** - Consumer pressure regarding housing systems and calf management
+- **Consolidation Pressure** - Small farms struggling to compete with large-scale operations
+- **Input Cost Inflation** - Rising feed, fuel, and labor costs squeezing margins
 
 ## Industry Outlook
 
-The agriculture sector continues to evolve with growing global food demand, climate adaptation challenges, and rapid technology adoption. Precision agriculture and sustainable farming practices are driving productivity gains while reducing environmental impact. The sector faces workforce challenges as traditional farming communities age, but technology-enabled farming is attracting new entrants and investment.
+The U.S. dairy industry faces a complex future balancing productivity gains against environmental and social pressures. Milk production per cow continues to increase through genetic improvement and management advances, while total cow numbers decline. Technology adoption, particularly robotic milking and precision management tools, is accelerating as labor becomes scarcer and more expensive. Environmental sustainability initiatives, including methane reduction and water conservation, are becoming business imperatives as processors and retailers set supply chain sustainability goals. The industry is adapting to changing consumer preferences with growth in organic, grass-fed, and specialty milk products. Export markets remain important for balancing domestic supply, with dairy products representing a significant U.S. agricultural export category.
 
 ---
 
-*Source: NAICS 11212 - Dairy Cattle*
+*Source: NAICS 11212 - Dairy Cattle and Milk Production*
