@@ -79,6 +79,29 @@ flowchart LR
     S1 --> S2
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant SM as Sales Manager
+    participant SR as Sales Rep
+    participant C as Customer
+    participant MKT as Marketing
+    participant CRM as CRM System
+
+    SM->>SR: Assign opportunity validation
+    SR->>C: Schedule pilot testing session
+    C-->>SR: Confirm participation
+    SR->>C: Present product/service concept
+    C-->>SR: Provide validation feedback
+    SR->>CRM: Log customer test results
+    SR->>MKT: Request capability assessment
+    MKT->>MKT: Confirm internal capabilities
+    MKT-->>SR: Capability validation report
+    SR->>SM: Submit opportunity validation summary
+    SM->>CRM: Update opportunity status
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

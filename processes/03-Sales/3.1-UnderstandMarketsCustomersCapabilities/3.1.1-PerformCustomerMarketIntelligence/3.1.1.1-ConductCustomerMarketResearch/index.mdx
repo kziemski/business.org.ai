@@ -79,6 +79,27 @@ flowchart LR
     S1 --> S2
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant SM as Sales Manager
+    participant MKT as Marketing
+    participant CRM as CRM System
+    participant C as Customer
+
+    SM->>MKT: Request market research initiative
+    MKT->>CRM: Pull historical customer data
+    CRM-->>MKT: Customer behavior patterns
+    MKT->>C: Conduct surveys and interviews
+    C-->>MKT: Feedback and preferences
+    MKT->>MKT: Analyze consumer needs and behaviors
+    MKT->>CRM: Update customer insights
+    MKT->>MKT: Predict purchasing behavior
+    MKT->>SM: Deliver research findings report
+    SM->>CRM: Log research outcomes
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

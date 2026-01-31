@@ -64,6 +64,25 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant InfraTeam
+    participant NetworkAdmin
+    participant ITManager
+    participant System
+    IT Manager->>InfraTeam: Define infrastructure needs
+    InfraTeam->>NetworkAdmin: Coordinate network setup
+    NetworkAdmin->>System: Configure network
+    InfraTeam->>System: Provision resources
+    System->>InfraTeam: Return status
+    InfraTeam->>InfraTeam: Validate configuration
+    InfraTeam->>IT Manager: Report readiness
+    IT Manager->>InfraTeam: Approve for production
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

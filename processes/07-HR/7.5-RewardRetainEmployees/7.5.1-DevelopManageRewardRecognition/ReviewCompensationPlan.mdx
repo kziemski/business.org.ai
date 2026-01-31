@@ -97,6 +97,28 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant HRS as HR Specialist
+    participant Comp as Compensation Analyst
+    participant HRM as HR Manager
+    participant HRIS as HRIS System
+    participant Payroll as Payroll
+
+    Comp->>HRIS: Retrieve compensation data
+    HRIS-->>Comp: Return market benchmarks
+    Comp->>HRS: Analyze compensation equity
+    HRS->>HRM: Present recommendations
+    HRM-->>HRS: Approve adjustments
+    HRS->>HRIS: Update compensation records
+    HRIS-->>Payroll: Send payroll updates
+    Payroll-->>HRS: Confirm processing
+    HRS->>Emp: Communicate compensation change
+    Emp-->>HRIS: Acknowledge notification
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

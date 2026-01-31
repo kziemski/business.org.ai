@@ -1,20 +1,21 @@
 ---
 id: aerospace-and-defense_AerospaceCompanies_PrioritizeRepairsbasedOnAircraftOnGroundaog
 name: "Prioritize repairs (based on aircraft on ground (AOG))"
-code: "10.3.4.5"
-industry: "aerospace-and-defense"
+code: 10.3.4.5
+industry: aerospace-and-defense
 type: IndustryProcess
 status: complete
-canonicalProcessId: "PrioritizeRepairsbasedOnAircraftOnGroundaog"
-pcfId: "19732"
-subject: "AerospaceCompanies"
+canonicalProcessId: PrioritizeRepairsbasedOnAircraftOnGroundaog
+pcfId: 19732
+subject: AerospaceCompanies
 ---
 
 # Prioritize repairs (based on aircraft on ground (AOG))
 
 ## Overview
 
-Prioritizing repair work based on preset factors , requirements, and need. These factors include: 1. The SLA associated with a customer/part combination 2.  Number of these parts already on order 3. Are parts open loop (customer needs a working part back, not necessarily the same serialized part) or closed loop (customer will only accept the same serial numbered part back). Once the prioritization of work is completed, the sequence will have to be checked for feasibility against the available resources vs required resources. The output of this is called a nominal repair prioritization sequence. The nominal sequence can be interrupted at any time by AOG part arrivals, where AOG parts take precedence and may even interrupt normal operation, requiring continuous re-scheduling and re-sequencing. The situation gets more complex when multiple AOGs arrive at the same time.
+Prioritizing repair work based on preset factors , requirements, and need. These factors include: 1. The SLA associated with a customer/part combination 2.  Number of these parts already on order 3. Are parts open loop (customer needs a working part back, not necessarily the same serialized part) or closed loop (customer will only accept the same serial numbered part back). Once the prioritization of work is completed, the sequence will have to be checked for feasibility against the available resources vs required resources. The output of this is called a nominal repair prioritization sequence. The nominal sequence can be interrupted at any time by AOG part arrivals, where AOG parts take precedence and may even interrupt normal operation, requiring continuous re-scheduling and re-sequencing. The situation gets more complex when multiple AOGs arrive at the same time. Within the Aerospace and Defense industry, this process takes on particular importance due to the sector's emphasis on precision manufacturing, safety-critical systems, and defense program management. Organizations must ensure alignment with FAA, ITAR, DFARS, AS9100 standards while optimizing for efficiency and effectiveness.
+
 
 ## Industry Context
 
@@ -32,6 +33,19 @@ This is an industry-specific implementation of [PrioritizeRepairsbasedOnAircraft
 ```
 AerospaceCompanies.prioritize.Repairs(Based.on.AircraftOnGround(Aog
 ```
+
+## Industry-Specific Considerations
+
+- Compliance with FAA, ITAR, DFARS, AS9100 requirements must be integrated into every step of this process
+- Strict regulatory compliance (FAA, ITAR, DFARS) directly impacts how this process is designed and executed
+- Asset management in Aerospace and Defense involves high-value, long-lifecycle equipment requiring rigorous maintenance
+- Aerospace and Defense organizations must balance long product lifecycles (20-30 years) with operational efficiency
+
+## Key Metrics
+
+- **First Pass Yield (FPY)**: Percentage of units passing quality inspection on first attempt, critical for process efficiency
+- **On-Time Delivery (OTD)**: Percentage of deliverables completed within committed timeframes
+- **Cost Performance Index (CPI)**: Ratio of earned value to actual cost, indicating budget efficiency
 
 ## Related Occupations
 

@@ -64,6 +64,26 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Developer
+    participant Architect
+    participant QAEngineer
+    participant CI/CDSystem
+    Architect->>Developer: Assign development task
+    Developer->>Developer: Implement solution
+    Developer->>CI/CD System: Commit code
+    CI/CD System->>CI/CD System: Run build pipeline
+    CI/CD System->>QA Engineer: Deploy to test
+    QA Engineer->>QA Engineer: Execute tests
+    QA Engineer->>Developer: Report results
+    Developer->>Architect: Request review
+    Architect->>Developer: Approve implementation
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

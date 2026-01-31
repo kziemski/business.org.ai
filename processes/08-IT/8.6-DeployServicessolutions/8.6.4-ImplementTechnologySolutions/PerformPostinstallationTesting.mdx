@@ -64,6 +64,26 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant QAEngineer
+    participant Developer
+    participant System
+    participant ITManager
+    Developer->>QA Engineer: Request testing
+    QA Engineer->>QA Engineer: Prepare test environment
+    QA Engineer->>System: Execute test cases
+    System->>QA Engineer: Return test results
+    QA Engineer->>QA Engineer: Analyze results
+    QA Engineer->>Developer: Report defects (if any)
+    Developer->>Developer: Resolve issues
+    QA Engineer->>System: Re-execute tests
+    QA Engineer->>IT Manager: Approve release
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

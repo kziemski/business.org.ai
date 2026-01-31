@@ -64,6 +64,26 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant ITManager
+    participant ComplianceOfficer
+    participant SecurityAnalyst
+    participant Architect
+    IT Manager->>ComplianceOfficer: Initiate policy review
+    ComplianceOfficer->>ComplianceOfficer: Assess requirements
+    ComplianceOfficer->>SecurityAnalyst: Gather security input
+    SecurityAnalyst->>ComplianceOfficer: Provide recommendations
+    ComplianceOfficer->>IT Manager: Draft policy
+    IT Manager->>Architect: Review technical feasibility
+    Architect->>IT Manager: Confirm alignment
+    IT Manager->>IT Manager: Approve and publish
+    IT Manager->>ComplianceOfficer: Communicate policy
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

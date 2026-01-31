@@ -84,6 +84,28 @@ flowchart LR
     S2 --> S3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant SM as Sales Manager
+    participant MKT as Marketing
+    participant Partner as Sales Partner
+    participant CRM as CRM System
+
+    SM->>MKT: Request partner training materials
+    MKT->>MKT: Develop product training content
+    MKT->>Partner: Deliver certification training
+    Partner-->>MKT: Complete training modules
+    MKT->>CRM: Record certification status
+    SM->>Partner: Schedule enablement workshop
+    Partner-->>SM: Attend workshop session
+    SM->>CRM: Update partner skill profile
+    Partner->>SM: Request ongoing support
+    SM->>Partner: Provide sales support resources
+    SM->>CRM: Log partner engagement activity
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

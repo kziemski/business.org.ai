@@ -98,6 +98,29 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant HRS as HR Specialist
+    participant HM as Hiring Manager
+    participant Emp as Employee
+    participant HRIS as HRIS System
+    participant HRM as HR Manager
+
+    HRS->>HM: Initiate performance review cycle
+    HM->>Emp: Communicate review expectations
+    Emp->>HRIS: Complete self-assessment
+    HRIS-->>HM: Notify self-assessment complete
+    HM->>HRIS: Submit manager evaluation
+    HRIS-->>HRS: Compile review data
+    HM->>Emp: Conduct review discussion
+    Emp-->>HM: Acknowledge review feedback
+    HM->>HRIS: Finalize performance rating
+    HRIS-->>HRM: Generate performance report
+    HRM->>HRS: Review calibration results
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

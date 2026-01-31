@@ -64,6 +64,26 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant User
+    participant ServiceDesk
+    participant SupportTeam
+    participant ITManager
+    User->>ServiceDesk: Report issue
+    ServiceDesk->>ServiceDesk: Log incident
+    ServiceDesk->>ServiceDesk: Categorize and prioritize
+    ServiceDesk->>SupportTeam: Assign to resolver
+    SupportTeam->>SupportTeam: Diagnose issue
+    SupportTeam->>SupportTeam: Apply resolution
+    SupportTeam->>User: Verify resolution
+    User->>ServiceDesk: Confirm closure
+    ServiceDesk->>IT Manager: Update metrics
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

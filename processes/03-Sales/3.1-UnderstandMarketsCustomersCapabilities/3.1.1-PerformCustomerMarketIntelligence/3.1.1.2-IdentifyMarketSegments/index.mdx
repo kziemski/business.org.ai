@@ -76,6 +76,27 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant SM as Sales Manager
+    participant MKT as Marketing
+    participant CRM as CRM System
+    participant AE as Account Executive
+
+    SM->>MKT: Initiate segmentation analysis
+    MKT->>CRM: Extract customer demographics
+    CRM-->>MKT: Customer profiles and purchase history
+    MKT->>MKT: Analyze customer attributes
+    MKT->>MKT: Define segment criteria
+    MKT->>MKT: Calculate market share by segment
+    MKT->>CRM: Create segment classifications
+    MKT->>SM: Present segment recommendations
+    SM->>AE: Assign target segments
+    AE->>CRM: Update account segment tags
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

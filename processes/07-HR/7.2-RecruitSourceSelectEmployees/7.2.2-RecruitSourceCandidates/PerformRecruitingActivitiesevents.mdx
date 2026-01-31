@@ -98,6 +98,29 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Rec as Recruiter
+    participant HRS as HR Specialist
+    participant HM as Hiring Manager
+    participant HRIS as HRIS System
+    participant Candidate as Candidate
+
+    Rec->>HRIS: Post job opening
+    HRIS-->>Rec: Confirm posting active
+    Candidate->>HRIS: Submit application
+    HRIS-->>Rec: Notify new application
+    Rec->>HRIS: Screen candidate qualifications
+    HRIS-->>Rec: Return screening results
+    Rec->>HM: Present qualified candidates
+    HM-->>Rec: Select candidates for interview
+    Rec->>Candidate: Schedule interview
+    Candidate-->>Rec: Confirm availability
+    Rec->>HRIS: Update candidate status
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

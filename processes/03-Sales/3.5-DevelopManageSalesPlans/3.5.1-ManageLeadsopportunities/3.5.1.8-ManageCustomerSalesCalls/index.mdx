@@ -88,6 +88,32 @@ flowchart LR
     S4 --> S5
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant SR as Sales Rep
+    participant AE as Account Executive
+    participant C as Customer
+    participant SM as Sales Manager
+    participant CRM as CRM System
+
+    SR->>CRM: Review qualified leads
+    SR->>C: Initiate sales call
+    C-->>SR: Express interest and needs
+    SR->>AE: Escalate high-value opportunity
+    AE->>C: Conduct pre-sales discovery
+    AE->>C: Schedule customer meeting
+    C-->>AE: Attend product demonstration
+    AE->>C: Present proposal and pricing
+    C-->>AE: Negotiate terms
+    AE->>SM: Request deal approval
+    SM-->>AE: Approve final terms
+    AE->>C: Close the sale
+    C-->>AE: Sign agreement
+    AE->>CRM: Record sales outcome
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

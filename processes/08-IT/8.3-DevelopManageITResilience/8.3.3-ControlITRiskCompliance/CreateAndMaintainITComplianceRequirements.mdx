@@ -64,6 +64,26 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant ComplianceOfficer
+    participant ITManager
+    participant SecurityAnalyst
+    participant Auditor
+    ComplianceOfficer->>IT Manager: Identify compliance requirements
+    IT Manager->>SecurityAnalyst: Assess current controls
+    SecurityAnalyst->>SecurityAnalyst: Map controls to requirements
+    SecurityAnalyst->>ComplianceOfficer: Report gaps
+    ComplianceOfficer->>IT Manager: Define remediation plan
+    IT Manager->>SecurityAnalyst: Implement controls
+    SecurityAnalyst->>Auditor: Prepare evidence
+    Auditor->>ComplianceOfficer: Validate compliance
+    ComplianceOfficer->>IT Manager: Certify compliance status
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

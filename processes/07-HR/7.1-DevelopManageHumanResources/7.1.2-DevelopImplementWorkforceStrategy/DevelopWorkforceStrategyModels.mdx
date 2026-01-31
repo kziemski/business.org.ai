@@ -97,6 +97,29 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant CHRO as CHRO
+    participant HRM as HR Manager
+    participant HRS as HR Specialist
+    participant HRIS as HRIS System
+    participant Exec as Executive Team
+
+    HRM->>HRS: Initiate develop workforce strategy models process
+    HRS->>HRIS: Retrieve current HR data
+    HRIS-->>HRS: Return workforce metrics
+    HRS->>HRM: Present analysis and recommendations
+    HRM->>CHRO: Review strategic alignment
+    CHRO->>Exec: Present for executive input
+    Exec-->>CHRO: Provide business priorities
+    CHRO->>HRM: Approve strategic direction
+    HRM->>HRIS: Update strategy documentation
+    HRIS-->>HRM: Confirm updates recorded
+    HRM->>HRS: Communicate approved strategy
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

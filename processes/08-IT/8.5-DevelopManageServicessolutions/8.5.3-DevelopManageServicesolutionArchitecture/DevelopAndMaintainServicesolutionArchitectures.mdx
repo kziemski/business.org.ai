@@ -64,6 +64,26 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Architect
+    participant Developer
+    participant ITManager
+    participant SecurityAnalyst
+    IT Manager->>Architect: Define architecture requirements
+    Architect->>Architect: Analyze constraints
+    Architect->>Architect: Design solution architecture
+    Architect->>SecurityAnalyst: Review security aspects
+    SecurityAnalyst->>Architect: Provide security input
+    Architect->>Developer: Present architecture
+    Developer->>Architect: Provide feedback
+    Architect->>IT Manager: Finalize architecture
+    IT Manager->>Architect: Approve design
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

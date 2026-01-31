@@ -99,6 +99,29 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant HRS as HR Specialist
+    participant HRM as HR Manager
+    participant Emp as Employee
+    participant HM as Hiring Manager
+    participant HRIS as HRIS System
+
+    HRS->>HRIS: Identify redeployment candidates
+    HRIS-->>HRS: Return eligible employees
+    HRS->>HRM: Review redeployment options
+    HRM->>HM: Coordinate position availability
+    HM-->>HRM: Confirm open positions
+    HRM->>Emp: Present redeployment opportunity
+    Emp-->>HRM: Express interest
+    HRS->>HRIS: Process transfer request
+    HRIS-->>HRS: Update employee record
+    HRS->>HM: Confirm redeployment
+    HM->>Emp: Welcome to new role
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

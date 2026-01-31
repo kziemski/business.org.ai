@@ -98,6 +98,29 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant HRS as HR Specialist
+    participant Analyst as HR Analyst
+    participant HRIS as HRIS System
+    participant HRM as HR Manager
+    participant Exec as Executive Team
+
+    HRM->>Analyst: Define analytics requirements
+    Analyst->>HRIS: Extract workforce data
+    HRIS-->>Analyst: Return raw data
+    Analyst->>HRS: Validate data quality
+    HRS-->>Analyst: Confirm data accuracy
+    Analyst->>HRIS: Run analytics models
+    HRIS-->>Analyst: Generate insights
+    Analyst->>HRM: Present findings
+    HRM->>Exec: Share strategic insights
+    Exec-->>HRM: Provide feedback
+    HRM->>HRIS: Document decisions
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

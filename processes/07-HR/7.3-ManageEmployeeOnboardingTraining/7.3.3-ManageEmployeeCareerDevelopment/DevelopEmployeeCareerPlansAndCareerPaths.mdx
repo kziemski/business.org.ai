@@ -98,6 +98,29 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Emp as Employee
+    participant HM as Hiring Manager
+    participant HRS as HR Specialist
+    participant HRIS as HRIS System
+    participant LnD as L&D Specialist
+
+    Emp->>HM: Express career aspirations
+    HM->>HRS: Request development planning support
+    HRS->>HRIS: Retrieve employee profile
+    HRIS-->>HRS: Return skills and history
+    HRS->>Emp: Conduct career assessment
+    Emp-->>HRS: Complete competency evaluation
+    HRS->>LnD: Identify development opportunities
+    LnD-->>HRS: Recommend programs
+    HRS->>HM: Present development plan
+    HM->>Emp: Agree on career path
+    Emp->>HRIS: Update development plan
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

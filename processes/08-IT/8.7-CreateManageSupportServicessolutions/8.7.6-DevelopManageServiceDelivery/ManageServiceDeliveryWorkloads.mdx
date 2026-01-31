@@ -64,6 +64,25 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant InfraTeam
+    participant System
+    participant ITManager
+    participant SupportTeam
+    IT Manager->>InfraTeam: Define job requirements
+    InfraTeam->>System: Configure job schedule
+    System->>System: Execute batch jobs
+    System->>InfraTeam: Report job status
+    InfraTeam->>InfraTeam: Monitor execution
+    InfraTeam->>SupportTeam: Handle failures
+    SupportTeam->>System: Restart failed jobs
+    InfraTeam->>IT Manager: Report completion
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

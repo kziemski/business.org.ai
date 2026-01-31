@@ -64,6 +64,26 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant RiskManager
+    participant ITManager
+    participant SecurityAnalyst
+    participant Architect
+    RiskManager->>IT Manager: Initiate risk assessment
+    IT Manager->>SecurityAnalyst: Identify threats
+    SecurityAnalyst->>SecurityAnalyst: Evaluate vulnerabilities
+    SecurityAnalyst->>RiskManager: Report risk findings
+    RiskManager->>RiskManager: Calculate risk scores
+    RiskManager->>Architect: Define mitigation strategies
+    Architect->>IT Manager: Propose controls
+    IT Manager->>IT Manager: Approve risk treatment
+    RiskManager->>IT Manager: Monitor risk status
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

@@ -93,6 +93,30 @@ flowchart LR
 - EmployeeOnboardingProgram
 
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant HRS as HR Specialist
+    participant Emp as New Employee
+    participant HM as Hiring Manager
+    participant HRIS as HRIS System
+    participant Payroll as Payroll
+
+    HRS->>Emp: Send onboarding package
+    Emp-->>HRS: Complete required forms
+    HRS->>HRIS: Create employee record
+    HRIS-->>HRS: Confirm record created
+    HRS->>Payroll: Submit payroll setup
+    Payroll-->>HRS: Confirm payroll enrollment
+    HRS->>HM: Schedule orientation
+    HM->>Emp: Conduct department orientation
+    Emp-->>HM: Complete orientation checklist
+    HM->>HRIS: Update onboarding status
+    HRIS-->>HRS: Confirm onboarding complete
+```
+
 ---
 
 *Source: APQC PCF 10474 (7.3.1.1) - APQC*

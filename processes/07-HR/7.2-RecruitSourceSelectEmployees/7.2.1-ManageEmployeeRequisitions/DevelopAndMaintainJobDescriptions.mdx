@@ -98,6 +98,28 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant HM as Hiring Manager
+    participant Rec as Recruiter
+    participant HRS as HR Specialist
+    participant HRIS as HRIS System
+    participant Approver as Approver
+
+    HM->>Rec: Submit staffing request
+    Rec->>HRS: Verify position requirements
+    HRS->>HRIS: Check budget and headcount
+    HRIS-->>HRS: Confirm allocation available
+    HRS->>Rec: Validate job description
+    Rec->>Approver: Submit requisition for approval
+    Approver-->>Rec: Approve requisition
+    Rec->>HRIS: Create job requisition
+    HRIS-->>Rec: Generate requisition ID
+    Rec->>HM: Confirm requisition opened
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

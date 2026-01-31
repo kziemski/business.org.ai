@@ -64,6 +64,25 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant DataSteward
+    participant DBA
+    participant Architect
+    participant ITManager
+    IT Manager->>DataSteward: Define data requirements
+    DataSteward->>Architect: Design data model
+    Architect->>DBA: Specify implementation
+    DBA->>DBA: Configure database objects
+    DBA->>DataSteward: Validate schema
+    DataSteward->>DataSteward: Define governance rules
+    DataSteward->>IT Manager: Approve data structure
+    DBA->>DBA: Deploy to production
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

@@ -64,6 +64,25 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant ITManager
+    participant InfraTeam
+    participant User
+    participant System
+    IT Manager->>IT Manager: Review license inventory
+    IT Manager->>System: Query usage data
+    System->>IT Manager: Return license metrics
+    IT Manager->>InfraTeam: Identify optimization
+    InfraTeam->>InfraTeam: Reclaim unused licenses
+    IT Manager->>User: Communicate changes
+    IT Manager->>IT Manager: Update license records
+    IT Manager->>IT Manager: Plan renewals
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

@@ -64,6 +64,25 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant ITManager
+    participant Architect
+    participant Developer
+    participant User
+    IT Manager->>IT Manager: Review portfolio
+    IT Manager->>Architect: Assess project health
+    Architect->>Architect: Analyze resource usage
+    Architect->>IT Manager: Report status
+    IT Manager->>User: Validate business value
+    User->>IT Manager: Confirm priorities
+    IT Manager->>Developer: Adjust allocations
+    IT Manager->>IT Manager: Update portfolio plan
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

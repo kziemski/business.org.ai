@@ -64,6 +64,26 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant ITManager
+    participant Developer
+    participant User
+    participant SupportTeam
+    IT Manager->>IT Manager: Identify training needs
+    IT Manager->>Developer: Develop training content
+    Developer->>Developer: Create training materials
+    Developer->>IT Manager: Submit for review
+    IT Manager->>IT Manager: Approve content
+    IT Manager->>User: Schedule training
+    SupportTeam->>User: Deliver training session
+    User->>SupportTeam: Complete training
+    IT Manager->>IT Manager: Track completion
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

@@ -64,6 +64,25 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant InfraTeam
+    participant ITManager
+    participant System
+    participant Auditor
+    IT Manager->>InfraTeam: Define asset requirements
+    InfraTeam->>System: Discover assets
+    System->>InfraTeam: Return asset data
+    InfraTeam->>InfraTeam: Update configuration records
+    InfraTeam->>IT Manager: Report asset status
+    IT Manager->>Auditor: Provide inventory
+    Auditor->>IT Manager: Validate records
+    InfraTeam->>System: Maintain asset lifecycle
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

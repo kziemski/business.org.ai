@@ -64,6 +64,25 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant SecurityAnalyst
+    participant ITManager
+    participant System
+    participant User
+    User->>ServiceDesk: Request access
+    ServiceDesk->>IT Manager: Submit access request
+    IT Manager->>IT Manager: Review request
+    IT Manager->>SecurityAnalyst: Verify permissions
+    SecurityAnalyst->>System: Configure access controls
+    System->>User: Grant access
+    SecurityAnalyst->>SecurityAnalyst: Log access grant
+    SecurityAnalyst->>IT Manager: Confirm provisioning
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

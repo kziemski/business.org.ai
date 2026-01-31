@@ -64,6 +64,28 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Developer
+    participant ReleaseManager
+    participant CI/CDSystem
+    participant QAEngineer
+    participant ITManager
+    Developer->>ReleaseManager: Submit change request
+    ReleaseManager->>ReleaseManager: Review change impact
+    ReleaseManager->>IT Manager: Request approval
+    IT Manager->>ReleaseManager: Approve change
+    ReleaseManager->>CI/CD System: Schedule deployment
+    CI/CD System->>CI/CD System: Execute deployment pipeline
+    CI/CD System->>QA Engineer: Trigger validation tests
+    QA Engineer->>QA Engineer: Verify deployment
+    QA Engineer->>ReleaseManager: Confirm success
+    ReleaseManager->>IT Manager: Close change record
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

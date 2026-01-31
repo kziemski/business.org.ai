@@ -93,6 +93,30 @@ flowchart LR
     S5 --> S6
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant SR as Sales Rep
+    participant AE as Account Executive
+    participant CRM as CRM System
+    participant C as Customer
+    participant SM as Sales Manager
+
+    AE->>CRM: Access account record
+    CRM-->>AE: Display current account details
+    AE->>C: Request updated information
+    C-->>AE: Provide contact and address details
+    AE->>CRM: Update account details
+    AE->>CRM: Record communication preferences
+    SR->>CRM: Retrieve customer profile
+    CRM-->>SR: Return full customer details
+    SR->>CRM: Modify involved party information
+    SM->>CRM: Review account data quality
+    SM->>CRM: Approve or flag changes
+    CRM->>CRM: Sync across systems
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

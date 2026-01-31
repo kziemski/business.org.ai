@@ -98,6 +98,29 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant LnD as L&D Specialist
+    participant HRS as HR Specialist
+    participant Emp as Employee
+    participant HM as Hiring Manager
+    participant HRIS as HRIS System
+
+    LnD->>HRS: Identify training needs
+    HRS->>HRIS: Analyze skills gaps
+    HRIS-->>HRS: Return gap analysis
+    LnD->>HRS: Design training program
+    HRS->>HM: Review training plan
+    HM-->>HRS: Approve employee participation
+    HRS->>Emp: Assign training courses
+    Emp->>HRIS: Complete training modules
+    HRIS-->>LnD: Track completion status
+    LnD->>HRS: Evaluate training effectiveness
+    HRS->>HRIS: Update employee competencies
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

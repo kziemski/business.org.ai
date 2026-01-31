@@ -64,6 +64,25 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant ITManager
+    participant InfraTeam
+    participant SecurityAnalyst
+    participant System
+    IT Manager->>InfraTeam: Initiate continuity planning
+    InfraTeam->>InfraTeam: Identify critical systems
+    InfraTeam->>SecurityAnalyst: Assess recovery requirements
+    SecurityAnalyst->>InfraTeam: Define recovery objectives
+    InfraTeam->>System: Configure backup procedures
+    System->>InfraTeam: Confirm backup status
+    InfraTeam->>InfraTeam: Test recovery procedures
+    InfraTeam->>IT Manager: Report continuity readiness
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

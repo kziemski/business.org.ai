@@ -97,6 +97,28 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Emp as Employee
+    participant HRS as HR Specialist
+    participant Ben as Benefits Specialist
+    participant HRIS as HRIS System
+    participant Vendor as Benefits Vendor
+
+    Emp->>HRIS: Access benefits portal
+    HRIS-->>Emp: Display available options
+    Emp->>HRIS: Select benefit elections
+    HRIS-->>HRS: Notify election submitted
+    HRS->>Ben: Verify eligibility
+    Ben->>HRIS: Confirm enrollment
+    HRIS->>Vendor: Transmit enrollment data
+    Vendor-->>HRIS: Confirm enrollment processed
+    HRIS-->>Ben: Update enrollment status
+    Ben->>Emp: Send confirmation
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

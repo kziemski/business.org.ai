@@ -64,6 +64,27 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant SecurityAnalyst
+    participant ITManager
+    participant InfraTeam
+    participant System
+    System->>SecurityAnalyst: Alert on security event
+    SecurityAnalyst->>SecurityAnalyst: Analyze threat indicators
+    SecurityAnalyst->>IT Manager: Escalate incident
+    IT Manager->>InfraTeam: Initiate containment
+    InfraTeam->>System: Isolate affected systems
+    SecurityAnalyst->>SecurityAnalyst: Conduct forensic analysis
+    SecurityAnalyst->>IT Manager: Report findings
+    IT Manager->>InfraTeam: Implement remediation
+    InfraTeam->>System: Restore services
+    SecurityAnalyst->>IT Manager: Document lessons learned
+```
+
 ## GraphDL Semantic Structure
 
 ```graphdl

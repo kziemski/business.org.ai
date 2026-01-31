@@ -97,6 +97,29 @@ flowchart LR
     S4 --> O3
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant HRS as HR Specialist
+    participant HRM as HR Manager
+    participant Emp as Employee
+    participant HM as Hiring Manager
+    participant HRIS as HRIS System
+
+    HRS->>HRIS: Analyze retention indicators
+    HRIS-->>HRS: Return flight risk data
+    HRS->>HRM: Identify at-risk employees
+    HRM->>HM: Discuss retention concerns
+    HM->>Emp: Conduct stay interview
+    Emp-->>HM: Share feedback
+    HM->>HRS: Report intervention needs
+    HRS->>HRM: Propose retention actions
+    HRM-->>HRS: Approve retention plan
+    HRS->>HRIS: Document retention activities
+    HRIS-->>HRS: Confirm documentation
+```
+
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |
