@@ -108,6 +108,25 @@ Administers structured pay grades, pension contributions, and union-negotiated c
 | Cost per Paycheck | Total payroll processing cost per check | < $5 |
 | Tax Filing Timeliness | On-time payroll tax filings | 100% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Payroll Clerk->>+HRIS: Calculate gross pay
+    HRIS-->>-Payroll Clerk: Return pay calculations
+    Payroll Clerk->>+HRIS: Calculate deductions
+    HRIS-->>-Payroll Clerk: Return net pay
+    Payroll Clerk->>+Payroll Manager: Submit payroll for approval
+    Payroll Manager-->>-Payroll Clerk: Approve payroll run
+    Payroll Clerk->>+HRIS: Execute payment file
+    HRIS-->>-Payroll Clerk: Confirm transmission
+    Payroll Clerk->>+Employee: Notify employees
+    Employee-->>-Payroll Clerk: Acknowledge notification
+    Payroll Clerk->>+Controller: Post payroll entries
+    Controller-->>-Payroll Clerk: Confirm GL posting
+```
+
 ## Related Concepts
 
 - ManualChecks

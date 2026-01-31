@@ -108,6 +108,25 @@ Planning accounts for raw material cost volatility, production capacity constrai
 | Planning Cycle Time | Days to complete annual budgeting cycle | < 45 days |
 | Cost per Budget FTE | Cost of planning function per finance FTE | Industry benchmark |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Cost Accountant->>+ERP System: Extract revenue data
+    ERP System-->>-Cost Accountant: Return sales by segment
+    Cost Accountant->>+ERP System: Extract cost data
+    ERP System-->>-Cost Accountant: Return costs by segment
+    Cost Accountant->>+Cost Accountant: Calculate profitability
+    Note over Cost Accountant: Allocate shared costs
+    Cost Accountant->>+FPA: Build profitability views
+    FPA-->>-Cost Accountant: Return analysis
+    Cost Accountant->>+Controller: Present to management
+    Controller-->>-Cost Accountant: Request drill-downs
+    Cost Accountant->>+Management: Report to executive team
+    Management-->>-Cost Accountant: Acknowledge report
+```
+
 ## Related Concepts
 
 - ProfitCenterAccounting

@@ -54,6 +54,23 @@ seek.Board.of.TrusteeApprovalOfStrategyAndStrategicPlan
 | PrepObject | `Trustee approval of strategy and strategic plan` | Indirect object |
 
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Agent as Agent
+    participant Supervisor as Supervisor
+    participant Customer as Customer
+    participant CRM as CRM
+
+    Agent->>Supervisor: Initiate seek  request
+    Supervisor->>Supervisor: Analyze requirements
+    Supervisor->>Customer: Request validation
+    Customer->>Supervisor: Provide feedback
+    Supervisor->>CRM: Update status
+    CRM->>Agent: Confirm completion
+```
 ---
 
 *Source: APQC PCF 20188 (6.3.2.35) - APQC*

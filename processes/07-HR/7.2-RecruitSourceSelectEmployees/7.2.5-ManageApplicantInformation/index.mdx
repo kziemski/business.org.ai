@@ -16,9 +16,9 @@ children: ["7.2.5.1", "7.2.5.2", "7.2.5.3"]
 
 ## Overview
 
-Process 7.2.5 is a core process that defines the specific procedures for manage applicant information. 
+Process 7.2.5 is a core process within [Recruit, Source, and Select Employees](../) that ensures comprehensive tracking and management of candidate data throughout the hiring lifecycle. This process provides the foundation for efficient, compliant, and data-driven talent acquisition.
 
-Creating and maintaining a system for managing the information of applicants. Create records for all candidates who apply. Maintain and track information through the use applicant-tracking systems.
+Effective applicant information management requires robust Applicant Tracking Systems (ATS) that capture candidate data from multiple sources, enable collaboration among hiring stakeholders, ensure regulatory compliance (EEO, GDPR, data privacy), and provide analytics to optimize recruitment effectiveness. This process also supports candidate experience by maintaining accurate records and enabling timely communications.
 
 ## Process Hierarchy
 
@@ -26,9 +26,9 @@ Creating and maintaining a system for managing the information of applicants. Cr
 graph TD
     C7["7.0 Develop and Manage Human Capital"]
     C7 --> N7_2["7.2 Recruit, source, and select employees"]
-    N7_2 --> N7_2_5["7.2.5 Track candidates"]
+    N7_2 --> N7_2_5["7.2.5 Manage applicant information"]
     style N7_2_5 fill:#e1f5fe
-    N7_2_5 --> N7_2_5_1["7.2.5.1 Obtain candidate background info..."]
+    N7_2_5 --> N7_2_5_1["7.2.5.1 Obtain candidate background info"]
     N7_2_5 --> N7_2_5_2["7.2.5.2 Create applicant record"]
     N7_2_5 --> N7_2_5_3["7.2.5.3 Manage/track applicant data"]
 ```
@@ -43,7 +43,6 @@ graph TD
 | Parent | [7.2](../) |
 | Sub-Processes | 3 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
@@ -52,43 +51,105 @@ manage.ApplicantInformation
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `applicant information` | Direct object |
-
+| Verb | `manage` | Primary action of maintaining and organizing |
+| Object | `ApplicantInformation` | Candidate data and records |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Job Applications"]
+        I2["Resume/CV Submissions"]
+        I3["Referral Information"]
+        I4["Background Check Results"]
+        I5["Interview Feedback"]
     end
 
     subgraph Process["Manage applicant information"]
-        S1["Obtain candidate background..."]
+        S1["Obtain candidate background"]
         S2["Create applicant record"]
-        S3["Manage/track applicant data"]
+        S3["Track application status"]
+        S4["Manage interview data"]
+        S5["Maintain compliance records"]
+        S6["Archive/purge per retention policy"]
+
+        S1 --> S2 --> S3 --> S4
+        S4 --> S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Candidate Profiles"]
+        O2["Application Status Reports"]
+        O3["Compliance Documentation"]
+        O4["Recruitment Analytics"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
 ```
 
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Obtain candidate background information](./ObtainCandidateBackgroundInformation) | 7.2.5.1 | Conducting a background investigation on the candidates with the objective of looking up and compili |
-| [Create applicant record](./CreateApplicantRecord) | 7.2.5.2 | Creating and documenting the records of all applicants |
-| [Manage/track applicant data](./7.2.5.3-ManagetrackApplicantData/) | 7.2.5.3 | Keeping track of all the information about the candidates who apply for jobs |
+| [Obtain candidate background information](./ObtainCandidateBackgroundInformation) | 7.2.5.1 | Conducting background investigations including employment verification, education, and references |
+| [Create applicant record](./CreateApplicantRecord) | 7.2.5.2 | Creating and documenting comprehensive records for all applicants in the ATS |
+| [Manage/track applicant data](./7.2.5.3-ManagetrackApplicantData/) | 7.2.5.3 | Maintaining and tracking all candidate information through the hiring process |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Configure ATS system | HR Technology | HR Director | IT, Recruiting | Management |
+| Create applicant records | Recruiters | Recruiting Manager | Hiring Managers | Candidates |
+| Conduct background checks | Background Vendor | HR Operations | Legal, Candidates | Hiring Manager |
+| Maintain data accuracy | Recruiting Coordinators | Recruiting Manager | Recruiters | Compliance |
+| Ensure data privacy | HR Operations | Legal/Compliance | IT Security | Candidates |
+| Generate analytics | HR Analytics | Recruiting Director | Leadership | Business Units |
+
+## Key Stakeholders
+
+- **Recruiters**: Primary users creating and updating applicant records
+- **Hiring Managers**: Access candidate information for evaluation
+- **HR Operations**: Ensures data integrity and compliance
+- **Legal/Compliance**: Oversees data privacy and retention policies
+- **IT**: Maintains ATS infrastructure and integrations
+- **Candidates**: Subject of data with privacy rights
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Data Completeness | Percentage of required fields populated | >95% |
+| Record Accuracy | Audit pass rate for applicant data | >98% |
+| System Utilization | Active users as % of licensed users | >85% |
+| Time to Record Creation | Hours from application to ATS entry | <4 hours |
+| Compliance Score | EEO/OFCCP audit readiness | 100% |
+| Data Retention Compliance | Records purged per policy | 100% |
+| Candidate Experience Score | Applicant satisfaction with process | >4.0/5.0 |
+| Source Attribution Accuracy | Applications with accurate source data | >90% |
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Talent acquisition oversight
+- [Information Technology](/departments/IT) - ATS system management
+- [Legal](/departments/Legal) - Data privacy and compliance
+- [Operations](/departments/Operations) - Hiring manager access
+
+## Related Occupations
+
+- [Human Resources Specialists](/occupations/Business/HumanResourcesSpecialists) - Recruiter operations
+- [Human Resources Managers](/occupations/Management/HumanResourcesManagers) - Process oversight
+- [Computer Systems Analysts](/occupations/Computer/ComputerSystemsAnalysts) - ATS administration
+
+## Related Concepts
+
+- ApplicantTrackingSystem
+- CandidateExperience
+- DataPrivacy
+- RecruitmentAnalytics
+- BackgroundVerification
+- ComplianceManagement
 
 ---
 

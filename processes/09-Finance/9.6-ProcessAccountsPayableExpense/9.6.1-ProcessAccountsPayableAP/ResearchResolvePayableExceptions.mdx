@@ -108,6 +108,23 @@ Handles merchandise payables with trade discounts, markdown allowances, and coop
 | Cost per Invoice | Total AP cost per invoice processed | < $3 |
 | Straight-Through Processing Rate | Invoices processed without manual intervention | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AP Clerk->>+ERP System: Identify payment exceptions
+    ERP System-->>-AP Clerk: Return exception list
+    AP Clerk->>+ERP System: Research transaction history
+    ERP System-->>-AP Clerk: Return historical data
+    AP Clerk->>+Vendor: Request vendor clarification
+    Vendor-->>-AP Clerk: Provide documentation
+    AP Clerk->>+AP Manager: Escalate complex issues
+    AP Manager-->>-AP Clerk: Provide resolution guidance
+    AP Clerk->>+ERP System: Apply corrections
+    ERP System-->>-AP Clerk: Confirm resolution
+```
+
 ## Related Concepts
 
 - PayableExceptions

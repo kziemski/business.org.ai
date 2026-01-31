@@ -110,6 +110,26 @@ Handles merchandise payables with trade discounts, markdown allowances, and coop
 | Cost per Invoice | Total AP cost per invoice processed | < $3 |
 | Straight-Through Processing Rate | Invoices processed without manual intervention | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AP Clerk->>+ERP System: Retrieve invoice data
+    ERP System-->>-AP Clerk: Return invoice details
+    AP Clerk->>+ERP System: Match with purchase order
+    ERP System-->>-AP Clerk: Return matching results
+    AP Clerk->>+ERP System: Verify vendor master data
+    ERP System-->>-AP Clerk: Return vendor information
+    alt Match successful
+        AP Clerk->>+ERP System: Update invoice status
+        ERP System-->>-AP Clerk: Confirm invoice validated
+    else Discrepancy found
+        AP Clerk->>+AP Manager: Escalate for review
+        AP Manager-->>-AP Clerk: Provide resolution
+    end
+```
+
 ## Related Concepts
 
 - APPayFile

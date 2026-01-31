@@ -108,6 +108,23 @@ Handles merchandise payables with trade discounts, markdown allowances, and coop
 | Cost per Invoice | Total AP cost per invoice processed | < $3 |
 | Straight-Through Processing Rate | Invoices processed without manual intervention | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Accountant->>+ERP System: Initiate reimbursements and advances
+    ERP System-->>-Accountant: Return relevant data
+    Accountant->>+Controller: Submit for review
+    Controller-->>-Accountant: Approve processing
+    Accountant->>+ERP System: Execute process action
+    ERP System-->>-Accountant: Confirm completion
+    Accountant->>+Auditor: Document for audit
+    Auditor-->>-Accountant: Confirm documentation
+    Accountant->>+CFO: Report to management
+    CFO-->>-Accountant: Acknowledge report
+```
+
 ## Related Concepts
 
 - Reimbursements

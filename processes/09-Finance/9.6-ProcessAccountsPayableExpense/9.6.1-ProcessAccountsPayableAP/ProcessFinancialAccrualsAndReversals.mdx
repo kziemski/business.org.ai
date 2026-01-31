@@ -108,6 +108,24 @@ Handles merchandise payables with trade discounts, markdown allowances, and coop
 | Cost per Invoice | Total AP cost per invoice processed | < $3 |
 | Straight-Through Processing Rate | Invoices processed without manual intervention | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AP Clerk->>+ERP System: Query open receipts
+    ERP System-->>-AP Clerk: Return uninvoiced receipts
+    AP Clerk->>+ERP System: Calculate accrual amounts
+    ERP System-->>-AP Clerk: Return accrual entries
+    AP Clerk->>+Controller: Post accrual journal entries
+    Controller-->>-AP Clerk: Confirm posting
+    Note over AP Clerk,ERP System: Period end close
+    AP Clerk->>+ERP System: Generate reversal entries
+    ERP System-->>-AP Clerk: Return reversal batch
+    AP Clerk->>+Controller: Post reversals
+    Controller-->>-AP Clerk: Confirm reversal posting
+```
+
 ## Related Concepts
 
 - FinancialAccruals

@@ -16,21 +16,21 @@ children: ["7.3.3.1", "7.3.3.2", "7.3.3.3"]
 
 ## Overview
 
-Process 7.3.3 is a core process that defines the specific procedures for manage employee career development. 
+Process 7.3.3 is a core process within [Manage Employee Onboarding, Training, and Development](../) that provides the framework for employees to grow their careers within the organization. This process establishes clear career paths, defines competency requirements, and enables systematic skill development aligned with both individual aspirations and organizational needs.
 
-Establishing employee development guidelines. Lay out career paths and plans for them. Manage the development of their skills to enhance their skills, ability, and knowledge.
+Effective career development creates a partnership between employees, managers, and the organization. It includes transparent career paths, competency frameworks, individual development planning, mentoring programs, stretch assignments, and internal mobility opportunities. When implemented well, career development improves engagement, reduces turnover, builds internal talent pipelines, and ensures the organization has capabilities needed for future success.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C7["7.0 Develop and Manage Human Capital"]
-    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    C7 --> N7_3["7.3 Manage employee onboarding, training, and development"]
     N7_3 --> N7_3_3["7.3.3 Manage employee career development"]
     style N7_3_3 fill:#e1f5fe
-    N7_3_3 --> N7_3_3_1["7.3.3.1 Define employee development guid..."]
-    N7_3_3 --> N7_3_3_2["7.3.3.2 Develop employee career plans an..."]
-    N7_3_3 --> N7_3_3_3["7.3.3.3 Manage employee skill and compet..."]
+    N7_3_3 --> N7_3_3_1["7.3.3.1 Define employee development guidelines"]
+    N7_3_3 --> N7_3_3_2["7.3.3.2 Develop career plans and paths"]
+    N7_3_3 --> N7_3_3_3["7.3.3.3 Manage skill and competency development"]
 ```
 
 ## Key Statistics
@@ -43,57 +43,115 @@ graph TD
 | Parent | [7.3](../) |
 | Sub-Processes | 3 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-manage.EmployeeCareerDevelopment
+manage.CareerDevelopment.for.Employees
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `employee career development` | Direct object |
-
+| Verb | `manage` | Primary action of directing growth |
+| Object | `CareerDevelopment` | Progression and skill building |
+| Preposition | `for` | Beneficiary relationship |
+| PrepObject | `Employees` | Workforce members |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Competency Framework"]
+        I2["Career Path Models"]
+        I3["Employee Aspirations"]
+        I4["Skills Assessment"]
+        I5["Business Strategy"]
     end
 
     subgraph Process["Manage employee career development"]
-        S1["Define employee development..."]
-        S2["Develop employee career pla..."]
-        S3["Manage employee skill and c..."]
+        S1["Define development guidelines"]
+        S2["Assess current skills/gaps"]
+        S3["Create career plans"]
+        S4["Identify development opportunities"]
+        S5["Track skill development"]
+        S6["Support career transitions"]
+
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Development Guidelines"]
+        O2["Career Plans"]
+        O3["Competency Profiles"]
+        O4["Succession Candidates"]
+        O5["Internal Mobility"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
 ```
 
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Define employee development guidelines](./DefineEmployeeDevelopmentGuidelines) | 7.3.3.1 | Outlining the guidelines for development of employees |
-| [Develop employee career plans and career paths](./DevelopEmployeeCareerPlansAndCareerPaths) | 7.3.3.2 | Designing a future career path for the employees that encourages them to explore and gather informat |
-| [Manage employee skill and competency development](./ManageEmployeeSkillAndCompetencyDevelopment) | 7.3.3.3 | Administering the development of employee skills |
+| [Define employee development guidelines](./DefineEmployeeDevelopmentGuidelines) | 7.3.3.1 | Establishing organizational standards for development activities |
+| [Develop employee career plans and paths](./DevelopEmployeeCareerPlansAndCareerPaths) | 7.3.3.2 | Creating visible career progression routes and individual plans |
+| [Manage employee skill and competency development](./ManageEmployeeSkillAndCompetencyDevelopment) | 7.3.3.3 | Tracking and advancing individual skill growth |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define competency framework | Talent Management | CHRO | Business Leaders | All Employees |
+| Create career paths | HR/Talent Team | HR Director | Job Families | Employees |
+| Conduct career discussions | Manager | Manager | HR Business Partner | Employee |
+| Develop individual plans | Employee & Manager | Manager | Talent Management | HR |
+| Identify development actions | Employee | Manager | L&D | HR Business Partner |
+| Track skill development | HR Operations | Talent Management | Managers | Leadership |
+
+## Key Stakeholders
+
+- **Talent Management Team**: Designs career frameworks and programs
+- **Managers**: Conducts career conversations, supports development
+- **Employees**: Owns career growth, pursues development
+- **HR Business Partners**: Advises on career opportunities
+- **Learning & Development**: Provides development resources
+- **Leadership**: Models career development, sponsors talent
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Career Plan Coverage | Employees with documented career plans | >70% |
+| Internal Fill Rate | Positions filled by internal candidates | >30% |
+| Competency Progress | Employees advancing competency levels | >40% annually |
+| Development Goal Completion | Career development goals achieved | >75% |
+| Career Conversation Frequency | Career discussions per year | >2 |
+| Internal Mobility Rate | Employees moving to new roles | >15% |
+| Retention of Developed Talent | Retention of high-development employees | >90% |
+| Career Satisfaction | Employee satisfaction with career support | >75% |
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Career framework ownership
+- [Learning & Development](/departments/HumanResources/LearningDevelopment) - Development delivery
+- [All Departments](/departments) - Career path definition and execution
+
+## Related Occupations
+
+- [Training and Development Managers](/occupations/Management/TrainingDevelopmentManagers) - Program design
+- [Human Resources Managers](/occupations/Management/HumanResourcesManagers) - Career framework oversight
+- [Human Resources Specialists](/occupations/Business/HumanResourcesSpecialists) - Career coaching
 
 ## Related Concepts
 
-- EmployeeCareerDevelopment
-
+- CareerPathing
+- CompetencyManagement
+- TalentDevelopment
+- SuccessionPlanning
+- InternalMobility
+- MentoringPrograms
+- SkillsFramework
 
 ---
 

@@ -110,6 +110,23 @@ Uses percentage-of-completion or completed-contract methods with milestone-based
 | Billing Error Rate | Percentage of invoices with errors | < 0.5% |
 | Credit Memo Volume | Number of credit adjustments issued | Declining trend |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AR Clerk->>+ERP System: Retrieve billable transactions
+    ERP System-->>-AR Clerk: Return billing data
+    AR Clerk->>+ERP System: Generate invoice batch
+    ERP System-->>-AR Clerk: Return invoice documents
+    AR Clerk->>+AR Manager: Submit for approval
+    AR Manager-->>-AR Clerk: Approve invoice batch
+    AR Clerk->>+Customer: Transmit invoices
+    Customer-->>-AR Clerk: Acknowledge receipt
+    AR Clerk->>+ERP System: Post receivable entries
+    ERP System-->>-AR Clerk: Confirm AR posting
+```
+
 ## Related Concepts
 
 - BillingData

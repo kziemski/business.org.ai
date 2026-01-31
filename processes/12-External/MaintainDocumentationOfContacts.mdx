@@ -66,6 +66,20 @@ flowchart LR
     D -- "Issues Found" --> C
 ```
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant PRManager as PR Manager
+    participant InvestorRelations as Investor Relations
+    participant GovernmentAffairs as Government Affairs
+
+    PRManager->>InvestorRelations: Initiate maintain documentation of contacts request
+    InvestorRelations->>InvestorRelations: Process request
+    InvestorRelations->>GovernmentAffairs: Request validation
+    GovernmentAffairs->>PRManager: Confirm completion
+```
 ## RACI Matrix
 
 | Activity | Manager | Specialist | Manager | Director |

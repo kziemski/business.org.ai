@@ -108,6 +108,21 @@ Manages R&D tax credits, IP holding structures, and digital services tax obligat
 | Tax Audit Adjustments | Value of audit-imposed adjustments | < 1% of tax liability |
 | Tax Provision Accuracy | Accuracy of quarterly tax provision | > 98% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Tax Analyst->>+ERP System: Extract tax data
+    ERP System-->>-Tax Analyst: Return relevant data
+    Tax Analyst->>+Tax Manager: Submit for review
+    Tax Manager-->>-Tax Analyst: Approve processing
+    Tax Analyst->>+External Advisor: Consult on treatment
+    External Advisor-->>-Tax Analyst: Provide guidance
+    Tax Analyst->>+Controller: Update tax records
+    Controller-->>-Tax Analyst: Confirm update
+```
+
 ## Related Concepts
 
 - TaxPlanning

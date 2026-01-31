@@ -92,6 +92,21 @@ flowchart LR
     S5 --> S6
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Analyst as Strategy Analyst
+    participant Dir as Strategy Director
+    participant Exec as Executive Team
+    
+    Analyst->>+Dir: Design validation approach
+    Dir->>+Analyst: Conduct customer testing
+    Analyst->>+Dir: Analyze validation results
+    Dir->>+Exec: Present validation findings
+    Exec-->>-Dir: Approve experience changes
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

@@ -108,6 +108,21 @@ Uses fund accounting with modified accrual basis and compliance with GASB standa
 | Reporting Timeliness | On-time delivery of financial reports | 100% |
 | Audit Adjustments | Number of material audit adjustments | 0 |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Accountant->>+ERP System: Retrieve accounting data
+    ERP System-->>-Accountant: Return relevant records
+    Accountant->>+Controller: Submit for review
+    Controller-->>-Accountant: Approve processing
+    Accountant->>+ERP System: Execute process action
+    ERP System-->>-Accountant: Confirm GL update
+    Accountant->>+Auditor: Document for audit
+    Auditor-->>-Accountant: Confirm documentation
+```
+
 ## Related Concepts
 
 - Allocations

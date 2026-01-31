@@ -107,6 +107,21 @@ Focuses on property valuation, lease accounting (ASC 842), and capital improveme
 | Asset Register Completeness | Percentage of assets properly recorded | 100% |
 | Return on Assets (ROA) | Net income relative to total assets | Industry benchmark |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Treasury Analyst->>+ERP System: Retrieve project data
+    ERP System-->>-Treasury Analyst: Return project records
+    Treasury Analyst->>+Bank: Coordinate with PM
+    Bank-->>-Treasury Analyst: Provide project updates
+    Treasury Analyst->>+Treasurer: Submit for review
+    Treasurer-->>-Treasury Analyst: Approve processing
+    Treasury Analyst->>+Controller: Update capital records
+    Controller-->>-Treasury Analyst: Confirm update
+```
+
 ## Related Concepts
 
 - CapitalInvestmentPolicies

@@ -81,6 +81,23 @@ flowchart LR
     P1 --> P2 --> P3 --> P4 --> P5
 ```
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Agent as Agent
+    participant Supervisor as Supervisor
+    participant Customer as Customer
+    participant CRM as CRM
+
+    Agent->>Supervisor: Initiate develop and set district goals request
+    Supervisor->>Supervisor: Analyze requirements
+    Supervisor->>Customer: Request validation
+    Customer->>Supervisor: Provide feedback
+    Supervisor->>CRM: Update status
+    CRM->>Agent: Confirm completion
+```
 ## RACI Matrix
 
 | Activity | Customer Service Manager | CX Director | Quality Assurance Team | IT Support |

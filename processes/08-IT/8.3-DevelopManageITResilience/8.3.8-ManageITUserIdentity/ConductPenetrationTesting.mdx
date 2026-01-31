@@ -69,19 +69,19 @@ flowchart LR
 ```mermaid
 sequenceDiagram
     autonumber
-    participant QAEngineer
-    participant Developer
-    participant System
+    participant SecurityAnalyst
     participant ITManager
-    Developer->>QA Engineer: Request testing
-    QA Engineer->>QA Engineer: Prepare test environment
-    QA Engineer->>System: Execute test cases
-    System->>QA Engineer: Return test results
-    QA Engineer->>QA Engineer: Analyze results
-    QA Engineer->>Developer: Report defects (if any)
-    Developer->>Developer: Resolve issues
-    QA Engineer->>System: Re-execute tests
-    QA Engineer->>IT Manager: Approve release
+    participant System
+    participant Architect
+    IT Manager->>SecurityAnalyst: Define penetration test scope
+    SecurityAnalyst->>SecurityAnalyst: Plan attack vectors
+    SecurityAnalyst->>System: Execute reconnaissance
+    SecurityAnalyst->>System: Attempt exploitation
+    System->>SecurityAnalyst: Return vulnerability data
+    SecurityAnalyst->>SecurityAnalyst: Document findings
+    SecurityAnalyst->>Architect: Review vulnerabilities
+    Architect->>Architect: Design remediation
+    SecurityAnalyst->>IT Manager: Present security report
 ```
 
 ## GraphDL Semantic Structure

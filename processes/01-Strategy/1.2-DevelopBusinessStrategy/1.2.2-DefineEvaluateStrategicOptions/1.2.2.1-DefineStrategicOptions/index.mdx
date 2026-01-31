@@ -76,6 +76,21 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Analyst as Strategy Analyst
+    participant Dir as Strategy Director
+    participant Exec as Executive Team
+    
+    Analyst->>+Dir: Identify strategic alternatives
+    Dir->>+Analyst: Evaluate option feasibility
+    Analyst->>+Dir: Document option parameters
+    Dir->>+Exec: Present strategic options
+    Exec-->>-Dir: Select priority options
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

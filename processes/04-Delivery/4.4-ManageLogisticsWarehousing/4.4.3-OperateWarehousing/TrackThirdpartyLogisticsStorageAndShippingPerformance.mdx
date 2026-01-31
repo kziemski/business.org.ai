@@ -54,6 +54,23 @@ track.ThirdpartyLogisticsStorageAndShippingPerformance
 | Object | `third-party logistics storage and shipping performance` | Direct object |
 
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Warehouse as Warehouse
+    participant Logistics as Logistics
+    participant Carrier as Carrier
+    participant Customer as Customer
+
+    Warehouse->>Logistics: Initiate track third-party logistics storage and shipping performance request
+    Logistics->>Logistics: Analyze requirements
+    Logistics->>Carrier: Request validation
+    Carrier->>Logistics: Provide feedback
+    Logistics->>Customer: Update status
+    Customer->>Warehouse: Confirm completion
+```
 ---
 
 *Source: APQC PCF 10358 (4.4.3.6) - APQC*

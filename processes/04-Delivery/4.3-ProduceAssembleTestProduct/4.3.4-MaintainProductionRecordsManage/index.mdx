@@ -16,9 +16,9 @@ children: ["4.3.4.1", "4.3.4.2"]
 
 ## Overview
 
-Process 4.3.4 is a core process that defines the specific procedures for maintain production records and manage lot traceability. 
+Process 4.3.4 is a core process within [Produce/Assemble/Test Product](../) that ensures comprehensive documentation of manufacturing activities and enables end-to-end traceability of products through lot management. This process is critical for quality control, regulatory compliance, recall management, and continuous improvement.
 
-Perpetuating the production records by systematically documenting and using it to ensure the effective management of lots. Determine the lot numbering system and its use. (The lot number enables tracking of the constituent parts, as well as labor and equipment records involved in the manufacturing of a product. It enables manufacturers and to perform quality control checks, calculate expiration dates, and issue corrections of their production output.)
+Production records capture all aspects of manufacturing including materials used, equipment settings, personnel involved, environmental conditions, quality checks, and timing. Lot traceability enables tracking products from raw materials through finished goods and into the distribution chain, supporting rapid response to quality issues and regulatory requirements.
 
 ## Process Hierarchy
 
@@ -26,7 +26,7 @@ Perpetuating the production records by systematically documenting and using it t
 graph TD
     C4["4.0 Deliver Physical Products"]
     C4 --> N4_3["4.3 Produce/Assemble/Test product"]
-    N4_3 --> N4_3_4["4.3.4 Maintain production records and manag..."]
+    N4_3 --> N4_3_4["4.3.4 Maintain production records and lot traceability"]
     style N4_3_4 fill:#e1f5fe
     N4_3_4 --> N4_3_4_1["4.3.4.1 Determine lot numbering system"]
     N4_3_4 --> N4_3_4_2["4.3.4.2 Determine lot use"]
@@ -42,55 +42,131 @@ graph TD
 | Parent | [4.3](../) |
 | Sub-Processes | 2 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-maintain.ProductionRecordsAndManageLotTraceability
+maintain.ProductionRecords.for.LotTraceability
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `maintain` | Primary action |
-| Object | `production records and manage lot traceability` | Direct object |
-
+| Verb | `maintain` | Primary action of preserving and updating |
+| Object | `ProductionRecords` | Manufacturing documentation |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `LotTraceability` | Tracking capability |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Production Orders"]
+        I2["Material Lot Information"]
+        I3["Equipment Data"]
+        I4["Quality Results"]
+        I5["Personnel Records"]
     end
 
-    subgraph Process["Maintain production records and manage lot traceability"]
+    subgraph Process["Maintain production records and lot traceability"]
         S1["Determine lot numbering system"]
-        S2["Determine lot use"]
+        S2["Assign lot numbers"]
+        S3["Record production data"]
+        S4["Link materials to lots"]
+        S5["Determine lot use/allocation"]
+        S6["Archive records"]
+
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Lot Numbers"]
+        O2["Production Records"]
+        O3["Traceability Data"]
+        O4["Genealogy Reports"]
+        O5["Compliance Documentation"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
 ```
 
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Determine lot numbering system](./DetermineLotNumberingSystem) | 4.3.4.1 | Allotting an identification number to a particular quantity or lot of material manufactured |
-| [Determine lot use](./DetermineLotUse) | 4.3.4.2 | Identifying the use of production lots |
+| [Determine lot numbering system](./DetermineLotNumberingSystem) | 4.3.4.1 | Establishing systematic lot identification schemes for tracking |
+| [Determine lot use](./DetermineLotUse) | 4.3.4.2 | Defining how lots are allocated, consumed, and tracked in production |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Design lot numbering system | Production Engineering | Plant Manager | Quality, IT | Production |
+| Assign lot numbers | Production Operators | Production Supervisor | Quality | Warehouse |
+| Record production data | Production Operators | Production Supervisor | Quality | Engineering |
+| Maintain traceability links | MES/IT Systems | Production Manager | Quality | Supply Chain |
+| Archive production records | Document Control | Quality Manager | Legal, IT | Regulatory |
+| Support recall investigations | Quality Team | Quality Director | Production, Legal | Executive |
+
+## Key Stakeholders
+
+- **Production Operations**: Creates and maintains records during manufacturing
+- **Quality Assurance**: Uses records for quality control and investigations
+- **Regulatory/Compliance**: Ensures documentation meets regulatory requirements
+- **Supply Chain**: Tracks materials through production
+- **IT/MES**: Maintains systems for record capture and retrieval
+- **Customers**: May require traceability documentation
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Record Completeness | Production records with all required data | >99.5% |
+| Traceability Time | Time to trace lot from finished goods to raw materials | <30 minutes |
+| Record Accuracy | Error-free production records | >99% |
+| Data Entry Timeliness | Records entered within shift of production | >98% |
+| Recall Response Time | Time to identify affected products | <4 hours |
+| Audit Readiness | Records available for regulatory audit | 100% |
+| Lot Genealogy Accuracy | Correct parent/child lot relationships | >99.9% |
+| Record Retention Compliance | Records retained per retention policy | 100% |
+
+## Related Departments
+
+- [Manufacturing](/departments/Operations/Manufacturing) - Production record creation
+- [Quality Assurance](/departments/Quality) - Record validation and use
+- [Information Technology](/departments/IT) - MES and document systems
+- [Supply Chain](/departments/SupplyChain) - Material traceability
+- [Regulatory Affairs](/departments/Regulatory) - Compliance documentation
+
+## Related Occupations
+
+- [Industrial Production Managers](/occupations/Management/IndustrialProductionManagers) - Production oversight
+- [Quality Control Inspectors](/occupations/QualityControlInspectors) - Quality documentation
+- [Computer Systems Analysts](/occupations/Computer/ComputerSystemsAnalysts) - MES administration
+- [Logisticians](/occupations/Business/Logisticians) - Supply chain traceability
+
+## Industry Variations
+
+### Life Sciences/Pharmaceutical
+Extensive GMP documentation requirements, electronic batch records, 21 CFR Part 11 compliance for electronic signatures, and validated systems for all production records.
+
+### Food and Beverage
+FSMA traceability requirements, expiration date management, allergen tracking, and rapid recall capability requirements.
+
+### Automotive
+Part serialization, VIN-level traceability, IATF 16949 documentation requirements, and supplier lot linkages.
+
+### Aerospace
+AS9100 documentation standards, configuration management, serialized part tracking, and lifetime record retention.
 
 ## Related Concepts
 
-- ProductionRecords
-- ManageLotTraceability
-
+- LotTracking
+- BatchRecords
+- ProductGenealogy
+- ManufacturingExecutionSystem
+- QualityDocumentation
+- RecallManagement
+- RegulatoryCompliance
 
 ---
 

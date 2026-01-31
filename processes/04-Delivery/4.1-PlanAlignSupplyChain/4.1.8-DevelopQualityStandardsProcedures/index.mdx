@@ -16,16 +16,16 @@ children: ["4.1.8.1", "4.1.8.2", "4.1.8.3"]
 
 ## Overview
 
-Process 4.1.8 is a core process that defines the specific procedures for develop quality standards and procedures. 
+Process 4.1.8 is a core process within [Plan for and Align Supply Chain Resources](../) that establishes the quality framework for production operations. This process defines what quality means for each product, how it will be measured, and the procedures for ensuring consistent quality delivery.
 
-Developing standards and procedures for maintaining the quality of products/services. Establish desired quality targets. Create standardized procedures for the quality. Ensure quality specifications are effectively communicated.
+Quality standards and procedures translate customer requirements and regulatory mandates into measurable specifications and actionable work instructions. Effective quality planning prevents defects through clear standards rather than relying solely on inspection to detect them. This process supports continuous improvement by establishing baselines and enabling measurement of quality performance.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C4["4.0 Deliver Physical Products"]
-    C4 --> N4_1["4.1 Plan for and align supply chain resou..."]
+    C4 --> N4_1["4.1 Plan for and align supply chain resources"]
     N4_1 --> N4_1_8["4.1.8 Develop quality standards and procedures"]
     style N4_1_8 fill:#e1f5fe
     N4_1_8 --> N4_1_8_1["4.1.8.1 Establish quality targets"]
@@ -43,58 +43,131 @@ graph TD
 | Parent | [4.1](../) |
 | Sub-Processes | 3 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-develop.QualityStandardsAndProcedures
+develop.QualityStandards.for.Production
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `develop` | Primary action |
-| Object | `quality standards and procedures` | Direct object |
-
+| Verb | `develop` | Primary action of creating |
+| Object | `QualityStandards` | Specifications and criteria |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `Production` | Manufacturing operations |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Customer Requirements"]
+        I2["Regulatory Standards"]
+        I3["Product Specifications"]
+        I4["Industry Benchmarks"]
+        I5["Historical Quality Data"]
     end
 
     subgraph Process["Develop quality standards and procedures"]
         S1["Establish quality targets"]
-        S2["Develop standard testing pr..."]
-        S3["Communicate quality specifi..."]
+        S2["Define specifications"]
+        S3["Develop testing procedures"]
+        S4["Create work instructions"]
+        S5["Communicate specifications"]
+        S6["Train stakeholders"]
+
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Quality Standards"]
+        O2["Testing Procedures"]
+        O3["Work Instructions"]
+        O4["Specification Documents"]
+        O5["Training Materials"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
 ```
 
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Establish quality targets](./EstablishQualityTargets) | 4.1.8.1 | Defining specific qualitative and quantitative target figures |
-| [Develop standard testing procedures](./DevelopStandardTestingProcedures) | 4.1.8.2 | Creating standard procedures for testing the quality of products/services |
-| [Communicate quality specifications](./CommunicateQualitySpecifications) | 4.1.8.3 | Communicating the desired quality specifications to the manufacturing units, as well as the distribu |
+| [Establish quality targets](./EstablishQualityTargets) | 4.1.8.1 | Setting measurable quality goals aligned with customer and business needs |
+| [Develop standard testing procedures](./DevelopStandardTestingProcedures) | 4.1.8.2 | Creating consistent, validated methods for quality verification |
+| [Communicate quality specifications](./CommunicateQualitySpecifications) | 4.1.8.3 | Ensuring all stakeholders understand and can apply quality requirements |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define quality targets | Quality Engineering | Quality Director | Product, Customer | Production |
+| Develop specifications | Quality Engineering | Quality Manager | Engineering, Regulatory | Supply Chain |
+| Create testing procedures | Quality Engineering | Quality Manager | Production, Lab | Inspectors |
+| Write work instructions | Quality/Engineering | Quality Manager | Production | Operators |
+| Validate procedures | Quality Assurance | Quality Director | Regulatory | Management |
+| Communicate standards | Quality Training | Quality Manager | All Functions | All Staff |
+
+## Key Stakeholders
+
+- **Quality Engineering**: Develops standards and procedures
+- **Product Engineering**: Provides design specifications
+- **Production**: Implements standards in manufacturing
+- **Regulatory Affairs**: Ensures compliance with regulations
+- **Customers**: Defines requirements and expectations
+- **Suppliers**: Must meet incoming quality standards
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Specification Coverage | Products with documented quality standards | 100% |
+| Procedure Compliance | Adherence to documented procedures | >98% |
+| First Pass Yield | Products meeting specs on first attempt | >98% |
+| Customer Complaints | Quality-related complaints per million units | <100 PPM |
+| Specification Changes | Frequency of standard revisions | Controlled |
+| Training Completion | Staff trained on quality procedures | 100% |
+| Audit Findings | Quality standard-related audit issues | Zero critical |
+| Process Capability (Cpk) | Process capability vs. specifications | >1.33 |
+
+## Related Departments
+
+- [Quality Assurance](/departments/Quality) - Standard development
+- [Engineering](/departments/Engineering) - Specification input
+- [Manufacturing](/departments/Operations/Manufacturing) - Standard implementation
+- [Regulatory Affairs](/departments/Regulatory) - Compliance alignment
+
+## Related Occupations
+
+- [Quality Control Inspectors](/occupations/QualityControlInspectors) - Standard application
+- [Industrial Engineers](/occupations/Engineering/IndustrialEngineers) - Process design
+- [Quality Assurance Managers](/occupations/Management/QualityAssuranceManagers) - Standard oversight
+- [Compliance Officers](/occupations/Business/ComplianceOfficers) - Regulatory alignment
+
+## Industry Variations
+
+### Pharmaceutical/Life Sciences
+GMP requirements, FDA/EMA compliance, validation protocols, and extensive documentation requirements for quality standards.
+
+### Automotive
+IATF 16949 standards, APQP/PPAP processes, and supplier quality requirements integrated into quality planning.
+
+### Aerospace
+AS9100 standards, special process certification, and customer-specific quality requirements.
+
+### Food and Beverage
+HACCP plans, food safety standards, and regulatory compliance for quality in food production.
 
 ## Related Concepts
 
-- QualityStandards
-- Procedures
-
+- QualityManagement
+- ProductSpecifications
+- TestingProcedures
+- QualityPlanning
+- ProcessCapability
+- RegulatoryCompliance
+- ContinuousImprovement
 
 ---
 

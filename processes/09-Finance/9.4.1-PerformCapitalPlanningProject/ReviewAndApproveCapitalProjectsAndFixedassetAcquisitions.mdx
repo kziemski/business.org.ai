@@ -107,6 +107,24 @@ Focuses on property valuation, lease accounting (ASC 842), and capital improveme
 | Asset Register Completeness | Percentage of assets properly recorded | 100% |
 | Return on Assets (ROA) | Net income relative to total assets | Industry benchmark |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Project Manager->>+Capital Analyst: Submit capital request
+    Capital Analyst->>+ERP System: Create capital project
+    ERP System-->>-Capital Analyst: Return project code
+    Capital Analyst->>+Controller: Prepare justification
+    Controller-->>-Capital Analyst: Review financial analysis
+    Capital Analyst->>+CFO: Submit for approval
+    CFO->>+Executive: Present to executive
+    Executive-->>-CFO: Approve or reject
+    CFO-->>-Capital Analyst: Return decision
+    Capital Analyst->>+ERP System: Update project status
+    ERP System-->>-Capital Analyst: Confirm update
+```
+
 ## Related Concepts
 
 

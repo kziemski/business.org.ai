@@ -12,24 +12,37 @@ children: ["10.3.1", "10.3.2", "10.3.3"]
 
 # Maintain assets
 
-> Preserving productive assets through the planning, managing, and performance of preventative, routine, and critical maintenance work.
+> Preserving productive assets through the planning, managing, and performance of preventative, routine, and critical maintenance work. Effective maintenance extends asset life, maximizes availability, and minimizes total cost of ownership.
 
 ## Overview
 
-Group 10.3 is a process group within APQC Category 10.0 (Acquire, Construct, and Manage Assets). 
+Process Group 10.3 encompasses all activities required to keep organizational assets in optimal operating condition. This includes strategic maintenance planning, day-to-day maintenance management, and the execution of preventive, corrective, and predictive maintenance activities.
 
-Preserving productive assets through the planning, managing, and performance of preventative, routine, and critical maintenance work.
+Modern maintenance management has evolved from reactive "break-fix" approaches to proactive strategies that leverage data analytics, condition monitoring, and predictive technologies. These processes balance maintenance costs against asset performance, reliability, and safety requirements to optimize overall equipment effectiveness (OEE).
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
-    C10["10.0 Acquire, Construct, and Manage Assets"]
-    C10 --> N10_3["10.3 Maintain assets"]
-    style N10_3 fill:#e1f5fe
-    N10_3 --> N10_3_1["10.3.1 Plan asset maintenance"]
-    N10_3 --> N10_3_2["10.3.2 Manage asset maintenance"]
-    N10_3 --> N10_3_3["10.3.3 Perform asset maintenance"]
+    C10["10.0 Acquire, Construct,<br/>and Manage Assets"] --> G103["10.3 Maintain assets"]
+
+    G103 --> P1031["10.3.1 Plan asset<br/>maintenance"]
+    G103 --> P1032["10.3.2 Manage asset<br/>maintenance"]
+    G103 --> P1033["10.3.3 Perform asset<br/>maintenance"]
+
+    P1031 --> A10311["10.3.1.1 Develop maintenance strategies"]
+    P1031 --> A10312["10.3.1.2 Develop maintenance schedules"]
+    P1031 --> A10313["10.3.1.3 Schedule corrective maintenance"]
+
+    P1032 --> A10321["10.3.2.1 Manage work orders"]
+    P1032 --> A10322["10.3.2.2 Manage MRO inventory"]
+    P1032 --> A10323["10.3.2.3 Manage warranty claims"]
+
+    P1033 --> A10331["10.3.3.1 Perform preventive maintenance"]
+    P1033 --> A10332["10.3.3.2 Perform corrective maintenance"]
+    P1033 --> A10333["10.3.3.3 Perform predictive maintenance"]
+
+    style G103 fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -38,10 +51,58 @@ graph TD
 |--------|-------|
 | APQC Code | 19238 |
 | Hierarchy ID | 10.3 |
-| Level | Group |
-| Parent | [10](../) |
-| Sub-Processes | 3 |
+| Level | Process Group |
+| Category | [10.0 Acquire, Construct, and Manage Assets](../) |
+| Child Processes | 3 |
+| Total Activities | 17 |
 
+## Process Flow
+
+```mermaid
+flowchart TB
+    subgraph Inputs["Inputs"]
+        I1["Asset Registry"]
+        I2["Equipment Specifications"]
+        I3["Failure History"]
+        I4["Condition Data"]
+        I5["Regulatory Requirements"]
+        I6["Production Schedule"]
+    end
+
+    subgraph Plan["10.3.1 Plan Maintenance"]
+        PL1["Maintenance Strategy"]
+        PL2["PM Schedules"]
+        PL3["Resource Planning"]
+        PL4["Budget Allocation"]
+    end
+
+    subgraph Manage["10.3.2 Manage Maintenance"]
+        MG1["Work Order Management"]
+        MG2["MRO Inventory"]
+        MG3["Vendor Coordination"]
+        MG4["Warranty Management"]
+    end
+
+    subgraph Perform["10.3.3 Perform Maintenance"]
+        PM1["Preventive Maintenance"]
+        PM2["Corrective Maintenance"]
+        PM3["Predictive Maintenance"]
+        PM4["Emergency Repairs"]
+    end
+
+    subgraph Outputs["Outputs"]
+        OUT1["Maintained Assets"]
+        OUT2["Maintenance Records"]
+        OUT3["Performance Data"]
+        OUT4["Cost Reports"]
+    end
+
+    Inputs --> Plan
+    Plan --> Manage
+    Manage --> Perform
+    Perform --> Outputs
+    Perform -.-> Plan
+```
 
 ## GraphDL Semantic Structure
 
@@ -51,49 +112,142 @@ maintain.Assets
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `maintain` | Primary action |
-| Object | `assets` | Direct object |
+| Verb | `maintain` | Preservation and upkeep action |
+| Object | `Assets` | Equipment, facilities, infrastructure |
 
+### Decomposed Actions
 
-## Process Flow
+| Process | GraphDL Structure |
+|---------|-------------------|
+| 10.3.1 | `plan.AssetMaintenance` |
+| 10.3.2 | `manage.AssetMaintenance` |
+| 10.3.3 | `perform.AssetMaintenance` |
+
+## Child Processes
+
+### [10.3.1 Plan asset maintenance](./10.3.1-PlanAssetMaintenance/)
+
+Ensuring that necessary resources are available and tasks are prioritized accordingly through planning of preventative, corrective, and predictive maintenance activities.
+
+**APQC Code:** 19239 | **Activities:** 5
+
+Key activities include developing maintenance strategies, creating maintenance schedules, scheduling corrective maintenance, establishing parts requirements, and identifying training needs.
+
+### [10.3.2 Manage asset maintenance](./10.3.2-ManageAssetMaintenance/)
+
+Ensuring that asset maintenance is conducted in a timely manner and successfully through work order management, inventory control, and vendor coordination.
+
+**APQC Code:** 19245 | **Activities:** 6
+
+Key activities include managing maintenance work orders, managing MRO inventory, managing vendor relationships, managing warranty claims, and tracking maintenance costs.
+
+### [10.3.3 Perform asset maintenance](./10.3.3-PerformAssetMaintenance/)
+
+Engaging in all aspects of asset maintenance including preventive, corrective, predictive, and emergency maintenance activities.
+
+**APQC Code:** 19252 | **Activities:** 6
+
+Key activities include performing preventive maintenance, executing corrective maintenance, conducting predictive maintenance, performing emergency repairs, and documenting maintenance activities.
+
+## RACI Matrix
+
+| Process | Responsible | Accountable | Consulted | Informed |
+|---------|-------------|-------------|-----------|----------|
+| 10.3.1 Plan Maintenance | Maintenance Planner | Maintenance Manager | Engineering, Operations | Finance, Procurement |
+| 10.3.2 Manage Maintenance | Maintenance Supervisor | Maintenance Manager | Vendors, Procurement | Operations, Finance |
+| 10.3.3 Perform Maintenance | Maintenance Technicians | Maintenance Supervisor | Engineering, Safety | Operations, Quality |
+
+## Key Stakeholders
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| Plant/Facility Manager | Process Owner | Overall maintenance performance |
+| Maintenance Manager | Operations Lead | Strategy, budgets, team management |
+| Reliability Engineer | Technical Lead | Failure analysis, improvement strategies |
+| Maintenance Planner | Planning Lead | Scheduling, resource coordination |
+| Maintenance Technicians | Execution | Hands-on maintenance activities |
+| Operations Manager | Customer | Asset availability requirements |
+| Procurement Manager | Support | Parts and service procurement |
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Overall Equipment Effectiveness (OEE) | Availability x Performance x Quality | >85% |
+| Mean Time Between Failures (MTBF) | Average time between equipment failures | Increasing trend |
+| Mean Time To Repair (MTTR) | Average repair duration | <4 hours |
+| Planned Maintenance Percentage | Planned vs. total maintenance hours | >80% |
+| Work Order Completion Rate | Work orders completed on time | >95% |
+| Maintenance Cost per Unit | Total maintenance cost / production units | Decreasing trend |
+| Parts Inventory Turns | Annual parts usage / average inventory | >4x |
+| Safety Incidents | Maintenance-related safety events | Zero |
+
+## Maintenance Strategies
+
+### Preventive Maintenance (PM)
+Time-based or usage-based maintenance performed at predetermined intervals to reduce failure probability. Includes inspections, lubrication, calibration, and component replacement.
+
+### Predictive Maintenance (PdM)
+Condition-based maintenance that uses monitoring data and analytics to predict equipment failures and schedule maintenance before breakdowns occur.
+
+### Corrective Maintenance (CM)
+Unplanned maintenance performed to restore equipment to operating condition after a failure. Goal is to minimize through effective preventive and predictive programs.
+
+### Reliability-Centered Maintenance (RCM)
+Systematic approach to determine maintenance requirements based on failure modes, consequences, and optimal maintenance strategies.
+
+## Industry Variations
+
+### Manufacturing
+High emphasis on production equipment uptime with sophisticated preventive and predictive maintenance programs. Total Productive Maintenance (TPM) principles often integrated.
+
+### Utilities
+Critical infrastructure requires high reliability and regulatory compliance. Asset management systems track long-lived assets across decades.
+
+### Healthcare
+Medical equipment maintenance requires regulatory compliance, calibration records, and vendor certification. Patient safety is paramount.
+
+### Aviation
+Strict regulatory requirements with mandatory maintenance intervals. Comprehensive documentation and traceability requirements.
+
+## Related Processes
 
 ```mermaid
-flowchart LR
-    subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
-    end
+graph LR
+    DCA["10.2 Design and<br/>Construct Assets"] --> MA["10.3 Maintain<br/>Assets"]
+    IT["8.0 IT<br/>Management"] --> MA
 
-    subgraph Process["Maintain assets"]
-        S1["Plan asset maintenance"]
-        S2["Manage asset maintenance"]
-        S3["Perform asset maintenance"]
-    end
-
-    subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
-    end
-
-    Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
+    MA --> EOL["10.4 Asset<br/>End-of-Life"]
+    MA --> FAA["10.5 Fixed Asset<br/>Accounting"]
+    MA --> RC["11.0 Risk and<br/>Compliance"]
 ```
 
-## Sub-Processes
+## Related Departments
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Plan asset maintenance](./10.3.1-PlanAssetMaintenance/) | 10.3.1 | Ensuring that necessary resources are available and tasks are prioritized accordingly through planni |
-| [Manage asset maintenance](./10.3.2-ManageAssetMaintenance/) | 10.3.2 | Ensuring that asset maintenance is conducted in a timely manner and successfully |
-| [Perform asset maintenance](./10.3.3-PerformAssetMaintenance/) | 10.3.3 | Engaging in all aspects of asset maintenance |
+- [Operations](/departments/Operations) - Asset utilization and availability
+- [Engineering](/departments/Technology) - Reliability engineering and technical support
+- [Procurement](/departments/Procurement) - Parts and service contracts
+- [Finance](/departments/Finance) - Maintenance budgets and cost tracking
+- [Safety](/departments/Operations/Safety) - Safety compliance
 
+## Related Occupations
+
+- [Maintenance Workers](/occupations/Installation/MaintenanceWorkers) - Hands-on maintenance execution
+- [Industrial Engineers](/occupations/Architecture/IndustrialEngineers) - Reliability engineering
+- [Facilities Managers](/occupations/Management/FacilitiesManagers) - Facility maintenance oversight
+- [Electricians](/occupations/Installation/Electricians) - Electrical maintenance
+- [Mechanics](/occupations/Installation/IndustrialMachineryMechanics) - Mechanical maintenance
 
 ## Related Concepts
 
-- Assets
-
+- PreventiveMaintenance
+- PredictiveMaintenance
+- ReliabilityEngineering
+- MaintenanceManagement
+- AssetPerformance
+- WorkOrderManagement
+- MROInventory
 
 ---
 
-*Source: APQC PCF 19238 (10.3) - APQC*
+*Source: APQC PCF 19238 (10.3) - Cross-Industry Process Classification Framework*

@@ -16,9 +16,9 @@ children: ["4.3.1", "4.3.2", "4.3.3", "4.3.4"]
 
 ## Overview
 
-Group 4.3 is a process group within APQC Category 4.0 (Deliver Physical Products). 
+Group 4.3 is a process group within [Deliver Physical Products](../) that encompasses the core manufacturing activities transforming raw materials and components into finished goods. This process group represents the heart of operational execution where production plans become physical products.
 
-Processing and delivering the finished goods manufactured by the organization. Schedule the production of products. Execute the product production activities. Perform tests to oversee and ensure quality of production. Maintain records of the production process. Track lots.
+The processes within this group manage the complete production cycle from scheduling through quality verification. Effective execution requires close coordination between production planning, materials management, quality assurance, and maintenance functions. Modern manufacturing leverages MES (Manufacturing Execution Systems), automation, and real-time monitoring to optimize throughput, quality, and cost while maintaining flexibility to respond to changing demand.
 
 ## Process Hierarchy
 
@@ -30,7 +30,7 @@ graph TD
     N4_3 --> N4_3_1["4.3.1 Schedule production"]
     N4_3 --> N4_3_2["4.3.2 Produce/Assemble product"]
     N4_3 --> N4_3_3["4.3.3 Perform quality testing"]
-    N4_3 --> N4_3_4["4.3.4 Maintain production records and ..."]
+    N4_3 --> N4_3_4["4.3.4 Maintain production records"]
 ```
 
 ## Key Statistics
@@ -43,60 +43,135 @@ graph TD
 | Parent | [4](../) |
 | Sub-Processes | 4 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-produce/assemble/test.Product
+produce.Product.through.Assembly
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `produce/assemble/test` | Primary action |
-| Object | `product` | Direct object |
-
+| Verb | `produce` | Primary action of manufacturing |
+| Object | `Product` | Finished goods |
+| Preposition | `through` | Method relationship |
+| PrepObject | `Assembly` | Manufacturing process |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Production Orders"]
+        I2["Raw Materials"]
+        I3["Components"]
+        I4["Work Instructions"]
+        I5["Equipment/Tooling"]
     end
 
     subgraph Process["Produce/Assemble/Test product"]
         S1["Schedule production"]
-        S2["Produce/Assemble product"]
-        S3["Perform quality testing"]
-        S4["Maintain production records..."]
+        S2["Stage materials"]
+        S3["Produce/Assemble product"]
+        S4["Perform quality testing"]
+        S5["Maintain production records"]
+        S6["Release to warehouse"]
+
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Finished Products"]
+        O2["Quality Records"]
+        O3["Production Data"]
+        O4["Lot/Serial Information"]
+        O5["Scrap/Rework"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
 ```
 
-## Sub-Processes
+## Child Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Schedule production](./4.3.1-ScheduleProduction/) | 4.3.1 | Scheduling the production of final products |
-| [Produce/Assemble product](./4.3.2-ProduceAssembleProduct/) | 4.3.2 | Manufacturing the product |
-| [Perform quality testing](./4.3.3-PerformQualityTesting/) | 4.3.3 | Executing tests to evaluate the quality of the products manufactured |
-| [Maintain production records and manage lot traceability](./4.3.4-MaintainProductionRecordsManage/) | 4.3.4 | Perpetuating the production records by systematically documenting and using it to ensure the effecti |
+| [Schedule production](./4.3.1-ScheduleProduction/) | 4.3.1 | Sequencing and timing production orders based on capacity and priorities |
+| [Produce/Assemble product](./4.3.2-ProduceAssembleProduct/) | 4.3.2 | Executing manufacturing operations to create products |
+| [Perform quality testing](./4.3.3-PerformQualityTesting/) | 4.3.3 | Verifying products meet specifications through inspection and testing |
+| [Maintain production records and lot traceability](./4.3.4-MaintainProductionRecordsManage/) | 4.3.4 | Documenting production activities and enabling product tracking |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Schedule production | Production Planning | Plant Manager | Sales, Supply Chain | Production |
+| Stage materials | Materials Handling | Production Supervisor | Warehouse | Planning |
+| Execute production | Production Operators | Production Supervisor | Engineering | Quality |
+| Perform quality testing | Quality Inspectors | Quality Manager | Production | Engineering |
+| Maintain records | Production/MES | Production Manager | Quality, IT | Management |
+| Manage equipment | Maintenance | Maintenance Manager | Production | Engineering |
+
+## Key Stakeholders
+
+- **Production Operations**: Executes manufacturing activities
+- **Production Planning**: Schedules and sequences work
+- **Quality Assurance**: Ensures product conformance
+- **Maintenance**: Keeps equipment operational
+- **Engineering**: Provides technical support and improvement
+- **Materials Management**: Ensures material availability
+- **Plant Management**: Oversees overall performance
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Overall Equipment Effectiveness (OEE) | Availability x Performance x Quality | >85% |
+| First Pass Yield | Products passing inspection first time | >98% |
+| Schedule Adherence | Production completed on schedule | >95% |
+| Manufacturing Cycle Time | Time from start to completion | Benchmark |
+| Scrap Rate | Percentage of production scrapped | <1% |
+| Labor Productivity | Units per labor hour | Continuous improvement |
+| Inventory Turns (WIP) | Work-in-process turnover | >12x annually |
+| Safety Incident Rate | Recordable incidents per 200K hours | <1.0 |
+
+## Related Departments
+
+- [Manufacturing](/departments/Operations/Manufacturing) - Production execution
+- [Quality Assurance](/departments/Quality) - Quality control
+- [Maintenance](/departments/Operations/Maintenance) - Equipment support
+- [Engineering](/departments/Engineering) - Technical support
+- [Supply Chain](/departments/SupplyChain) - Materials coordination
+
+## Related Occupations
+
+- [Industrial Production Managers](/occupations/Management/IndustrialProductionManagers) - Plant oversight
+- [First-Line Supervisors of Production Workers](/occupations/Management/FirstLineSupervisors) - Shift management
+- [Quality Control Inspectors](/occupations/QualityControlInspectors) - Quality verification
+- [Industrial Engineers](/occupations/Engineering/IndustrialEngineers) - Process optimization
+- [Machinists](/occupations/Production/Machinists) - Skilled production
+
+## Industry Variations
+
+### Discrete Manufacturing
+Focus on assembly operations, work cell optimization, lean manufacturing, and complex BOM management for products like automotive, electronics, and machinery.
+
+### Process Manufacturing
+Batch and continuous production, recipe management, process control systems, and strict quality specifications for chemicals, food, and pharmaceuticals.
+
+### Consumer Products
+High-volume production, packaging integration, rapid changeovers, and seasonal demand management for consumer goods.
+
+### Aerospace and Defense
+Configuration control, rigorous quality documentation, specialized certifications, and traceability requirements throughout production.
 
 ## Related Concepts
 
-- /Assemble/TestProduct
-
+- ManufacturingExecution
+- ProductionScheduling
+- QualityControl
+- LeanManufacturing
+- ProcessOptimization
+- EquipmentEffectiveness
+- ProductTraceability
 
 ---
 

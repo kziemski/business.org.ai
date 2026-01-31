@@ -108,6 +108,25 @@ Administers structured pay grades, pension contributions, and union-negotiated c
 | Cost per Paycheck | Total payroll processing cost per check | < $5 |
 | Tax Filing Timeliness | On-time payroll tax filings | 100% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AP Clerk->>+Vendor: Calculate gross pay
+    Vendor-->>-AP Clerk: Return pay calculations
+    AP Clerk->>+Vendor: Calculate deductions
+    Vendor-->>-AP Clerk: Return net pay
+    AP Clerk->>+AP Manager: Submit payroll for approval
+    AP Manager-->>-AP Clerk: Approve payroll run
+    AP Clerk->>+Vendor: Execute payment file
+    Vendor-->>-AP Clerk: Confirm transmission
+    AP Clerk->>+ERP System: Notify employees
+    ERP System-->>-AP Clerk: Acknowledge notification
+    AP Clerk->>+Controller: Post payroll entries
+    Controller-->>-AP Clerk: Confirm GL posting
+```
+
 ## Related Concepts
 
 - Payments

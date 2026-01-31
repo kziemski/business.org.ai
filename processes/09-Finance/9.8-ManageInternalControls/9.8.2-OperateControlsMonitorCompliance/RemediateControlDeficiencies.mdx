@@ -108,6 +108,23 @@ Focuses on inventory controls, cost accounting accuracy, and supply chain financ
 | SOX Compliance Rate | Percentage of controls tested as effective | > 98% |
 | Policy Exception Rate | Percentage of transactions with policy exceptions | < 2% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Control Analyst->>+Process Owner: Identify deficiencies
+    Process Owner-->>-Control Analyst: Return deficiency list
+    Control Analyst->>+Process Owner: Develop remediation plan
+    Process Owner-->>-Control Analyst: Confirm action items
+    Control Analyst->>+Controller: Submit for approval
+    Controller-->>-Control Analyst: Approve remediation
+    Control Analyst->>+Process Owner: Track implementation
+    Process Owner-->>-Control Analyst: Update status
+    Control Analyst->>+Auditor: Verify remediation
+    Auditor-->>-Control Analyst: Confirm effectiveness
+```
+
 ## Related Concepts
 
 - ControlDeficiencies

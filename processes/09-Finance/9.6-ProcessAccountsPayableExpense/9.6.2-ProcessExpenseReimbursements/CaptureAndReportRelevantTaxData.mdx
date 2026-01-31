@@ -108,6 +108,23 @@ Handles merchandise payables with trade discounts, markdown allowances, and coop
 | Cost per Invoice | Total AP cost per invoice processed | < $3 |
 | Straight-Through Processing Rate | Invoices processed without manual intervention | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Tax Analyst->>+ERP System: Initiate and report relevant tax data
+    ERP System-->>-Tax Analyst: Return relevant data
+    Tax Analyst->>+Tax Manager: Submit for review
+    Tax Manager-->>-Tax Analyst: Approve processing
+    Tax Analyst->>+ERP System: Execute capture action
+    ERP System-->>-Tax Analyst: Confirm completion
+    Tax Analyst->>+Controller: Document for audit
+    Controller-->>-Tax Analyst: Confirm documentation
+    Tax Analyst->>+External Advisor: Report to management
+    External Advisor-->>-Tax Analyst: Acknowledge report
+```
+
 ## Related Concepts
 
 - RelevantTaxData

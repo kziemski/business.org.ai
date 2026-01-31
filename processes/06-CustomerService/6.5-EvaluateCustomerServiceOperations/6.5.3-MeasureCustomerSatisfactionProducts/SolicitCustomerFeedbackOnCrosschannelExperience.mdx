@@ -56,6 +56,23 @@ solicit.CustomerFeedback.on.CrosschannelExperience
 | PrepObject | `cross-channel experience` | Indirect object |
 
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Agent as Agent
+    participant Supervisor as Supervisor
+    participant Customer as Customer
+    participant CRM as CRM
+
+    Agent->>Supervisor: Initiate solicit customer feedback on cross-channel experience request
+    Supervisor->>Supervisor: Analyze requirements
+    Supervisor->>Customer: Request validation
+    Customer->>Supervisor: Provide feedback
+    Supervisor->>CRM: Update status
+    CRM->>Agent: Confirm completion
+```
 ---
 
 *Source: APQC PCF 20117 (6.5.3.3) - APQC*

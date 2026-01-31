@@ -108,6 +108,23 @@ Handles merchandise payables with trade discounts, markdown allowances, and coop
 | Cost per Invoice | Total AP cost per invoice processed | < $3 |
 | Straight-Through Processing Rate | Invoices processed without manual intervention | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AR Clerk->>+Customer: Initiate corporate credit card requests
+    Customer-->>-AR Clerk: Return relevant data
+    AR Clerk->>+AR Manager: Submit for review
+    AR Manager-->>-AR Clerk: Approve processing
+    AR Clerk->>+Customer: Execute process action
+    Customer-->>-AR Clerk: Confirm completion
+    AR Clerk->>+ERP System: Document for audit
+    ERP System-->>-AR Clerk: Confirm documentation
+    AR Clerk->>+Controller: Report to management
+    Controller-->>-AR Clerk: Acknowledge report
+```
+
 ## Related Concepts
 
 - CorporateCreditCardRequests

@@ -12,25 +12,26 @@ children: ["10.2.1.1", "10.2.1.2", "10.2.1.3"]
 
 # Manage capital program for assets
 
-> Producing and maintaining a planning schedule and a financial plan to purchase or manufacture productive assets.
+> Producing and maintaining planning schedules and financial plans to purchase or manufacture productive assets. This process ensures capital investments are properly planned, funded, and monitored throughout execution.
 
 ## Overview
 
-Process 10.2.1 is a core process that defines the specific procedures for manage capital program for assets. 
+Process 10.2.1 establishes the financial and planning framework for asset construction and acquisition programs. This includes defining investment plans, monitoring capital deployment, and securing necessary financing. Effective capital program management ensures projects are properly funded, financially viable, and aligned with organizational priorities.
 
-Producing and maintaining a planning schedule and a financial plan to purchase or manufacture productive assets. Determine the investment plan, monitor capital, and secure the necessary financing in order to realize completion of the program.
+Capital programs often span multiple years and involve significant financial commitments. This process integrates with corporate financial planning, treasury management, and project governance to ensure capital investments deliver expected returns while managing financial risks.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
-    C10["10.0 Acquire, Construct, and Manage Assets"]
-    C10 --> N10_2["10.2 Design and construct assets"]
-    N10_2 --> N10_2_1["10.2.1 Manage capital program for assets"]
-    style N10_2_1 fill:#e1f5fe
-    N10_2_1 --> N10_2_1_1["10.2.1.1 Define capital investment plan"]
-    N10_2_1 --> N10_2_1_2["10.2.1.2 Monitor capital program"]
-    N10_2_1 --> N10_2_1_3["10.2.1.3 Secure construction financing"]
+    C10["10.0 Acquire, Construct,<br/>and Manage Assets"] --> G102["10.2 Design and<br/>construct assets"]
+    G102 --> P1021["10.2.1 Manage capital<br/>program for assets"]
+
+    P1021 --> A10211["10.2.1.1 Define capital<br/>investment plan"]
+    P1021 --> A10212["10.2.1.2 Monitor<br/>capital program"]
+    P1021 --> A10213["10.2.1.3 Secure construction<br/>financing"]
+
+    style P1021 fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -40,9 +41,58 @@ graph TD
 | APQC Code | 19209 |
 | Hierarchy ID | 10.2.1 |
 | Level | Process |
-| Parent | [10.2](../) |
+| Parent | [10.2 Design and construct assets](../) |
+| Category | [10.0 Acquire, Construct, and Manage Assets](../../) |
 | Sub-Processes | 3 |
 
+## Process Flow
+
+```mermaid
+flowchart TB
+    subgraph Inputs["Inputs"]
+        I1["Business Case"]
+        I2["Property Strategy"]
+        I3["Financial Projections"]
+        I4["Project Proposals"]
+        I5["Market Conditions"]
+        I6["Risk Assessments"]
+    end
+
+    subgraph Plan["10.2.1.1 Define Investment Plan"]
+        P1["Prioritize Projects"]
+        P2["Allocate Capital"]
+        P3["Develop Schedules"]
+        P4["Set Milestones"]
+    end
+
+    subgraph Monitor["10.2.1.2 Monitor Capital Program"]
+        M1["Track Spending"]
+        M2["Monitor Progress"]
+        M3["Variance Analysis"]
+        M4["Report Status"]
+    end
+
+    subgraph Finance["10.2.1.3 Secure Financing"]
+        F1["Identify Financing Needs"]
+        F2["Evaluate Options"]
+        F3["Negotiate Terms"]
+        F4["Execute Financing"]
+    end
+
+    subgraph Outputs["Outputs"]
+        OUT1["Capital Investment Plan"]
+        OUT2["Program Status Reports"]
+        OUT3["Financing Agreements"]
+        OUT4["Budget Updates"]
+    end
+
+    Inputs --> Plan
+    Plan --> Monitor
+    Plan --> Finance
+    Monitor --> Outputs
+    Finance --> Outputs
+    Monitor -.-> Plan
+```
 
 ## GraphDL Semantic Structure
 
@@ -52,52 +102,148 @@ manage.CapitalProgram.for.Assets
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `capital program` | Direct object |
-| Preposition | `for` | Relationship |
-| PrepObject | `assets` | Indirect object |
+| Verb | `manage` | Oversight and control action |
+| Object | `CapitalProgram` | Investment program |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `Assets` | Target of investment |
 
+### Decomposed Actions
 
-## Process Flow
-
-```mermaid
-flowchart LR
-    subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
-    end
-
-    subgraph Process["Manage capital program for assets"]
-        S1["Define capital investment plan"]
-        S2["Monitor capital program"]
-        S3["Secure construction financing"]
-    end
-
-    subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
-    end
-
-    Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-```
+| Activity | GraphDL Structure |
+|----------|-------------------|
+| 10.2.1.1 | `define.CapitalInvestmentPlan` |
+| 10.2.1.2 | `monitor.CapitalProgram` |
+| 10.2.1.3 | `secure.ConstructionFinancing` |
 
 ## Sub-Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Define capital investment plan](./DefineCapitalInvestmentPlan) | 10.2.1.1 | Establishing what funds will be invested in the construction of productive assets for the advancemen |
-| [Monitor capital program](./MonitorCapitalProgram) | 10.2.1.2 | Monitoring plans on capital projects |
-| [Secure construction financing](./SecureConstructionFinancing) | 10.2.1.3 | Acquiring the loans needed to construct necessary assets |
+### [10.2.1.1 Define capital investment plan](./DefineCapitalInvestmentPlan)
 
+Establishing what funds will be invested in the construction of productive assets, including prioritization, allocation, and scheduling of capital expenditures.
+
+**Key Activities:**
+- Review and prioritize capital project proposals
+- Allocate capital across approved projects
+- Develop multi-year investment schedules
+- Define funding milestones and gates
+- Document capital investment plan
+
+### [10.2.1.2 Monitor capital program](./MonitorCapitalProgram)
+
+Monitoring plans on capital projects to ensure spending aligns with budgets and projects progress according to schedule.
+
+**Key Activities:**
+- Track capital spending against budget
+- Monitor project progress and milestones
+- Conduct variance analysis and forecasting
+- Identify and escalate issues
+- Report status to stakeholders
+
+### [10.2.1.3 Secure construction financing](./SecureConstructionFinancing)
+
+Acquiring the loans or other financing needed to construct necessary assets when internal capital is insufficient or external financing is more advantageous.
+
+**Key Activities:**
+- Identify financing needs and timing
+- Evaluate financing options and sources
+- Prepare financing proposals and documentation
+- Negotiate terms and conditions
+- Execute financing agreements
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define Investment Plan | Finance Team | CFO | Operations, Strategy | Board, BU Leaders |
+| Monitor Capital Program | Project Finance | CFO | Project Managers | Executive Team |
+| Secure Financing | Treasury | CFO | Legal, Banks | Board, Auditors |
+
+## Key Stakeholders
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| Chief Financial Officer | Executive Owner | Capital allocation, financing decisions |
+| VP of Finance | Planning Lead | Investment planning and monitoring |
+| Treasurer | Financing Lead | Financing strategy and execution |
+| Project Directors | Capital Consumers | Project proposals and execution |
+| Board of Directors | Governance | Major investment approval |
+| Lenders/Investors | External | Financing provision |
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Capital Deployment Rate | Capital deployed vs. planned | 90-100% |
+| Budget Variance | Actual vs. budgeted capital spend | <5% |
+| ROI Achievement | Projects achieving target returns | >80% |
+| Financing Cost | Interest rate vs. benchmark | At or below market |
+| Approval Cycle Time | Time from proposal to approval | <30 days |
+| Program Completion Rate | Projects completed as planned | >90% |
+
+## Capital Program Governance
+
+### Approval Thresholds
+Define approval authority levels based on project size, with larger investments requiring higher-level approval up to Board level.
+
+### Stage-Gate Process
+Implement stage-gate reviews at key milestones to validate continued investment and alignment with business case.
+
+### Portfolio Management
+Manage capital as a portfolio, balancing risk, return, and strategic alignment across all investments.
+
+### Change Control
+Establish formal process for scope, budget, or schedule changes requiring re-approval.
+
+## Industry Variations
+
+### Utilities
+Large, long-duration capital programs with regulatory recovery mechanisms. Rate case planning integration critical.
+
+### Manufacturing
+Production capacity expansion with ROI-driven investment decisions. Technology upgrade cycles.
+
+### Healthcare
+Major facility expansions balanced with equipment replacement programs. Regulatory and certification requirements.
+
+### Technology
+Data center and infrastructure investments with rapid technology evolution considerations.
+
+## Related Processes
+
+```mermaid
+graph LR
+    DPS["10.1.1 Develop<br/>Property Strategy"] --> MCP["10.2.1 Manage<br/>Capital Program"]
+    FM["9.0 Financial<br/>Management"] --> MCP
+
+    MCP --> DPC["10.2.2 Design and Plan<br/>Construction"]
+    MCP --> MAC["10.2.4 Manage Asset<br/>Construction"]
+    MCP --> FAA["10.5 Fixed Asset<br/>Accounting"]
+```
+
+## Related Departments
+
+- [Finance](/departments/Finance) - Capital planning and monitoring
+- [Treasury](/departments/Finance/Treasury) - Financing management
+- [Strategy](/departments/Strategy) - Investment prioritization
+- [Operations](/departments/Operations) - Project requirements
+
+## Related Occupations
+
+- [Financial Managers](/occupations/Management/FinancialManagers) - Capital management
+- [Treasurers](/occupations/Business/Financial/Treasurers) - Financing strategy
+- [Budget Analysts](/occupations/Business/Financial/BudgetAnalysts) - Budget monitoring
+- [Financial Analysts](/occupations/Business/Financial/FinancialAnalysts) - Investment analysis
+- [Project Management Specialists](/occupations/Business/Management/ProjectManagementSpecialists) - Program oversight
 
 ## Related Concepts
 
-- CapitalProgram
-- Assets
-
+- CapitalBudgeting
+- InvestmentPlanning
+- ProjectFinancing
+- PortfolioManagement
+- StageGateProcess
+- FinancialGovernance
 
 ---
 
-*Source: APQC PCF 19209 (10.2.1) - APQC*
+*Source: APQC PCF 19209 (10.2.1) - Cross-Industry Process Classification Framework*

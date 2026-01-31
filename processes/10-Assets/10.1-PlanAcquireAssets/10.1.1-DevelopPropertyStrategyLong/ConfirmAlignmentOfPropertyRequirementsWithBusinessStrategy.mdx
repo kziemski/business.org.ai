@@ -67,6 +67,20 @@ flowchart LR
     D -- "Issues Found" --> C
 ```
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant FacilitiesManager as Facilities Manager
+    participant MaintenanceTech as Maintenance Tech
+    participant Vendor as Vendor
+
+    FacilitiesManager->>MaintenanceTech: Initiate confirm alignment of property requirements with business strategy request
+    MaintenanceTech->>MaintenanceTech: Process request
+    MaintenanceTech->>Vendor: Request validation
+    Vendor->>FacilitiesManager: Confirm completion
+```
 ## RACI Matrix
 
 | Activity | Manager | Manager | Manager | Supervisor |

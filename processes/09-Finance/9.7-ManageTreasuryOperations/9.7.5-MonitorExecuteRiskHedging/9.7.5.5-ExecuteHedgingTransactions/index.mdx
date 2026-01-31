@@ -99,6 +99,31 @@ flowchart LR
 | [Monitor credit](./MonitorCredit) | 9.7.5.5.5 | Revising credit reports periodically for accurateness and changes that could be suggestive of duplic |
 
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Treasury Analyst->>+ERP System: Measure physical positions
+    ERP System-->>-Treasury Analyst: Return underlying exposures
+    Treasury Analyst->>+Treasury Analyst: Calculate hedge requirements
+    Note over Treasury Analyst: Apply hedge ratios
+    Treasury Analyst->>+Treasurer: Present hedge execution plan
+    Treasurer-->>-Treasury Analyst: Approve hedge parameters
+    Treasury Analyst->>+Bank: Request derivative quotes
+    Bank-->>-Treasury Analyst: Provide pricing for options/futures
+    Treasury Analyst->>+Treasurer: Confirm trade details
+    Treasurer-->>-Treasury Analyst: Authorize execution
+    Treasury Analyst->>+Bank: Execute hedge trades
+    Bank-->>-Treasury Analyst: Confirm trade settlement
+    Treasury Analyst->>+ERP System: Record hedge positions
+    ERP System-->>-Treasury Analyst: Confirm hedge designation
+    Treasury Analyst->>+Controller: Document hedge effectiveness
+    Controller-->>-Treasury Analyst: Confirm ASC 815 compliance
+    Treasury Analyst->>+CFO: Report hedging activity
+    CFO-->>-Treasury Analyst: Acknowledge hedge status
+```
+
 ## Related Concepts
 
 - HedgingTransactions

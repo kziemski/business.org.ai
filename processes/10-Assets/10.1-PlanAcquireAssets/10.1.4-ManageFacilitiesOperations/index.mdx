@@ -12,24 +12,25 @@ children: ["10.1.4.1", "10.1.4.2"]
 
 # Manage facilities operations
 
-> Managing all operational activities of the facility.
+> Managing all operational activities of the facility including personnel relocations, material movements, and day-to-day facility services that support business unit operations.
 
 ## Overview
 
-Process 10.1.4 is a core process that defines the specific procedures for manage facilities operations. 
+Process 10.1.4 encompasses the ongoing operational management of facilities after acquisition and setup. This includes managing how each function and business unit operates within the facility, coordinating relocations of personnel and materials, and ensuring facilities support organizational goals effectively.
 
-Managing all operational activities of the facility. Manage how each function/business unit works. Support the manufacturing facility to attain organizational goals.
+Effective facilities operations management optimizes space utilization, minimizes operational disruptions, and ensures workplace environments support productivity and employee wellbeing. This process coordinates with HR for personnel moves, IT for technology transitions, and operations for material handling requirements.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
-    C10["10.0 Acquire, Construct, and Manage Assets"]
-    C10 --> N10_1["10.1 Plan and acquire assets"]
-    N10_1 --> N10_1_4["10.1.4 Manage facilities operations"]
-    style N10_1_4 fill:#e1f5fe
-    N10_1_4 --> N10_1_4_1["10.1.4.1 Relocate people"]
-    N10_1_4 --> N10_1_4_2["10.1.4.2 Relocate material and tools"]
+    C10["10.0 Acquire, Construct,<br/>and Manage Assets"] --> G101["10.1 Plan and<br/>acquire assets"]
+    G101 --> P1014["10.1.4 Manage<br/>facilities operations"]
+
+    P1014 --> A1014_1["10.1.4.1 Relocate<br/>people"]
+    P1014 --> A1014_2["10.1.4.2 Relocate<br/>materials and tools"]
+
+    style P1014 fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -39,9 +40,51 @@ graph TD
 | APQC Code | 10949 |
 | Hierarchy ID | 10.1.4 |
 | Level | Process |
-| Parent | [10.1](../) |
+| Parent | [10.1 Plan and acquire assets](../) |
+| Category | [10.0 Acquire, Construct, and Manage Assets](../../) |
 | Sub-Processes | 2 |
 
+## Process Flow
+
+```mermaid
+flowchart TB
+    subgraph Inputs["Inputs"]
+        I1["Business Requirements"]
+        I2["Relocation Requests"]
+        I3["Space Inventory"]
+        I4["Headcount Changes"]
+        I5["Project Schedules"]
+        I6["Safety Requirements"]
+    end
+
+    subgraph People["10.1.4.1 Relocate People"]
+        P1["Assess Space Needs"]
+        P2["Plan Move Logistics"]
+        P3["Coordinate IT/Telecom"]
+        P4["Execute Personnel Move"]
+        P5["Update Space Records"]
+    end
+
+    subgraph Materials["10.1.4.2 Relocate Materials"]
+        M1["Inventory Materials/Tools"]
+        M2["Plan Material Handling"]
+        M3["Coordinate Equipment"]
+        M4["Execute Material Move"]
+        M5["Verify Placement"]
+    end
+
+    subgraph Outputs["Outputs"]
+        OUT1["Completed Relocations"]
+        OUT2["Updated Floor Plans"]
+        OUT3["Space Utilization Data"]
+        OUT4["Move Documentation"]
+    end
+
+    Inputs --> People
+    Inputs --> Materials
+    People --> Outputs
+    Materials --> Outputs
+```
 
 ## GraphDL Semantic Structure
 
@@ -51,46 +94,118 @@ manage.FacilitiesOperations
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `facilities operations` | Direct object |
+| Verb | `manage` | Operational oversight action |
+| Object | `FacilitiesOperations` | Day-to-day facility activities |
 
+### Decomposed Actions
 
-## Process Flow
-
-```mermaid
-flowchart LR
-    subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
-    end
-
-    subgraph Process["Manage facilities operations"]
-        S1["Relocate people"]
-        S2["Relocate material and tools"]
-    end
-
-    subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
-    end
-
-    Inputs --> Process --> Outputs
-    S1 --> S2
-```
+| Activity | GraphDL Structure |
+|----------|-------------------|
+| 10.1.4.1 | `relocate.People` |
+| 10.1.4.2 | `relocate.Materials.and.Tools` |
 
 ## Sub-Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Relocate people](./RelocatePeople) | 10.1.4.1 | Shifting staff or employees from one place to another place according to changes in business require |
-| [Relocate material and tools](./RelocateMaterialAndTools) | 10.1.4.2 | Relocating the tools and raw materials |
+### [10.1.4.1 Relocate people](./RelocatePeople)
 
+Shifting staff or employees from one place to another according to changes in business requirements. This includes office moves, department consolidations, and project-based relocations.
+
+**Key Activities:**
+- Assess current and required space allocation
+- Plan move logistics and timeline
+- Coordinate IT, telecom, and furniture requirements
+- Communicate with affected personnel
+- Execute move with minimal disruption
+- Update space management systems
+
+### [10.1.4.2 Relocate material and tools](./RelocateMaterialAndTools)
+
+Relocating tools, equipment, and raw materials to support operational changes, facility reconfiguration, or production requirements.
+
+**Key Activities:**
+- Inventory materials and tools to be moved
+- Assess special handling requirements
+- Plan material handling and transport
+- Coordinate with operations and safety
+- Execute material relocation
+- Verify proper placement and functionality
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Relocate People | Facilities Team | Facilities Manager | HR, IT, BU Managers | All Affected Staff |
+| Relocate Materials | Facilities Team | Facilities Manager | Operations, Safety | Procurement, Finance |
+
+## Key Stakeholders
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| Facilities Manager | Process Owner | Move planning and execution oversight |
+| HR Business Partner | Coordination | Personnel communication and support |
+| IT Manager | Infrastructure | Technology and connectivity |
+| Operations Manager | Customer | Operational requirements |
+| Safety Manager | Compliance | Safety during moves |
+| Department Heads | Requestors | Move requirements and priorities |
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Move Completion Rate | Moves completed on schedule | >95% |
+| Downtime per Move | Employee/production downtime | <4 hours |
+| Space Utilization | Occupied vs. available space | >85% |
+| Move Cost Variance | Actual vs. budgeted cost | <10% |
+| Employee Satisfaction | Post-move satisfaction scores | >4.0/5.0 |
+| Safety Incidents | Injuries during moves | Zero |
+
+## Industry Variations
+
+### Manufacturing
+Emphasis on production floor reconfigurations, equipment moves, and minimizing production disruption. Safety and heavy equipment handling are critical.
+
+### Technology
+Frequent moves due to rapid growth and project-based teams. Hot-desking and flexible workspace arrangements common.
+
+### Healthcare
+Clinical area relocations require infection control, equipment certification, and minimal patient impact.
+
+### Financial Services
+Trading floor and operations center moves require careful IT/telecom coordination and minimal service interruption.
+
+## Related Processes
+
+```mermaid
+graph LR
+    PWF["10.1.3 Provide Workspace<br/>and Facilities"] --> MFO["10.1.4 Manage<br/>Facilities Operations"]
+    HR["7.0 Human<br/>Capital"] --> MFO
+
+    MFO --> MA["10.3 Maintain<br/>Assets"]
+    MFO --> IT["8.0 IT<br/>Management"]
+```
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Personnel coordination
+- [Information Technology](/departments/Technology) - IT infrastructure
+- [Operations](/departments/Operations) - Operational requirements
+- [Safety](/departments/Operations/Safety) - Move safety
+
+## Related Occupations
+
+- [Facilities Managers](/occupations/Management/FacilitiesManagers) - Move oversight
+- [Administrative Services Managers](/occupations/Management/AdministrativeServicesManagers) - Office management
+- [Movers](/occupations/Transportation/Movers) - Physical relocation
+- [IT Support Specialists](/occupations/Computer/SupportSpecialists) - Technology setup
 
 ## Related Concepts
 
-- FacilitiesOperations
-
+- SpaceManagement
+- RelocationManagement
+- WorkplaceServices
+- ChangeManagement
+- FacilityOperations
 
 ---
 
-*Source: APQC PCF 10949 (10.1.4) - APQC*
+*Source: APQC PCF 10949 (10.1.4) - Cross-Industry Process Classification Framework*

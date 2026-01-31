@@ -109,6 +109,21 @@ Treasury handles commodity hedging, project finance structures, and long-term po
 | Borrowing Cost | Weighted average cost of debt | Below benchmark |
 | FX Hedge Effectiveness | Effectiveness of currency hedging programs | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AP Clerk->>+ERP System: Initiate centralized outgoing payments on behalf of subsidiaries
+    ERP System-->>-AP Clerk: Return treasury data
+    AP Clerk->>+AP Manager: Submit for approval
+    AP Manager-->>-AP Clerk: Approve transaction
+    AP Clerk->>+Vendor: Execute with counterparty
+    Vendor-->>-AP Clerk: Confirm execution
+    AP Clerk->>+Controller: Update accounting records
+    Controller-->>-AP Clerk: Confirm posting
+```
+
 ## Related Concepts
 
 - CentralizedOutgoingPayments

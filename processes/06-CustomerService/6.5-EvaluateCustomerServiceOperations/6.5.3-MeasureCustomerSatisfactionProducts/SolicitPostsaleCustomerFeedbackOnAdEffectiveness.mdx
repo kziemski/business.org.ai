@@ -56,6 +56,23 @@ solicit.PostsaleCustomerFeedback.on.AdEffectiveness
 | PrepObject | `ad effectiveness` | Indirect object |
 
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Agent as Agent
+    participant Supervisor as Supervisor
+    participant Customer as Customer
+    participant CRM as CRM
+
+    Agent->>Supervisor: Initiate solicit post-sale customer feedback on ad effectiveness request
+    Supervisor->>Supervisor: Analyze requirements
+    Supervisor->>Customer: Request validation
+    Customer->>Supervisor: Provide feedback
+    Supervisor->>CRM: Update status
+    CRM->>Agent: Confirm completion
+```
 ---
 
 *Source: APQC PCF 11239 (6.5.3.2) - APQC*

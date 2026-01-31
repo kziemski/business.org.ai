@@ -108,6 +108,23 @@ Administers structured pay grades, pension contributions, and union-negotiated c
 | Cost per Paycheck | Total payroll processing cost per check | < $5 |
 | Tax Filing Timeliness | On-time payroll tax filings | 100% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Tax Analyst->>+ERP System: Calculate tax withholdings
+    ERP System-->>-Tax Analyst: Return tax amounts
+    Tax Analyst->>+Tax Manager: Review tax calculations
+    Tax Manager-->>-Tax Analyst: Approve tax remittance
+    Tax Analyst->>+Regulator: Submit tax deposits
+    Regulator-->>-Tax Analyst: Confirm receipt
+    Tax Analyst->>+ERP System: Record tax payments
+    ERP System-->>-Tax Analyst: Confirm posting
+    Tax Analyst->>+External Advisor: Update tax records
+    External Advisor-->>-Tax Analyst: Confirm update
+```
+
 ## Related Concepts
 
 - RegulatoryPayrollTaxForms

@@ -97,6 +97,29 @@ flowchart LR
 | [Manage foreign exchange balance sheet risk](./ManageForeignExchangeBalanceSheetRisk) | 9.7.5.3.5 | Overseeing the foreign exchange balance sheet with an eye towards potential risk |
 
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Treasury Analyst->>+ERP System: Retrieve FX exposure by currency
+    ERP System-->>-Treasury Analyst: Return currency positions
+    Treasury Analyst->>+Treasury Analyst: Calculate net exposure
+    Note over Treasury Analyst: Apply hedge policy thresholds
+    Treasury Analyst->>+Treasurer: Present FX risk report
+    Treasurer-->>-Treasury Analyst: Approve hedging strategy
+    Treasury Analyst->>+Bank: Request spot and forward rates
+    Bank-->>-Treasury Analyst: Provide FX pricing
+    Treasury Analyst->>+Treasurer: Recommend hedge transactions
+    Treasurer-->>-Treasury Analyst: Authorize execution
+    Treasury Analyst->>+Bank: Execute FX forward/option trades
+    Bank-->>-Treasury Analyst: Confirm trade settlement
+    Treasury Analyst->>+ERP System: Record FX hedge positions
+    ERP System-->>-Treasury Analyst: Confirm transaction booking
+    Treasury Analyst->>+Controller: Report balance sheet impact
+    Controller-->>-Treasury Analyst: Confirm accounting treatment
+```
+
 ## Related Concepts
 
 - ForeignExchangeRisk

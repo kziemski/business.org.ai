@@ -107,6 +107,23 @@ Uses fund accounting with modified accrual basis and compliance with GASB standa
 | Reporting Timeliness | On-time delivery of financial reports | 100% |
 | Audit Adjustments | Number of material audit adjustments | 0 |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Accountant->>+ERP System: Query asset register
+    ERP System-->>-Accountant: Return asset data
+    Accountant->>+ERP System: Calculate depreciation
+    ERP System-->>-Accountant: Return depreciation amounts
+    Accountant->>+Controller: Review depreciation run
+    Controller-->>-Accountant: Approve depreciation
+    Accountant->>+ERP System: Post depreciation entries
+    ERP System-->>-Accountant: Confirm GL posting
+    Accountant->>+Auditor: Update asset records
+    Auditor-->>-Accountant: Confirm asset update
+```
+
 ## Related Concepts
 
 - DepreciationExpense

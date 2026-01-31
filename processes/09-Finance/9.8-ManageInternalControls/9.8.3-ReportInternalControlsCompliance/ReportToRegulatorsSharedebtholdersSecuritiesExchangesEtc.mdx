@@ -108,6 +108,23 @@ Focuses on inventory controls, cost accounting accuracy, and supply chain financ
 | SOX Compliance Rate | Percentage of controls tested as effective | > 98% |
 | Policy Exception Rate | Percentage of transactions with policy exceptions | < 2% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Treasury Analyst->>+ERP System: Compile control results
+    ERP System-->>-Treasury Analyst: Return assessment data
+    Treasury Analyst->>+Treasurer: Review findings
+    Treasurer-->>-Treasury Analyst: Approve report
+    Treasury Analyst->>+Bank: Submit to auditors
+    Bank-->>-Treasury Analyst: Acknowledge receipt
+    Treasury Analyst->>+Controller: Present to management
+    Controller-->>-Treasury Analyst: Request action items
+    Treasury Analyst->>+CFO: Brief the board
+    CFO-->>-Treasury Analyst: Confirm briefing
+```
+
 ## Related Concepts
 
 

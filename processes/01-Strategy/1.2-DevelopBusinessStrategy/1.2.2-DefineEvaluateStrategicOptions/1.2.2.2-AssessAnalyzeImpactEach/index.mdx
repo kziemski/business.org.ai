@@ -81,6 +81,21 @@ flowchart LR
     S1 --> S2
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Analyst as Strategy Analyst
+    participant Dir as Strategy Director
+    participant Exec as Executive Team
+    
+    Analyst->>+Dir: Analyze strategic option impacts
+    Dir->>+Analyst: Evaluate operational changes
+    Analyst->>+Dir: Assess technology requirements
+    Dir->>+Exec: Present impact analysis
+    Exec-->>-Dir: Confirm implementation approach
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

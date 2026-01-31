@@ -108,6 +108,25 @@ Planning accounts for raw material cost volatility, production capacity constrai
 | Planning Cycle Time | Days to complete annual budgeting cycle | < 45 days |
 | Cost per Budget FTE | Cost of planning function per finance FTE | Industry benchmark |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Cost Accountant->>+Operations: Request inventory counts
+    Operations-->>-Cost Accountant: Submit physical counts
+    Cost Accountant->>+ERP System: Compare to book values
+    ERP System-->>-Cost Accountant: Return variance data
+    Cost Accountant->>+Cost Accountant: Investigate differences
+    Note over Cost Accountant: Analyze inventory adjustments
+    Cost Accountant->>+Controller: Review adjustments
+    Controller-->>-Cost Accountant: Approve inventory entries
+    Cost Accountant->>+ERP System: Post adjustments
+    ERP System-->>-Cost Accountant: Confirm posting
+    Cost Accountant->>+FPA: Report inventory valuation
+    FPA-->>-Cost Accountant: Acknowledge report
+```
+
 ## Related Concepts
 
 - InventoryAccounting

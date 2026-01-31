@@ -16,9 +16,9 @@ children: ["7.6.7.1"]
 
 ## Overview
 
-Process 7.6.7 is a core process that defines the specific procedures for relocate employees and manage assignments. 
+Process 7.6.7 is a core process within [Redeploy and Retire Employees](../) that manages the complex logistics of employee relocation and international assignments. This process ensures employees, their families, and sometimes entire departments can effectively transition to new locations while maintaining productivity and minimizing disruption.
 
-Managing the relocation of employees in order to carry out assignments. Manage internal business processes to transfer employees, their families, and/or entire departments of a business to a new location.
+Employee relocation encompasses domestic transfers, international assignments, expatriate management, and repatriation. Effective management requires coordination across HR, legal, finance, and external relocation service providers to address visa/immigration requirements, housing, cost-of-living adjustments, family support services, and cultural integration.
 
 ## Process Hierarchy
 
@@ -26,7 +26,7 @@ Managing the relocation of employees in order to carry out assignments. Manage i
 graph TD
     C7["7.0 Develop and Manage Human Capital"]
     C7 --> N7_6["7.6 Redeploy and retire employees"]
-    N7_6 --> N7_6_7["7.6.7 Relocate employees and manage assignm..."]
+    N7_6 --> N7_6_7["7.6.7 Relocate employees and manage assignments"]
     style N7_6_7 fill:#e1f5fe
     N7_6_7 --> N7_6_7_1["7.6.7.1 Manage expatriates"]
 ```
@@ -41,35 +41,50 @@ graph TD
 | Parent | [7.6](../) |
 | Sub-Processes | 1 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-relocate.EmployeesAndManageAssignments
+relocate.Employees.for.Assignments
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `relocate` | Primary action |
-| Object | `employees and manage assignments` | Direct object |
-
+| Verb | `relocate` | Primary action of moving employees |
+| Object | `Employees` | Workforce members being transferred |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `Assignments` | Work assignments requiring relocation |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Relocation Request"]
+        I2["Employee Information"]
+        I3["Assignment Details"]
+        I4["Budget Allocation"]
+        I5["Policy Guidelines"]
     end
 
     subgraph Process["Relocate employees and manage assignments"]
-        S1["Manage expatriates"]
+        S1["Assess relocation needs"]
+        S2["Develop relocation package"]
+        S3["Coordinate logistics"]
+        S4["Manage expatriates"]
+        S5["Support family transition"]
+        S6["Monitor assignment success"]
+
+        S1 --> S2 --> S3 --> S4
+        S3 --> S5
+        S4 --> S6
+        S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Relocation Package"]
+        O2["Assignment Documentation"]
+        O3["Expense Reports"]
+        O4["Performance Tracking"]
     end
 
     Inputs --> Process --> Outputs
@@ -79,14 +94,64 @@ flowchart LR
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Manage expatriates](./ManageExpatriates) | 7.6.7.1 | Managing foreign resources |
+| [Manage expatriates](./ManageExpatriates) | 7.6.7.1 | Managing foreign resources including visa sponsorship, tax equalization, cultural training, and repatriation planning |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Assess relocation needs | HR Business Partner | HR Director | Hiring Manager, Employee | Finance |
+| Develop relocation package | Global Mobility Team | VP HR | Legal, Tax | Employee |
+| Coordinate logistics | Relocation Provider | Global Mobility Manager | Employee, Destination HR | Manager |
+| Manage visa/immigration | Immigration Counsel | Global Mobility Manager | Employee | HR Operations |
+| Support family transition | Employee Assistance | Global Mobility Manager | Employee, Family | Manager |
+| Monitor assignment success | Local HR | HR Director | Manager, Employee | Executive Team |
+
+## Key Stakeholders
+
+- **Global Mobility Team**: Designs and administers relocation policies
+- **HR Business Partners**: Coordinates with business units on assignment needs
+- **Legal/Immigration**: Manages visa and work permit requirements
+- **Finance/Tax**: Handles tax equalization and cost tracking
+- **Relocation Service Providers**: Executes logistics and family support
+- **Hiring Managers**: Defines assignment requirements and success criteria
+- **Employees and Families**: Primary beneficiaries requiring support
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Assignment Acceptance Rate | Percentage of offered relocations accepted | >85% |
+| Relocation Cost per Move | Average total cost of relocation | Industry benchmark |
+| Time to Productive | Days from move to full productivity | <90 days |
+| Assignment Completion Rate | Percentage completing full assignment | >90% |
+| Employee Satisfaction | Relocated employee satisfaction score | >80% |
+| Family Adjustment Score | Family adaptation to new location | >75% |
+| Policy Compliance Rate | Adherence to relocation policies | >95% |
+| Repatriation Success | Successful return and retention at 1 year | >80% |
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Policy development and administration
+- [Legal](/departments/Legal) - Immigration and contract compliance
+- [Finance](/departments/Finance) - Budget management and tax equalization
+- [Global Operations](/departments/Operations) - International assignment coordination
+
+## Related Occupations
+
+- [Human Resources Managers](/occupations/Management/HumanResourcesManagers) - Relocation program oversight
+- [Compensation and Benefits Managers](/occupations/Management/CompensationBenefitsManagers) - Package design
+- [Training and Development Managers](/occupations/Management/TrainingDevelopmentManagers) - Cultural training
+- [Logisticians](/occupations/Business/Logisticians) - Move coordination
 
 ## Related Concepts
 
-- Employees
-- ManageAssignments
-
+- GlobalMobility
+- ExpatriateManagement
+- RelocationServices
+- InternationalAssignments
+- TaxEqualization
+- ImmigrationCompliance
 
 ---
 

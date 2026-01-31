@@ -108,6 +108,21 @@ Uses percentage-of-completion or completed-contract methods with milestone-based
 | Billing Error Rate | Percentage of invoices with errors | < 0.5% |
 | Credit Memo Volume | Number of credit adjustments issued | Declining trend |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AR Clerk->>+ERP System: Initiate related entries
+    ERP System-->>-AR Clerk: Return customer data
+    AR Clerk->>+AR Manager: Submit for review
+    AR Manager-->>-AR Clerk: Approve processing
+    AR Clerk->>+ERP System: Execute process action
+    ERP System-->>-AR Clerk: Confirm completion
+    AR Clerk->>+Controller: Update AR records
+    Controller-->>-AR Clerk: Confirm posting
+```
+
 ## Related Concepts
 
 - RelatedEntries

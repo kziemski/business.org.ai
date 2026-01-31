@@ -84,6 +84,21 @@ flowchart LR
     S3 --> S4
 ```
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Analyst as Strategy Analyst
+    participant Dir as Strategy Director
+    participant Exec as Executive Team
+    
+    Analyst->>+Dir: Analyze deal structure
+    Dir->>+Analyst: Evaluate transaction risks
+    Analyst->>+Dir: Prepare deal documentation
+    Dir->>+Exec: Present deal terms
+    Exec-->>-Dir: Approve deal execution
+```
+
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |

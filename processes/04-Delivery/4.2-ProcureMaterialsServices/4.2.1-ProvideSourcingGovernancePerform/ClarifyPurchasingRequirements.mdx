@@ -83,6 +83,23 @@ flowchart LR
     P1 --> P2 --> P3 --> P4 --> P5
 ```
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant Warehouse as Warehouse
+    participant Logistics as Logistics
+    participant Carrier as Carrier
+    participant Customer as Customer
+
+    Warehouse->>Logistics: Initiate clarify purchasing requirements request
+    Logistics->>Logistics: Analyze requirements
+    Logistics->>Carrier: Request validation
+    Carrier->>Logistics: Provide feedback
+    Logistics->>Customer: Update status
+    Customer->>Warehouse: Confirm completion
+```
 ## RACI Matrix
 
 | Activity | Production Manager | Supply Chain Director | Quality Assurance Team | Finance Department |

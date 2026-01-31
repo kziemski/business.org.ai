@@ -12,24 +12,25 @@ children: ["10.1.3.1", "10.1.3.2"]
 
 # Provide workspace and facilities
 
-> Managing the provision of the workspace and its assets.
+> Managing the provision of workspace and its assets, including acquiring office space and configuring it with furniture, equipment, and services to meet business requirements.
 
 ## Overview
 
-Process 10.1.3 is a core process that defines the specific procedures for provide workspace and facilities. 
+Process 10.1.3 focuses on provisioning functional workspaces that support employee productivity and organizational needs. This includes acquiring appropriate spaces and equipping them with necessary furniture, technology, and amenities, as well as modifying existing spaces to meet changing requirements.
 
-Managing the provision of the workspace and its assets. Arrange an office space with all assets (tables, chairs, computers, admin staff, etc.) according to requirements.
+Effective workspace provisioning balances employee experience, operational requirements, and cost efficiency. Modern workspace strategies increasingly incorporate flexible work arrangements, collaboration spaces, and technology-enabled environments that adapt to changing work patterns.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
-    C10["10.0 Acquire, Construct, and Manage Assets"]
-    C10 --> N10_1["10.1 Plan and acquire assets"]
-    N10_1 --> N10_1_3["10.1.3 Provide workspace and facilities"]
-    style N10_1_3 fill:#e1f5fe
-    N10_1_3 --> N10_1_3_1["10.1.3.1 Acquire workspace and facilities"]
-    N10_1_3 --> N10_1_3_2["10.1.3.2 Change fit/form/function of work..."]
+    C10["10.0 Acquire, Construct,<br/>and Manage Assets"] --> G101["10.1 Plan and<br/>acquire assets"]
+    G101 --> P1013["10.1.3 Provide workspace<br/>and facilities"]
+
+    P1013 --> A1013_1["10.1.3.1 Acquire workspace<br/>and facilities"]
+    P1013 --> A1013_2["10.1.3.2 Change fit/form/<br/>function"]
+
+    style P1013 fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -39,59 +40,194 @@ graph TD
 | APQC Code | 10944 |
 | Hierarchy ID | 10.1.3 |
 | Level | Process |
-| Parent | [10.1](../) |
+| Parent | [10.1 Plan and acquire assets](../) |
+| Category | [10.0 Acquire, Construct, and Manage Assets](../../) |
 | Sub-Processes | 2 |
-
-
-## GraphDL Semantic Structure
-
-```graphdl
-provide.WorkspaceAndFacilities
-```
-
-| Component | Value | Description |
-|-----------|-------|-------------|
-| Verb | `provide` | Primary action |
-| Object | `workspace and facilities` | Direct object |
-
 
 ## Process Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Space Requirements"]
+        I2["Headcount Projections"]
+        I3["Budget Allocation"]
+        I4["Design Standards"]
+        I5["Technology Requirements"]
+        I6["Regulatory Requirements"]
     end
 
-    subgraph Process["Provide workspace and facilities"]
-        S1["Acquire workspace and facil..."]
-        S2["Change fit/form/function of..."]
+    subgraph Acquire["10.1.3.1 Acquire Workspace"]
+        A1["Identify Space Needs"]
+        A2["Source Available Space"]
+        A3["Negotiate Terms"]
+        A4["Execute Agreement"]
+        A5["Fit-Out Space"]
+    end
+
+    subgraph Modify["10.1.3.2 Change Fit/Form/Function"]
+        M1["Assess Change Needs"]
+        M2["Design Modifications"]
+        M3["Plan Implementation"]
+        M4["Execute Changes"]
+        M5["Commission Space"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        OUT1["Functional Workspace"]
+        OUT2["Lease/Ownership Records"]
+        OUT3["Space Inventory Updates"]
+        OUT4["As-Built Documentation"]
     end
 
-    Inputs --> Process --> Outputs
-    S1 --> S2
+    Inputs --> Acquire
+    Inputs --> Modify
+    Acquire --> Outputs
+    Modify --> Outputs
 ```
+
+## GraphDL Semantic Structure
+
+```graphdl
+provide.Workspace.and.Facilities
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `provide` | Provisioning action |
+| Object | `Workspace` | Work environments |
+| Conjunction | `and` | Additional object |
+| Object2 | `Facilities` | Supporting infrastructure |
+
+### Decomposed Actions
+
+| Activity | GraphDL Structure |
+|----------|-------------------|
+| 10.1.3.1 | `acquire.Workspace.and.Facilities` |
+| 10.1.3.2 | `change.FitFormFunction.of.Workspace` |
 
 ## Sub-Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Acquire workspace and facilities](./AcquireWorkspaceAndFacilities) | 10.1.3.1 | Attaining the office space with all assets (tables, chairs, computers, admin staff, etc |
-| [Change fit/form/function of workspace and facilities](./ChangeFitformfunctionOfWorkspaceAndFacilities) | 10.1.3.2 | Modifying the formation of the workspace and its assets |
+### [10.1.3.1 Acquire workspace and facilities](./AcquireWorkspaceAndFacilities)
 
+Attaining office space with all assets including furniture, computers, and support services according to organizational requirements.
+
+**Key Activities:**
+- Define workspace requirements and specifications
+- Source and evaluate available spaces
+- Negotiate lease or purchase terms
+- Execute real estate agreements
+- Plan and execute fit-out and furnishing
+- Commission and handover space
+
+### [10.1.3.2 Change fit/form/function of workspace and facilities](./ChangeFitformfunctionOfWorkspaceAndFacilities)
+
+Modifying the formation of workspace and its assets to accommodate changing business needs, work styles, or regulatory requirements.
+
+**Key Activities:**
+- Assess drivers for workspace changes
+- Design modifications aligned with standards
+- Develop implementation plan and timeline
+- Execute construction or reconfiguration
+- Install furniture and technology
+- Commission modified space
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Acquire Workspace | Real Estate Team | VP Real Estate | Finance, Legal, HR | BU Leaders |
+| Change Workspace | Facilities Team | Facilities Manager | IT, HR, Safety | Affected Employees |
+
+## Key Stakeholders
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| VP of Real Estate | Strategic Owner | Portfolio strategy, major acquisitions |
+| Facilities Manager | Operations Lead | Day-to-day provisioning |
+| HR Business Partner | Workforce Planning | Headcount and space needs |
+| IT Manager | Technology | Infrastructure requirements |
+| Finance Manager | Budget | Capital and operating budgets |
+| Interior Designer | Design | Space layout and aesthetics |
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Space per Employee | Usable square feet per headcount | Industry benchmark |
+| Provisioning Lead Time | Time from request to occupancy | <90 days |
+| Fit-Out Cost | Cost per square foot of fit-out | Budget variance <10% |
+| Occupancy Rate | Actual occupancy vs. capacity | >80% |
+| Employee Satisfaction | Workspace satisfaction scores | >4.0/5.0 |
+| Utilization Rate | Active use of provided spaces | >70% |
+
+## Workspace Types
+
+### Traditional Office
+Dedicated workstations with fixed seating assignments. Suitable for roles requiring privacy or specialized equipment.
+
+### Activity-Based Working
+Variety of spaces designed for different work activities. Employees choose appropriate spaces based on tasks.
+
+### Hot-Desking
+Shared workstations without permanent assignments. Optimizes space utilization for mobile workforces.
+
+### Collaboration Spaces
+Meeting rooms, huddle rooms, and open collaboration areas supporting teamwork and interaction.
+
+### Remote/Hybrid Support
+Technology-enabled spaces supporting remote workers and hybrid meeting scenarios.
+
+## Industry Variations
+
+### Technology
+Open floor plans, collaboration spaces, and amenities. Rapid scaling requires flexible workspace solutions.
+
+### Financial Services
+Trading floors, secure areas, and regulatory-compliant spaces. Traditional office layouts common.
+
+### Manufacturing
+Office space integrated with production facilities. Safety and clean room considerations.
+
+### Healthcare
+Clinical and administrative spaces with infection control, privacy, and accessibility requirements.
+
+## Related Processes
+
+```mermaid
+graph LR
+    PF["10.1.2 Plan<br/>Facility"] --> PWF["10.1.3 Provide Workspace<br/>and Facilities"]
+    HR["7.0 Human<br/>Capital"] --> PWF
+
+    PWF --> MFO["10.1.4 Manage Facilities<br/>Operations"]
+    PWF --> IT["8.0 IT<br/>Management"]
+    PWF --> MA["10.3 Maintain<br/>Assets"]
+```
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Workforce planning
+- [Information Technology](/departments/Technology) - Technology infrastructure
+- [Finance](/departments/Finance) - Budget management
+- [Legal](/departments/Legal) - Lease agreements
+- [Procurement](/departments/Procurement) - Furniture and equipment
+
+## Related Occupations
+
+- [Facilities Managers](/occupations/Management/FacilitiesManagers) - Workspace management
+- [Property Managers](/occupations/Management/PropertyManagers) - Real estate coordination
+- [Interior Designers](/occupations/Arts/InteriorDesigners) - Space design
+- [Administrative Services Managers](/occupations/Management/AdministrativeServicesManagers) - Office services
 
 ## Related Concepts
 
-- Workspace
-- Facilities
-
+- WorkspaceStrategy
+- SpaceProvisioning
+- WorkplaceDesign
+- RealEstateManagement
+- FurnitureStandards
+- TechnologyInfrastructure
 
 ---
 
-*Source: APQC PCF 10944 (10.1.3) - APQC*
+*Source: APQC PCF 10944 (10.1.3) - Cross-Industry Process Classification Framework*

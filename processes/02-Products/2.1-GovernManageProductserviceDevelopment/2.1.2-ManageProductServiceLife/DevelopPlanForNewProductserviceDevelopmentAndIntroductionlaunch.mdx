@@ -98,6 +98,23 @@ flowchart LR
     Inputs --> Process --> Outputs
 ```
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant ProductManager as Product Manager
+    participant Engineer as Engineer
+    participant QA as QA
+    participant Designer as Designer
+
+    ProductManager->>Engineer: Initiate develop plan for new product/service development and introduction/launch request
+    Engineer->>Engineer: Analyze requirements
+    Engineer->>QA: Request validation
+    QA->>Engineer: Provide feedback
+    Engineer->>Designer: Update status
+    Designer->>ProductManager: Confirm completion
+```
 ## RACI Matrix
 
 | Activity | Responsible | Accountable | Consulted | Informed |

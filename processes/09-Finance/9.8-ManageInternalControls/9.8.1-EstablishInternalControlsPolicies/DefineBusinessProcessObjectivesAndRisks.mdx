@@ -108,6 +108,23 @@ Focuses on inventory controls, cost accounting accuracy, and supply chain financ
 | SOX Compliance Rate | Percentage of controls tested as effective | > 98% |
 | Policy Exception Rate | Percentage of transactions with policy exceptions | < 2% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Control Analyst->>+Process Owner: Draft control framework
+    Process Owner-->>-Control Analyst: Store framework document
+    Control Analyst->>+Controller: Submit for review
+    Controller->>+Auditor: Request audit input
+    Auditor-->>-Controller: Provide recommendations
+    Controller-->>-Control Analyst: Approve framework
+    Control Analyst->>+Process Owner: Distribute to owners
+    Process Owner-->>-Control Analyst: Confirm distribution
+    Control Analyst->>+CFO: Brief management
+    CFO-->>-Control Analyst: Acknowledge framework
+```
+
 ## Related Concepts
 
 - BusinessProcessObjectives

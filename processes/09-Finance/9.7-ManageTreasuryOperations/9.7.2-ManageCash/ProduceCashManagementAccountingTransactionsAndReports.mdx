@@ -108,6 +108,23 @@ Treasury handles commodity hedging, project finance structures, and long-term po
 | Borrowing Cost | Weighted average cost of debt | Below benchmark |
 | FX Hedge Effectiveness | Effectiveness of currency hedging programs | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Treasury Analyst->>+Bank: Request bank statements
+    Bank-->>-Treasury Analyst: Return account balances
+    Treasury Analyst->>+ERP System: Retrieve book balances
+    ERP System-->>-Treasury Analyst: Return cash position
+    Treasury Analyst->>+Treasury Analyst: Calculate net position
+    Note over Treasury Analyst: Identify variances
+    Treasury Analyst->>+Treasurer: Report cash position
+    Treasurer-->>-Treasury Analyst: Acknowledge position
+    Treasury Analyst->>+Controller: Update cash forecast
+    Controller-->>-Treasury Analyst: Confirm forecast update
+```
+
 ## Related Concepts
 
 - CashManagementAccountingTransactions

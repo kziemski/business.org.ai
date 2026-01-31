@@ -16,21 +16,21 @@ children: ["7.3.2.1", "7.3.2.2", "7.3.2.4"]
 
 ## Overview
 
-Process 7.3.2 is a core process that defines the specific procedures for manage employee performance. 
+Process 7.3.2 is a core process within [Manage Employee Onboarding, Training, and Development](../) that establishes the framework for setting expectations, measuring results, and driving continuous improvement in employee performance. This process connects individual contributions to organizational objectives through goal-setting, feedback, and performance evaluation.
 
-Defining individual performance objectives. Review performance in order to provide appraisals. Evaluate the efficiency and effectiveness of the current performance program. Update it regularly.
+Effective performance management goes beyond annual reviews to create an ongoing dialogue between managers and employees. Modern approaches emphasize continuous feedback, coaching conversations, development-focused discussions, and transparent goal alignment. The process must balance accountability for results with support for employee growth and engagement.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C7["7.0 Develop and Manage Human Capital"]
-    C7 --> N7_3["7.3 Manage employee onboarding, training,..."]
+    C7 --> N7_3["7.3 Manage employee onboarding, training, and development"]
     N7_3 --> N7_3_2["7.3.2 Manage employee performance"]
     style N7_3_2 fill:#e1f5fe
-    N7_3_2 --> N7_3_2_1["7.3.2.1 Define employee performance obje..."]
+    N7_3_2 --> N7_3_2_1["7.3.2.1 Define employee performance objectives"]
     N7_3_2 --> N7_3_2_2["7.3.2.2 Review employee performance"]
-    N7_3_2 --> N7_3_2_4["7.3.2.4 Evaluate and review performance ..."]
+    N7_3_2 --> N7_3_2_4["7.3.2.4 Evaluate and review performance program"]
 ```
 
 ## Key Statistics
@@ -43,7 +43,6 @@ graph TD
 | Parent | [7.3](../) |
 | Sub-Processes | 3 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
@@ -52,49 +51,104 @@ manage.EmployeePerformance
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `employee performance` | Direct object |
-
+| Verb | `manage` | Primary action of directing and overseeing |
+| Object | `EmployeePerformance` | Individual work output and behaviors |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Organizational Goals"]
+        I2["Job Requirements"]
+        I3["Employee Capabilities"]
+        I4["Prior Performance Data"]
+        I5["Feedback/360 Results"]
     end
 
     subgraph Process["Manage employee performance"]
-        S1["Define employee performance..."]
-        S2["Review employee performance"]
-        S3["Evaluate and review perform..."]
+        S1["Define performance objectives"]
+        S2["Align goals to strategy"]
+        S3["Conduct ongoing feedback"]
+        S4["Review employee performance"]
+        S5["Calibrate ratings"]
+        S6["Evaluate performance program"]
+
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Performance Goals"]
+        O2["Performance Reviews"]
+        O3["Calibration Results"]
+        O4["Development Plans"]
+        O5["Compensation Inputs"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
 ```
 
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Define employee performance objectives](./DefineEmployeePerformanceObjectives) | 7.3.2.1 | Outlining the objectives for employee performance |
-| [Review employee performance](./ReviewEmployeePerformance) | 7.3.2.2 | Execution of employee reviews/performance on a frequent basis |
-| [Evaluate and review performance program](./EvaluateAndReviewPerformanceProgram) | 7.3.2.4 | Assessing and revamping performance programs, including the instruments used to measure employee per |
+| [Define employee performance objectives](./DefineEmployeePerformanceObjectives) | 7.3.2.1 | Establishing SMART goals aligned to organizational objectives |
+| [Review employee performance](./ReviewEmployeePerformance) | 7.3.2.2 | Conducting regular performance discussions and formal reviews |
+| [Evaluate and review performance program](./EvaluateAndReviewPerformanceProgram) | 7.3.2.4 | Assessing program effectiveness and updating methodologies |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define performance framework | HR/Talent Management | CHRO | Leadership, Legal | All Managers |
+| Set individual objectives | Manager & Employee | Manager | HR Business Partner | Skip Level |
+| Conduct performance discussions | Manager | Manager | HR Business Partner | Employee |
+| Complete formal reviews | Manager | Manager | HR | Compensation |
+| Calibrate ratings | HR Business Partner | Business Leader | HR, Managers | Employees |
+| Administer performance system | HR Operations | HR Director | IT | Managers |
+
+## Key Stakeholders
+
+- **Managers**: Set goals, provide feedback, conduct reviews
+- **Employees**: Participate in goal-setting, seek feedback, self-assess
+- **HR Business Partners**: Guide process, facilitate calibration
+- **Leadership**: Define organizational priorities, review talent
+- **Compensation Team**: Use ratings for pay decisions
+- **Learning & Development**: Address performance gaps through training
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Goal Completion Rate | Percentage of employees with documented goals | >95% |
+| Review Completion Rate | On-time completion of formal reviews | >98% |
+| Feedback Frequency | Check-ins per quarter manager/employee | >4 |
+| Calibration Participation | Managers completing calibration sessions | 100% |
+| Rating Distribution | Alignment to expected distribution curve | +/- 5% |
+| Employee Satisfaction | Satisfaction with performance process | >70% |
+| Manager Effectiveness | Manager coaching quality ratings | >4.0/5.0 |
+| Goal-Strategy Alignment | Goals aligned to strategic objectives | >85% |
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Process design and administration
+- [Finance](/departments/Finance) - Compensation integration
+- [All Departments](/departments) - Performance execution
+
+## Related Occupations
+
+- [Human Resources Managers](/occupations/Management/HumanResourcesManagers) - Process oversight
+- [Training and Development Managers](/occupations/Management/TrainingDevelopmentManagers) - Development planning
+- [Compensation and Benefits Managers](/occupations/Management/CompensationBenefitsManagers) - Pay-for-performance
 
 ## Related Concepts
 
-- EmployeePerformance
-- EmployeePerformance
-
+- PerformanceManagement
+- GoalSetting
+- ContinuousFeedback
+- PerformanceCalibration
+- TalentReview
+- EmployeeEngagement
 
 ---
 

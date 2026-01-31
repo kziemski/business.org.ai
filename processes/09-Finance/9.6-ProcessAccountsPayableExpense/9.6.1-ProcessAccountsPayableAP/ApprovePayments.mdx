@@ -108,6 +108,28 @@ Handles merchandise payables with trade discounts, markdown allowances, and coop
 | Cost per Invoice | Total AP cost per invoice processed | < $3 |
 | Straight-Through Processing Rate | Invoices processed without manual intervention | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AP Clerk->>+ERP System: Submit invoices for approval
+    ERP System-->>-AP Clerk: Return pending approvals
+    AP Clerk->>+AP Manager: Route for approval
+    AP Manager->>+ERP System: Review invoice details
+    ERP System-->>-AP Manager: Display supporting documents
+    AP Manager-->>-AP Clerk: Return approval decision
+    alt Approved
+        AP Clerk->>+ERP System: Update approval status
+        ERP System-->>-AP Clerk: Confirm status update
+    else Rejected
+        AP Clerk->>+Vendor: Return invoice for correction
+        Vendor-->>-AP Clerk: Acknowledge rejection
+    end
+    AP Clerk->>+Controller: Update approval audit trail
+    Controller-->>-AP Clerk: Confirm audit record
+```
+
 ## Related Concepts
 
 - Payments

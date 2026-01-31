@@ -108,6 +108,26 @@ Uses percentage-of-completion or completed-contract methods with milestone-based
 | Billing Error Rate | Percentage of invoices with errors | < 0.5% |
 | Credit Memo Volume | Number of credit adjustments issued | Declining trend |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AR Clerk->>+ERP System: Query aging report
+    ERP System-->>-AR Clerk: Return delinquent accounts
+    AR Clerk->>+Customer: Send collection notice
+    Customer-->>-AR Clerk: Acknowledge or dispute
+    alt Payment promised
+        AR Clerk->>+ERP System: Update collection notes
+        ERP System-->>-AR Clerk: Confirm status update
+    else Dispute raised
+        AR Clerk->>+AR Manager: Escalate for resolution
+        AR Manager-->>-AR Clerk: Provide resolution path
+    end
+    AR Clerk->>+Controller: Report collection activity
+    Controller-->>-AR Clerk: Confirm reporting
+```
+
 ## Related Concepts
 
 - DelinquentAccountBalances

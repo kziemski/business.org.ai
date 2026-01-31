@@ -107,6 +107,23 @@ Focuses on property valuation, lease accounting (ASC 842), and capital improveme
 | Asset Register Completeness | Percentage of assets properly recorded | 100% |
 | Return on Assets (ROA) | Net income relative to total assets | Industry benchmark |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Budget Analyst->>+ERP System: Retrieve capital requests
+    ERP System-->>-Budget Analyst: Return project list
+    Budget Analyst->>+Department Head: Gather project details
+    Department Head-->>-Budget Analyst: Provide timing and costs
+    Budget Analyst->>+FPA Manager: Consolidate capital plan
+    FPA Manager-->>-Budget Analyst: Review capital budget
+    Budget Analyst->>+Controller: Submit for approval
+    Controller-->>-Budget Analyst: Approve capital budget
+    Budget Analyst->>+CFO: Present to board
+    CFO-->>-Budget Analyst: Final approval
+```
+
 ## Related Concepts
 
 - CapitalExpenditurePlans

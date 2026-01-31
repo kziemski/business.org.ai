@@ -65,6 +65,20 @@ flowchart LR
     D -- "Issues Found" --> C
 ```
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant ProcessOwner as Process Owner
+    participant Analyst as Analyst
+    participant Stakeholder as Stakeholder
+
+    ProcessOwner->>Analyst: Initiate select process improvement methodology request
+    Analyst->>Analyst: Process request
+    Analyst->>Stakeholder: Request validation
+    Stakeholder->>ProcessOwner: Confirm completion
+```
 ## RACI Matrix
 
 | Activity | Analyst | Manager | Specialist | Manager |

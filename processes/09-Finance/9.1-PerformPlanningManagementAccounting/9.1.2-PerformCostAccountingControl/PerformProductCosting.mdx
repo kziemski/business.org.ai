@@ -108,6 +108,25 @@ Planning accounts for raw material cost volatility, production capacity constrai
 | Planning Cycle Time | Days to complete annual budgeting cycle | < 45 days |
 | Cost per Budget FTE | Cost of planning function per finance FTE | Industry benchmark |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Cost Accountant->>+ERP System: Retrieve BOM data
+    ERP System-->>-Cost Accountant: Return material costs
+    Cost Accountant->>+Operations: Request labor rates
+    Operations-->>-Cost Accountant: Provide labor data
+    Cost Accountant->>+ERP System: Calculate overhead rates
+    ERP System-->>-Cost Accountant: Return burden rates
+    Cost Accountant->>+Cost Accountant: Build product costs
+    Note over Cost Accountant: Apply cost methodology
+    Cost Accountant->>+Controller: Review cost roll
+    Controller-->>-Cost Accountant: Approve standard costs
+    Cost Accountant->>+ERP System: Update cost master
+    ERP System-->>-Cost Accountant: Confirm update
+```
+
 ## Related Concepts
 
 - ProductCosting

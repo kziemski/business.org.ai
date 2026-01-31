@@ -108,6 +108,25 @@ Uses fund accounting with modified accrual basis and compliance with GASB standa
 | Reporting Timeliness | On-time delivery of financial reports | 100% |
 | Audit Adjustments | Number of material audit adjustments | 0 |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Accountant->>+ERP System: Extract GL balances
+    ERP System-->>-Accountant: Return account balances
+    Accountant->>+ERP System: Retrieve subledger data
+    ERP System-->>-Accountant: Return subledger totals
+    Accountant->>+Accountant: Identify differences
+    Note over Accountant: Investigate variances
+    Accountant->>+Controller: Escalate unresolved items
+    Controller-->>-Accountant: Provide resolution
+    Accountant->>+ERP System: Post adjusting entries
+    ERP System-->>-Accountant: Confirm reconciliation
+    Accountant->>+Auditor: Document reconciliation
+    Auditor-->>-Accountant: Archive workpapers
+```
+
 ## Related Concepts
 
 - GeneralLedgerAccounts

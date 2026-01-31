@@ -65,6 +65,23 @@ flowchart LR
     D -- "Issues Found" --> C
 ```
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant RiskAnalyst as Risk Analyst
+    participant ComplianceOfficer as Compliance Officer
+    participant Auditor as Auditor
+    participant Legal as Legal
+
+    RiskAnalyst->>ComplianceOfficer: Initiate implement missing or stronger regulatory compliance controls and policies request
+    ComplianceOfficer->>ComplianceOfficer: Analyze requirements
+    ComplianceOfficer->>Auditor: Request validation
+    Auditor->>ComplianceOfficer: Provide feedback
+    ComplianceOfficer->>Legal: Update status
+    Legal->>RiskAnalyst: Confirm completion
+```
 ## RACI Matrix
 
 | Activity | Officer | Manager | Analyst | Auditor |

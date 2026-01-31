@@ -95,6 +95,29 @@ flowchart LR
 | [Execute interest rate trades](./ExecuteInterestRateTrades) | 9.7.5.2.4 | Performing trading on interest rates |
 
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Treasury Analyst->>+ERP System: Retrieve interest rate exposure data
+    ERP System-->>-Treasury Analyst: Return portfolio positions
+    Treasury Analyst->>+Treasury Analyst: Analyze rate sensitivity
+    Note over Treasury Analyst: Calculate duration and convexity
+    Treasury Analyst->>+Treasurer: Present risk assessment
+    Treasurer-->>-Treasury Analyst: Approve hedge requirements
+    Treasury Analyst->>+Bank: Request rate quotes
+    Bank-->>-Treasury Analyst: Provide swap/futures pricing
+    Treasury Analyst->>+Treasurer: Recommend hedge instruments
+    Treasurer-->>-Treasury Analyst: Approve execution
+    Treasury Analyst->>+Bank: Execute interest rate trades
+    Bank-->>-Treasury Analyst: Confirm trade execution
+    Treasury Analyst->>+ERP System: Record hedge transactions
+    ERP System-->>-Treasury Analyst: Confirm booking
+    Treasury Analyst->>+Controller: Report hedge effectiveness
+    Controller-->>-Treasury Analyst: Acknowledge compliance
+```
+
 ## Related Concepts
 
 - InterestRateRisk

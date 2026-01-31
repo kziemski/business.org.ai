@@ -95,6 +95,29 @@ flowchart LR
 | [Perform annual customer credit reviews](./PerformAnnualCustomerCreditReviews) | 9.7.5.4.4 | Conducting reviews to assess customer credit on a yearly basis |
 
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Treasury Analyst->>+ERP System: Retrieve customer credit exposures
+    ERP System-->>-Treasury Analyst: Return exposure by counterparty
+    Treasury Analyst->>+Treasury Analyst: Compare against credit limits
+    Note over Treasury Analyst: Identify limit exceptions
+    Treasury Analyst->>+Treasurer: Report exposure breaches
+    Treasurer-->>-Treasury Analyst: Approve remediation actions
+    Treasury Analyst->>+Customer: Request additional collateral
+    Customer-->>-Treasury Analyst: Provide collateral documentation
+    Treasury Analyst->>+ERP System: Update collateral records
+    ERP System-->>-Treasury Analyst: Confirm collateral posting
+    Treasury Analyst->>+Controller: Review credit provisions
+    Controller-->>-Treasury Analyst: Approve reserve adjustments
+    Treasury Analyst->>+ERP System: Post credit adjustments
+    ERP System-->>-Treasury Analyst: Confirm accounting entries
+    Treasury Analyst->>+CFO: Report credit risk status
+    CFO-->>-Treasury Analyst: Acknowledge risk report
+```
+
 ## Related Concepts
 
 - ExposureRisk

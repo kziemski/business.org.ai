@@ -16,9 +16,9 @@ children: ["7.2.3.1", "7.2.3.2", "7.2.3.3", "7.2.3.4", "7.2.3.5"]
 
 ## Overview
 
-Process 7.2.3 is a core process that defines the specific procedures for screen and select candidates. 
+Process 7.2.3 is a core process within [Recruit, Source, and Select Employees](../) that evaluates candidates against job requirements and organizational fit to identify the best hires. This process applies structured assessment methods to predict candidate success while ensuring fair, compliant, and positive candidate experiences.
 
-Evaluating and selecting potential employees through interviews, tests, etc.
+Effective candidate screening combines multiple assessment approaches including resume review, phone screens, structured interviews, skills assessments, cognitive tests, and reference checks. Modern approaches leverage AI-powered screening tools, video interviews, and standardized scorecards while guarding against bias. The process must balance thoroughness with speed to compete for top talent.
 
 ## Process Hierarchy
 
@@ -28,7 +28,7 @@ graph TD
     C7 --> N7_2["7.2 Recruit, source, and select employees"]
     N7_2 --> N7_2_3["7.2.3 Screen and select candidates"]
     style N7_2_3 fill:#e1f5fe
-    N7_2_3 --> N7_2_3_1["7.2.3.1 Identify and deploy candidate se..."]
+    N7_2_3 --> N7_2_3_1["7.2.3.1 Deploy candidate selection tools"]
     N7_2_3 --> N7_2_3_2["7.2.3.2 Interview candidates"]
     N7_2_3 --> N7_2_3_3["7.2.3.3 Test candidates"]
     N7_2_3 --> N7_2_3_4["7.2.3.4 Select and reject candidates"]
@@ -45,64 +45,119 @@ graph TD
 | Parent | [7.2](../) |
 | Sub-Processes | 5 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-screen.AndSelectCandidates
+screen.Candidates.for.Selection
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `screen` | Primary action |
-| Object | `and select candidates` | Direct object |
-
+| Verb | `screen` | Primary action of evaluating |
+| Object | `Candidates` | Job applicants being assessed |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `Selection` | Hiring decision |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Candidate Applications"]
+        I2["Job Requirements"]
+        I3["Selection Criteria"]
+        I4["Assessment Tools"]
+        I5["Interview Guides"]
     end
 
     subgraph Process["Screen and select candidates"]
-        S1["Identify and deploy candida..."]
-        S2["Interview candidates"]
-        S3["Test candidates"]
-        S4["Select and reject candidates"]
-        S5["Manage new hire/re-hire"]
+        S1["Deploy selection tools"]
+        S2["Screen applications"]
+        S3["Conduct interviews"]
+        S4["Administer assessments"]
+        S5["Evaluate candidates"]
+        S6["Make selection decision"]
+        S7["Extend offers"]
+
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Selected Candidates"]
+        O2["Offer Letters"]
+        O3["Interview Feedback"]
+        O4["Assessment Results"]
+        O5["Rejection Notifications"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
-    S4 --> S5
 ```
 
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Identify and deploy candidate selection tools](./IdentifyAndDeployCandidateSelectionTools) | 7.2.3.1 | Identifying and implementing tools for the selection of candidates |
-| [Interview candidates](./InterviewCandidates) | 7.2.3.2 | Assessing the candidates by their performance in the interviews |
-| [Test candidates](./TestCandidates) | 7.2.3.3 | Examining the candidates through tests |
-| [Select and reject candidates](./SelectAndRejectCandidates) | 7.2.3.4 | Approving the deserving candidates, and rejecting the others |
-| [Manage new hire/re-hire](./ManageNewHirerehire) | 7.2.3.5 | Creating and making job offers to the selected candidates |
+| [Identify and deploy candidate selection tools](./IdentifyAndDeployCandidateSelectionTools) | 7.2.3.1 | Implementing assessment platforms, interview guides, and evaluation criteria |
+| [Interview candidates](./InterviewCandidates) | 7.2.3.2 | Conducting structured interviews to assess fit and capabilities |
+| [Test candidates](./TestCandidates) | 7.2.3.3 | Administering skills assessments, cognitive tests, and simulations |
+| [Select and reject candidates](./SelectAndRejectCandidates) | 7.2.3.4 | Making hiring decisions and providing respectful rejections |
+| [Manage new hire/re-hire](./ManageNewHirerehire) | 7.2.3.5 | Creating offers and transitioning selected candidates to onboarding |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Define selection criteria | Recruiting Manager | HR Director | Hiring Manager | Recruiters |
+| Screen applications | Recruiters | Recruiting Manager | Hiring Manager | Candidates |
+| Conduct phone screens | Recruiters | Recruiting Manager | Hiring Manager | Candidates |
+| Facilitate interviews | Recruiters | Hiring Manager | Interview Team | HR Operations |
+| Administer assessments | Recruiters | Recruiting Manager | Hiring Manager | Candidates |
+| Make hiring decision | Hiring Manager | Business Leader | HR, Recruiting | Candidates |
+| Extend offers | Recruiters | Recruiting Manager | Compensation | Candidates |
+
+## Key Stakeholders
+
+- **Recruiters**: Screen candidates and coordinate process
+- **Hiring Managers**: Define requirements, interview, decide
+- **Interview Teams**: Assess candidates from multiple perspectives
+- **HR Operations**: Ensures compliance and process integrity
+- **Candidates**: Experience the selection process
+- **Assessment Vendors**: Provide testing platforms
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Time to Screen | Days from application to screening decision | <5 days |
+| Interview-to-Offer Ratio | Interviews needed per offer | <4:1 |
+| Offer Acceptance Rate | Offers accepted / offers extended | >85% |
+| Quality of Hire | New hire performance at 12 months | >80% meet expectations |
+| Candidate Experience Score | Candidate satisfaction with process | >4.0/5.0 |
+| Interviewer Training | Interviewers completing bias training | 100% |
+| Assessment Validity | Correlation of assessments to performance | >0.3 |
+| Adverse Impact Ratio | Selection rates across demographics | >80% (4/5ths rule) |
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Recruiting operations
+- [All Departments](/departments) - Hiring manager participation
+- [Legal](/departments/Legal) - Compliance oversight
+
+## Related Occupations
+
+- [Human Resources Specialists](/occupations/Business/HumanResourcesSpecialists) - Recruiting coordination
+- [Human Resources Managers](/occupations/Management/HumanResourcesManagers) - Process oversight
+- [Industrial-Organizational Psychologists](/occupations/LifeSciences/Psychologists) - Assessment design
 
 ## Related Concepts
 
-- Candidates
-- Candidates
-
+- StructuredInterviews
+- CandidateAssessment
+- SelectionCriteria
+- HiringDecisions
+- CandidateExperience
+- BiasReduction
+- PredictiveHiring
 
 ---
 

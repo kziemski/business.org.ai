@@ -108,6 +108,23 @@ Uses fund accounting with modified accrual basis and compliance with GASB standa
 | Reporting Timeliness | On-time delivery of financial reports | 100% |
 | Audit Adjustments | Number of material audit adjustments | 0 |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Accountant->>+ERP System: Prepare journal entry
+    ERP System-->>-Accountant: Validate entry format
+    Accountant->>+Controller: Submit for approval
+    Controller->>+ERP System: Review entry details
+    ERP System-->>-Controller: Display supporting docs
+    Controller-->>-Accountant: Approve journal entry
+    Accountant->>+ERP System: Post to general ledger
+    ERP System-->>-Accountant: Confirm posting
+    ERP System->>+Auditor: Update audit trail
+    Auditor-->>-ERP System: Confirm audit record
+```
+
 ## Related Concepts
 
 - JournalEntries

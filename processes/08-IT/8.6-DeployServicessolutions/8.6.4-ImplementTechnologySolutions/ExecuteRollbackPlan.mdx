@@ -69,19 +69,18 @@ flowchart LR
 ```mermaid
 sequenceDiagram
     autonumber
+    participant ReleaseManager
     participant ITManager
-    participant Architect
-    participant Developer
-    participant User
-    IT Manager->>IT Manager: Assess current state
-    IT Manager->>User: Gather requirements
-    User->>IT Manager: Provide input
-    IT Manager->>Architect: Define target state
-    Architect->>Architect: Design roadmap
-    Architect->>IT Manager: Present strategy
-    IT Manager->>IT Manager: Review and refine
-    IT Manager->>Developer: Communicate plan
-    IT Manager->>IT Manager: Monitor progress
+    participant CI/CDSystem
+    participant InfraTeam
+    ReleaseManager->>IT Manager: Report deployment failure
+    IT Manager->>IT Manager: Assess rollback decision
+    IT Manager->>ReleaseManager: Authorize rollback
+    ReleaseManager->>CI/CD System: Initiate rollback procedure
+    CI/CD System->>InfraTeam: Restore previous version
+    InfraTeam->>InfraTeam: Verify system state
+    InfraTeam->>ReleaseManager: Confirm rollback complete
+    ReleaseManager->>IT Manager: Document rollback outcome
 ```
 
 ## GraphDL Semantic Structure

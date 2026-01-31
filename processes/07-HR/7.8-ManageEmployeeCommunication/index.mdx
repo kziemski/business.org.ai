@@ -16,9 +16,9 @@ children: ["7.8.1", "7.8.2", "7.8.3", "7.8.4"]
 
 ## Overview
 
-Group 7.8 is a process group within APQC Category 7.0 (Develop and Manage Human Capital). 
+Group 7.8 is a process group within [Develop and Manage Human Capital](../) that establishes the foundation for effective internal communication throughout the organization. This process group ensures employees are informed, engaged, and connected to the organization's mission, strategy, and culture.
 
-Creating an effective plan that initiates and promotes communication and engagement among the employees and between employees and management.
+Effective employee communication goes beyond one-way information sharing to create genuine dialogue between leadership and employees. Modern approaches leverage multiple channels (intranet, mobile apps, video, town halls, manager cascades), enable two-way feedback, personalize content for different audiences, and measure communication effectiveness. When done well, employee communication builds trust, alignment, engagement, and a sense of belonging.
 
 ## Process Hierarchy
 
@@ -30,7 +30,7 @@ graph TD
     N7_8 --> N7_8_1["7.8.1 Develop employee communication plan"]
     N7_8 --> N7_8_2["7.8.2 Conduct employee engagement surveys"]
     N7_8 --> N7_8_3["7.8.3 Deliver employee communications"]
-    N7_8 --> N7_8_4["7.8.4 Manage Information Technology (IT)"]
+    N7_8 --> N7_8_4["7.8.4 Manage HR technology"]
 ```
 
 ## Key Statistics
@@ -43,7 +43,6 @@ graph TD
 | Parent | [7](../) |
 | Sub-Processes | 4 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
@@ -52,51 +51,122 @@ manage.EmployeeCommunication
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `employee communication` | Direct object |
-
+| Verb | `manage` | Primary action of directing and coordinating |
+| Object | `EmployeeCommunication` | Internal organizational messaging |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Business Strategy"]
+        I2["Change Initiatives"]
+        I3["HR Programs"]
+        I4["Employee Feedback"]
+        I5["Culture Goals"]
     end
 
     subgraph Process["Manage employee communication"]
-        S1["Develop employee communicat..."]
-        S2["Conduct employee engagement..."]
-        S3["Deliver employee communicat..."]
-        S4["Manage Information Technolo..."]
+        S1["Develop communication plan"]
+        S2["Define channels/audiences"]
+        S3["Conduct engagement surveys"]
+        S4["Analyze feedback"]
+        S5["Deliver communications"]
+        S6["Measure effectiveness"]
+
+        S1 --> S2 --> S5 --> S6
+        S3 --> S4 --> S1
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Communication Plans"]
+        O2["Employee Messages"]
+        O3["Engagement Scores"]
+        O4["Feedback Reports"]
+        O5["Action Plans"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
 ```
 
-## Sub-Processes
+## Child Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Develop employee communication plan](./DevelopEmployeeCommunicationPlan) | 7.8.1 | Creating a plan for managing communication among employees |
-| [Conduct employee engagement surveys](./ConductEmployeeEngagementSurveys) | 7.8.2 | Questioning employees to ascertain overall workplace satisfaction |
-| [Deliver employee communications](./DeliverEmployeeCommunications) | 7.8.3 | Implementing the communication plan for employees |
-| [Manage Information Technology (IT)](./ManageInformationTechnologyIT) | 7.8.4 | Managing process groups relevant to the business of information technology within an organization |
+| [Develop employee communication plan](./DevelopEmployeeCommunicationPlan) | 7.8.1 | Creating strategic communication frameworks and calendars |
+| [Conduct employee engagement surveys](./ConductEmployeeEngagementSurveys) | 7.8.2 | Measuring employee satisfaction, engagement, and feedback |
+| [Deliver employee communications](./DeliverEmployeeCommunications) | 7.8.3 | Executing communication through multiple channels |
+| [Manage HR technology](./ManageInformationTechnologyIT) | 7.8.4 | Administering communication platforms and tools |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Develop communication strategy | Internal Communications | CHRO | Leadership, Marketing | All Employees |
+| Plan communication calendar | Internal Comms | HR Director | Business Units | Managers |
+| Conduct engagement surveys | HR Analytics | CHRO | Survey Vendor | All Employees |
+| Analyze survey results | HR Analytics | HR Director | Leadership | All Employees |
+| Deliver executive communications | Internal Comms | CEO/CHRO | Legal | All Employees |
+| Manage communication tools | HR Technology | HR Director | IT | All Employees |
+
+## Key Stakeholders
+
+- **Internal Communications Team**: Designs and executes communication strategy
+- **HR Leadership**: Sponsors employee communication initiatives
+- **Executive Team**: Provides leadership voice and visibility
+- **Managers**: Cascades messages and enables dialogue
+- **Employees**: Recipients and contributors to communication
+- **IT**: Supports communication technology platforms
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Employee Engagement Score | Annual/pulse survey engagement measure | >75% |
+| Communication Reach | Percentage of employees reached | >95% |
+| Message Open Rate | Email/intranet message opens | >70% |
+| Survey Response Rate | Participation in engagement surveys | >80% |
+| Manager Communication | Managers holding team meetings | >90% |
+| Employee Net Promoter Score | Would recommend as employer | >40 |
+| Trust in Leadership | Survey measure of leadership trust | >70% |
+| Action Follow-Through | Survey actions completed | >80% |
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Communication ownership
+- [Corporate Communications](/departments/Marketing) - Message alignment
+- [Information Technology](/departments/IT) - Platform support
+- [Executive Office](/departments/Executive) - Leadership messaging
+
+## Related Occupations
+
+- [Public Relations Specialists](/occupations/Media/PublicRelationsSpecialists) - Internal communications
+- [Human Resources Managers](/occupations/Management/HumanResourcesManagers) - Strategy oversight
+- [Training and Development Managers](/occupations/Management/TrainingDevelopmentManagers) - Learning communications
+- [Computer Systems Analysts](/occupations/Computer/ComputerSystemsAnalysts) - Platform administration
+
+## Industry Variations
+
+### Manufacturing
+Heavy emphasis on shift-based communication, safety messaging, and reaching frontline workers without computer access through digital signage and mobile apps.
+
+### Healthcare
+Critical focus on clinical communication, regulatory updates, and reaching distributed workforce across multiple shifts and locations.
+
+### Retail
+Challenge of communicating with large, distributed, part-time workforce requires mobile-first approaches and manager enablement.
+
+### Technology
+Expectation of real-time, transparent communication with emphasis on collaboration tools and employee voice platforms.
 
 ## Related Concepts
 
-- EmployeeCommunication
-
+- InternalCommunications
+- EmployeeEngagement
+- ChangeManagement
+- OrganizationalCulture
+- LeadershipCommunication
+- FeedbackManagement
 
 ---
 

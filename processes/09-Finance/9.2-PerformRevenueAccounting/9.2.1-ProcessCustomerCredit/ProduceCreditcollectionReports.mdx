@@ -108,6 +108,23 @@ Uses percentage-of-completion or completed-contract methods with milestone-based
 | Billing Error Rate | Percentage of invoices with errors | < 0.5% |
 | Credit Memo Volume | Number of credit adjustments issued | Declining trend |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AR Clerk->>+ERP System: Retrieve credit application
+    ERP System-->>-AR Clerk: Return application data
+    AR Clerk->>+ERP System: Pull credit bureau data
+    ERP System-->>-AR Clerk: Return credit scores
+    AR Clerk->>+AR Manager: Submit for credit decision
+    AR Manager->>+ERP System: Review credit history
+    ERP System-->>-AR Manager: Return account history
+    AR Manager-->>-AR Clerk: Return credit decision
+    AR Clerk->>+Customer: Communicate decision
+    Customer-->>-AR Clerk: Acknowledge notification
+```
+
 ## Related Concepts
 
 - CreditReports

@@ -110,6 +110,21 @@ Treasury handles commodity hedging, project finance structures, and long-term po
 | Borrowing Cost | Weighted average cost of debt | Below benchmark |
 | FX Hedge Effectiveness | Effectiveness of currency hedging programs | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Treasury Analyst->>+ERP System: Initiate scope and governance of treasury operations
+    ERP System-->>-Treasury Analyst: Return treasury data
+    Treasury Analyst->>+Treasurer: Submit for approval
+    Treasurer-->>-Treasury Analyst: Approve transaction
+    Treasury Analyst->>+Bank: Execute with counterparty
+    Bank-->>-Treasury Analyst: Confirm execution
+    Treasury Analyst->>+Controller: Update accounting records
+    Controller-->>-Treasury Analyst: Confirm posting
+```
+
 ## Related Concepts
 
 - Scope

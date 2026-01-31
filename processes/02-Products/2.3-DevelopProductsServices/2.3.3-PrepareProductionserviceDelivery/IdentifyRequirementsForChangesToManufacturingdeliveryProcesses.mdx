@@ -55,6 +55,23 @@ identify.Requirements.for.ChangesToManufacturingdeliveryProcesses
 | PrepObject | `changes to manufacturing/delivery processes` | Indirect object |
 
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant ProductManager as Product Manager
+    participant Engineer as Engineer
+    participant QA as QA
+    participant Designer as Designer
+
+    ProductManager->>Engineer: Initiate identify requirements for changes to manufacturing/delivery processes request
+    Engineer->>Engineer: Analyze requirements
+    Engineer->>QA: Request validation
+    QA->>Engineer: Provide feedback
+    Engineer->>Designer: Update status
+    Designer->>ProductManager: Confirm completion
+```
 ## Related Concepts
 
 - Requirements

@@ -12,25 +12,36 @@ children: ["10.2.1", "10.2.2", "10.2.3", "10.2.4"]
 
 # Design and construct assets
 
-> Designing and constructing assets such as machines, tools, factories, etc.
+> Designing and constructing assets such as machines, tools, factories, and facilities. This process group encompasses capital program management, design engineering, construction scheduling, and project oversight to deliver productive assets on time and within budget.
 
 ## Overview
 
-Group 10.2 is a process group within APQC Category 10.0 (Acquire, Construct, and Manage Assets). 
+Process Group 10.2 covers the complete design and construction lifecycle for organizational assets. This includes managing capital investment programs, engineering design activities, construction scheduling and execution, and project management oversight. These processes transform strategic asset plans into operational reality.
 
-Designing and constructing assets such as machines, tools, factories, etc. Manage steps to acquire assets including managing capital, as well as planning, scheduling, and overseeing acquisition/construction.
+Successful asset construction requires careful coordination between financial planning, engineering design, construction execution, and quality management. This process group ensures that capital investments deliver expected business value through disciplined project governance, risk management, and stakeholder communication.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
-    C10["10.0 Acquire, Construct, and Manage Assets"]
-    C10 --> N10_2["10.2 Design and construct assets"]
-    style N10_2 fill:#e1f5fe
-    N10_2 --> N10_2_1["10.2.1 Manage capital program for assets"]
-    N10_2 --> N10_2_2["10.2.2 Design and plan asset construction"]
-    N10_2 --> N10_2_3["10.2.3 Schedule and perform constructio..."]
-    N10_2 --> N10_2_4["10.2.4 Manage asset construction"]
+    C10["10.0 Acquire, Construct,<br/>and Manage Assets"] --> G102["10.2 Design and construct assets"]
+
+    G102 --> P1021["10.2.1 Manage capital program<br/>for assets"]
+    G102 --> P1022["10.2.2 Design and plan<br/>asset construction"]
+    G102 --> P1023["10.2.3 Schedule and perform<br/>construction work"]
+    G102 --> P1024["10.2.4 Manage asset<br/>construction"]
+
+    P1021 --> A10211["10.2.1.1 Define capital investment plan"]
+    P1021 --> A10212["10.2.1.2 Monitor capital program"]
+    P1021 --> A10213["10.2.1.3 Secure construction financing"]
+
+    P1022 --> A10221["10.2.2.1 Develop asset specifications"]
+    P1022 --> A10222["10.2.2.2 Develop construction blueprints"]
+
+    P1023 --> A10231["10.2.3.1 Develop construction schedule"]
+    P1023 --> A10232["10.2.3.2 Perform construction work"]
+
+    style G102 fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -39,66 +50,204 @@ graph TD
 |--------|-------|
 | APQC Code | 21575 |
 | Hierarchy ID | 10.2 |
-| Level | Group |
-| Parent | [10](../) |
-| Sub-Processes | 4 |
-
-
-## GraphDL Semantic Structure
-
-```graphdl
-design.AndConstructAssets
-```
-
-| Component | Value | Description |
-|-----------|-------|-------------|
-| Verb | `design` | Primary action |
-| Object | `and construct assets` | Direct object |
-
+| Level | Process Group |
+| Category | [10.0 Acquire, Construct, and Manage Assets](../) |
+| Child Processes | 4 |
+| Total Activities | 13 |
 
 ## Process Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Property Strategy"]
+        I2["Capital Budget"]
+        I3["Business Requirements"]
+        I4["Regulatory Requirements"]
+        I5["Engineering Standards"]
+        I6["Vendor Capabilities"]
     end
 
-    subgraph Process["Design and construct assets"]
-        S1["Manage capital program for ..."]
-        S2["Design and plan asset const..."]
-        S3["Schedule and perform constr..."]
-        S4["Manage asset construction"]
+    subgraph Capital["10.2.1 Capital Program"]
+        C1["Investment Plan"]
+        C2["Program Monitoring"]
+        C3["Financing"]
+    end
+
+    subgraph Design["10.2.2 Design & Planning"]
+        D1["Specifications"]
+        D2["Blueprints"]
+        D3["Permit Applications"]
+    end
+
+    subgraph Execute["10.2.3 Construction Execution"]
+        E1["Schedule Development"]
+        E2["Resource Allocation"]
+        E3["Construction Work"]
+    end
+
+    subgraph Manage["10.2.4 Project Management"]
+        M1["Progress Tracking"]
+        M2["Quality Control"]
+        M3["Change Management"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        OUT1["Completed Assets"]
+        OUT2["As-Built Documentation"]
+        OUT3["Commissioning Reports"]
+        OUT4["Asset Records"]
     end
 
-    Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
+    Inputs --> Capital
+    Capital --> Design
+    Design --> Execute
+    Execute --> Manage
+    Manage --> Outputs
+    Capital --> Manage
 ```
 
-## Sub-Processes
+## GraphDL Semantic Structure
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Manage capital program for assets](./10.2.1-ManageCapitalProgramAssets/) | 10.2.1 | Producing and maintaining a planning schedule and a financial plan to purchase or manufacture produc |
-| [Design and plan asset construction](./10.2.2-DesignPlanAssetConstruction/) | 10.2.2 | Outlining the steps and strategies needed to construct assets |
-| [Schedule and perform construction work](./10.2.3-SchedulePerformConstructionWork/) | 10.2.3 | Arranging a timetable for which to perform construction work |
-| [Manage asset construction](./10.2.4-ManageAssetConstruction/) | 10.2.4 | Overseeing the performance and quality of work |
+```graphdl
+design.Assets
+construct.Assets
+```
 
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `design` | Engineering and planning action |
+| Verb | `construct` | Building and fabrication action |
+| Object | `Assets` | Facilities, equipment, machinery |
+
+### Decomposed Actions
+
+| Process | GraphDL Structure |
+|---------|-------------------|
+| 10.2.1 | `manage.CapitalProgram.for.Assets` |
+| 10.2.2 | `design.AssetConstruction` |
+| 10.2.3 | `schedule.ConstructionWork` |
+| 10.2.4 | `manage.AssetConstruction` |
+
+## Child Processes
+
+### [10.2.1 Manage capital program for assets](./10.2.1-ManageCapitalProgramAssets/)
+
+Producing and maintaining a planning schedule and financial plan to purchase or manufacture productive assets. This includes investment planning, program monitoring, and securing necessary financing.
+
+**APQC Code:** 19209 | **Activities:** 3
+
+Key activities include defining capital investment plans, monitoring capital programs, and securing construction financing.
+
+### [10.2.2 Design and plan asset construction](./10.2.2-DesignPlanAssetConstruction/)
+
+Outlining the steps and strategies needed to construct assets, including developing specifications, engineering blueprints, and securing necessary permits.
+
+**APQC Code:** 19213 | **Activities:** 4
+
+Key activities include developing asset specifications, creating construction blueprints, obtaining permits, and vendor selection.
+
+### [10.2.3 Schedule and perform construction work](./10.2.3-SchedulePerformConstructionWork/)
+
+Arranging a timetable and executing construction work according to design specifications and quality standards.
+
+**APQC Code:** 19218 | **Activities:** 3
+
+Key activities include developing construction schedules, allocating resources, and performing construction work.
+
+### [10.2.4 Manage asset construction](./10.2.4-ManageAssetConstruction/)
+
+Overseeing the performance and quality of construction work through project management, change control, and quality assurance.
+
+**APQC Code:** 19222 | **Activities:** 3
+
+Key activities include tracking construction progress, managing change orders, and ensuring quality standards.
+
+## RACI Matrix
+
+| Process | Responsible | Accountable | Consulted | Informed |
+|---------|-------------|-------------|-----------|----------|
+| 10.2.1 Capital Program | Finance Team | CFO | Strategy, Operations | Board, Exec Team |
+| 10.2.2 Design & Planning | Engineering | VP Engineering | Operations, Safety | Finance, Legal |
+| 10.2.3 Construction | Construction Manager | Project Director | Engineering, Quality | Finance, Operations |
+| 10.2.4 Project Management | Project Manager | VP Operations | All Stakeholders | Executive Team |
+
+## Key Stakeholders
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| Chief Financial Officer | Investment Sponsor | Capital approval, funding decisions |
+| VP of Engineering | Design Authority | Technical specifications, standards |
+| Project Director | Delivery Owner | Overall project accountability |
+| Construction Manager | Execution Lead | On-site construction oversight |
+| Quality Manager | Assurance Lead | Quality standards and compliance |
+| Procurement Manager | Vendor Management | Contractor selection, contracts |
+| Safety Manager | Risk Oversight | Safety compliance, incident prevention |
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Schedule Performance Index | Earned schedule vs. planned | >0.95 |
+| Cost Performance Index | Earned value vs. actual cost | >0.95 |
+| Budget Variance | Actual vs. budgeted cost | <5% |
+| Quality Defects | Defects requiring rework | <2% |
+| Safety Incidents | Recordable incidents per hours | Zero |
+| Change Order Rate | Change orders vs. original scope | <10% |
+| On-Time Delivery | Projects completed on schedule | >90% |
+
+## Industry Variations
+
+### Manufacturing
+Focus on production line design, equipment installation, and commissioning. Emphasis on minimizing production disruption during construction phases.
+
+### Aerospace and Defense
+Extended timelines with rigorous quality and compliance requirements. Design processes incorporate specialized materials and precision engineering standards.
+
+### Utilities
+Major infrastructure projects with long planning horizons. Regulatory approval processes and environmental impact considerations are critical path items.
+
+### Healthcare
+Construction must comply with healthcare-specific building codes, infection control requirements, and operational continuity during renovations.
+
+## Related Processes
+
+```mermaid
+graph LR
+    PAA["10.1 Plan and<br/>Acquire Assets"] --> DCA["10.2 Design and<br/>Construct Assets"]
+    FM["9.0 Financial<br/>Management"] --> DCA
+
+    DCA --> MA["10.3 Maintain<br/>Assets"]
+    DCA --> EOL["10.4 Asset<br/>End-of-Life"]
+    DCA --> FAA["10.5 Fixed Asset<br/>Accounting"]
+```
+
+## Related Departments
+
+- [Engineering](/departments/Technology) - Design and technical specifications
+- [Finance](/departments/Finance) - Capital program management
+- [Operations](/departments/Operations) - Requirements and commissioning
+- [Procurement](/departments/Procurement) - Contractor management
+- [Legal](/departments/Legal) - Contracts and permits
+
+## Related Occupations
+
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Project execution
+- [Industrial Engineers](/occupations/Architecture/IndustrialEngineers) - Process design
+- [Architects](/occupations/Architecture/Architects) - Facility design
+- [Financial Managers](/occupations/Management/FinancialManagers) - Capital planning
+- [Civil Engineers](/occupations/Architecture/CivilEngineers) - Infrastructure design
+- [Project Management Specialists](/occupations/Business/Management/ProjectManagementSpecialists) - Project coordination
 
 ## Related Concepts
 
-- Assets
-- Assets
-
+- CapitalProgramManagement
+- ConstructionManagement
+- EngineeringDesign
+- ProjectManagement
+- QualityAssurance
+- ChangeManagement
 
 ---
 
-*Source: APQC PCF 21575 (10.2) - APQC*
+*Source: APQC PCF 21575 (10.2) - Cross-Industry Process Classification Framework*

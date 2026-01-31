@@ -108,6 +108,21 @@ Handles merchandise payables with trade discounts, markdown allowances, and coop
 | Cost per Invoice | Total AP cost per invoice processed | < $3 |
 | Straight-Through Processing Rate | Invoices processed without manual intervention | > 80% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    AP Clerk->>+ERP System: Initiate payables taxes
+    ERP System-->>-AP Clerk: Return relevant data
+    AP Clerk->>+AP Manager: Submit for review
+    AP Manager-->>-AP Clerk: Approve processing
+    AP Clerk->>+ERP System: Execute process action
+    ERP System-->>-AP Clerk: Confirm completion
+    AP Clerk->>+Controller: Update accounting records
+    Controller-->>-AP Clerk: Confirm GL impact
+```
+
 ## Related Concepts
 
 - PayablesTaxes

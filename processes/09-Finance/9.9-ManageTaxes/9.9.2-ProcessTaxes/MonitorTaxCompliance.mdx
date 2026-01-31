@@ -108,6 +108,25 @@ Manages R&D tax credits, IP holding structures, and digital services tax obligat
 | Tax Audit Adjustments | Value of audit-imposed adjustments | < 1% of tax liability |
 | Tax Provision Accuracy | Accuracy of quarterly tax provision | > 98% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Tax Analyst->>+ERP System: Generate compliance checklist
+    ERP System-->>-Tax Analyst: Return filing calendar
+    Tax Analyst->>+Tax Analyst: Track filing status
+    Note over Tax Analyst: Monitor deadlines
+    Tax Analyst->>+Tax Manager: Report compliance status
+    Tax Manager-->>-Tax Analyst: Acknowledge report
+    alt Issue detected
+        Tax Analyst->>+External Advisor: Request guidance
+        External Advisor-->>-Tax Analyst: Provide resolution
+    end
+    Tax Analyst->>+Controller: Update compliance records
+    Controller-->>-Tax Analyst: Confirm update
+```
+
 ## Related Concepts
 
 - TaxCompliance

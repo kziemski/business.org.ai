@@ -108,6 +108,23 @@ Focuses on inventory controls, cost accounting accuracy, and supply chain financ
 | SOX Compliance Rate | Percentage of controls tested as effective | > 98% |
 | Policy Exception Rate | Percentage of transactions with policy exceptions | < 2% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Control Analyst->>+Process Owner: Retrieve control inventory
+    Process Owner-->>-Control Analyst: Return control list
+    Control Analyst->>+Process Owner: Select test samples
+    Process Owner-->>-Control Analyst: Return test data
+    Control Analyst->>+Control Analyst: Execute control tests
+    Note over Control Analyst: Evaluate effectiveness
+    Control Analyst->>+Auditor: Document exceptions
+    Auditor-->>-Control Analyst: Confirm documentation
+    Control Analyst->>+Controller: Report test results
+    Controller-->>-Control Analyst: Acknowledge results
+```
+
 ## Related Concepts
 
 - ControlEffectiveness

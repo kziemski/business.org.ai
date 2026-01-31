@@ -55,6 +55,23 @@ assess.Feasibility.of.IntegratingNewLeadingTechnologiesIntoProductserviceConcept
 | PrepObject | `integrating new leading technologies into product/service concepts` | Indirect object |
 
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant ProductManager as Product Manager
+    participant Engineer as Engineer
+    participant QA as QA
+    participant Designer as Designer
+
+    ProductManager->>Engineer: Initiate assess feasibility of integrating new leading technologies into product/service concepts request
+    Engineer->>Engineer: Analyze requirements
+    Engineer->>QA: Request validation
+    QA->>Engineer: Provide feedback
+    Engineer->>Designer: Update status
+    Designer->>ProductManager: Confirm completion
+```
 ## Related Concepts
 
 - Feasibility

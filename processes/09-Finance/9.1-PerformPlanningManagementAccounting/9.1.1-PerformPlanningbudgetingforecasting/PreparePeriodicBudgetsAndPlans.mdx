@@ -108,6 +108,25 @@ Planning accounts for raw material cost volatility, production capacity constrai
 | Planning Cycle Time | Days to complete annual budgeting cycle | < 45 days |
 | Cost per Budget FTE | Cost of planning function per finance FTE | Industry benchmark |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Budget Analyst->>+Department Head: Request budget inputs
+    Department Head-->>-Budget Analyst: Submit department budgets
+    Budget Analyst->>+ERP System: Consolidate budgets
+    ERP System-->>-Budget Analyst: Return consolidated view
+    Budget Analyst->>+FPA Manager: Review budget totals
+    FPA Manager-->>-Budget Analyst: Request adjustments
+    Budget Analyst->>+Department Head: Negotiate changes
+    Department Head-->>-Budget Analyst: Submit revisions
+    Budget Analyst->>+Controller: Submit for approval
+    Controller-->>-Budget Analyst: Approve budget
+    Budget Analyst->>+CFO: Present to executive
+    CFO-->>-Budget Analyst: Final approval
+```
+
 ## Related Concepts
 
 - PeriodicBudgets

@@ -12,21 +12,25 @@ children: ["10.4.1.1", "10.4.1.2"]
 
 # Develop exit strategy
 
-> Creating a strategy for managing asset exits.
+> Creating a strategy for managing asset exits, including monitoring asset useful life, analyzing replacement economics, and planning for optimal disposition timing.
 
 ## Overview
 
-Process 10.4.1 is a core process that defines the specific procedures for develop exit strategy. 
+Process 10.4.1 establishes the strategic framework for managing asset end-of-life decisions. This process ensures organizations proactively plan for asset retirement rather than reacting to failures or obsolescence. Effective exit strategies maximize the remaining value of assets while minimizing disruption to operations.
+
+Developing exit strategies requires balancing multiple factors including remaining useful life, maintenance costs, replacement costs, operational requirements, regulatory compliance, and market conditions for asset disposal. This process integrates with capital planning to ensure timely funding for replacements and smooth transitions.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
-    C10["10.0 Acquire, Construct, and Manage Assets"]
-    C10 --> N10_4_1["10.4.1 Develop exit strategy"]
-    style N10_4_1 fill:#e1f5fe
-    N10_4_1 --> N10_4_1_1["10.4.1.1 Monitor useful life of assets"]
-    N10_4_1 --> N10_4_1_2["10.4.1.2 Perform cost vs. benefit analysi..."]
+    C10["10.0 Acquire, Construct,<br/>and Manage Assets"] --> G104["10.4 Manage asset<br/>end-of-life"]
+    G104 --> P1041["10.4.1 Develop exit strategy"]
+
+    P1041 --> A104_1_1["10.4.1.1 Monitor useful<br/>life of assets"]
+    P1041 --> A104_1_2["10.4.1.2 Perform cost vs.<br/>benefit analysis"]
+
+    style P1041 fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -36,9 +40,56 @@ graph TD
 | APQC Code | 10952 |
 | Hierarchy ID | 10.4.1 |
 | Level | Process |
-| Parent | [10.4](../) |
+| Parent | [10.4 Manage asset end-of-life](../) |
+| Category | [10.0 Acquire, Construct, and Manage Assets](../../) |
 | Sub-Processes | 2 |
 
+## Process Flow
+
+```mermaid
+flowchart TB
+    subgraph Inputs["Inputs"]
+        I1["Asset Registry"]
+        I2["Maintenance History"]
+        I3["Performance Data"]
+        I4["Market Conditions"]
+        I5["Regulatory Requirements"]
+        I6["Capital Budget"]
+    end
+
+    subgraph Monitor["10.4.1.1 Monitor Useful Life"]
+        M1["Track Asset Age"]
+        M2["Assess Condition"]
+        M3["Project Remaining Life"]
+        M4["Identify End-of-Life Triggers"]
+    end
+
+    subgraph Analyze["10.4.1.2 Cost/Benefit Analysis"]
+        A1["Calculate Maintenance Costs"]
+        A2["Estimate Replacement Costs"]
+        A3["Assess Disposal Value"]
+        A4["Compare Scenarios"]
+    end
+
+    subgraph Strategy["Exit Strategy Development"]
+        S1["Timing Decisions"]
+        S2["Disposition Method"]
+        S3["Replacement Planning"]
+        S4["Budget Requests"]
+    end
+
+    subgraph Outputs["Outputs"]
+        OUT1["Exit Strategy Document"]
+        OUT2["Asset Retirement Schedule"]
+        OUT3["Capital Requests"]
+        OUT4["Disposition Plans"]
+    end
+
+    Inputs --> Monitor
+    Monitor --> Analyze
+    Analyze --> Strategy
+    Strategy --> Outputs
+```
 
 ## GraphDL Semantic Structure
 
@@ -48,46 +99,117 @@ develop.ExitStrategy
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `develop` | Primary action |
-| Object | `exit strategy` | Direct object |
+| Verb | `develop` | Strategic planning action |
+| Object | `ExitStrategy` | Asset retirement plan |
 
+### Decomposed Actions
 
-## Process Flow
-
-```mermaid
-flowchart LR
-    subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
-    end
-
-    subgraph Process["Develop exit strategy"]
-        S1["Monitor useful life of assets"]
-        S2["Perform cost vs. benefit an..."]
-    end
-
-    subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
-    end
-
-    Inputs --> Process --> Outputs
-    S1 --> S2
-```
+| Activity | GraphDL Structure |
+|----------|-------------------|
+| 10.4.1.1 | `monitor.UsefulLife.of.Assets` |
+| 10.4.1.2 | `perform.CostBenefitAnalysis.for.Replacement` |
 
 ## Sub-Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Monitor useful life of assets](./MonitorUsefulLifeOfAssets) | 10.4.1.1 | Monitoring assets against their planned useful life |
-| [Perform cost vs. benefit analysis for replacement](./PerformCostVsBenefitAnalysisForReplacement) | 10.4.1.2 | Cost/benefit analysis of assets to determine retention or end-of-life |
+### [10.4.1.1 Monitor useful life of assets](./MonitorUsefulLifeOfAssets)
 
+Monitoring assets against their planned useful life to identify approaching end-of-life conditions. This includes tracking age, condition, performance degradation, and maintenance trends.
+
+**Key Activities:**
+- Track asset age against expected useful life
+- Monitor condition through inspections and testing
+- Analyze performance trends and degradation
+- Identify assets approaching end-of-life thresholds
+
+### [10.4.1.2 Perform cost vs. benefit analysis for replacement](./PerformCostVsBenefitAnalysisForReplacement)
+
+Cost/benefit analysis of assets to determine optimal timing for retention, refurbishment, or end-of-life disposition.
+
+**Key Activities:**
+- Calculate total cost of continued operation
+- Estimate replacement and installation costs
+- Assess residual/salvage value
+- Compare repair vs. replace scenarios
+- Model lifecycle cost alternatives
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Monitor Useful Life | Asset Manager | Facilities Director | Maintenance, Finance | Operations |
+| Cost/Benefit Analysis | Finance Analyst | CFO | Asset Manager, Operations | Executive Team |
+| Strategy Development | Asset Manager | VP Operations | Finance, Procurement | Board |
+
+## Key Stakeholders
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| Facilities Director | Process Owner | Exit strategy oversight |
+| Asset Manager | Execution Lead | Monitoring and analysis |
+| Finance Manager | Financial Lead | Cost analysis, budgeting |
+| Operations Manager | Customer | Operational requirements |
+| Procurement Manager | Support | Market analysis, disposal options |
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Asset Life Utilization | Actual vs. planned useful life | >90% |
+| Unplanned Retirements | Assets retired due to failure | <5% |
+| Exit Strategy Coverage | Assets with documented exit plans | 100% |
+| Replacement Lead Time | Planning horizon for replacements | >18 months |
+| Disposal Value Recovery | Actual vs. estimated disposal value | >85% |
+| Budget Variance | Actual vs. planned replacement costs | <10% |
+
+## Industry Variations
+
+### Manufacturing
+Focus on production equipment lifecycle, technology obsolescence, and production continuity during transitions.
+
+### Utilities
+Long-lived infrastructure with regulatory considerations for cost recovery and environmental compliance.
+
+### Healthcare
+Medical equipment subject to regulatory requirements, technology advancement cycles, and patient safety considerations.
+
+### Transportation
+Fleet management with safety certifications, emission standards, and residual value optimization.
+
+## Related Processes
+
+```mermaid
+graph LR
+    MA["10.3 Maintain<br/>Assets"] --> DES["10.4.1 Develop<br/>Exit Strategy"]
+    FM["9.0 Financial<br/>Management"] --> DES
+
+    DES --> DC["10.4.2 Decommission<br/>Assets"]
+    DES --> DD["10.4.3 Dismantle<br/>and Dispose"]
+    DES --> PAA["10.1 Plan and<br/>Acquire Assets"]
+```
+
+## Related Departments
+
+- [Finance](/departments/Finance) - Capital planning and analysis
+- [Operations](/departments/Operations) - Operational requirements
+- [Procurement](/departments/Procurement) - Market analysis, disposal
+- [Engineering](/departments/Technology) - Technical assessment
+
+## Related Occupations
+
+- [Financial Managers](/occupations/Management/FinancialManagers) - Investment analysis
+- [Facilities Managers](/occupations/Management/FacilitiesManagers) - Asset lifecycle management
+- [Industrial Engineers](/occupations/Architecture/IndustrialEngineers) - Technical assessment
+- [Logisticians](/occupations/Business/Operations/Logisticians) - Disposal logistics
 
 ## Related Concepts
 
-- ExitStrategy
-
+- AssetLifecycle
+- CapitalPlanning
+- ReplacementAnalysis
+- AssetDisposition
+- UsefulLife
+- TotalCostOfOwnership
 
 ---
 
-*Source: APQC PCF 10952 (10.4.1) - APQC*
+*Source: APQC PCF 10952 (10.4.1) - Cross-Industry Process Classification Framework*

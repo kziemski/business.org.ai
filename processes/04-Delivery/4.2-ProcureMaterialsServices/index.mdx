@@ -16,9 +16,9 @@ children: ["4.2.1", "4.2.2", "4.2.3", "4.2.4"]
 
 ## Overview
 
-Group 4.2 is a process group within APQC Category 4.0 (Deliver Physical Products). 
+Group 4.2 is a process group within [Deliver Physical Products](../) that manages the acquisition of all materials, components, and services needed to support production and operations. This process group ensures the organization obtains required inputs at optimal cost, quality, and delivery while managing supply chain risks.
 
-Creating a plan for procuring materials and services. Develop strategies for sourcing materials and services. Choose the most appropriate suppliers, and develop contracts with them. Order the materials and services as per the requirements. Manage relationships with suppliers.
+Procurement encompasses strategic sourcing, supplier selection, contract management, and operational purchasing. Modern procurement balances cost reduction with value creation through supplier partnerships, innovation collaboration, sustainability initiatives, and risk management. Effective procurement directly impacts product quality, operational efficiency, and financial performance.
 
 ## Process Hierarchy
 
@@ -27,8 +27,8 @@ graph TD
     C4["4.0 Deliver Physical Products"]
     C4 --> N4_2["4.2 Procure materials and services"]
     style N4_2 fill:#e1f5fe
-    N4_2 --> N4_2_1["4.2.1 Provide sourcing governance and ..."]
-    N4_2 --> N4_2_2["4.2.2 Select suppliers and develop/mai..."]
+    N4_2 --> N4_2_1["4.2.1 Provide sourcing governance"]
+    N4_2 --> N4_2_2["4.2.2 Select suppliers and contracts"]
     N4_2 --> N4_2_3["4.2.3 Order materials and services"]
     N4_2 --> N4_2_4["4.2.4 Manage suppliers"]
 ```
@@ -43,61 +43,135 @@ graph TD
 | Parent | [4](../) |
 | Sub-Processes | 4 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-procure.MaterialsAndServices
+procure.Materials.for.Production
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `procure` | Primary action |
-| Object | `materials and services` | Direct object |
-
+| Verb | `procure` | Primary action of acquiring |
+| Object | `Materials` | Goods and services to purchase |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `Production` | Manufacturing operations |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Material Requirements"]
+        I2["Service Needs"]
+        I3["Budget Allocation"]
+        I4["Supplier Market Intelligence"]
+        I5["Quality Requirements"]
     end
 
     subgraph Process["Procure materials and services"]
-        S1["Provide sourcing governance..."]
-        S2["Select suppliers and develo..."]
-        S3["Order materials and services"]
-        S4["Manage suppliers"]
+        S1["Provide sourcing governance"]
+        S2["Develop category strategies"]
+        S3["Select and qualify suppliers"]
+        S4["Negotiate contracts"]
+        S5["Process purchase orders"]
+        S6["Receive and validate"]
+        S7["Manage supplier performance"]
+
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Purchased Materials"]
+        O2["Service Deliverables"]
+        O3["Contracts"]
+        O4["Supplier Scorecards"]
+        O5["Cost Savings"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
 ```
 
-## Sub-Processes
+## Child Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Provide sourcing governance and perform category management](./4.2.1-ProvideSourcingGovernancePerform/) | 4.2.1 | Creating strategies for procuring materials and services from various sources, and for managing and  |
-| [Select suppliers and develop/maintain contracts](./4.2.2-SelectSuppliersDevelopmaintainContracts/) | 4.2.2 | Evaluating supplier options to select the most effective and efficient suppliers |
-| [Order materials and services](./4.2.3-OrderMaterialsServices/) | 4.2.3 | Creating and approving requisitions and distributing purchase orders accordingly |
-| [Manage suppliers](./4.2.4-ManageSuppliers/) | 4.2.4 | Collecting and analyzing new information in order to track and rate suppliers through a supplier inf |
+| [Provide sourcing governance and category management](./4.2.1-ProvideSourcingGovernancePerform/) | 4.2.1 | Establishing procurement strategies, policies, and category expertise |
+| [Select suppliers and develop/maintain contracts](./4.2.2-SelectSuppliersDevelopmaintainContracts/) | 4.2.2 | Evaluating, selecting, and contracting with suppliers |
+| [Order materials and services](./4.2.3-OrderMaterialsServices/) | 4.2.3 | Executing purchase transactions from requisition to receipt |
+| [Manage suppliers](./4.2.4-ManageSuppliers/) | 4.2.4 | Monitoring and developing supplier relationships and performance |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Develop sourcing strategy | Strategic Sourcing | CPO | Business Units | Finance |
+| Manage categories | Category Managers | CPO | Quality, Engineering | Operations |
+| Select and qualify suppliers | Category Managers | CPO | Quality | Operations |
+| Negotiate contracts | Category Managers | CPO | Legal | Finance |
+| Process purchase orders | Procurement Operations | Procurement Manager | Requisitioners | Suppliers |
+| Manage supplier performance | Category Managers | CPO | Quality, Operations | Suppliers |
+
+## Key Stakeholders
+
+- **Chief Procurement Officer (CPO)**: Strategic leadership and governance
+- **Category Managers**: Manage categories and supplier relationships
+- **Procurement Operations**: Execute transactional purchasing
+- **Quality Assurance**: Validates supplier quality
+- **Operations/Manufacturing**: Primary internal customers
+- **Finance**: Budget management and cost tracking
+- **Suppliers**: External partners providing materials and services
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Cost Savings | Year-over-year cost reduction | >3% |
+| Supplier On-Time Delivery | Deliveries meeting scheduled dates | >98% |
+| Supplier Quality | Materials meeting specifications | >99% |
+| Purchase Order Cycle Time | Requisition to PO time | <24 hours |
+| Spend Under Management | Spend with strategic sourcing | >80% |
+| Contract Compliance | Purchases using contracted suppliers | >90% |
+| Supplier Diversity | Spend with diverse suppliers | Per policy |
+| Procurement Cost Ratio | Procurement cost / total spend | <1% |
+
+## Related Departments
+
+- [Procurement](/departments/Procurement) - Strategic sourcing and purchasing
+- [Quality Assurance](/departments/Quality) - Supplier quality management
+- [Finance](/departments/Finance) - Cost management and payment
+- [Operations](/departments/Operations) - Requirements and consumption
+- [Legal](/departments/Legal) - Contract review and compliance
+
+## Related Occupations
+
+- [Purchasing Managers](/occupations/Management/PurchasingManagers) - Procurement leadership
+- [Purchasing Agents](/occupations/Business/PurchasingAgents) - Buying operations
+- [Contract Specialists](/occupations/Business/ContractSpecialists) - Contract administration
+- [Supply Chain Managers](/occupations/Management/SupplyChainManagers) - Integration with operations
+
+## Industry Variations
+
+### Manufacturing
+Direct materials focus, JIT delivery requirements, supplier quality integration, and long-term supplier development programs.
+
+### Retail
+Merchandise buying, private label sourcing, seasonal purchasing, and vendor-managed inventory programs.
+
+### Healthcare
+Medical device and pharmaceutical procurement, GPO participation, and regulatory compliance requirements.
+
+### Construction
+Project-based procurement, subcontractor management, and construction materials sourcing.
 
 ## Related Concepts
 
-- Materials
-- Services
-
+- StrategicSourcing
+- CategoryManagement
+- SupplierRelationshipManagement
+- ContractManagement
+- SpendAnalysis
+- ProcureToPay
+- SupplyChainRisk
 
 ---
 

@@ -16,9 +16,9 @@ children: ["7.5.3.1", "7.5.3.2"]
 
 ## Overview
 
-Process 7.5.3 is a core process that defines the specific procedures for manage employee assistance and retention. 
+Process 7.5.3 is a core process within [Reward and Retain Employees](../) that focuses on supporting employee wellbeing and reducing unwanted turnover. This process addresses the holistic needs of employees beyond compensation, creating an environment where people can thrive professionally and personally.
 
-Managing activities centered around delivering programs to support work/life balance for employees; developing family support systems; reviewing retention and motivation indicators; and reviewing compensation plans.
+Employee assistance and retention programs recognize that engaged, supported employees deliver better business outcomes. These programs include Employee Assistance Programs (EAP), wellness initiatives, work/life balance support, flexible work arrangements, family care resources, and proactive retention strategies for critical talent. Effective implementation requires understanding employee needs, measuring program effectiveness, and continuously evolving offerings.
 
 ## Process Hierarchy
 
@@ -28,7 +28,7 @@ graph TD
     C7 --> N7_5["7.5 Reward and retain employees"]
     N7_5 --> N7_5_3["7.5.3 Manage employee assistance and retention"]
     style N7_5_3 fill:#e1f5fe
-    N7_5_3 --> N7_5_3_1["7.5.3.1 Deliver programs to support work..."]
+    N7_5_3 --> N7_5_3_1["7.5.3.1 Deliver work/life balance programs"]
     N7_5_3 --> N7_5_3_2["7.5.3.2 Develop family support systems"]
 ```
 
@@ -42,55 +42,119 @@ graph TD
 | Parent | [7.5](../) |
 | Sub-Processes | 2 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-manage.EmployeeAssistanceAndRetention
+manage.EmployeeAssistance.for.Retention
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `employee assistance and retention` | Direct object |
-
+| Verb | `manage` | Primary action of administering |
+| Object | `EmployeeAssistance` | Support programs and services |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `Retention` | Keeping valuable employees |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Employee Needs Assessment"]
+        I2["Turnover Data"]
+        I3["Engagement Surveys"]
+        I4["Market Benchmarks"]
+        I5["Budget Allocation"]
     end
 
     subgraph Process["Manage employee assistance and retention"]
-        S1["Deliver programs to support..."]
-        S2["Develop family support systems"]
+        S1["Assess employee needs"]
+        S2["Design assistance programs"]
+        S3["Deliver work/life support"]
+        S4["Develop family resources"]
+        S5["Monitor retention indicators"]
+        S6["Intervene for at-risk talent"]
+
+        S1 --> S2 --> S3
+        S2 --> S4
+        S3 --> S5 --> S6
+        S4 --> S5
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["EAP Services"]
+        O2["Wellness Programs"]
+        O3["Retention Initiatives"]
+        O4["Utilization Reports"]
+        O5["Turnover Analysis"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
 ```
 
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Deliver programs to support work/life balance for employees](./7.5.3.1-DeliverProgramsSupportWorklife/) | 7.5.3.1 | Designing programs that prompt proper balance between work (i |
-| [Develop family support systems](./DevelopFamilySupportSystems) | 7.5.3.2 | Creating a support structure that aligns with local and federal laws that allow for support for fami |
+| [Deliver programs to support work/life balance](./7.5.3.1-DeliverProgramsSupportWorklife/) | 7.5.3.1 | Designing and implementing programs for employee wellbeing and balance |
+| [Develop family support systems](./DevelopFamilySupportSystems) | 7.5.3.2 | Creating resources for parental leave, childcare, eldercare, and family needs |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Assess employee needs | HR Analytics | CHRO | Employees, Managers | Leadership |
+| Design EAP programs | Benefits Team | VP Total Rewards | EAP Provider | Employees |
+| Manage wellness initiatives | Wellness Coordinator | HR Director | Benefits, Safety | All Employees |
+| Analyze retention risk | HR Analytics | HR Business Partner | Managers | Leadership |
+| Conduct stay interviews | Managers | HR Business Partner | Employee | HR Analytics |
+| Implement retention actions | Managers | Business Leader | HR, Finance | CHRO |
+
+## Key Stakeholders
+
+- **Benefits/Wellness Team**: Designs and administers assistance programs
+- **HR Business Partners**: Identifies retention risks and interventions
+- **Managers**: Supports employee wellbeing and retention
+- **Employees**: Primary beneficiaries of programs
+- **EAP Providers**: Delivers counseling and support services
+- **Leadership**: Champions culture of wellbeing
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Voluntary Turnover Rate | Annual voluntary departures | <12% |
+| Regrettable Turnover | Loss of high performers/potentials | <5% |
+| EAP Utilization Rate | Employees accessing EAP services | >8% |
+| Program Satisfaction | Employee satisfaction with assistance programs | >80% |
+| Retention of At-Risk | Employees retained after intervention | >75% |
+| Work/Life Balance Score | Survey measure of balance | >4.0/5.0 |
+| Wellness Participation | Employees in wellness programs | >50% |
+| Return on Retention | Value of avoided turnover costs | >500% |
+
+## Related Departments
+
+- [Human Resources](/departments/HumanResources) - Program design and administration
+- [Finance](/departments/Finance) - ROI analysis and budget
+- [Legal](/departments/Legal) - Compliance with leave and benefits laws
+- [All Departments](/departments) - Manager participation in retention
+
+## Related Occupations
+
+- [Human Resources Managers](/occupations/Management/HumanResourcesManagers) - Program oversight
+- [Compensation and Benefits Managers](/occupations/Management/CompensationBenefitsManagers) - Benefits administration
+- [Social Workers](/occupations/Community/SocialWorkers) - EAP services
+- [Health Educators](/occupations/Education/HealthEducators) - Wellness programming
 
 ## Related Concepts
 
-- EmployeeAssistance
-- Retention
-
+- EmployeeAssistanceProgram
+- WorkLifeBalance
+- TalentRetention
+- EmployeeWellness
+- EngagementStrategies
+- FlexibleWork
+- FamilyBenefits
 
 ---
 

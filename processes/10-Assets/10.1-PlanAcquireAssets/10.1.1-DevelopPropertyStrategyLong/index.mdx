@@ -12,25 +12,26 @@ children: ["10.1.1.1", "10.1.1.2", "10.1.1.3"]
 
 # Develop property strategy and long term vision
 
-> Strategizing a long-term vision for managing properties.
+> Strategizing a long-term vision for managing properties by aligning real estate decisions with business strategy, assessing market conditions, and determining optimal acquisition approaches.
 
 ## Overview
 
-Process 10.1.1 is a core process that defines the specific procedures for develop property strategy and long term vision. 
+Process 10.1.1 establishes the strategic foundation for all property-related decisions. This includes ensuring property requirements align with business objectives, evaluating external market conditions, and making informed build/buy/lease decisions that optimize capital deployment and operational flexibility.
 
-Strategizing a long-term vision for managing properties. Prepare strategies and a long-term vision for managing purchased/retained properties.
+Effective property strategy balances long-term growth projections, financial constraints, operational requirements, and market opportunities. This process typically operates on multi-year planning horizons and integrates with corporate strategy, financial planning, and workforce planning cycles.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
-    C10["10.0 Acquire, Construct, and Manage Assets"]
-    C10 --> N10_1["10.1 Plan and acquire assets"]
-    N10_1 --> N10_1_1["10.1.1 Develop property strategy and long te..."]
-    style N10_1_1 fill:#e1f5fe
-    N10_1_1 --> N10_1_1_1["10.1.1.1 Confirm alignment of property re..."]
-    N10_1_1 --> N10_1_1_2["10.1.1.2 Appraise the external environment"]
-    N10_1_1 --> N10_1_1_3["10.1.1.3 Determine build, buy, or lease d..."]
+    C10["10.0 Acquire, Construct,<br/>and Manage Assets"] --> G101["10.1 Plan and<br/>acquire assets"]
+    G101 --> P1011["10.1.1 Develop property strategy<br/>and long-term vision"]
+
+    P1011 --> A10111["10.1.1.1 Confirm alignment<br/>with strategy"]
+    P1011 --> A10112["10.1.1.2 Appraise external<br/>environment"]
+    P1011 --> A10113["10.1.1.3 Determine build/<br/>buy/lease"]
+
+    style P1011 fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -40,62 +41,207 @@ graph TD
 | APQC Code | 10941 |
 | Hierarchy ID | 10.1.1 |
 | Level | Process |
-| Parent | [10.1](../) |
+| Parent | [10.1 Plan and acquire assets](../) |
+| Category | [10.0 Acquire, Construct, and Manage Assets](../../) |
 | Sub-Processes | 3 |
-
-
-## GraphDL Semantic Structure
-
-```graphdl
-develop.PropertyStrategyAndLongTermVision
-```
-
-| Component | Value | Description |
-|-----------|-------|-------------|
-| Verb | `develop` | Primary action |
-| Object | `property strategy and long term vision` | Direct object |
-
 
 ## Process Flow
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Business Strategy"]
+        I2["Growth Projections"]
+        I3["Financial Plan"]
+        I4["Market Intelligence"]
+        I5["Current Portfolio"]
+        I6["Workforce Strategy"]
     end
 
-    subgraph Process["Develop property strategy and long term vision"]
-        S1["Confirm alignment of proper..."]
-        S2["Appraise the external envir..."]
-        S3["Determine build, buy, or le..."]
+    subgraph Align["10.1.1.1 Confirm Strategic Alignment"]
+        A1["Map Business Requirements"]
+        A2["Assess Current Portfolio"]
+        A3["Identify Gaps"]
+        A4["Define Property Needs"]
+    end
+
+    subgraph Appraise["10.1.1.2 Appraise External Environment"]
+        E1["Analyze Market Conditions"]
+        E2["Assess Location Options"]
+        E3["Evaluate Economic Factors"]
+        E4["Consider Regulatory Environment"]
+    end
+
+    subgraph Decide["10.1.1.3 Build/Buy/Lease Decision"]
+        D1["Evaluate Options"]
+        D2["Financial Analysis"]
+        D3["Risk Assessment"]
+        D4["Make Recommendation"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        OUT1["Property Strategy Document"]
+        OUT2["Portfolio Plan"]
+        OUT3["Capital Requirements"]
+        OUT4["Implementation Roadmap"]
     end
 
-    Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
+    Inputs --> Align
+    Align --> Appraise
+    Appraise --> Decide
+    Decide --> Outputs
 ```
+
+## GraphDL Semantic Structure
+
+```graphdl
+develop.PropertyStrategy.and.LongTermVision
+```
+
+| Component | Value | Description |
+|-----------|-------|-------------|
+| Verb | `develop` | Strategic planning action |
+| Object | `PropertyStrategy` | Real estate approach |
+| Conjunction | `and` | Additional element |
+| Object2 | `LongTermVision` | Future-state planning |
+
+### Decomposed Actions
+
+| Activity | GraphDL Structure |
+|----------|-------------------|
+| 10.1.1.1 | `confirm.Alignment.of.PropertyRequirements.with.BusinessStrategy` |
+| 10.1.1.2 | `appraise.ExternalEnvironment` |
+| 10.1.1.3 | `determine.BuildBuyOrLeaseDecision` |
 
 ## Sub-Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Confirm alignment of property requirements with business strategy](./ConfirmAlignmentOfPropertyRequirementsWithBusinessStrategy) | 10.1.1.1 | Creating alignment between the requirement of properties and the overall business strategy |
-| [Appraise the external environment](./AppraiseTheExternalEnvironment) | 10.1.1.2 | Evaluating the impact of the external environment |
-| [Determine build, buy, or lease decision](./DetermineBuildBuyOrLeaseDecision) | 10.1.1.3 | Deciding whether to buy or build properties |
+### [10.1.1.1 Confirm alignment of property requirements with business strategy](./ConfirmAlignmentOfPropertyRequirementsWithBusinessStrategy)
 
+Creating alignment between property requirements and overall business strategy to ensure real estate investments support organizational objectives.
+
+**Key Activities:**
+- Translate business strategy into space requirements
+- Assess current portfolio against future needs
+- Identify geographic and capacity requirements
+- Define timing and phasing of property needs
+- Document strategic property requirements
+
+### [10.1.1.2 Appraise the external environment](./AppraiseTheExternalEnvironment)
+
+Evaluating the impact of external factors including real estate market conditions, economic trends, and regulatory environments on property decisions.
+
+**Key Activities:**
+- Analyze real estate market conditions and trends
+- Evaluate location options and accessibility
+- Assess economic and demographic factors
+- Consider regulatory and zoning requirements
+- Identify opportunities and risks
+
+### [10.1.1.3 Determine build, buy, or lease decision](./DetermineBuildBuyOrLeaseDecision)
+
+Deciding whether to build, buy, or lease properties based on financial analysis, strategic fit, and risk considerations.
+
+**Key Activities:**
+- Develop option scenarios (build/buy/lease)
+- Conduct financial modeling and comparison
+- Assess strategic and operational fit
+- Evaluate risks for each option
+- Make and document recommendation
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Confirm Alignment | Real Estate Team | VP Real Estate | Strategy, Finance | Executive Team |
+| Appraise Environment | Real Estate Team | VP Real Estate | External Advisors | Finance, Legal |
+| Build/Buy/Lease Decision | Real Estate Team | CFO/COO | Finance, Legal, Operations | Board |
+
+## Key Stakeholders
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| Chief Executive Officer | Strategic Sponsor | Strategic direction alignment |
+| Chief Financial Officer | Investment Approval | Capital allocation decisions |
+| VP of Real Estate | Process Owner | Strategy development and execution |
+| Chief Operating Officer | Operational Lead | Operational requirements |
+| VP of HR | Workforce Planning | Headcount and location needs |
+| External Real Estate Advisors | Market Expertise | Market intelligence and options |
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Strategy Alignment | Portfolio aligned with business needs | >90% |
+| Planning Horizon | Forward planning period | 5+ years |
+| Market Intelligence | Markets with current analysis | 100% |
+| Decision Quality | Decisions within financial targets | >95% |
+| Occupancy Cost Ratio | Real estate cost vs. revenue | Industry benchmark |
+| Flexibility Index | Ability to expand/contract | Per strategy |
+
+## Strategic Considerations
+
+### Growth Scenarios
+Plan for multiple growth scenarios (conservative, moderate, aggressive) to maintain flexibility in property decisions.
+
+### Location Strategy
+Consider labor markets, customer proximity, supply chain access, and quality of life factors in location decisions.
+
+### Portfolio Balance
+Balance owned vs. leased properties based on capital availability, strategic importance, and market conditions.
+
+### Flexibility vs. Commitment
+Trade off between favorable terms from long-term commitments and operational flexibility from shorter-term arrangements.
+
+## Industry Variations
+
+### Technology
+Rapid growth requires scalable solutions. Campus environments for talent attraction. Geographic distribution for resilience.
+
+### Manufacturing
+Proximity to supply chain and labor. Purpose-built facilities. Long-term ownership often preferred.
+
+### Retail
+Customer demographics drive location. Short-term flexibility important. Portfolio optimization ongoing.
+
+### Financial Services
+Prestige locations for client-facing. Back-office consolidation. Business continuity requirements.
+
+## Related Processes
+
+```mermaid
+graph LR
+    VS["1.0 Vision<br/>and Strategy"] --> DPS["10.1.1 Develop<br/>Property Strategy"]
+    FM["9.0 Financial<br/>Management"] --> DPS
+
+    DPS --> PF["10.1.2 Plan<br/>Facility"]
+    DPS --> PWF["10.1.3 Provide<br/>Workspace"]
+    DPS --> DCA["10.2 Design and<br/>Construct Assets"]
+```
+
+## Related Departments
+
+- [Strategy](/departments/Strategy) - Business strategy alignment
+- [Finance](/departments/Finance) - Financial analysis
+- [Human Resources](/departments/HumanResources) - Workforce planning
+- [Legal](/departments/Legal) - Lease and acquisition terms
+- [Operations](/departments/Operations) - Operational requirements
+
+## Related Occupations
+
+- [Property Managers](/occupations/Management/PropertyManagers) - Real estate strategy
+- [Financial Managers](/occupations/Management/FinancialManagers) - Investment analysis
+- [Urban Planners](/occupations/Life/UrbanPlanners) - Location analysis
+- [Management Analysts](/occupations/Business/Management/ManagementAnalysts) - Strategic planning
 
 ## Related Concepts
 
-- PropertyStrategy
-- LongTermVision
-
+- RealEstateStrategy
+- PortfolioPlanning
+- CapitalAllocation
+- LocationStrategy
+- BuildBuyLease
+- StrategicPlanning
 
 ---
 
-*Source: APQC PCF 10941 (10.1.1) - APQC*
+*Source: APQC PCF 10941 (10.1.1) - Cross-Industry Process Classification Framework*

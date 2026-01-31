@@ -16,19 +16,19 @@ children: ["4.1.4.1", "4.1.4.2", "4.1.4.3"]
 
 ## Overview
 
-Process 4.1.4 is a core process that defines the specific procedures for create and manage master production schedule. 
+Process 4.1.4 is a core process within [Plan for and Align Supply Chain Resources](../) that translates demand plans into actionable production schedules. The Master Production Schedule (MPS) serves as the primary driver for manufacturing operations, specifying what products to produce, in what quantities, and when.
 
-Taking care of the master production plan. The master production includes creation and implementation of the site-level production plan, as well as management of the inventory that is currently in the production process.
+The MPS bridges strategic planning with operational execution by balancing customer demand, inventory targets, and production capacity. It establishes the rhythm of manufacturing operations and triggers material requirements planning (MRP). Effective MPS management requires continuous monitoring and adjustment to respond to demand changes, supply disruptions, and capacity constraints while maintaining schedule stability.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C4["4.0 Deliver Physical Products"]
-    C4 --> N4_1["4.1 Plan for and align supply chain resou..."]
-    N4_1 --> N4_1_4["4.1.4 Create and manage master production s..."]
+    C4 --> N4_1["4.1 Plan for and align supply chain resources"]
+    N4_1 --> N4_1_4["4.1.4 Create and manage master production schedule"]
     style N4_1_4 fill:#e1f5fe
-    N4_1_4 --> N4_1_4_1["4.1.4.1 Model production network to enab..."]
+    N4_1_4 --> N4_1_4_1["4.1.4.1 Model production network"]
     N4_1_4 --> N4_1_4_2["4.1.4.2 Create master production schedule"]
     N4_1_4 --> N4_1_4_3["4.1.4.3 Maintain master production schedule"]
 ```
@@ -43,58 +43,131 @@ graph TD
 | Parent | [4.1](../) |
 | Sub-Processes | 3 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
-create.AndManageMasterProductionSchedule
+create.MasterProductionSchedule.for.Manufacturing
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `create` | Primary action |
-| Object | `and manage master production schedule` | Direct object |
-
+| Verb | `create` | Primary action of establishing |
+| Object | `MasterProductionSchedule` | Production planning document |
+| Preposition | `for` | Purpose relationship |
+| PrepObject | `Manufacturing` | Production operations |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Demand Forecast"]
+        I2["Sales Orders"]
+        I3["Inventory Levels"]
+        I4["Capacity Constraints"]
+        I5["Production Policies"]
     end
 
     subgraph Process["Create and manage master production schedule"]
-        S1["Model production network to..."]
-        S2["Create master production sc..."]
-        S3["Maintain master production ..."]
+        S1["Model production network"]
+        S2["Validate capacity"]
+        S3["Create master schedule"]
+        S4["Review and approve"]
+        S5["Maintain and adjust"]
+        S6["Communicate to operations"]
+
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Master Production Schedule"]
+        O2["Capacity Plan"]
+        O3["Material Requirements"]
+        O4["Production Orders"]
+        O5["Schedule Changes"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
 ```
 
 ## Sub-Processes
 
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
-| [Model production network to enable simulation and optimization](./ModelProductionNetworkToEnableSimulationAndOptimization) | 4.1.4.1 | Create representative logical system that provides the framework to attain strategic objectives base |
-| [Create master production schedule](./CreateMasterProductionSchedule) | 4.1.4.2 | Creating the plan for internal activities such as production, inventory, and staffing |
-| [Maintain master production schedule](./MaintainMasterProductionSchedule) | 4.1.4.3 | Supervising and overseeing the plan for internal activities such as production, inventory, and staff |
+| [Model production network for simulation](./ModelProductionNetworkToEnableSimulationAndOptimization) | 4.1.4.1 | Creating models to test scenarios and optimize production plans |
+| [Create master production schedule](./CreateMasterProductionSchedule) | 4.1.4.2 | Developing the time-phased production plan for finished goods |
+| [Maintain master production schedule](./MaintainMasterProductionSchedule) | 4.1.4.3 | Updating and managing the schedule as conditions change |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Model production network | Supply Chain Planning | Planning Director | IT, Operations | Manufacturing |
+| Develop initial MPS | Master Scheduler | Planning Director | Sales, Manufacturing | Procurement |
+| Validate capacity | Production Planning | Plant Manager | Manufacturing | Master Scheduler |
+| Approve MPS | Planning Director | VP Operations | Sales, Finance | All |
+| Manage MPS changes | Master Scheduler | Planning Director | Sales, Operations | Manufacturing |
+| Communicate schedule | Master Scheduler | Planning Director | All | Production |
+
+## Key Stakeholders
+
+- **Master Scheduler**: Creates and maintains the production schedule
+- **Production Planning**: Provides capacity input and executes schedule
+- **Sales/Demand Planning**: Provides demand inputs and requirements
+- **Procurement**: Plans materials based on MPS
+- **Manufacturing**: Executes the production schedule
+- **Finance**: Monitors inventory and cost implications
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Schedule Adherence | Actual vs. planned production | >95% |
+| MPS Stability | Schedule changes within frozen period | <5% |
+| Capacity Utilization | Planned vs. available capacity | 80-90% |
+| Forecast Accuracy | MPS vs. actual demand | >85% |
+| Inventory Days on Hand | Finished goods inventory coverage | Per policy |
+| Order Fill Rate | Orders filled from MPS | >98% |
+| Planning Cycle Time | Time to generate MPS | <1 day |
+| MPS Horizon Coverage | Weeks of schedule visibility | >12 weeks |
+
+## Related Departments
+
+- [Supply Chain Planning](/departments/SupplyChain/Planning) - MPS development
+- [Manufacturing](/departments/Operations/Manufacturing) - Schedule execution
+- [Sales](/departments/Sales) - Demand requirements
+- [Procurement](/departments/Procurement) - Material planning
+
+## Related Occupations
+
+- [Industrial Production Managers](/occupations/Management/IndustrialProductionManagers) - Production oversight
+- [Logisticians](/occupations/Business/Logisticians) - Production planning
+- [Operations Research Analysts](/occupations/Math/OperationsResearchAnalysts) - Schedule optimization
+- [Supply Chain Managers](/occupations/Management/SupplyChainManagers) - Planning coordination
+
+## Industry Variations
+
+### Discrete Manufacturing
+MPS at end-item or option level, configuration management, and coordination with complex BOMs for assembled products.
+
+### Process Manufacturing
+Batch scheduling, campaign planning, and coordination of shared equipment across multiple products.
+
+### Make-to-Order
+MPS driven by customer orders with lead time management and Available-to-Promise (ATP) integration.
+
+### Repetitive Manufacturing
+Rate-based scheduling, level loading, and kanban integration for high-volume, low-variety production.
 
 ## Related Concepts
 
-- MasterProductionSchedule
-- MasterProductionSchedule
-
+- MasterScheduling
+- ProductionPlanning
+- CapacityPlanning
+- MaterialRequirementsPlanning
+- DemandManagement
+- ScheduleStability
+- AvailableToPromise
 
 ---
 

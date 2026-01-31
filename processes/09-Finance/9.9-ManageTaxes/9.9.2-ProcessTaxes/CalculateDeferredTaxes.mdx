@@ -108,6 +108,23 @@ Manages R&D tax credits, IP holding structures, and digital services tax obligat
 | Tax Audit Adjustments | Value of audit-imposed adjustments | < 1% of tax liability |
 | Tax Provision Accuracy | Accuracy of quarterly tax provision | > 98% |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Tax Analyst->>+ERP System: Extract book-tax differences
+    ERP System-->>-Tax Analyst: Return difference data
+    Tax Analyst->>+Tax Analyst: Calculate deferred taxes
+    Note over Tax Analyst: Apply ASC 740 rules
+    Tax Analyst->>+Tax Manager: Review DTA/DTL
+    Tax Manager-->>-Tax Analyst: Approve calculations
+    Tax Analyst->>+ERP System: Post tax provision
+    ERP System-->>-Tax Analyst: Confirm posting
+    Tax Analyst->>+Controller: Document workpapers
+    Controller-->>-Tax Analyst: Confirm documentation
+```
+
 ## Related Concepts
 
 - DeferredTaxes

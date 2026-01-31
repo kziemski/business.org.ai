@@ -83,6 +83,23 @@ flowchart LR
     P1 --> P2 --> P3 --> P4 --> P5
 ```
 
+
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    participant ServiceRep as Service Rep
+    participant Technician as Technician
+    participant Customer as Customer
+    participant Dispatcher as Dispatcher
+
+    ServiceRep->>Technician: Initiate plan for service delivery request
+    Technician->>Technician: Analyze requirements
+    Technician->>Customer: Request validation
+    Customer->>Technician: Provide feedback
+    Technician->>Dispatcher: Update status
+    Dispatcher->>ServiceRep: Confirm completion
+```
 ## RACI Matrix
 
 | Activity | Service Delivery Manager | Operations Director | Quality Assurance Team | Business Development |

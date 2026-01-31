@@ -108,6 +108,25 @@ Uses fund accounting with modified accrual basis and compliance with GASB standa
 | Reporting Timeliness | On-time delivery of financial reports | 100% |
 | Audit Adjustments | Number of material audit adjustments | 0 |
 
+## Process Sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    Accountant->>+ERP System: Extract entity trial balances
+    ERP System-->>-Accountant: Return entity data
+    Accountant->>+ERP System: Map to consolidated COA
+    ERP System-->>-Accountant: Return mapped balances
+    Accountant->>+ERP System: Identify intercompany
+    ERP System-->>-Accountant: Return IC transactions
+    Accountant->>+Controller: Review eliminations
+    Controller-->>-Accountant: Approve eliminations
+    Accountant->>+ERP System: Post elimination entries
+    ERP System-->>-Accountant: Confirm consolidation
+    Accountant->>+CFO: Report consolidated results
+    CFO-->>-Accountant: Acknowledge receipt
+```
+
 ## Related Concepts
 
 - LegalConsolidation

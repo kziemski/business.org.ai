@@ -16,20 +16,23 @@ children: ["13.5.4.1", "13.5.4.2", "13.5.4.3"]
 
 ## Overview
 
-Process 13.5.4 is a core process that defines the specific procedures for evolve and sustain km capabilities. 
+Process 13.5.4 is a core process that defines the specific procedures for evolving and sustaining knowledge management (KM) capabilities. This process ensures that KM programs remain effective, relevant, and aligned with organizational needs over time.
 
-Developing resources for improved knowledge management and knowledge engineering.
+Knowledge management is not a one-time implementation but an ongoing capability that must evolve as the organization changes, new technologies emerge, and workforce dynamics shift. This process addresses the continuous improvement of KM approaches, maintaining engagement and awareness, and expanding infrastructure to meet growing demands.
+
+Effective KM capability evolution requires balancing stability (maintaining proven approaches) with innovation (adopting new methods and technologies). It also requires sustained attention to the cultural and behavioral aspects of knowledge sharing, ensuring that KM remains embedded in how work gets done rather than becoming a separate, optional activity.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
     C13["13.0 Develop and Manage Business Capabilities"]
-    C13 --> N13_5_4["13.5.4 Evolve and sustain KM capabilities"]
+    C13 --> N13_5["13.5 Develop and manage knowledge management"]
+    N13_5 --> N13_5_4["13.5.4 Evolve and sustain KM capabilities"]
     style N13_5_4 fill:#e1f5fe
-    N13_5_4 --> N13_5_4_1["13.5.4.1 Enhance/Modify existing KM appro..."]
+    N13_5_4 --> N13_5_4_1["13.5.4.1 Enhance/Modify existing KM approaches"]
     N13_5_4 --> N13_5_4_2["13.5.4.2 Sustain awareness and engagement"]
-    N13_5_4 --> N13_5_4_3["13.5.4.3 Expand KM infrastructure to meet..."]
+    N13_5_4 --> N13_5_4_3["13.5.4.3 Expand KM infrastructure to meet demand"]
 ```
 
 ## Key Statistics
@@ -46,13 +49,15 @@ graph TD
 ## GraphDL Semantic Structure
 
 ```graphdl
-evolve.AndSustainKMCapabilities
+evolve.KMCapabilities.and.SustainKMCapabilities
 ```
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `evolve` | Primary action |
-| Object | `and sustain KM capabilities` | Direct object |
+| Verb | `evolve` | Primary action of advancing capabilities |
+| Object | `KM capabilities` | Knowledge management capabilities |
+| Preposition | `and` | Conjunction linking dual actions |
+| PrepObject | `sustain KM capabilities` | Maintaining ongoing effectiveness |
 
 
 ## Process Flow
@@ -60,39 +65,150 @@ evolve.AndSustainKMCapabilities
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["KM Assessment Results"]
+        I2["User Feedback"]
+        I3["Technology Trends"]
+        I4["Organizational Changes"]
+        I5["Best Practices"]
     end
 
     subgraph Process["Evolve and sustain KM capabilities"]
-        S1["Enhance/Modify existing KM ..."]
-        S2["Sustain awareness and engag..."]
-        S3["Expand KM infrastructure to..."]
+        S1["Enhance/Modify existing KM approaches"]
+        S2["Sustain awareness and engagement"]
+        S3["Expand KM infrastructure to meet demand"]
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Enhanced KM Approaches"]
+        O2["Engaged Knowledge Community"]
+        O3["Scaled KM Infrastructure"]
+        O4["KM Program Improvements"]
     end
 
     Inputs --> Process --> Outputs
     S1 --> S2
     S2 --> S3
+    S3 -.->|Feedback| S1
 ```
 
-## Sub-Processes
+## Child Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Enhance/Modify existing KM approaches](./EnhanceModifyExistingKMApproaches) | 13.5.4.1 | Leveraging KM evaluations and identified gap to enhance existing approaches |
-| [Sustain awareness and engagement](./SustainAwarenessAndEngagement) | 13.5.4.2 | Developing awareness about available knowledge bases and promoting their use to maximize their impac |
-| [Expand KM infrastructure to meet demand](./ExpandKMInfrastructureToMeetDemand) | 13.5.4.3 | Augmenting available resources to better leverage the offerings of the organization to serve existin |
+### 13.5.4.1 Enhance/Modify Existing KM Approaches
+
+Leveraging KM evaluations and identified gaps to enhance existing approaches. This activity implements improvements to KM methods, processes, and technologies based on assessment findings and evolving needs.
+
+**Key Activities:**
+- Implement improvements based on gap analysis
+- Update KM processes and procedures
+- Enhance KM technology capabilities
+- Incorporate emerging best practices
+- Sunset ineffective approaches
+
+[View Process Details](./EnhanceModifyExistingKMApproaches)
+
+### 13.5.4.2 Sustain Awareness and Engagement
+
+Developing awareness about available knowledge bases and promoting their use to maximize their impact. This activity maintains ongoing attention to KM through communication, training, and recognition programs.
+
+**Key Activities:**
+- Conduct ongoing KM awareness campaigns
+- Recognize and reward knowledge sharing behaviors
+- Build and nurture communities of practice
+- Promote KM success stories and benefits
+- Provide ongoing KM training and support
+
+[View Process Details](./SustainAwarenessAndEngagement)
+
+### 13.5.4.3 Expand KM Infrastructure to Meet Demand
+
+Augmenting available resources to better leverage the offerings of the organization to serve existing and potential knowledge needs. This activity scales KM systems and capabilities as usage grows and needs expand.
+
+**Key Activities:**
+- Scale KM technology infrastructure
+- Expand knowledge repository capacity
+- Enhance search and discovery capabilities
+- Extend KM to new domains and use cases
+- Integrate KM with emerging technologies (AI, etc.)
+
+[View Process Details](./ExpandKMInfrastructureToMeetDemand)
 
 
-## Related Concepts
+## RACI Matrix
 
-- KmCapabilities
-- KmCapabilities
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Enhance KM approaches | KM Team | KM Director | Users, IT | Executive team |
+| Update KM processes | KM Analyst | KM Manager | Process owners | Stakeholders |
+| Conduct awareness campaigns | Communications | KM Manager | HR, Marketing | All employees |
+| Recognize knowledge contributors | KM Manager | HR Director | Department Heads | All employees |
+| Nurture communities of practice | Community Managers | KM Director | SMEs | Participants |
+| Scale KM infrastructure | IT Team | CIO | KM Team | Users |
+| Integrate emerging technologies | IT Team | CTO | KM Team | Innovation team |
+
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| KM Improvement Implementation | Percentage of planned improvements completed | >80% |
+| KM Awareness Score | Employee awareness of KM resources | >85% |
+| Knowledge Sharing Participation | Active contributors to knowledge bases | >30% |
+| Community of Practice Activity | Engagement in communities | Increasing trend |
+| System Availability | KM platform uptime | >99.5% |
+| Search Success Rate | Users finding needed knowledge | >90% |
+| Technology Currency | Systems on current versions | >95% |
+| User Satisfaction | Satisfaction with KM capabilities | >4.0/5.0 |
+
+
+## Related Departments
+
+- [Knowledge Management](/departments/KM) - KM program leadership
+- [Information Technology](/departments/IT) - Infrastructure and technology
+- [Human Resources](/departments/HR) - Recognition and culture
+- [Communications](/departments/Communications) - Awareness campaigns
+- [Training](/departments/Training) - KM training programs
+
+
+## Related Occupations
+
+- [Management Analysts](/occupations/Business/ManagementAnalysts) - KM improvement consulting
+- [Training and Development Specialists](/occupations/HR/TrainingSpecialists) - KM training
+- [Computer and Information Systems Managers](/occupations/Technology/ITManagers) - Technology infrastructure
+- [Technical Writers](/occupations/Communications/TechnicalWriters) - Knowledge content development
+- [Community Managers](/occupations/Communications/CommunityManagers) - Community engagement
+
+
+## Industry Variations
+
+### Technology
+
+Technology companies focus on developer knowledge sharing, API documentation, and integration with development tools. AI-powered knowledge assistance and automated knowledge capture are emerging priorities.
+
+### Professional Services
+
+Professional services emphasize expertise development, project learning capture, and client knowledge management. Communities of practice centered on service lines are common.
+
+### Healthcare
+
+Healthcare KM evolution addresses clinical decision support, medical literature integration, and care protocol updates. Compliance with clinical knowledge standards is essential.
+
+
+## KM Evolution Approaches
+
+- **Continuous Improvement** - Incremental enhancements based on feedback
+- **Technology Refresh** - Periodic platform updates and migrations
+- **Capability Extension** - Adding new KM domains and use cases
+- **AI Integration** - Leveraging machine learning for knowledge discovery
+- **Cultural Reinforcement** - Ongoing attention to sharing behaviors
+
+
+## Emerging KM Trends
+
+- **AI-Powered Knowledge Discovery** - Machine learning for content recommendation
+- **Conversational Knowledge Access** - Chatbots and virtual assistants
+- **Video Knowledge Capture** - Rich media for tacit knowledge
+- **Graph-Based Knowledge** - Connected knowledge networks
+- **Real-Time Knowledge Flow** - Integration with work processes
 
 
 ---

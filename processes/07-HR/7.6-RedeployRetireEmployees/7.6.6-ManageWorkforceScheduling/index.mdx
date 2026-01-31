@@ -16,9 +16,9 @@ children: ["7.6.6.1", "7.6.6.2"]
 
 ## Overview
 
-Process 7.6.6 is a core process that defines the specific procedures for manage workforce scheduling. 
+Process 7.6.6 is a core process within [Redeploy and Retire Employees](../) that ensures optimal workforce coverage across all operational periods. This process matches available talent with business demands while considering employee preferences, labor regulations, and organizational constraints.
 
-Organizing the workforce so that all positions are covered for all shifts with the necessary skilled resources in place. Have a system in place to backfill positions while an employee is on leave.
+Effective workforce scheduling balances multiple competing objectives: maintaining adequate staffing levels, managing labor costs, ensuring regulatory compliance (overtime, rest periods), accommodating employee availability, and building in flexibility for unexpected absences. Modern scheduling leverages workforce management technology to optimize these tradeoffs while improving employee experience.
 
 ## Process Hierarchy
 
@@ -28,7 +28,7 @@ graph TD
     C7 --> N7_6["7.6 Redeploy and retire employees"]
     N7_6 --> N7_6_6["7.6.6 Manage workforce scheduling"]
     style N7_6_6 fill:#e1f5fe
-    N7_6_6 --> N7_6_6_1["7.6.6.1 Receive required resources/skill..."]
+    N7_6_6 --> N7_6_6_1["7.6.6.1 Receive required resources/skills"]
     N7_6_6 --> N7_6_6_2["7.6.6.2 Manage resource deployment"]
 ```
 
@@ -42,7 +42,6 @@ graph TD
 | Parent | [7.6](../) |
 | Sub-Processes | 2 |
 
-
 ## GraphDL Semantic Structure
 
 ```graphdl
@@ -51,31 +50,41 @@ manage.WorkforceScheduling
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `manage` | Primary action |
-| Object | `workforce scheduling` | Direct object |
-
+| Verb | `manage` | Primary action of administering |
+| Object | `WorkforceScheduling` | Allocation of employees to shifts and assignments |
 
 ## Process Flow
 
 ```mermaid
 flowchart LR
     subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
+        I1["Demand Forecast"]
+        I2["Employee Availability"]
+        I3["Skills Inventory"]
+        I4["Labor Regulations"]
+        I5["Budget Constraints"]
     end
 
     subgraph Process["Manage workforce scheduling"]
-        S1["Receive required resources/..."]
-        S2["Manage resource deployment"]
+        S1["Analyze staffing requirements"]
+        S2["Receive required skills/capabilities"]
+        S3["Create schedule draft"]
+        S4["Manage resource deployment"]
+        S5["Handle schedule changes"]
+        S6["Track attendance/coverage"]
+
+        S1 --> S2 --> S3 --> S4
+        S4 --> S5 --> S6
     end
 
     subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
+        O1["Published Schedules"]
+        O2["Coverage Reports"]
+        O3["Overtime Tracking"]
+        O4["Compliance Records"]
     end
 
     Inputs --> Process --> Outputs
-    S1 --> S2
 ```
 
 ## Sub-Processes
@@ -83,13 +92,63 @@ flowchart LR
 | Process | Hierarchy ID | Description |
 |---------|-------------|-------------|
 | [Receive required resources/skills and capabilities](./ReceiveRequiredResourcesskillsAndCapabilities) | 7.6.6.1 | Obtaining resources necessary to fill a position utilizing specific skills and capabilities |
-| [Manage resource deployment](./ManageResourceDeployment) | 7.6.6.2 | Allocating employees |
+| [Manage resource deployment](./ManageResourceDeployment) | 7.6.6.2 | Allocating employees to shifts, projects, and assignments based on skills and availability |
 
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Forecast staffing needs | Operations Planning | Operations Manager | HR, Finance | Supervisors |
+| Define skill requirements | Department Managers | HR Director | Team Leads | Schedulers |
+| Create schedules | Workforce Schedulers | Operations Manager | Employees, Union | HR |
+| Approve schedules | Operations Manager | VP Operations | HR, Legal | Finance |
+| Manage shift swaps | Team Supervisors | Workforce Schedulers | Employees | HR |
+| Track compliance | HR Operations | HR Director | Legal | Management |
+
+## Key Stakeholders
+
+- **Operations Management**: Defines staffing requirements and approves schedules
+- **Workforce Schedulers**: Creates and maintains schedules
+- **Department Supervisors**: Manages day-to-day coverage and adjustments
+- **HR Operations**: Ensures policy and regulatory compliance
+- **Employees**: Provides availability and requests time off
+- **Union Representatives**: Reviews schedules for collective agreement compliance
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Schedule Coverage Rate | Percentage of shifts fully staffed | >98% |
+| Overtime Hours | Overtime as percentage of total hours | <5% |
+| Schedule Compliance | Adherence to published schedules | >95% |
+| Advance Notice | Days schedule published in advance | >14 days |
+| Shift Fill Time | Hours to fill open shifts | <4 hours |
+| Employee Preference Match | Schedules matching employee preferences | >80% |
+| Absence Rate | Unplanned absences as % of scheduled hours | <3% |
+| Labor Cost Variance | Actual vs. budgeted labor cost | +/- 2% |
+
+## Related Departments
+
+- [Operations](/departments/Operations) - Staffing requirements and shift management
+- [Human Resources](/departments/HumanResources) - Policy compliance and HRIS integration
+- [Finance](/departments/Finance) - Labor budgeting and cost analysis
+- [Legal](/departments/Legal) - Labor law compliance
+
+## Related Occupations
+
+- [Human Resources Specialists](/occupations/Business/HumanResourcesSpecialists) - Scheduling administration
+- [Industrial Production Managers](/occupations/Management/IndustrialProductionManagers) - Production scheduling
+- [First-Line Supervisors](/occupations/Management/FirstLineSupervisors) - Daily coverage management
+- [Logisticians](/occupations/Business/Logisticians) - Resource optimization
 
 ## Related Concepts
 
-- WorkforceScheduling
-
+- WorkforceManagement
+- ShiftScheduling
+- LaborOptimization
+- CapacityPlanning
+- TimeAndAttendance
+- ContingentStaffing
 
 ---
 

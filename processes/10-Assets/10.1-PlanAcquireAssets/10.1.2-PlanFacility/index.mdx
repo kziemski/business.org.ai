@@ -12,27 +12,28 @@ children: ["10.1.2.1", "10.1.2.2", "10.1.2.3", "10.1.2.4", "10.1.2.5"]
 
 # Plan facility
 
-> Recognizing the needs of facility users in order to construct a project proposal that meets those needs.
+> Recognizing the needs of facility users in order to construct a project proposal that meets those needs within budget and timeline constraints.
 
 ## Overview
 
-Process 10.1.2 is a core process that defines the specific procedures for plan facility. 
+Process 10.1.2 transforms property strategy into actionable facility plans. This includes designing facilities to meet user requirements, analyzing budget feasibility, selecting appropriate properties, negotiating favorable terms, and managing the construction or modification process.
 
-Recognizing the needs of facility users in order to construct a project proposal that meets those needs.
+Effective facility planning balances user needs, operational requirements, financial constraints, and timeline pressures. This process requires close collaboration between real estate, finance, operations, and end users to ensure facilities support business objectives and provide positive user experiences.
 
 ## Process Hierarchy
 
 ```mermaid
 graph TD
-    C10["10.0 Acquire, Construct, and Manage Assets"]
-    C10 --> N10_1["10.1 Plan and acquire assets"]
-    N10_1 --> N10_1_2["10.1.2 Plan facility"]
-    style N10_1_2 fill:#e1f5fe
-    N10_1_2 --> N10_1_2_1["10.1.2.1 Design facility"]
-    N10_1_2 --> N10_1_2_2["10.1.2.2 Analyze budget"]
-    N10_1_2 --> N10_1_2_3["10.1.2.3 Select property"]
-    N10_1_2 --> N10_1_2_4["10.1.2.4 Negotiate terms for facility"]
-    N10_1_2 --> N10_1_2_5["10.1.2.5 Manage construction or modificat..."]
+    C10["10.0 Acquire, Construct,<br/>and Manage Assets"] --> G101["10.1 Plan and<br/>acquire assets"]
+    G101 --> P1012["10.1.2 Plan<br/>facility"]
+
+    P1012 --> A10121["10.1.2.1 Design<br/>facility"]
+    P1012 --> A10122["10.1.2.2 Analyze<br/>budget"]
+    P1012 --> A10123["10.1.2.3 Select<br/>property"]
+    P1012 --> A10124["10.1.2.4 Negotiate<br/>terms"]
+    P1012 --> A10125["10.1.2.5 Manage<br/>construction"]
+
+    style P1012 fill:#e1f5fe
 ```
 
 ## Key Statistics
@@ -42,9 +43,72 @@ graph TD
 | APQC Code | 10943 |
 | Hierarchy ID | 10.1.2 |
 | Level | Process |
-| Parent | [10.1](../) |
+| Parent | [10.1 Plan and acquire assets](../) |
+| Category | [10.0 Acquire, Construct, and Manage Assets](../../) |
 | Sub-Processes | 5 |
 
+## Process Flow
+
+```mermaid
+flowchart TB
+    subgraph Inputs["Inputs"]
+        I1["Property Strategy"]
+        I2["User Requirements"]
+        I3["Budget Guidelines"]
+        I4["Timeline Requirements"]
+        I5["Regulatory Requirements"]
+        I6["Available Properties"]
+    end
+
+    subgraph Design["10.1.2.1 Design Facility"]
+        D1["Gather Requirements"]
+        D2["Develop Concepts"]
+        D3["Evaluate Options"]
+        D4["Finalize Design"]
+    end
+
+    subgraph Budget["10.1.2.2 Analyze Budget"]
+        B1["Estimate Costs"]
+        B2["Assess Feasibility"]
+        B3["Identify Trade-offs"]
+        B4["Approve Budget"]
+    end
+
+    subgraph Select["10.1.2.3 Select Property"]
+        S1["Evaluate Options"]
+        S2["Site Due Diligence"]
+        S3["Compare Alternatives"]
+        S4["Recommend Selection"]
+    end
+
+    subgraph Negotiate["10.1.2.4 Negotiate Terms"]
+        N1["Define Requirements"]
+        N2["Negotiate Terms"]
+        N3["Review Agreements"]
+        N4["Execute Documents"]
+    end
+
+    subgraph Construct["10.1.2.5 Manage Construction"]
+        C1["Oversee Work"]
+        C2["Track Progress"]
+        C3["Manage Changes"]
+        C4["Commission Facility"]
+    end
+
+    subgraph Outputs["Outputs"]
+        OUT1["Facility Design"]
+        OUT2["Approved Budget"]
+        OUT3["Executed Agreements"]
+        OUT4["Completed Facility"]
+    end
+
+    Inputs --> Design
+    Design --> Budget
+    Budget --> Select
+    Select --> Negotiate
+    Negotiate --> Construct
+    Construct --> Outputs
+```
 
 ## GraphDL Semantic Structure
 
@@ -54,55 +118,171 @@ plan.Facility
 
 | Component | Value | Description |
 |-----------|-------|-------------|
-| Verb | `plan` | Primary action |
-| Object | `facility` | Direct object |
+| Verb | `plan` | Planning action |
+| Object | `Facility` | Physical workspace |
 
+### Decomposed Actions
 
-## Process Flow
-
-```mermaid
-flowchart LR
-    subgraph Inputs["Inputs"]
-        I1["Upstream Process Outputs"]
-        I2["Organizational Data"]
-    end
-
-    subgraph Process["Plan facility"]
-        S1["Design facility"]
-        S2["Analyze budget"]
-        S3["Select property"]
-        S4["Negotiate terms for facility"]
-        S5["Manage construction or modi..."]
-    end
-
-    subgraph Outputs["Outputs"]
-        O1["Process Deliverables"]
-        O2["Updated Records"]
-    end
-
-    Inputs --> Process --> Outputs
-    S1 --> S2
-    S2 --> S3
-    S3 --> S4
-    S4 --> S5
-```
+| Activity | GraphDL Structure |
+|----------|-------------------|
+| 10.1.2.1 | `design.Facility` |
+| 10.1.2.2 | `analyze.Budget` |
+| 10.1.2.3 | `select.Property` |
+| 10.1.2.4 | `negotiate.Terms.for.Facility` |
+| 10.1.2.5 | `manage.Construction.or.Modification` |
 
 ## Sub-Processes
 
-| Process | Hierarchy ID | Description |
-|---------|-------------|-------------|
-| [Design facility](./DesignFacility) | 10.1.2.1 | Preparing and analyzing different designs for a facility in order to finalize which design will be t |
-| [Analyze budget](./AnalyzeBudget) | 10.1.2.2 | Evaluating the feasibility of budgets prepared for the construction of facilities |
-| [Select property](./SelectProperty) | 10.1.2.3 | Assessing and choosing the appropriate property |
-| [Negotiate terms for facility](./NegotiateTermsForFacility) | 10.1.2.4 | Discussing the terms and conditions of facilities to be occupied according to the business requireme |
-| [Manage construction or modification to building](./ManageConstructionOrModificationToBuilding) | 10.1.2.5 | Constructing the buildings |
+### [10.1.2.1 Design facility](./DesignFacility)
 
+Preparing and analyzing different designs for a facility in order to finalize which design will be the most appropriate and effective.
+
+**Key Activities:**
+- Gather and document user requirements
+- Develop conceptual design alternatives
+- Evaluate designs against requirements
+- Refine and finalize selected design
+
+### [10.1.2.2 Analyze budget](./AnalyzeBudget)
+
+Evaluating the feasibility of budgets prepared for the construction or acquisition of facilities.
+
+**Key Activities:**
+- Develop detailed cost estimates
+- Assess budget feasibility
+- Identify value engineering opportunities
+- Obtain budget approval
+
+### [10.1.2.3 Select property](./SelectProperty)
+
+Assessing and choosing the appropriate property for the facility based on location, condition, cost, and fit.
+
+**Key Activities:**
+- Identify and evaluate property options
+- Conduct site due diligence
+- Compare alternatives
+- Make selection recommendation
+
+### [10.1.2.4 Negotiate terms for facility](./NegotiateTermsForFacility)
+
+Discussing the terms and conditions of facilities to be occupied according to business requirements.
+
+**Key Activities:**
+- Define term requirements
+- Negotiate lease or purchase terms
+- Review legal agreements
+- Execute final documents
+
+### [10.1.2.5 Manage construction or modification to building](./ManageConstructionOrModificationToBuilding)
+
+Constructing new buildings or modifying existing ones to meet facility requirements.
+
+**Key Activities:**
+- Oversee construction activities
+- Track progress and milestones
+- Manage change orders
+- Commission completed facility
+
+## RACI Matrix
+
+| Activity | Responsible | Accountable | Consulted | Informed |
+|----------|-------------|-------------|-----------|----------|
+| Design Facility | Design Team | Facilities Manager | Users, IT, Safety | Finance, HR |
+| Analyze Budget | Finance | CFO | Facilities, Procurement | Executive Team |
+| Select Property | Real Estate | VP Real Estate | Facilities, Legal | Finance |
+| Negotiate Terms | Real Estate | VP Real Estate | Legal, Finance | Executive Team |
+| Manage Construction | Project Manager | VP Operations | Contractors, Engineering | All Stakeholders |
+
+## Key Stakeholders
+
+| Stakeholder | Role | Responsibilities |
+|-------------|------|------------------|
+| VP of Real Estate | Strategic Owner | Property decisions |
+| Facilities Manager | Planning Lead | Design and requirements |
+| Finance Manager | Budget Owner | Financial feasibility |
+| User Representatives | Requirements | Functional needs |
+| Legal Counsel | Contract Lead | Agreement review |
+| Project Manager | Execution Lead | Construction oversight |
+
+## Metrics and KPIs
+
+| Metric | Description | Target |
+|--------|-------------|--------|
+| Design Approval Time | Time from requirements to design approval | <60 days |
+| Budget Accuracy | Final cost vs. initial estimate | <10% variance |
+| Selection Cycle Time | Time to select property | <90 days |
+| Negotiation Success | Achieved vs. target terms | >90% of targets |
+| Project Delivery | On-time completion | >95% |
+| User Satisfaction | Post-occupancy satisfaction | >4.0/5.0 |
+
+## Planning Considerations
+
+### User Requirements
+Engage users early and throughout the process to ensure facilities meet actual needs and expectations.
+
+### Flexibility
+Design for adaptability to accommodate future changes in use, technology, or organization.
+
+### Sustainability
+Incorporate energy efficiency, environmental certifications (LEED), and sustainable materials.
+
+### Technology Integration
+Plan for current and future technology requirements including power, data, and AV systems.
+
+### Regulatory Compliance
+Ensure designs meet building codes, accessibility requirements, and industry-specific regulations.
+
+## Industry Variations
+
+### Healthcare
+Clinical workflow design, infection control, regulatory compliance, and specialized systems integration.
+
+### Manufacturing
+Production floor layout, material flow, equipment foundations, and utility infrastructure.
+
+### Technology
+Flexible workspace, high-density power/cooling, and collaboration-focused design.
+
+### Retail
+Customer experience design, merchandising requirements, and brand consistency.
+
+## Related Processes
+
+```mermaid
+graph LR
+    DPS["10.1.1 Develop<br/>Property Strategy"] --> PF["10.1.2 Plan<br/>Facility"]
+    FM["9.0 Financial<br/>Management"] --> PF
+
+    PF --> PWF["10.1.3 Provide Workspace<br/>and Facilities"]
+    PF --> DCA["10.2 Design and<br/>Construct Assets"]
+    PF --> IT["8.0 IT<br/>Management"]
+```
+
+## Related Departments
+
+- [Real Estate](/departments/Operations/RealEstate) - Property selection
+- [Finance](/departments/Finance) - Budget analysis
+- [Legal](/departments/Legal) - Contract negotiation
+- [Information Technology](/departments/Technology) - Technology requirements
+- [Human Resources](/departments/HumanResources) - Workforce needs
+
+## Related Occupations
+
+- [Facilities Managers](/occupations/Management/FacilitiesManagers) - Planning oversight
+- [Architects](/occupations/Architecture/Architects) - Facility design
+- [Property Managers](/occupations/Management/PropertyManagers) - Property selection
+- [Construction Managers](/occupations/Management/ConstructionManagers) - Construction oversight
+- [Interior Designers](/occupations/Arts/InteriorDesigners) - Space planning
 
 ## Related Concepts
 
-- Facility
-
+- FacilityPlanning
+- SpaceDesign
+- SiteSelection
+- LeaseNegotiation
+- ConstructionManagement
+- UserRequirements
 
 ---
 
-*Source: APQC PCF 10943 (10.1.2) - APQC*
+*Source: APQC PCF 10943 (10.1.2) - Cross-Industry Process Classification Framework*
